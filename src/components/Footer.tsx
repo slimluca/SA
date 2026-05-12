@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { Mail, PawPrint } from "lucide-react";
-import { legalNavigation, navigation, siteConfig } from "@/lib/site";
+import { companyNavigation, hubNavigation, legalNavigation, siteConfig } from "@/lib/site";
 
 export function Footer() {
   return (
     <footer className="border-t border-oat bg-cocoa text-cream">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr_1fr] lg:px-8">
         <div>
           <div className="mb-3 flex items-center gap-2">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-honey text-cocoa">
@@ -29,7 +29,27 @@ export function Footer() {
         <div>
           <h2 className="text-sm font-bold uppercase tracking-wide text-honey">Site</h2>
           <ul className="mt-3 space-y-2 text-sm text-cream/82">
-            {navigation.map((item) => (
+            {hubNavigation.slice(0, 6).map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-honey">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-bold uppercase tracking-wide text-honey">More</h2>
+          <ul className="mt-3 space-y-2 text-sm text-cream/82">
+            {hubNavigation.slice(6).map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-honey">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            {companyNavigation.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="hover:text-honey">
                   {item.label}

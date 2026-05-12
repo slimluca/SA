@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 
 const accentClasses = {
@@ -12,10 +13,11 @@ type FeatureCardProps = {
   description: string;
   icon: LucideIcon;
   accent: keyof typeof accentClasses;
+  href?: string;
 };
 
-export function FeatureCard({ title, description, icon: Icon, accent }: FeatureCardProps) {
-  return (
+export function FeatureCard({ title, description, icon: Icon, accent, href }: FeatureCardProps) {
+  const content = (
     <article className="group rounded-2xl border border-oat bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
       <div className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ${accentClasses[accent]}`}>
         <Icon className="h-5 w-5" aria-hidden="true" />
@@ -23,5 +25,15 @@ export function FeatureCard({ title, description, icon: Icon, accent }: FeatureC
       <h3 className="text-lg font-black text-cocoa">{title}</h3>
       <p className="mt-2 text-sm leading-6 text-bark">{description}</p>
     </article>
+  );
+
+  if (!href) {
+    return content;
+  }
+
+  return (
+    <Link href={href} className="block">
+      {content}
+    </Link>
   );
 }

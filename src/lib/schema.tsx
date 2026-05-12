@@ -10,6 +10,13 @@ type BreadcrumbItem = {
   href: string;
 };
 
+type ArticleInput = {
+  title: string;
+  description: string;
+  path: string;
+  dateModified: string;
+};
+
 export function websiteSchema() {
   return {
     "@context": "https://schema.org",
@@ -62,6 +69,58 @@ export function faqSchema(questions: readonly Question[]) {
         text: item.answer,
       },
     })),
+  };
+}
+
+export function collectionPageSchema({
+  title,
+  description,
+  path,
+}: {
+  title: string;
+  description: string;
+  path: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: title,
+    description,
+    url: absoluteUrl(path),
+    inLanguage: "en-ZA",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
+  };
+}
+
+export function articleSchema({ title, description, path, dateModified }: ArticleInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url: absoluteUrl(path),
+    dateModified,
+    datePublished: dateModified,
+    inLanguage: "en-ZA",
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
   };
 }
 

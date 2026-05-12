@@ -8,6 +8,26 @@ export const siteConfig = {
 };
 
 export const navigation = [
+  { label: "Health", href: "/health" },
+  { label: "Emergency", href: "/emergency" },
+  { label: "Breeds", href: "/breeds" },
+  { label: "Adoption", href: "/adoption" },
+] as const;
+
+export const hubNavigation = [
+  { label: "Health", href: "/health" },
+  { label: "Emergency", href: "/emergency" },
+  { label: "Breeds", href: "/breeds" },
+  { label: "Adoption", href: "/adoption" },
+  { label: "Food", href: "/food" },
+  { label: "Training", href: "/training" },
+  { label: "Grooming", href: "/grooming" },
+  { label: "Insurance", href: "/insurance" },
+  { label: "Costs", href: "/costs" },
+  { label: "Dog-Friendly", href: "/dog-friendly" },
+] as const;
+
+export const companyNavigation = [
   { label: "About", href: "/about" },
   { label: "Editorial Policy", href: "/editorial-policy" },
   { label: "Contact", href: "/contact" },

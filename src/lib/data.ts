@@ -18,6 +18,7 @@ export const categories = [
       "Know when to call a vet, what to say, and how to stay calm during urgent dog health situations.",
     icon: AlertTriangle,
     accent: "rose",
+    href: "/emergency",
   },
   {
     title: "Dog Health",
@@ -25,6 +26,7 @@ export const categories = [
       "Plain-English guidance on common conditions, prevention, symptoms, and when professional care is needed.",
     icon: Stethoscope,
     accent: "sage",
+    href: "/health",
   },
   {
     title: "Breed Guides",
@@ -32,6 +34,7 @@ export const categories = [
       "Practical breed notes for South African homes, climates, activity levels, and family routines.",
     icon: Bone,
     accent: "honey",
+    href: "/breeds",
   },
   {
     title: "Adoption Safety",
@@ -39,6 +42,7 @@ export const categories = [
       "Checklist-led advice for safer adoption, rescue conversations, home checks, and avoiding scams.",
     icon: HeartHandshake,
     accent: "sky",
+    href: "/adoption",
   },
   {
     title: "Dog Food",
@@ -46,6 +50,7 @@ export const categories = [
       "Help comparing feeding choices, label claims, life stages, budget, allergies, and vet diet advice.",
     icon: BadgeHelp,
     accent: "sage",
+    href: "/food",
   },
   {
     title: "Training",
@@ -53,6 +58,7 @@ export const categories = [
       "Kind, practical training support for puppies, adult dogs, recall, lead manners, and daily routines.",
     icon: ShieldCheck,
     accent: "honey",
+    href: "/training",
   },
   {
     title: "Grooming",
@@ -60,6 +66,7 @@ export const categories = [
       "Coat care, bathing, nails, ears, shedding, and grooming routines that suit different dogs and seasons.",
     icon: Brush,
     accent: "rose",
+    href: "/grooming",
   },
   {
     title: "Insurance",
@@ -67,6 +74,7 @@ export const categories = [
       "Understand policy terms, waiting periods, exclusions, claims, and questions to ask before signing up.",
     icon: ShieldCheck,
     accent: "sky",
+    href: "/insurance",
   },
   {
     title: "Dog Costs",
@@ -74,6 +82,7 @@ export const categories = [
       "Budget for food, vet care, grooming, training, insurance, travel, and once-off puppy expenses.",
     icon: CircleDollarSign,
     accent: "honey",
+    href: "/costs",
   },
   {
     title: "Dog-Friendly Places",
@@ -81,6 +90,7 @@ export const categories = [
       "Plan safer outings with etiquette, access checks, heat awareness, lead rules, and comfort basics.",
     icon: MapPinned,
     accent: "sage",
+    href: "/dog-friendly",
   },
 ] as const;
 
@@ -102,36 +112,42 @@ export const featuredGuides = [
     description:
       "What dog owners should know about rabies risk, vaccination, bite response, and why urgent medical advice matters after exposure.",
     label: "Health and safety",
+    href: "/emergency/rabies-south-africa",
   },
   {
     title: "Puppy Scam Checklist",
     description:
       "A South Africa-focused checklist for spotting pressure tactics, suspicious payments, stolen photos, and unsafe puppy buying situations.",
     label: "Adoption safety",
+    href: "/adoption/puppy-scam-checklist-south-africa",
   },
   {
     title: "Cost of Owning a Dog in South Africa",
     description:
       "A realistic ownership budget covering food, vet visits, parasite prevention, grooming, training, insurance, and emergency savings.",
     label: "Budgeting",
+    href: "/costs/cost-of-owning-a-dog-south-africa",
   },
   {
     title: "Best Dog Breeds for South African Homes",
     description:
       "A practical way to compare breed needs against climate, space, energy level, shedding, family life, and time available.",
     label: "Breed planning",
+    href: "/breeds/best-dog-breeds-for-south-african-homes",
   },
   {
     title: "Biliary Tick Bite Fever in Dogs",
     description:
       "How tick-borne illness can affect dogs, warning signs owners should take seriously, and why prompt veterinary care is important.",
     label: "Dog health",
+    href: "/health",
   },
   {
     title: "Dog Adoption Checklist",
     description:
       "Questions to ask, documents to expect, home preparation steps, and red flags before bringing a rescue or rehomed dog home.",
     label: "Adoption",
+    href: "/adoption",
   },
 ] as const;
 
