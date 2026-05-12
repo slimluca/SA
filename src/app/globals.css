@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #fff9ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff9ee;
+  color: #3f2b1f;
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration-thickness: 0.08em;
+}
+
+::selection {
+  background: #d9a441;
+  color: #3f2b1f;
+}
+
+.section-shell {
+  @apply mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8;
+}
+
+.section-kicker {
+  @apply text-sm font-black uppercase tracking-wide text-sage;
+}
+
+.section-title {
+  @apply mt-2 max-w-3xl text-3xl font-black leading-tight text-cocoa sm:text-4xl;
+}
+
+.section-copy {
+  @apply mt-4 max-w-3xl text-base leading-7 text-bark;
+}
