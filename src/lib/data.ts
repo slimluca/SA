@@ -147,7 +147,7 @@ export const featuredGuides = [
     description:
       "Questions to ask, documents to expect, home preparation steps, and red flags before bringing a rescue or rehomed dog home.",
     label: "Adoption",
-    href: "/adoption",
+    href: "/adoption/dog-adoption-south-africa",
   },
 ] as const;
 
