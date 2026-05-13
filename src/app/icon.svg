@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DogHaven icon">
+  <rect width="64" height="64" rx="16" fill="#fff9ee"/>
+  <path d="M14 32 32 16l18 16v18a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V32Z" fill="#6f8f72"/>
+  <path d="M10 33 32 13l22 20" fill="none" stroke="#3f2b1f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="35" r="4.3" fill="#3f2b1f"/>
+  <circle cx="40" cy="35" r="4.3" fill="#3f2b1f"/>
+  <circle cx="32" cy="28" r="4.6" fill="#d9a441"/>
+  <path d="M24 44c3.8-6 12.2-6 16 0 2.4 3.9-.2 8-4.8 6.1-2.1-.9-4.3-.9-6.4 0-4.6 1.9-7.2-2.2-4.8-6.1Z" fill="#3f2b1f"/>
+</svg>

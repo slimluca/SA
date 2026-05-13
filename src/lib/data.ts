@@ -140,7 +140,7 @@ export const featuredGuides = [
     description:
       "How tick-borne illness can affect dogs, warning signs owners should take seriously, and why prompt veterinary care is important.",
     label: "Dog health",
-    href: "/health",
+    href: "/health/biliary-tick-bite-fever-dogs-south-africa",
   },
   {
     title: "Dog Adoption Checklist",

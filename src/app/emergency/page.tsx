@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { HubPage } from "@/components/HubPage";
 import { getHub } from "@/lib/content";
+import { phase3EmergencyCards } from "@/lib/phase3-guides";
 import { createMetadata } from "@/lib/seo";
 
-const hub = getHub("emergency");
+const baseHub = getHub("emergency");
+const hub = {
+  ...baseHub,
+  cards: [...baseHub.cards, ...phase3EmergencyCards],
+};
 
 export const metadata: Metadata = createMetadata({
   title: hub.seoTitle,

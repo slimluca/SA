@@ -41,7 +41,7 @@ export default function HomePage() {
           owners understand what matters, what to ask a professional, and what to prepare before a
           decision becomes urgent.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <FeatureCard key={category.title} {...category} />
           ))}
@@ -88,7 +88,7 @@ export default function HomePage() {
             questions for dog owners in South Africa without inventing claims or replacing
             professional care.
           </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featuredGuides.map((guide) => (
               <GuideCard key={guide.title} {...guide} />
             ))}

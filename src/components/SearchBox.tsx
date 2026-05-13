@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 export function SearchBox() {
   return (
-    <form action="/" className="rounded-2xl border border-oat bg-white p-3 shadow-soft">
+    <form action="/" className="rounded-2xl border border-oat bg-white/95 p-3 shadow-soft">
       <label htmlFor="site-search" className="mb-2 block text-sm font-black text-cocoa">
         What do you need help with today?
       </label>
