@@ -4,6 +4,7 @@ import { phase3GuidePages } from "@/lib/phase3-guides";
 import { phase4GuidePages } from "@/lib/phase4-guides";
 import { phase5GuidePages } from "@/lib/phase5-guides";
 import { phase6GuidePages } from "@/lib/phase6-guides";
+import { cityHub, phase7GuidePages, provinceHub } from "@/lib/phase7-guides";
 import { absoluteUrl } from "@/lib/site";
 
 const staticRoutes = ["/", "/about", "/contact", "/editorial-policy", "/privacy-policy", "/terms"];
@@ -18,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase4GuidePages.map((guide) => guide.path),
     ...phase5GuidePages.map((guide) => guide.path),
     ...phase6GuidePages.map((guide) => guide.path),
+    provinceHub.path,
+    cityHub.path,
+    ...phase7GuidePages.map((guide) => guide.path),
   ];
 
   return routes.map((route) => ({

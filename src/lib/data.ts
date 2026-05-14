@@ -95,15 +95,15 @@ export const categories = [
 ] as const;
 
 export const provinces = [
-  "Western Cape",
-  "Gauteng",
-  "KwaZulu-Natal",
-  "Eastern Cape",
-  "Free State",
-  "Limpopo",
-  "Mpumalanga",
-  "North West",
-  "Northern Cape",
+  { name: "Western Cape", href: "/province/western-cape" },
+  { name: "Gauteng", href: "/province/gauteng" },
+  { name: "KwaZulu-Natal", href: "/province/kwazulu-natal" },
+  { name: "Eastern Cape", href: "/province/eastern-cape" },
+  { name: "Free State", href: "/province/free-state" },
+  { name: "Limpopo", href: "/province/limpopo" },
+  { name: "Mpumalanga", href: "/province/mpumalanga" },
+  { name: "North West", href: "/province/north-west" },
+  { name: "Northern Cape", href: "/province/northern-cape" },
 ] as const;
 
 export const featuredGuides = [
