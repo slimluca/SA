@@ -9,7 +9,7 @@ export function HubPage({ hub }: { hub: HubContent }) {
   return (
     <>
       <JsonLd data={collectionPageSchema({ title: hub.title, description: hub.description, path: hub.path })} />
-      <JsonLd data={faqSchema(hub.faqs)} />
+      {hub.faqs.length > 0 ? <JsonLd data={faqSchema(hub.faqs)} /> : null}
       <section className="section-shell">
         <Breadcrumbs items={[{ name: hub.title, href: hub.path }]} />
         <p className="section-kicker">{hub.kicker}</p>

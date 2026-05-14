@@ -8,6 +8,7 @@ export const siteConfig = {
 };
 
 export const navigation = [
+  { label: "Start Here", href: "/start-here" },
   { label: "Health", href: "/health" },
   { label: "Emergency", href: "/emergency" },
   { label: "Breeds", href: "/breeds" },
@@ -25,11 +26,15 @@ export const hubNavigation = [
   { label: "Insurance", href: "/insurance" },
   { label: "Costs", href: "/costs" },
   { label: "Dog-Friendly", href: "/dog-friendly" },
+  { label: "Province Guides", href: "/province" },
+  { label: "City Guides", href: "/city" },
 ] as const;
 
 export const companyNavigation = [
+  { label: "Start Here", href: "/start-here" },
   { label: "About", href: "/about" },
   { label: "Editorial Policy", href: "/editorial-policy" },
+  { label: "AdSense Readiness", href: "/adsense-readiness" },
   { label: "Contact", href: "/contact" },
 ] as const;
 

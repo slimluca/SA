@@ -3,10 +3,22 @@ import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
 import { SourceList } from "@/components/SourceList";
+import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
 import type { GuideContent } from "@/lib/content";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
+  const tableOfContents = guide.sections.map((section) => ({
+    id: toHeadingId(section.heading),
+    title: section.heading,
+  }));
+  const needsEducationalNote =
+    guide.isHealthGuide ||
+    guide.hubPath === "/emergency" ||
+    guide.hubPath === "/insurance" ||
+    guide.hubPath === "/costs" ||
+    guide.hubPath === "/food";
+
   return (
     <>
       <JsonLd
@@ -17,7 +29,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           dateModified: guide.updated,
         })}
       />
-      <JsonLd data={faqSchema(guide.faqs)} />
+      {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
       <article className="section-shell">
         <Breadcrumbs
           items={[
@@ -29,6 +41,18 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         <h1 className="section-title">{guide.title}</h1>
         <p className="section-copy">{guide.intro}</p>
         <p className="mt-4 text-sm font-semibold text-bark">Last reviewed: {guide.updated}</p>
+
+        {needsEducationalNote ? (
+          <div className="mt-6 rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
+            <p className="font-black text-cocoa">Educational guide</p>
+            <p className="mt-1">
+              This page is for general South African dog-owner education. It does not replace a
+              veterinarian, qualified behaviour professional, insurer, or other relevant
+              professional. For urgent symptoms or fast-worsening problems, contact a vet
+              immediately.
+            </p>
+          </div>
+        ) : null}
 
         {guide.isHealthGuide ? (
           <div className="mt-8">
@@ -48,10 +72,16 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           </ul>
         </section>
 
+        <TableOfContents items={tableOfContents} />
+
         <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="space-y-8">
             {guide.sections.map((section) => (
-              <section key={section.heading} className="rounded-2xl border border-oat bg-white p-6 shadow-sm">
+              <section
+                key={section.heading}
+                id={toHeadingId(section.heading)}
+                className="scroll-mt-28 rounded-2xl border border-oat bg-white p-6 shadow-sm"
+              >
                 <h2 className="text-2xl font-black leading-tight text-cocoa">{section.heading}</h2>
                 <div className="mt-4 space-y-4">
                   {section.body.map((paragraph) => (

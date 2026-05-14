@@ -95,6 +95,12 @@ export const hubPages: HubContent[] = [
       { title: "Emergency Help", description: "Urgent symptoms and first steps.", href: "/emergency" },
       { title: "Dog Food", description: "Feeding decisions that affect wellbeing.", href: "/food" },
       { title: "Dog Costs", description: "Budgeting for prevention and vet care.", href: "/costs" },
+      { title: "Adoption Safety", description: "Health questions before bringing a dog home.", href: "/adoption" },
+      {
+        title: "When to Take Your Dog to the Vet",
+        description: "A practical symptom-led vet decision guide.",
+        href: "/health/when-to-take-your-dog-to-the-vet-south-africa",
+      },
     ],
     faqs: [
       {
@@ -150,6 +156,11 @@ export const hubPages: HubContent[] = [
       { title: "Dog Health", description: "Prevention and symptom context.", href: "/health" },
       { title: "Insurance", description: "Planning for emergency claims.", href: "/insurance" },
       { title: "Dog Costs", description: "Emergency fund planning.", href: "/costs" },
+      {
+        title: "When to Take Your Dog to the Vet",
+        description: "Know which symptoms should not wait.",
+        href: "/health/when-to-take-your-dog-to-the-vet-south-africa",
+      },
     ],
     faqs: [
       {
@@ -203,6 +214,8 @@ export const hubPages: HubContent[] = [
       { title: "Adoption Safety", description: "Questions before bringing a dog home.", href: "/adoption" },
       { title: "Grooming", description: "Coat care and shedding planning.", href: "/grooming" },
       { title: "Dog Costs", description: "Budget by size and care needs.", href: "/costs" },
+      { title: "Training", description: "Plan for energy, manners, and public behaviour.", href: "/training" },
+      { title: "Insurance", description: "Understand cover before choosing a higher-risk breed.", href: "/insurance" },
     ],
     faqs: [
       {
@@ -256,6 +269,8 @@ export const hubPages: HubContent[] = [
       { title: "Breeds", description: "Match the dog to your home.", href: "/breeds" },
       { title: "Dog Costs", description: "Budget before you adopt.", href: "/costs" },
       { title: "Training", description: "First-week routines and behaviour support.", href: "/training" },
+      { title: "Dog Food", description: "Plan feeding before the dog arrives.", href: "/food" },
+      { title: "Dog Health", description: "Vaccines, vet checks, and prevention.", href: "/health" },
     ],
     faqs: [
       {
@@ -309,6 +324,8 @@ export const hubPages: HubContent[] = [
       { title: "Dog Health", description: "Body condition and symptoms.", href: "/health" },
       { title: "Dog Costs", description: "Monthly food budgeting.", href: "/costs" },
       { title: "Breeds", description: "Size and activity influence feeding.", href: "/breeds" },
+      { title: "Toxic Foods", description: "Know which foods can be dangerous.", href: "/health/toxic-foods-for-dogs-south-africa" },
+      { title: "Vet Care", description: "When diet symptoms need professional advice.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
     ],
     faqs: [
       {
@@ -362,6 +379,7 @@ export const hubPages: HubContent[] = [
       { title: "Adoption Safety", description: "Set up before the dog arrives.", href: "/adoption" },
       { title: "Dog-Friendly Places", description: "Public manners and outing planning.", href: "/dog-friendly" },
       { title: "Breeds", description: "Energy and temperament planning.", href: "/breeds" },
+      { title: "Behaviour Problems", description: "Understand barking, fear, and reactivity.", href: "/training/dog-behaviour-problems-south-africa" },
     ],
     faqs: [
       {
@@ -415,6 +433,8 @@ export const hubPages: HubContent[] = [
       { title: "Dog Health", description: "Skin, ears, ticks, and warning signs.", href: "/health" },
       { title: "Breeds", description: "Grooming needs before choosing a dog.", href: "/breeds" },
       { title: "Dog Costs", description: "Budget for grooming by coat type.", href: "/costs" },
+      { title: "Ticks and Fleas", description: "Parasite checks during grooming.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+      { title: "Dog Shedding", description: "Manage shedding and skin warning signs.", href: "/grooming/dog-shedding-south-africa" },
     ],
     faqs: [
       {
@@ -521,6 +541,8 @@ export const hubPages: HubContent[] = [
       { title: "Food", description: "Monthly feeding choices.", href: "/food" },
       { title: "Insurance", description: "Policy planning and claims.", href: "/insurance" },
       { title: "Adoption", description: "Prepare before bringing a dog home.", href: "/adoption" },
+      { title: "Vet Costs", description: "Understand routine and emergency vet bills.", href: "/costs/vet-costs-for-dogs-south-africa" },
+      { title: "Puppy First-Year Cost", description: "Plan the expensive first year.", href: "/costs/puppy-first-year-cost-south-africa" },
     ],
     faqs: [
       {
@@ -574,6 +596,9 @@ export const hubPages: HubContent[] = [
       { title: "Training", description: "Recall, lead manners, and public behaviour.", href: "/training" },
       { title: "Emergency Help", description: "Heat stress and urgent symptoms.", href: "/emergency" },
       { title: "Breeds", description: "Match outings to energy and heat tolerance.", href: "/breeds" },
+      { title: "City Guides", description: "Local rules and dog-owner context by city.", href: "/city" },
+      { title: "Province Guides", description: "Climate, travel, and local-risk context.", href: "/province" },
+      { title: "Ticks and Fleas", description: "Outdoor parasite prevention.", href: "/health/ticks-and-fleas-dogs-south-africa" },
     ],
     faqs: [
       {

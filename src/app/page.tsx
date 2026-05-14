@@ -22,7 +22,7 @@ export const metadata: Metadata = createMetadata({
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={faqSchema(homeFaqs)} />
+      {homeFaqs.length > 0 ? <JsonLd data={faqSchema(homeFaqs)} /> : null}
       <Hero
         title="South Africa's practical dog care guide"
         intro="DogHaven helps South African dog owners make calmer, better-informed decisions about health, emergency guidance, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places."

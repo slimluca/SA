@@ -7,7 +7,16 @@ import { phase6GuidePages } from "@/lib/phase6-guides";
 import { cityHub, phase7GuidePages, provinceHub } from "@/lib/phase7-guides";
 import { absoluteUrl } from "@/lib/site";
 
-const staticRoutes = ["/", "/about", "/contact", "/editorial-policy", "/privacy-policy", "/terms"];
+const staticRoutes = [
+  "/",
+  "/start-here",
+  "/adsense-readiness",
+  "/about",
+  "/contact",
+  "/editorial-policy",
+  "/privacy-policy",
+  "/terms",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
