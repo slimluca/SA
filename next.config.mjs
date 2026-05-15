@@ -6,6 +6,10 @@ const redirect = (source, destination) => ({
 });
 
 const legacyRedirects = [
+  // Retired public trust pages
+  ["/adsense-readiness", "/editorial-policy"],
+  ["/adsense-readiness/", "/editorial-policy"],
+
   // General legacy WordPress routes
   ["/dog-advice", "/start-here"],
   ["/dog-advice/", "/start-here"],

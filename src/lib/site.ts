@@ -34,7 +34,6 @@ export const companyNavigation = [
   { label: "Start Here", href: "/start-here" },
   { label: "About", href: "/about" },
   { label: "Editorial Policy", href: "/editorial-policy" },
-  { label: "AdSense Readiness", href: "/adsense-readiness" },
   { label: "Contact", href: "/contact" },
 ] as const;
 

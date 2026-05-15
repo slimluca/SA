@@ -10,7 +10,6 @@ import { absoluteUrl } from "@/lib/site";
 const staticRoutes = [
   "/",
   "/start-here",
-  "/adsense-readiness",
   "/about",
   "/contact",
   "/editorial-policy",
