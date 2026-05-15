@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { getPhase3Guide, getPhase3GuidesByHub } from "@/lib/phase3-guides";
+import { getPhase10Guide, getPhase10GuidesByHub } from "@/lib/phase10-guides";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -11,14 +12,14 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getPhase3GuidesByHub("/health").map((guide) => ({
+  return [...getPhase3GuidesByHub("/health"), ...getPhase10GuidesByHub("/health")].map((guide) => ({
     slug: guide.slug,
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase3Guide(slug);
+  const guide = getPhase3Guide(slug) ?? getPhase10Guide(slug);
 
   if (!guide || guide.hubPath !== "/health") {
     return {};
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HealthGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase3Guide(slug);
+  const guide = getPhase3Guide(slug) ?? getPhase10Guide(slug);
 
   if (!guide || guide.hubPath !== "/health") {
     notFound();

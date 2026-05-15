@@ -6,6 +6,7 @@ import { phase5GuidePages } from "@/lib/phase5-guides";
 import { phase6GuidePages } from "@/lib/phase6-guides";
 import { cityHub, phase7GuidePages, provinceHub } from "@/lib/phase7-guides";
 import { phase9GuidePages } from "@/lib/phase9-guides";
+import { phase10GuidePages } from "@/lib/phase10-guides";
 import { absoluteUrl } from "@/lib/site";
 
 const staticRoutes = [
@@ -32,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     cityHub.path,
     ...phase7GuidePages.map((guide) => guide.path),
     ...phase9GuidePages.map((guide) => guide.path),
+    ...phase10GuidePages.map((guide) => guide.path),
   ];
 
   return routes.map((route) => ({

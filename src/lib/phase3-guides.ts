@@ -1047,6 +1047,10 @@ export const phase3GuidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Dog Vomiting", description: "Repeated vomiting and same-day vet signs.", href: "/health/dog-vomiting-south-africa" },
+      { title: "Dog Diarrhoea", description: "Bloody stool, puppy risk, and dehydration signs.", href: "/health/dog-diarrhea-south-africa" },
+      { title: "Dog Not Eating", description: "Appetite loss and urgent warning signs.", href: "/health/dog-not-eating-south-africa" },
+      { title: "Dog Coughing", description: "Breathing and cough warning signs.", href: "/health/dog-coughing-south-africa" },
       { title: "Dog Poisoning", description: "Toxin emergencies.", href: "/emergency/dog-poisoning-south-africa" },
       { title: "Heatstroke", description: "Hot weather emergency guide.", href: "/emergency/heatstroke-in-dogs-south-africa" },
       { title: "Biliary Tick Bite Fever", description: "Tick illness warning signs.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
