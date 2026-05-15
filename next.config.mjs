@@ -99,8 +99,8 @@ const legacyRedirects = [
   ["/pet-friendly-stays-south-africa/", "/dog-friendly/pet-friendly-accommodation-south-africa"],
   ["/dog-friendly-accommodation-south-africa", "/dog-friendly/pet-friendly-accommodation-south-africa"],
   ["/dog-friendly-accommodation-south-africa/", "/dog-friendly/pet-friendly-accommodation-south-africa"],
-  ["/south-african-pet-laws-bylaws-guide", "/start-here"],
-  ["/south-african-pet-laws-bylaws-guide/", "/start-here"],
+  ["/south-african-pet-laws-bylaws-guide", "/laws/dog-laws-south-africa"],
+  ["/south-african-pet-laws-bylaws-guide/", "/laws/dog-laws-south-africa"],
 ];
 
 const nextConfig = {

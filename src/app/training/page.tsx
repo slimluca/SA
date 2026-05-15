@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import { HubPage } from "@/components/HubPage";
 import { getHub } from "@/lib/content";
 import { phase6TrainingCards } from "@/lib/phase6-guides";
+import { phase11TrainingCards } from "@/lib/phase11-guides";
+import { phase12TrainingCards } from "@/lib/phase12-guides";
+import { phase13TrainingCards } from "@/lib/phase13-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("training");
 const hub = {
   ...baseHub,
-  cards: [...baseHub.cards, ...phase6TrainingCards],
+  cards: [
+    ...baseHub.cards,
+    ...phase6TrainingCards,
+    ...phase11TrainingCards,
+    ...phase12TrainingCards,
+    ...phase13TrainingCards,
+  ],
 };
 
 export const metadata: Metadata = createMetadata({

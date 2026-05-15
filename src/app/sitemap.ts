@@ -7,7 +7,13 @@ import { phase6GuidePages } from "@/lib/phase6-guides";
 import { cityHub, phase7GuidePages, provinceHub } from "@/lib/phase7-guides";
 import { phase9GuidePages } from "@/lib/phase9-guides";
 import { phase10GuidePages } from "@/lib/phase10-guides";
+import { phase11GuidePages, puppyHub } from "@/lib/phase11-guides";
+import { phase12GuidePages } from "@/lib/phase12-guides";
+import { lawsHub, phase13GuidePages } from "@/lib/phase13-guides";
+import { phase14GuidePages } from "@/lib/phase14-guides";
+import { phase15GuidePages } from "@/lib/phase15-guides";
 import { absoluteUrl } from "@/lib/site";
+import { tools, toolsHub } from "@/lib/tools-data";
 
 const staticRoutes = [
   "/",
@@ -34,6 +40,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase7GuidePages.map((guide) => guide.path),
     ...phase9GuidePages.map((guide) => guide.path),
     ...phase10GuidePages.map((guide) => guide.path),
+    puppyHub.path,
+    ...phase11GuidePages.map((guide) => guide.path),
+    ...phase12GuidePages.map((guide) => guide.path),
+    lawsHub.path,
+    ...phase13GuidePages.map((guide) => guide.path),
+    ...phase14GuidePages.map((guide) => guide.path),
+    ...phase15GuidePages.map((guide) => guide.path),
+    toolsHub.path,
+    ...tools.map((tool) => tool.path),
   ];
 
   return routes.map((route) => ({

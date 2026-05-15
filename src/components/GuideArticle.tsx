@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
+import { DogCostEstimator } from "@/components/DogCostEstimator";
 import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
 import { SourceList } from "@/components/SourceList";
@@ -88,6 +89,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             ))}
           </ul>
         </section>
+
+        {guide.slug === "dog-cost-calculator-south-africa" ? <DogCostEstimator /> : null}
 
         <TableOfContents items={tableOfContents} />
 

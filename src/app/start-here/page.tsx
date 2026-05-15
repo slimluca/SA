@@ -10,10 +10,10 @@ const sections = [
     title: "New puppy owners",
     description: "Start with puppy safety, food, vaccines, training, and first-year costs.",
     links: [
-      { title: "Adopting a Puppy", description: "Questions before bringing a puppy home.", href: "/adoption/adopting-a-puppy-south-africa" },
-      { title: "Puppy Training", description: "Toilet habits, biting, settling, and socialisation.", href: "/training/puppy-training-south-africa" },
-      { title: "Puppy Food", description: "Growth feeding and safe transitions.", href: "/food/puppy-food-south-africa" },
-      { title: "Puppy First-Year Cost", description: "Budget for the expensive first year.", href: "/costs/puppy-first-year-cost-south-africa" },
+      { title: "Puppy Care Hub", description: "First-year puppy guidance for South African homes.", href: "/puppy" },
+      { title: "New Puppy Checklist", description: "Records, supplies, safety, and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Puppy Vaccinations", description: "Plan vaccines, rabies, and safe outings with your vet.", href: "/puppy/puppy-vaccination-schedule-south-africa" },
+      { title: "Puppy Potty Training", description: "Humane toilet routines for homes, flats, and townhouses.", href: "/puppy/puppy-potty-training-south-africa" },
     ],
   },
   {
@@ -50,10 +50,20 @@ const sections = [
     title: "Food and costs",
     description: "Choose practical feeding plans and budget before expenses become stressful.",
     links: [
-      { title: "Dog Food South Africa", description: "Life stage, size, budget, and vet diets.", href: "/food/dog-food-south-africa" },
-      { title: "Dog Food Labels", description: "Read food labels without marketing fog.", href: "/food/how-to-read-dog-food-labels-south-africa" },
-      { title: "Monthly Dog Costs", description: "Build a realistic South African budget.", href: "/costs/monthly-cost-of-owning-a-dog-south-africa" },
-      { title: "Pet Insurance", description: "Understand cover, excesses, and exclusions.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+      { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/how-to-choose-dog-food-south-africa" },
+      { title: "Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/costs/dog-cost-calculator-south-africa" },
+      { title: "Compare Dog Insurance", description: "Understand premiums, excesses, limits, and exclusions.", href: "/insurance/compare-dog-insurance-south-africa" },
+    ],
+  },
+  {
+    title: "Free tools",
+    description: "Use simple calculators, checklists, quizzes, name ideas, and food safety lookups without logins or personal data.",
+    links: [
+      { title: "Tools Hub", description: "All free DogHaven tools in one place.", href: "/tools" },
+      { title: "Dog Age Calculator", description: "Estimate broad life stage reminders.", href: "/tools/dog-age-calculator" },
+      { title: "Breed Match Quiz", description: "Explore broad responsible breed categories.", href: "/tools/dog-breed-match-quiz" },
+      { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
     ],
   },
   {
@@ -74,6 +84,16 @@ const sections = [
       { title: "Dog Parks", description: "Etiquette, safety, and when to leave.", href: "/dog-friendly/dog-parks-south-africa" },
       { title: "Travelling With Dogs", description: "Road trips, heat, records, and stops.", href: "/dog-friendly/travelling-with-dogs-south-africa" },
       { title: "Dog-Friendly Beaches", description: "Beach rules, heat, tides, and salt water.", href: "/dog-friendly/dog-friendly-beaches-south-africa" },
+    ],
+  },
+  {
+    title: "Rules and responsible ownership",
+    description: "Check local dog rules, rabies responsibilities, barking complaints, rentals, complexes, leads, and beach access.",
+    links: [
+      { title: "Dog Laws Hub", description: "Plain-English rule checks for South African dog owners.", href: "/laws" },
+      { title: "Dog Laws South Africa", description: "What to check before relying on any dog rule.", href: "/laws/dog-laws-south-africa" },
+      { title: "Rabies Vaccination Law", description: "Records, bites, travel, and vet questions.", href: "/laws/rabies-vaccination-law-south-africa" },
+      { title: "Complexes and Rentals", description: "Written permission, conduct rules, and neighbour issues.", href: "/laws/dogs-in-complexes-and-sectional-title-south-africa" },
     ],
   },
   {
@@ -109,7 +129,7 @@ const faqs = [
 export const metadata: Metadata = createMetadata({
   title: "Start Here | DogHaven South Africa",
   description:
-    "A simple starting page for South African dog owners, linking to DogHaven's most useful puppy, adoption, emergency, health, food, cost, training, grooming, lifestyle, province, and city guides.",
+    "A simple starting page for South African dog owners, linking to DogHaven's most useful puppy, adoption, emergency, health, food, tools, cost, training, grooming, lifestyle, rules, province, and city guides.",
   path: "/start-here",
 });
 

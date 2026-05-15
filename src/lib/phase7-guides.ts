@@ -779,6 +779,7 @@ export const provinceHub: HubContent = {
     { title: "City Guides", description: "Practical dog owner notes for major South African cities.", href: "/city" },
     { title: "Dog-Friendly Places", description: "How to verify dog-friendly rules before outings.", href: "/dog-friendly" },
     { title: "Emergency Help", description: "Prepare before urgent symptoms happen.", href: "/emergency" },
+    { title: "Dog Laws", description: "Check rule sources before outings, rentals, complexes, and travel.", href: "/laws" },
   ],
   faqs: [
     {
@@ -814,6 +815,7 @@ export const cityHub: HubContent = {
     { title: "Province Guides", description: "Wider provincial dog-care context.", href: "/province" },
     { title: "Training", description: "Prepare dogs for public spaces and city routines.", href: "/training" },
     { title: "Grooming", description: "Coat, skin, tick, paw, and beach-care planning.", href: "/grooming" },
+    { title: "Dog Laws", description: "Leash, barking, rental, complex, and public-space rule checks.", href: "/laws" },
   ],
   faqs: [
     {

@@ -721,6 +721,7 @@ export const guidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Rabies Vaccination Law", description: "Records, legal context, and rule checks.", href: "/laws/rabies-vaccination-law-south-africa" },
       { title: "Vaccination Schedule", description: "Core vaccine planning for puppies and adult dogs.", href: "/health/vaccination-schedule-south-africa" },
       { title: "Emergency Help", description: "Urgent symptoms and vet-call preparation.", href: "/emergency" },
       { title: "Adoption Safety", description: "Check vaccination records before rehoming.", href: "/adoption" },
@@ -940,6 +941,7 @@ export const guidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Rabies Vaccination Law", description: "Rabies records, bite exposure, and rule checks.", href: "/laws/rabies-vaccination-law-south-africa" },
       { title: "Rabies in South Africa", description: "Vaccination and bite response.", href: "/emergency/rabies-south-africa" },
       { title: "Parvovirus", description: "Puppy red flags and prevention.", href: "/emergency/parvovirus-in-dogs-south-africa" },
       { title: "Dog Costs", description: "Budget for routine care.", href: "/costs/cost-of-owning-a-dog-south-africa" },

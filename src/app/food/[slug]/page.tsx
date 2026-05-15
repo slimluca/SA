@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { getPhase5Guide, getPhase5GuidesByHub } from "@/lib/phase5-guides";
 import { getPhase9Guide, getPhase9GuidesByHub } from "@/lib/phase9-guides";
+import { getPhase15Guide, getPhase15GuidesByHub } from "@/lib/phase15-guides";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -12,14 +13,14 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return [...getPhase5GuidesByHub("/food"), ...getPhase9GuidesByHub("/food")].map((guide) => ({
+  return [...getPhase5GuidesByHub("/food"), ...getPhase9GuidesByHub("/food"), ...getPhase15GuidesByHub("/food")].map((guide) => ({
     slug: guide.slug,
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase5Guide(slug) ?? getPhase9Guide(slug);
+  const guide = getPhase5Guide(slug) ?? getPhase9Guide(slug) ?? getPhase15Guide(slug);
 
   if (!guide || guide.hubPath !== "/food") {
     return {};
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function FoodGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase5Guide(slug) ?? getPhase9Guide(slug);
+  const guide = getPhase5Guide(slug) ?? getPhase9Guide(slug) ?? getPhase15Guide(slug);
 
   if (!guide || guide.hubPath !== "/food") {
     notFound();
