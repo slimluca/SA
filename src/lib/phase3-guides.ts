@@ -164,6 +164,9 @@ export const phase3GuidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Can Dogs Eat Chocolate?", description: "Chocolate exposure and urgent vet guidance.", href: "/food/can-dogs-eat-chocolate" },
+      { title: "Can Dogs Eat Grapes?", description: "Grape and raisin risk guidance.", href: "/food/can-dogs-eat-grapes" },
+      { title: "Foods Dogs Should Never Eat", description: "A quick South African food safety list.", href: "/food/foods-dogs-should-never-eat-south-africa" },
       { title: "Toxic Foods", description: "Foods that can harm dogs.", href: "/health/toxic-foods-for-dogs-south-africa" },
       { title: "Toxic Plants", description: "Garden and houseplant risks.", href: "/health/toxic-plants-for-dogs-south-africa" },
       { title: "When to Take Your Dog to the Vet", description: "Urgent symptom decision guide.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
@@ -779,6 +782,11 @@ export const phase3GuidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Can Dogs Eat Chocolate?", description: "Chocolate safety and emergency steps.", href: "/food/can-dogs-eat-chocolate" },
+      { title: "Can Dogs Eat Grapes?", description: "Grape, raisin, and fruitcake safety.", href: "/food/can-dogs-eat-grapes" },
+      { title: "Can Dogs Eat Onions?", description: "Onion and leftover food safety.", href: "/food/can-dogs-eat-onions" },
+      { title: "Can Dogs Eat Peanut Butter?", description: "Xylitol and birch sugar warning signs.", href: "/food/can-dogs-eat-peanut-butter" },
+      { title: "Foods Dogs Should Never Eat", description: "Quick South African food danger list.", href: "/food/foods-dogs-should-never-eat-south-africa" },
       { title: "Dog Poisoning", description: "Emergency toxin steps.", href: "/emergency/dog-poisoning-south-africa" },
       { title: "Dog Food", description: "Feeding choices and labels.", href: "/food" },
       { title: "When to Take Your Dog to the Vet", description: "Urgent signs explained.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },

@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { HubPage } from "@/components/HubPage";
 import { getHub } from "@/lib/content";
 import { phase5FoodCards } from "@/lib/phase5-guides";
+import { phase9FoodCards } from "@/lib/phase9-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("food");
 const hub = {
   ...baseHub,
-  cards: [...baseHub.cards, ...phase5FoodCards],
+  cards: [...baseHub.cards, ...phase5FoodCards, ...phase9FoodCards],
 };
 
 export const metadata: Metadata = createMetadata({

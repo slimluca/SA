@@ -8,6 +8,12 @@ import type { GuideContent } from "@/lib/content";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
+  const safetyStyles = {
+    "Safe in small amounts": "border-sage/35 bg-sage/10 text-moss",
+    Risky: "border-honey/55 bg-honey/15 text-cocoa",
+    Dangerous: "border-orange-200 bg-orange-50 text-orange-900",
+    Emergency: "border-red-200 bg-red-50 text-red-900",
+  } as const;
   const tableOfContents = guide.sections.map((section) => ({
     id: toHeadingId(section.heading),
     title: section.heading,
@@ -58,6 +64,17 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           <div className="mt-8">
             <EmergencyNotice />
           </div>
+        ) : null}
+
+        {guide.safetyRating ? (
+          <section
+            className={`mt-8 rounded-2xl border p-5 shadow-sm ${safetyStyles[guide.safetyRating.label]}`}
+            aria-label="Food safety rating"
+          >
+            <p className="text-xs font-black uppercase tracking-wide">Food safety rating</p>
+            <h2 className="mt-2 text-2xl font-black leading-tight">{guide.safetyRating.label}</h2>
+            <p className="mt-2 text-sm font-semibold leading-6">{guide.safetyRating.summary}</p>
+          </section>
         ) : null}
 
         <section className="mt-8 rounded-2xl border border-oat bg-white p-6 shadow-sm">

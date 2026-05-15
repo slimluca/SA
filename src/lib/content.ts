@@ -51,6 +51,10 @@ export type GuideContent = {
   intro: string;
   updated: string;
   isHealthGuide?: boolean;
+  safetyRating?: {
+    label: "Safe in small amounts" | "Risky" | "Dangerous" | "Emergency";
+    summary: string;
+  };
   quickFacts: string[];
   sections: ArticleSection[];
   faqs: FAQ[];
