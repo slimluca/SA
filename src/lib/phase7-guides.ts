@@ -776,6 +776,7 @@ export const provinceHub: HubContent = {
     "Dog care changes by province: heat, rain, ticks, snakes, beaches, rural distance, city density, rental rules, and emergency access all shape practical ownership. These guides are not directories. They help you know what to check locally.",
   cards: provinceCards,
   related: [
+    { title: "Local Service Guides", description: "City guides for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local" },
     { title: "City Guides", description: "Practical dog owner notes for major South African cities.", href: "/city" },
     { title: "Dog-Friendly Places", description: "How to verify dog-friendly rules before outings.", href: "/dog-friendly" },
     { title: "Emergency Help", description: "Prepare before urgent symptoms happen.", href: "/emergency" },
@@ -812,6 +813,7 @@ export const cityHub: HubContent = {
     "City dog ownership is shaped by traffic, housing, parks, beaches, public rules, vet access, heat, ticks, and daily routines. These city guides focus on how to choose and what to check, without inventing local listings.",
   cards: cityCards,
   related: [
+    { title: "Local Service Guides", description: "Grooming, training, emergency vet, and dog-friendly service-intent guides by city.", href: "/local" },
     { title: "Province Guides", description: "Wider provincial dog-care context.", href: "/province" },
     { title: "Training", description: "Prepare dogs for public spaces and city routines.", href: "/training" },
     { title: "Grooming", description: "Coat, skin, tick, paw, and beach-care planning.", href: "/grooming" },

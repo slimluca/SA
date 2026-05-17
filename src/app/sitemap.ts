@@ -12,6 +12,7 @@ import { phase12GuidePages } from "@/lib/phase12-guides";
 import { lawsHub, phase13GuidePages } from "@/lib/phase13-guides";
 import { phase14GuidePages } from "@/lib/phase14-guides";
 import { phase15GuidePages } from "@/lib/phase15-guides";
+import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 
@@ -33,6 +34,7 @@ const highPriorityRoutes = new Set([
   "/health",
   "/puppy",
   "/breeds",
+  "/local",
 ]);
 
 const moneyAndToolRoutes = new Set([
@@ -87,6 +89,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase15GuidePages.map((guide) => guide.path),
     toolsHub.path,
     ...tools.map((tool) => tool.path),
+    localHub.path,
+    ...localCityHubs.map((hub) => hub.path),
+    ...phase17LocalGuidePages.map((guide) => guide.path),
   ];
 
   return routes.map((route) => ({

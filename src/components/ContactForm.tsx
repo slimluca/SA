@@ -156,7 +156,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="rounded-3xl border border-oat bg-white p-5 shadow-soft sm:p-7">
+    <section className="rounded-3xl border border-oat bg-white px-5 py-6 shadow-soft sm:px-8 sm:py-8 lg:px-10 lg:py-9">
       <Script
         src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
         strategy="afterInteractive"
@@ -209,7 +209,7 @@ export function ContactForm() {
         </div>
       ) : null}
 
-      <form className="mt-6 grid gap-5" onSubmit={handleSubmit}>
+      <form className="mt-8 grid gap-6" onSubmit={handleSubmit}>
         <input
           aria-hidden="true"
           autoComplete="off"
@@ -220,21 +220,21 @@ export function ContactForm() {
           onChange={(event) => updateField("website", event.target.value)}
         />
 
-        <div className="grid gap-5 md:grid-cols-2">
-          <label className="grid gap-2 text-sm font-bold text-cocoa">
+        <div className="grid gap-6 md:grid-cols-2">
+          <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Name
             <input
-              className="rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={80}
               name="name"
               value={form.name}
               onChange={(event) => updateField("name", event.target.value)}
             />
           </label>
-          <label className="grid gap-2 text-sm font-bold text-cocoa">
+          <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Email address
             <input
-              className="rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={120}
               name="email"
               type="email"
@@ -244,11 +244,11 @@ export function ContactForm() {
           </label>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2">
-          <label className="grid gap-2 text-sm font-bold text-cocoa">
+        <div className="grid gap-6 md:grid-cols-2">
+          <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Message type
             <select
-              className="rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               name="messageType"
               value={form.messageType}
               onChange={(event) => updateField("messageType", event.target.value)}
@@ -260,10 +260,10 @@ export function ContactForm() {
               ))}
             </select>
           </label>
-          <label className="grid gap-2 text-sm font-bold text-cocoa">
+          <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Subject
             <input
-              className="rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={140}
               name="subject"
               value={form.subject}
@@ -272,10 +272,10 @@ export function ContactForm() {
           </label>
         </div>
 
-        <label className="grid gap-2 text-sm font-bold text-cocoa">
+        <label className="grid gap-2.5 text-sm font-bold text-cocoa">
           Message
           <textarea
-            className="min-h-[190px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+            className="min-h-[170px] rounded-xl border border-oat bg-cream p-4 leading-7 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
             maxLength={4000}
             name="message"
             value={form.message}
@@ -284,7 +284,7 @@ export function ContactForm() {
           <span className="text-xs font-semibold text-bark/70">{form.message.length}/4000 characters</span>
         </label>
 
-        <label className="flex gap-3 rounded-2xl border border-oat bg-cream p-4 text-sm font-semibold leading-6 text-bark">
+        <label className="flex gap-3 rounded-2xl border border-oat bg-cream p-5 text-sm font-semibold leading-6 text-bark">
           <input
             className="mt-1 h-4 w-4 flex-none accent-sage"
             checked={form.consent}
@@ -297,14 +297,14 @@ export function ContactForm() {
           </span>
         </label>
 
-        <div className="rounded-2xl border border-oat bg-cream p-4">
+        <div className="rounded-2xl border border-oat bg-cream p-5">
           {siteKey ? (
             <div ref={captchaRef} />
           ) : (
             <p className="text-sm font-semibold leading-6 text-bark">
-              CAPTCHA is not configured in this environment. Add
+              CAPTCHA is not configured in this environment. Add{" "}
               <code className="mx-1 rounded bg-white px-1.5 py-0.5 text-cocoa">NEXT_PUBLIC_TURNSTILE_SITE_KEY</code>
-              to enable Cloudflare Turnstile.
+              {" "}to enable Cloudflare Turnstile.
             </p>
           )}
         </div>
@@ -317,7 +317,7 @@ export function ContactForm() {
             </a>
           </p>
           <button
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-cocoa px-5 py-3 text-sm font-black text-cream shadow-sm transition hover:bg-moss disabled:cursor-not-allowed disabled:opacity-65"
+            className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-cocoa px-6 py-3 text-sm font-black text-cream shadow-sm transition hover:bg-moss disabled:cursor-not-allowed disabled:opacity-65"
             disabled={status === "loading"}
             type="submit"
           >

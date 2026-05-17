@@ -30,6 +30,7 @@ export const hubNavigation = [
   { label: "Dog-Friendly", href: "/dog-friendly" },
   { label: "Laws", href: "/laws" },
   { label: "Tools", href: "/tools" },
+  { label: "Local Guides", href: "/local" },
   { label: "Province Guides", href: "/province" },
   { label: "City Guides", href: "/city" },
 ] as const;

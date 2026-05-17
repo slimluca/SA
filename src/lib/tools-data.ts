@@ -343,6 +343,7 @@ export const toolsHub = {
     { title: "Dog Food", description: "Feeding and food safety guides.", href: "/food" },
     { title: "Dog Costs", description: "Budgeting and insurance planning.", href: "/costs" },
     { title: "Puppy", description: "First-year puppy care.", href: "/puppy" },
+    { title: "Local Guides", description: "City guides for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local" },
   ],
   faqs: [
     {
