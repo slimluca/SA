@@ -24,10 +24,10 @@ export default function Image() {
           fontFamily: "Arial, sans-serif",
         }}
       >
-        <div style={{ maxWidth: "720px" }}>
+        <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
           <div
             style={{
-              display: "inline-flex",
+              display: "flex",
               borderRadius: "999px",
               background: "#d9a441",
               color: "#3f2b1f",
@@ -50,15 +50,33 @@ export default function Image() {
           style={{
             width: 260,
             height: 260,
-            borderRadius: 52,
-            background: "#6f8f72",
+            borderRadius: 130,
+            border: "10px solid #6f8f72",
+            background: "#fff9ee",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            overflow: "hidden",
             boxShadow: "0 24px 60px rgba(63,43,31,0.18)",
           }}
         >
-          <div style={{ fontSize: 150, color: "#fff9ee" }}>DH</div>
+          <div
+            style={{
+              display: "flex",
+              width: 178,
+              height: 178,
+              borderRadius: 89,
+              alignItems: "center",
+              justifyContent: "center",
+              background: "#6f8f72",
+              color: "#fff9ee",
+              fontSize: 86,
+              fontWeight: 900,
+              lineHeight: 1,
+            }}
+          >
+            DH
+          </div>
         </div>
       </div>
     ),

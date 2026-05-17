@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { PawPrint } from "lucide-react";
 import { navigation } from "@/lib/site";
 
 export function Header() {
@@ -7,8 +7,15 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-oat/80 bg-cream/92 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 text-cocoa" aria-label="DogHaven home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-sage text-cream shadow-soft">
-            <PawPrint className="h-5 w-5" aria-hidden="true" />
+          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-sage bg-cream shadow-soft">
+            <Image
+              src="/brand/doghaven-dog-logo.png"
+              alt=""
+              width={44}
+              height={44}
+              className="h-full w-full object-cover"
+              priority
+            />
           </span>
           <span className="leading-tight">
             <span className="block text-lg font-extrabold tracking-normal">DogHaven</span>

@@ -35,6 +35,56 @@ export const hubNavigation = [
   { label: "City Guides", href: "/city" },
 ] as const;
 
+export const footerNavigationSections = [
+  {
+    title: "Site",
+    links: [
+      { label: "Puppy", href: "/puppy" },
+      { label: "Health", href: "/health" },
+      { label: "Emergency", href: "/emergency" },
+      { label: "Breeds", href: "/breeds" },
+      { label: "Adoption", href: "/adoption" },
+      { label: "Food", href: "/food" },
+    ],
+  },
+  {
+    title: "Guides",
+    links: [
+      { label: "Training", href: "/training" },
+      { label: "Grooming", href: "/grooming" },
+      { label: "Insurance", href: "/insurance" },
+      { label: "Costs", href: "/costs" },
+      { label: "Dog-Friendly", href: "/dog-friendly" },
+      { label: "Laws", href: "/laws" },
+      { label: "Tools", href: "/tools" },
+    ],
+  },
+  {
+    title: "Local",
+    links: [
+      { label: "Local Guides", href: "/local" },
+      { label: "Province Guides", href: "/province" },
+      { label: "City Guides", href: "/city" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "Start Here", href: "/start-here" },
+      { label: "About", href: "/about" },
+      { label: "Editorial Policy", href: "/editorial-policy" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms", href: "/terms" },
+    ],
+  },
+] as const;
+
 export const companyNavigation = [
   { label: "Start Here", href: "/start-here" },
   { label: "About", href: "/about" },

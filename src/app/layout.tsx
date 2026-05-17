@@ -12,7 +12,8 @@ export const metadata: Metadata = {
       "DogHaven helps South African dog owners with practical guidance on health, emergencies, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places.",
   }),
   icons: {
-    icon: "/icon.svg",
+    icon: "/icon.png",
+    apple: "/brand/doghaven-dog-logo.png",
   },
 };
 
