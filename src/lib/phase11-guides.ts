@@ -93,9 +93,9 @@ const guides: PuppyGuide[] = [
   {
     slug: "puppy-care-south-africa",
     title: "Puppy Care in South Africa: First-Year Guide",
-    seoTitle: "Puppy Care South Africa | Practical First-Year Guide",
+    seoTitle: "Puppy Care South Africa | First-Year Checklist and Guide",
     description:
-      "A practical South African puppy care guide covering vaccines, food, toilet training, biting, socialisation, costs, safety, and first-year vet planning.",
+      "South African puppy care guide for vaccines, food, toilet training, biting, socialisation, costs, safety and first-year vet planning.",
     summary:
       "Puppy care is a first-year routine, not one shopping trip. Start with a vet visit, vaccination plan, safe feeding, toilet training, parasite prevention, and calm socialisation that matches your puppy's vaccine status.",
     context:

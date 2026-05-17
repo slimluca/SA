@@ -35,9 +35,9 @@ export const tools: ToolContent[] = [
     slug: "dog-feeding-calculator",
     path: "/tools/dog-feeding-calculator",
     title: "Dog Feeding Calculator",
-    seoTitle: "Dog Feeding Calculator South Africa | DogHaven",
+    seoTitle: "Dog Feeding Calculator South Africa | Daily Food Estimate",
     description:
-      "A free South African dog feeding calculator for general daily feeding estimates by weight, age stage, activity, body condition, and food type.",
+      "Free South African dog feeding calculator for daily food estimates by weight, age stage, activity, body condition and food type.",
     intro:
       "Estimate a general daily feeding starting point, then compare it with your food packaging and your dog's body condition.",
     note:
@@ -64,9 +64,9 @@ export const tools: ToolContent[] = [
     slug: "dog-cost-calculator",
     path: "/tools/dog-cost-calculator",
     title: "Dog Cost Calculator",
-    seoTitle: "Dog Cost Calculator South Africa | Monthly Dog Budget",
+    seoTitle: "Dog Cost Calculator South Africa | Monthly Cost Estimate",
     description:
-      "A free South African dog cost calculator for estimating monthly dog ownership costs across food, grooming, insurance, vet care, parasite control, and extras.",
+      "Free South African dog cost calculator for monthly food, grooming, insurance, vet care, parasite control, training and extras.",
     intro:
       "Estimate a monthly planning range for dog ownership costs without entering any personal information.",
     note:

@@ -66,9 +66,9 @@ const insuranceGuides: MoneyGuide[] = [
     slug: "compare-dog-insurance-south-africa",
     hubPath: "/insurance",
     title: "Compare Dog Insurance in South Africa",
-    seoTitle: "Compare Dog Insurance South Africa | Neutral Policy Checklist",
+    seoTitle: "Compare Dog Insurance South Africa | Policy Checklist",
     description:
-      "A neutral South African dog insurance comparison hub explaining premiums, excesses, limits, exclusions, waiting periods, claims, and policy questions.",
+      "Compare dog insurance in South Africa with a neutral checklist for premiums, excesses, limits, exclusions, waiting periods and claims.",
     summary:
       "Compare dog insurance by reading the policy wording, not just the monthly premium. The cheapest premium can still be expensive if excesses, limits, exclusions, waiting periods, or claim rules do not suit your dog.",
     context:
@@ -1038,9 +1038,9 @@ const costGuides: MoneyGuide[] = [
     slug: "dog-cost-calculator-south-africa",
     hubPath: "/costs",
     title: "Dog Cost Calculator for South Africa",
-    seoTitle: "Dog Cost Calculator South Africa | Monthly Budget Estimator",
+    seoTitle: "Dog Cost Calculator South Africa | Monthly Budget Guide",
     description:
-      "A simple South African dog cost calculator guide to estimate monthly planning costs for food, grooming, insurance, vet care, parasite control, and training.",
+      "Estimate monthly dog costs in South Africa for food, grooming, insurance, vet care, parasite control and training with cautious planning ranges.",
     summary:
       "Use this calculator as a planning estimate, not a quote. Real monthly dog costs vary by dog size, health, city, food choice, vet practice, grooming needs, insurance, and inflation.",
     context:

@@ -61,9 +61,9 @@ const guides: FoodGuide[] = [
   {
     slug: "best-dog-food-south-africa",
     title: "Best Dog Food in South Africa: How to Choose for Your Dog",
-    seoTitle: "Best Dog Food South Africa | How to Choose Safely",
+    seoTitle: "Best Dog Food South Africa | Choose by Age, Size and Budget",
     description:
-      "A neutral South African guide to choosing the best dog food for your individual dog by life stage, size, calories, digestibility, budget, and vet advice.",
+      "Choose dog food in South Africa by life stage, size, calories, digestion, budget and vet advice. No brand rankings or affiliate recommendations.",
     summary:
       "The best dog food is the food that suits your dog's life stage, size, body condition, health, digestion, activity, budget, and your vet's guidance. DogHaven does not crown one brand as best.",
     context:

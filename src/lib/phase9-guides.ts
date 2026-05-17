@@ -135,9 +135,9 @@ const items: FoodSafetyItem[] = [
     slug: "can-dogs-eat-chocolate",
     name: "chocolate",
     title: "Can Dogs Eat Chocolate?",
-    seoTitle: "Can Dogs Eat Chocolate? | Dog Safety South Africa",
+    seoTitle: "Can Dogs Eat Chocolate? | South Africa Vet Safety Guide",
     description:
-      "A South African dog safety guide to chocolate, cocoa, dark chocolate, symptoms, emergency steps, and when to call a vet.",
+      "Dogs should not eat chocolate. Learn South African vet safety steps, symptoms to watch for, and when to call a vet urgently.",
     rating: "Emergency",
     shortAnswer:
       "No. Dogs should not eat chocolate. Cocoa and chocolate can be toxic, and risk depends on the type of chocolate, amount eaten, dog size, and timing.",
@@ -923,9 +923,9 @@ const neverEatGuide: GuideContent = {
   hubTitle: "Dog Food",
   hubPath: "/food",
   title: "Foods Dogs Should Never Eat in South Africa",
-  seoTitle: "Foods Dogs Should Never Eat South Africa | Dog Safety List",
+  seoTitle: "Foods Dogs Should Never Eat South Africa | Safety List",
   description:
-    "A practical South African list of foods dogs should never eat, including chocolate, grapes, raisins, onions, garlic, xylitol, alcohol, cooked bones, and risky leftovers.",
+    "South African dog food safety list covering chocolate, grapes, raisins, onions, garlic, xylitol, alcohol, cooked bones and risky leftovers.",
   intro:
     "Some foods are not worth testing with a dog. This guide gives South African owners a quick, practical safety list for kitchens, lunch boxes, braais, holidays, and visitors.",
   updated: reviewed,

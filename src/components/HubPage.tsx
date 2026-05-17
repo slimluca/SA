@@ -2,10 +2,14 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
+import { PopularGuides } from "@/components/PopularGuides";
 import type { HubContent } from "@/lib/content";
+import { hubPromos } from "@/lib/promo-links";
 import { JsonLd, collectionPageSchema, faqSchema } from "@/lib/schema";
 
 export function HubPage({ hub }: { hub: HubContent }) {
+  const promotedGuides = hubPromos[hub.slug] ?? [];
+
   return (
     <>
       <JsonLd data={collectionPageSchema({ title: hub.title, description: hub.description, path: hub.path })} />
@@ -21,6 +25,16 @@ export function HubPage({ hub }: { hub: HubContent }) {
             <EmergencyNotice />
           </div>
         ) : null}
+
+        <PopularGuides
+          title={hub.slug === "tools" ? "Popular tools to try first" : "Most useful guides to start with"}
+          intro={
+            hub.slug === "tools"
+              ? "Start with the calculators and lookups owners use for quick everyday decisions."
+              : "These high-value DogHaven pages answer common South African dog-owner questions and point to helpful next steps."
+          }
+          guides={promotedGuides}
+        />
 
         <div className="mt-10">
           <h2 className="text-2xl font-black text-cocoa">Start here</h2>

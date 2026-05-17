@@ -25,6 +25,44 @@ const staticRoutes = [
   "/terms",
 ];
 
+const highPriorityRoutes = new Set([
+  "/tools",
+  "/food",
+  "/insurance",
+  "/costs",
+  "/health",
+  "/puppy",
+  "/breeds",
+]);
+
+const moneyAndToolRoutes = new Set([
+  "/tools/dog-feeding-calculator",
+  "/tools/dog-cost-calculator",
+  "/tools/can-my-dog-eat-this",
+  "/food/best-dog-food-south-africa",
+  "/food/foods-dogs-should-never-eat-south-africa",
+  "/insurance/compare-dog-insurance-south-africa",
+  "/costs/dog-cost-calculator-south-africa",
+  "/health/dog-vomiting-south-africa",
+  "/puppy/puppy-care-south-africa",
+]);
+
+function priorityForRoute(route: string) {
+  if (route === "/") {
+    return 1;
+  }
+
+  if (moneyAndToolRoutes.has(route)) {
+    return 0.9;
+  }
+
+  if (highPriorityRoutes.has(route)) {
+    return 0.85;
+  }
+
+  return 0.7;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const routes = [
@@ -55,6 +93,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: absoluteUrl(route),
     lastModified: now,
     changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : 0.7,
+    priority: priorityForRoute(route),
   }));
 }

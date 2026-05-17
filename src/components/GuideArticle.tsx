@@ -3,12 +3,15 @@ import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { DogCostEstimator } from "@/components/DogCostEstimator";
 import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
+import { HelpfulNextSteps } from "@/components/HelpfulNextSteps";
 import { SourceList } from "@/components/SourceList";
 import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
 import type { GuideContent } from "@/lib/content";
+import { getArticlePromos } from "@/lib/promo-links";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
+  const articlePromos = getArticlePromos(guide.hubPath);
   const safetyStyles = {
     "Safe in small amounts": "border-sage/35 bg-sage/10 text-moss",
     Risky: "border-honey/55 bg-honey/15 text-cocoa",
@@ -172,6 +175,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           </div>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+            <HelpfulNextSteps links={articlePromos} />
             <section className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
               <h2 className="text-xl font-black text-cocoa">Related guides</h2>
               <div className="mt-4 space-y-3">

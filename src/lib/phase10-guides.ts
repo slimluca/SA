@@ -99,9 +99,9 @@ const symptomGuides: SymptomGuide[] = [
   {
     slug: "dog-vomiting-south-africa",
     title: "Dog Vomiting in South Africa: When to Call a Vet",
-    seoTitle: "Dog Vomiting South Africa | When to Call a Vet",
+    seoTitle: "Dog Vomiting South Africa | Vet Red Flags and Next Steps",
     description:
-      "A practical South African guide to dog vomiting, possible causes, red flags, what to do, what not to do, and when same-day vet care is needed.",
+      "Dog vomiting guide for South African owners: red flags, possible causes, what not to do, and when same-day vet care is needed.",
     symptom: "vomiting",
     urgentSummary:
       "Call a vet urgently if vomiting is repeated, contains blood, follows possible poisoning, comes with weakness, bloating, severe pain, collapse, or affects a puppy.",

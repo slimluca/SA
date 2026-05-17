@@ -5,17 +5,21 @@ import { FAQBlock } from "@/components/FAQBlock";
 import { FeatureCard } from "@/components/FeatureCard";
 import { GuideCard } from "@/components/GuideCard";
 import { Hero } from "@/components/Hero";
+import { PopularGuides } from "@/components/PopularGuides";
 import { ProvinceGrid } from "@/components/ProvinceGrid";
+import { RelatedMoneyPages } from "@/components/RelatedMoneyPages";
 import { SourceList } from "@/components/SourceList";
+import { ToolPromoGrid } from "@/components/ToolPromoGrid";
 import { TrustBar } from "@/components/TrustBar";
 import { categories, featuredGuides, homeFaqs, provinces, sourceLinks, trustItems } from "@/lib/data";
+import { homepageMoneyPages, homepagePopularGuides, homepageTools } from "@/lib/promo-links";
 import { createMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
-  title: "DogHaven | South Africa's Practical Dog Care Guide",
+  title: "DogHaven South Africa | Dog Care Guides, Tools and Costs",
   description:
-    "DogHaven helps South African dog owners with health, emergency guidance, breeds, adoption, training, grooming, food, insurance, dog costs, and dog-friendly places.",
+    "Practical South African dog care guides, free dog tools, puppy help, food safety, symptoms, insurance, dog costs, breeds, adoption and dog-friendly planning.",
   path: "/",
 });
 
@@ -32,6 +36,19 @@ export default function HomePage() {
         <Breadcrumbs items={[]} />
         <EmergencyNotice />
       </section>
+
+      <ToolPromoGrid tools={homepageTools} />
+
+      <section className="section-shell pt-4">
+        <PopularGuides
+          kicker="Popular DogHaven guides"
+          title="Fast answers for food safety, puppy care, and vet decisions"
+          intro="These pages cover the questions owners often need first: what dogs can eat, when vomiting is urgent, how to care for a puppy, and how to choose food without brand hype."
+          guides={homepagePopularGuides}
+        />
+      </section>
+
+      <RelatedMoneyPages pages={homepageMoneyPages} />
 
       <section className="section-shell pt-4">
         <p className="section-kicker">Dog care topics</p>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ContactForm } from "@/components/ContactForm";
 import { contactReasons } from "@/lib/data";
 import { createMetadata } from "@/lib/seo";
-import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
   title: "Contact DogHaven | South African Dog Care Guide",
@@ -23,18 +23,8 @@ export default function ContactPage() {
         own dog, please contact a veterinarian directly.
       </p>
 
-      <div className="mt-8 rounded-2xl border border-oat bg-white p-6 shadow-soft">
-        <h2 className="text-2xl font-black text-cocoa">Email DogHaven</h2>
-        <p className="mt-3 leading-7 text-bark">
-          Use email for editorial feedback, topic ideas, corrections, and future listing queries.
-          DogHaven does not provide emergency support by email.
-        </p>
-        <a
-          href={`mailto:${siteConfig.email}`}
-          className="mt-5 inline-flex rounded-xl bg-cocoa px-5 py-3 text-sm font-black text-cream hover:bg-moss"
-        >
-          {siteConfig.email}
-        </a>
+      <div className="mt-8">
+        <ContactForm />
       </div>
 
       <div className="mt-8 grid gap-4 md:grid-cols-3">
