@@ -31,6 +31,8 @@ export const hubNavigation = [
   { label: "Laws", href: "/laws" },
   { label: "Tools", href: "/tools" },
   { label: "Local Guides", href: "/local" },
+  { label: "Dog Services", href: "/dog-services" },
+  { label: "Local Costs", href: "/local-costs" },
   { label: "Province Guides", href: "/province" },
   { label: "City Guides", href: "/city" },
 ] as const;
@@ -63,6 +65,8 @@ export const footerNavigationSections = [
     title: "Local",
     links: [
       { label: "Local Guides", href: "/local" },
+      { label: "Dog Services", href: "/dog-services" },
+      { label: "Local Costs", href: "/local-costs" },
       { label: "Province Guides", href: "/province" },
       { label: "City Guides", href: "/city" },
     ],

@@ -13,6 +13,8 @@ import { lawsHub, phase13GuidePages } from "@/lib/phase13-guides";
 import { phase14GuidePages } from "@/lib/phase14-guides";
 import { phase15GuidePages } from "@/lib/phase15-guides";
 import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
+import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
+import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 
@@ -35,6 +37,8 @@ const highPriorityRoutes = new Set([
   "/puppy",
   "/breeds",
   "/local",
+  "/local-costs",
+  "/dog-services",
 ]);
 
 const moneyAndToolRoutes = new Set([
@@ -45,6 +49,13 @@ const moneyAndToolRoutes = new Set([
   "/food/foods-dogs-should-never-eat-south-africa",
   "/insurance/compare-dog-insurance-south-africa",
   "/costs/dog-cost-calculator-south-africa",
+  "/local-costs",
+  "/local-costs/cape-town/dog-grooming-prices-cape-town",
+  "/local-costs/cape-town/emergency-vet-costs-cape-town",
+  "/local-costs/johannesburg/dog-training-costs-johannesburg",
+  "/dog-services",
+  "/dog-services/cape-town/dog-boarding-kennels-cape-town",
+  "/dog-services/johannesburg/pet-sitters-johannesburg",
   "/health/dog-vomiting-south-africa",
   "/puppy/puppy-care-south-africa",
 ]);
@@ -92,6 +103,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localHub.path,
     ...localCityHubs.map((hub) => hub.path),
     ...phase17LocalGuidePages.map((guide) => guide.path),
+    localCostHub.path,
+    ...phase18LocalCostGuidePages.map((guide) => guide.path),
+    dogServicesHub.path,
+    ...phase19DogServiceGuidePages.map((guide) => guide.path),
   ];
 
   return routes.map((route) => ({

@@ -6,6 +6,8 @@ import { phase11TrainingCards } from "@/lib/phase11-guides";
 import { phase12TrainingCards } from "@/lib/phase12-guides";
 import { phase13TrainingCards } from "@/lib/phase13-guides";
 import { phase17TrainingCards } from "@/lib/phase17-local-guides";
+import { phase18TrainingCostCards } from "@/lib/phase18-local-cost-guides";
+import { phase19TrainingCards } from "@/lib/phase19-dog-services-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("training");
@@ -18,6 +20,8 @@ const hub = {
     ...phase12TrainingCards,
     ...phase13TrainingCards,
     ...phase17TrainingCards,
+    ...phase18TrainingCostCards,
+    ...phase19TrainingCards,
   ],
 };
 

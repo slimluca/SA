@@ -344,6 +344,11 @@ export const toolsHub = {
     { title: "Dog Costs", description: "Budgeting and insurance planning.", href: "/costs" },
     { title: "Puppy", description: "First-year puppy care.", href: "/puppy" },
     { title: "Local Guides", description: "City guides for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local" },
+    { title: "Local Cost Guides", description: "City cost guides for grooming, training, emergency vets, and monthly dog budgets.", href: "/local-costs" },
+    { title: "Cape Town Grooming Prices", description: "Understand city grooming quote factors before booking.", href: "/local-costs/cape-town/dog-grooming-prices-cape-town" },
+    { title: "Johannesburg Training Costs", description: "Plan puppy classes, private lessons, and behaviour support questions.", href: "/local-costs/johannesburg/dog-training-costs-johannesburg" },
+    { title: "Dog Services", description: "Plan boarding, daycare, sitters, walkers, and holiday dog care safely.", href: "/dog-services" },
+    { title: "Holiday Dog Care", description: "Prepare food, records, emergency contacts, travel rules, and care notes.", href: "/dog-services/cape-town/holiday-dog-care-cape-town" },
   ],
   faqs: [
     {
