@@ -340,27 +340,33 @@ export const phase7ProvinceGuides: ProvinceGuide[] = [
     name: "Mpumalanga",
     slug: "mpumalanga",
     intro:
-      "Mpumalanga dog ownership can include hot Lowveld conditions, cooler highland towns, farms, estates, travel routes, wildlife areas, ticks, and snakes. Owners need local-risk thinking.",
+      "Mpumalanga dog ownership can include hot Lowveld conditions, cooler highland towns, farms, estates, plantations, travel routes, wildlife areas, ticks, and snakes. Owners need local-risk thinking because routines can change sharply between Mbombela, highland towns, rural properties, holiday routes, and bushveld edges.",
     overview: [
-      "Dogs near wildlife, farms, plantations, or rural roads need secure fencing, recall, and careful lead control.",
-      "Travel and holiday accommodation rules should be checked directly before bringing a dog.",
-      "Tick prevention and heat planning are especially important in warmer areas.",
+      "Dogs near wildlife, farms, plantations, lodges, or rural roads need secure fencing, visible ID, reliable lead control, and careful supervision.",
+      "Travel and holiday accommodation rules should be checked directly before bringing a dog, especially near wildlife areas where pets may be restricted.",
+      "Tick prevention, heat planning, snake awareness, and transport planning are especially important in warmer areas and on rural routes.",
+      "Owners should keep vet records, rabies proof, microchip details, and emergency contacts available before weekends away or long drives.",
     ],
     climate: [
-      "Lowveld heat can make midday exercise dangerous.",
-      "Highland areas can be cooler, with mist, rain, and muddy coats.",
-      "Summer storms can trigger fear and escape attempts.",
+      "Lowveld heat can make midday exercise dangerous, especially for puppies, seniors, overweight dogs, brachycephalic breeds, and dark-coated dogs.",
+      "Highland areas can be cooler, with mist, rain, muddy coats, slippery ground, and extra grooming needs after wet walks.",
+      "Summer storms can trigger fear and escape attempts, so ID tags, microchip details, and secure gates matter.",
+      "Warm, grassy, and rural environments can keep parasite prevention relevant beyond obvious summer outings.",
     ],
     risks: [
       "Ticks and fleas in warm, grassy, rural, or kennel environments.",
       "Snake encounters around gardens, farms, and bushy areas.",
       "Wildlife and livestock conflict if dogs roam.",
       "Travel distance to emergency or specialist care.",
+      "Heat stress during road trips, lodge stays, farm visits, and long outdoor days.",
+      "Fence gaps, open gates, and unfamiliar properties during holiday travel.",
     ],
     outing: [
       "Check protected-area and accommodation rules because many conservation spaces restrict pets.",
       "Keep dogs controlled near wildlife, cyclists, hikers, and livestock.",
       "Carry water and avoid heat-heavy activities.",
+      "Plan rest stops and shade before long drives, and never leave dogs in hot vehicles.",
+      "Use parasite checks after farms, long grass, kennels, hikes, and bushveld stays.",
     ],
     cities: [],
     sources: [provinceSources.mpumalanga],
@@ -768,9 +774,9 @@ export const provinceHub: HubContent = {
   slug: "province",
   path: "/province",
   title: "Dog Owner Guides by South African Province",
-  seoTitle: "Dog Owner Guides by Province | DogHaven South Africa",
+  seoTitle: "South African Province Dog Owner Guides | DogHaven Local Care",
   description:
-    "South Africa-specific dog owner guides by province, covering climate, local risks, adoption, grooming, training, dog-friendly outings, and emergency planning.",
+    "South Africa-specific dog owner guides by province, covering heat, ticks, snakes, beaches, rural travel, local risks, adoption, grooming, training, outings, costs and emergency planning.",
   kicker: "Province guides",
   intro:
     "Dog care changes by province: heat, rain, ticks, snakes, beaches, rural distance, city density, rental rules, and emergency access all shape practical ownership. These guides are not directories. They help you know what to check locally.",
@@ -781,6 +787,9 @@ export const provinceHub: HubContent = {
     { title: "Dog-Friendly Places", description: "How to verify dog-friendly rules before outings.", href: "/dog-friendly" },
     { title: "Emergency Help", description: "Prepare before urgent symptoms happen.", href: "/emergency" },
     { title: "Dog Laws", description: "Check rule sources before outings, rentals, complexes, and travel.", href: "/laws" },
+    { title: "Mpumalanga Dog Owner Guide", description: "Heat, ticks, snakes, rural travel, wildlife-area rules, and emergency planning.", href: "/province/mpumalanga" },
+    { title: "Local Dog Cost Guides", description: "City cost guides for grooming, training, emergency vet preparation, and monthly budgets.", href: "/local-costs" },
+    { title: "Free Dog Tools", description: "Use calculators and checklists for food, costs, travel, vet visits, and routine health.", href: "/tools" },
   ],
   faqs: [
     {
@@ -885,6 +894,42 @@ function sourceList(local: LocalSource[]): Source[] {
   return [...local, ...coreSources];
 }
 
+function provinceIndexingRecoverySections(province: ProvinceGuide) {
+  if (province.slug !== "mpumalanga") {
+    return [];
+  }
+
+  return [
+    {
+      heading: "Why this Mpumalanga page is useful",
+      body: [
+        "Mpumalanga is not one dog-care environment. Lowveld heat, highland rain, rural routes, farms, plantations, estates, and wildlife-adjacent travel can all affect exercise, parasite prevention, vet access, and accommodation choices.",
+        "Use this page as a preparation checklist before travel, adoption, boarding, long drives, or outdoor routines, then verify local rules and service details directly.",
+      ],
+      table: {
+        headers: ["Mpumalanga situation", "What dog owners should prepare"],
+        rows: [
+          ["Lowveld heat", "Cool-hour walks, shade, water, no hot cars, and faster vet calls for heat stress signs."],
+          ["Highland rain or mist", "Coat drying, paw checks, ear checks, and warm bedding for seniors or short-coated dogs."],
+          ["Farms or plantations", "Tick checks, snake awareness, secure fencing, and lead control near livestock or equipment."],
+          ["Wildlife or lodge travel", "Confirm pet rules directly and keep dogs away from wildlife, fences, and unfenced areas."],
+          ["Rural distance", "Save vet and after-hours options before leaving home."],
+        ],
+      },
+    },
+    {
+      heading: "Related DogHaven tools for Mpumalanga owners",
+      body: ["These tools help turn the province guidance into practical planning steps."],
+      checklist: [
+        "Use the dog health calendar for tick, flea, deworming, rabies, and routine vet reminders.",
+        "Use the dog-friendly travel checklist before road trips or accommodation stays.",
+        "Use the vet visit checklist if symptoms appear after ticks, heat, snake exposure, vomiting, diarrhoea, or injury.",
+        "Use the dog cost calculator to plan routine care plus an emergency buffer.",
+      ],
+    },
+  ];
+}
+
 export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((province) => {
   const cityCardsForProvince = cityLinksForProvince(province);
 
@@ -894,8 +939,14 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
     hubTitle: "Province Guides",
     hubPath: "/province",
     title: `${province.name} Dog Owner Guide`,
-    seoTitle: `${province.name} Dog Owner Guide | DogHaven South Africa`,
-    description: `Practical ${province.name} dog owner guidance covering climate, local risks, adoption, grooming, training, dog-friendly outings, and emergency preparation without fake listings.`,
+    seoTitle:
+      province.slug === "mpumalanga"
+        ? "Mpumalanga Dog Owner Guide | Heat, Ticks, Snakes and Travel Planning"
+        : `${province.name} Dog Owner Guide | DogHaven South Africa`,
+    description:
+      province.slug === "mpumalanga"
+        ? "Practical Mpumalanga dog owner guide covering Lowveld heat, ticks, snakes, rural travel, wildlife-area rules, vet access, grooming, adoption, and emergency preparation."
+        : `Practical ${province.name} dog owner guidance covering climate, local risks, adoption, grooming, training, dog-friendly outings, and emergency preparation without fake listings.`,
     intro: province.intro,
     updated: reviewed,
     quickFacts: [
@@ -964,6 +1015,7 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
           "Nearest emergency route known from home and common outing areas.",
         ],
       },
+      ...provinceIndexingRecoverySections(province),
       {
         heading: "Relevant city guides",
         body:

@@ -12,12 +12,16 @@ export const homepagePopularGuides: CardLink[] = [
   { title: "Foods Dogs Should Never Eat", description: "Common dangerous foods and when to call a vet.", href: "/food/foods-dogs-should-never-eat-south-africa" },
   { title: "Dog Vomiting Guide", description: "When vomiting is urgent and what to tell your vet.", href: "/health/dog-vomiting-south-africa" },
   { title: "Puppy Care South Africa", description: "First-year puppy care, vaccines, food, and safety.", href: "/puppy/puppy-care-south-africa" },
+  { title: "Cape Town Local Dog Guides", description: "Grooming, training, emergency vet, and dog-friendly checks for Cape Town.", href: "/local/cape-town" },
+  { title: "Mpumalanga Dog Owner Guide", description: "Heat, ticks, snakes, rural travel, and dog-friendly rule checks.", href: "/province/mpumalanga" },
 ];
 
 export const homepageMoneyPages: CardLink[] = [
   { title: "Compare Dog Insurance", description: "Premiums, excesses, limits, exclusions, and claims.", href: "/insurance/compare-dog-insurance-south-africa" },
   { title: "Dog Cost Calculator Guide", description: "Use a planning estimate without fake exact prices.", href: "/costs/dog-cost-calculator-south-africa" },
   { title: "Emergency Vet Bill Budget", description: "Plan savings, records, and insurance questions.", href: "/costs/how-to-budget-for-emergency-vet-bills-south-africa" },
+  { title: "Johannesburg Emergency Vet Costs", description: "City-specific urgent-care budget planning without fake clinic prices.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
+  { title: "Cape Town Monthly Dog Costs", description: "Plan food, grooming, vet care, travel, and emergency savings.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
 ];
 
 export const hubPromos: Record<string, CardLink[]> = {

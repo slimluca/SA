@@ -1109,7 +1109,7 @@ export const phase6GuidePages: GuideContent[] = [
     hubTitle: "Grooming",
     hubPath: "/grooming",
     title: "Dog Shedding in South Africa",
-    seoTitle: "Dog Shedding South Africa | Brushing and Skin Warning Signs",
+    seoTitle: "Dog Shedding South Africa | Brushing, Coat Care and Skin Warning Signs",
     description:
       "A practical guide to dog shedding in South Africa, covering seasonal coat changes, brushing, ticks, fleas, allergies, nutrition, and when hair loss needs a vet.",
     intro:
@@ -1153,6 +1153,22 @@ export const phase6GuidePages: GuideContent[] = [
         ],
       },
       {
+        heading: "Why this shedding guide is useful",
+        body: [
+          "Shedding searches often start with hair on the couch, but the useful question is whether the skin underneath looks healthy. This page helps South African owners connect coat changes with heat, dust, fleas, ticks, allergies, food, grooming routines, and vet warning signs.",
+          "It is especially useful before booking a groomer, changing food, buying a de-shedding tool, or assuming bald patches are normal seasonal shedding.",
+        ],
+        table: {
+          headers: ["Owner concern", "Useful next step"],
+          rows: [
+            ["Loose hair everywhere", "Match brushing tools to coat type and increase brushing during seasonal coat changes."],
+            ["Itchy shedding dog", "Check fleas, ticks, skin redness, ears, and allergy patterns before changing food."],
+            ["Bald patches or sores", "Book a vet check rather than treating it as normal shedding."],
+            ["Heavy coat in summer", "Ask a groomer or vet before shaving double-coated breeds casually."],
+          ],
+        },
+      },
+      {
         heading: "Brushing by coat type",
         body: [
           "The right brush depends on the coat. A slicker brush, comb, deshedding tool, rubber curry brush, or undercoat rake can help different coats, but wrong tools can irritate skin.",
@@ -1184,8 +1200,12 @@ export const phase6GuidePages: GuideContent[] = [
     ],
     related: [
       { title: "Ticks and Fleas", description: "Prevent parasite problems.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+      { title: "Dog Skin Allergies", description: "Understand itch, grass, dust, fleas, and food sensitivity questions.", href: "/health/dog-skin-allergies-south-africa" },
+      { title: "Dog Hot Spots", description: "Know when skin sores need prompt vet care.", href: "/health/dog-hot-spots-south-africa" },
       { title: "How Often to Groom", description: "Set a brushing schedule.", href: "/grooming/how-often-should-you-groom-a-dog" },
+      { title: "Dog Grooming Prices", description: "Plan grooming cost factors without fake prices.", href: "/costs/dog-grooming-costs-south-africa" },
       { title: "Dog Food", description: "Support coat health with suitable food.", href: "/food/dog-food-south-africa" },
+      { title: "Dog Feeding Calculator", description: "Estimate portions before overfeeding treats or toppers.", href: "/tools/dog-feeding-calculator" },
     ],
     sources: groomingSources,
   },

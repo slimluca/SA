@@ -73,6 +73,30 @@ function titleFor(city: (typeof localCities)[number], service: CostService) {
   return `${service.titleLabel} in ${city.name}: Cost Factors and Questions`;
 }
 
+function seoTitleFor(city: (typeof localCities)[number], service: CostService) {
+  if (city.slug === "johannesburg" && service.key === "emergency-vet") {
+    return "Emergency Vet Costs Johannesburg | Urgent Dog Care Budget Guide";
+  }
+
+  if (city.slug === "cape-town" && service.key === "monthly") {
+    return "Monthly Dog Costs Cape Town | Food, Vet, Grooming and Insurance Budget";
+  }
+
+  return `${titleFor(city, service)} | DogHaven`;
+}
+
+function descriptionFor(city: (typeof localCities)[number], service: CostService) {
+  if (city.slug === "johannesburg" && service.key === "emergency-vet") {
+    return "Johannesburg emergency vet cost guide for dog owners, covering after-hours care, traffic, deposits, diagnostics, insurance questions, transport, and urgent-care preparation.";
+  }
+
+  if (city.slug === "cape-town" && service.key === "monthly") {
+    return "Cape Town monthly dog cost guide covering food, vet care, parasite prevention, grooming after beaches and winter rain, training, insurance, transport, and emergency savings.";
+  }
+
+  return "";
+}
+
 function sourceList(city: (typeof localCities)[number]): Source[] {
   return [city.source, ...coreSources];
 }
@@ -94,6 +118,48 @@ function generalCostNote(cityName: string) {
   ];
 }
 
+function indexingRecoveryCostSections(city: (typeof localCities)[number], service: CostService) {
+  if (city.slug === "johannesburg" && service.key === "emergency-vet") {
+    return [
+      {
+        heading: "Why this Johannesburg emergency cost page is useful",
+        body: [
+          "Johannesburg emergencies often involve traffic, gated properties, townhouse complexes, multi-pet homes, and after-hours decisions under pressure. A cost page is useful only if it helps owners prepare before the crisis, not if it pretends to know every clinic's current fee.",
+          "Use this page to build a call script, payment-plan checklist, and transport plan for your regular vet, after-hours provider, insurer, or emergency fund.",
+        ],
+        checklist: [
+          "Save your regular vet's after-hours recommendation before weekends and public holidays.",
+          "Keep a second transport option in mind if traffic or security access slows you down.",
+          "Ask how estimates, deposits, updates, and referral decisions are handled.",
+          "Keep policy documents and claim requirements easy to find if you have pet insurance.",
+          "Use the vet visit checklist for non-critical appointments and the emergency hub for urgent warning signs.",
+        ],
+      },
+    ];
+  }
+
+  if (city.slug === "cape-town" && service.key === "monthly") {
+    return [
+      {
+        heading: "Why this Cape Town monthly budget page is useful",
+        body: [
+          "Cape Town dog costs often shift with lifestyle: apartment living, beach outings, mountain-edge walks, winter rain, summer heat, parking, traffic, grooming after sand, and dog-friendly accommodation can all affect monthly planning.",
+          "A realistic Cape Town budget should separate fixed monthly costs from outing, grooming, emergency, and seasonal costs so a dog does not become expensive only when something goes wrong.",
+        ],
+        checklist: [
+          "Add a grooming or de-shedding line if your dog swims, visits beaches, hikes, or has a high-maintenance coat.",
+          "Budget for parasite prevention and paw or ear checks after sand, long grass, and wet winter walks.",
+          "Include transport, parking, or pet-sitting costs if work routines or apartment rules limit midday care.",
+          "Set aside an emergency buffer for heat, snake encounters, injuries, poisoning, or after-hours vet care.",
+          "Use the dog cost calculator, then replace estimates with real quotes from your own vet, groomer, insurer, trainer, and supplier.",
+        ],
+      },
+    ];
+  }
+
+  return [];
+}
+
 function groomingPage(city: (typeof localCities)[number], service: CostService): GuideContent {
   return {
     slug: `${service.slugPrefix}-${city.slug}`,
@@ -101,7 +167,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
     hubTitle: "Local Cost Guides",
     hubPath: "/local-costs",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `Practical ${city.name} dog grooming price guidance covering mobile vs parlour grooming, coat type, matting, seasonal care, quote questions, and cost factors without fake exact prices.`,
     intro: `Dog grooming prices in ${city.name} depend on much more than a quick bath. This guide explains what affects the quote, what to ask before booking, and how to budget without relying on fake local price lists or unverified groomer rankings.`,
     updated: reviewed,
@@ -116,6 +182,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
         heading: `Grooming cost context in ${city.name}`,
         body: [...generalCostNote(city.name), city.groomingNote],
       },
+      ...indexingRecoveryCostSections(city, service),
       {
         heading: "What affects grooming prices",
         body: [
@@ -204,7 +271,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
     hubTitle: "Local Cost Guides",
     hubPath: "/local-costs",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `Practical ${city.name} dog training cost guidance covering puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
     intro: `Dog training costs in ${city.name} can vary widely because puppy classes, private sessions, group classes, home visits, and behaviour support are not the same service. This guide helps you compare training quotes without fake rankings or invented prices.`,
     updated: reviewed,
@@ -219,6 +286,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
         heading: `Training cost context in ${city.name}`,
         body: [...generalCostNote(city.name), city.trainingNote],
       },
+      ...indexingRecoveryCostSections(city, service),
       {
         heading: "What affects dog training costs",
         body: [
@@ -306,8 +374,10 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
     hubTitle: "Local Cost Guides",
     hubPath: "/local-costs",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
-    description: `Practical ${city.name} emergency vet cost guidance covering after-hours care, diagnostics, hospitalisation, transport, insurance questions, and urgent-care budgeting.`,
+    seoTitle: seoTitleFor(city, service),
+    description:
+      descriptionFor(city, service) ||
+      `Practical ${city.name} emergency vet cost guidance covering after-hours care, diagnostics, hospitalisation, transport, insurance questions, and urgent-care budgeting.`,
     intro: `Emergency vet costs in ${city.name} can be stressful because decisions often happen quickly. This guide explains what can affect the bill, what records to keep ready, and why urgent care should not be delayed while searching online.`,
     updated: reviewed,
     isHealthGuide: true,
@@ -322,6 +392,7 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
         heading: `Emergency vet cost context in ${city.name}`,
         body: [...generalCostNote(city.name), city.emergencyNote],
       },
+      ...indexingRecoveryCostSections(city, service),
       {
         heading: "What affects emergency vet costs",
         body: [
@@ -411,8 +482,10 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
     hubTitle: "Local Cost Guides",
     hubPath: "/local-costs",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
-    description: `Practical ${city.name} monthly dog cost guide covering food, parasite control, grooming, vet care, insurance, toys, training, transport, and emergency savings without fake exact prices.`,
+    seoTitle: seoTitleFor(city, service),
+    description:
+      descriptionFor(city, service) ||
+      `Practical ${city.name} monthly dog cost guide covering food, parasite control, grooming, vet care, insurance, toys, training, transport, and emergency savings without fake exact prices.`,
     intro: `Monthly dog costs in ${city.name} depend on your dog's size, age, coat, health, food, lifestyle, housing, transport, and emergency planning. This guide helps you build a realistic budget without pretending every household pays the same.`,
     updated: reviewed,
     quickFacts: [
@@ -426,6 +499,7 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
         heading: `Monthly dog cost context in ${city.name}`,
         body: [...generalCostNote(city.name), city.localContext],
       },
+      ...indexingRecoveryCostSections(city, service),
       {
         heading: "Core monthly cost categories",
         body: ["A realistic dog budget includes routine care and a buffer for the unexpected."],
@@ -547,6 +621,8 @@ export const localCostHub: HubContent = {
   related: [
     { title: "Dog Cost Calculator", description: "Estimate monthly dog costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
     { title: "Dog Cost Calculator Guide", description: "Understand the DogHaven estimate.", href: "/costs/dog-cost-calculator-south-africa" },
+    { title: "Cape Town Monthly Dog Costs", description: "A practical city budget page for food, grooming, vet care, travel, and seasonal costs.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
+    { title: "Johannesburg Emergency Vet Costs", description: "Prepare for urgent vet cost factors, transport, records, and insurance questions.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
     { title: "Local Service Guides", description: "City service guides for grooming, training, emergency vets, and dog-friendly places.", href: "/local" },
     { title: "City Guides", description: "Daily local context for major South African cities.", href: "/city" },
     { title: "Province Guides", description: "Province-level climate, risk, and travel context.", href: "/province" },

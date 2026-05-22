@@ -218,7 +218,49 @@ function titleFor(city: LocalCity, service: LocalService) {
   return `${service.serviceTitle} in ${city.name}: How to Choose Safely`;
 }
 
+function indexingRecoveryLocalSections(city: LocalCity, service: LocalService) {
+  if (city.slug === "gqeberha" && service.key === "dog-friendly") {
+    return [
+      {
+        heading: "Why this Gqeberha dog-friendly guide is useful",
+        body: [
+          "Gqeberha outings can move quickly from suburban pavements to windy beachfront areas, beach-adjacent parking, busy holiday crowds, and coastal paths where rules, comfort, and safety change by location. This page is useful because it focuses on what to verify before leaving home rather than pretending to list every dog-friendly venue.",
+          "Use it to plan rule checks, heat and wind preparation, water, waste bags, lead control, and backup vet details before a beach, park, cafe, accommodation, or road-trip stop.",
+        ],
+        checklist: [
+          "Check Nelson Mandela Bay municipal rules or venue rules before assuming dogs are allowed.",
+          "Plan for wind, sand, salt water, hot tar, holiday crowds, and dogs that become over-excited near beaches.",
+          "Carry water, a lead, ID, waste bags, and a towel for sandy or wet paws.",
+          "Keep your dog away from anglers, wildlife, children, runners, cyclists, and dogs who are not inviting contact.",
+          "Know which vet you would phone if your dog eats something risky, overheats, is injured, or becomes suddenly unwell while out.",
+        ],
+      },
+      {
+        heading: "Next useful Gqeberha checks",
+        body: [
+          "Before a longer outing, combine this page with the travel checklist and the city emergency preparation guide so rules, comfort, and urgent-care planning are covered together.",
+        ],
+        table: {
+          headers: ["Need", "Best DogHaven next step"],
+          rows: [
+            ["Beach or public-space rules", "Check official rules first, then read the beach rules guide."],
+            ["Longer road trip", "Use the dog-friendly travel checklist before packing."],
+            ["Uncertain behaviour in public", "Read leash training and dog training guidance before busy outings."],
+            ["Emergency planning", "Save vet details before heading to beaches, trails, or accommodation."],
+          ],
+        },
+      },
+    ];
+  }
+
+  return [];
+}
+
 function descriptionFor(city: LocalCity, service: LocalService) {
+  if (city.slug === "gqeberha" && service.key === "dog-friendly") {
+    return "Gqeberha dog-friendly places guide for checking beach, park, venue, accommodation and public-space rules, with coastal outing safety, leash etiquette, water, heat, and vet planning.";
+  }
+
   if (service.key === "emergency-vets") {
     return `A practical ${city.name} guide to emergency vet preparation, urgent symptoms, transport planning, after-hours questions, and what dog owners should keep ready.`;
   }
@@ -226,6 +268,14 @@ function descriptionFor(city: LocalCity, service: LocalService) {
     return `A practical ${city.name} dog-friendly guide covering rule checks, leash etiquette, heat, water, parks, beaches, cafes, accommodation, and travel planning without fake venue listings.`;
   }
   return `A practical ${city.name} guide to ${service.seoLabel}, including how to choose safely, questions to ask, cost factors, warning signs, and helpful DogHaven links.`;
+}
+
+function seoTitleFor(city: LocalCity, service: LocalService) {
+  if (city.slug === "gqeberha" && service.key === "dog-friendly") {
+    return "Dog-Friendly Places Gqeberha | Rules, Beaches, Parks and Safety Checks";
+  }
+
+  return `${titleFor(city, service)} | DogHaven`;
 }
 
 function commonLocalRelated(city: LocalCity): CardLink[] {
@@ -247,7 +297,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     hubTitle: "Local Dog Services",
     hubPath: "/local",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
     intro: `Looking for dog grooming in ${city.name}? DogHaven does not publish unverified groomer listings or rankings. This guide helps you compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
     updated: reviewed,
@@ -363,7 +413,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
     hubTitle: "Local Dog Services",
     hubPath: "/local",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
     intro: `Looking for dog training in ${city.name}? This is not a fake trainer directory. It is a practical guide to choosing humane support for puppies, adult dogs, leash manners, barking, recall, and everyday public behaviour.`,
     updated: reviewed,
@@ -477,7 +527,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
     hubTitle: "Local Dog Services",
     hubPath: "/local",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
     intro: `If you are looking for emergency vets in ${city.name}, use this page to prepare before an urgent situation. DogHaven does not list fake clinics or phone numbers. For a real emergency, phone a veterinarian or emergency animal clinic directly.`,
     updated: reviewed,
@@ -597,7 +647,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
     hubTitle: "Local Dog Services",
     hubPath: "/local",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
     intro: `Looking for dog-friendly places in ${city.name}? DogHaven does not invent park, beach, cafe, hotel, or venue listings. This guide helps you check rules, plan safer outings, and avoid putting your dog or other people in awkward situations.`,
     updated: reviewed,
@@ -612,6 +662,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
         heading: `Dog-friendly context in ${city.name}`,
         body: [city.localContext, city.dogFriendlyNote],
       },
+      ...indexingRecoveryLocalSections(city, service),
       {
         heading: "How to check local rules",
         body: [
@@ -772,6 +823,8 @@ export const localHub: HubContent = {
     { title: "Dog-Friendly Places", description: "Plan safer outings and verify rules.", href: "/dog-friendly" },
     { title: "Emergency Help", description: "Urgent symptoms and vet preparation.", href: "/emergency" },
     { title: "Dog Laws", description: "Rules for leashes, beaches, barking, rentals, and complexes.", href: "/laws" },
+    { title: "Cape Town Local Guides", description: "A stronger city hub for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local/cape-town" },
+    { title: "Gqeberha Dog-Friendly Places", description: "Check coastal rules, beach comfort, outing etiquette, and vet preparation.", href: "/local/gqeberha/dog-friendly-places-gqeberha" },
   ],
   faqs: [
     {
@@ -800,8 +853,14 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
   slug: `local-${city.slug}`,
   path: `/local/${city.slug}`,
   title: `${city.name} Local Dog Service Guides`,
-  seoTitle: `${city.name} Dog Services Guide | Grooming, Training, Emergency Vets`,
-  description: `Helpful ${city.name} dog service guides covering grooming, training, emergency vet preparation, and dog-friendly places without fake listings or rankings.`,
+  seoTitle:
+    city.slug === "cape-town"
+      ? "Cape Town Dog Services Guide | Grooming, Training, Vets and Dog-Friendly Checks"
+      : `${city.name} Dog Services Guide | Grooming, Training, Emergency Vets`,
+  description:
+    city.slug === "cape-town"
+      ? "Cape Town dog service guide covering grooming, training, emergency vet preparation, dog-friendly rule checks, monthly costs, beaches, apartments, winter rain, summer heat and local planning."
+      : `Helpful ${city.name} dog service guides covering grooming, training, emergency vet preparation, and dog-friendly places without fake listings or rankings.`,
   kicker: "Local city guide",
   intro: `${city.localContext} Use these DogHaven guides to ask better questions, verify rules directly, and choose safer dog services without relying on fake local listings.`,
   cards: localServices.map((service) => ({
@@ -813,6 +872,13 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
     { title: "All Local Guides", description: "Browse DogHaven local service guides by city and service type.", href: "/local" },
     { title: `${city.name} City Guide`, description: "Wider dog-owner context for daily life in the city.", href: `/city/${city.slug}` },
     { title: `${city.province} Province Guide`, description: "Province-level climate, risk, travel, and dog-care context.", href: `/province/${city.provinceSlug}` },
+    ...(city.slug === "cape-town"
+      ? [
+          { title: "Cape Town Monthly Dog Costs", description: "Food, vet care, grooming, training, travel, and emergency budget factors for Cape Town owners.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
+          { title: "Cape Town Emergency Vet Costs", description: "Urgent-care budgeting and preparation for Cape Town dog owners.", href: "/local-costs/cape-town/emergency-vet-costs-cape-town" },
+          { title: "Dog-Friendly Travel Checklist", description: "Pack water, records, rule checks, and emergency planning before Cape Town outings.", href: "/tools/dog-friendly-travel-checklist" },
+        ]
+      : []),
     { title: "Free Dog Tools", description: "Checklists and calculators for practical dog ownership.", href: "/tools" },
   ],
   faqs: [

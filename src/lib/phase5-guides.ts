@@ -913,9 +913,9 @@ export const phase5GuidePages: GuideContent[] = [
     hubTitle: "Dog Food",
     hubPath: "/food",
     title: "Dog Food in South Africa: A Practical Feeding Guide",
-    seoTitle: "Dog Food South Africa | Practical Feeding Guide",
+    seoTitle: "Dog Food South Africa | Practical Feeding, Cost and Safety Guide",
     description:
-      "A practical South African dog food guide covering life stage, dog size, activity, allergies, vet diets, budget, treats, label claims, and safe food changes.",
+      "A practical South African dog food guide covering life stage, dog size, activity, allergies, vet diets, budget, treats, food safety, label claims, and safe food changes.",
     intro:
       "Choosing dog food in South Africa can feel noisy because every bag, tin, freezer tub, and advert sounds confident. The best choice is the food that suits your dog's life stage, health, body condition, activity, budget, and your vet's advice where needed.",
     updated: "2026-05-13",
@@ -957,6 +957,23 @@ export const phase5GuidePages: GuideContent[] = [
         ],
       },
       {
+        heading: "Why this dog food guide is useful",
+        body: [
+          "Dog food advice becomes much more helpful when it starts with the individual dog instead of a brand argument. This page helps South African owners compare food by life stage, body condition, stool quality, skin signs, budget, storage, treats, and veterinary guidance.",
+          "Use it before switching foods, comparing cheap and premium options, adding toppers, choosing puppy or senior food, or deciding whether a symptom should be discussed with a vet rather than treated as a food problem.",
+        ],
+        table: {
+          headers: ["Decision", "Helpful DogHaven next step"],
+          rows: [
+            ["Portion uncertainty", "Use the feeding calculator, then compare with the food label and body condition."],
+            ["Monthly food budget", "Read the dog food cost guide and dog food prices guide before changing quality level."],
+            ["Itchy skin or recurring ears", "Check fleas, ticks, allergies, and vet guidance before blaming food alone."],
+            ["Senior dog appetite changes", "Discuss dental, chronic health, and senior food questions with a vet."],
+            ["Unsafe table scraps", "Use the food safety lookup before sharing human food."],
+          ],
+        },
+      },
+      {
         heading: "Safe food-change checklist",
         body: [
           "A sudden diet change can trigger vomiting or diarrhoea in some dogs. Transition slowly unless your vet tells you to change immediately for medical reasons.",
@@ -995,7 +1012,13 @@ export const phase5GuidePages: GuideContent[] = [
     ],
     related: [
       { title: "Dog Food Cost", description: "Budget feeding realistically.", href: "/costs/dog-food-cost-south-africa" },
+      { title: "Best Dog Food South Africa", description: "Choose food for your individual dog without brand rankings.", href: "/food/best-dog-food-south-africa" },
+      { title: "Dog Food Prices", description: "Monthly food budget factors without fake current prices.", href: "/food/dog-food-prices-south-africa" },
+      { title: "Dog Feeding Calculator", description: "Estimate daily food amounts as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Can My Dog Eat This?", description: "Quick food safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
       { title: "Dog Food Labels", description: "Read claims more clearly.", href: "/food/how-to-read-dog-food-labels-south-africa" },
+      { title: "Overweight Dog", description: "Portions, treats, body condition, and vet-guided weight planning.", href: "/health/overweight-dog-south-africa" },
+      { title: "Dog Skin Allergies", description: "Food sensitivity discussions without guessing.", href: "/health/dog-skin-allergies-south-africa" },
       { title: "Toxic Foods", description: "Know dangerous foods.", href: "/health/toxic-foods-for-dogs-south-africa" },
     ],
     sources: foodSources,
