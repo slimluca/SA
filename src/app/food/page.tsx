@@ -5,12 +5,20 @@ import { phase5FoodCards } from "@/lib/phase5-guides";
 import { phase9FoodCards } from "@/lib/phase9-guides";
 import { phase11FoodCards } from "@/lib/phase11-guides";
 import { phase15FoodCards } from "@/lib/phase15-guides";
+import { phase20FoodCards } from "@/lib/phase20-recovery-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("food");
 const hub = {
   ...baseHub,
-  cards: [...baseHub.cards, ...phase5FoodCards, ...phase9FoodCards, ...phase11FoodCards, ...phase15FoodCards],
+  cards: [
+    ...baseHub.cards,
+    ...phase5FoodCards,
+    ...phase9FoodCards,
+    ...phase11FoodCards,
+    ...phase15FoodCards,
+    ...phase20FoodCards,
+  ],
 };
 
 export const metadata: Metadata = createMetadata({

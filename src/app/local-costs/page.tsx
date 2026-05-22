@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { HubPage } from "@/components/HubPage";
 import { localCostHub } from "@/lib/phase18-local-cost-guides";
 import { phase19LocalCostCards } from "@/lib/phase19-dog-services-guides";
+import { phase20LocalCostCards } from "@/lib/phase20-recovery-guides";
 import { createMetadata } from "@/lib/seo";
 
 const hub = {
   ...localCostHub,
-  cards: [...localCostHub.cards, ...phase19LocalCostCards],
-  related: [...localCostHub.related, ...phase19LocalCostCards],
+  cards: [...localCostHub.cards, ...phase19LocalCostCards, ...phase20LocalCostCards],
+  related: [...localCostHub.related, ...phase19LocalCostCards, ...phase20LocalCostCards],
 };
 
 export const metadata: Metadata = createMetadata({

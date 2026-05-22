@@ -9,7 +9,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 text-cocoa" aria-label="DogHaven home">
           <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-sage bg-cream shadow-soft">
             <Image
-              src="/brand/doghaven-dog-logo.png"
+              src="/brand/doghaven-logo.png"
               alt=""
               width={44}
               height={44}

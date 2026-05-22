@@ -15,6 +15,7 @@ import { phase15GuidePages } from "@/lib/phase15-guides";
 import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
 import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
 import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
+import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 
@@ -56,6 +57,10 @@ const moneyAndToolRoutes = new Set([
   "/dog-services",
   "/dog-services/cape-town/dog-boarding-kennels-cape-town",
   "/dog-services/johannesburg/pet-sitters-johannesburg",
+  "/costs/dog-grooming-costs-south-africa",
+  "/costs/emergency-vet-costs-south-africa",
+  "/food/dog-food-prices-south-africa",
+  "/health/find-a-vet-south-africa",
   "/health/dog-vomiting-south-africa",
   "/puppy/puppy-care-south-africa",
 ]);
@@ -107,9 +112,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase18LocalCostGuidePages.map((guide) => guide.path),
     dogServicesHub.path,
     ...phase19DogServiceGuidePages.map((guide) => guide.path),
+    ...phase20RecoveryGuidePages.map((guide) => guide.path),
   ];
 
-  return routes.map((route) => ({
+  return Array.from(new Set(routes)).map((route) => ({
     url: absoluteUrl(route),
     lastModified: now,
     changeFrequency: route === "/" ? "weekly" : "monthly",

@@ -31,8 +31,8 @@ const legacyRedirects = [
   ["/rabies-symptoms-vaccination-south-africa/", "/emergency/rabies-south-africa"],
   ["/garden-plants-toxic-to-dogs-south-africa", "/health/toxic-plants-for-dogs-south-africa"],
   ["/garden-plants-toxic-to-dogs-south-africa/", "/health/toxic-plants-for-dogs-south-africa"],
-  ["/veterinary-clinics-south-africa", "/health/when-to-take-your-dog-to-the-vet-south-africa"],
-  ["/veterinary-clinics-south-africa/", "/health/when-to-take-your-dog-to-the-vet-south-africa"],
+  ["/veterinary-clinics-south-africa", "/local-costs"],
+  ["/veterinary-clinics-south-africa/", "/local-costs"],
   ["/veterinary-clinics-south-africa-price-guide-2026-directory", "/costs/vet-costs-for-dogs-south-africa"],
   ["/veterinary-clinics-south-africa-price-guide-2026-directory/", "/costs/vet-costs-for-dogs-south-africa"],
 
@@ -41,12 +41,14 @@ const legacyRedirects = [
   ["/can-dogs-eat-biltong/", "/food/can-dogs-eat-biltong"],
   ["/can-dogs-eat-this-south-africa-food-guide", "/health/toxic-foods-for-dogs-south-africa"],
   ["/can-dogs-eat-this-south-africa-food-guide/", "/health/toxic-foods-for-dogs-south-africa"],
-  ["/the-great-dog-food-debate", "/food/dog-food-south-africa"],
-  ["/the-great-dog-food-debate/", "/food/dog-food-south-africa"],
+  ["/the-great-dog-food-debate", "/food/dog-food-comparison-south-africa"],
+  ["/the-great-dog-food-debate/", "/food/dog-food-comparison-south-africa"],
   ["/homemade-dog-food-treat-recipes-south-africa", "/food/dog-food-south-africa"],
   ["/homemade-dog-food-treat-recipes-south-africa/", "/food/dog-food-south-africa"],
   ["/dog-food-south-africa", "/food/dog-food-south-africa"],
   ["/dog-food-south-africa/", "/food/dog-food-south-africa"],
+  ["/best-dog-food-south-africa", "/food/best-dog-food-south-africa"],
+  ["/best-dog-food-south-africa/", "/food/best-dog-food-south-africa"],
 
   // Breeds
   ["/dog-breeds-south-africa", "/breeds"],
@@ -69,28 +71,40 @@ const legacyRedirects = [
   ["/dog-adoption-south-africa/", "/adoption/dog-adoption-south-africa"],
 
   // Grooming
-  ["/dog-grooming-south-africa", "/grooming/dog-grooming-south-africa"],
-  ["/dog-grooming-south-africa/", "/grooming/dog-grooming-south-africa"],
+  ["/dog-grooming-south-africa", "/grooming"],
+  ["/dog-grooming-south-africa/", "/grooming"],
   ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices", "/grooming/dog-grooming-costs-south-africa"],
   ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices/", "/grooming/dog-grooming-costs-south-africa"],
+  ["/dog-grooming-prices-south-africa", "/costs/dog-grooming-costs-south-africa"],
+  ["/dog-grooming-prices-south-africa/", "/costs/dog-grooming-costs-south-africa"],
 
   // Training
-  ["/dog-training-puppy-schools-south-africa", "/training/dog-training-south-africa"],
-  ["/dog-training-puppy-schools-south-africa/", "/training/dog-training-south-africa"],
+  ["/dog-training-puppy-schools-south-africa", "/training"],
+  ["/dog-training-puppy-schools-south-africa/", "/training"],
   ["/dog-training-south-africa", "/training/dog-training-south-africa"],
   ["/dog-training-south-africa/", "/training/dog-training-south-africa"],
+  ["/dog-training-costs-south-africa", "/local-costs"],
+  ["/dog-training-costs-south-africa/", "/local-costs"],
 
   // Insurance
-  ["/pet-insurance-showdown", "/insurance/pet-insurance-for-dogs-south-africa"],
-  ["/pet-insurance-showdown/", "/insurance/pet-insurance-for-dogs-south-africa"],
+  ["/pet-insurance-showdown", "/insurance/compare-dog-insurance-south-africa"],
+  ["/pet-insurance-showdown/", "/insurance/compare-dog-insurance-south-africa"],
   ["/pet-insurance-south-africa", "/insurance/pet-insurance-for-dogs-south-africa"],
   ["/pet-insurance-south-africa/", "/insurance/pet-insurance-for-dogs-south-africa"],
+  ["/pet-insurance-for-dogs-south-africa", "/insurance/pet-insurance-for-dogs-south-africa"],
+  ["/pet-insurance-for-dogs-south-africa/", "/insurance/pet-insurance-for-dogs-south-africa"],
 
   // Costs
   ["/cost-of-owning-a-dog-south-africa", "/costs/cost-of-owning-a-dog-south-africa"],
   ["/cost-of-owning-a-dog-south-africa/", "/costs/cost-of-owning-a-dog-south-africa"],
   ["/cost-of-ownership-2026", "/costs/cost-of-owning-a-dog-south-africa"],
   ["/cost-of-ownership-2026/", "/costs/cost-of-owning-a-dog-south-africa"],
+  ["/emergency-vets-south-africa", "/emergency"],
+  ["/emergency-vets-south-africa/", "/emergency"],
+  ["/dog-costs-south-africa", "/costs/cost-of-owning-a-dog-south-africa"],
+  ["/dog-costs-south-africa/", "/costs/cost-of-owning-a-dog-south-africa"],
+  ["/puppy-care-south-africa", "/puppy/puppy-care-south-africa"],
+  ["/puppy-care-south-africa/", "/puppy/puppy-care-south-africa"],
 
   // Dog-friendly and lifestyle
   ["/dog-friendly-beaches-tidal-pools-south-africa", "/dog-friendly/dog-friendly-beaches-south-africa"],

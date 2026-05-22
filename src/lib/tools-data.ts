@@ -349,6 +349,9 @@ export const toolsHub = {
     { title: "Johannesburg Training Costs", description: "Plan puppy classes, private lessons, and behaviour support questions.", href: "/local-costs/johannesburg/dog-training-costs-johannesburg" },
     { title: "Dog Services", description: "Plan boarding, daycare, sitters, walkers, and holiday dog care safely.", href: "/dog-services" },
     { title: "Holiday Dog Care", description: "Prepare food, records, emergency contacts, travel rules, and care notes.", href: "/dog-services/cape-town/holiday-dog-care-cape-town" },
+    { title: "Emergency Vet Costs", description: "Use with the vet visit checklist for urgent-care budget planning.", href: "/costs/emergency-vet-costs-south-africa" },
+    { title: "Dog Food Prices", description: "Use with the feeding calculator for monthly food planning.", href: "/food/dog-food-prices-south-africa" },
+    { title: "Dog Grooming Costs", description: "Use with the cost calculator for grooming budget planning.", href: "/costs/dog-grooming-costs-south-africa" },
   ],
   faqs: [
     {

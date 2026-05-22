@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { FAQBlock } from "@/components/FAQBlock";
 import { JsonLd, collectionPageSchema, faqSchema } from "@/lib/schema";
+import { phase20StartHereCards } from "@/lib/phase20-recovery-guides";
 import { createMetadata } from "@/lib/seo";
 
 const sections = [
@@ -54,6 +55,7 @@ const sections = [
       { title: "Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/costs/dog-cost-calculator-south-africa" },
       { title: "Compare Dog Insurance", description: "Understand premiums, excesses, limits, and exclusions.", href: "/insurance/compare-dog-insurance-south-africa" },
+      ...phase20StartHereCards,
     ],
   },
   {

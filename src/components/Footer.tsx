@@ -10,7 +10,7 @@ export function Footer() {
           <div className="mb-3 flex items-center gap-2">
             <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-honey bg-cream shadow-sm">
               <Image
-                src="/brand/doghaven-dog-logo.png"
+                src="/brand/doghaven-logo.png"
                 alt=""
                 width={44}
                 height={44}
