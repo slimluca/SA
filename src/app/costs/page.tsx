@@ -9,6 +9,9 @@ import { phase15CostCards } from "@/lib/phase15-guides";
 import { phase18CostCards } from "@/lib/phase18-local-cost-guides";
 import { phase19CostCards } from "@/lib/phase19-dog-services-guides";
 import { phase20CostCards } from "@/lib/phase20-recovery-guides";
+import { phase21CostCards } from "@/lib/phase21-prevention-guides";
+import { phase22CostCards } from "@/lib/phase22-sterilisation-guides";
+import { phase23CostCards } from "@/lib/phase23-chronic-health-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("costs");
@@ -24,6 +27,9 @@ const hub = {
     ...phase18CostCards,
     ...phase19CostCards,
     ...phase20CostCards,
+    ...phase21CostCards,
+    ...phase22CostCards,
+    ...phase23CostCards,
   ],
 };
 

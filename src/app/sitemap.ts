@@ -16,6 +16,9 @@ import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-l
 import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
 import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
 import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
+import { phase21PreventionGuidePages } from "@/lib/phase21-prevention-guides";
+import { phase22SterilisationGuidePages } from "@/lib/phase22-sterilisation-guides";
+import { phase23ChronicHealthGuidePages } from "@/lib/phase23-chronic-health-guides";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 
@@ -61,6 +64,17 @@ const moneyAndToolRoutes = new Set([
   "/costs/emergency-vet-costs-south-africa",
   "/food/dog-food-prices-south-africa",
   "/health/find-a-vet-south-africa",
+  "/tools/dog-health-calendar",
+  "/tools/dog-sterilisation-planner",
+  "/tools/senior-dog-care-checklist",
+  "/health/tick-and-flea-treatment-for-dogs-south-africa",
+  "/health/dog-vaccination-costs-and-schedule-south-africa",
+  "/health/dog-sterilisation-south-africa",
+  "/health/microchipping-dogs-south-africa",
+  "/health/dog-dental-care-south-africa",
+  "/health/dog-arthritis-south-africa",
+  "/health/senior-dog-care-south-africa",
+  "/health/chronic-dog-health-costs-south-africa",
   "/health/dog-vomiting-south-africa",
   "/puppy/puppy-care-south-africa",
 ]);
@@ -113,6 +127,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     dogServicesHub.path,
     ...phase19DogServiceGuidePages.map((guide) => guide.path),
     ...phase20RecoveryGuidePages.map((guide) => guide.path),
+    ...phase21PreventionGuidePages.map((guide) => guide.path),
+    ...phase22SterilisationGuidePages.map((guide) => guide.path),
+    ...phase23ChronicHealthGuidePages.map((guide) => guide.path),
   ];
 
   return Array.from(new Set(routes)).map((route) => ({

@@ -4,6 +4,9 @@ import { GuideArticle } from "@/components/GuideArticle";
 import { getPhase3Guide, getPhase3GuidesByHub } from "@/lib/phase3-guides";
 import { getPhase10Guide, getPhase10GuidesByHub } from "@/lib/phase10-guides";
 import { getPhase20Guide, getPhase20GuidesByHub } from "@/lib/phase20-recovery-guides";
+import { getPhase21Guide, getPhase21GuidesByHub } from "@/lib/phase21-prevention-guides";
+import { getPhase22Guide, getPhase22GuidesByHub } from "@/lib/phase22-sterilisation-guides";
+import { getPhase23Guide, getPhase23GuidesByHub } from "@/lib/phase23-chronic-health-guides";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -13,7 +16,14 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return [...getPhase3GuidesByHub("/health"), ...getPhase10GuidesByHub("/health"), ...getPhase20GuidesByHub("/health")]
+  return [
+    ...getPhase3GuidesByHub("/health"),
+    ...getPhase10GuidesByHub("/health"),
+    ...getPhase20GuidesByHub("/health"),
+    ...getPhase21GuidesByHub("/health"),
+    ...getPhase22GuidesByHub("/health"),
+    ...getPhase23GuidesByHub("/health"),
+  ]
     .map((guide) => guide.slug)
     .filter((slug, index, slugs) => slugs.indexOf(slug) === index)
     .map((slug) => ({ slug }));
@@ -21,7 +31,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase20Guide(slug) ?? getPhase3Guide(slug) ?? getPhase10Guide(slug);
+  const guide =
+    getPhase23Guide(slug) ??
+    getPhase22Guide(slug) ??
+    getPhase21Guide(slug) ??
+    getPhase20Guide(slug) ??
+    getPhase3Guide(slug) ??
+    getPhase10Guide(slug);
 
   if (!guide || guide.hubPath !== "/health") {
     return {};
@@ -36,7 +52,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HealthGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase20Guide(slug) ?? getPhase3Guide(slug) ?? getPhase10Guide(slug);
+  const guide =
+    getPhase23Guide(slug) ??
+    getPhase22Guide(slug) ??
+    getPhase21Guide(slug) ??
+    getPhase20Guide(slug) ??
+    getPhase3Guide(slug) ??
+    getPhase10Guide(slug);
 
   if (!guide || guide.hubPath !== "/health") {
     notFound();

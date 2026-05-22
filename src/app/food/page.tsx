@@ -6,6 +6,7 @@ import { phase9FoodCards } from "@/lib/phase9-guides";
 import { phase11FoodCards } from "@/lib/phase11-guides";
 import { phase15FoodCards } from "@/lib/phase15-guides";
 import { phase20FoodCards } from "@/lib/phase20-recovery-guides";
+import { phase23FoodCards } from "@/lib/phase23-chronic-health-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("food");
@@ -18,6 +19,7 @@ const hub = {
     ...phase11FoodCards,
     ...phase15FoodCards,
     ...phase20FoodCards,
+    ...phase23FoodCards,
   ],
 };
 

@@ -10,7 +10,10 @@ export type ToolSlug =
   | "new-dog-shopping-list"
   | "vet-visit-checklist"
   | "dog-friendly-travel-checklist"
-  | "can-my-dog-eat-this";
+  | "can-my-dog-eat-this"
+  | "dog-health-calendar"
+  | "dog-sterilisation-planner"
+  | "senior-dog-care-checklist";
 
 export type ToolContent = {
   slug: ToolSlug;
@@ -321,6 +324,117 @@ export const tools: ToolContent[] = [
       },
     ],
   },
+  {
+    slug: "dog-health-calendar",
+    path: "/tools/dog-health-calendar",
+    title: "Dog Health Calendar",
+    seoTitle: "Dog Health Calendar South Africa | Free Prevention Planner",
+    description:
+      "Free South African dog health calendar tool for planning vaccination, rabies, deworming, tick and flea prevention, routine vet checks, grooming and dental reminders.",
+    intro:
+      "Use this simple planning tool to see which health reminders belong on your dog-care calendar, then follow your veterinarian's schedule.",
+    note:
+      "This is a general planning guide only. It does not collect or store personal information, and it does not replace your vet's vaccination, parasite prevention, or routine care schedule.",
+    related: [
+      { title: "Dog Health Calendar Guide", description: "How to use reminders safely.", href: "/health/dog-health-calendar-south-africa" },
+      { title: "Routine Vet Checkup", description: "What to ask during prevention visits.", href: "/health/routine-vet-checkup-for-dogs-south-africa" },
+      { title: "Vaccination Costs and Schedule", description: "Plan records, boosters, and cost questions.", href: "/health/dog-vaccination-costs-and-schedule-south-africa" },
+      { title: "Dog Parasite Prevention", description: "Ticks, fleas, worms, mites, and vet questions.", href: "/health/dog-parasite-prevention-south-africa" },
+      { title: "Puppy Care", description: "First-year puppy prevention planning.", href: "/puppy" },
+      { title: "Emergency Help", description: "Know warning signs that should not wait.", href: "/emergency" },
+    ],
+    faqs: [
+      {
+        question: "Does the dog health calendar store my data?",
+        answer:
+          "No. It runs in your browser as a general planning prompt and does not ask for your name, email, or account.",
+      },
+      {
+        question: "Can it replace my vet's schedule?",
+        answer:
+          "No. Your vet's advice, vaccine records, and product instructions come first.",
+      },
+      {
+        question: "Can I use it for puppies?",
+        answer:
+          "Yes, as a reminder prompt only. Puppies need vet-guided vaccination, deworming, parasite prevention, and safe socialisation planning.",
+      },
+    ],
+  },
+  {
+    slug: "dog-sterilisation-planner",
+    path: "/tools/dog-sterilisation-planner",
+    title: "Dog Sterilisation Planner",
+    seoTitle: "Dog Sterilisation Planner South Africa | Free Vet Question Checklist",
+    description:
+      "Free South African dog sterilisation and ID planning checklist for spay, neuter, microchip, ID tag, records, surgery questions and warning signs.",
+    intro:
+      "Prepare clearer questions before a spay, neuter, microchip or ID discussion with your vet.",
+    note:
+      "This is a planning checklist only. It does not collect or store personal information, and it does not replace your veterinarian's advice or surgery instructions.",
+    related: [
+      { title: "Dog Sterilisation", description: "Spay and neuter planning overview.", href: "/health/dog-sterilisation-south-africa" },
+      { title: "Sterilisation Cost", description: "Cost factors and quote questions.", href: "/health/dog-sterilisation-cost-south-africa" },
+      { title: "Microchipping Dogs", description: "Registration, lost-dog planning and records.", href: "/health/microchipping-dogs-south-africa" },
+      { title: "Preventing Unwanted Puppies", description: "Welfare-focused prevention guidance.", href: "/health/preventing-unwanted-puppies-south-africa" },
+      { title: "Puppy Care", description: "First-year puppy planning.", href: "/puppy" },
+      { title: "Emergency Help", description: "Know warning signs that should not wait.", href: "/emergency" },
+    ],
+    faqs: [
+      {
+        question: "Does this tool tell me when to sterilise my dog?",
+        answer:
+          "No. It helps you prepare questions. Your vet should advise timing based on your dog's age, sex, breed, size, health and records.",
+      },
+      {
+        question: "Does the planner store my answers?",
+        answer:
+          "No. The planner runs in your browser and does not collect or store personal information.",
+      },
+      {
+        question: "Can it replace post-surgery instructions?",
+        answer:
+          "No. Follow your vet's written recovery instructions and contact them urgently for concerning symptoms.",
+      },
+    ],
+  },
+  {
+    slug: "senior-dog-care-checklist",
+    path: "/tools/senior-dog-care-checklist",
+    title: "Senior Dog Care Checklist",
+    seoTitle: "Senior Dog Care Checklist South Africa | Free Planning Tool",
+    description:
+      "Free South African senior dog care checklist for mobility, dental checks, weight, appetite, skin, lumps, behaviour, hearing, vision, medication questions and comfort planning.",
+    intro:
+      "Use this checklist before routine senior vet visits or when you notice small changes in an older dog.",
+    note:
+      "This is a planning checklist only. It does not collect or store personal information, and it does not replace your veterinarian's advice.",
+    related: [
+      { title: "Senior Dog Care", description: "Comfort, mobility, dental, appetite, behaviour, and routine care planning.", href: "/health/senior-dog-care-south-africa" },
+      { title: "Senior Vet Checkups", description: "What to ask during routine senior appointments.", href: "/health/senior-dog-vet-checkups-south-africa" },
+      { title: "Dog Arthritis", description: "Mobility signs, flooring, weight, and vet questions.", href: "/health/dog-arthritis-south-africa" },
+      { title: "Dog Dental Care", description: "Breath, teeth, gums, chewing changes, and vet dental questions.", href: "/health/dog-dental-care-south-africa" },
+      { title: "Chronic Health Costs", description: "Plan for repeat visits, diagnostics, medication reviews, and insurance wording.", href: "/health/chronic-dog-health-costs-south-africa" },
+      { title: "Emergency Help", description: "Know warning signs that should not wait.", href: "/emergency" },
+    ],
+    faqs: [
+      {
+        question: "Does the senior dog care checklist store my answers?",
+        answer:
+          "No. It runs in your browser and does not ask for your name, email, or account.",
+      },
+      {
+        question: "Can this checklist diagnose my senior dog?",
+        answer:
+          "No. It helps you organise observations for a vet visit. A veterinarian needs to examine your dog to diagnose or treat a problem.",
+      },
+      {
+        question: "When should senior symptoms be urgent?",
+        answer:
+          "Contact a vet urgently for collapse, trouble breathing, severe pain, repeated vomiting, seizures, inability to stand, heavy bleeding, or fast-worsening symptoms.",
+      },
+    ],
+  },
 ];
 
 export const toolsHub = {
@@ -352,6 +466,9 @@ export const toolsHub = {
     { title: "Emergency Vet Costs", description: "Use with the vet visit checklist for urgent-care budget planning.", href: "/costs/emergency-vet-costs-south-africa" },
     { title: "Dog Food Prices", description: "Use with the feeding calculator for monthly food planning.", href: "/food/dog-food-prices-south-africa" },
     { title: "Dog Grooming Costs", description: "Use with the cost calculator for grooming budget planning.", href: "/costs/dog-grooming-costs-south-africa" },
+    { title: "Dog Health Calendar", description: "Plan vaccines, rabies, deworming, parasite prevention, checkups, grooming, and dental reminders.", href: "/tools/dog-health-calendar" },
+    { title: "Dog Sterilisation Planner", description: "Prepare vet questions about spay, neuter, microchips, ID tags, and recovery warning signs.", href: "/tools/dog-sterilisation-planner" },
+    { title: "Senior Dog Care Checklist", description: "Plan mobility, teeth, weight, appetite, skin, lumps, behaviour, hearing, vision, medicine questions, and comfort checks.", href: "/tools/senior-dog-care-checklist" },
   ],
   faqs: [
     {

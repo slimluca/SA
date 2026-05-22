@@ -7,6 +7,8 @@ import { phase14EmergencyCards } from "@/lib/phase14-guides";
 import { phase17EmergencyCards } from "@/lib/phase17-local-guides";
 import { phase18EmergencyCostCards } from "@/lib/phase18-local-cost-guides";
 import { phase20EmergencyCards } from "@/lib/phase20-recovery-guides";
+import { phase21EmergencyCards } from "@/lib/phase21-prevention-guides";
+import { phase23EmergencyCards } from "@/lib/phase23-chronic-health-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("emergency");
@@ -20,6 +22,8 @@ const hub = {
     ...phase17EmergencyCards,
     ...phase18EmergencyCostCards,
     ...phase20EmergencyCards,
+    ...phase21EmergencyCards,
+    ...phase23EmergencyCards,
   ],
 };
 
