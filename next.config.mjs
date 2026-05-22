@@ -35,6 +35,16 @@ const legacyRedirects = [
   ["/veterinary-clinics-south-africa/", "/local-costs"],
   ["/veterinary-clinics-south-africa-price-guide-2026-directory", "/costs/vet-costs-for-dogs-south-africa"],
   ["/veterinary-clinics-south-africa-price-guide-2026-directory/", "/costs/vet-costs-for-dogs-south-africa"],
+  ["/pet-rehabilitation-physiotherapy-south-africa", "/health/dog-arthritis-south-africa"],
+  ["/pet-rehabilitation-physiotherapy-south-africa/", "/health/dog-arthritis-south-africa"],
+  ["/dog-vomiting-diarrhea-color-guide-treatment-south-africa", "/health/dog-vomiting-south-africa"],
+  ["/dog-vomiting-diarrhea-color-guide-treatment-south-africa/", "/health/dog-vomiting-south-africa"],
+  ["/dog-pregnancy-whelping-labor-guide-south-africa", "/health/dog-pregnancy-signs-south-africa"],
+  ["/dog-pregnancy-whelping-labor-guide-south-africa/", "/health/dog-pregnancy-signs-south-africa"],
+  ["/bloat-gastric-torsion-survival-guide-south-africa", "/emergency/bloat-in-dogs-south-africa"],
+  ["/bloat-gastric-torsion-survival-guide-south-africa/", "/emergency/bloat-in-dogs-south-africa"],
+  ["/kennel-cough-symptoms-treatment-south-africa", "/health/kennel-cough-vaccine-south-africa"],
+  ["/kennel-cough-symptoms-treatment-south-africa/", "/health/kennel-cough-vaccine-south-africa"],
 
   // Food
   ["/can-dogs-eat-biltong", "/food/can-dogs-eat-biltong"],
@@ -61,10 +71,16 @@ const legacyRedirects = [
   ["/french-bulldog-clubs-south-africa/", "/breeds"],
   ["/jack-russell-terrier-breed-guide-south-africa", "/breeds/jack-russell-terrier-south-africa"],
   ["/jack-russell-terrier-breed-guide-south-africa/", "/breeds/jack-russell-terrier-south-africa"],
+  ["/german-shepherd-breed-guide-south-africa", "/breeds/german-shepherd-south-africa"],
+  ["/german-shepherd-breed-guide-south-africa/", "/breeds/german-shepherd-south-africa"],
+  ["/maltese-poodle-breed-guide-south-africa", "/breeds/maltese-poodle-south-africa"],
+  ["/maltese-poodle-breed-guide-south-africa/", "/breeds/maltese-poodle-south-africa"],
 
   // Adoption
   ["/puppy-scams-adoption-safety-guide-south-africa", "/adoption/puppy-scam-checklist-south-africa"],
   ["/puppy-scams-adoption-safety-guide-south-africa/", "/adoption/puppy-scam-checklist-south-africa"],
+  ["/puppy-scams-adoption-safety-guide-south-africa-2", "/adoption/puppy-scam-checklist-south-africa"],
+  ["/puppy-scams-adoption-safety-guide-south-africa-2/", "/adoption/puppy-scam-checklist-south-africa"],
   ["/puppy-scams-south-africa", "/adoption/puppy-scam-checklist-south-africa"],
   ["/puppy-scams-south-africa/", "/adoption/puppy-scam-checklist-south-africa"],
   ["/dog-adoption-south-africa", "/adoption/dog-adoption-south-africa"],
@@ -115,6 +131,10 @@ const legacyRedirects = [
   ["/dog-friendly-accommodation-south-africa/", "/dog-friendly/pet-friendly-accommodation-south-africa"],
   ["/south-african-pet-laws-bylaws-guide", "/laws/dog-laws-south-africa"],
   ["/south-african-pet-laws-bylaws-guide/", "/laws/dog-laws-south-africa"],
+
+  // Old WordPress asset paths
+  ["/wp-content/uploads/:path*", "/"],
+  ["/wp-content/:path*", "/"],
 ];
 
 const nextConfig = {

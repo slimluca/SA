@@ -19,6 +19,12 @@ export const phase3EmergencyCards: CardLink[] = [
       "A practical emergency guide for hot summers, cars, walks, beaches, brachycephalic breeds, and collapse risk.",
     href: "/emergency/heatstroke-in-dogs-south-africa",
   },
+  {
+    title: "Bloat in Dogs",
+    description:
+      "Emergency guidance for suspected bloat or gastric torsion, including warning signs and why vet care cannot wait.",
+    href: "/emergency/bloat-in-dogs-south-africa",
+  },
 ];
 
 export const phase3HealthCards: CardLink[] = [
@@ -55,6 +61,137 @@ export const phase3HealthCards: CardLink[] = [
 ];
 
 export const phase3GuidePages: GuideContent[] = [
+  {
+    slug: "bloat-in-dogs-south-africa",
+    path: "/emergency/bloat-in-dogs-south-africa",
+    hubTitle: "Emergency Help",
+    hubPath: "/emergency",
+    title: "Bloat in Dogs in South Africa: Emergency Warning Signs",
+    seoTitle: "Bloat in Dogs South Africa | Emergency Warning Signs",
+    description:
+      "A cautious South African emergency guide to suspected bloat or gastric torsion in dogs, covering warning signs, what to do, what to avoid, and why urgent vet care matters.",
+    intro:
+      "Bloat, sometimes discussed as gastric torsion or GDV, can become life-threatening very quickly. If your dog has a swollen or tight belly, repeated unproductive retching, severe restlessness, weakness, collapse, pale gums, or signs of intense pain, contact a veterinarian or emergency animal clinic immediately.",
+    updated: "2026-05-22",
+    isHealthGuide: true,
+    quickFacts: [
+      "Urgent summary: suspected bloat is an emergency. Phone a vet or emergency animal clinic immediately and prepare to travel.",
+      "Do not wait to see whether the belly goes down, especially in deep-chested, large, giant, senior, or distressed dogs.",
+      "Do not give food, water, human medication, painkillers, oil, or home remedies while deciding what to do.",
+      "This guide is educational and does not diagnose your dog. A veterinarian needs to examine and treat suspected bloat.",
+    ],
+    sections: [
+      {
+        heading: "Why suspected bloat cannot wait",
+        body: [
+          "Bloat can involve gas expansion of the stomach and, in the most dangerous cases, twisting of the stomach. Owners cannot safely confirm the difference at home. A dog may deteriorate quickly, so the safest action is to phone a vet and follow urgent instructions.",
+          "In South Africa, travel time can vary widely between suburbs, rural areas, farms, and after-hours clinics. Save your nearest emergency options before you need them, especially if you own a large or deep-chested breed.",
+        ],
+        table: {
+          headers: ["Warning sign", "Why it matters"],
+          rows: [
+            ["Swollen or tight belly", "Can be a serious abdominal emergency and should be assessed urgently."],
+            ["Repeated retching with little or nothing coming up", "A classic red flag owners often describe with suspected bloat."],
+            ["Restlessness, pacing, or distress", "Pain and shock can develop quickly."],
+            ["Pale gums, weakness, collapse, or fast breathing", "These can indicate a life-threatening emergency."],
+          ],
+        },
+      },
+      {
+        heading: "What owners should do",
+        body: [
+          "Call your vet or the nearest emergency animal clinic immediately. Say that you are worried about bloat or gastric torsion, describe the belly, retching, gum colour, breathing, pain, and how long signs have been present.",
+          "Prepare transport while you call. If possible, have another adult drive so someone can observe the dog. Bring vaccination records, medication details, and insurance information if it is easy to grab without delaying departure.",
+        ],
+        checklist: [
+          "Phone a vet immediately.",
+          "Describe belly swelling, retching, pain, gums, breathing, weakness, and timing.",
+          "Keep your dog calm and avoid unnecessary handling.",
+          "Prepare safe transport to the clinic the vet recommends.",
+          "Take records only if doing so will not delay urgent care.",
+        ],
+      },
+      {
+        heading: "What not to do",
+        body: [
+          "Well-meant home actions can waste critical time or make a sick dog worse. The priority is veterinary assessment.",
+        ],
+        bullets: [
+          "Do not wait overnight or monitor at home if bloat is possible.",
+          "Do not try to make your dog vomit.",
+          "Do not give human medication, painkillers, antacids, oil, milk, or home remedies.",
+          "Do not force walking, food, or water.",
+          "Do not rely on internet videos to decide whether the belly is swollen enough.",
+        ],
+      },
+      {
+        heading: "Dogs that may need extra planning",
+        body: [
+          "Any dog with concerning signs needs urgent care, but owners of larger, deep-chested, senior, anxious, or previously affected dogs should be especially prepared. Breed type does not rule bloat in or out.",
+        ],
+        checklist: [
+          "Ask your vet whether your dog's size, shape, age, history, or feeding routine affects bloat risk.",
+          "Save after-hours clinic details before weekends and holidays.",
+          "Know how you would transport a large dog who cannot walk.",
+          "Discuss feeding, exercise, and prevention questions with your vet during routine visits.",
+        ],
+      },
+      {
+        heading: "Prevention and planning questions",
+        body: [
+          "Not every emergency can be prevented, but owners can ask better questions before a crisis and avoid delaying urgent care when warning signs appear.",
+        ],
+        checklist: [
+          "Should my dog have any special feeding or exercise precautions?",
+          "What signs should make me call immediately?",
+          "Which emergency clinic should I use after hours?",
+          "Should I consider insurance or an emergency fund for urgent surgery or hospital care?",
+          "What records should I keep easy to find?",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is bloat always an emergency?",
+        answer:
+          "Suspected bloat should be treated as an emergency because owners cannot safely tell at home whether the stomach has twisted or whether shock is developing.",
+      },
+      {
+        question: "Can I wait if my dog is still standing?",
+        answer:
+          "No. Dogs with suspected bloat can worsen quickly. Phone a vet immediately even if your dog is still standing or walking.",
+      },
+      {
+        question: "Can small dogs get bloat?",
+        answer:
+          "Large and deep-chested dogs are often discussed, but any dog with a swollen belly, retching, severe distress, weakness, or collapse should receive urgent veterinary attention.",
+      },
+    ],
+    related: [
+      { title: "Emergency Help", description: "Urgent symptoms and first steps.", href: "/emergency" },
+      { title: "Dog Vomiting", description: "Repeated vomiting, retching, and same-day vet signs.", href: "/health/dog-vomiting-south-africa" },
+      { title: "Emergency Vet Costs", description: "Budget planning without delaying urgent care.", href: "/costs/emergency-vet-costs-south-africa" },
+      { title: "Vet Visit Checklist", description: "Information to keep ready for a vet call.", href: "/tools/vet-visit-checklist" },
+      { title: "Compare Dog Insurance", description: "Neutral questions about emergency cover.", href: "/insurance/compare-dog-insurance-south-africa" },
+    ],
+    sources: [
+      {
+        label: "South African Veterinary Council",
+        href: "https://savc.org.za/",
+        note: "South African veterinary professional context.",
+      },
+      {
+        label: "MSD Veterinary Manual",
+        href: "https://www.msdvetmanual.com/",
+        note: "Veterinary reference for gastric dilatation-volvulus and emergency dog health context.",
+      },
+      {
+        label: "Cornell Richard P. Riney Canine Health Center",
+        href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center",
+        note: "Veterinary education resource for dog emergency and health owner guidance.",
+      },
+    ],
+  },
   {
     slug: "dog-poisoning-south-africa",
     path: "/emergency/dog-poisoning-south-africa",
