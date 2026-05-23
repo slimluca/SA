@@ -46,13 +46,13 @@ export function PuppyNameShortlist() {
         </button>
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-2">
+      <div className="mt-5 grid gap-2 sm:grid-cols-4">
         {starterNames.map((name) => (
           <button
             key={name}
             type="button"
             onClick={() => addName(name)}
-            className="rounded-full border border-sage/30 bg-sage/10 px-3 py-2 text-sm font-bold text-cocoa transition hover:border-sage"
+            className="rounded-xl border border-sage/30 bg-sage/10 px-3 py-3 text-sm font-bold text-cocoa transition hover:border-sage"
           >
             {name}
           </button>

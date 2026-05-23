@@ -282,9 +282,9 @@ function ResultCard({ title, copy, links }: { title: string; copy: string; links
 
 function LinkChips({ links }: { links: readonly { label: string; href: string }[] }) {
   return (
-    <div className="mt-5 flex flex-wrap gap-2">
+    <div className="mt-5 grid gap-2 sm:grid-cols-2">
       {links.map((link) => (
-        <a key={link.href} href={link.href} className="rounded-full border border-sage/30 bg-white px-3 py-2 text-sm font-bold text-cocoa transition hover:border-sage hover:text-sage">
+        <a key={link.href} href={link.href} className="flex h-full items-center rounded-xl border border-sage/30 bg-white px-3 py-3 text-sm font-bold leading-snug text-cocoa transition hover:border-sage hover:text-sage">
           {link.label}
         </a>
       ))}

@@ -1,4 +1,3 @@
-import { ContentLinkCard } from "@/components/ContentLinkCard";
 import type { CardLink } from "@/lib/content";
 
 export function HelpfulNextSteps({ title = "Helpful next steps", links }: { title?: string; links: CardLink[] }) {
@@ -12,9 +11,16 @@ export function HelpfulNextSteps({ title = "Helpful next steps", links }: { titl
       <p className="mt-2 text-sm leading-6 text-bark">
         Quick DogHaven tools and guides that naturally fit this page.
       </p>
-      <div className="mt-4 space-y-3">
+      <div className="mt-4 grid gap-3">
         {links.map((link) => (
-          <ContentLinkCard key={`${title}-${link.href}`} {...link} />
+          <a
+            key={`${title}-${link.href}`}
+            href={link.href}
+            className="grid h-full rounded-xl border border-sage/25 bg-white p-4 text-sm leading-6 shadow-sm transition hover:border-sage hover:shadow-soft"
+          >
+            <span className="font-black leading-snug text-cocoa">{link.title}</span>
+            <span className="mt-1 text-bark">{link.description}</span>
+          </a>
         ))}
       </div>
     </section>

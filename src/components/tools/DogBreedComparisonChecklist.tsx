@@ -115,12 +115,12 @@ export function DogBreedComparisonChecklist() {
 
         <div className="rounded-2xl border border-sage/25 bg-sage/10 p-5 text-sm leading-6 text-bark">
           <p className="font-black text-cocoa">Useful next steps</p>
-          <div className="mt-3 flex flex-wrap gap-2">
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
             {allBreedLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-full border border-sage/30 bg-white px-3 py-2 font-bold text-cocoa transition hover:border-sage hover:text-sage"
+                className="flex h-full items-center rounded-xl border border-sage/30 bg-white px-3 py-3 text-sm font-bold leading-snug text-cocoa transition hover:border-sage hover:text-sage"
               >
                 {link.label}
               </a>

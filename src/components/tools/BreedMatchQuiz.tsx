@@ -83,9 +83,9 @@ export function BreedMatchQuiz() {
             <li key={note} className="flex gap-3 text-sm leading-6 text-bark"><span className="mt-2 h-2 w-2 rounded-full bg-honey" />{note}</li>
           ))}
         </ul>
-        <div className="mt-5 flex flex-wrap gap-2">
+        <div className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {result.links.map((link) => (
-            <Link key={link.href} href={link.href} className="rounded-full bg-white px-4 py-2 text-sm font-black text-cocoa shadow-sm hover:text-moss">
+            <Link key={link.href} href={link.href} className="flex h-full items-center rounded-xl bg-white px-4 py-3 text-sm font-black leading-snug text-cocoa shadow-sm transition hover:text-moss">
               {link.title}
             </Link>
           ))}
