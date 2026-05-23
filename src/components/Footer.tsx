@@ -8,13 +8,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.35fr_2fr] lg:px-8">
         <div className="max-w-md">
           <div className="mb-3 flex items-center gap-2">
-            <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-honey bg-cream shadow-sm">
+            <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-sm">
               <Image
-                src="/brand/doghaven-logo.png"
+                src="/brand/doghaven-logo-mark.png"
                 alt=""
                 width={44}
                 height={44}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </span>
             <span className="text-xl font-extrabold">DogHaven</span>

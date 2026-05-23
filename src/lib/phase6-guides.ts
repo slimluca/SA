@@ -246,7 +246,7 @@ export const phase6GuidePages: GuideContent[] = [
           "Do not punish growling without finding the cause.",
           "Do not flood fearful dogs by forcing them close to triggers.",
           "Do not use tools you do not understand or cannot use safely.",
-          "Do not trust guaranteed behaviour fixes for complex problems.",
+          "Do not trust promised instant behaviour fixes for complex problems.",
         ],
       },
       {
@@ -689,12 +689,12 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "Red flags",
         body: [
-          "Be cautious if the trainer's confidence sounds like a sales trick rather than a welfare plan. Dogs are individuals, and serious behaviour work cannot be guaranteed like a car wash.",
+          "Be cautious if the trainer's confidence sounds like a sales trick rather than a welfare plan. Dogs are individuals, and serious behaviour work cannot be promised like a quick service.",
         ],
         table: {
           headers: ["Red flag", "Why it matters"],
           rows: [
-            ["Guaranteed instant fixes", "Complex behaviour depends on emotion, history, health, and environment."],
+            ["Promised instant fixes", "Complex behaviour depends on emotion, history, health, and environment."],
             ["No owner involvement", "Owners need to learn the skills for daily life."],
             ["Alpha or dominance claims for every issue", "Oversimplifies behaviour and can lead to harsh handling."],
             ["Fear, intimidation, or pain", "Can worsen anxiety and damage trust."],

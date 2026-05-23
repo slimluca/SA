@@ -319,7 +319,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
         heading: "Warning signs to avoid",
         body: ["Training should make life safer and kinder, not more frightening for the dog."],
         bullets: [
-          "Guaranteed instant fixes for aggression, fear, barking, or separation anxiety.",
+          "Promised instant fixes for aggression, fear, barking, or separation anxiety.",
           "Punishment-heavy methods, intimidation, flooding, or tools used without welfare discussion.",
           "No owner involvement or unclear explanation of what happens during sessions.",
           "Pressure to pay before method and service details are explained.",

@@ -1143,7 +1143,7 @@ export const phase5GuidePages: GuideContent[] = [
           rows: [
             ["Life stage", "Is it for puppy, adult, senior, all life stages, or a veterinary condition?"],
             ["Feeding guide", "Does the daily amount match your dog's current weight and body condition?"],
-            ["Guaranteed analysis", "What protein, fat, fibre, and moisture information is provided?"],
+            ["Nutrition analysis", "What protein, fat, fibre, and moisture information is provided?"],
             ["Ingredients", "Are you reading the list with context rather than judging by one ingredient?"],
             ["Expiry and storage", "Can you finish the bag while it is still fresh?"],
           ],

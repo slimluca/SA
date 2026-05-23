@@ -6,6 +6,7 @@ import { cityHub, provinceHub } from "@/lib/phase7-guides";
 import { phase13DogFriendlyCards } from "@/lib/phase13-guides";
 import { phase17DogFriendlyCards } from "@/lib/phase17-local-guides";
 import { phase19DogFriendlyCards } from "@/lib/phase19-dog-services-guides";
+import { phase27DogFriendlyCards } from "@/lib/phase27-fun-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("dog-friendly");
@@ -17,6 +18,7 @@ const hub = {
     ...phase13DogFriendlyCards,
     ...phase17DogFriendlyCards,
     ...phase19DogFriendlyCards,
+    ...phase27DogFriendlyCards,
     {
       title: "City Dog Owner Guides",
       description:

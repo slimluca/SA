@@ -7,11 +7,22 @@ import { FAQBlock } from "@/components/FAQBlock";
 import { BreedMatchQuiz } from "@/components/tools/BreedMatchQuiz";
 import { ChecklistTool, type ChecklistGroup } from "@/components/tools/ChecklistTool";
 import { DogAgeCalculator } from "@/components/tools/DogAgeCalculator";
+import { DogBreedComparisonChecklist } from "@/components/tools/DogBreedComparisonChecklist";
 import { DogFeedingCalculator } from "@/components/tools/DogFeedingCalculator";
 import { DogHealthCalendar } from "@/components/tools/DogHealthCalendar";
 import { DogNameGenerator } from "@/components/tools/DogNameGenerator";
 import { DogSterilisationPlanner } from "@/components/tools/DogSterilisationPlanner";
 import { FoodSafetyLookup } from "@/components/tools/FoodSafetyLookup";
+import {
+  DogCareRoutineBuilder,
+  DogFriendlyTripChecklist,
+  DogPersonalityQuiz,
+  DogWalkPlanner,
+  PuppyReadinessQuiz,
+  WeeklyDogCarePlanner,
+} from "@/components/tools/FunEngagementTools";
+import { PrintableChecklistTool } from "@/components/tools/PrintableChecklistTool";
+import { PuppyNameShortlist } from "@/components/tools/PuppyNameShortlist";
 import { SeniorDogCareChecklist } from "@/components/tools/SeniorDogCareChecklist";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 import { createMetadata } from "@/lib/seo";
@@ -96,8 +107,18 @@ function ToolWidget({ slug }: { slug: ToolSlug }) {
   if (slug === "dog-health-calendar") return <DogHealthCalendar />;
   if (slug === "dog-sterilisation-planner") return <DogSterilisationPlanner />;
   if (slug === "senior-dog-care-checklist") return <SeniorDogCareChecklist />;
+  if (slug === "dog-breed-comparison-checklist") return <DogBreedComparisonChecklist />;
   if (slug === "dog-breed-match-quiz") return <BreedMatchQuiz />;
   if (slug === "dog-name-generator") return <DogNameGenerator />;
+  if (slug === "puppy-name-shortlist") return <PuppyNameShortlist />;
+  if (slug === "new-puppy-home-checklist") return <PrintableChecklistTool type="puppy" />;
+  if (slug === "dog-care-printable-checklist") return <PrintableChecklistTool type="care" />;
+  if (slug === "dog-personality-quiz") return <DogPersonalityQuiz />;
+  if (slug === "puppy-readiness-quiz") return <PuppyReadinessQuiz />;
+  if (slug === "dog-care-routine-builder") return <DogCareRoutineBuilder />;
+  if (slug === "weekly-dog-care-planner") return <WeeklyDogCarePlanner />;
+  if (slug === "dog-walk-planner") return <DogWalkPlanner />;
+  if (slug === "dog-friendly-trip-checklist") return <DogFriendlyTripChecklist />;
   if (slug === "can-my-dog-eat-this") return <FoodSafetyLookup />;
 
   return <ChecklistTool groups={checklistGroups[slug] ?? []} />;

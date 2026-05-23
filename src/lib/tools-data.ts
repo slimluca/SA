@@ -7,13 +7,23 @@ export type ToolSlug =
   | "dog-age-calculator"
   | "dog-breed-match-quiz"
   | "dog-name-generator"
+  | "puppy-name-shortlist"
+  | "new-puppy-home-checklist"
+  | "dog-care-printable-checklist"
+  | "dog-personality-quiz"
+  | "puppy-readiness-quiz"
+  | "dog-care-routine-builder"
+  | "weekly-dog-care-planner"
+  | "dog-walk-planner"
+  | "dog-friendly-trip-checklist"
   | "new-dog-shopping-list"
   | "vet-visit-checklist"
   | "dog-friendly-travel-checklist"
   | "can-my-dog-eat-this"
   | "dog-health-calendar"
   | "dog-sterilisation-planner"
-  | "senior-dog-care-checklist";
+  | "senior-dog-care-checklist"
+  | "dog-breed-comparison-checklist";
 
 export type ToolContent = {
   slug: ToolSlug;
@@ -183,14 +193,16 @@ export const tools: ToolContent[] = [
     slug: "dog-name-generator",
     path: "/tools/dog-name-generator",
     title: "Dog Name Generator",
-    seoTitle: "Dog Name Generator South Africa | Cute Dog Names",
+    seoTitle: "Dog Name Generator South Africa | Cute, Strong and Puppy Names",
     description:
-      "A fun, respectful South African-inspired dog name generator with cute, strong, food, nature, Afrikaans-inspired, beach, and safari-inspired ideas.",
+      "A free South African dog name generator with cute, strong, puppy, small dog, big dog, active dog and local-inspired ideas.",
     intro:
-      "Generate family-friendly dog name ideas with a gentle South African flavour, then save your favourites elsewhere if you like them.",
+      "Generate family-friendly dog name ideas by style and name feel, then test favourites out loud before choosing.",
     note:
-      "Names are generated in your browser. DogHaven does not collect or save your choices.",
+      "Names are generated in your browser. DogHaven does not collect or save your choices. For language-inspired names, choose respectfully and check meaning or context when unsure.",
     related: [
+      { title: "Dog Names", description: "South African dog name guides and naming tips.", href: "/dog-names" },
+      { title: "Puppy Name Shortlist", description: "Create a small local shortlist without saving data.", href: "/tools/puppy-name-shortlist" },
       { title: "New Dog Shopping List", description: "Prepare the basics before arrival.", href: "/tools/new-dog-shopping-list" },
       { title: "Adoption Safety", description: "Choose and bring home a dog carefully.", href: "/adoption" },
       ...commonRelated,
@@ -206,6 +218,228 @@ export const tools: ToolContent[] = [
         answer:
           "No. The tool runs in your browser and does not save personal information.",
       },
+    ],
+  },
+  {
+    slug: "puppy-name-shortlist",
+    path: "/tools/puppy-name-shortlist",
+    title: "Puppy Name Shortlist",
+    seoTitle: "Puppy Name Shortlist Tool South Africa | DogHaven",
+    description:
+      "A free puppy name shortlist tool for South African dog owners to test favourite names locally in the browser.",
+    intro:
+      "Add a few favourite names, test them out loud, and choose one that still feels clear during training, vet visits and recall practice.",
+    note:
+      "This tool uses browser state only. It does not save your list, ask for login details or collect personal information.",
+    related: [
+      { title: "Puppy Names", description: "Cute and practical puppy name ideas.", href: "/dog-names/puppy-names-south-africa" },
+      { title: "Dog Names South Africa", description: "Broader local name ideas and tips.", href: "/dog-names/dog-names-south-africa" },
+      { title: "New Puppy Home Checklist", description: "Prepare the home before arrival.", href: "/tools/new-puppy-home-checklist" },
+      ...commonRelated,
+    ],
+    faqs: [
+      {
+        question: "Does the shortlist save my names?",
+        answer:
+          "No. It uses browser state only and does not store names in a database or account.",
+      },
+      {
+        question: "How many names should I shortlist?",
+        answer:
+          "Two to five names is usually enough. Test each name in a happy voice, a recall voice and a calm public setting.",
+      },
+    ],
+  },
+  {
+    slug: "new-puppy-home-checklist",
+    path: "/tools/new-puppy-home-checklist",
+    title: "New Puppy Home Checklist",
+    seoTitle: "New Puppy Home Checklist South Africa | Printable Tool",
+    description:
+      "A free printable-style new puppy home checklist for food, bowls, bed, ID, microchip reminders, vet care, parasite prevention, puppy-proofing, training and transport.",
+    intro:
+      "Use this printable-style checklist before your puppy arrives so the basics are ready without overbuying.",
+    note:
+      "This is a planning checklist only. Follow your veterinarian's schedule and the records from the shelter, rescue or responsible breeder.",
+    related: [
+      { title: "New Puppy Checklist Guide", description: "Records, supplies and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Puppy Names", description: "Choose a clear, kind puppy name.", href: "/dog-names/puppy-names-south-africa" },
+      { title: "Puppy Scam Checklist", description: "Avoid pressure payments and suspicious adverts.", href: "/adoption/puppy-scam-checklist-south-africa" },
+      ...commonRelated,
+    ],
+    faqs: [
+      {
+        question: "Can I print the checklist?",
+        answer:
+          "Yes. Use the print button on the tool page or your browser's print option.",
+      },
+      {
+        question: "Does it replace a vet visit?",
+        answer:
+          "No. Puppies need vet-guided vaccination, deworming, parasite prevention and health checks.",
+      },
+    ],
+  },
+  {
+    slug: "dog-care-printable-checklist",
+    path: "/tools/dog-care-printable-checklist",
+    title: "Dog Care Printable Checklist",
+    seoTitle: "Dog Care Printable Checklist South Africa | Free Tool",
+    description:
+      "A free printable-style dog care checklist for feeding, water, exercise, grooming, parasite prevention, vet care, dental checks, training, emergency contacts and budget reminders.",
+    intro:
+      "Use this everyday dog care checklist as a calm reminder for routine care, prevention and emergency planning.",
+    note:
+      "This is a general planning checklist. It does not replace veterinary care, provider quotes, insurance documents or local rules.",
+    related: [
+      { title: "Dog Health Calendar", description: "Plan routine health reminders.", href: "/tools/dog-health-calendar" },
+      { title: "Dog Cost Calculator", description: "Estimate monthly care costs.", href: "/tools/dog-cost-calculator" },
+      { title: "Vet Visit Checklist", description: "Prepare notes before appointments.", href: "/tools/vet-visit-checklist" },
+      ...commonRelated,
+    ],
+    faqs: [
+      {
+        question: "Is this checklist for puppies too?",
+        answer:
+          "It can help, but puppies also need puppy-specific vaccine, deworming, socialisation and home setup planning.",
+      },
+      {
+        question: "Does DogHaven save checked items?",
+        answer:
+          "No. The checklist runs in your browser and does not collect personal information.",
+      },
+    ],
+  },
+  {
+    slug: "dog-personality-quiz",
+    path: "/tools/dog-personality-quiz",
+    title: "Dog Personality Quiz",
+    seoTitle: "Dog Personality Quiz South Africa | Fun DogHaven Tool",
+    description:
+      "A light, fun dog personality quiz for South African owners with practical care links for calm, playful, clever, gentle and adventurous dogs.",
+    intro:
+      "Answer a few playful questions and get a fun result with helpful DogHaven next steps.",
+    note:
+      "This is for fun only. It is not a behavioural assessment, diagnosis or training plan.",
+    related: [
+      { title: "Dog Enrichment Ideas", description: "Safe enrichment for different dog personalities.", href: "/fun/dog-enrichment-ideas-south-africa" },
+      { title: "Dog Care Routine Builder", description: "Turn the result into a practical routine.", href: "/tools/dog-care-routine-builder" },
+      { title: "Dog Training", description: "Humane training foundations.", href: "/training" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "Is the dog personality quiz serious?", answer: "No. It is a light engagement tool that points to practical care ideas." },
+      { question: "Does it collect my data?", answer: "No. It runs in your browser and does not ask for personal information." },
+    ],
+  },
+  {
+    slug: "puppy-readiness-quiz",
+    path: "/tools/puppy-readiness-quiz",
+    title: "Puppy Readiness Quiz",
+    seoTitle: "Puppy Readiness Quiz South Africa | Free Planning Tool",
+    description:
+      "A free puppy readiness quiz for South African homes covering time, budget, training, vet care, puppy-proofing, adoption safety and emergency planning.",
+    intro:
+      "Check whether your home has the basics ready before bringing home a puppy.",
+    note:
+      "This is a planning prompt only. Ask a vet, shelter, rescue or responsible breeder for case-specific guidance.",
+    related: [
+      { title: "Puppy Care", description: "First-year puppy care in South Africa.", href: "/puppy/puppy-care-south-africa" },
+      { title: "New Puppy Home Checklist", description: "Prepare supplies and safety basics.", href: "/tools/new-puppy-home-checklist" },
+      { title: "Puppy Scam Checklist", description: "Avoid suspicious adverts and pressure payments.", href: "/adoption/puppy-scam-checklist-south-africa" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "Can this quiz tell me if I should get a puppy?", answer: "No. It highlights planning areas to think through before deciding." },
+      { question: "What matters most before getting a puppy?", answer: "Time, budget, safe housing, vet care, training patience, adoption safety and emergency planning all matter." },
+    ],
+  },
+  {
+    slug: "dog-care-routine-builder",
+    path: "/tools/dog-care-routine-builder",
+    title: "Dog Care Routine Builder",
+    seoTitle: "Dog Care Routine Builder South Africa | Free Planning Tool",
+    description:
+      "A free dog care routine builder for South African owners covering feeding, water, exercise, grooming, parasite prevention, vet care, training and rest.",
+    intro:
+      "Choose age stage, size, coat type and energy level to build a simple general care routine.",
+    note:
+      "This is a general routine guide. Adjust for your dog's health, vet advice, weather and temperament.",
+    related: [
+      { title: "Dog Health Calendar", description: "Plan routine health reminders.", href: "/tools/dog-health-calendar" },
+      { title: "Weekly Dog Care Planner", description: "Turn routine into a weekly checklist.", href: "/tools/weekly-dog-care-planner" },
+      { title: "Dog Food", description: "Feeding guidance for South African homes.", href: "/food" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "Is the routine exact?", answer: "No. Dogs vary by age, health, breed, weather, lifestyle and vet guidance." },
+      { question: "Can puppies use the routine builder?", answer: "Yes as a broad prompt, but puppies need vet-guided vaccination, deworming and safe socialisation planning." },
+    ],
+  },
+  {
+    slug: "weekly-dog-care-planner",
+    path: "/tools/weekly-dog-care-planner",
+    title: "Weekly Dog Care Planner",
+    seoTitle: "Weekly Dog Care Planner South Africa | Printable Checklist",
+    description:
+      "A free printable-style weekly dog care planner for walks, grooming, training, food checks, water bowls, parasite reminders, dental checks and enrichment.",
+    intro:
+      "Use a simple weekly checklist to keep everyday dog care calmer and easier to remember.",
+    note:
+      "This planner is a general reminder tool. Vet schedules, medication instructions and urgent symptoms come first.",
+    related: [
+      { title: "Dog Care Routine Builder", description: "Build a routine before planning the week.", href: "/tools/dog-care-routine-builder" },
+      { title: "Dog Care Printable Checklist", description: "Everyday care prompts.", href: "/tools/dog-care-printable-checklist" },
+      { title: "Dog Enrichment Ideas", description: "Add safe enrichment to the week.", href: "/fun/dog-enrichment-ideas-south-africa" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "Can I print the weekly dog care planner?", answer: "Yes. Use your browser's print function if you want a paper copy." },
+      { question: "Does the planner save my ticks?", answer: "No. It runs in browser state and does not store personal information." },
+    ],
+  },
+  {
+    slug: "dog-walk-planner",
+    path: "/tools/dog-walk-planner",
+    title: "Dog Walk Planner",
+    seoTitle: "Dog Walk Planner South Africa | Heat, Route and Safety Tool",
+    description:
+      "A free dog walk planner for South African owners covering heat, route, water, leash, waste bags, traffic, other dogs and local rules.",
+    intro:
+      "Use this quick planner before walks, especially in hot weather, busy suburbs, parks, beaches or unfamiliar areas.",
+    note:
+      "This is a safety planning prompt. Follow local rules and avoid walks when heat, illness, injury or behaviour risk makes them unsafe.",
+    related: [
+      { title: "Dog-Friendly Places", description: "Plan outings and verify rules.", href: "/dog-friendly" },
+      { title: "Leash Laws", description: "Check public-space and local rule context.", href: "/laws/dog-leash-laws-south-africa" },
+      { title: "Local Guides", description: "City and province dog-owner context.", href: "/local" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "What should I check before a dog walk in summer?", answer: "Check heat, tar or sand temperature, water, shade, your dog's fitness and route safety." },
+      { question: "Should every dog go to dog parks?", answer: "No. Some dogs are safer and happier on quiet lead walks." },
+    ],
+  },
+  {
+    slug: "dog-friendly-trip-checklist",
+    path: "/tools/dog-friendly-trip-checklist",
+    title: "Dog-Friendly Trip Checklist",
+    seoTitle: "Dog-Friendly Trip Checklist South Africa | Free Travel Tool",
+    description:
+      "A free dog-friendly trip checklist for South African cafes, beaches, parks, accommodation and road trips covering water, leads, records, shade, rules and emergency vets.",
+    intro:
+      "Prepare for dog-friendly outings with a simple checklist for packing, rule checks and safety.",
+    note:
+      "Rules can change by municipality, venue, beach, park and accommodation provider. Check official or venue rules before going.",
+    related: [
+      { title: "Travelling With Dogs", description: "Road trips, records, heat and stops.", href: "/dog-friendly/travelling-with-dogs-south-africa" },
+      { title: "Dog-Friendly Beaches", description: "Beach rules, heat and safety.", href: "/dog-friendly/dog-friendly-beaches-south-africa" },
+      { title: "Province Guides", description: "Local climate, travel and outing context.", href: "/province" },
+      ...commonRelated,
+    ],
+    faqs: [
+      { question: "Should I check dog-friendly rules every time?", answer: "Yes. Venue, beach, park and accommodation rules can change." },
+      { question: "What is the most important thing to pack?", answer: "Water, a secure lead or harness, waste bags and any required records are a sensible start." },
     ],
   },
   {
@@ -435,6 +669,43 @@ export const tools: ToolContent[] = [
       },
     ],
   },
+  {
+    slug: "dog-breed-comparison-checklist",
+    path: "/tools/dog-breed-comparison-checklist",
+    title: "Dog Breed Comparison Checklist",
+    seoTitle: "Dog Breed Comparison Checklist South Africa | Free Breed Chooser Tool",
+    description:
+      "Free South African dog breed comparison checklist for size, grooming, shedding, exercise, training, children, apartment fit, heat, costs, insurance, adoption and breeder questions.",
+    intro:
+      "Compare dog types before you commit, with practical prompts for South African homes, budgets, climate, rentals, children, training, grooming and responsible sourcing.",
+    note:
+      "This is a planning checklist, not a promise about any breed or individual dog. Individual dogs vary. Consider adoption and responsible sourcing, and ask a vet, trainer, shelter, rescue or breed club when you are unsure.",
+    related: [
+      { title: "Choosing the Right Dog Breed", description: "A practical South African breed chooser before adoption or buying.", href: "/breeds/choosing-the-right-dog-breed-south-africa" },
+      { title: "Dog Breed Match Quiz", description: "Explore broad breed categories by lifestyle.", href: "/tools/dog-breed-match-quiz" },
+      { title: "Breed Guides", description: "Individual breed profiles and lifestyle guides.", href: "/breeds" },
+      { title: "Puppy Scam Checklist", description: "Avoid pressure payments and suspicious adverts.", href: "/adoption/puppy-scam-checklist-south-africa" },
+      { title: "Dog Costs", description: "Budget for food, vet care, grooming, training and emergencies.", href: "/costs" },
+      { title: "Pet Insurance", description: "Understand waiting periods, exclusions, excesses and limits.", href: "/insurance" },
+    ],
+    faqs: [
+      {
+        question: "Does the breed comparison checklist choose a breed for me?",
+        answer:
+          "No. It helps you compare practical care needs so you can research, ask better questions, and avoid impulse decisions.",
+      },
+      {
+        question: "Can the checklist predict temperament?",
+        answer:
+          "No. Breed tendencies are only part of the picture. Age, health, genetics, early experiences, training, handling and home life all matter.",
+      },
+      {
+        question: "Should I still consider adoption?",
+        answer:
+          "Yes. A shelter or rescue may help match an individual dog to your home, especially when adult temperament and size are clearer.",
+      },
+    ],
+  },
 ];
 
 export const toolsHub = {
@@ -473,6 +744,7 @@ export const toolsHub = {
     { title: "Dog Health Calendar", description: "Plan vaccines, rabies, deworming, parasite prevention, checkups, grooming, and dental reminders.", href: "/tools/dog-health-calendar" },
     { title: "Dog Sterilisation Planner", description: "Prepare vet questions about spay, neuter, microchips, ID tags, and recovery warning signs.", href: "/tools/dog-sterilisation-planner" },
     { title: "Senior Dog Care Checklist", description: "Plan mobility, teeth, weight, appetite, skin, lumps, behaviour, hearing, vision, medicine questions, and comfort checks.", href: "/tools/senior-dog-care-checklist" },
+    { title: "Breed Comparison Checklist", description: "Compare size, grooming, exercise, heat, cost, insurance, adoption and breeder questions before choosing.", href: "/tools/dog-breed-comparison-checklist" },
   ],
   faqs: [
     {

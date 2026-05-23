@@ -1061,7 +1061,7 @@ const costGuides: MoneyGuide[] = [
       "What emergency buffer can I build monthly?",
     ],
     avoid: [
-      "Do not treat the calculator as a guaranteed quote.",
+      "Do not treat the calculator as a fixed quote.",
       "Do not budget only for food.",
       "Do not skip parasite prevention, vaccines, or vet checks to make the number lower.",
       "Do not ignore first-year puppy costs.",

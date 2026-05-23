@@ -30,6 +30,8 @@ export const hubNavigation = [
   { label: "Dog-Friendly", href: "/dog-friendly" },
   { label: "Laws", href: "/laws" },
   { label: "Tools", href: "/tools" },
+  { label: "Fun", href: "/fun" },
+  { label: "Dog Names", href: "/dog-names" },
   { label: "Local Guides", href: "/local" },
   { label: "Dog Services", href: "/dog-services" },
   { label: "Local Costs", href: "/local-costs" },
@@ -59,6 +61,8 @@ export const footerNavigationSections = [
       { label: "Dog-Friendly", href: "/dog-friendly" },
       { label: "Laws", href: "/laws" },
       { label: "Tools", href: "/tools" },
+      { label: "Fun", href: "/fun" },
+      { label: "Dog Names", href: "/dog-names" },
     ],
   },
   {

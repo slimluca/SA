@@ -251,10 +251,10 @@ const breeds: BreedSpec[] = [
     health: ["Dental care, kneecap concerns, skin issues, and tear staining may be relevant.", "Matting can hide skin problems."],
     cost: "Grooming and dental care may outweigh food savings.",
     adoption: "Many small crossbreeds need homes. If buying, verify health, parent dogs, and avoid vague designer-dog claims.",
-    questions: ["Can I maintain the coat?", "Can I teach calm alone time?", "Do I understand this is not a guaranteed hypoallergenic dog?"],
+    questions: ["Can I maintain the coat?", "Can I teach calm alone time?", "Do I understand this is not an allergy-proof dog?"],
     checklist: ["Grooming schedule.", "Dental plan.", "Alone-time training.", "Mat prevention.", "Vet records."],
     faqs: [
-      { question: "Are Maltese Poodles hypoallergenic?", answer: "No dog is guaranteed hypoallergenic. Spend time with similar dogs and discuss allergies realistically." },
+      { question: "Are Maltese Poodles hypoallergenic?", answer: "No dog is allergy-proof. Spend time with similar dogs and discuss allergies realistically." },
       { question: "How often do they need grooming?", answer: "Many need frequent brushing and regular professional clipping, depending on coat." },
       { question: "Are they good apartment dogs?", answer: "Often, but barking, toilet training, and separation comfort still need work." },
     ],
@@ -644,7 +644,7 @@ const breeds: BreedSpec[] = [
     questions: ["Which size truly suits my home?", "Can I afford grooming every year?", "Will I provide mental enrichment?"],
     checklist: ["Grooming budget.", "Size choice.", "Training games.", "Dental care.", "Health screening questions."],
     faqs: [
-      { question: "Are Poodles hypoallergenic?", answer: "No dog is guaranteed hypoallergenic, though some people react less to low-shedding coats." },
+      { question: "Are Poodles hypoallergenic?", answer: "No dog is allergy-proof, though some people react less to low-shedding coats." },
       { question: "Do Poodles need much grooming?", answer: "Yes, coat care is a major responsibility." },
       { question: "Are Poodles smart?", answer: "Yes, and that intelligence needs training, enrichment, and routine." },
     ],
@@ -658,7 +658,7 @@ const breeds: BreedSpec[] = [
     context:
       "South African shelters and rescues care for many mixed breed dogs and puppies. A mixed breed can be a brilliant adoption choice when the match is based on behaviour, adult size estimate, energy, household fit, and honest questions.",
     bestFor: ["Adoption-minded owners", "Families focused on individual temperament", "People open to unique dogs"],
-    notIdealFor: ["Owners needing guaranteed adult size or coat", "People unwilling to assess behaviour", "Impulse adoption without planning"],
+    notIdealFor: ["Owners needing certain adult size or coat", "People unwilling to assess behaviour", "Impulse adoption without planning"],
     size: "Varies from tiny to giant; estimate adult size carefully for puppies.",
     exercise: "Varies by build, age, and temperament.",
     grooming: "Depends on coat type.",

@@ -8,6 +8,7 @@ import { phase20InsuranceCards } from "@/lib/phase20-recovery-guides";
 import { phase21InsuranceCards } from "@/lib/phase21-prevention-guides";
 import { phase22InsuranceCards } from "@/lib/phase22-sterilisation-guides";
 import { phase23InsuranceCards } from "@/lib/phase23-chronic-health-guides";
+import { phase25InsuranceCards } from "@/lib/phase25-breed-lifestyle-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("insurance");
@@ -22,6 +23,7 @@ const hub = {
     ...phase21InsuranceCards,
     ...phase22InsuranceCards,
     ...phase23InsuranceCards,
+    ...phase25InsuranceCards,
   ],
 };
 

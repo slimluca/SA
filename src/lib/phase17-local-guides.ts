@@ -419,7 +419,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
     updated: reviewed,
     quickFacts: [
       "Choose reward-based, humane training that involves the owner and avoids fear-heavy methods.",
-      "Good trainers explain their methods clearly and do not promise instant guaranteed fixes.",
+      "Good trainers explain their methods clearly and do not promise instant fixed outcomes.",
       "Puppy classes should balance socialisation with vaccination safety and controlled exposure.",
       "Serious aggression, panic, or bite risk may need a qualified behaviour professional and veterinary input.",
     ],
@@ -472,7 +472,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
         heading: "Warning signs to avoid",
         body: ["Avoid any trainer whose approach makes safety, trust, and welfare feel secondary."],
         bullets: [
-          "Guaranteed results for aggression, fear, or separation anxiety.",
+          "Promised instant results for aggression, fear, or separation anxiety.",
           "Methods based on intimidation, pain, flooding, or frightening the dog into stopping.",
           "No owner involvement or no explanation of what is being done.",
           "Blaming the dog without asking about health, pain, routine, exercise, or environment.",

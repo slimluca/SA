@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   }),
   icons: {
     icon: "/icon.png",
-    apple: "/brand/doghaven-logo.png",
+    apple: "/brand/doghaven-logo-mark.png",
   },
 };
 

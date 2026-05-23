@@ -60,23 +60,13 @@ export default function Image() {
             boxShadow: "0 24px 60px rgba(63,43,31,0.18)",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              width: 178,
-              height: 178,
-              borderRadius: 89,
-              alignItems: "center",
-              justifyContent: "center",
-              background: "#6f8f72",
-              color: "#fff9ee",
-              fontSize: 86,
-              fontWeight: 900,
-              lineHeight: 1,
-            }}
-          >
-            DH
-          </div>
+          <img
+            src="https://www.doghaven.co.za/brand/doghaven-logo-mark.png"
+            alt=""
+            width="230"
+            height="230"
+            style={{ objectFit: "contain" }}
+          />
         </div>
       </div>
     ),

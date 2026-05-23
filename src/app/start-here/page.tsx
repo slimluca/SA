@@ -4,6 +4,9 @@ import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { FAQBlock } from "@/components/FAQBlock";
 import { JsonLd, collectionPageSchema, faqSchema } from "@/lib/schema";
 import { phase20StartHereCards } from "@/lib/phase20-recovery-guides";
+import { phase25StartHereCards } from "@/lib/phase25-breed-lifestyle-guides";
+import { phase26StartHereCards } from "@/lib/phase26-dog-name-guides";
+import { phase27StartHereCards } from "@/lib/phase27-fun-guides";
 import { createMetadata } from "@/lib/seo";
 
 const sections = [
@@ -25,6 +28,7 @@ const sections = [
       { title: "Puppy Scam Checklist", description: "Avoid pressure payments and fake adverts.", href: "/adoption/puppy-scam-checklist-south-africa" },
       { title: "Rescue Dog First Week", description: "Set up a calm first week at home.", href: "/adoption/rescue-dog-first-week-home-south-africa" },
       { title: "Questions Before Adopting", description: "Ask better matching questions.", href: "/adoption/questions-to-ask-before-adopting-a-dog" },
+      ...phase25StartHereCards,
     ],
   },
   {
@@ -65,7 +69,10 @@ const sections = [
       { title: "Tools Hub", description: "All free DogHaven tools in one place.", href: "/tools" },
       { title: "Dog Age Calculator", description: "Estimate broad life stage reminders.", href: "/tools/dog-age-calculator" },
       { title: "Breed Match Quiz", description: "Explore broad responsible breed categories.", href: "/tools/dog-breed-match-quiz" },
+      { title: "Breed Comparison Checklist", description: "Compare breed care needs before choosing.", href: "/tools/dog-breed-comparison-checklist" },
       { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
+      ...phase26StartHereCards,
+      ...phase27StartHereCards,
     ],
   },
   {

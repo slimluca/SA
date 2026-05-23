@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { getPhase4Guide, getPhase4GuidesByHub } from "@/lib/phase4-guides";
 import { getPhase12Guide, getPhase12GuidesByHub } from "@/lib/phase12-guides";
+import { getPhase25Guide, getPhase25GuidesByHub } from "@/lib/phase25-breed-lifestyle-guides";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -12,14 +13,18 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return [...getPhase4GuidesByHub("/breeds"), ...getPhase12GuidesByHub("/breeds")].map((guide) => ({
+  return [
+    ...getPhase4GuidesByHub("/breeds"),
+    ...getPhase12GuidesByHub("/breeds"),
+    ...getPhase25GuidesByHub("/breeds"),
+  ].map((guide) => ({
     slug: guide.slug,
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase4Guide(slug) ?? getPhase12Guide(slug);
+  const guide = getPhase4Guide(slug) ?? getPhase12Guide(slug) ?? getPhase25Guide(slug);
 
   if (!guide || guide.hubPath !== "/breeds") {
     return {};
@@ -34,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BreedGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase4Guide(slug) ?? getPhase12Guide(slug);
+  const guide = getPhase4Guide(slug) ?? getPhase12Guide(slug) ?? getPhase25Guide(slug);
 
   if (!guide || guide.hubPath !== "/breeds") {
     notFound();

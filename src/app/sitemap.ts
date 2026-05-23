@@ -19,6 +19,9 @@ import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
 import { phase21PreventionGuidePages } from "@/lib/phase21-prevention-guides";
 import { phase22SterilisationGuidePages } from "@/lib/phase22-sterilisation-guides";
 import { phase23ChronicHealthGuidePages } from "@/lib/phase23-chronic-health-guides";
+import { phase25BreedLifestyleGuidePages } from "@/lib/phase25-breed-lifestyle-guides";
+import { dogNamesHub, phase26DogNameGuidePages } from "@/lib/phase26-dog-name-guides";
+import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 
@@ -43,6 +46,7 @@ const highPriorityRoutes = new Set([
   "/local",
   "/local-costs",
   "/dog-services",
+  "/fun",
 ]);
 
 const moneyAndToolRoutes = new Set([
@@ -67,6 +71,17 @@ const moneyAndToolRoutes = new Set([
   "/tools/dog-health-calendar",
   "/tools/dog-sterilisation-planner",
   "/tools/senior-dog-care-checklist",
+  "/tools/dog-breed-comparison-checklist",
+  "/tools/dog-name-generator",
+  "/tools/puppy-name-shortlist",
+  "/tools/new-puppy-home-checklist",
+  "/tools/dog-care-printable-checklist",
+  "/tools/dog-personality-quiz",
+  "/tools/puppy-readiness-quiz",
+  "/tools/dog-care-routine-builder",
+  "/tools/weekly-dog-care-planner",
+  "/tools/dog-walk-planner",
+  "/tools/dog-friendly-trip-checklist",
   "/health/tick-and-flea-treatment-for-dogs-south-africa",
   "/health/dog-vaccination-costs-and-schedule-south-africa",
   "/health/dog-sterilisation-south-africa",
@@ -130,6 +145,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase21PreventionGuidePages.map((guide) => guide.path),
     ...phase22SterilisationGuidePages.map((guide) => guide.path),
     ...phase23ChronicHealthGuidePages.map((guide) => guide.path),
+    ...phase25BreedLifestyleGuidePages.map((guide) => guide.path),
+    dogNamesHub.path,
+    ...phase26DogNameGuidePages.map((guide) => guide.path),
+    funHub.path,
+    ...phase27FunGuidePages.map((guide) => guide.path),
   ];
 
   return Array.from(new Set(routes)).map((route) => ({
