@@ -99,7 +99,7 @@ export function DogPersonalityQuiz() {
 
   return (
     <ToolShell title="Dog personality quiz" note="This is a light, fun quiz only. It is not a behavioural assessment or training diagnosis.">
-      <div className="grid gap-5 lg:grid-cols-[1fr_0.8fr]">
+      <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.72fr)]">
         <div className="space-y-5">
           {personalityQuestions.map((question, index) => (
             <section key={question.question} className="rounded-2xl border border-oat bg-cream p-5">
@@ -156,7 +156,7 @@ export function PuppyReadinessQuiz() {
 
   return (
     <ToolShell title="Puppy readiness quiz" note="This tool is a planning prompt only. It does not judge your home or replace advice from a vet, shelter, rescue or responsible breeder.">
-      <div className="grid gap-5 lg:grid-cols-[1fr_0.8fr]">
+      <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.72fr)]">
         <div className="grid gap-3">
           {readinessQuestions.map((item) => (
             <label key={item} className="flex cursor-pointer gap-3 rounded-xl border border-oat bg-cream p-4 text-sm font-semibold leading-6 text-bark">
@@ -271,7 +271,7 @@ function ToolShell({ title, note, children }: { title: string; note: string; chi
 
 function ResultCard({ title, copy, links }: { title: string; copy: string; links: readonly { label: string; href: string }[] }) {
   return (
-    <aside className="rounded-2xl border border-sage/30 bg-sage/10 p-5">
+    <aside className="h-fit self-start rounded-2xl border border-sage/30 bg-sage/10 p-5">
       <p className="text-sm font-black uppercase tracking-wide text-moss">Result</p>
       <h2 className="mt-2 text-2xl font-black text-cocoa">{title}</h2>
       <p className="mt-3 text-sm leading-6 text-bark">{copy}</p>
@@ -314,7 +314,7 @@ function ChecklistWidget({ title, note, groups }: { title: string; note: string;
 
   return (
     <ToolShell title={title} note={`${note} Checked ${completed} of ${allItems.length} prompts.`}>
-      <div className="grid gap-5 lg:grid-cols-2">
+      <div className="grid items-start gap-5 lg:grid-cols-2">
         {groups.map((group) => (
           <section key={group.title} className="rounded-2xl border border-oat bg-cream p-5">
             <h2 className="text-xl font-black text-cocoa">{group.title}</h2>

@@ -101,7 +101,7 @@ export function DogBreedComparisonChecklist() {
 
   return (
     <div className="rounded-2xl border border-oat bg-white p-5 shadow-sm md:p-6">
-      <div className="grid gap-5 lg:grid-cols-[1fr_0.75fr]">
+      <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.75fr)]">
         <div className="rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
           <p className="font-black text-cocoa">Breed planning note</p>
           <p className="mt-1">
@@ -129,7 +129,7 @@ export function DogBreedComparisonChecklist() {
         </div>
       </div>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-2">
+      <div className="mt-6 grid items-start gap-5 lg:grid-cols-2">
         {sections.map((section) => (
           <section key={section.title} className="rounded-2xl border border-oat bg-cream p-5">
             <h2 className="text-xl font-black text-cocoa">{section.title}</h2>

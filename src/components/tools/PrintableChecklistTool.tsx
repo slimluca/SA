@@ -62,7 +62,7 @@ export function PrintableChecklistTool({ type }: { type: keyof typeof checklistD
         </button>
       </div>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-2">
+      <div className="mt-6 grid items-start gap-5 lg:grid-cols-2">
         {data.groups.map((group) => (
           <section key={group.title} className="rounded-2xl border border-oat bg-cream p-5">
             <h2 className="text-xl font-black text-cocoa">{group.title}</h2>

@@ -5,8 +5,8 @@ import { footerNavigationSections } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="border-t border-oat bg-cocoa text-cream">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.35fr_2fr] lg:px-8">
-        <div className="max-w-md">
+      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(260px,0.9fr)_minmax(0,2.4fr)] lg:gap-12 lg:px-8">
+        <div className="max-w-sm">
           <div className="mb-3 flex items-center gap-2">
             <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-sm">
               <Image
@@ -25,9 +25,9 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid items-start gap-x-8 gap-y-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {footerNavigationSections.map((section) => (
-            <nav key={section.title} aria-label={`${section.title} footer links`}>
+            <nav key={section.title} aria-label={`${section.title} footer links`} className="min-w-0">
               <h2 className="text-sm font-bold uppercase tracking-wide text-honey">{section.title}</h2>
               <ul className="mt-3 space-y-2 text-sm text-cream/82">
                 {section.links.map((item) => (

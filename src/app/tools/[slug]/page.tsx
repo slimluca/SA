@@ -148,22 +148,21 @@ export default async function ToolPage({ params }: PageProps) {
         <div className="mt-8">
           <ToolWidget slug={tool.slug} />
         </div>
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
-          <section>
-            <h2 className="text-2xl font-black text-cocoa">Helpful next guides</h2>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {tool.related.map((card) => (
-                <ContentLinkCard key={`${tool.slug}-${card.href}`} {...card} />
-              ))}
-            </div>
-          </section>
-          <section>
-            <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
-            <div className="mt-5">
-              <FAQBlock items={tool.faqs} />
-            </div>
-          </section>
-        </div>
+        <section className="mt-12">
+          <h2 className="text-2xl font-black text-cocoa">Helpful next guides</h2>
+          <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {tool.related.map((card) => (
+              <ContentLinkCard key={`${tool.slug}-${card.href}`} {...card} />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10 max-w-4xl">
+          <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
+          <div className="mt-5">
+            <FAQBlock items={tool.faqs} />
+          </div>
+        </section>
       </section>
     </>
   );
