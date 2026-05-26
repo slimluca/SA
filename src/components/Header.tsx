@@ -61,7 +61,7 @@ export function Header() {
 
       <div
         id="mobile-navigation"
-        className={`absolute inset-x-0 top-full border-b border-oat bg-cream/98 px-4 pb-4 shadow-soft backdrop-blur md:hidden ${
+        className={`absolute inset-x-0 top-full z-[60] border-b border-oat bg-cream/98 px-4 pb-4 shadow-soft backdrop-blur md:hidden ${
           menuOpen ? "block" : "hidden"
         }`}
       >

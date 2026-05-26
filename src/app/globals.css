@@ -101,7 +101,7 @@ body > footer a {
   text-decoration: none;
 }
 
-body > header nav {
+body > header > div > nav {
   display: none;
   align-items: center;
   gap: 1.25rem;
@@ -274,7 +274,7 @@ body > footer h2 {
 }
 
 @media (min-width: 768px) {
-  body > header nav {
+  body > header > div > nav {
     display: flex;
   }
 
