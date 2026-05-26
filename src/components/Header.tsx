@@ -10,8 +10,8 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-oat/80 bg-cream/92 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/92 backdrop-blur">
+      <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 text-cocoa" aria-label="DogHaven home">
           <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-soft">
             <Image
@@ -50,7 +50,7 @@ export function Header() {
             type="button"
             className="inline-flex items-center gap-2 rounded-full border border-oat bg-white px-4 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss md:hidden"
             aria-expanded={menuOpen}
-            aria-controls="mobile-navigation"
+            aria-controls="mobile-menu"
             onClick={() => setMenuOpen((current) => !current)}
           >
             {menuOpen ? <X className="h-4 w-4" aria-hidden="true" /> : <Menu className="h-4 w-4" aria-hidden="true" />}
@@ -60,13 +60,15 @@ export function Header() {
       </div>
 
       <div
-        id="mobile-navigation"
-        className={`absolute inset-x-0 top-full z-[60] border-b border-oat bg-cream/98 px-4 pb-4 shadow-soft backdrop-blur md:hidden ${
+        id="mobile-menu"
+        role="navigation"
+        aria-label="Mobile navigation"
+        className={`fixed inset-x-0 top-[68px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur md:hidden ${
           menuOpen ? "block" : "hidden"
         }`}
       >
-        <nav aria-label="Mobile navigation" className="mx-auto max-w-6xl">
-          <div className="grid max-h-[calc(100vh-84px)] grid-cols-2 gap-2 overflow-y-auto rounded-2xl border border-oat bg-white p-3 shadow-sm sm:grid-cols-3">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid max-h-[calc(100dvh-88px)] grid-cols-2 gap-2 overflow-y-auto rounded-2xl border border-oat bg-white p-3 shadow-sm sm:grid-cols-3">
             {mobileNavigation.map((item) => (
               <Link
                 key={item.href}
@@ -78,7 +80,7 @@ export function Header() {
               </Link>
             ))}
           </div>
-        </nav>
+        </div>
       </div>
     </header>
   );
