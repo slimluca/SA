@@ -156,7 +156,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="rounded-3xl border border-oat bg-white px-5 py-6 shadow-soft sm:px-8 sm:py-8 lg:px-10 lg:py-9">
+    <section className="mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-oat bg-white p-5 shadow-soft sm:p-7 md:p-8 lg:p-10">
       <Script
         src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
         strategy="afterInteractive"
@@ -172,13 +172,13 @@ export function ContactForm() {
             veterinary support by email.
           </p>
         </div>
-        <div className="inline-flex items-center gap-2 rounded-full bg-sage/12 px-4 py-2 text-sm font-black text-moss">
+        <div className="inline-flex w-fit items-center gap-2 rounded-full bg-sage/12 px-4 py-2 text-sm font-black text-moss">
           <ShieldCheck className="h-4 w-4" aria-hidden="true" />
           CAPTCHA protected
         </div>
       </div>
 
-      <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/12 p-4 text-sm leading-6 text-bark">
+      <div className="mt-5 w-full rounded-2xl border border-honey/45 bg-honey/12 p-4 text-sm leading-6 text-bark sm:p-5">
         For urgent animal care, contact a veterinarian or emergency animal clinic directly. This
         inbox is not monitored for emergencies.
       </div>
@@ -209,7 +209,7 @@ export function ContactForm() {
         </div>
       ) : null}
 
-      <form className="mt-8 grid gap-6" onSubmit={handleSubmit}>
+      <form className="mt-8 grid gap-5 rounded-2xl border border-oat/80 bg-cream/35 p-4 sm:gap-6 sm:p-6 lg:p-7" onSubmit={handleSubmit}>
         <input
           aria-hidden="true"
           autoComplete="off"
@@ -220,11 +220,11 @@ export function ContactForm() {
           onChange={(event) => updateField("website", event.target.value)}
         />
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-6">
           <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Name
             <input
-              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] w-full rounded-xl border border-oat bg-white px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={80}
               name="name"
               value={form.name}
@@ -234,7 +234,7 @@ export function ContactForm() {
           <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Email address
             <input
-              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] w-full rounded-xl border border-oat bg-white px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={120}
               name="email"
               type="email"
@@ -244,11 +244,11 @@ export function ContactForm() {
           </label>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-6">
           <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Message type
             <select
-              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] w-full rounded-xl border border-oat bg-white px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               name="messageType"
               value={form.messageType}
               onChange={(event) => updateField("messageType", event.target.value)}
@@ -263,7 +263,7 @@ export function ContactForm() {
           <label className="grid gap-2.5 text-sm font-bold text-cocoa">
             Subject
             <input
-              className="min-h-[52px] rounded-xl border border-oat bg-cream px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+              className="min-h-[52px] w-full rounded-xl border border-oat bg-white px-4 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
               maxLength={140}
               name="subject"
               value={form.subject}
@@ -275,16 +275,16 @@ export function ContactForm() {
         <label className="grid gap-2.5 text-sm font-bold text-cocoa">
           Message
           <textarea
-            className="min-h-[170px] rounded-xl border border-oat bg-cream p-4 leading-7 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+            className="min-h-[160px] w-full resize-y rounded-xl border border-oat bg-white p-4 leading-7 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15 sm:min-h-[180px]"
             maxLength={4000}
             name="message"
             value={form.message}
             onChange={(event) => updateField("message", event.target.value)}
           />
-          <span className="text-xs font-semibold text-bark/70">{form.message.length}/4000 characters</span>
+          <span className="text-right text-xs font-semibold text-bark/70">{form.message.length}/4000 characters</span>
         </label>
 
-        <label className="flex gap-3 rounded-2xl border border-oat bg-cream p-5 text-sm font-semibold leading-6 text-bark">
+        <label className="flex gap-3 rounded-2xl border border-oat bg-white p-4 text-sm font-semibold leading-6 text-bark sm:p-5">
           <input
             className="mt-1 h-4 w-4 flex-none accent-sage"
             checked={form.consent}
@@ -297,19 +297,19 @@ export function ContactForm() {
           </span>
         </label>
 
-        <div className="rounded-2xl border border-oat bg-cream p-5">
+        <div className="w-full overflow-x-auto rounded-2xl border border-oat bg-white p-4 sm:p-5">
           {siteKey ? (
-            <div ref={captchaRef} />
+            <div ref={captchaRef} className="min-w-[300px]" />
           ) : (
             <p className="text-sm font-semibold leading-6 text-bark">
               CAPTCHA is not configured in this environment. Add{" "}
-              <code className="mx-1 rounded bg-white px-1.5 py-0.5 text-cocoa">NEXT_PUBLIC_TURNSTILE_SITE_KEY</code>
+              <code className="mx-1 break-all rounded bg-cream px-1.5 py-0.5 text-cocoa">NEXT_PUBLIC_TURNSTILE_SITE_KEY</code>
               {" "}to enable Cloudflare Turnstile.
             </p>
           )}
         </div>
 
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
           <p className="text-sm leading-6 text-bark">
             We use the information you submit only to respond to your message and improve DogHaven.{" "}
             <a className="font-black text-moss underline-offset-4 hover:underline" href="/privacy-policy">
@@ -317,7 +317,7 @@ export function ContactForm() {
             </a>
           </p>
           <button
-            className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-cocoa px-6 py-3 text-sm font-black text-cream shadow-sm transition hover:bg-moss disabled:cursor-not-allowed disabled:opacity-65"
+            className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-cocoa px-6 py-3 text-sm font-black text-cream shadow-sm transition hover:bg-moss disabled:cursor-not-allowed disabled:opacity-65 sm:w-auto"
             disabled={status === "loading"}
             type="submit"
           >

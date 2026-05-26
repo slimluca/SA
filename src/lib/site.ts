@@ -16,6 +16,24 @@ export const navigation = [
   { label: "Adoption", href: "/adoption" },
 ] as const;
 
+export const mobileNavigation = [
+  { label: "Start Here", href: "/start-here" },
+  { label: "Puppy", href: "/puppy" },
+  { label: "Health", href: "/health" },
+  { label: "Emergency", href: "/emergency" },
+  { label: "Breeds", href: "/breeds" },
+  { label: "Food", href: "/food" },
+  { label: "Training", href: "/training" },
+  { label: "Grooming", href: "/grooming" },
+  { label: "Insurance", href: "/insurance" },
+  { label: "Costs", href: "/costs" },
+  { label: "Tools", href: "/tools" },
+  { label: "Dog Names", href: "/dog-names" },
+  { label: "Fun", href: "/fun" },
+  { label: "Local", href: "/local" },
+  { label: "Contact", href: "/contact" },
+] as const;
+
 export const hubNavigation = [
   { label: "Puppy", href: "/puppy" },
   { label: "Health", href: "/health" },
