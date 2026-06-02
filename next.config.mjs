@@ -45,6 +45,16 @@ const legacyRedirects = [
   ["/bloat-gastric-torsion-survival-guide-south-africa/", "/emergency/bloat-in-dogs-south-africa"],
   ["/kennel-cough-symptoms-treatment-south-africa", "/health/kennel-cough-vaccine-south-africa"],
   ["/kennel-cough-symptoms-treatment-south-africa/", "/health/kennel-cough-vaccine-south-africa"],
+  ["/dog-skin-conditions-grooming-guide-south-africa", "/health/dog-skin-allergies-south-africa"],
+  ["/dog-skin-conditions-grooming-guide-south-africa/", "/health/dog-skin-allergies-south-africa"],
+  ["/canine-arthritis-hip-dysplasia-treatment-south-africa", "/health/dog-arthritis-south-africa"],
+  ["/canine-arthritis-hip-dysplasia-treatment-south-africa/", "/health/dog-arthritis-south-africa"],
+  ["/spaying-neutering-sterilization-cost-recovery-south-africa", "/health/dog-sterilisation-cost-south-africa"],
+  ["/spaying-neutering-sterilization-cost-recovery-south-africa/", "/health/dog-sterilisation-cost-south-africa"],
+  ["/canine-distemper-survival-guide-south-africa", "/health/dog-vaccination-costs-and-schedule-south-africa"],
+  ["/canine-distemper-survival-guide-south-africa/", "/health/dog-vaccination-costs-and-schedule-south-africa"],
+  ["/spirocerca-lupi-symptoms-south-africa", "/health/find-a-vet-south-africa"],
+  ["/spirocerca-lupi-symptoms-south-africa/", "/health/find-a-vet-south-africa"],
 
   // Food
   ["/can-dogs-eat-biltong", "/food/can-dogs-eat-biltong"],
@@ -75,6 +85,18 @@ const legacyRedirects = [
   ["/german-shepherd-breed-guide-south-africa/", "/breeds/german-shepherd-south-africa"],
   ["/maltese-poodle-breed-guide-south-africa", "/breeds/maltese-poodle-south-africa"],
   ["/maltese-poodle-breed-guide-south-africa/", "/breeds/maltese-poodle-south-africa"],
+  ["/staffordshire-bull-terrier-guide-south-africa", "/breeds/staffordshire-bull-terrier-south-africa"],
+  ["/staffordshire-bull-terrier-guide-south-africa/", "/breeds/staffordshire-bull-terrier-south-africa"],
+  ["/cocker-spaniel-clubs-south-africa", "/breeds/cocker-spaniel-south-africa"],
+  ["/cocker-spaniel-clubs-south-africa/", "/breeds/cocker-spaniel-south-africa"],
+  ["/pug-clubs-south-africa", "/breeds"],
+  ["/pug-clubs-south-africa/", "/breeds"],
+  ["/boxer-breed-guide-south-africa", "/breeds/boxer-south-africa"],
+  ["/boxer-breed-guide-south-africa/", "/breeds/boxer-south-africa"],
+  ["/africanis-clubs-associations-south-africa", "/breeds/africanis-dog-breed-south-africa"],
+  ["/africanis-clubs-associations-south-africa/", "/breeds/africanis-dog-breed-south-africa"],
+  ["/dachshund-clubs-south-africa", "/breeds/dachshund-south-africa"],
+  ["/dachshund-clubs-south-africa/", "/breeds/dachshund-south-africa"],
 
   // Adoption
   ["/puppy-scams-adoption-safety-guide-south-africa", "/adoption/puppy-scam-checklist-south-africa"],
@@ -131,6 +153,12 @@ const legacyRedirects = [
   ["/dog-friendly-accommodation-south-africa/", "/dog-friendly/pet-friendly-accommodation-south-africa"],
   ["/south-african-pet-laws-bylaws-guide", "/laws/dog-laws-south-africa"],
   ["/south-african-pet-laws-bylaws-guide/", "/laws/dog-laws-south-africa"],
+  ["/diy-dog-brain-games-enrichment-south-africa", "/fun/dog-enrichment-ideas-south-africa"],
+  ["/diy-dog-brain-games-enrichment-south-africa/", "/fun/dog-enrichment-ideas-south-africa"],
+
+  // Old WordPress feeds
+  ["/comments/feed", "/"],
+  ["/comments/feed/", "/"],
 
   // Old WordPress asset paths
   ["/wp-content/uploads/:path*", "/"],
@@ -141,7 +169,15 @@ const nextConfig = {
   reactStrictMode: true,
   skipTrailingSlashRedirect: true,
   async redirects() {
-    return legacyRedirects.map(([source, destination]) => redirect(source, destination));
+    return [
+      {
+        source: "/",
+        has: [{ type: "query", key: "s" }],
+        destination: "/",
+        statusCode: 301,
+      },
+      ...legacyRedirects.map(([source, destination]) => redirect(source, destination)),
+    ];
   },
 };
 
