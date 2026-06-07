@@ -30,7 +30,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="mt-6 inline-flex items-center gap-2 rounded-full bg-cocoa px-5 py-3 text-sm font-black text-cream shadow-soft transition hover:bg-moss"
+          className="mt-6 inline-flex items-center gap-2 rounded-full bg-honey px-5 py-3 text-sm font-black text-cocoa shadow-soft transition hover:bg-sage"
         >
           <Home className="h-4 w-4" aria-hidden="true" />
           Back to homepage

@@ -10,12 +10,12 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/92 backdrop-blur">
+    <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/95 backdrop-blur">
       <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 text-cocoa" aria-label="DogHaven home">
-          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-soft">
+          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-soft">
             <Image
-              src="/brand/doghaven-logo-mark.png"
+              src="/brand/doghaven-logo.png"
               alt=""
               width={44}
               height={44}
@@ -42,7 +42,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Link
             href="/contact"
-            className="hidden rounded-full bg-cocoa px-4 py-2 text-sm font-bold text-cream shadow-soft transition hover:bg-moss md:inline-flex"
+            className="hidden rounded-full bg-honey px-4 py-2 text-sm font-bold text-cocoa shadow-soft transition hover:bg-sage md:inline-flex"
           >
             Contact
           </Link>
@@ -63,9 +63,9 @@ export function Header() {
         id="mobile-menu"
         role="navigation"
         aria-label="Mobile navigation"
-        className={`fixed inset-x-0 top-[68px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur md:hidden ${
-          menuOpen ? "block" : "hidden"
-        }`}
+        aria-hidden={!menuOpen}
+        className="fixed inset-x-0 top-[68px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur md:hidden"
+        style={{ display: menuOpen ? "block" : "none" }}
       >
         <div className="mx-auto max-w-6xl">
           <div className="grid max-h-[calc(100dvh-88px)] grid-cols-2 gap-2 overflow-y-auto rounded-2xl border border-oat bg-white p-3 shadow-sm sm:grid-cols-3">

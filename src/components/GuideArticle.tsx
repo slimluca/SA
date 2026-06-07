@@ -50,7 +50,6 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         <p className="section-kicker">{guide.hubTitle}</p>
         <h1 className="section-title">{guide.title}</h1>
         <p className="section-copy">{guide.intro}</p>
-        <p className="mt-4 text-sm font-semibold text-bark">Last reviewed: {guide.updated}</p>
 
         {needsEducationalNote ? (
           <div className="mt-6 rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">

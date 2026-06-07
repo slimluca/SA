@@ -4,13 +4,13 @@ import { footerNavigationSections } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-oat bg-cocoa text-cream">
+    <footer className="border-t border-oat bg-white text-cocoa">
       <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(260px,0.9fr)_minmax(0,2.4fr)] lg:gap-12 lg:px-8">
         <div className="max-w-sm">
           <div className="mb-3 flex items-center gap-2">
-            <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-sm">
+            <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm">
               <Image
-                src="/brand/doghaven-logo-mark.png"
+                src="/brand/doghaven-logo.png"
                 alt=""
                 width={44}
                 height={44}
@@ -19,7 +19,7 @@ export function Footer() {
             </span>
             <span className="text-xl font-extrabold">DogHaven</span>
           </div>
-          <p className="text-sm leading-6 text-cream/82">
+          <p className="text-sm leading-6 text-cocoa">
             DogHaven is South Africa&apos;s practical dog care guide for owners who want calm,
             useful, locally aware advice before they make decisions for their dogs.
           </p>
@@ -28,11 +28,11 @@ export function Footer() {
         <div className="grid items-start gap-x-8 gap-y-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {footerNavigationSections.map((section) => (
             <nav key={section.title} aria-label={`${section.title} footer links`} className="min-w-0">
-              <h2 className="text-sm font-bold uppercase tracking-wide text-honey">{section.title}</h2>
-              <ul className="mt-3 space-y-2 text-sm text-cream/82">
+              <h2 className="text-sm font-bold uppercase tracking-wide text-cocoa">{section.title}</h2>
+              <ul className="mt-3 space-y-2 text-sm text-cocoa">
                 {section.links.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="transition hover:text-honey">
+                    <Link href={item.href} className="transition hover:text-sage">
                       {item.label}
                     </Link>
                   </li>
@@ -42,7 +42,7 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div className="border-t border-cream/10 px-4 py-4 text-center text-xs text-cream/70">
+      <div className="border-t border-oat px-4 py-4 text-center text-xs text-cocoa">
         &copy; {new Date().getFullYear()} DogHaven.co.za. Information is educational and does not
         replace veterinary care.
       </div>

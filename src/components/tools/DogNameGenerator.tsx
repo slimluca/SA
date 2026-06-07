@@ -76,7 +76,7 @@ export function DogNameGenerator() {
           Short names only
         </label>
       </div>
-      <button className="mt-4 w-full rounded-xl bg-moss px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-cocoa sm:w-auto" type="button" onClick={() => setSpin((value) => value + 4)}>
+      <button className="mt-4 w-full rounded-xl bg-honey px-5 py-3 text-sm font-black text-cocoa shadow-sm transition hover:bg-sage sm:w-auto" type="button" onClick={() => setSpin((value) => value + 4)}>
         Generate names
       </button>
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -40,7 +40,7 @@ export function PuppyNameShortlist() {
         <button
           type="button"
           onClick={() => addName(draft)}
-          className="rounded-xl bg-moss px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-cocoa sm:self-end"
+          className="rounded-xl bg-honey px-5 py-3 text-sm font-black text-cocoa shadow-sm transition hover:bg-sage sm:self-end"
         >
           Add name
         </button>

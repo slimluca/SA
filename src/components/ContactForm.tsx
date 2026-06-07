@@ -317,7 +317,7 @@ export function ContactForm() {
             </a>
           </p>
           <button
-            className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-cocoa px-6 py-3 text-sm font-black text-cream shadow-sm transition hover:bg-moss disabled:cursor-not-allowed disabled:opacity-65 sm:w-auto"
+            className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-honey px-6 py-3 text-sm font-black text-cocoa shadow-sm transition hover:bg-sage disabled:cursor-not-allowed disabled:opacity-65 sm:w-auto"
             disabled={status === "loading"}
             type="submit"
           >

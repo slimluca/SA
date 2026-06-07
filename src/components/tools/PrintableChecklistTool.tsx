@@ -56,7 +56,7 @@ export function PrintableChecklistTool({ type }: { type: keyof typeof checklistD
         <button
           type="button"
           onClick={() => window.print()}
-          className="rounded-xl bg-moss px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-cocoa"
+          className="rounded-xl bg-honey px-5 py-3 text-sm font-black text-cocoa shadow-sm transition hover:bg-sage"
         >
           Print checklist
         </button>

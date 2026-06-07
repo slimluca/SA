@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   }),
   icons: {
     icon: "/icon.png",
-    apple: "/brand/doghaven-logo-mark.png",
+    apple: "/brand/doghaven-logo.png",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#fff9ee",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

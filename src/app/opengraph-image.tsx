@@ -61,7 +61,7 @@ export default function Image() {
           }}
         >
           <img
-            src="https://www.doghaven.co.za/brand/doghaven-logo-mark.png"
+            src="https://www.doghaven.co.za/brand/doghaven-logo.png"
             alt=""
             width="230"
             height="230"
