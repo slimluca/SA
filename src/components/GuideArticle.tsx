@@ -6,12 +6,16 @@ import { FAQBlock } from "@/components/FAQBlock";
 import { HelpfulNextSteps } from "@/components/HelpfulNextSteps";
 import { SourceList } from "@/components/SourceList";
 import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
+import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
 import type { GuideContent } from "@/lib/content";
+import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
   const articlePromos = getArticlePromos(guide.hubPath);
+  const localProviders = getProvidersForPath(guide.path);
+  const showProviderSection = isLocalServicePath(guide.path);
   const safetyStyles = {
     "Safe in small amounts": "border-sage/35 bg-sage/10 text-moss",
     Risky: "border-honey/55 bg-honey/15 text-cocoa",
@@ -91,6 +95,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             ))}
           </ul>
         </section>
+
+        <VerifiedLocalOptions providers={localProviders} showNotice={showProviderSection} />
 
         {guide.slug === "dog-cost-calculator-south-africa" ? <DogCostEstimator /> : null}
 

@@ -100,7 +100,7 @@ function commonRelated(city: (typeof localCities)[number]): CardLink[] {
 function generalServiceNote(city: (typeof localCities)[number]) {
   return [
     `Dog services in ${city.name} can vary by suburb, provider experience, transport, availability, dog size, behaviour, health needs, season, and what is included.`,
-    "DogHaven is not listing verified providers yet. This page is a planning guide, not a directory, and owners should verify providers directly before booking.",
+    "This page combines practical service guidance with verified local options where available. When verified options are still being built, use the checklist to confirm providers directly before booking.",
     city.localContext,
   ];
 }
@@ -126,7 +126,7 @@ function costFactorSection(serviceLabel: string) {
 
 function verificationQuickFacts(serviceLabel: string) {
   return [
-    `DogHaven does not list verified ${serviceLabel} providers yet.`,
+    `Verified local options may still be limited for ${serviceLabel}; use the provider section and checklist before booking.`,
     "Do not rely on social media claims, photos, or reviews alone. Verify the provider directly before booking.",
     "Ask about vaccination records, emergency vet plans, supervision, insurance or responsibility, and what happens if your dog becomes ill or stressed.",
     "Avoid providers who pressure you to pay before answering safety, handling, and emergency questions.",
@@ -142,7 +142,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
     title: titleFor(city, service),
     seoTitle: `${titleFor(city, service)} | DogHaven`,
     description: `A practical ${city.name} dog boarding and kennel guide covering vaccination checks, hygiene, sleeping arrangements, exercise, feeding, emergency planning, trial stays, and questions to ask.`,
-    intro: `Choosing dog boarding kennels in ${city.name} should be about safety, transparency, and your dog's temperament, not rushed booking or fake provider rankings. This guide helps you compare kennels carefully before a holiday, work trip, hospital stay, or home renovation.`,
+    intro: `Choosing dog boarding kennels in ${city.name} should be about safety, transparency, and your dog's temperament, careful questions, transparent details, and direct provider checks. This guide helps you compare kennels carefully before a holiday, work trip, hospital stay, or home renovation.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("boarding kennel"),
     sections: [
@@ -201,7 +201,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
       {
         question: `Does DogHaven list verified boarding kennels in ${city.name}?`,
         answer:
-          "No. DogHaven is not listing verified providers yet. Use this guide to ask safer questions and verify kennels directly.",
+          "Use this guide as a starting point, then confirm kennel services, prices, availability, health requirements, and suitability directly before booking.",
       },
       {
         question: "Should kennels ask for vaccination records?",
@@ -298,7 +298,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
       {
         question: `Does DogHaven list verified dog daycare providers in ${city.name}?`,
         answer:
-          "No. DogHaven is not listing verified providers yet. Owners should verify daycare providers directly before booking.",
+          "Use this guide as a starting point, then confirm daycare services, supervision, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Is daycare good for every dog?",
@@ -393,7 +393,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
       {
         question: `Does DogHaven list verified pet sitters in ${city.name}?`,
         answer:
-          "No. DogHaven is not listing verified providers yet. Owners should verify sitters directly before booking.",
+          "Use this guide as a starting point, then confirm sitter services, references, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Is a pet sitter better than boarding?",
@@ -487,7 +487,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
       {
         question: `Does DogHaven list verified dog walkers in ${city.name}?`,
         answer:
-          "No. DogHaven is not listing verified providers yet. Owners should verify walkers directly before booking.",
+          "Use this guide as a starting point, then confirm walker services, safety routines, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Are group walks safe?",
@@ -582,7 +582,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
       {
         question: `Does DogHaven list verified holiday dog care providers in ${city.name}?`,
         answer:
-          "No. DogHaven is not listing verified providers yet. Owners should verify kennels, sitters, walkers, and travel options directly.",
+          "Use this guide as a starting point, then confirm kennels, sitters, walkers, travel rules, prices, and availability directly before booking.",
       },
       {
         question: "When should I book holiday dog care?",
@@ -628,7 +628,7 @@ export const dogServicesHub: HubContent = {
     "South African dog service planning guides for boarding kennels, dog daycare, pet sitters, dog walkers, and holiday dog care in major cities.",
   kicker: "Dog service guides",
   intro:
-    "DogHaven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. These pages are not fake directories: DogHaven is not listing verified providers yet, and owners should verify every provider directly before booking.",
+    "DogHaven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Dog Services`,
@@ -658,7 +658,7 @@ export const dogServicesHub: HubContent = {
     {
       question: "Why are there no provider prices or rankings?",
       answer:
-        "Prices, availability, service quality, and rules change by provider and suburb. DogHaven avoids fake prices, fake reviews, and fake rankings.",
+        "Prices, availability, service quality, and rules change by provider and suburb. Use the provider section, written quotes, and direct checks instead of relying on old or unsourced information.",
     },
     {
       question: "What should I verify before booking dog care?",
@@ -762,3 +762,4 @@ export const phase19CostCards: CardLink[] = [
 export function getPhase19DogServiceGuide(citySlug: string, guideSlug: string) {
   return phase19DogServiceGuidePages.find((guide) => guide.path === `/dog-services/${citySlug}/${guideSlug}`);
 }
+

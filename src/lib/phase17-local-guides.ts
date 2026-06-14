@@ -299,7 +299,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog grooming in ${city.name}? DogHaven does not publish unverified groomer listings or rankings. This guide helps you compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
+    intro: `Looking for dog grooming in ${city.name}? This page combines practical local grooming guidance with starting points you can verify before booking. Use it to compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
     updated: reviewed,
     quickFacts: [
       "DogHaven does not list or rank local groomers unless they have been properly checked.",
@@ -391,7 +391,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         question: "Does DogHaven recommend specific groomers?",
         answer:
-          "No. DogHaven does not publish unverified local listings, fake reviews, or rankings. This guide helps you choose and verify providers yourself.",
+          "Use this guide as a starting point, then confirm services, prices, availability, handling methods, and suitability directly with each provider.",
       },
     ],
     related: [
@@ -415,7 +415,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog training in ${city.name}? This is not a fake trainer directory. It is a practical guide to choosing humane support for puppies, adult dogs, leash manners, barking, recall, and everyday public behaviour.`,
+    intro: `Looking for dog training in ${city.name}? This page combines practical local training guidance with starting points you can verify before booking. Use it to choose humane support for puppies, adult dogs, leash manners, barking, recall, and everyday public behaviour.`,
     updated: reviewed,
     quickFacts: [
       "Choose reward-based, humane training that involves the owner and avoids fear-heavy methods.",
@@ -505,7 +505,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         question: "Does DogHaven list trainers?",
         answer:
-          "No. DogHaven does not publish unverified trainer listings or fake reviews. This guide helps you verify providers directly.",
+          "Use this guide as a starting point, then confirm training methods, class structure, availability, pricing, and suitability directly with each provider.",
       },
     ],
     related: [
@@ -614,7 +614,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         question: `Does DogHaven list emergency vets in ${city.name}?`,
         answer:
-          "No. DogHaven does not publish unverified clinic listings or phone numbers. Ask your regular vet for after-hours guidance and verify emergency options directly.",
+          "Use this guide as a starting point, then ask your regular vet for after-hours guidance and confirm emergency options directly before you need them.",
       },
       {
         question: "Should I call before driving to an emergency vet?",
@@ -734,7 +734,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
       {
         question: `Where can I find dog-friendly places in ${city.name}?`,
         answer:
-          "Start by checking official municipal rules and contacting venues directly. DogHaven does not publish unverified dog-friendly listings or fake venue recommendations.",
+          "Start by checking official municipal rules and contacting venues directly. Use this guide as a practical checklist before you visit.",
       },
       {
         question: "Can my dog go off lead if the area looks quiet?",
@@ -800,10 +800,10 @@ export const localHub: HubContent = {
   title: "Local Dog Service Guides in South Africa",
   seoTitle: "Local Dog Service Guides South Africa | Grooming, Training, Emergency Vets",
   description:
-    "South African local dog service guides for grooming, training, emergency vet preparation, and dog-friendly places in major cities, without fake listings or rankings.",
+    "South African local dog service guides for grooming, training, emergency vet preparation, and dog-friendly places in major cities, with practical checks and verified local options where available.",
   kicker: "Local guides",
   intro:
-    "DogHaven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. These pages are not directories: no fake phone numbers, fake reviews, fake rankings, or invented local listings.",
+    "DogHaven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Local Dog Guides`,
@@ -830,7 +830,7 @@ export const localHub: HubContent = {
     {
       question: "Are DogHaven local guides directories?",
       answer:
-        "No. DogHaven does not publish unverified local business listings, fake reviews, fake phone numbers, or rankings. These guides help you choose and verify services directly.",
+        "Use these guides as starting points, then confirm services, contact details, prices, availability, and suitability directly with each provider.",
     },
     {
       question: "Why are there no specific groomer, trainer, vet, or venue names?",
@@ -860,7 +860,7 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
   description:
     city.slug === "cape-town"
       ? "Cape Town dog service guide covering grooming, training, emergency vet preparation, dog-friendly rule checks, monthly costs, beaches, apartments, winter rain, summer heat and local planning."
-      : `Helpful ${city.name} dog service guides covering grooming, training, emergency vet preparation, and dog-friendly places without fake listings or rankings.`,
+      : `Helpful ${city.name} dog service guides covering grooming, training, emergency vet preparation, dog-friendly places, provider checks, and local planning.`,
   kicker: "Local city guide",
   intro: `${city.localContext} Use these DogHaven guides to ask better questions, verify rules directly, and choose safer dog services without relying on fake local listings.`,
   cards: localServices.map((service) => ({
@@ -885,7 +885,7 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
     {
       question: `Does DogHaven list specific dog businesses in ${city.name}?`,
       answer:
-        "No. DogHaven does not publish unverified business listings, fake phone numbers, fake reviews, or rankings. These guides help you verify providers directly.",
+        "Use these guides as starting points, then confirm provider details, services, prices, opening hours, and suitability directly before booking or visiting.",
     },
     {
       question: `Which ${city.name} guide should I read first?`,
@@ -903,3 +903,4 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
 export function getLocalCityHub(citySlug: string) {
   return localCityHubs.find((hub) => hub.path === `/local/${citySlug}`);
 }
+

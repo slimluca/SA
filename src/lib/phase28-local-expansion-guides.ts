@@ -220,7 +220,7 @@ function commonRelated(city: ExpansionCity): CardLink[] {
 
 function sharedQuickFacts(city: ExpansionCity, service: ExpansionService) {
   return [
-    `DogHaven does not list verified ${service.titleLabel.toLowerCase()} providers in ${city.name} yet.`,
+    `Verified local options may still be limited for ${service.titleLabel.toLowerCase()} in ${city.name}; use the provider section and checklist before booking.`,
     "Use this page to ask better questions and verify providers, venues, or rules directly before booking or visiting.",
     "Costs can vary by suburb, urgency, travel, dog size, dog behaviour, season, and what is included.",
     "For urgent symptoms, contact a veterinarian or emergency animal clinic directly rather than relying on online research.",
@@ -376,8 +376,8 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
     hubPath: "/local",
     title: titleFor(city, service),
     seoTitle: `${titleFor(city, service)} | DogHaven`,
-    description: `Practical ${city.name} ${service.titleLabel.toLowerCase()} guidance for South African dog owners: local context, safety questions, cost factors, warning signs, and useful next steps without fake listings.`,
-    intro: `${titleFor(city, service)} is a practical planning guide, not a fake directory. Use it to understand local context, ask safer questions, compare options, and prepare before booking a service or visiting a dog-friendly space.`,
+    description: `Practical ${city.name} ${service.titleLabel.toLowerCase()} guidance for South African dog owners: local context, safety questions, cost factors, warning signs, provider checks, and useful next steps.`,
+    intro: `${titleFor(city, service)} combines practical local guidance with starting points you can verify before booking. Use it to understand local context, ask safer questions, compare options, and prepare before booking a service or visiting a dog-friendly space.`,
     updated: reviewed,
     quickFacts: sharedQuickFacts(city, service),
     sections: sectionsFor(city, service),
@@ -385,7 +385,7 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
       {
         question: `Does DogHaven list verified providers in ${city.name}?`,
         answer:
-          "No. DogHaven does not publish fake local listings, fake phone numbers, fake reviews, or provider rankings. These guides help owners verify options directly.",
+          "Use this guide as a starting point, then confirm services, prices, availability, contact details, and suitability directly before booking or visiting.",
       },
       {
         question: "How should I compare local options?",
@@ -412,7 +412,7 @@ export const phase28LocalCityHubs: HubContent[] = phase28ExpansionCities.map((ci
   path: `/local/${city.slug}`,
   title: `${city.name} Local Dog Guides`,
   seoTitle: `${city.name} Dog Services and Local Dog Owner Guide | DogHaven`,
-  description: `Helpful ${city.name} dog-owner guides for grooming, training, emergency vet planning, dog-friendly outings, cost planning, and safe provider questions without fake listings.`,
+  description: `Helpful ${city.name} dog-owner guides for grooming, training, emergency vet planning, dog-friendly outings, cost planning, and safe provider questions with practical checks and verified local options where available.`,
   kicker: "Local city guide",
   intro: `${city.localContext} These guides help ${city.name} owners prepare safer questions, check local rules directly, and plan dog care without relying on fake business listings.`,
   cards: phase28ExpansionServices.map((service) => ({
@@ -432,7 +432,7 @@ export const phase28LocalCityHubs: HubContent[] = phase28ExpansionCities.map((ci
     {
       question: `Are these ${city.name} pages business directories?`,
       answer:
-        "No. They are practical planning guides. DogHaven does not publish fake listings, fake reviews, fake phone numbers, or local rankings.",
+        "They are practical planning guides with verified local options where available. When provider research is still being built, we say that clearly and give owners a checklist for direct verification.",
     },
     {
       question: `Which ${city.name} guide should I read first?`,
@@ -460,3 +460,4 @@ export function getPhase28LocalGuide(citySlug: string, guideSlug: string) {
 export function getPhase28LocalCityHub(citySlug: string) {
   return phase28LocalCityHubs.find((hub) => hub.path === `/local/${citySlug}`);
 }
+
