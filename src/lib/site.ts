@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "DogHaven",
+  name: "Dog Haven",
   domain: "https://www.doghaven.co.za",
   description:
     "DogHaven is South Africa's practical dog care guide for health, emergency guidance, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places.",

@@ -3,6 +3,7 @@ import { HubPage } from "@/components/HubPage";
 import { localHub } from "@/lib/phase17-local-guides";
 import { localCostHub } from "@/lib/phase18-local-cost-guides";
 import { phase19LocalCards } from "@/lib/phase19-dog-services-guides";
+import { phase28LocalHubCards } from "@/lib/phase28-local-expansion-guides";
 import { createMetadata } from "@/lib/seo";
 
 const hub = {
@@ -15,6 +16,7 @@ const hub = {
       href: localCostHub.path,
     },
     ...phase19LocalCards,
+    ...phase28LocalHubCards,
     ...localHub.cards,
   ],
   related: [

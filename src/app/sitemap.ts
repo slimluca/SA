@@ -15,6 +15,7 @@ import { phase15GuidePages } from "@/lib/phase15-guides";
 import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
 import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
 import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
+import { phase28LocalCityHubs, phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
 import { phase21PreventionGuidePages } from "@/lib/phase21-prevention-guides";
 import { phase22SterilisationGuidePages } from "@/lib/phase22-sterilisation-guides";
@@ -46,6 +47,12 @@ const highPriorityRoutes = new Set([
   "/local",
   "/local-costs",
   "/dog-services",
+  "/local/centurion",
+  "/local/sandton",
+  "/local/midrand",
+  "/local/east-london",
+  "/local/nelspruit",
+  "/local/polokwane",
   "/fun",
 ]);
 
@@ -137,6 +144,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localHub.path,
     ...localCityHubs.map((hub) => hub.path),
     ...phase17LocalGuidePages.map((guide) => guide.path),
+    ...phase28LocalCityHubs.map((hub) => hub.path),
+    ...phase28LocalGuidePages.map((guide) => guide.path),
     localCostHub.path,
     ...phase18LocalCostGuidePages.map((guide) => guide.path),
     dogServicesHub.path,

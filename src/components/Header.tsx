@@ -57,7 +57,7 @@ export function Header() {
           </Link>
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:hidden"
+            className="fixed right-4 top-3 z-[10000] inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:static md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
