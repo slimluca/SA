@@ -30,8 +30,8 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
             <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/10 p-5">
               <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
               <p className="mt-2 text-sm leading-6 text-bark">
-                This page has a small starter set of verified options while more local records are
-                being checked. Please confirm details directly before booking.
+                We are still adding more verified local options for this page. Please confirm
+                details directly before booking.
               </p>
             </div>
           ) : null}
@@ -110,8 +110,8 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
         <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/10 p-5">
           <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
           <p className="mt-2 text-sm leading-6 text-bark">
-            Verified local provider records for this page are still being checked. Use the
-            checklist below while you confirm providers directly before booking or visiting.
+            Verified local options are still being built for this page. Use the checklist below
+            while you confirm providers directly.
           </p>
         </div>
       )}
