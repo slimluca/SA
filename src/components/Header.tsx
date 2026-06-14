@@ -12,8 +12,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/95 backdrop-blur">
       <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 text-cocoa" aria-label="DogHaven home">
-          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-soft">
+        <Link href="/" className="flex min-w-0 items-center gap-2 text-cocoa" aria-label="Dog Haven home">
+          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-soft">
             <Image
               src="/brand/doghaven-logo.png"
               alt=""
@@ -23,8 +23,17 @@ export function Header() {
               priority
             />
           </span>
-          <span className="leading-tight">
-            <span className="block text-lg font-extrabold tracking-normal">DogHaven</span>
+          <span className="min-w-0 leading-tight">
+            <span className="flex items-center gap-2 text-lg font-extrabold tracking-normal">
+              <span>Dog Haven</span>
+              <Image
+                src="/brand/south-africa-flag.svg"
+                alt="South Africa"
+                width={24}
+                height={16}
+                className="h-3.5 w-5 rounded-[3px] border border-oat object-cover shadow-sm"
+              />
+            </span>
             <span className="hidden text-xs font-semibold text-bark sm:block">
               Practical dog care in South Africa
             </span>
@@ -39,7 +48,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="ml-auto flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
             className="hidden rounded-full bg-honey px-4 py-2 text-sm font-bold text-cocoa shadow-soft transition hover:bg-sage md:inline-flex"
@@ -48,13 +57,14 @@ export function Header() {
           </Link>
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-full border border-oat bg-white px-4 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss md:hidden"
+            className="inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMenuOpen((current) => !current)}
           >
             {menuOpen ? <X className="h-4 w-4" aria-hidden="true" /> : <Menu className="h-4 w-4" aria-hidden="true" />}
-            <span>Menu</span>
+            <span className="hidden sm:inline">Menu</span>
           </button>
         </div>
       </div>

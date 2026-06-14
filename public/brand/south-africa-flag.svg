@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" role="img" aria-label="South African flag">
+  <clipPath id="a">
+    <path d="M0 0h60v40H0z"/>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path fill="#de3831" d="M0 0h60v13.333H0z"/>
+    <path fill="#002395" d="M0 26.667h60V40H0z"/>
+    <path fill="#fff" d="M0 13.333h60v13.334H0z"/>
+    <path fill="#007a4d" d="M0 4.8 24.5 20 0 35.2V27l11.2-7L0 13z"/>
+    <path fill="#fff" d="M0 0v4.8L24.5 20 0 35.2V40l32-20z"/>
+    <path fill="#ffb612" d="M0 6.9 20.9 20 0 33.1v-6l11.4-7.1L0 12.9z"/>
+    <path fill="#000" d="M0 9.2 17.1 20 0 30.8z"/>
+    <path fill="#007a4d" d="M22.6 16h37.4v8H22.6L9.9 32H0v-4.8L11.2 20 0 12.8V8h9.9z"/>
+  </g>
+</svg>

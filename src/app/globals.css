@@ -30,7 +30,7 @@ html {
   }
 
   ::selection {
-    background: #ffb612;
+    background: #d6a72f;
     color: #000000;
   }
 }
@@ -70,7 +70,7 @@ body > header {
   position: sticky;
   top: 0;
   z-index: 9998;
-  border-bottom: 1px solid rgba(0, 122, 77, 0.18);
+  border-bottom: 1px solid rgba(11, 107, 69, 0.18);
   background: rgba(255, 253, 247, 0.96);
   backdrop-filter: blur(14px);
 }
@@ -144,8 +144,8 @@ main > section:first-child {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 182, 18, 0.24), transparent 28%),
-    radial-gradient(circle at 86% 12%, rgba(0, 122, 77, 0.16), transparent 26%),
+    radial-gradient(circle at 18% 18%, rgba(214, 167, 47, 0.22), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(11, 107, 69, 0.14), transparent 26%),
     linear-gradient(180deg, #ffffff 0%, #fffdf7 72%, rgba(0, 35, 149, 0.06) 100%);
 }
 
@@ -168,7 +168,7 @@ p {
 }
 
 form {
-  border: 1px solid #e6ece8;
+  border: 1px solid #e4e8e2;
   border-radius: 1rem;
   background: #ffffff;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.1);
@@ -189,7 +189,7 @@ details,
 main aside,
 main form,
 main table {
-  border-color: #e6ece8;
+  border-color: #e4e8e2;
 }
 
 main article,
@@ -197,7 +197,7 @@ main details,
 main aside > section,
 main section > div > article,
 main section > div > a > article {
-  border: 1px solid #e6ece8;
+  border: 1px solid #e4e8e2;
   border-radius: 1rem;
   background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -232,13 +232,13 @@ th {
 th,
 td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e6ece8;
+  border-bottom: 1px solid #e4e8e2;
   text-align: left;
   vertical-align: top;
 }
 
 body > footer {
-  border-top: 1px solid rgba(0, 122, 77, 0.22);
+  border-top: 1px solid rgba(11, 107, 69, 0.22);
   background: #ffffff;
   color: #000000;
 }
