@@ -90,18 +90,7 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
                       Website
                     </a>
                   ) : null}
-                  <a
-                    href={provider.sourceUrl}
-                    rel={providerRelFor(provider.linkType)}
-                    className="rounded-full border border-oat bg-white px-4 py-2 text-cocoa transition hover:border-sage"
-                  >
-                    Source: {provider.sourceLabel}
-                  </a>
                 </div>
-
-                <p className="mt-4 text-xs font-bold uppercase tracking-wide text-bark">
-                  Last checked: {provider.lastChecked}
-                </p>
               </article>
             ))}
           </div>
