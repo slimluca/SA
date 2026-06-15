@@ -20,8 +20,9 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
     <section className="mt-8 rounded-2xl border border-oat bg-white p-6 shadow-sm">
       <h2 className="text-2xl font-black text-cocoa">Verified local options to start with</h2>
       <p className="mt-3 text-sm font-semibold leading-6 text-bark">
-        Details can change. Please confirm services, prices, opening hours, and emergency
-        availability directly with the provider before visiting or booking.
+        These options are starting points for your own checks, not rankings or endorsements.
+        Details can change, so confirm services, prices, availability, rules, and emergency
+        arrangements directly before visiting or booking.
       </p>
 
       {providers.length > 0 ? (
@@ -30,8 +31,8 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
             <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/10 p-5">
               <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
               <p className="mt-2 text-sm leading-6 text-bark">
-                We are still adding more verified local options for this page. Please confirm
-                details directly before booking.
+                We are still adding more verified local options for this page. Use these entries
+                as a starting shortlist and confirm details directly before booking.
               </p>
             </div>
           ) : null}
