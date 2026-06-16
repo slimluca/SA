@@ -5,6 +5,15 @@
 :root {
   color-scheme: light;
   background: #fffdf7;
+  --flag-red: rgba(222, 56, 49, 0.055);
+  --flag-blue: rgba(0, 35, 149, 0.055);
+  --flag-green: rgba(0, 122, 77, 0.095);
+  --flag-gold: rgba(255, 184, 28, 0.075);
+  --flag-black: rgba(0, 0, 0, 0.035);
+  --button-gold: #c7a85a;
+  --button-gold-hover: #b99a4f;
+  --button-green: #2f6f50;
+  --button-green-hover: #285f46;
 }
 
 * {
@@ -55,7 +64,51 @@ html {
 
 body {
   margin: 0;
-  background: #fffdf7;
+  background-color: #fffdf7;
+  background-image:
+    linear-gradient(rgba(255, 253, 247, 0.9), rgba(255, 253, 247, 0.9)),
+    linear-gradient(
+      145deg,
+      transparent 0%,
+      transparent 39%,
+      rgba(255, 255, 255, 0.28) 39%,
+      rgba(255, 255, 255, 0.28) 42%,
+      var(--flag-green) 42%,
+      var(--flag-green) 58%,
+      rgba(255, 255, 255, 0.26) 58%,
+      rgba(255, 255, 255, 0.26) 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    linear-gradient(
+      35deg,
+      transparent 0%,
+      transparent 40%,
+      var(--flag-gold) 40%,
+      var(--flag-gold) 45%,
+      var(--flag-black) 45%,
+      var(--flag-black) 55%,
+      var(--flag-gold) 55%,
+      var(--flag-gold) 60%,
+      transparent 60%,
+      transparent 100%
+    ),
+    linear-gradient(
+      180deg,
+      var(--flag-red) 0%,
+      var(--flag-red) 32%,
+      rgba(255, 255, 255, 0.18) 32%,
+      rgba(255, 255, 255, 0.18) 38%,
+      var(--flag-green) 38%,
+      var(--flag-green) 62%,
+      rgba(255, 255, 255, 0.18) 62%,
+      rgba(255, 255, 255, 0.18) 68%,
+      var(--flag-blue) 68%,
+      var(--flag-blue) 100%
+    );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -64,7 +117,7 @@ body {
 
 main {
   min-height: 100vh;
-  background: #fffdf7;
+  background: rgba(255, 253, 247, 0.72);
 }
 
 body > header {
@@ -72,7 +125,7 @@ body > header {
   top: 0;
   z-index: 9998;
   border-bottom: 1px solid rgba(11, 107, 69, 0.18);
-  background: rgba(255, 253, 247, 0.96);
+  background: rgba(255, 253, 247, 0.94);
   backdrop-filter: blur(14px);
 }
 
@@ -147,8 +200,8 @@ main > section:first-child {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 18% 18%, rgba(214, 167, 47, 0.22), transparent 28%),
-    radial-gradient(circle at 86% 12%, rgba(11, 107, 69, 0.14), transparent 26%),
+    radial-gradient(circle at 18% 18%, rgba(199, 168, 90, 0.18), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(47, 111, 80, 0.12), transparent 26%),
     linear-gradient(180deg, #ffffff 0%, #fffdf7 72%, rgba(0, 35, 149, 0.06) 100%);
 }
 
@@ -242,7 +295,7 @@ td {
 
 body > footer {
   border-top: 1px solid rgba(11, 107, 69, 0.22);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.94);
   color: #000000;
 }
 
@@ -274,6 +327,34 @@ body > footer h2 {
   .section-title {
     font-size: 2.25rem;
   }
+}
+
+.bg-honey {
+  background-color: var(--button-gold) !important;
+}
+
+.hover\:bg-honey:hover {
+  background-color: var(--button-gold-hover) !important;
+}
+
+.bg-sage {
+  background-color: var(--button-green) !important;
+}
+
+.hover\:bg-sage:hover {
+  background-color: var(--button-green-hover) !important;
+}
+
+.hover\:bg-moss:hover {
+  background-color: #315f4b !important;
+}
+
+button,
+a[class*="bg-honey"],
+a[class*="bg-sage"],
+button[class*="bg-honey"],
+button[class*="bg-sage"] {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
 }
 
 @media (min-width: 768px) {
