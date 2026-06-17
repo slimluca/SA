@@ -21,6 +21,7 @@ import { phase21PreventionGuidePages } from "@/lib/phase21-prevention-guides";
 import { phase22SterilisationGuidePages } from "@/lib/phase22-sterilisation-guides";
 import { phase23ChronicHealthGuidePages } from "@/lib/phase23-chronic-health-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
+import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
 import { phase25BreedLifestyleGuidePages } from "@/lib/phase25-breed-lifestyle-guides";
 import { dogNamesHub, phase26DogNameGuidePages } from "@/lib/phase26-dog-name-guides";
 import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
@@ -156,6 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...phase22SterilisationGuidePages.map((guide) => guide.path),
     ...phase23ChronicHealthGuidePages.map((guide) => guide.path),
     ...phase29HealthSymptomGuidePages.map((guide) => guide.path),
+    ...phase30CostInsuranceGuidePages.map((guide) => guide.path),
     ...phase25BreedLifestyleGuidePages.map((guide) => guide.path),
     dogNamesHub.path,
     ...phase26DogNameGuidePages.map((guide) => guide.path),

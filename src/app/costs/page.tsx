@@ -14,6 +14,7 @@ import { phase22CostCards } from "@/lib/phase22-sterilisation-guides";
 import { phase23CostCards } from "@/lib/phase23-chronic-health-guides";
 import { phase25CostCards } from "@/lib/phase25-breed-lifestyle-guides";
 import { phase26CostCards } from "@/lib/phase26-dog-name-guides";
+import { phase30CostCards } from "@/lib/phase30-cost-insurance-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("costs");
@@ -32,6 +33,7 @@ const hub = {
     ...phase21CostCards,
     ...phase22CostCards,
     ...phase23CostCards,
+    ...phase30CostCards,
     ...phase25CostCards,
     ...phase26CostCards,
   ],
