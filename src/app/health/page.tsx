@@ -10,6 +10,7 @@ import { phase20HealthCards } from "@/lib/phase20-recovery-guides";
 import { phase21HealthCards } from "@/lib/phase21-prevention-guides";
 import { phase22HealthCards } from "@/lib/phase22-sterilisation-guides";
 import { phase23HealthCards } from "@/lib/phase23-chronic-health-guides";
+import { phase29HealthSymptomCards } from "@/lib/phase29-health-symptom-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("health");
@@ -23,6 +24,7 @@ const hub = {
     ...phase14HealthCards,
     ...phase15HealthCards,
     ...phase20HealthCards,
+    ...phase29HealthSymptomCards,
     ...phase21HealthCards,
     ...phase22HealthCards,
     ...phase23HealthCards,

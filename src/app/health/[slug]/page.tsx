@@ -7,6 +7,7 @@ import { getPhase20Guide, getPhase20GuidesByHub } from "@/lib/phase20-recovery-g
 import { getPhase21Guide, getPhase21GuidesByHub } from "@/lib/phase21-prevention-guides";
 import { getPhase22Guide, getPhase22GuidesByHub } from "@/lib/phase22-sterilisation-guides";
 import { getPhase23Guide, getPhase23GuidesByHub } from "@/lib/phase23-chronic-health-guides";
+import { getPhase29HealthSymptomGuide, getPhase29HealthSymptomGuidesByHub } from "@/lib/phase29-health-symptom-guides";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -23,6 +24,7 @@ export function generateStaticParams() {
     ...getPhase21GuidesByHub("/health"),
     ...getPhase22GuidesByHub("/health"),
     ...getPhase23GuidesByHub("/health"),
+    ...getPhase29HealthSymptomGuidesByHub("/health"),
   ]
     .map((guide) => guide.slug)
     .filter((slug, index, slugs) => slugs.indexOf(slug) === index)
@@ -33,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const guide =
     getPhase23Guide(slug) ??
+    getPhase29HealthSymptomGuide(slug) ??
     getPhase22Guide(slug) ??
     getPhase21Guide(slug) ??
     getPhase20Guide(slug) ??
@@ -54,6 +57,7 @@ export default async function HealthGuidePage({ params }: PageProps) {
   const { slug } = await params;
   const guide =
     getPhase23Guide(slug) ??
+    getPhase29HealthSymptomGuide(slug) ??
     getPhase22Guide(slug) ??
     getPhase21Guide(slug) ??
     getPhase20Guide(slug) ??
