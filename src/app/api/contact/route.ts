@@ -162,7 +162,7 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const toEmail = process.env.CONTACT_TO_EMAIL || "info.doghaven@gmail.com";
+  const toEmail = process.env.CONTACT_TO_EMAIL || "info@doghavengroup.com";
   // Resend requires this sender to be from a verified domain. Set CONTACT_FROM_EMAIL to
   // your verified Resend sender, for example: DogHaven Contact <contact@doghaven.co.za>.
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
