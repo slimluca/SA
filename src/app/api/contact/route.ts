@@ -167,9 +167,16 @@ export async function POST(request: Request) {
   // your verified Resend sender, for example: DogHaven Contact <contact@doghaven.co.za>.
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
-  if (!apiKey || !fromEmail) {
+  if (!apiKey) {
     return NextResponse.json(
-      { success: false, error: "Contact email is not configured yet." },
+      { success: false, error: "Contact email API key is not configured." },
+      { status: 503 },
+    );
+  }
+
+  if (!fromEmail) {
+    return NextResponse.json(
+      { success: false, error: "Contact sender email is not configured." },
       { status: 503 },
     );
   }
@@ -190,7 +197,7 @@ export async function POST(request: Request) {
   `;
 
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: fromEmail,
       to: toEmail,
       replyTo: data.email,
@@ -209,8 +216,43 @@ export async function POST(request: Request) {
       ].join("\n"),
     });
 
-    return NextResponse.json({ success: true });
-  } catch {
+    if (result.error) {
+      console.error("DogHaven contact email failed", {
+        name: result.error.name,
+        message: result.error.message,
+        toEmail,
+        fromEmail,
+      });
+
+      return NextResponse.json(
+        { success: false, error: "The email service rejected the message. Please try again later." },
+        { status: 502 },
+      );
+    }
+
+    if (result.data) {
+      console.log("DogHaven contact email sent", {
+        messageId: result.data.id,
+        toEmail,
+        fromEmail,
+      });
+
+      return NextResponse.json({ success: true });
+    }
+
+    console.error("DogHaven contact email failed", {
+      message: "Resend returned no data or error.",
+      toEmail,
+      fromEmail,
+    });
+
+    return NextResponse.json(
+      { success: false, error: "The message could not be sent right now." },
+      { status: 502 },
+    );
+  } catch (error) {
+    console.error("DogHaven contact email exception", error);
+
     return NextResponse.json(
       { success: false, error: "The message could not be sent right now." },
       { status: 502 },
