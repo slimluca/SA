@@ -814,7 +814,7 @@ export const cityHub: HubContent = {
   slug: "city",
   path: "/city",
   title: "Dog Owner Guides by South African City",
-  seoTitle: "Dog Owner Guides by City | DogHaven South Africa",
+  seoTitle: "Dog Owner Guides by City | Dog Haven South Africa",
   description:
     "Local dog owner guides for major South African cities, covering vets, adoption, training, grooming, dog-friendly rules, heat, traffic, costs, and emergency preparation.",
   kicker: "City guides",
@@ -942,7 +942,7 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
     seoTitle:
       province.slug === "mpumalanga"
         ? "Mpumalanga Dog Owner Guide | Heat, Ticks, Snakes and Travel Planning"
-        : `${province.name} Dog Owner Guide | DogHaven South Africa`,
+        : `${province.name} Dog Owner Guide | Dog Haven South Africa`,
     description:
       province.slug === "mpumalanga"
         ? "Practical Mpumalanga dog owner guide covering Lowveld heat, ticks, snakes, rural travel, wildlife-area rules, vet access, grooming, adoption, and emergency preparation."
@@ -1048,7 +1048,7 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
     hubTitle: "City Guides",
     hubPath: "/city",
     title: `${city.name} Dog Owner Guide`,
-    seoTitle: `${city.name} Dog Owner Guide | DogHaven South Africa`,
+    seoTitle: `${city.name} Dog Owner Guide | Dog Haven South Africa`,
     description: `Practical ${city.name} dog owner guidance covering local lifestyle, vets, adoption, training, grooming, dog-friendly places, costs, and emergency preparation without fake listings.`,
     intro: city.intro,
     updated: reviewed,

@@ -17,7 +17,7 @@ import { createMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
-  title: "DogHaven South Africa | Dog Care Guides, Tools and Costs",
+  title: "Dog Haven South Africa | Dog Care Guides, Tools and Costs",
   description:
     "Practical South African dog care guides, free dog tools, puppy help, food safety, symptoms, insurance, dog costs, breeds, adoption and dog-friendly planning.",
   path: "/",

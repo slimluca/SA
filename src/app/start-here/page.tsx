@@ -136,7 +136,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = createMetadata({
-  title: "Start Here | DogHaven South Africa",
+  title: "Start Here | Dog Haven South Africa",
   description:
     "A simple starting page for South African dog owners, linking to DogHaven's most useful puppy, adoption, emergency, health, food, tools, cost, training, grooming, lifestyle, rules, province, and city guides.",
   path: "/start-here",
