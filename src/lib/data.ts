@@ -143,11 +143,11 @@ export const featuredGuides = [
     href: "/health/biliary-tick-bite-fever-dogs-south-africa",
   },
   {
-    title: "Dog Adoption Checklist",
+    title: "Dog Services in South Africa",
     description:
-      "Questions to ask, documents to expect, home preparation steps, and red flags before bringing a rescue or rehomed dog home.",
-    label: "Adoption",
-    href: "/adoption/dog-adoption-south-africa",
+      "Planning guides for boarding, daycare, sitters, walkers, and holiday care before choosing a provider.",
+    label: "Local services",
+    href: "/dog-services",
   },
 ] as const;
 

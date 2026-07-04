@@ -8,20 +8,21 @@ export const homepageTools: CardLink[] = [
 ];
 
 export const homepagePopularGuides: CardLink[] = [
-  { title: "Best Dog Food South Africa", description: "Choose food for your individual dog, not hype.", href: "/food/best-dog-food-south-africa" },
-  { title: "Foods Dogs Should Never Eat", description: "Common dangerous foods and when to call a vet.", href: "/food/foods-dogs-should-never-eat-south-africa" },
-  { title: "Dog Vomiting Guide", description: "When vomiting is urgent and what to tell your vet.", href: "/health/dog-vomiting-south-africa" },
-  { title: "Puppy Care South Africa", description: "First-year puppy care, vaccines, food, and safety.", href: "/puppy/puppy-care-south-africa" },
-  { title: "Cape Town Local Dog Guides", description: "Grooming, training, emergency vet, and dog-friendly checks for Cape Town.", href: "/local/cape-town" },
-  { title: "Mpumalanga Dog Owner Guide", description: "Heat, ticks, snakes, rural travel, and dog-friendly rule checks.", href: "/province/mpumalanga" },
+  { title: "Ticks and Fleas in Dogs", description: "Year-round parasite checks, prevention questions, and South African risk context.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+  { title: "Heatstroke in Dogs", description: "Hot-weather warning signs, urgent next steps, and prevention for South African owners.", href: "/emergency/heatstroke-in-dogs-south-africa" },
+  { title: "Snake Bites in Dogs", description: "What to do, what to avoid, and why fast veterinary care matters.", href: "/emergency/snake-bites-in-dogs-south-africa" },
+  { title: "Dog Poisoning", description: "Emergency toxin steps, vet-call details, and home-remedy risks.", href: "/emergency/dog-poisoning-south-africa" },
+  { title: "Dog Training South Africa", description: "Humane everyday training foundations for puppies and adult dogs.", href: "/training/dog-training-south-africa" },
+  { title: "Dog Grooming South Africa", description: "Coat, nails, ears, ticks, skin checks, and groomer questions.", href: "/grooming/dog-grooming-south-africa" },
 ];
 
 export const homepageMoneyPages: CardLink[] = [
-  { title: "Compare Dog Insurance", description: "Premiums, excesses, limits, exclusions, and claims.", href: "/insurance/compare-dog-insurance-south-africa" },
+  { title: "Pet Insurance for Dogs", description: "Premiums, excesses, limits, exclusions, claims, and waiting periods.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+  { title: "Vet Costs for Dogs", description: "Understand routine, diagnostic, and urgent vet cost factors.", href: "/costs/vet-costs-for-dogs-south-africa" },
+  { title: "Emergency Vet Costs", description: "Plan for after-hours care, diagnostics, hospitalisation, and urgent decisions.", href: "/costs/emergency-vet-costs-south-africa" },
   { title: "Dog Cost Calculator Guide", description: "Use a planning estimate without fake exact prices.", href: "/costs/dog-cost-calculator-south-africa" },
-  { title: "Emergency Vet Bill Budget", description: "Plan savings, records, and insurance questions.", href: "/costs/how-to-budget-for-emergency-vet-bills-south-africa" },
+  { title: "Compare Dog Insurance", description: "Compare policy wording, limits, exclusions, and claim questions.", href: "/insurance/compare-dog-insurance-south-africa" },
   { title: "Johannesburg Emergency Vet Costs", description: "City-specific urgent-care budget planning without fake clinic prices.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
-  { title: "Cape Town Monthly Dog Costs", description: "Plan food, grooming, vet care, travel, and emergency savings.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
 ];
 
 export const hubPromos: Record<string, CardLink[]> = {

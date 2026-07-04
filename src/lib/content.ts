@@ -86,7 +86,7 @@ export const hubPages: HubContent[] = [
         title: "Tick Bite Fever Basics",
         description:
           "How South African owners can think about tick prevention, warning signs, and when a vet visit should not wait.",
-        href: "/health",
+        href: "/health/biliary-tick-bite-fever-dogs-south-africa",
       },
       {
         title: "When to Phone the Vet",
@@ -153,7 +153,7 @@ export const hubPages: HubContent[] = [
         title: "Emergency Vet Call Checklist",
         description:
           "What to say when phoning a vet so they can help you triage quickly and prepare for arrival.",
-        href: "/emergency",
+        href: "/health/when-to-take-your-dog-to-the-vet-south-africa",
       },
     ],
     related: [
@@ -205,7 +205,7 @@ export const hubPages: HubContent[] = [
         title: "Small Dogs for Flats",
         description:
           "What to consider before choosing a smaller breed for apartment or townhouse living.",
-        href: "/breeds",
+        href: "/breeds/best-apartment-dogs-south-africa",
       },
       {
         title: "High-Energy Dogs",
@@ -260,7 +260,7 @@ export const hubPages: HubContent[] = [
         title: "Dog Adoption Checklist",
         description:
           "Questions to ask shelters, rescues, foster homes, and private rehomers before you commit.",
-        href: "/adoption",
+        href: "/adoption/dog-adoption-south-africa",
       },
       {
         title: "Preparing Your Home",
@@ -309,7 +309,7 @@ export const hubPages: HubContent[] = [
         title: "How to Compare Dog Food Labels",
         description:
           "What to look for on a food bag before being swayed by marketing language.",
-        href: "/food",
+        href: "/food/how-to-read-dog-food-labels-south-africa",
       },
       {
         title: "Puppy Food Basics",
@@ -376,7 +376,7 @@ export const hubPages: HubContent[] = [
         title: "Choosing a Trainer",
         description:
           "Questions to ask about methods, class size, puppy socialisation, and behaviour support.",
-        href: "/training",
+        href: "/training/dog-training-south-africa",
       },
     ],
     related: [
@@ -418,7 +418,7 @@ export const hubPages: HubContent[] = [
         title: "Coat Care by Dog Type",
         description:
           "How short, double, curly, wire, and long coats need different brushing and grooming routines.",
-        href: "/grooming",
+        href: "/grooming/dog-grooming-south-africa",
       },
       {
         title: "Bathing Without Skin Trouble",
@@ -430,7 +430,7 @@ export const hubPages: HubContent[] = [
         title: "Choosing a Groomer",
         description:
           "Questions to ask about handling, drying, senior dogs, anxious dogs, matting, and vaccination policies.",
-        href: "/grooming",
+        href: "/grooming/how-to-choose-a-dog-groomer-south-africa",
       },
     ],
     related: [
@@ -473,7 +473,7 @@ export const hubPages: HubContent[] = [
         title: "Questions Before You Buy Pet Insurance",
         description:
           "A practical list to ask an insurer before you choose a policy or rely on cover.",
-        href: "/insurance",
+        href: "/insurance/pet-insurance-for-dogs-south-africa",
       },
       {
         title: "Emergency Claims Planning",
@@ -581,7 +581,7 @@ export const hubPages: HubContent[] = [
         title: "Dog-Friendly Outing Checklist",
         description:
           "What to check before taking your dog to a cafe, park, beach, market, hike, or weekend trip.",
-        href: "/dog-friendly",
+        href: "/dog-friendly/dog-friendly-places-south-africa",
       },
       {
         title: "Lead Etiquette",

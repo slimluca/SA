@@ -146,7 +146,7 @@ const insuranceSources: Source[] = [
 const costDisclaimer =
   "Budget ranges on DogHaven are planning examples only. Real costs vary by province, city, clinic, dog size, health, age, inflation, product choice, and urgency. Always request direct quotes from vets, shelters, groomers, trainers, insurers, and suppliers.";
 
-export const phase5GuidePages: GuideContent[] = [
+const phase5GuidePagesRaw: GuideContent[] = [
   {
     slug: "monthly-cost-of-owning-a-dog-south-africa",
     path: "/costs/monthly-cost-of-owning-a-dog-south-africa",
@@ -1481,6 +1481,15 @@ export const phase5GuidePages: GuideContent[] = [
     sources: foodSources,
   },
 ];
+
+const phase5RetiredDuplicateSlugs = new Set([
+  "emergency-vet-costs-south-africa",
+  "is-pet-insurance-worth-it-south-africa",
+]);
+
+export const phase5GuidePages: GuideContent[] = phase5GuidePagesRaw.filter(
+  (guide) => !phase5RetiredDuplicateSlugs.has(guide.slug),
+);
 
 export function getPhase5Guide(slug: string) {
   return phase5GuidePages.find((guide) => guide.slug === slug);
