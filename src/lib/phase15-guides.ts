@@ -949,6 +949,134 @@ const guides: FoodGuide[] = [
       ...foodRelated,
     ],
   },
+  {
+    slug: "how-much-to-feed-a-dog-south-africa",
+    title: "How Much to Feed a Dog in South Africa",
+    seoTitle: "How Much to Feed a Dog South Africa | Portions and Calculator",
+    description:
+      "A practical South African dog feeding guide covering portions, life stage, body condition, activity, treats, label guidance, and the DogHaven feeding calculator.",
+    summary:
+      "How much to feed a dog depends on age, size, body condition, activity, food type, treats, health, and vet advice. Start with the label and feeding calculator, then adjust with your dog's condition and your vet's guidance.",
+    context:
+      "South African owners may switch between supermarket, vet-shop, online, raw, wet, kibble, or mixed feeding. Heat, storage, food price changes, treats, table scraps, and large-breed costs all affect practical portion planning.",
+    rows: [
+      ["Life stage", "Puppies, adults, seniors, pregnant dogs, and working dogs need different feeding plans."],
+      ["Body condition", "A dog that is gaining or losing weight may need the portion reviewed."],
+      ["Food type", "Kibble, wet food, raw food, and mixed feeding have different calorie density."],
+      ["Treats and scraps", "Training treats, chews, toppers, and leftovers count toward the daily intake."],
+      ["Activity", "Active, recovering, hot-weather, and low-exercise dogs may need different energy planning."],
+      ["Health", "Vomiting, diarrhoea, obesity, allergies, chronic disease, or vet diets need veterinary guidance."],
+    ],
+    questions: [
+      "What is the food's feeding guide for my dog's current weight and life stage?",
+      "How many treats, chews, toppers, or scraps does my dog get daily?",
+      "Is my dog gaining, losing, or maintaining weight?",
+      "Should I use ideal weight rather than current weight for portion planning?",
+      "Does my puppy, senior dog, overweight dog, or allergic dog need vet guidance first?",
+    ],
+    avoid: [
+      "Do not change portions sharply without watching stool, appetite, and body condition.",
+      "Do not use cup size alone if different foods have different calorie density.",
+      "Do not ignore weight gain from treats and table scraps.",
+      "Do not restrict food heavily for weight loss without veterinary advice.",
+      "Do not use unsafe leftovers such as cooked bones, onions, garlic, grapes, chocolate, biltong, or boerewors.",
+    ],
+    checklist: [
+      "Check the feeding guide on the actual food bag, tin, or label.",
+      "Use the DogHaven dog feeding calculator as a starting estimate.",
+      "Record treats, chews, toppers, and table scraps.",
+      "Check body condition every few weeks.",
+      "Ask a vet if your dog is a puppy, senior, overweight, underweight, pregnant, ill, or on a special diet.",
+    ],
+    faqs: [
+      {
+        question: "Should I feed by cups or grams?",
+        answer:
+          "Grams are usually more accurate because cup sizes and kibble shapes vary. Use the label and calculator as a starting point.",
+      },
+      {
+        question: "Why is my dog hungry after eating?",
+        answer:
+          "Possible reasons include habit, treats, low satiety, high activity, medical issues, or an unsuitable portion. Ask a vet if hunger is intense or new.",
+      },
+      {
+        question: "Can I use the same portion for every dog food?",
+        answer:
+          "No. Foods differ in calorie density and feeding guidance. Recheck portions when switching foods.",
+      },
+    ],
+    related: [
+      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Food Cost", description: "Plan monthly feeding cost.", href: "/costs/dog-food-cost-south-africa" },
+      { title: "Dog Food Labels", description: "Understand feeding guides and label wording.", href: "/food/how-to-read-dog-food-labels-south-africa" },
+      { title: "Can My Dog Eat This?", description: "Check common food safety questions.", href: "/tools/can-my-dog-eat-this" },
+      ...foodRelated,
+    ],
+  },
+  {
+    slug: "puppy-feeding-guide-south-africa",
+    title: "Puppy Feeding Guide for South Africa",
+    seoTitle: "Puppy Feeding Guide South Africa | Portions, Schedule and Safety",
+    description:
+      "A practical puppy feeding guide for South African owners covering feeding schedules, portions, growth, transitions, treats, unsafe foods, and when to ask a vet.",
+    summary:
+      "Puppy feeding should support steady growth, digestion, and safe routines. Use growth-appropriate food, follow label and vet guidance, transition gradually, and avoid unsafe treats or sudden changes.",
+    context:
+      "South African puppy owners need to plan feeding around parvovirus risk, vet visits, vaccination stages, heat, storage, load-shedding, food availability, budget, and the puppy's expected adult size.",
+    rows: [
+      ["Young puppies", "Need frequent meals and careful food continuity after handover."],
+      ["Large-breed puppies", "Need growth planning and vet guidance to avoid inappropriate feeding."],
+      ["Food transitions", "Gradual changes are usually gentler unless your vet advises otherwise."],
+      ["Treats", "Training treats should be tiny and counted as part of daily intake."],
+      ["Unsafe foods", "Chocolate, grapes, onions, garlic, xylitol, cooked bones, biltong, and boerewors are not puppy foods."],
+      ["Vet guidance", "Vomiting, diarrhoea, poor growth, pot belly, worms, or poor appetite should be discussed with a vet."],
+    ],
+    questions: [
+      "What food was the puppy eating before collection?",
+      "Is this food complete and suitable for puppy growth and expected adult size?",
+      "How many meals per day suit this puppy's age?",
+      "How should I adjust portions as the puppy grows?",
+      "What symptoms mean the food or feeding plan needs a vet review?",
+    ],
+    avoid: [
+      "Do not switch food suddenly on the first night unless your vet advises it.",
+      "Do not feed adult maintenance food to a growing puppy without veterinary guidance.",
+      "Do not overuse treats during toilet training or puppy classes.",
+      "Do not give cooked bones, rich braai scraps, biltong, boerewors, chocolate, grapes, onions, garlic, or xylitol foods.",
+      "Do not wait with vomiting, diarrhoea, weakness, not eating, or suspected parvo signs.",
+    ],
+    checklist: [
+      "Get the current food name and feeding amount before handover.",
+      "Keep meals predictable for the first week.",
+      "Use the feeding calculator only as a planning aid, then follow puppy label and vet guidance.",
+      "Track stool, appetite, energy, and body condition.",
+      "Ask your vet about deworming, parasite prevention, vaccines, and growth at the first visit.",
+    ],
+    faqs: [
+      {
+        question: "How many times a day should a puppy eat?",
+        answer:
+          "It depends on age, size, food, and health. Young puppies often need more frequent meals; ask your vet and check the food guidance.",
+      },
+      {
+        question: "Can puppies eat adult dog food?",
+        answer:
+          "Puppies usually need food suitable for growth. Large-breed puppies need extra care. Ask your vet before using adult food.",
+      },
+      {
+        question: "What if my puppy has diarrhoea after a food change?",
+        answer:
+          "Phone a vet promptly, especially if the puppy is young, weak, vomiting, not eating, or not fully vaccinated.",
+      },
+    ],
+    related: [
+      { title: "Puppy Food", description: "Broader puppy food guide.", href: "/puppy/puppy-food-south-africa" },
+      { title: "Dog Feeding Calculator", description: "Estimate feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "New Puppy Checklist", description: "First-week puppy setup and records.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Parvovirus in Dogs", description: "Urgent puppy vomiting and diarrhoea signs.", href: "/emergency/parvovirus-in-dogs-south-africa" },
+      ...foodRelated,
+    ],
+  },
 ];
 
 function toGuide(guide: FoodGuide): GuideContent {

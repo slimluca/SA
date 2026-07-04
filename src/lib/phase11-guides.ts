@@ -874,6 +874,78 @@ const guides: PuppyGuide[] = [
     ],
   },
   {
+    slug: "first-night-with-puppy-south-africa",
+    title: "First Night With a Puppy in South Africa",
+    seoTitle: "First Night With a Puppy South Africa | Settling, Sleep and Safety",
+    description:
+      "Practical South African first-night puppy guidance covering sleep setup, crying, toilet trips, food, safety, records, children, other pets, and when to call a vet.",
+    summary:
+      "The first night with a puppy should be quiet, safe, and predictable. Focus on a secure sleep area, toilet trips, gentle settling, food continuity, and watching for illness rather than trying to fix every habit immediately.",
+    context:
+      "South African puppies may arrive from shelters, breeders, rescues, foster homes, or private rehoming situations with different records and stress levels. Plan for heat, parvo risk, ticks and fleas, garden hazards, load-shedding disruption, and after-hours vet access before bedtime.",
+    ageRows: [
+      ["Before bedtime", "Set up a safe sleep area, remove hazards, confirm food and water, and keep records nearby."],
+      ["First evening", "Keep greetings calm, limit visitors, offer a toilet break, and avoid overwhelming play."],
+      ["Overnight", "Expect some crying, take calm toilet breaks, and keep lights and excitement low."],
+      ["Next morning", "Check eating, drinking, stool, urine, energy, coughing, vomiting, and any signs that need a vet call."],
+    ],
+    doList: [
+      "Use the same food the puppy was eating before arrival unless your vet advises otherwise.",
+      "Choose a secure, easy-clean sleeping area close enough that you can hear distress.",
+      "Take calm toilet breaks and reward quietly.",
+      "Keep vaccine, deworming, microchip, adoption, or breeder records together.",
+      "Save your vet and nearest after-hours option before the first night.",
+    ],
+    avoidList: [
+      "Do not take an incompletely vaccinated puppy to risky public dog areas.",
+      "Do not punish crying, toilet accidents, or nervous behaviour.",
+      "Do not leave children or other pets to overwhelm the puppy.",
+      "Do not give human medication or old pet medication for night-time symptoms.",
+    ],
+    contactList: [
+      "Contact a vet urgently for vomiting, diarrhoea, weakness, not eating, coughing, pale gums, collapse, breathing trouble, or suspected poisoning.",
+      "Contact the shelter, rescue, breeder, or rehoming family if records, food details, or handover promises are missing.",
+      "Contact a humane trainer if panic, biting, or conflict with children or other pets feels unsafe.",
+    ],
+    checklist: [
+      "Safe sleep area prepared.",
+      "Lead, collar or harness, and toilet route ready.",
+      "Food, water, bowls, cleaning supplies, and safe chew ready.",
+      "Cords, plants, chemicals, bins, pools, stairs, and small objects blocked off.",
+      "Vet details, records, and emergency transport plan saved.",
+    ],
+    prevention: [
+      "Keep the first night boring and reassuring.",
+      "Use short toilet trips rather than long night-time play.",
+      "Keep the puppy away from unknown dogs until your vet confirms safe exposure.",
+      "Check the garden for bait, toxic plants, gaps, thorns, and stagnant water.",
+    ],
+    faqs: [
+      {
+        question: "Should I ignore my puppy crying on the first night?",
+        answer:
+          "Not completely. Check toilet needs, safety, temperature, and distress calmly. Avoid turning every cry into play, but do not leave a frightened or unwell puppy without support.",
+      },
+      {
+        question: "Can my puppy sleep in my bed?",
+        answer:
+          "Choose the safest setup for your household. Tiny puppies can be injured by falls, rough handling, or being rolled on, so many homes start with a secure crate or pen nearby.",
+      },
+      {
+        question: "What first-night symptoms are urgent?",
+        answer:
+          "Vomiting, diarrhoea, weakness, not eating, breathing trouble, coughing, pale gums, collapse, or suspected poisoning should be discussed with a vet urgently.",
+      },
+    ],
+    related: [
+      { title: "New Puppy Checklist", description: "Records, supplies, safety, and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Puppy Crying at Night", description: "Sleep and settling guidance.", href: "/puppy/puppy-crying-at-night-south-africa" },
+      { title: "Puppy Food", description: "Feeding continuity and safe transitions.", href: "/puppy/puppy-food-south-africa" },
+      { title: "Puppy First Vet Visit", description: "What to ask at the first appointment.", href: "/puppy/puppy-first-vet-visit-south-africa" },
+    ],
+    sources: puppySources,
+  },
+  {
     slug: "how-much-does-a-puppy-cost-south-africa",
     title: "How Much Does a Puppy Cost in South Africa?",
     seoTitle: "How Much Does a Puppy Cost South Africa | First-Year Budget",

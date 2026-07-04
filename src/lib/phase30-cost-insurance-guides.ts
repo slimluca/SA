@@ -431,6 +431,149 @@ const costGuides: MoneyGuide[] = [
       ...costRelated,
     ],
   },
+  {
+    slug: "dog-euthanasia-cost-south-africa",
+    hubPath: "/costs",
+    title: "Dog Euthanasia Cost in South Africa",
+    seoTitle: "Dog Euthanasia Cost South Africa | What Affects the Vet Bill",
+    description:
+      "A careful South African guide to dog euthanasia cost factors, including vet consultation, after-hours care, cremation choices, home visits, transport, and questions to ask.",
+    intro:
+      "Euthanasia is an emotional decision, and cost questions can feel difficult to ask. This guide explains practical cost factors without inventing prices, and helps South African owners prepare calm questions for a veterinarian.",
+    quickFacts: [
+      ...costSafety,
+      "Costs can change if euthanasia happens during an emergency, after hours, at home, at a clinic, or with cremation or burial arrangements.",
+      "A vet should guide welfare and timing decisions; this page is only for practical planning questions.",
+    ],
+    context: [
+      "The final cost can vary by clinic, city, timing, dog size, whether a consultation is needed first, whether sedation is used, and what aftercare option the owner chooses.",
+      "Some owners ask about euthanasia during a crisis, while others discuss it during chronic illness or senior dog care. In both cases, the most important question is the dog's welfare and comfort.",
+    ],
+    factors: [
+      ["Consultation", "The vet may need to examine the dog, discuss quality of life, and confirm that euthanasia is appropriate."],
+      ["Timing", "After-hours or emergency appointments may be billed differently from planned daytime appointments."],
+      ["Location", "A clinic appointment and a home visit can involve different travel, staffing, and availability factors."],
+      ["Dog size", "Size can affect handling, medication amount, transport, and aftercare arrangements."],
+      ["Aftercare", "Private cremation, communal cremation, burial rules, transport, or keepsakes may be separate choices."],
+      ["Medical complexity", "Pain, distress, severe illness, or emergency stabilisation can change what is needed before the procedure."],
+    ],
+    questions: [
+      "What is included in the estimate?",
+      "Is a consultation or quality-of-life appointment needed first?",
+      "Do you offer clinic appointments, home visits, or referral to a service that does?",
+      "What aftercare options are available and what do they include?",
+      "How are after-hours or emergency situations handled?",
+      "What can I expect before, during, and after the appointment?",
+    ],
+    warnings: [
+      "Do not delay urgent suffering because the conversation is emotionally difficult; phone your vet for guidance.",
+      "Do not rely on online price claims because clinic processes and aftercare choices differ.",
+      "Do not use home methods or medication to end a dog's life; speak to a veterinarian.",
+      "Do not assume cremation, transport, or keepsakes are included unless the clinic confirms it.",
+    ],
+    checklist: [
+      "Write down your main welfare concerns and questions before phoning.",
+      "Ask whether your dog needs to be seen urgently for pain, breathing trouble, collapse, or distress.",
+      "Confirm appointment location, timing, payment process, and aftercare choices.",
+      "Arrange transport and support if you will be too upset to drive.",
+      "Keep insurance wording handy if you need to ask whether any related care is covered.",
+    ],
+    faqs: [
+      {
+        question: "Can DogHaven tell me the exact euthanasia cost?",
+        answer:
+          "No. Costs vary by clinic, city, timing, dog size, consultation needs, and aftercare choices. Ask your vet for a current estimate.",
+      },
+      {
+        question: "Is home euthanasia available everywhere?",
+        answer:
+          "Availability differs by area and provider. Ask your vet whether they offer home visits or can suggest a suitable option.",
+      },
+      {
+        question: "What if my dog is suffering now?",
+        answer:
+          "Phone a veterinarian or emergency animal clinic urgently. Online planning should not delay care when a dog is in distress.",
+      },
+    ],
+    related: [
+      { title: "Senior Dog Care", description: "Quality-of-life and senior dog planning.", href: "/health/senior-dog-care-south-africa" },
+      { title: "Emergency Vet Costs", description: "Urgent-care cost factors.", href: "/costs/emergency-vet-costs-south-africa" },
+      { title: "Vet Costs for Dogs", description: "Routine and sick-visit cost factors.", href: "/costs/vet-costs-for-dogs-south-africa" },
+      ...costRelated,
+    ],
+  },
+  {
+    slug: "monthly-dog-costs-south-africa",
+    hubPath: "/costs",
+    title: "Monthly Dog Costs in South Africa",
+    seoTitle: "Monthly Dog Costs South Africa | Food, Vet, Grooming and Savings",
+    description:
+      "A practical South African monthly dog cost guide covering food, vet care, parasite prevention, grooming, training, insurance, transport, and emergency savings without fake averages.",
+    intro:
+      "Monthly dog costs are not only food. A realistic budget includes routine care, prevention, grooming, training, replacement items, transport, insurance or savings, and a buffer for emergencies.",
+    quickFacts: [
+      ...costSafety,
+      "Large dogs, puppies, seniors, chronic conditions, high-maintenance coats, and city transport can change the monthly budget.",
+      "Use calculators as planning tools, then replace assumptions with current quotes from your own vet, groomer, trainer, insurer, and supplier.",
+    ],
+    context: [
+      "South African households face different costs depending on city, suburb, access to vets and groomers, dog size, food choice, parasite risk, and whether a dog needs training or chronic care.",
+      "This page focuses on monthly planning. For first-year puppy setup, use the puppy first-year cost guide; for emergency planning, use the emergency vet cost guide.",
+    ],
+    factors: [
+      ["Food", "Dog size, life stage, activity, diet type, body condition, and vet diets can change monthly feeding cost."],
+      ["Routine vet care", "Vaccines, checkups, dental care, chronic care, and prevention should be planned beyond emergencies."],
+      ["Parasite prevention", "Ticks, fleas, worms, product type, weight, and local risk affect the plan."],
+      ["Grooming", "Coat type, size, matting, shedding, ears, nails, and mobile travel can create recurring costs."],
+      ["Training", "Puppy classes, private support, behaviour help, and owner practice time can be part of the monthly budget."],
+      ["Insurance or savings", "Premiums, excesses, exclusions, emergency savings, and claim rules all matter."],
+    ],
+    questions: [
+      "What does my dog eat per day and what does that cost per month?",
+      "Which routine vet and parasite-prevention costs should I plan for this year?",
+      "How often will this coat need professional grooming?",
+      "Should I budget for group training, private help, or behaviour support?",
+      "What insurance excesses, exclusions, or savings buffer do I need?",
+      "What costs will change as my dog becomes senior?",
+    ],
+    warnings: [
+      "Do not budget only for food.",
+      "Do not rely on national-average claims without checking your own local quotes.",
+      "Do not skip routine prevention to save money without discussing the risk with your vet.",
+      "Do not assume insurance removes the need for emergency savings.",
+    ],
+    checklist: [
+      "Use the dog cost calculator as a starting point.",
+      "Use the dog feeding calculator to sanity-check food portions.",
+      "Collect current quotes from your vet, groomer, trainer, insurer, and food supplier.",
+      "Add a monthly emergency savings line, even if it starts small.",
+      "Review the budget after illness, a move, a new puppy, a senior-dog change, or a food switch.",
+    ],
+    faqs: [
+      {
+        question: "What is the biggest monthly dog cost?",
+        answer:
+          "It depends on the dog. Food is often visible, but vet care, grooming, parasite prevention, insurance, medication, or training can be significant.",
+      },
+      {
+        question: "Is a small dog always cheaper per month?",
+        answer:
+          "Not always. Small dogs may eat less, but grooming, dental care, chronic illness, and behaviour support can still cost money.",
+      },
+      {
+        question: "Should I use a calculator or real quotes?",
+        answer:
+          "Use calculators for planning, then replace estimates with real quotes and receipts from your own providers.",
+      },
+    ],
+    related: [
+      { title: "Dog Cost Calculator", description: "Estimate monthly cost categories.", href: "/tools/dog-cost-calculator" },
+      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Cost of Owning a Dog", description: "Broader setup and recurring cost guide.", href: "/costs/cost-of-owning-a-dog-south-africa" },
+      { title: "Pet Insurance", description: "Understand cover, excesses, and exclusions.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+      ...costRelated,
+    ],
+  },
 ];
 
 const insuranceGuides: MoneyGuide[] = [
