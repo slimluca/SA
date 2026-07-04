@@ -32,6 +32,30 @@ export function HubPage({ hub }: { hub: HubContent }) {
           </div>
         ) : null}
 
+        {hub.sections && hub.sections.length > 0 ? (
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {hub.sections.map((section) => (
+              <section key={section.title} className="rounded-2xl border border-oat bg-white p-6 shadow-sm">
+                <h2 className="text-2xl font-black leading-tight text-cocoa">{section.title}</h2>
+                <div className="mt-4 space-y-3">
+                  {section.body.map((paragraph) => (
+                    <p key={paragraph} className="leading-7 text-bark">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+                {section.links && section.links.length > 0 ? (
+                  <div className="mt-5 grid gap-3">
+                    {section.links.map((link) => (
+                      <ContentLinkCard key={`${section.title}-${link.href}`} {...link} />
+                    ))}
+                  </div>
+                ) : null}
+              </section>
+            ))}
+          </div>
+        ) : null}
+
         <PopularGuides
           title={hub.slug === "tools" ? "Popular tools to try first" : "Most useful guides to start with"}
           intro={

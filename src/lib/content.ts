@@ -26,7 +26,14 @@ export type HubContent = {
   cards: CardLink[];
   related: CardLink[];
   faqs: FAQ[];
+  sections?: HubSection[];
   notice?: string;
+};
+
+export type HubSection = {
+  title: string;
+  body: string[];
+  links?: CardLink[];
 };
 
 export type ArticleSection = {
@@ -188,12 +195,12 @@ export const hubPages: HubContent[] = [
     slug: "breeds",
     path: "/breeds",
     title: "Dog Breed Guides for South African Homes",
-    seoTitle: "Best Dog Breed Guides for South African Homes | DogHaven",
+    seoTitle: "Dog Breed Guides South Africa | Choose for Home, Heat and Lifestyle",
     description:
-      "Breed planning guides for South African homes, climate, family routines, space, exercise, grooming, shedding, and adoption decisions.",
+      "South African dog breed guides for choosing by home size, climate, children, activity level, grooming, training, vet costs, and long-term fit.",
     kicker: "Breed hub",
     intro:
-      "The best dog for a home is not just the cutest puppy in the photo. Breed decisions should match your space, heat, exercise time, budget, grooming tolerance, neighbours, children, other pets, and long-term care capacity.",
+      "Choosing a breed in South Africa is about more than size or looks. Heat, garden space, estate or flat rules, children, activity level, grooming, training time, food costs, and vet risks all shape whether a dog will fit your real household.",
     cards: [
       {
         title: "Best Dog Breeds for South African Homes",
@@ -202,24 +209,49 @@ export const hubPages: HubContent[] = [
         href: "/breeds/best-dog-breeds-for-south-african-homes",
       },
       {
-        title: "Small Dogs for Flats",
+        title: "Apartment and Flat-Friendly Dogs",
         description:
-          "What to consider before choosing a smaller breed for apartment or townhouse living.",
+          "Compare barking, toilet routines, enrichment, lift access, neighbours, and daily walks before choosing a flat-friendly dog.",
         href: "/breeds/best-apartment-dogs-south-africa",
       },
       {
-        title: "High-Energy Dogs",
+        title: "Family Dog Planning",
         description:
-          "How to plan for breeds that need more training, enrichment, exercise, and daily structure.",
-        href: "/training",
+          "Think through children, supervision, space, handling, grooming, costs, and temperament before choosing a family dog.",
+        href: "/breeds/best-family-dogs-south-africa",
       },
     ],
     related: [
-      { title: "Adoption Safety", description: "Questions before bringing a dog home.", href: "/adoption" },
-      { title: "Grooming", description: "Coat care and shedding planning.", href: "/grooming" },
-      { title: "Dog Costs", description: "Budget by size and care needs.", href: "/costs" },
-      { title: "Training", description: "Plan for energy, manners, and public behaviour.", href: "/training" },
-      { title: "Insurance", description: "Understand cover before choosing a higher-risk breed.", href: "/insurance" },
+      { title: "Labrador Retriever", description: "Family fit, exercise, food, and health planning.", href: "/breeds/labrador-retriever-south-africa" },
+      { title: "Golden Retriever", description: "Coat care, exercise, family routines, and sourcing questions.", href: "/breeds/golden-retriever-south-africa" },
+      { title: "Border Collie", description: "High-energy working breed planning.", href: "/breeds/border-collie-south-africa" },
+      { title: "Rottweiler", description: "Training, handling, security myths, and responsible ownership.", href: "/breeds/rottweiler-south-africa" },
+      { title: "Yorkshire Terrier", description: "Small dog care, grooming, dental, and apartment considerations.", href: "/breeds/yorkshire-terrier-south-africa" },
+      { title: "Maltese Poodle", description: "Small companion dog planning for South African homes.", href: "/breeds/maltese-poodle-south-africa" },
+    ],
+    sections: [
+      {
+        title: "Choose for the home you actually have",
+        body: [
+          "A townhouse with strict conduct rules, a hot inland suburb, a busy family home, and a small coastal flat all ask different things of a dog. Start with your ordinary weekday: work hours, walking time, fencing, noise tolerance, children, visitors, and how much grooming or training support you can realistically afford.",
+          "Breed labels can help you ask better questions, but they are not guarantees. Individual temperament, early handling, health, and daily routine matter as much as breed reputation.",
+        ],
+        links: [
+          { title: "Best Apartment Dogs", description: "Flat, rental, noise, and enrichment planning.", href: "/breeds/best-apartment-dogs-south-africa" },
+          { title: "Best Family Dogs", description: "Child supervision, routines, and realistic family fit.", href: "/breeds/best-family-dogs-south-africa" },
+        ],
+      },
+      {
+        title: "Plan costs, grooming, training, and heat",
+        body: [
+          "Large dogs usually cost more to feed and may cost more for weight-based medication. Long, curly, double, or wire coats can make grooming a regular commitment. Active and working breeds need structure, exercise, and owner training rather than only a bigger garden.",
+          "South African summers also matter. Flat-faced, heavy-coated, elderly, overweight, and very active dogs may need extra heat planning, shade, water, and careful outing times.",
+        ],
+        links: [
+          { title: "Dog Costs", description: "Budget for food, vet care, grooming, training, and emergencies.", href: "/costs" },
+          { title: "Dog Training", description: "Plan for manners, recall, visitors, and public behaviour.", href: "/training" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -237,18 +269,23 @@ export const hubPages: HubContent[] = [
         answer:
           "Many mixed-breed dogs make wonderful pets. Focus on temperament, health checks, size, energy level, and whether your household can meet the dog's needs.",
       },
+      {
+        question: "Should I choose a breed before checking costs?",
+        answer:
+          "No. Food, grooming, training, insurance, transport, and vet care can change a lot by size, coat, age, and health risk. Budget before committing.",
+      },
     ],
   },
   {
     slug: "adoption",
     path: "/adoption",
     title: "Dog Adoption Safety in South Africa",
-    seoTitle: "Dog Adoption Safety in South Africa | Checklists and Scam Advice",
+    seoTitle: "Dog Adoption South Africa | Shelter Questions, Costs and Safety",
     description:
-      "Practical South African adoption safety guidance covering shelters, SPCA questions, rehoming, puppy scams, documents, and red flags.",
+      "South African dog adoption guidance covering shelter questions, puppy scams, home preparation, vet records, microchipping, first-week planning, and costs.",
     kicker: "Adoption hub",
     intro:
-      "Adopting or buying a dog should feel careful, not rushed. This hub helps South African owners ask better questions, prepare their homes, avoid pressure tactics, and understand what responsible rehoming can look like.",
+      "Adopting, rescuing, rehoming, or buying a puppy should feel careful, not rushed. This hub helps South African owners verify records, prepare the home, avoid payment pressure, plan first-week routines, and understand the costs and health checks that come after the handover.",
     cards: [
       {
         title: "Puppy Scam Checklist South Africa",
@@ -265,16 +302,41 @@ export const hubPages: HubContent[] = [
       {
         title: "Preparing Your Home",
         description:
-          "Practical setup for sleeping areas, boundaries, food changes, children, other pets, and the first week.",
-        href: "/training",
+          "Supplies, safety checks, food transition, sleeping areas, children, other pets, and first-week routines.",
+        href: "/puppy/new-puppy-checklist-south-africa",
       },
     ],
     related: [
-      { title: "Breeds", description: "Match the dog to your home.", href: "/breeds" },
-      { title: "Dog Costs", description: "Budget before you adopt.", href: "/costs" },
-      { title: "Training", description: "First-week routines and behaviour support.", href: "/training" },
-      { title: "Dog Food", description: "Plan feeding before the dog arrives.", href: "/food" },
-      { title: "Dog Health", description: "Vaccines, vet checks, and prevention.", href: "/health" },
+      { title: "New Puppy Checklist", description: "Records, supplies, safety, and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Microchipping Dogs", description: "ID, registration, lost-dog planning, and vet questions.", href: "/health/microchipping-dogs-south-africa" },
+      { title: "Vet Costs", description: "Budget for routine, sick, and emergency vet care.", href: "/costs/vet-costs-for-dogs-south-africa" },
+      { title: "Dog Cost Calculator", description: "Estimate monthly care before committing.", href: "/tools/dog-cost-calculator" },
+      { title: "Breeds", description: "Match size, energy, grooming, and cost to your home.", href: "/breeds" },
+      { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+    ],
+    sections: [
+      {
+        title: "Slow the decision down",
+        body: [
+          "A responsible adoption process should make the dog's welfare clearer, not more confusing. Ask about age, temperament, history with children or other pets, vaccinations, deworming, sterilisation, microchipping, diet, and what support is available after adoption.",
+          "DogHaven does not publish unverified shelter or breeder listings. Use these guides to prepare better questions and then verify details directly with the organisation, foster home, rescue group, SPCA, breeder, or current owner.",
+        ],
+        links: [
+          { title: "Dog Adoption South Africa", description: "Shelter, rescue, rehoming, and record checks.", href: "/adoption/dog-adoption-south-africa" },
+          { title: "Puppy Scam Checklist", description: "Spot pressure payments, stolen photos, and unsafe handovers.", href: "/adoption/puppy-scam-checklist-south-africa" },
+        ],
+      },
+      {
+        title: "Prepare for the first month, not only collection day",
+        body: [
+          "The first few weeks are where food changes, toilet routines, sleep, boundaries, vet checks, ID, and introductions can either settle calmly or become stressful. Prepare a quiet setup, keep records accessible, and budget for the first vet visit before the dog arrives.",
+          "If the dog is a puppy, senior, nervous, underweight, recently ill, or moving between homes, give the transition more structure and fewer surprises.",
+        ],
+        links: [
+          { title: "New Puppy Checklist", description: "Supplies, records, safety, and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+          { title: "Dog Cost Calculator", description: "Estimate routine costs before adoption.", href: "/tools/dog-cost-calculator" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -292,44 +354,74 @@ export const hubPages: HubContent[] = [
         answer:
           "Ask about age, health checks, vaccinations, sterilisation, behaviour, history with children or pets, diet, training needs, and the support available after adoption.",
       },
+      {
+        question: "Does DogHaven list shelters or breeders?",
+        answer:
+          "No. DogHaven does not publish unverified listings. The adoption guides help owners know what to ask and what to verify directly.",
+      },
     ],
   },
   {
     slug: "food",
     path: "/food",
     title: "Dog Food Guides for South African Owners",
-    seoTitle: "Dog Food Guides South Africa | Feeding, Labels, Life Stages",
+    seoTitle: "Dog Food South Africa | Feeding, Labels, Raw Diets and Budget",
     description:
-      "Practical dog food guidance for South African owners covering labels, life stages, budget, allergies, transitions, and vet diets.",
+      "Practical South African dog food and feeding guides covering labels, life stages, raw diets, safe foods, feeding calculators, costs, and vet-guided choices.",
     kicker: "Food hub",
     intro:
-      "Dog food choices can feel noisy because every bag promises something. DogHaven focuses on practical feeding decisions: life stage, body condition, budget, allergies, safe transitions, and when a vet diet is worth discussing.",
+      "Dog food choices can feel noisy because every bag, advert, and social post promises something. DogHaven focuses on practical South African feeding decisions: life stage, body condition, label reading, daily portions, raw diet safety, budget, allergies, safe transitions, and when a vet diet is worth discussing.",
     cards: [
       {
-        title: "How to Compare Dog Food Labels",
+        title: "Best Dog Food South Africa",
         description:
-          "What to look for on a food bag before being swayed by marketing language.",
+          "How to choose for your individual dog without fake brand rankings or one-size-fits-all claims.",
+        href: "/food/best-dog-food-south-africa",
+      },
+      {
+        title: "How to Read Dog Food Labels",
+        description:
+          "Understand life-stage claims, feeding guides, complete diets, ingredients, treats, and marketing language.",
         href: "/food/how-to-read-dog-food-labels-south-africa",
       },
       {
-        title: "Puppy Food Basics",
+        title: "Raw Food Diet Safety",
         description:
-          "How puppy feeding differs from adult feeding, and why growth stage matters.",
-        href: "/health/vaccination-schedule-south-africa",
-      },
-      {
-        title: "Food Changes Without Upset",
-        description:
-          "A gentle transition approach and when vomiting or diarrhoea needs a vet call.",
-        href: "/health",
+          "Raw feeding questions, hygiene, balance, puppies, health risks, and when to ask a vet first.",
+        href: "/food/raw-food-diet-for-dogs-south-africa",
       },
     ],
     related: [
-      { title: "Dog Health", description: "Body condition and symptoms.", href: "/health" },
-      { title: "Dog Costs", description: "Monthly food budgeting.", href: "/costs" },
-      { title: "Breeds", description: "Size and activity influence feeding.", href: "/breeds" },
-      { title: "Toxic Foods", description: "Know which foods can be dangerous.", href: "/health/toxic-foods-for-dogs-south-africa" },
-      { title: "Vet Care", description: "When diet symptoms need professional advice.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Cost Calculator", description: "Plan food as part of the monthly dog budget.", href: "/tools/dog-cost-calculator" },
+      { title: "Dog Food Comparison", description: "Compare kibble, wet food, raw diets, and mixed feeding.", href: "/food/dog-food-comparison-south-africa" },
+      { title: "Foods Dogs Should Never Eat", description: "Know dangerous foods and when to call a vet.", href: "/food/foods-dogs-should-never-eat-south-africa" },
+      { title: "Ticks and Fleas", description: "Parasite prevention can affect skin and coat comfort.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+      { title: "Vet Care", description: "When appetite, vomiting, diarrhoea, or weight changes need professional advice.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+    ],
+    sections: [
+      {
+        title: "Choose food by fit, not hype",
+        body: [
+          "There is no honest universal best food for every South African dog. A suitable diet depends on life stage, expected adult size, activity, body condition, stool quality, skin signs, medical history, budget, and what your vet recommends for special cases.",
+          "Use labels and feeding guides as a starting point, then watch your dog's body condition and symptoms. Puppies, seniors, overweight dogs, allergic dogs, and dogs with chronic illness deserve extra caution before big food changes.",
+        ],
+        links: [
+          { title: "Best Dog Food South Africa", description: "Choose without fake rankings or brand hype.", href: "/food/best-dog-food-south-africa" },
+          { title: "Read Dog Food Labels", description: "Understand claims, portions, and life-stage wording.", href: "/food/how-to-read-dog-food-labels-south-africa" },
+        ],
+      },
+      {
+        title: "Plan portions and monthly cost",
+        body: [
+          "Food is often the most visible monthly dog cost, especially for large breeds. Compare daily feeding amount, not only bag price. Treats, toppers, leftovers, and unsafe local snacks can quietly affect both nutrition and budget.",
+          "If you are considering raw feeding, home-prepared meals, or a major diet switch, check hygiene, balance, storage, and veterinary guidance before relying on online opinions.",
+        ],
+        links: [
+          { title: "Dog Feeding Calculator", description: "Estimate portions before adjusting for body condition.", href: "/tools/dog-feeding-calculator" },
+          { title: "Dog Cost Calculator", description: "Include food in the full monthly dog budget.", href: "/tools/dog-cost-calculator" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -347,43 +439,74 @@ export const hubPages: HubContent[] = [
         answer:
           "Ask a vet if your dog has persistent vomiting, diarrhoea, itchy skin, weight loss, obesity, urinary issues, chronic disease, or suspected food allergies.",
       },
+      {
+        question: "Does DogHaven rank dog food brands?",
+        answer:
+          "No. DogHaven avoids fake rankings. The guides help owners compare suitability, labels, safety, portions, and questions to ask a vet where needed.",
+      },
     ],
   },
   {
     slug: "training",
     path: "/training",
     title: "Dog Training Guides for Everyday South African Life",
-    seoTitle: "Dog Training Guides South Africa | Puppies, Recall, Lead Manners",
+    seoTitle: "Dog Training South Africa | Puppy Schools, Obedience and Behaviour",
     description:
-      "Friendly dog training guidance for South African owners covering puppies, recall, lead manners, routines, enrichment, and trainer questions.",
+      "South African dog training guides covering puppy schools, obedience, reactivity, recall, lead manners, trainer fit, home routines, parks, gates, visitors, and walks.",
     kicker: "Training hub",
     intro:
-      "Good training makes daily life kinder and safer. DogHaven training guides focus on realistic routines, clear boundaries, reward-based habits, and when to get help from a qualified trainer or behaviour professional.",
+      "Good training makes daily life kinder, safer, and easier in real South African homes: gates opening onto streets, visitors arriving, children playing, dogs passing on walks, estate rules, parks, beaches, and busy suburbs. DogHaven focuses on humane foundations, realistic routines, puppy school questions, trainer fit, and when behaviour needs qualified help.",
     cards: [
       {
-        title: "First Week With a New Dog",
+        title: "Dog Training South Africa",
         description:
-          "A calm routine for sleep, feeding, toilet breaks, boundaries, visitors, children, and other pets.",
-        href: "/adoption",
-      },
-      {
-        title: "Lead Manners",
-        description:
-          "Practical ideas for safer walks in suburbs, parks, estates, and dog-friendly public spaces.",
-        href: "/dog-friendly",
-      },
-      {
-        title: "Choosing a Trainer",
-        description:
-          "Questions to ask about methods, class size, puppy socialisation, and behaviour support.",
+          "Humane everyday foundations for recall, lead manners, visitors, settling, and safer public behaviour.",
         href: "/training/dog-training-south-africa",
+      },
+      {
+        title: "Puppy Schools South Africa",
+        description:
+          "Class timing, vaccination caution, safe socialisation, owner coaching, and questions before joining.",
+        href: "/training/puppy-schools-south-africa",
+      },
+      {
+        title: "Dog Obedience Classes",
+        description:
+          "Group vs private lessons, lead manners, recall, realistic expectations, and humane methods.",
+        href: "/training/dog-obedience-classes-south-africa",
       },
     ],
     related: [
-      { title: "Adoption Safety", description: "Set up before the dog arrives.", href: "/adoption" },
-      { title: "Dog-Friendly Places", description: "Public manners and outing planning.", href: "/dog-friendly" },
-      { title: "Breeds", description: "Energy and temperament planning.", href: "/breeds" },
-      { title: "Behaviour Problems", description: "Understand barking, fear, and reactivity.", href: "/training/dog-behaviour-problems-south-africa" },
+      { title: "Behaviour Problems", description: "Understand barking, fear, chewing, reactivity, and when to get help.", href: "/training/dog-behaviour-problems-south-africa" },
+      { title: "Dog Services", description: "Plan daycare, walkers, sitters, and holiday care questions.", href: "/dog-services" },
+      { title: "Durban Dog Training", description: "Local trainer-selection questions for Durban owners.", href: "/local/durban/dog-training-durban" },
+      { title: "Dog-Friendly Places", description: "Public manners, lead control, and outing planning.", href: "/dog-friendly" },
+      { title: "Breed Guides", description: "Energy, temperament, and training needs before choosing a dog.", href: "/breeds" },
+      { title: "Dog Walk Planner", description: "Plan safer walks around heat, routes, water, and routine.", href: "/tools/dog-walk-planner" },
+    ],
+    sections: [
+      {
+        title: "Train for ordinary South African routines",
+        body: [
+          "Training is not only sit and stay. It is safer gate habits, calmer greetings, lead manners near traffic, recall where legal and appropriate, settling when visitors arrive, and helping dogs cope with suburbs, complexes, parks, beaches, and vet visits.",
+          "Puppies can start learning gentle routines at home immediately, but public exposure should follow your vet's vaccine guidance. Adult and rescue dogs can also learn, especially when expectations are realistic and the household is consistent.",
+        ],
+        links: [
+          { title: "Dog Training South Africa", description: "Everyday foundations for real homes and walks.", href: "/training/dog-training-south-africa" },
+          { title: "Puppy Schools", description: "Vaccines, hygiene, class setup, and safe socialisation.", href: "/training/puppy-schools-south-africa" },
+        ],
+      },
+      {
+        title: "Choose help carefully",
+        body: [
+          "A good trainer should explain methods, class size, homework, handling of fear or reactivity, and when private or behaviour support is safer than a busy group class. Avoid punishment-heavy promises or anyone who dismisses pain, fear, or safety concerns.",
+          "DogHaven does not invent trainer listings. Use local guides and service planning pages to know what to ask before booking.",
+        ],
+        links: [
+          { title: "Dog Behaviour Problems", description: "Barking, fear, reactivity, chewing, and when to seek help.", href: "/training/dog-behaviour-problems-south-africa" },
+          { title: "Dog Services", description: "Questions for training, walking, daycare, and care support.", href: "/dog-services" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -401,44 +524,74 @@ export const hubPages: HubContent[] = [
         answer:
           "Yes. Older dogs can learn new routines with patience, consistency, appropriate rewards, and realistic expectations.",
       },
+      {
+        question: "How do I choose a dog trainer?",
+        answer:
+          "Ask about humane methods, class size, vaccination rules for puppies, homework, handling of fearful or reactive dogs, and what happens if your dog is not ready for a group class.",
+      },
     ],
   },
   {
     slug: "grooming",
     path: "/grooming",
     title: "Dog Grooming Guides for South African Owners",
-    seoTitle: "Dog Grooming South Africa | Coat Care, Nails, Bathing, Heat",
+    seoTitle: "Dog Grooming South Africa | Coat Care, Groomers, Heat and Ticks",
     description:
-      "Practical grooming guidance for South African dog owners covering coat care, shedding, nails, bathing, heat, ticks, ears, and groomer questions.",
+      "South African dog grooming guides covering coat type, matting, mobile groomers, groomer questions, nails, ears, ticks and fleas, heat, shedding, and grooming costs.",
     kicker: "Grooming hub",
     intro:
-      "Grooming is not only about looking tidy. It helps owners notice skin changes, ticks, sore ears, overgrown nails, matting, and heat discomfort before they become bigger problems.",
+      "Grooming is not only about looking tidy. In South Africa it helps owners notice ticks and fleas, grass seeds, sore ears, overgrown nails, matting, heat discomfort, skin changes, and coat problems before they become bigger issues.",
     cards: [
       {
-        title: "Coat Care by Dog Type",
+        title: "Dog Grooming South Africa",
         description:
-          "How short, double, curly, wire, and long coats need different brushing and grooming routines.",
+          "Coat, nails, ears, paws, ticks, bathing, brushing, and routine grooming choices.",
         href: "/grooming/dog-grooming-south-africa",
       },
       {
-        title: "Bathing Without Skin Trouble",
+        title: "How to Choose a Dog Groomer",
         description:
-          "How to think about shampoo, frequency, drying, and when itchy skin needs a vet.",
-        href: "/health",
+          "Questions about handling, drying, anxious dogs, matting, senior dogs, hygiene, and vaccination rules.",
+        href: "/grooming/how-to-choose-a-dog-groomer-south-africa",
       },
       {
-        title: "Choosing a Groomer",
+        title: "Mobile Dog Grooming",
         description:
-          "Questions to ask about handling, drying, senior dogs, anxious dogs, matting, and vaccination policies.",
-        href: "/grooming/how-to-choose-a-dog-groomer-south-africa",
+          "Pros, cons, setup needs, hygiene questions, coat limits, and nervous-dog considerations.",
+        href: "/grooming/mobile-dog-grooming-south-africa",
       },
     ],
     related: [
-      { title: "Dog Health", description: "Skin, ears, ticks, and warning signs.", href: "/health" },
-      { title: "Breeds", description: "Grooming needs before choosing a dog.", href: "/breeds" },
-      { title: "Dog Costs", description: "Budget for grooming by coat type.", href: "/costs" },
+      { title: "Durban Dog Grooming", description: "Local grooming questions and safety checks.", href: "/local/durban/dog-grooming-durban" },
+      { title: "Dog Services", description: "Plan grooming, boarding, daycare, sitters, walkers, and holiday care.", href: "/dog-services" },
+      { title: "Dog Grooming Costs", description: "Budget by coat type, size, matting, and appointment frequency.", href: "/costs/dog-grooming-costs-south-africa" },
       { title: "Ticks and Fleas", description: "Parasite checks during grooming.", href: "/health/ticks-and-fleas-dogs-south-africa" },
       { title: "Dog Shedding", description: "Manage shedding and skin warning signs.", href: "/grooming/dog-shedding-south-africa" },
+      { title: "Breed Guides", description: "Understand coat care before choosing a dog.", href: "/breeds" },
+    ],
+    sections: [
+      {
+        title: "Match grooming to coat and lifestyle",
+        body: [
+          "Short coats, curly coats, double coats, wire coats, and long coats need different routines. A dog that swims, hikes, lives near grass, or spends time in hot weather may need different checks from a mostly indoor companion.",
+          "Regular brushing is also a health check. Look for ticks, fleas, mats, sore ears, cracked paws, sudden hair loss, itchy skin, and nails that are changing the dog's posture.",
+        ],
+        links: [
+          { title: "Dog Grooming South Africa", description: "Coat, nails, ears, paws, bathing, and ticks.", href: "/grooming/dog-grooming-south-africa" },
+          { title: "Ticks and Fleas", description: "Parasite prevention and checks for South African dogs.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+        ],
+      },
+      {
+        title: "Choose groomers without fake listings",
+        body: [
+          "DogHaven does not invent groomer listings. Before booking, ask how the groomer handles anxious, senior, matted, reactive, or large dogs; how equipment is cleaned; what drying methods are used; and what happens if a skin, ear, or parasite problem appears.",
+          "Mobile grooming can be convenient, but it still needs clear setup, hygiene, handling, parking, water, electricity, and stop-if-unsafe rules.",
+        ],
+        links: [
+          { title: "Choose a Dog Groomer", description: "Safety questions before booking.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
+          { title: "Mobile Dog Grooming", description: "Convenience, setup, and handling questions.", href: "/grooming/mobile-dog-grooming-south-africa" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -456,42 +609,74 @@ export const hubPages: HubContent[] = [
         answer:
           "See a vet for painful ears, open sores, severe itching, sudden hair loss, infected skin smell, bleeding nails, or ticks with illness signs.",
       },
+      {
+        question: "Should heat affect grooming decisions?",
+        answer:
+          "Yes, but shaving is not always the answer. Coat type, sun exposure, matting, cooling, shade, water, and vet or groomer advice all matter.",
+      },
     ],
   },
   {
     slug: "insurance",
     path: "/insurance",
     title: "Dog Insurance Guides for South African Owners",
-    seoTitle: "Dog Insurance South Africa | Policy Questions and Claims Planning",
+    seoTitle: "Dog Insurance South Africa | Cover, Claims, Exclusions and Costs",
     description:
-      "Plain-English guidance on dog insurance in South Africa, including waiting periods, exclusions, claims, emergencies, and policy questions.",
+      "Plain-English South African dog insurance guides covering cover, exclusions, waiting periods, pre-existing conditions, emergency claims, claim process, and vet costs.",
     kicker: "Insurance hub",
     intro:
-      "Pet insurance is not one-size-fits-all. DogHaven helps owners compare the questions that matter before signing up: exclusions, waiting periods, claim processes, annual limits, chronic cover, emergencies, and what happens as a dog ages.",
+      "Pet insurance is not one-size-fits-all, and the wording matters more than the sales page. DogHaven helps South African owners compare the questions that matter before signing up: exclusions, waiting periods, pre-existing conditions, emergency cover, claim process, annual limits, chronic care, and what happens as a dog ages.",
     cards: [
       {
-        title: "Questions Before You Buy Pet Insurance",
+        title: "Pet Insurance for Dogs",
         description:
-          "A practical list to ask an insurer before you choose a policy or rely on cover.",
+          "Plain-English cover basics, premiums, excesses, limits, exclusions, waiting periods, and claims.",
         href: "/insurance/pet-insurance-for-dogs-south-africa",
       },
       {
-        title: "Emergency Claims Planning",
+        title: "Is Pet Insurance Worth It?",
         description:
-          "What to keep ready so an emergency vet visit does not become an admin scramble.",
-        href: "/emergency",
+          "Compare insurance, savings, emergency risk, age, breed, exclusions, and budget reality.",
+        href: "/insurance/is-pet-insurance-worth-it-south-africa",
       },
       {
-        title: "Insurance vs Emergency Fund",
+        title: "Emergency Dog Insurance",
         description:
-          "How to think about monthly premiums, exclusions, savings, and likely vet costs.",
-        href: "/costs",
+          "Questions about emergency vet care, deposits, reimbursement, exclusions, and claim documents.",
+        href: "/insurance/dog-insurance-for-emergencies-south-africa",
       },
     ],
     related: [
-      { title: "Emergency Help", description: "Urgent care planning.", href: "/emergency" },
-      { title: "Dog Costs", description: "Budgeting beyond premiums.", href: "/costs" },
-      { title: "Dog Health", description: "Prevention and vet visits.", href: "/health" },
+      { title: "Pre-Existing Conditions", description: "How past symptoms, records, and timing can affect cover.", href: "/insurance/pet-insurance-and-pre-existing-conditions-south-africa" },
+      { title: "Claim Process", description: "Documents, invoices, records, time limits, and claim follow-up.", href: "/insurance/dog-insurance-claim-process-south-africa" },
+      { title: "What Insurance Does Not Cover", description: "Exclusions, limits, routine care, and wording checks.", href: "/insurance/what-dog-insurance-does-not-cover-south-africa" },
+      { title: "Waiting Periods Explained", description: "When cover starts and what may still be excluded.", href: "/insurance/dog-insurance-waiting-periods-explained-south-africa" },
+      { title: "Vet Costs", description: "Understand routine, diagnostic, and treatment cost factors.", href: "/costs/vet-costs-for-dogs-south-africa" },
+      { title: "Emergency Vet Costs", description: "Plan for after-hours care and urgent estimates.", href: "/costs/emergency-vet-costs-south-africa" },
+    ],
+    sections: [
+      {
+        title: "Compare policy wording, not slogans",
+        body: [
+          "A lower monthly premium can still leave you exposed if the limit is low, the excess is high, dental or hereditary conditions are excluded, or claims must be paid upfront. A more expensive plan can also exclude the thing you assumed was covered.",
+          "Read current policy documents before buying. Ask insurers direct questions in writing about waiting periods, pre-existing conditions, age rules, breed rules, routine-care add-ons, emergency treatment, and claim documents.",
+        ],
+        links: [
+          { title: "Pet Insurance for Dogs", description: "Cover basics and policy questions.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+          { title: "What Dog Insurance Does Not Cover", description: "Exclusions, limits, and wording checks.", href: "/insurance/what-dog-insurance-does-not-cover-south-africa" },
+        ],
+      },
+      {
+        title: "Plan for claims before a vet emergency",
+        body: [
+          "Emergency care can involve after-hours fees, tests, treatment, hospitalisation, surgery, or referral. Even insured owners may need an excess, upfront payment, records, invoices, and patience while a claim is assessed.",
+          "Keep your policy number, vaccination records, vet history, and emergency clinic details easy to find. Insurance works best alongside some savings for excesses, exclusions, waiting periods, and costs above limits.",
+        ],
+        links: [
+          { title: "Dog Insurance Claim Process", description: "Documents, invoices, records, and follow-up.", href: "/insurance/dog-insurance-claim-process-south-africa" },
+          { title: "Emergency Vet Costs", description: "After-hours care and urgent cost planning.", href: "/costs/emergency-vet-costs-south-africa" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -508,6 +693,11 @@ export const hubPages: HubContent[] = [
         question: "What should I ask an insurer?",
         answer:
           "Ask about annual limits, accident cover, illness cover, pre-existing conditions, dental cover, routine care, waiting periods, claim turnaround, and whether your chosen vet can submit directly.",
+      },
+      {
+        question: "Does DogHaven recommend a specific insurer?",
+        answer:
+          "No. DogHaven does not rank insurers. Compare current policy documents, direct quotes, exclusions, limits, and claims rules before choosing.",
       },
     ],
   },
@@ -570,39 +760,64 @@ export const hubPages: HubContent[] = [
     slug: "dog-friendly",
     path: "/dog-friendly",
     title: "Dog-Friendly Places and Outings in South Africa",
-    seoTitle: "Dog-Friendly South Africa | Safe Outings, Etiquette and Planning",
+    seoTitle: "Dog-Friendly South Africa | Beaches, Parks, Travel and Stays",
     description:
-      "Dog-friendly planning guidance for South African owners covering parks, beaches, cafes, travel, heat, leads, etiquette, and access checks.",
+      "Dog-friendly South Africa guides for parks, beaches, cafes, accommodation, road trips, heat safety, leash rules, travel checks, and outing planning.",
     kicker: "Dog-friendly hub",
     intro:
-      "Dog-friendly does not always mean suitable for every dog. This hub helps owners plan safer outings by checking rules, heat, water, shade, lead control, crowds, transport, and whether the outing will actually be comfortable for the dog.",
+      "Dog-friendly does not always mean suitable for every dog, every season, or every venue. This hub helps South African owners plan safer outings by checking rules, heat, water, shade, lead control, crowds, transport, accommodation terms, and whether the outing will actually be comfortable for the dog.",
     cards: [
       {
-        title: "Dog-Friendly Outing Checklist",
+        title: "Dog-Friendly Places South Africa",
         description:
-          "What to check before taking your dog to a cafe, park, beach, market, hike, or weekend trip.",
+          "How to check parks, beaches, cafes, markets, hikes, accommodation, and public-space rules before visiting.",
         href: "/dog-friendly/dog-friendly-places-south-africa",
       },
       {
-        title: "Lead Etiquette",
+        title: "Pet-Friendly Accommodation",
         description:
-          "How to keep public outings calmer when other dogs, children, cyclists, and wildlife are nearby.",
-        href: "/training",
+          "Booking questions for stays, rules, records, cleaning fees, heat, fencing, and dog comfort.",
+        href: "/dog-friendly/pet-friendly-accommodation-south-africa",
       },
       {
-        title: "Heat and Travel Planning",
+        title: "Travelling With Dogs",
         description:
-          "A South African weather-aware approach to shade, water, hot cars, pavement heat, and rest stops.",
-        href: "/emergency",
+          "Road trips, restraint, water, heat, stops, records, anxious travellers, and destination checks.",
+        href: "/dog-friendly/travelling-with-dogs-south-africa",
       },
     ],
     related: [
-      { title: "Training", description: "Recall, lead manners, and public behaviour.", href: "/training" },
-      { title: "Emergency Help", description: "Heat stress and urgent symptoms.", href: "/emergency" },
-      { title: "Breeds", description: "Match outings to energy and heat tolerance.", href: "/breeds" },
+      { title: "Heatstroke in Dogs", description: "Hot-weather emergency signs and urgent next steps.", href: "/emergency/heatstroke-in-dogs-south-africa" },
+      { title: "Dog-Friendly Trip Checklist", description: "Pack for cafes, beaches, parks, stays, and road trips.", href: "/tools/dog-friendly-trip-checklist" },
+      { title: "Dog Parks", description: "Etiquette, safety, dog interactions, and when to leave.", href: "/dog-friendly/dog-parks-south-africa" },
+      { title: "Dog-Friendly Beaches", description: "Beach rules, heat, tides, salt water, and leash checks.", href: "/dog-friendly/dog-friendly-beaches-south-africa" },
       { title: "City Guides", description: "Local rules and dog-owner context by city.", href: "/city" },
       { title: "Province Guides", description: "Climate, travel, and local-risk context.", href: "/province" },
       { title: "Ticks and Fleas", description: "Outdoor parasite prevention.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+    ],
+    sections: [
+      {
+        title: "Check the rules before you go",
+        body: [
+          "Venue rules change. A place may allow dogs on a patio but not indoors, on a beach in one season but not another, or in accommodation only under specific size, breed, linen, cleaning, or supervision rules.",
+          "Before leaving home, check current rules directly, pack water and waste bags, plan shade and rest, and decide whether your dog will cope with crowds, children, other dogs, cyclists, wildlife, restaurant noise, or a long car trip.",
+        ],
+        links: [
+          { title: "Dog-Friendly Places", description: "Parks, cafes, beaches, hikes, and rule checks.", href: "/dog-friendly/dog-friendly-places-south-africa" },
+          { title: "Dog-Friendly Trip Checklist", description: "Packing and safety checks for outings.", href: "/tools/dog-friendly-trip-checklist" },
+        ],
+      },
+      {
+        title: "Plan for heat, travel, and public manners",
+        body: [
+          "South African outings often involve heat, hot paving, long drives, busy beaches, outdoor restaurants, estates, and changing municipal rules. Avoid midday heat where possible, never leave a dog in a hot car, and plan water, shade, restraint, and emergency vet access.",
+          "Good training matters in public spaces. Lead manners, recall where legal, calm greetings, and the ability to leave when your dog is overwhelmed make dog-friendly outings safer for everyone.",
+        ],
+        links: [
+          { title: "Travelling With Dogs", description: "Road trips, records, heat, stops, and stays.", href: "/dog-friendly/travelling-with-dogs-south-africa" },
+          { title: "Heatstroke in Dogs", description: "Know emergency signs before hot outings.", href: "/emergency/heatstroke-in-dogs-south-africa" },
+        ],
+      },
     ],
     faqs: [
       {
@@ -619,6 +834,11 @@ export const hubPages: HubContent[] = [
         question: "Is every friendly dog suited to busy outings?",
         answer:
           "No. Some dogs are sociable at home but overwhelmed by crowds, heat, noise, children, or unfamiliar dogs. Choose outings that match your dog's comfort.",
+      },
+      {
+        question: "Does DogHaven list dog-friendly venues?",
+        answer:
+          "Not as verified listings. DogHaven helps owners know what to check directly before relying on a venue, beach, park, or accommodation rule.",
       },
     ],
   },
