@@ -261,6 +261,12 @@ function descriptionFor(city: LocalCity, service: LocalService) {
     return "Gqeberha dog-friendly places guide for checking beach, park, venue, accommodation and public-space rules, with coastal outing safety, leash etiquette, water, heat, and vet planning.";
   }
 
+  if (service.key === "grooming") {
+    return `${city.name} dog grooming guide covering coat checks, mobile vs parlour grooming, matting, ticks, heat, safety questions, cost factors, and when to phone a vet.`;
+  }
+  if (service.key === "training") {
+    return `${city.name} dog training guide covering puppy classes, private lessons, leash manners, barking, reactivity, humane methods, trainer questions, and home practice.`;
+  }
   if (service.key === "emergency-vets") {
     return `A practical ${city.name} guide to emergency vet preparation, urgent symptoms, transport planning, after-hours questions, and what dog owners should keep ready.`;
   }
@@ -275,7 +281,10 @@ function seoTitleFor(city: LocalCity, service: LocalService) {
     return "Dog-Friendly Places Gqeberha | Rules, Beaches, Parks and Safety Checks";
   }
 
-  return `${titleFor(city, service)} | DogHaven`;
+  if (service.key === "grooming") return `Dog Grooming in ${city.name} | Coat, Safety and Booking Checks`;
+  if (service.key === "training") return `Dog Training in ${city.name} | Puppy Classes and Trainer Checks`;
+  if (service.key === "emergency-vets") return `Emergency Vets in ${city.name} | Symptoms, Transport and Vet Calls`;
+  return `Dog-Friendly Places in ${city.name} | Rules, Heat and Outing Checks`;
 }
 
 function commonLocalRelated(city: LocalCity): CardLink[] {
@@ -288,6 +297,66 @@ function commonLocalRelated(city: LocalCity): CardLink[] {
 
 function sourceList(city: LocalCity): Source[] {
   return [city.source, ...coreSources];
+}
+
+function localNextStepSection(city: LocalCity, service: LocalService) {
+  if (service.key === "grooming") {
+    return {
+      heading: "Useful next steps before you book grooming",
+      body: [
+        `Before booking grooming in ${city.name}, connect the appointment to coat care, health checks, and budget planning instead of treating it as a once-off tidy-up.`,
+      ],
+      checklist: [
+        "Read the grooming cost guide if you need to compare mobile travel, coat type, matting, and extras.",
+        "Use the dog cost calculator if grooming will become a regular monthly line item.",
+        "Check skin, ears, paws, ticks, fleas, and painful mats before the appointment.",
+        "Phone a vet rather than a groomer for wounds, severe itching, ear discharge, pain, or illness signs.",
+      ],
+    };
+  }
+
+  if (service.key === "training") {
+    return {
+      heading: "Useful next steps before choosing training",
+      body: [
+        `Training in ${city.name} works best when owners match the format to the dog: puppy class, group lesson, private session, or behaviour support.`,
+      ],
+      checklist: [
+        "Read the trainer-choice guide before paying for a class or private session.",
+        "Use the city guide to think about traffic, complexes, parks, gates, visitors, and public manners.",
+        "Write down the behaviour, triggers, safety concerns, and what you can practise at home.",
+        "Phone a vet first if behaviour changed suddenly, pain is possible, or the dog is extremely anxious or aggressive.",
+      ],
+    };
+  }
+
+  if (service.key === "emergency-vets") {
+    return {
+      heading: "Useful next steps before an emergency",
+      body: [
+        `Emergency planning in ${city.name} should happen while your dog is well, especially if traffic, distance, complex access, or a large dog could slow transport.`,
+      ],
+      checklist: [
+        "Save your regular vet and confirmed after-hours option on every household phone.",
+        "Use the vet visit checklist to keep medication, vaccine, microchip, and insurance details ready.",
+        "Read the emergency cost guide before you need to ask about deposits, estimates, and insurance claims.",
+        "Do not wait online for advice if your dog is collapsing, struggling to breathe, poisoned, badly injured, or rapidly worsening.",
+      ],
+    };
+  }
+
+  return {
+    heading: "Useful next steps before a dog-friendly outing",
+    body: [
+      `Dog-friendly planning in ${city.name} is stronger when rule checks, weather, behaviour, and emergency preparation are handled before leaving home.`,
+    ],
+    checklist: [
+      "Use the dog-friendly trip checklist before parks, beaches, cafes, stays, markets, or road trips.",
+      "Check municipal, venue, accommodation, estate, and beach rules directly for the day you plan to visit.",
+      "Read the heatstroke guide before summer outings, long drives, beach trips, or crowded events.",
+      "Choose training help first if your dog cannot settle, walk calmly on lead, or leave other dogs and people alone.",
+    ],
+  };
 }
 
 function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
@@ -376,6 +445,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
           "Budget for grooming as part of routine care, especially for high-maintenance coats.",
         ],
       },
+      localNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -490,6 +560,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
           "Practise small daily habits rather than expecting one session to fix everything.",
         ],
       },
+      localNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -609,6 +680,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
           "Do not rely on social media replies when urgent vet care is needed.",
         ],
       },
+      localNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -729,6 +801,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
           "Nearest vet or after-hours option known for longer trips.",
         ],
       },
+      localNextStepSection(city, service),
     ],
     faqs: [
       {

@@ -82,7 +82,10 @@ function seoTitleFor(city: (typeof localCities)[number], service: CostService) {
     return "Monthly Dog Costs Cape Town | Food, Vet, Grooming and Insurance Budget";
   }
 
-  return `${titleFor(city, service)} | DogHaven`;
+  if (service.key === "grooming") return `Dog Grooming Prices in ${city.name} | Quote Factors and Questions`;
+  if (service.key === "training") return `Dog Training Costs in ${city.name} | Classes, Private Help and Quotes`;
+  if (service.key === "emergency-vet") return `Emergency Vet Costs in ${city.name} | Budget and Insurance Questions`;
+  return `Monthly Dog Costs in ${city.name} | Food, Vet, Grooming and Savings`;
 }
 
 function descriptionFor(city: (typeof localCities)[number], service: CostService) {
@@ -116,6 +119,66 @@ function generalCostNote(cityName: string) {
     `Costs in ${cityName} vary by suburb, provider, dog size, age, coat, health, behaviour, urgency, time of day, travel, and what is included.`,
     "DogHaven does not publish invented exact prices or rank providers. Use these guides to ask better questions and request current written quotes directly.",
   ];
+}
+
+function costNextStepSection(city: (typeof localCities)[number], service: CostService) {
+  if (service.key === "grooming") {
+    return {
+      heading: "Next steps for a realistic grooming budget",
+      body: [
+        `A useful ${city.name} grooming budget should connect the quote to coat condition, appointment frequency, transport, and possible vet concerns.`,
+      ],
+      checklist: [
+        "Ask the groomer what is included and what costs extra before booking.",
+        "Read the local grooming guide for safety questions around mobile, parlour, anxious, senior, or matted dogs.",
+        "Use the dog cost calculator if grooming will be a recurring monthly cost.",
+        "Keep a vet budget separate for skin, ear, parasite, wound, or pain concerns that grooming should not treat.",
+      ],
+    };
+  }
+
+  if (service.key === "training") {
+    return {
+      heading: "Next steps for training quotes",
+      body: [
+        `A ${city.name} training quote is easier to compare when you know whether you need puppy foundations, group classes, private help, or behaviour support.`,
+      ],
+      checklist: [
+        "Ask whether the quote includes homework, follow-up, travel, written notes, or extra dogs.",
+        "Read the local training guide before choosing between group and private support.",
+        "Use the trainer-choice guide to avoid fear-heavy methods and unrealistic guarantees.",
+        "Budget time for daily practice, because training cost is not only the session fee.",
+      ],
+    };
+  }
+
+  if (service.key === "emergency-vet") {
+    return {
+      heading: "Next steps for emergency cost planning",
+      body: [
+        `Emergency cost planning in ${city.name} should help you act faster, not delay care while trying to compare prices online.`,
+      ],
+      checklist: [
+        "Save your regular vet and confirmed after-hours option before weekends, holidays, and trips.",
+        "Ask how estimates, deposits, payment updates, referrals, and insurance documents are handled.",
+        "Read the emergency guide for symptoms that should not wait.",
+        "Keep emergency savings available even if you have pet insurance.",
+      ],
+    };
+  }
+
+  return {
+    heading: "Next steps for a monthly dog budget",
+    body: [
+      `A monthly dog budget in ${city.name} becomes more useful when you replace rough estimates with your own quotes and update it as your dog ages.`,
+    ],
+    checklist: [
+      "Use the dog cost calculator as a starting point, then replace assumptions with current local quotes.",
+      "Use the feeding calculator to check whether food estimates match your dog's size, life stage, and body condition.",
+      "Add grooming, training, routine vet care, parasite prevention, insurance or savings, and transport.",
+      "Review the budget after adoption, illness, a food change, a move, or a new service provider.",
+    ],
+  };
 }
 
 function indexingRecoveryCostSections(city: (typeof localCities)[number], service: CostService) {
@@ -234,6 +297,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
           "Review grooming needs before choosing a breed or adopting a long-coated dog.",
         ],
       },
+      costNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -337,6 +401,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
           "Use the dog cost calculator to include training alongside food, grooming, insurance, and vet care.",
         ],
       },
+      costNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -444,6 +509,7 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
           "Use the vet visit checklist before non-critical appointments and emergency calls.",
         ],
       },
+      costNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -554,6 +620,7 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
           "Use the DogHaven dog cost calculator and update it when costs change.",
         ],
       },
+      costNextStepSection(city, service),
     ],
     faqs: [
       {

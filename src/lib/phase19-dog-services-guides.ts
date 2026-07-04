@@ -82,6 +82,14 @@ function titleFor(city: (typeof localCities)[number], service: DogService) {
   return `Holiday Dog Care in ${city.name}: Boarding, Sitters and Travel Planning`;
 }
 
+function seoTitleFor(city: (typeof localCities)[number], service: DogService) {
+  if (service.key === "boarding") return `Dog Boarding in ${city.name} | Kennel Checks, Vaccines and Trial Stays`;
+  if (service.key === "daycare") return `Dog Daycare in ${city.name} | Supervision, Groups and Safety Checks`;
+  if (service.key === "pet-sitters") return `Pet Sitters in ${city.name} | Keys, Care Notes and Emergency Plans`;
+  if (service.key === "dog-walkers") return `Dog Walkers in ${city.name} | Leash Safety, Heat and Route Checks`;
+  return `Holiday Dog Care in ${city.name} | Boarding, Sitters and Travel Checks`;
+}
+
 function sourceList(city: (typeof localCities)[number]): Source[] {
   return [city.source, ...coreSources];
 }
@@ -126,11 +134,86 @@ function costFactorSection(serviceLabel: string) {
 
 function verificationQuickFacts(serviceLabel: string) {
   return [
-    `Verified local options may still be limited for ${serviceLabel}; use the provider section and checklist before booking.`,
+    `DogHaven treats ${serviceLabel} pages as planning guides unless verified provider options are shown on the page.`,
     "Do not rely on social media claims, photos, or reviews alone. Verify the provider directly before booking.",
     "Ask about vaccination records, emergency vet plans, supervision, insurance or responsibility, and what happens if your dog becomes ill or stressed.",
     "Avoid providers who pressure you to pay before answering safety, handling, and emergency questions.",
   ];
+}
+
+function serviceNextStepSection(city: (typeof localCities)[number], service: DogService) {
+  if (service.key === "boarding") {
+    return {
+      heading: "Next steps before a boarding stay",
+      body: [
+        `Before boarding in ${city.name}, connect the kennel conversation to health records, temperament, cost, and an emergency decision plan.`,
+      ],
+      checklist: [
+        "Ask your vet which vaccination and parasite-prevention records are sensible for boarding.",
+        "Read the city cost guide so you can plan boarding alongside food, grooming, transport, and emergency savings.",
+        "Prepare written feeding, medication, anxiety, escape-risk, and emergency contact notes.",
+        "Consider a short trial stay if your dog is anxious, senior, young, or new to boarding.",
+      ],
+    };
+  }
+
+  if (service.key === "daycare") {
+    return {
+      heading: "Next steps before daycare",
+      body: [
+        `Daycare in ${city.name} should be matched to temperament, rest needs, health records, heat risk, and how well the provider manages groups.`,
+      ],
+      checklist: [
+        "Ask how new dogs are assessed before group play.",
+        "Read the training hub if daycare reveals poor recall, over-arousal, leash frustration, or anxiety.",
+        "Check vaccination, parasite-prevention, coughing, diarrhoea, and illness policies before the first day.",
+        "Watch your dog after daycare for limping, exhaustion, stress, vomiting, diarrhoea, or reluctance to return.",
+      ],
+    };
+  }
+
+  if (service.key === "pet-sitters") {
+    return {
+      heading: "Next steps before giving home access",
+      body: [
+        `Pet sitting in ${city.name} depends on trust, but trust should still be supported by written instructions, references, key handling, and an emergency plan.`,
+      ],
+      checklist: [
+        "Write feeding, medication, gate, alarm, access, update, and restricted-area instructions.",
+        "Use the vet visit checklist to collect medication, allergy, microchip, and emergency notes.",
+        "Agree what happens if the sitter is delayed, ill, locked out, or unable to continue.",
+        "Decide who can approve vet care if you cannot be reached.",
+      ],
+    };
+  }
+
+  if (service.key === "dog-walkers") {
+    return {
+      heading: "Next steps before the first walk",
+      body: [
+        `Dog walking in ${city.name} should be planned around heat, route safety, lead control, escape risk, public-space rules, and whether group walks suit the dog.`,
+      ],
+      checklist: [
+        "Agree solo or group walks, lead equipment, transport, route rules, and off-lead boundaries in writing.",
+        "Read the dog-friendly local guide before walks in parks, promenades, beaches, or shared public spaces.",
+        "Use training support if pulling, lunging, fear, recall, or reactivity makes walks risky.",
+        "Ask how walks change during heat, storms, traffic, illness, or public holidays.",
+      ],
+    };
+  }
+
+  return {
+    heading: "Next steps before holiday care",
+    body: [
+      `Holiday dog care in ${city.name} is safer when the care option, budget, records, heat planning, and travel rules are settled before peak periods.`,
+    ],
+    checklist: [
+      "Compare boarding, pet sitting, family care, and dog-friendly travel against your dog's temperament.",
+      "Use the dog-friendly travel checklist if your dog is travelling with you.",
+      "Use local cost guides to budget for care, transport, emergency savings, and holiday surcharges.",
+      "Confirm vaccination records, feeding notes, medication, emergency contacts, and cancellation rules in writing.",
+    ],
+  };
 }
 
 function boardingGuide(city: (typeof localCities)[number], service: DogService): GuideContent {
@@ -140,7 +223,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
     hubTitle: "Dog Services",
     hubPath: "/dog-services",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog boarding and kennel guide covering vaccination checks, hygiene, sleeping arrangements, exercise, feeding, emergency planning, trial stays, and questions to ask.`,
     intro: `Choosing dog boarding kennels in ${city.name} should be about safety, transparency, and your dog's temperament, careful questions, transparent details, and direct provider checks. This guide helps you compare kennels carefully before a holiday, work trip, hospital stay, or home renovation.`,
     updated: reviewed,
@@ -196,6 +279,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
           "Use city cost guides to understand local budget factors without fake price lists.",
         ],
       },
+      serviceNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -233,7 +317,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
     hubTitle: "Dog Services",
     hubPath: "/dog-services",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog daycare guide covering temperament, staff supervision, group sizes, vaccination checks, introductions, heat, water, rest, and over-arousal warning signs.`,
     intro: `Dog daycare in ${city.name} can be useful for some dogs, but it is not the right fit for every temperament. This guide helps owners check supervision, group management, rest routines, and safety before booking.`,
     updated: reviewed,
@@ -293,6 +377,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
           "Use training support if daycare reveals over-arousal, poor recall, or leash frustration.",
         ],
       },
+      serviceNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -329,7 +414,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
     hubTitle: "Dog Services",
     hubPath: "/dog-services",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} pet sitter guide covering home visits, overnight sitting, references, written care notes, keys, updates, emergency contacts, and questions before booking.`,
     intro: `Pet sitters in ${city.name} can help dogs stay in a familiar home, but trust and detail matter. This guide explains how to check references, set written instructions, plan key handover, and prepare emergency contacts.`,
     updated: reviewed,
@@ -388,6 +473,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
           "Home security steps, key handover plan, and update expectations.",
         ],
       },
+      serviceNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -423,7 +509,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
     hubTitle: "Dog Services",
     hubPath: "/dog-services",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog walker guide covering leash safety, solo vs group walks, heat precautions, transport, recall, escape risk, responsibility questions, and local public-space rules.`,
     intro: `Dog walkers in ${city.name} can help with busy workdays and high-energy dogs, but safe walking needs more than a lead and a route. This guide helps owners ask about control, heat, transport, group walks, and local rules before booking.`,
     updated: reviewed,
@@ -482,6 +568,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
           "Ask for a short first walk or meet-and-greet if your dog is nervous.",
         ],
       },
+      serviceNextStepSection(city, service),
     ],
     faqs: [
       {
@@ -518,7 +605,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
     hubTitle: "Dog Services",
     hubPath: "/dog-services",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
+    seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} holiday dog care guide covering December planning, boarding vs sitters, vaccination records, emergency vet details, food, medication, travel rules, and heat precautions.`,
     intro: `Holiday dog care in ${city.name} needs early planning, especially around December, school holidays, long weekends, and peak travel. This guide helps you compare boarding, sitters, family care, and dog-friendly travel without relying on fake provider lists.`,
     updated: reviewed,
@@ -577,6 +664,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
           "Travel checklist if your dog is coming with you.",
         ],
       },
+      serviceNextStepSection(city, service),
     ],
     faqs: [
       {

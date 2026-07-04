@@ -208,8 +208,53 @@ function titleFor(city: ExpansionCity, service: ExpansionService) {
   return `${service.titleLabel} in ${city.name}: How to Choose Safely`;
 }
 
-function commonRelated(city: ExpansionCity): CardLink[] {
+function seoTitleFor(city: ExpansionCity, service: ExpansionService) {
+  if (service.key === "grooming") return `Dog Grooming in ${city.name} | Coat, Heat and Booking Checks`;
+  if (service.key === "training") return `Dog Training in ${city.name} | Puppy, Lead and Trainer Checks`;
+  if (service.key === "emergency-vets") return `Emergency Vet Planning in ${city.name} | Calls, Transport and Records`;
+  return `Dog-Friendly ${city.name} | Rules, Heat, Parks and Venue Checks`;
+}
+
+function descriptionFor(city: ExpansionCity, service: ExpansionService) {
+  if (service.key === "grooming") {
+    return `${city.name} dog grooming guide covering coat care, heat, ticks, mobile or parlour questions, provider checks, cost factors, and when vet advice is safer.`;
+  }
+
+  if (service.key === "training") {
+    return `${city.name} dog training guide covering humane methods, puppy classes, lead manners, barking, reactivity, trainer checks, home practice, and local routines.`;
+  }
+
+  if (service.key === "emergency-vets") {
+    return `${city.name} emergency vet planning guide covering urgent symptoms, phone preparation, transport, records, after-hours questions, and cost or insurance planning.`;
+  }
+
+  return `${city.name} dog-friendly outing guide covering venue rules, parks, accommodation, heat, water, leash manners, crowd checks, and emergency planning.`;
+}
+
+function commonRelated(city: ExpansionCity, service: ExpansionService): CardLink[] {
+  const serviceLinks: CardLink[] =
+    service.key === "grooming"
+      ? [
+          { title: "Grooming Guides", description: "Coat care, groomer questions, shedding, ticks, and heat.", href: "/grooming" },
+          { title: "Grooming Costs", description: "Budget for coat type, size, matting, and mobile travel.", href: "/costs/dog-grooming-costs-south-africa" },
+        ]
+      : service.key === "training"
+        ? [
+            { title: "Training Guides", description: "Puppy, lead, behaviour, and trainer-choice guidance.", href: "/training" },
+            { title: "Choose a Dog Trainer", description: "Questions and warning signs before booking.", href: "/training/how-to-choose-a-dog-trainer-south-africa" },
+          ]
+        : service.key === "emergency-vets"
+          ? [
+              { title: "Emergency Help", description: "Urgent symptoms and first-step preparation.", href: "/emergency" },
+              { title: "Emergency Vet Costs", description: "Plan estimates, deposits, insurance, and urgent-care costs.", href: "/costs/emergency-vet-costs-south-africa" },
+            ]
+          : [
+              { title: "Dog-Friendly Guides", description: "Parks, beaches, travel, accommodation, and outing checks.", href: "/dog-friendly" },
+              { title: "Heatstroke in Dogs", description: "Hot-weather emergency warning signs.", href: "/emergency/heatstroke-in-dogs-south-africa" },
+            ];
+
   return [
+    ...serviceLinks,
     { title: "Local Dog Guides", description: "Browse practical local guides for South African dog owners.", href: "/local" },
     { title: `${city.province} Province Guide`, description: "Province-level climate, risks, and local dog-care context.", href: `/province/${city.provinceSlug}` },
     { title: "Dog Cost Calculator", description: "Estimate monthly dog ownership costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
@@ -220,8 +265,8 @@ function commonRelated(city: ExpansionCity): CardLink[] {
 
 function sharedQuickFacts(city: ExpansionCity, service: ExpansionService) {
   return [
-    `Verified local options may still be limited for ${service.titleLabel.toLowerCase()} in ${city.name}; use the provider section and checklist before booking.`,
-    "Use this page to ask better questions and verify providers, venues, or rules directly before booking or visiting.",
+    `This ${city.name} page is a practical planning guide for ${service.titleLabel.toLowerCase()}, not a fake directory or ranking page.`,
+    "Use the questions and next steps to verify providers, venues, or rules directly before booking or visiting.",
     "Costs can vary by suburb, urgency, travel, dog size, dog behaviour, season, and what is included.",
     "For urgent symptoms, contact a veterinarian or emergency animal clinic directly rather than relying on online research.",
   ];
@@ -292,6 +337,42 @@ function warningSigns(service: ExpansionService) {
   ];
 }
 
+function nextStepChecklist(city: ExpansionCity, service: ExpansionService) {
+  if (service.key === "grooming") {
+    return [
+      "Photograph or note mats, ticks, sore skin, ear problems, and handling concerns before the appointment.",
+      "Ask whether mobile or parlour grooming suits your dog's coat, size, stress level, and transport needs.",
+      "Use the grooming cost guide before accepting a quote with unclear extras.",
+      `Plan for ${city.name} weather, parking, access, drying, and collection time before booking.`,
+    ];
+  }
+
+  if (service.key === "training") {
+    return [
+      "Write down the behaviour, when it happens, and what usually happens before and after it.",
+      "Ask how the trainer handles puppies, fearful dogs, reactivity, barking, lead manners, and owner homework.",
+      "Read the trainer-choice guide before paying for a class or private session.",
+      `Match training goals to ${city.name} routines such as gates, traffic, estates, parks, visitors, and walks.`,
+    ];
+  }
+
+  if (service.key === "emergency-vets") {
+    return [
+      "Save your regular vet and confirmed after-hours option before weekends or travel.",
+      "Keep vaccine records, medication names, microchip details, allergy notes, and insurance documents easy to find.",
+      "Plan transport for a large, collapsed, painful, anxious, or injured dog.",
+      `Think through ${city.name} access issues such as estate gates, parking, traffic, distance, and who can drive.`,
+    ];
+  }
+
+  return [
+    "Check municipal, venue, accommodation, estate, park, or beach rules directly before leaving.",
+    "Pack water, waste bags, lead, ID, tick prevention, towel, and vaccination proof if required.",
+    "Avoid heat-heavy outings and leave if your dog is overwhelmed, reactive, unwell, or unable to settle.",
+    `Use ${city.name} local context to plan shade, parking, crowds, travel time, and the nearest vet option.`,
+  ];
+}
+
 function sectionsFor(city: ExpansionCity, service: ExpansionService) {
   const serviceSpecific =
     service.key === "grooming"
@@ -356,14 +437,9 @@ function sectionsFor(city: ExpansionCity, service: ExpansionService) {
     {
       heading: "Useful next steps",
       body: [
-        "Use DogHaven tools and related guides to prepare before making calls. This helps you compare providers, plan costs, and avoid relying on unverified listings.",
+        `Use these next steps to turn the ${city.name} ${service.titleLabel.toLowerCase()} guide into a practical call, booking, or outing checklist.`,
       ],
-      checklist: [
-        "Use the dog cost calculator for a rough monthly budget.",
-        "Use the vet visit checklist for health notes and emergency planning.",
-        "Read the province guide for climate and local risk context.",
-        "Read training, grooming, emergency, food, and insurance hubs before choosing services that affect your dog's wellbeing.",
-      ],
+      checklist: nextStepChecklist(city, service),
     },
   ];
 }
@@ -375,9 +451,9 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
     hubTitle: "Local Guides",
     hubPath: "/local",
     title: titleFor(city, service),
-    seoTitle: `${titleFor(city, service)} | DogHaven`,
-    description: `Practical ${city.name} ${service.titleLabel.toLowerCase()} guidance for South African dog owners: local context, safety questions, cost factors, warning signs, provider checks, and useful next steps.`,
-    intro: `${titleFor(city, service)} combines practical local guidance with starting points you can verify before booking. Use it to understand local context, ask safer questions, compare options, and prepare before booking a service or visiting a dog-friendly space.`,
+    seoTitle: seoTitleFor(city, service),
+    description: descriptionFor(city, service),
+    intro: `${city.name} owners should treat ${service.titleLabel.toLowerCase()} as a practical fit decision, not a quick search result. Use this guide to match local context, dog temperament, provider questions, cost factors, and safety checks before you book or visit.`,
     updated: reviewed,
     quickFacts: sharedQuickFacts(city, service),
     sections: sectionsFor(city, service),
@@ -398,7 +474,7 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
           "Yes. Municipality, estate, complex, venue, accommodation, park, and public-space rules can change. Check official or provider rules before relying on general guidance.",
       },
     ],
-    related: commonRelated(city),
+    related: commonRelated(city, service),
     sources: [city.source, ...coreSources],
   };
 }
