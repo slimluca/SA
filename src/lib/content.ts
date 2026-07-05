@@ -79,9 +79,9 @@ export const hubPages: HubContent[] = [
       "Practical South African dog health guides covering prevention, vaccination, ticks, symptoms, vet visits, and owner decision-making.",
     kicker: "Health hub",
     intro:
-      "Dog health advice should help you act sooner, ask better questions, and avoid guesswork. DogHaven health guides focus on prevention, early warning signs, South African disease context, and when a veterinarian is the right next step.",
+      "Dog health advice should help you act sooner, ask better questions, and avoid guesswork. Dog Haven health guides focus on prevention, early warning signs, South African disease context, and when a veterinarian is the right next step.",
     notice:
-      "Health content on DogHaven is educational. If your dog is very young, elderly, pregnant, injured, in pain, collapsing, struggling to breathe, or getting worse quickly, contact a veterinarian urgently.",
+      "Health content on Dog Haven is educational. If your dog is very young, elderly, pregnant, injured, in pain, collapsing, struggling to breathe, or getting worse quickly, contact a veterinarian urgently.",
     cards: [
       {
         title: "Vaccination Schedule South Africa",
@@ -115,9 +115,9 @@ export const hubPages: HubContent[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven diagnose my dog?",
+        question: "Can Dog Haven diagnose my dog?",
         answer:
-          "No. DogHaven explains general signs, prevention, and preparation. A veterinarian needs to examine your dog to diagnose or treat a medical problem.",
+          "No. Dog Haven explains general signs, prevention, and preparation. A veterinarian needs to examine your dog to diagnose or treat a medical problem.",
       },
       {
         question: "Why does South African context matter for dog health?",
@@ -135,7 +135,7 @@ export const hubPages: HubContent[] = [
     slug: "emergency",
     path: "/emergency",
     title: "Dog Emergency Help",
-    seoTitle: "Dog Emergency Help in South Africa | DogHaven",
+    seoTitle: "Dog Emergency Help in South Africa | Dog Haven",
     description:
       "South Africa-focused dog emergency guidance for rabies exposure, parvovirus signs, poisoning, heat stress, injuries, and urgent vet decisions.",
     kicker: "Emergency hub",
@@ -312,14 +312,14 @@ export const hubPages: HubContent[] = [
       { title: "Vet Costs", description: "Budget for routine, sick, and emergency vet care.", href: "/costs/vet-costs-for-dogs-south-africa" },
       { title: "Dog Cost Calculator", description: "Estimate monthly care before committing.", href: "/tools/dog-cost-calculator" },
       { title: "Breeds", description: "Match size, energy, grooming, and cost to your home.", href: "/breeds" },
-      { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+      { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
     ],
     sections: [
       {
         title: "Slow the decision down",
         body: [
           "A responsible adoption process should make the dog's welfare clearer, not more confusing. Ask about age, temperament, history with children or other pets, vaccinations, deworming, sterilisation, microchipping, diet, and what support is available after adoption.",
-          "DogHaven does not publish unverified shelter or breeder listings. Use these guides to prepare better questions and then verify details directly with the organisation, foster home, rescue group, SPCA, breeder, or current owner.",
+          "Dog Haven does not publish unverified shelter or breeder listings. Use these guides to prepare better questions and then verify details directly with the organisation, foster home, rescue group, SPCA, breeder, or current owner.",
         ],
         links: [
           { title: "Dog Adoption South Africa", description: "Shelter, rescue, rehoming, and record checks.", href: "/adoption/dog-adoption-south-africa" },
@@ -355,9 +355,9 @@ export const hubPages: HubContent[] = [
           "Ask about age, health checks, vaccinations, sterilisation, behaviour, history with children or pets, diet, training needs, and the support available after adoption.",
       },
       {
-        question: "Does DogHaven list shelters or breeders?",
+        question: "Does Dog Haven list shelters or breeders?",
         answer:
-          "No. DogHaven does not publish unverified listings. The adoption guides help owners know what to ask and what to verify directly.",
+          "No. Dog Haven does not publish unverified listings. The adoption guides help owners know what to ask and what to verify directly.",
       },
     ],
   },
@@ -370,7 +370,7 @@ export const hubPages: HubContent[] = [
       "Practical South African dog food and feeding guides covering labels, life stages, raw diets, safe foods, feeding calculators, costs, and vet-guided choices.",
     kicker: "Food hub",
     intro:
-      "Dog food choices can feel noisy because every bag, advert, and social post promises something. DogHaven focuses on practical South African feeding decisions: life stage, body condition, label reading, daily portions, raw diet safety, budget, allergies, safe transitions, and when a vet diet is worth discussing.",
+      "Dog food choices can feel noisy because every bag, advert, and social post promises something. Dog Haven focuses on practical South African feeding decisions: life stage, body condition, label reading, daily portions, raw diet safety, budget, allergies, safe transitions, and when a vet diet is worth discussing.",
     cards: [
       {
         title: "Best Dog Food South Africa",
@@ -440,9 +440,9 @@ export const hubPages: HubContent[] = [
           "Ask a vet if your dog has persistent vomiting, diarrhoea, itchy skin, weight loss, obesity, urinary issues, chronic disease, or suspected food allergies.",
       },
       {
-        question: "Does DogHaven rank dog food brands?",
+        question: "Does Dog Haven rank dog food brands?",
         answer:
-          "No. DogHaven avoids fake rankings. The guides help owners compare suitability, labels, safety, portions, and questions to ask a vet where needed.",
+          "No. Dog Haven avoids fake rankings. The guides help owners compare suitability, labels, safety, portions, and questions to ask a vet where needed.",
       },
     ],
   },
@@ -455,7 +455,7 @@ export const hubPages: HubContent[] = [
       "South African dog training guides covering puppy schools, obedience, reactivity, recall, lead manners, trainer fit, home routines, parks, gates, visitors, and walks.",
     kicker: "Training hub",
     intro:
-      "Good training makes daily life kinder, safer, and easier in real South African homes: gates opening onto streets, visitors arriving, children playing, dogs passing on walks, estate rules, parks, beaches, and busy suburbs. DogHaven focuses on humane foundations, realistic routines, puppy school questions, trainer fit, and when behaviour needs qualified help.",
+      "Good training makes daily life kinder, safer, and easier in real South African homes: gates opening onto streets, visitors arriving, children playing, dogs passing on walks, estate rules, parks, beaches, and busy suburbs. Dog Haven focuses on humane foundations, realistic routines, puppy school questions, trainer fit, and when behaviour needs qualified help.",
     cards: [
       {
         title: "Dog Training South Africa",
@@ -500,7 +500,7 @@ export const hubPages: HubContent[] = [
         title: "Choose help carefully",
         body: [
           "A good trainer should explain methods, class size, homework, handling of fear or reactivity, and when private or behaviour support is safer than a busy group class. Avoid punishment-heavy promises or anyone who dismisses pain, fear, or safety concerns.",
-          "DogHaven does not invent trainer listings. Use local guides and service planning pages to know what to ask before booking.",
+          "Dog Haven does not invent trainer listings. Use local guides and service planning pages to know what to ask before booking.",
         ],
         links: [
           { title: "Dog Behaviour Problems", description: "Barking, fear, reactivity, chewing, and when to seek help.", href: "/training/dog-behaviour-problems-south-africa" },
@@ -584,7 +584,7 @@ export const hubPages: HubContent[] = [
       {
         title: "Choose groomers without fake listings",
         body: [
-          "DogHaven does not invent groomer listings. Before booking, ask how the groomer handles anxious, senior, matted, reactive, or large dogs; how equipment is cleaned; what drying methods are used; and what happens if a skin, ear, or parasite problem appears.",
+          "Dog Haven does not invent groomer listings. Before booking, ask how the groomer handles anxious, senior, matted, reactive, or large dogs; how equipment is cleaned; what drying methods are used; and what happens if a skin, ear, or parasite problem appears.",
           "Mobile grooming can be convenient, but it still needs clear setup, hygiene, handling, parking, water, electricity, and stop-if-unsafe rules.",
         ],
         links: [
@@ -625,7 +625,7 @@ export const hubPages: HubContent[] = [
       "Plain-English South African dog insurance guides covering cover, exclusions, waiting periods, pre-existing conditions, emergency claims, claim process, and vet costs.",
     kicker: "Insurance hub",
     intro:
-      "Pet insurance is not one-size-fits-all, and the wording matters more than the sales page. DogHaven helps South African owners compare the questions that matter before signing up: exclusions, waiting periods, pre-existing conditions, emergency cover, claim process, annual limits, chronic care, and what happens as a dog ages.",
+      "Pet insurance is not one-size-fits-all, and the wording matters more than the sales page. Dog Haven helps South African owners compare the questions that matter before signing up: exclusions, waiting periods, pre-existing conditions, emergency cover, claim process, annual limits, chronic care, and what happens as a dog ages.",
     cards: [
       {
         title: "Pet Insurance for Dogs",
@@ -695,9 +695,9 @@ export const hubPages: HubContent[] = [
           "Ask about annual limits, accident cover, illness cover, pre-existing conditions, dental cover, routine care, waiting periods, claim turnaround, and whether your chosen vet can submit directly.",
       },
       {
-        question: "Does DogHaven recommend a specific insurer?",
+        question: "Does Dog Haven recommend a specific insurer?",
         answer:
-          "No. DogHaven does not rank insurers. Compare current policy documents, direct quotes, exclusions, limits, and claims rules before choosing.",
+          "No. Dog Haven does not rank insurers. Compare current policy documents, direct quotes, exclusions, limits, and claims rules before choosing.",
       },
     ],
   },
@@ -710,7 +710,7 @@ export const hubPages: HubContent[] = [
       "Budget guides for South African dog owners covering food, vet care, vaccines, grooming, training, insurance, emergency savings, and first-year costs.",
     kicker: "Costs hub",
     intro:
-      "A dog is a long-term financial commitment, not a once-off adoption fee or puppy price. DogHaven cost guides help owners plan for routine care, surprise vet bills, grooming, food, training, insurance, and a safer emergency buffer.",
+      "A dog is a long-term financial commitment, not a once-off adoption fee or puppy price. Dog Haven cost guides help owners plan for routine care, surprise vet bills, grooming, food, training, insurance, and a safer emergency buffer.",
     cards: [
       {
         title: "Cost of Owning a Dog in South Africa",
@@ -836,9 +836,9 @@ export const hubPages: HubContent[] = [
           "No. Some dogs are sociable at home but overwhelmed by crowds, heat, noise, children, or unfamiliar dogs. Choose outings that match your dog's comfort.",
       },
       {
-        question: "Does DogHaven list dog-friendly venues?",
+        question: "Does Dog Haven list dog-friendly venues?",
         answer:
-          "Not as verified listings. DogHaven helps owners know what to check directly before relying on a venue, beach, park, or accommodation rule.",
+          "Not as verified listings. Dog Haven helps owners know what to check directly before relying on a venue, beach, park, or accommodation rule.",
       },
     ],
   },

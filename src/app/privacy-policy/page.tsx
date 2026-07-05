@@ -4,9 +4,9 @@ import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
-  title: "Privacy Policy | DogHaven",
+  title: "Privacy Policy | Dog Haven",
   description:
-    "DogHaven's privacy policy explaining basic site data, contact emails, analytics readiness, and future advertising boundaries.",
+    "Dog Haven's privacy policy explaining basic site data, contact emails, analytics readiness, and future advertising boundaries.",
   path: "/privacy-policy",
 });
 
@@ -26,9 +26,9 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl font-black text-cocoa">Information you send</h2>
           <p className="mt-2 leading-7 text-bark">
-            If you email DogHaven or use the contact form, your name, email address, message type,
+            If you email Dog Haven or use the contact form, your name, email address, message type,
             subject, message, page/source, and timestamp may be used to respond, review a
-            correction, consider a guide topic, or improve DogHaven. Contact form submissions are
+            correction, consider a guide topic, or improve Dog Haven. Contact form submissions are
             sent by email and are not stored in a public directory or website account. Do not send
             sensitive medical records unless a qualified veterinary professional has told you it is
             appropriate.
@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl font-black text-cocoa">Analytics and cookies</h2>
           <p className="mt-2 leading-7 text-bark">
-            DogHaven may use privacy-conscious analytics in future to understand which pages help
+            Dog Haven may use privacy-conscious analytics in future to understand which pages help
             readers. Advertising and affiliate tracking are not added in this foundation.
           </p>
         </section>

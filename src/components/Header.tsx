@@ -10,33 +10,18 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/95 backdrop-blur">
-      <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-2 text-cocoa" aria-label="Dog Haven home">
-          <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-cream shadow-soft">
+    <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/96 backdrop-blur">
+      <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
+        <Link href="/" className="flex min-w-0 items-center text-cocoa" aria-label="Dog Haven home">
+          <span className="flex h-14 w-[184px] shrink-0 items-center overflow-hidden sm:h-16 sm:w-[230px] md:h-14 md:w-[210px] lg:h-16 lg:w-[270px] xl:w-[300px]">
             <Image
-              src="/brand/doghaven-logo.png"
-              alt=""
-              width={44}
-              height={44}
+              src="/brand/dog-haven-south-africa-logo.png"
+              alt="Dog Haven South Africa logo"
+              width={520}
+              height={173}
               className="h-full w-full object-contain"
               priority
             />
-          </span>
-          <span className="min-w-0 leading-tight">
-            <span className="flex items-center gap-2 text-lg font-extrabold tracking-normal">
-              <span>Dog Haven</span>
-              <Image
-                src="/brand/south-africa-flag.svg"
-                alt="South Africa"
-                width={24}
-                height={16}
-                className="h-3.5 w-5 rounded-[3px] border border-oat object-cover shadow-sm"
-              />
-            </span>
-            <span className="hidden text-xs font-semibold text-bark sm:block">
-              Practical dog care in South Africa
-            </span>
           </span>
         </Link>
 
@@ -51,13 +36,13 @@ export function Header() {
         <div className="ml-auto flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
-            className="hidden rounded-full bg-honey px-4 py-2 text-sm font-bold text-cocoa shadow-soft transition hover:bg-sage md:inline-flex"
+            className="hidden rounded-full bg-sage px-4 py-2 text-sm font-bold text-white shadow-soft transition hover:bg-moss md:inline-flex"
           >
             Contact
           </Link>
           <button
             type="button"
-            className="fixed right-4 top-3 z-[10000] inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-cocoa shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:static md:hidden"
+            className="fixed right-4 top-3 z-[10000] inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-navy shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:static md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -74,16 +59,16 @@ export function Header() {
         role="navigation"
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
-        className="fixed inset-x-0 top-[68px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur md:hidden"
+        className="fixed inset-x-0 top-[76px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur sm:top-[84px] md:hidden"
         style={{ display: menuOpen ? "block" : "none" }}
       >
         <div className="mx-auto max-w-6xl">
-          <div className="grid max-h-[calc(100dvh-88px)] grid-cols-2 gap-2 overflow-y-auto rounded-2xl border border-oat bg-white p-3 shadow-sm sm:grid-cols-3">
+          <div className="grid max-h-[calc(100dvh-104px)] grid-cols-2 gap-2 overflow-y-auto rounded-2xl border border-oat bg-white p-3 shadow-sm sm:grid-cols-3">
             {mobileNavigation.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex min-h-[48px] items-center rounded-xl border border-oat bg-cream px-3 py-3 text-sm font-black leading-snug text-cocoa transition hover:border-sage hover:text-moss"
+                className="flex min-h-[48px] items-center rounded-xl border border-oat bg-cream px-3 py-3 text-sm font-black leading-snug text-navy transition hover:border-sage hover:text-moss"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}

@@ -117,7 +117,7 @@ function commonRelated(city: (typeof localCities)[number]): CardLink[] {
 function generalCostNote(cityName: string) {
   return [
     `Costs in ${cityName} vary by suburb, provider, dog size, age, coat, health, behaviour, urgency, time of day, travel, and what is included.`,
-    "DogHaven does not publish invented exact prices or rank providers. Use these guides to ask better questions and request current written quotes directly.",
+    "Dog Haven does not publish invented exact prices or rank providers. Use these guides to ask better questions and request current written quotes directly.",
   ];
 }
 
@@ -235,7 +235,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
     intro: `Dog grooming prices in ${city.name} depend on much more than a quick bath. This guide explains what affects the quote, what to ask before booking, and how to budget without relying on fake local price lists or unverified groomer rankings.`,
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not invent exact grooming prices or rank local groomers.",
+      "Dog Haven does not invent exact grooming prices or rank local groomers.",
       "Ask for a written quote that explains what is included before booking.",
       "Dog size, coat type, matting, behaviour, mobile travel, and extras can all change the final cost.",
       "Skin, ear, wound, pain, parasite, or severe matting concerns may need a vet rather than a routine grooming appointment.",
@@ -293,7 +293,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
           "Ask for a current written quote before the first appointment.",
           "Budget extra for de-shedding, dematting, long coats, curly coats, or mobile travel.",
           "Keep tick, flea, skin, and ear concerns on your vet checklist.",
-          "Use the DogHaven dog cost calculator to estimate monthly grooming alongside food and vet care.",
+          "Use the Dog Haven dog cost calculator to estimate monthly grooming alongside food and vet care.",
           "Review grooming needs before choosing a breed or adopting a long-coated dog.",
         ],
       },
@@ -311,9 +311,9 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
           "Not automatically. Look for clear pricing, safe handling, hygiene, and a willingness to refer medical concerns to a vet.",
       },
       {
-        question: "Does DogHaven list grooming prices from local businesses?",
+        question: "Does Dog Haven list grooming prices from local businesses?",
         answer:
-          "No. DogHaven avoids fake exact prices and unverified listings. Request current quotes directly from providers.",
+          "No. Dog Haven avoids fake exact prices and unverified listings. Request current quotes directly from providers.",
       },
     ],
     related: [
@@ -340,7 +340,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
     intro: `Dog training costs in ${city.name} can vary widely because puppy classes, private sessions, group classes, home visits, and behaviour support are not the same service. This guide helps you compare training quotes without fake rankings or invented prices.`,
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not rank trainers or invent exact local training prices.",
+      "Dog Haven does not rank trainers or invent exact local training prices.",
       "Training cost depends on the format, trainer experience, travel, class size, and behaviour complexity.",
       "Humane, reward-based training should involve the owner and avoid intimidation or fear-heavy methods.",
       "Sudden behaviour changes, pain, aggression, or severe anxiety may need veterinary or behaviour-professional input.",
@@ -448,7 +448,7 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
     isHealthGuide: true,
     quickFacts: [
       "If your dog has urgent symptoms, phone a veterinarian or emergency animal clinic immediately.",
-      "DogHaven does not publish fake clinic prices, fake phone numbers, or emergency vet rankings.",
+      "Dog Haven does not publish fake clinic prices, fake phone numbers, or emergency vet rankings.",
       "Emergency costs vary by time of day, severity, diagnostics, hospitalisation, medication, surgery, and dog size.",
       "Pet insurance may help, but policy limits, exclusions, excesses, and upfront payment rules differ.",
     ],
@@ -513,7 +513,7 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
     ],
     faqs: [
       {
-        question: `Can DogHaven tell me the exact emergency vet cost in ${city.name}?`,
+        question: `Can Dog Haven tell me the exact emergency vet cost in ${city.name}?`,
         answer:
           "No. Emergency costs depend on the dog's condition, diagnostics, treatment, time of day, and clinic process. Ask the clinic directly for current estimates.",
       },
@@ -555,7 +555,7 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
     intro: `Monthly dog costs in ${city.name} depend on your dog's size, age, coat, health, food, lifestyle, housing, transport, and emergency planning. This guide helps you build a realistic budget without pretending every household pays the same.`,
     updated: reviewed,
     quickFacts: [
-      "DogHaven uses cost factors, not fake exact monthly prices.",
+      "Dog Haven uses cost factors, not fake exact monthly prices.",
       "Food, parasite control, vet care, grooming, training, transport, insurance, and emergency savings should all be considered.",
       "Puppies, senior dogs, large breeds, high-maintenance coats, and chronic health issues can change the monthly budget.",
       "Ask providers for current written quotes and review your budget when your dog or household routine changes.",
@@ -617,7 +617,7 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
           "Include parasite control and routine vet care, not only food.",
           "Add grooming if the coat needs regular brushing, clipping, de-shedding, or nail care.",
           "Set aside emergency savings even if you have insurance.",
-          "Use the DogHaven dog cost calculator and update it when costs change.",
+          "Use the Dog Haven dog cost calculator and update it when costs change.",
         ],
       },
       costNextStepSection(city, service),
@@ -672,7 +672,7 @@ export const localCostHub: HubContent = {
     "City-specific South African dog cost guides for grooming prices, training costs, emergency vet budget planning, and monthly dog ownership costs.",
   kicker: "Local cost guides",
   intro:
-    "Dog costs vary by city, suburb, provider, dog size, health, coat type, urgency, and lifestyle. DogHaven local cost guides help you plan and ask better questions without fake prices, fake rankings, or invented local listings.",
+    "Dog costs vary by city, suburb, provider, dog size, health, coat type, urgency, and lifestyle. Dog Haven local cost guides help you plan and ask better questions without fake prices, fake rankings, or invented local listings.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Dog Cost Guides`,
@@ -687,7 +687,7 @@ export const localCostHub: HubContent = {
   ],
   related: [
     { title: "Dog Cost Calculator", description: "Estimate monthly dog costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
-    { title: "Dog Cost Calculator Guide", description: "Understand the DogHaven estimate.", href: "/costs/dog-cost-calculator-south-africa" },
+    { title: "Dog Cost Calculator Guide", description: "Understand the Dog Haven estimate.", href: "/costs/dog-cost-calculator-south-africa" },
     { title: "Cape Town Monthly Dog Costs", description: "A practical city budget page for food, grooming, vet care, travel, and seasonal costs.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
     { title: "Johannesburg Emergency Vet Costs", description: "Prepare for urgent vet cost factors, transport, records, and insurance questions.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
     { title: "Local Service Guides", description: "City service guides for grooming, training, emergency vets, and dog-friendly places.", href: "/local" },
@@ -697,14 +697,14 @@ export const localCostHub: HubContent = {
   ],
   faqs: [
     {
-      question: "Why does DogHaven avoid exact city price lists?",
+      question: "Why does Dog Haven avoid exact city price lists?",
       answer:
-        "Exact prices change by provider, suburb, dog size, urgency, inflation, and what is included. DogHaven avoids fake prices and encourages written quotes from providers.",
+        "Exact prices change by provider, suburb, dog size, urgency, inflation, and what is included. Dog Haven avoids fake prices and encourages written quotes from providers.",
     },
     {
       question: "Are these pages business rankings?",
       answer:
-        "No. DogHaven does not rank local groomers, trainers, vets, clinics, or service providers. These are planning guides.",
+        "No. Dog Haven does not rank local groomers, trainers, vets, clinics, or service providers. These are planning guides.",
     },
     {
       question: "What is the best way to budget for a dog in South Africa?",

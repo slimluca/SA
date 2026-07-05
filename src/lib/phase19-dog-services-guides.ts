@@ -117,7 +117,7 @@ function costFactorSection(serviceLabel: string) {
   return {
     heading: "Cost factors to ask about",
     body: [
-      `DogHaven does not publish fake prices for ${serviceLabel}. Ask providers for current written quotes and check exactly what is included before you book.`,
+      `Dog Haven does not publish fake prices for ${serviceLabel}. Ask providers for current written quotes and check exactly what is included before you book.`,
     ],
     table: {
       headers: ["Cost factor", "Why it can change the quote"],
@@ -134,7 +134,7 @@ function costFactorSection(serviceLabel: string) {
 
 function verificationQuickFacts(serviceLabel: string) {
   return [
-    `DogHaven treats ${serviceLabel} pages as planning guides unless verified provider options are shown on the page.`,
+    `Dog Haven treats ${serviceLabel} pages as planning guides unless verified provider options are shown on the page.`,
     "Do not rely on social media claims, photos, or reviews alone. Verify the provider directly before booking.",
     "Ask about vaccination records, emergency vet plans, supervision, insurance or responsibility, and what happens if your dog becomes ill or stressed.",
     "Avoid providers who pressure you to pay before answering safety, handling, and emergency questions.",
@@ -283,7 +283,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
     ],
     faqs: [
       {
-        question: `Does DogHaven list verified boarding kennels in ${city.name}?`,
+        question: `Does Dog Haven list verified boarding kennels in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm kennel services, prices, availability, health requirements, and suitability directly before booking.",
       },
@@ -381,7 +381,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
     ],
     faqs: [
       {
-        question: `Does DogHaven list verified dog daycare providers in ${city.name}?`,
+        question: `Does Dog Haven list verified dog daycare providers in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm daycare services, supervision, prices, availability, and suitability directly before booking.",
       },
@@ -477,7 +477,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
     ],
     faqs: [
       {
-        question: `Does DogHaven list verified pet sitters in ${city.name}?`,
+        question: `Does Dog Haven list verified pet sitters in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm sitter services, references, prices, availability, and suitability directly before booking.",
       },
@@ -572,7 +572,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
     ],
     faqs: [
       {
-        question: `Does DogHaven list verified dog walkers in ${city.name}?`,
+        question: `Does Dog Haven list verified dog walkers in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm walker services, safety routines, prices, availability, and suitability directly before booking.",
       },
@@ -668,7 +668,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
     ],
     faqs: [
       {
-        question: `Does DogHaven list verified holiday dog care providers in ${city.name}?`,
+        question: `Does Dog Haven list verified holiday dog care providers in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm kennels, sitters, walkers, travel rules, prices, and availability directly before booking.",
       },
@@ -716,7 +716,7 @@ export const dogServicesHub: HubContent = {
     "South African dog service planning guides for boarding kennels, dog daycare, pet sitters, dog walkers, and holiday dog care in major cities.",
   kicker: "Dog service guides",
   intro:
-    "DogHaven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
+    "Dog Haven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Dog Services`,
@@ -739,9 +739,9 @@ export const dogServicesHub: HubContent = {
   ],
   faqs: [
     {
-      question: "Does DogHaven list verified dog service providers?",
+      question: "Does Dog Haven list verified dog service providers?",
       answer:
-        "Not yet. DogHaven dog service pages are planning guides, not verified directories. Owners should check every provider directly before booking.",
+        "Not yet. Dog Haven dog service pages are planning guides, not verified directories. Owners should check every provider directly before booking.",
     },
     {
       question: "Why are there no provider prices or rankings?",
@@ -775,7 +775,7 @@ export const phase19LocalCostCards: CardLink[] = [
 export const phase19ToolsCards: CardLink[] = [
   {
     title: "Dog Services",
-    description: "Use DogHaven tools to prepare instructions, vet notes, travel checks, and cost planning before booking care.",
+    description: "Use Dog Haven tools to prepare instructions, vet notes, travel checks, and cost planning before booking care.",
     href: "/dog-services",
   },
   {

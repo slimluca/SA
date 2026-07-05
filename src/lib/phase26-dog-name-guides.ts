@@ -3,9 +3,9 @@ import type { CardLink, GuideContent, HubContent } from "@/lib/content";
 const reviewed = "2026-05-23";
 const nameSources = [
   {
-    label: "DogHaven editorial policy",
+    label: "Dog Haven editorial policy",
     href: "/editorial-policy",
-    note: "DogHaven's public standards for original, useful, South Africa-focused dog-owner content.",
+    note: "Dog Haven's public standards for original, useful, South Africa-focused dog-owner content.",
   },
 ];
 
@@ -194,7 +194,7 @@ const topics: NameTopic[] = [
     intro:
       "Zulu-inspired names should be chosen with care. This page offers gentle inspiration and encourages owners to check meaning, pronunciation and context before using a name.",
     context: [
-      "DogHaven is not claiming cultural authority. If you want a name with meaning, ask a fluent speaker or choose a name already meaningful in your family.",
+      "Dog Haven is not claiming cultural authority. If you want a name with meaning, ask a fluent speaker or choose a name already meaningful in your family.",
       "Avoid turning sacred, sensitive or deeply personal words into casual pet names.",
     ],
     groups: [
@@ -236,7 +236,7 @@ const topics: NameTopic[] = [
       ...commonRelated,
     ],
     faqs: [
-      { question: "Can DogHaven confirm Xhosa meanings?", answer: "No. Ask a fluent speaker or reliable language source if meaning matters." },
+      { question: "Can Dog Haven confirm Xhosa meanings?", answer: "No. Ask a fluent speaker or reliable language source if meaning matters." },
       { question: "What should I avoid?", answer: "Avoid words you do not understand, sensitive terms, jokes about language, or names that mock people or cultures." },
       { question: "What makes a good call name?", answer: "A name that is short, clear, kind, and distinct from cues." },
     ],
@@ -502,7 +502,7 @@ export const dogNamesHub: HubContent = {
   title: "Dog Names South Africa",
   seoTitle: "Dog Names South Africa | Puppy Names, Breed Names and Free Tools",
   description:
-    "DogHaven dog name ideas for South African puppies and adopted dogs, including cute names, strong names, Afrikaans, Zulu, Xhosa, breed-inspired names and free naming tools.",
+    "Dog Haven dog name ideas for South African puppies and adopted dogs, including cute names, strong names, Afrikaans, Zulu, Xhosa, breed-inspired names and free naming tools.",
   kicker: "Dog names",
   intro:
     "Find warm, practical and South African-inspired dog name ideas without turning the page into a giant list. Each guide includes name groups, training-friendly tips and links to puppy, adoption and breed planning resources.",
@@ -585,7 +585,7 @@ export const phase26DogNameGuidePages: GuideContent[] = topics.map((topic) => ({
       heading: "Helpful next steps",
       body: [
         "Once you have a shortlist, check whether the name fits your dog's adult size, breed or mix, personality, family language, public settings and training plan.",
-        "If you are still choosing a dog, use DogHaven's breed chooser, adoption and puppy guides before falling in love with a name.",
+        "If you are still choosing a dog, use Dog Haven's breed chooser, adoption and puppy guides before falling in love with a name.",
       ],
     },
   ],

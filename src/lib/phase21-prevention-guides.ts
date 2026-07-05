@@ -77,7 +77,7 @@ const phase21Guides: GuideContent[] = [
     isHealthGuide: true,
     quickFacts: [
       ...standardDisclaimer(),
-      "DogHaven does not recommend a specific tick or flea product brand.",
+      "Dog Haven does not recommend a specific tick or flea product brand.",
     ],
     sections: [
       {
@@ -104,7 +104,7 @@ const phase21Guides: GuideContent[] = [
           "Check ears, neck, armpits, between toes, under the collar, and around the tail after high-risk outings.",
           "Treat all pets in the home only with species-appropriate products.",
           "Wash bedding and clean sleeping areas regularly.",
-          "Set reminders in the DogHaven health calendar.",
+          "Set reminders in the Dog Haven health calendar.",
         ],
       },
       {
@@ -234,7 +234,7 @@ const phase21Guides: GuideContent[] = [
       },
     ],
     related: [
-      { title: "Biliary Tick Bite Fever", description: "Existing DogHaven guide to biliary concerns.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+      { title: "Biliary Tick Bite Fever", description: "Existing Dog Haven guide to biliary concerns.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
       { title: "Tick and Flea Treatment", description: "Prevention routines and vet questions.", href: "/health/tick-and-flea-treatment-for-dogs-south-africa" },
       ...coreRelated,
     ],
@@ -509,7 +509,7 @@ const phase21Guides: GuideContent[] = [
     isHealthGuide: true,
     quickFacts: [
       "Follow your veterinarian's vaccination schedule.",
-      "DogHaven does not publish fake clinic prices or exact vaccine costs.",
+      "Dog Haven does not publish fake clinic prices or exact vaccine costs.",
       "Rabies vaccination is a serious South African public-health responsibility.",
       "Puppy vaccination planning should include safe socialisation advice.",
     ],
@@ -763,7 +763,7 @@ const phase21Guides: GuideContent[] = [
     isHealthGuide: true,
     quickFacts: [
       ...standardDisclaimer(),
-      "DogHaven does not recommend specific parasite product brands.",
+      "Dog Haven does not recommend specific parasite product brands.",
     ],
     sections: [
       {
@@ -789,7 +789,7 @@ const phase21Guides: GuideContent[] = [
           "Check coats after high-risk outings.",
           "Clean bedding and sleeping areas.",
           "Coordinate prevention across all pets in the home.",
-          "Use the DogHaven health calendar for reminders.",
+          "Use the Dog Haven health calendar for reminders.",
         ],
       },
       {
@@ -841,7 +841,7 @@ const phase21Guides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Ticks, Fleas and Worms Puppy Checklist in South Africa",
-    seoTitle: "Ticks, Fleas and Worms Puppy Checklist South Africa | DogHaven",
+    seoTitle: "Ticks, Fleas and Worms Puppy Checklist South Africa | Dog Haven",
     description:
       "A South African puppy parasite checklist covering first vet visits, deworming records, tick and flea prevention, safe products, warning signs, and home routines.",
     intro:
@@ -980,7 +980,7 @@ const phase21Guides: GuideContent[] = [
           "Write down diet, treats, parasite products, and dates.",
           "Note any changes in appetite, stool, thirst, urination, weight, or behaviour.",
           "Bring photos of lumps, stool changes, skin flare-ups, or coughing episodes if useful.",
-          "Use the DogHaven health calendar to plan reminders.",
+          "Use the Dog Haven health calendar to plan reminders.",
         ],
       },
     ],
@@ -1019,7 +1019,7 @@ const phase21Guides: GuideContent[] = [
     description:
       "A practical South African dog health calendar guide for planning vaccines, rabies boosters, deworming, tick and flea prevention, checkups, grooming, and dental care.",
     intro:
-      "A dog health calendar helps owners remember prevention tasks before they become stressful. Use this guide and the free DogHaven tool as general planning support, then follow your vet's schedule.",
+      "A dog health calendar helps owners remember prevention tasks before they become stressful. Use this guide and the free Dog Haven tool as general planning support, then follow your vet's schedule.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -1071,9 +1071,9 @@ const phase21Guides: GuideContent[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven create exact reminders for my dog?",
+        question: "Can Dog Haven create exact reminders for my dog?",
         answer:
-          "No. DogHaven provides general planning prompts only. Your vet's schedule is the one to follow.",
+          "No. Dog Haven provides general planning prompts only. Your vet's schedule is the one to follow.",
       },
       {
         question: "What records should I keep?",
@@ -1083,7 +1083,7 @@ const phase21Guides: GuideContent[] = [
       {
         question: "Does the health calendar store my data?",
         answer:
-          "No. The DogHaven tool does not collect personal information or store data.",
+          "No. The Dog Haven tool does not collect personal information or store data.",
       },
     ],
     related: [

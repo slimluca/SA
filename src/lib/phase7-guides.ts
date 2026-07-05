@@ -774,7 +774,7 @@ export const provinceHub: HubContent = {
   slug: "province",
   path: "/province",
   title: "Dog Owner Guides by South African Province",
-  seoTitle: "South African Province Dog Owner Guides | DogHaven Local Care",
+  seoTitle: "South African Province Dog Owner Guides | Dog Haven Local Care",
   description:
     "South Africa-specific dog owner guides by province, covering heat, ticks, snakes, beaches, rural travel, local risks, adoption, grooming, training, outings, costs and emergency planning.",
   kicker: "Province guides",
@@ -795,7 +795,7 @@ export const provinceHub: HubContent = {
     {
       question: "Are these province pages dog business directories?",
       answer:
-        "No. DogHaven does not publish unverified local listings. These pages help owners understand local care context and what to verify directly.",
+        "No. Dog Haven does not publish unverified local listings. These pages help owners understand local care context and what to verify directly.",
     },
     {
       question: "Why does province matter for dog care?",
@@ -803,9 +803,9 @@ export const provinceHub: HubContent = {
         "Climate, ticks, snakes, beaches, rural travel, city density, local rules, and emergency access can change practical dog-care decisions.",
     },
     {
-      question: "Will DogHaven add verified local listings later?",
+      question: "Will Dog Haven add verified local listings later?",
       answer:
-        "Possibly, but only after manual verification. DogHaven will not publish fake listings, fake reviews, or invented phone numbers.",
+        "Possibly, but only after manual verification. Dog Haven will not publish fake listings, fake reviews, or invented phone numbers.",
     },
   ],
 };
@@ -830,7 +830,7 @@ export const cityHub: HubContent = {
   ],
   faqs: [
     {
-      question: "Does DogHaven recommend specific local businesses?",
+      question: "Does Dog Haven recommend specific local businesses?",
       answer:
         "No. These pages do not list or rank vets, groomers, trainers, shelters, parks, hotels, or restaurants. Owners should verify providers and rules directly.",
     },
@@ -873,9 +873,9 @@ function commonRelated(extra: CardLink[] = []): CardLink[] {
 function localFaqs(place: string, isCity: boolean): FAQ[] {
   return [
     {
-      question: `Does DogHaven list vets, groomers, trainers, or shelters in ${place}?`,
+      question: `Does Dog Haven list vets, groomers, trainers, or shelters in ${place}?`,
       answer:
-        "No. DogHaven does not publish unverified local listings. Use these guides to know what to ask and verify providers directly.",
+        "No. Dog Haven does not publish unverified local listings. Use these guides to know what to ask and verify providers directly.",
     },
     {
       question: `How should I find emergency vet help in ${place}?`,
@@ -918,7 +918,7 @@ function provinceIndexingRecoverySections(province: ProvinceGuide) {
       },
     },
     {
-      heading: "Related DogHaven tools for Mpumalanga owners",
+      heading: "Related Dog Haven tools for Mpumalanga owners",
       body: ["These tools help turn the province guidance into practical planning steps."],
       checklist: [
         "Use the dog health calendar for tick, flea, deworming, rabies, and routine vet reminders.",
@@ -950,7 +950,7 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
     intro: province.intro,
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not publish unverified local business listings, fake phone numbers, fake reviews, or fake verified badges.",
+      "Dog Haven does not publish unverified local business listings, fake phone numbers, fake reviews, or fake verified badges.",
       "Use this page as a practical local planning guide, then verify vets, shelters, groomers, trainers, venues, parks, beaches, and accommodation directly.",
       "Rules for parks, beaches, trails, estates, and venues can change. Check official local rules before visiting.",
       "For urgent symptoms, phone a veterinarian or emergency animal clinic immediately rather than searching for general advice.",
@@ -1005,7 +1005,7 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
         heading: "Emergency preparation",
         body: [
           "Emergency planning should happen before your dog is sick. Save your regular vet, ask about after-hours options, and keep records accessible.",
-          "Do not rely on DogHaven for emergency listings yet. Phone a real veterinary practice or emergency animal clinic for urgent symptoms.",
+          "Do not rely on Dog Haven for emergency listings yet. Phone a real veterinary practice or emergency animal clinic for urgent symptoms.",
         ],
         checklist: [
           "Regular vet details saved.",
@@ -1020,8 +1020,8 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
         heading: "Relevant city guides",
         body:
           cityCardsForProvince.length > 0
-            ? ["These city guides add more local detail for major DogHaven reader areas in this province."]
-            : ["DogHaven will add more city-level guides over time. For now, use the province guide and verify local rules directly with your municipality or venue."],
+            ? ["These city guides add more local detail for major Dog Haven reader areas in this province."]
+            : ["Dog Haven will add more city-level guides over time. For now, use the province guide and verify local rules directly with your municipality or venue."],
         bullets:
           cityCardsForProvince.length > 0
             ? cityCardsForProvince.map((city) => `${city.title}: ${city.href}`)
@@ -1053,7 +1053,7 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
     intro: city.intro,
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not publish unverified local listings or pretend to have verified vets, shelters, groomers, trainers, parks, beaches, hotels, or restaurants.",
+      "Dog Haven does not publish unverified local listings or pretend to have verified vets, shelters, groomers, trainers, parks, beaches, hotels, or restaurants.",
       "Use this guide to plan what to ask, what to check, and how to prepare as a dog owner in the city.",
       "Check official municipal, venue, park, beach, estate, accommodation, or conservation rules before taking your dog into public spaces.",
       "For urgent medical symptoms, phone a veterinarian or emergency animal clinic immediately.",
@@ -1073,7 +1073,7 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
       {
         heading: "How to find a vet without relying on fake listings",
         body: [
-          "DogHaven does not list local vets yet. Start by checking registered veterinary practices, asking your current vet for after-hours guidance, and confirming services directly before you need them.",
+          "Dog Haven does not list local vets yet. Start by checking registered veterinary practices, asking your current vet for after-hours guidance, and confirming services directly before you need them.",
           "For emergencies, phone a veterinary practice or emergency animal clinic. Do not wait for a web page to diagnose symptoms.",
         ],
         checklist: [
@@ -1086,7 +1086,7 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
       {
         heading: "Adoption and rescue locally",
         body: [
-          "For adoption, start with welfare-focused organisations, SPCAs, reputable rescues, and careful private rehoming checks. DogHaven does not invent shelter names or publish unverified adoption listings.",
+          "For adoption, start with welfare-focused organisations, SPCAs, reputable rescues, and careful private rehoming checks. Dog Haven does not invent shelter names or publish unverified adoption listings.",
           "Ask about health records, sterilisation, vaccination, microchip status, behaviour, home checks, adoption fees, and what support is available after adoption.",
         ],
       },

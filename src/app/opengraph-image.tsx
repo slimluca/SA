@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "DogHaven - South Africa's practical dog care guide";
+export const alt = "Dog Haven - South Africa's practical dog care guide";
 export const size = {
   width: 1200,
   height: 630,
@@ -18,8 +18,8 @@ export default function Image() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          background: "#fff9ee",
-          color: "#3f2b1f",
+          background: "#fbf5e9",
+          color: "#071b38",
           padding: "72px",
           fontFamily: "Arial, sans-serif",
         }}
@@ -29,8 +29,8 @@ export default function Image() {
             style={{
               display: "flex",
               borderRadius: "999px",
-              background: "#d9a441",
-              color: "#3f2b1f",
+              background: "#d4af5f",
+              color: "#071b38",
               padding: "12px 22px",
               fontSize: 28,
               fontWeight: 800,
@@ -42,29 +42,29 @@ export default function Image() {
           <div style={{ fontSize: 72, lineHeight: 1.02, fontWeight: 900 }}>
             South Africa&apos;s practical dog care guide
           </div>
-          <div style={{ marginTop: 28, fontSize: 30, lineHeight: 1.35, color: "#6f4a32" }}>
+          <div style={{ marginTop: 28, fontSize: 30, lineHeight: 1.35, color: "#253044" }}>
             Health, adoption, food, costs, training, grooming, and safer dog-friendly planning.
           </div>
         </div>
         <div
           style={{
-            width: 260,
-            height: 260,
-            borderRadius: 130,
-            border: "10px solid #6f8f72",
-            background: "#fff9ee",
+            width: 430,
+            height: 170,
+            borderRadius: 22,
+            border: "6px solid #bf8424",
+            background: "#fffaf0",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             overflow: "hidden",
-            boxShadow: "0 24px 60px rgba(63,43,31,0.18)",
+            boxShadow: "0 24px 60px rgba(7,27,56,0.18)",
           }}
         >
           <img
-            src="https://www.doghaven.co.za/brand/doghaven-logo.png"
-            alt=""
-            width="230"
-            height="230"
+            src="https://www.doghaven.co.za/brand/dog-haven-south-africa-logo.png"
+            alt="Dog Haven South Africa logo"
+            width="380"
+            height="127"
             style={{ objectFit: "contain" }}
           />
         </div>

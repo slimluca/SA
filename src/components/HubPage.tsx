@@ -1,6 +1,5 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
-import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
 import { PopularGuides } from "@/components/PopularGuides";
 import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
@@ -26,16 +25,10 @@ export function HubPage({ hub }: { hub: HubContent }) {
         <h1 className="section-title">{hub.title}</h1>
         <p className="section-copy">{hub.intro}</p>
 
-        {hub.notice ? (
-          <div className="mt-8">
-            <EmergencyNotice />
-          </div>
-        ) : null}
-
         {hub.sections && hub.sections.length > 0 ? (
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <div className="mt-7 grid gap-5 lg:grid-cols-2">
             {hub.sections.map((section) => (
-              <section key={section.title} className="rounded-2xl border border-oat bg-white p-6 shadow-sm">
+              <section key={section.title} className="rounded-xl border border-oat bg-white p-5 shadow-panel">
                 <h2 className="text-2xl font-black leading-tight text-cocoa">{section.title}</h2>
                 <div className="mt-4 space-y-3">
                   {section.body.map((paragraph) => (
@@ -61,26 +54,26 @@ export function HubPage({ hub }: { hub: HubContent }) {
           intro={
             hub.slug === "tools"
               ? "Start with the calculators and lookups owners use for quick everyday decisions."
-              : "These high-value DogHaven pages answer common South African dog-owner questions and point to helpful next steps."
+              : "These high-value Dog Haven pages answer common South African dog-owner questions and point to helpful next steps."
           }
           guides={promotedGuides}
         />
 
         <VerifiedLocalOptions providers={[]} showNotice={showProviderNotice} />
 
-        <div className="mt-10">
+        <div className="mt-8">
           <h2 className="text-2xl font-black text-cocoa">Start here</h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-3">
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
             {hub.cards.map((card) => (
               <ContentLinkCard key={`${hub.slug}-${card.title}`} {...card} />
             ))}
           </div>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
+        <div className="mt-9 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
           <section>
-            <h2 className="text-2xl font-black text-cocoa">Related DogHaven hubs</h2>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <h2 className="text-2xl font-black text-cocoa">Related Dog Haven hubs</h2>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
               {hub.related.map((card) => (
                 <ContentLinkCard key={`${hub.slug}-related-${card.title}`} {...card} />
               ))}
@@ -89,7 +82,7 @@ export function HubPage({ hub }: { hub: HubContent }) {
 
           <section>
             <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
-            <div className="mt-5">
+            <div className="mt-4">
               <FAQBlock items={hub.faqs} />
             </div>
           </section>

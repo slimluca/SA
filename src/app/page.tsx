@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
 import { FeatureCard } from "@/components/FeatureCard";
 import { GuideCard } from "@/components/GuideCard";
@@ -29,19 +27,14 @@ export default function HomePage() {
       {homeFaqs.length > 0 ? <JsonLd data={faqSchema(homeFaqs)} /> : null}
       <Hero
         title="South Africa's practical dog care guide"
-        intro="DogHaven helps South African dog owners make calmer, better-informed decisions about health, emergency guidance, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places."
+        intro="Dog Haven helps South African dog owners make calmer, better-informed decisions about health, emergency guidance, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places."
       />
-
-      <section className="section-shell">
-        <Breadcrumbs items={[]} />
-        <EmergencyNotice />
-      </section>
 
       <ToolPromoGrid tools={homepageTools} />
 
-      <section className="section-shell pt-4">
+      <section className="section-shell section-tight">
         <PopularGuides
-          kicker="Popular DogHaven guides"
+          kicker="Popular Dog Haven guides"
           title="Fast answers for food safety, puppy care, and vet decisions"
           intro="These pages cover the questions owners often need first: what dogs can eat, when vomiting is urgent, how to care for a puppy, and how to choose food without brand hype."
           guides={homepagePopularGuides}
@@ -50,7 +43,7 @@ export default function HomePage() {
 
       <RelatedMoneyPages pages={homepageMoneyPages} />
 
-      <section className="section-shell pt-4">
+      <section className="section-shell section-tight">
         <p className="section-kicker">Dog care topics</p>
         <h2 className="section-title">Start with the question in front of you</h2>
         <p className="section-copy">
@@ -70,7 +63,7 @@ export default function HomePage() {
           <p className="section-kicker">Trust and editorial standards</p>
           <h2 className="section-title">Built to be useful before it is big</h2>
           <p className="section-copy">
-            DogHaven is being built around practical South African owner needs, careful sourcing,
+            Dog Haven is being built around practical South African owner needs, careful sourcing,
             and clear boundaries. Directory content will only be published after manual checks, and
             medical pages will point owners toward qualified veterinary care when symptoms or risk
             require it.
@@ -98,7 +91,7 @@ export default function HomePage() {
         <div className="section-shell">
           <p className="text-sm font-black uppercase tracking-wide text-honey">Featured guide areas</p>
           <h2 className="mt-2 max-w-3xl text-3xl font-black leading-tight sm:text-4xl">
-            Practical guides DogHaven owners will reach for first
+            Practical guides Dog Haven owners will reach for first
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-7 text-cream/86">
             These foundational guides are selected because they answer high-stakes, high-frequency
@@ -118,7 +111,7 @@ export default function HomePage() {
           <p className="section-kicker">Common questions</p>
           <h2 className="section-title">Clear boundaries make better guidance</h2>
           <p className="section-copy">
-            DogHaven can help you prepare, understand, and ask better questions. It should not
+            Dog Haven can help you prepare, understand, and ask better questions. It should not
             delay a vet visit, encourage risky home treatment, or dress opinion up as certainty.
           </p>
           <div className="mt-8">

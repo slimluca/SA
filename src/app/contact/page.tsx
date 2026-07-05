@@ -5,9 +5,9 @@ import { contactReasons } from "@/lib/data";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact DogHaven | South African Dog Care Guide",
+  title: "Contact Dog Haven | South African Dog Care Guide",
   description:
-    "Contact DogHaven to suggest a practical guide topic, share a correction, or ask about future manually verified listings.",
+    "Contact Dog Haven to suggest a practical guide topic, share a correction, or ask about future manually verified listings.",
   path: "/contact",
 });
 
@@ -16,9 +16,9 @@ export default function ContactPage() {
     <section className="section-shell">
       <Breadcrumbs items={[{ name: "Contact", href: "/contact" }]} />
       <p className="section-kicker">Contact</p>
-      <h1 className="section-title">Help make DogHaven more useful</h1>
+      <h1 className="section-title">Help make Dog Haven more useful</h1>
       <p className="section-copy">
-        DogHaven welcomes practical topic suggestions, correction requests, and source ideas that
+        Dog Haven welcomes practical topic suggestions, correction requests, and source ideas that
         can help South African dog owners make better decisions. For medical concerns about your
         own dog, please contact a veterinarian directly.
       </p>

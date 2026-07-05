@@ -17,7 +17,7 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
   if (!showNotice) return null;
 
   return (
-    <section className="mt-8 rounded-2xl border border-oat bg-white p-6 shadow-sm">
+    <section className="mt-6 rounded-xl border border-oat bg-white p-5 shadow-panel">
       <h2 className="text-2xl font-black text-cocoa">Verified local options to start with</h2>
       <p className="mt-3 text-sm font-semibold leading-6 text-bark">
         These options are starting points for your own checks, not rankings or endorsements.
@@ -28,7 +28,7 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
       {providers.length > 0 ? (
         <>
           {providers.length < 4 ? (
-            <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/10 p-5">
+            <div className="mt-4 rounded-xl border border-honey/45 bg-honey/10 p-5">
               <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
               <p className="mt-2 text-sm leading-6 text-bark">
                 We are still adding more verified local options for this page. Use these entries
@@ -37,9 +37,9 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
             </div>
           ) : null}
 
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
             {providers.map((provider) => (
-              <article key={`${provider.city}-${provider.name}`} className="rounded-2xl border border-oat bg-cream p-5 shadow-sm">
+              <article key={`${provider.city}-${provider.name}`} className="rounded-xl border border-oat bg-cream p-5 shadow-panel">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
                     <h3 className="text-xl font-black leading-tight text-cocoa">{provider.name}</h3>
@@ -97,7 +97,7 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
           </div>
         </>
       ) : (
-        <div className="mt-5 rounded-2xl border border-honey/45 bg-honey/10 p-5">
+        <div className="mt-4 rounded-xl border border-honey/45 bg-honey/10 p-5">
           <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
           <p className="mt-2 text-sm leading-6 text-bark">
             Verified local options are still being built for this page. Use the checklist below
@@ -106,7 +106,7 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
         </div>
       )}
 
-      <div className="mt-5">
+      <div className="mt-4">
         <h3 className="text-lg font-black text-cocoa">Provider-checking checklist</h3>
         <ul className="mt-3 grid gap-3">
           {providerChecklist.map((item) => (

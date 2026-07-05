@@ -150,9 +150,9 @@ const guides: PuppyGuide[] = [
           "Only when your vet says your puppy's vaccine status and local risk make it appropriate. Unknown dog faeces and high-traffic dog areas can be risky for young puppies.",
       },
       {
-        question: "Does DogHaven replace a puppy class or vet?",
+        question: "Does Dog Haven replace a puppy class or vet?",
         answer:
-          "No. DogHaven is educational. Puppies with urgent symptoms need a veterinarian, and behaviour concerns are best handled with a humane qualified trainer.",
+          "No. Dog Haven is educational. Puppies with urgent symptoms need a veterinarian, and behaviour concerns are best handled with a humane qualified trainer.",
       },
     ],
     related: [
@@ -1003,7 +1003,7 @@ const guides: PuppyGuide[] = [
       {
         question: "Should I get puppy insurance?",
         answer:
-          "It can be worth comparing, but read waiting periods, exclusions, excesses, and annual limits carefully. DogHaven does not recommend a specific insurer.",
+          "It can be worth comparing, but read waiting periods, exclusions, excesses, and annual limits carefully. Dog Haven does not recommend a specific insurer.",
       },
       {
         question: "Why are large puppies more expensive?",
@@ -1106,9 +1106,9 @@ export const puppyHub: HubContent = {
     "Practical South African puppy care guides covering first-year setup, vaccines, deworming, food, potty training, biting, crying, socialisation, costs, and puppy-proofing.",
   kicker: "Puppy hub",
   intro:
-    "Bringing home a puppy is joyful, messy, expensive, and full of tiny decisions. DogHaven's puppy hub helps South African owners plan the first year with calm, practical guidance on health, food, training, costs, safety, and when to ask a vet or trainer for help.",
+    "Bringing home a puppy is joyful, messy, expensive, and full of tiny decisions. Dog Haven's puppy hub helps South African owners plan the first year with calm, practical guidance on health, food, training, costs, safety, and when to ask a vet or trainer for help.",
   notice:
-    "Puppy content on DogHaven is educational. Puppies with vomiting, diarrhoea, weakness, coughing, not eating, collapse, breathing trouble, or suspected poisoning need urgent veterinary advice.",
+    "Puppy content on Dog Haven is educational. Puppies with vomiting, diarrhoea, weakness, coughing, not eating, collapse, breathing trouble, or suspected poisoning need urgent veterinary advice.",
   cards: phase11GuidePages.map((guide) => ({
     title: guide.title,
     description: guide.description,
@@ -1132,9 +1132,9 @@ export const puppyHub: HubContent = {
         "Start with the new puppy checklist, first vet visit, vaccination schedule, puppy food, toilet training, and puppy-proofing guides.",
     },
     {
-      question: "Can DogHaven replace my puppy's vet?",
+      question: "Can Dog Haven replace my puppy's vet?",
       answer:
-        "No. DogHaven is educational. Puppies with urgent symptoms need a veterinarian, and your vet should set vaccination, deworming, and health plans.",
+        "No. Dog Haven is educational. Puppies with urgent symptoms need a veterinarian, and your vet should set vaccination, deworming, and health plans.",
     },
     {
       question: "Can my puppy socialise before all vaccines are finished?",

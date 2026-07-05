@@ -4,7 +4,7 @@ const reviewed = "2026-05-23";
 
 const commonFunRelated: CardLink[] = [
   { title: "Fun Hub", description: "Quizzes, planners, checklists and activity ideas.", href: "/fun" },
-  { title: "Tools", description: "Free DogHaven calculators, quizzes and checklists.", href: "/tools" },
+  { title: "Tools", description: "Free Dog Haven calculators, quizzes and checklists.", href: "/tools" },
   { title: "Dog-Friendly Places", description: "Plan outings with rules, heat and etiquette in mind.", href: "/dog-friendly" },
   { title: "Dog Training", description: "Humane games, manners and routine-building.", href: "/training" },
   { title: "Dog Names", description: "Name ideas and naming tools for South African dogs.", href: "/dog-names" },
@@ -310,12 +310,12 @@ export const funHub: HubContent = {
   slug: "fun",
   path: "/fun",
   title: "Fun Dog Tools and Ideas",
-  seoTitle: "Fun Dog Tools and Ideas South Africa | DogHaven",
+  seoTitle: "Fun Dog Tools and Ideas South Africa | Dog Haven",
   description:
-    "Fun, practical DogHaven tools and guides for South African dog owners, including quizzes, planners, checklists, names, enrichment, outings and training games.",
+    "Fun, practical Dog Haven tools and guides for South African dog owners, including quizzes, planners, checklists, names, enrichment, outings and training games.",
   kicker: "Fun and useful",
   intro:
-    "DogHaven's fun section is built for real dog owners: playful quizzes, printable-style planners, dog name tools and activity ideas that still respect heat, safety, training, health and local rules.",
+    "Dog Haven's fun section is built for real dog owners: playful quizzes, printable-style planners, dog name tools and activity ideas that still respect heat, safety, training, health and local rules.",
   cards: [
     { title: "Dog Personality Quiz", description: "A light quiz with practical care links by result.", href: "/tools/dog-personality-quiz" },
     { title: "Puppy Readiness Quiz", description: "Check time, budget, training and vet-care readiness.", href: "/tools/puppy-readiness-quiz" },
@@ -328,15 +328,15 @@ export const funHub: HubContent = {
     ...topics.map((topic) => ({ title: topic.title, description: topic.description, href: `/fun/${topic.slug}` })),
   ],
   related: [
-    { title: "Tools", description: "All free DogHaven tools.", href: "/tools" },
+    { title: "Tools", description: "All free Dog Haven tools.", href: "/tools" },
     { title: "Dog Names", description: "Name guides and naming tools.", href: "/dog-names" },
     { title: "Breeds", description: "Breed chooser guides and comparison tools.", href: "/breeds" },
     { title: "Puppy", description: "First-year puppy care and checklists.", href: "/puppy" },
-    { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+    { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
   ],
   faqs: [
     {
-      question: "Are DogHaven fun tools professional advice?",
+      question: "Are Dog Haven fun tools professional advice?",
       answer:
         "No. They are educational and playful planning aids. Health, behaviour, insurance and legal decisions need the right professional or provider.",
     },
@@ -384,7 +384,7 @@ export const phase27FunGuidePages: GuideContent[] = topics.map((topic) => ({
       checklist: topic.safety,
     },
     {
-      heading: "Useful DogHaven next steps",
+      heading: "Useful Dog Haven next steps",
       body: [
         "Use the related tools and guides to plan routes, routines, names, training games and dog-friendly outings more thoughtfully.",
       ],
@@ -394,9 +394,9 @@ export const phase27FunGuidePages: GuideContent[] = topics.map((topic) => ({
   related: topic.related,
   sources: [
     {
-      label: "DogHaven editorial policy",
+      label: "Dog Haven editorial policy",
       href: "/editorial-policy",
-      note: "DogHaven's public standards for practical, original, South Africa-focused dog-owner guidance.",
+      note: "Dog Haven's public standards for practical, original, South Africa-focused dog-owner guidance.",
     },
   ],
 }));

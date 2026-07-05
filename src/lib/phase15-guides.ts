@@ -65,7 +65,7 @@ const guides: FoodGuide[] = [
     description:
       "Choose dog food in South Africa by life stage, size, calories, digestion, budget and vet advice. No brand rankings or affiliate recommendations.",
     summary:
-      "The best dog food is the food that suits your dog's life stage, size, body condition, health, digestion, activity, budget, and your vet's guidance. DogHaven does not crown one brand as best.",
+      "The best dog food is the food that suits your dog's life stage, size, body condition, health, digestion, activity, budget, and your vet's guidance. Dog Haven does not crown one brand as best.",
     context:
       "South African owners balance supermarket availability, vet-shop foods, online delivery, township and rural access, high summer heat, puppy growth, senior care, allergies, and budget pressure. A practical choice should be sustainable and safe, not just fashionable.",
     rows: [
@@ -98,9 +98,9 @@ const guides: FoodGuide[] = [
     ],
     faqs: [
       {
-        question: "Does DogHaven recommend a best dog food brand?",
+        question: "Does Dog Haven recommend a best dog food brand?",
         answer:
-          "No. DogHaven explains how to compare foods neutrally. Your dog's needs and your vet's guidance matter more than a universal brand ranking.",
+          "No. Dog Haven explains how to compare foods neutrally. Your dog's needs and your vet's guidance matter more than a universal brand ranking.",
       },
       {
         question: "Is premium food always better?",
@@ -720,7 +720,7 @@ const guides: FoodGuide[] = [
     description:
       "A South African dog feeding calculator guide explaining feeding estimates, weight, age stage, activity, body condition, food type, and vet guidance.",
     summary:
-      "Use the DogHaven feeding calculator as an educational starting point. Always check the food packaging and ask a vet for puppies, seniors, overweight dogs, pregnant dogs, and dogs with health issues.",
+      "Use the Dog Haven feeding calculator as an educational starting point. Always check the food packaging and ask a vet for puppies, seniors, overweight dogs, pregnant dogs, and dogs with health issues.",
     context:
       "Feeding calculators can help owners stop guessing, but they cannot know your dog's health history, exact food calories, body condition, or medical needs.",
     rows: [
@@ -782,7 +782,7 @@ const guides: FoodGuide[] = [
     summary:
       "Budget matters, but the cheapest bag is not always cheapest per day. Compare feeding amount, calories, digestibility, stool quality, body condition, and whether the food is complete.",
     context:
-      "Many South African owners are cost-conscious. DogHaven does not shame budget decisions; the goal is to choose the safest food you can maintain consistently.",
+      "Many South African owners are cost-conscious. Dog Haven does not shame budget decisions; the goal is to choose the safest food you can maintain consistently.",
     rows: [
       ["Bag price", "Easy to compare, but incomplete."],
       ["Cost per day", "More useful than price per bag."],
@@ -954,7 +954,7 @@ const guides: FoodGuide[] = [
     title: "How Much to Feed a Dog in South Africa",
     seoTitle: "How Much to Feed a Dog South Africa | Portions and Calculator",
     description:
-      "A practical South African dog feeding guide covering portions, life stage, body condition, activity, treats, label guidance, and the DogHaven feeding calculator.",
+      "A practical South African dog feeding guide covering portions, life stage, body condition, activity, treats, label guidance, and the Dog Haven feeding calculator.",
     summary:
       "How much to feed a dog depends on age, size, body condition, activity, food type, treats, health, and vet advice. Start with the label and feeding calculator, then adjust with your dog's condition and your vet's guidance.",
     context:
@@ -983,7 +983,7 @@ const guides: FoodGuide[] = [
     ],
     checklist: [
       "Check the feeding guide on the actual food bag, tin, or label.",
-      "Use the DogHaven dog feeding calculator as a starting estimate.",
+      "Use the Dog Haven dog feeding calculator as a starting estimate.",
       "Record treats, chews, toppers, and table scraps.",
       "Check body condition every few weeks.",
       "Ask a vet if your dog is a puppy, senior, overweight, underweight, pregnant, ill, or on a special diet.",
@@ -1091,7 +1091,7 @@ function toGuide(guide: FoodGuide): GuideContent {
     intro: guide.summary,
     updated: reviewed,
     quickFacts: [
-      "DogHaven food pages are educational and do not replace veterinary nutrition advice.",
+      "Dog Haven food pages are educational and do not replace veterinary nutrition advice.",
       "Needs vary by age, breed, weight, activity, health, body condition, budget, and vet guidance.",
       guide.summary,
       "For puppies, seniors, pregnant dogs, overweight dogs, diagnosed conditions, or ongoing symptoms, ask a veterinarian.",
@@ -1136,7 +1136,7 @@ function toGuide(guide: FoodGuide): GuideContent {
         checklist: guide.checklist,
       },
       {
-        heading: "Useful DogHaven tools",
+        heading: "Useful Dog Haven tools",
         body: [
           "Free tools can help you estimate, organise, and check common decisions. They are educational only and do not collect personal information.",
         ],

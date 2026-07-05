@@ -72,7 +72,7 @@ const insuranceGuides: MoneyGuide[] = [
     summary:
       "Compare dog insurance by reading the policy wording, not just the monthly premium. The cheapest premium can still be expensive if excesses, limits, exclusions, waiting periods, or claim rules do not suit your dog.",
     context:
-      "South African pet insurance products can differ in accident cover, illness cover, routine care add-ons, exclusions, claim processes, and how they treat age, breed, dental issues, hereditary conditions, and pre-existing conditions. DogHaven does not rank insurers or provide financial advice.",
+      "South African pet insurance products can differ in accident cover, illness cover, routine care add-ons, exclusions, claim processes, and how they treat age, breed, dental issues, hereditary conditions, and pre-existing conditions. Dog Haven does not rank insurers or provide financial advice.",
     tableRows: [
       ["Monthly premium", "What you pay regularly, but it is only one part of the comparison."],
       ["Excess", "The amount or percentage you pay when claiming, sometimes per claim or condition."],
@@ -105,9 +105,9 @@ const insuranceGuides: MoneyGuide[] = [
     ],
     faqs: [
       {
-        question: "Does DogHaven recommend one dog insurer?",
+        question: "Does Dog Haven recommend one dog insurer?",
         answer:
-          "No. DogHaven explains comparison factors only. Owners should read current policy documents and contact insurers directly.",
+          "No. Dog Haven explains comparison factors only. Owners should read current policy documents and contact insurers directly.",
       },
       {
         question: "Is the cheapest policy the best option?",
@@ -231,7 +231,7 @@ const insuranceGuides: MoneyGuide[] = [
       {
         question: "Can I rely only on savings instead of insurance?",
         answer:
-          "Some owners do, but savings can be exhausted by one emergency. This is a personal financial decision, not something DogHaven can decide for you.",
+          "Some owners do, but savings can be exhausted by one emergency. This is a personal financial decision, not something Dog Haven can decide for you.",
       },
       {
         question: "What is the biggest cheap-policy risk?",
@@ -286,7 +286,7 @@ const insuranceGuides: MoneyGuide[] = [
       {
         question: "Why avoid the phrase best pet insurance?",
         answer:
-          "Because the right policy depends on your dog's age, health, breed, budget, and risk tolerance. DogHaven does not rank insurers.",
+          "Because the right policy depends on your dog's age, health, breed, budget, and risk tolerance. Dog Haven does not rank insurers.",
       },
       {
         question: "Should I ask about exclusions before price?",
@@ -345,7 +345,7 @@ const insuranceGuides: MoneyGuide[] = [
       {
         question: "Should I insure a puppy immediately?",
         answer:
-          "Many owners compare early because waiting periods and pre-existing condition wording can matter. DogHaven cannot say whether it is right for your finances.",
+          "Many owners compare early because waiting periods and pre-existing condition wording can matter. Dog Haven cannot say whether it is right for your finances.",
       },
       {
         question: "Does puppy insurance cover vaccines?",
@@ -536,7 +536,7 @@ const insuranceGuides: MoneyGuide[] = [
       {
         question: "Which option is better for puppies?",
         answer:
-          "That depends on policy wording, waiting periods, puppy risk, and your finances. DogHaven does not provide personalised advice.",
+          "That depends on policy wording, waiting periods, puppy risk, and your finances. Dog Haven does not provide personalised advice.",
       },
     ],
     related: insuranceRelated,
@@ -768,7 +768,7 @@ const costGuides: MoneyGuide[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven tell me current vaccine prices?",
+        question: "Can Dog Haven tell me current vaccine prices?",
         answer:
           "No. Prices vary by clinic and change over time. Ask your vet for a current quote.",
       },
@@ -1114,8 +1114,8 @@ function toGuide(guide: MoneyGuide): GuideContent {
     updated: reviewed,
     quickFacts: [
       isInsurance
-        ? "DogHaven does not provide financial advice, broker services, insurer rankings, or personalised recommendations."
-        : "DogHaven cost guides are educational planning tools, not clinic quotes or current price lists.",
+        ? "Dog Haven does not provide financial advice, broker services, insurer rankings, or personalised recommendations."
+        : "Dog Haven cost guides are educational planning tools, not clinic quotes or current price lists.",
       "Policy wording, premiums, exclusions, waiting periods, vet fees, and provider prices can change.",
       guide.summary,
       "Check current documents and request quotes directly before making a money decision.",

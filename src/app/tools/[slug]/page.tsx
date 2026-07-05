@@ -138,28 +138,28 @@ export default async function ToolPage({ params }: PageProps) {
       <JsonLd data={faqSchema(tool.faqs)} />
       <section className="section-shell">
         <Breadcrumbs items={[{ name: "Tools", href: "/tools" }, { name: tool.title, href: tool.path }]} />
-        <p className="section-kicker">Free DogHaven tool</p>
+        <p className="section-kicker">Free Dog Haven tool</p>
         <h1 className="section-title">{tool.title}</h1>
         <p className="section-copy">{tool.intro}</p>
-        <div className="mt-6 rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
+        <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
           <p className="font-black text-cocoa">Educational note</p>
           <p className="mt-1">{tool.note}</p>
         </div>
-        <div className="mt-8">
+        <div className="mt-6">
           <ToolWidget slug={tool.slug} />
         </div>
-        <section className="mt-12">
+        <section className="mt-8">
           <h2 className="text-2xl font-black text-cocoa">Helpful next guides</h2>
-          <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {tool.related.map((card) => (
               <ContentLinkCard key={`${tool.slug}-${card.href}`} {...card} />
             ))}
           </div>
         </section>
 
-        <section className="mt-10 max-w-4xl">
+        <section className="mt-8 max-w-4xl">
           <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
-          <div className="mt-5">
+          <div className="mt-4">
             <FAQBlock items={tool.faqs} />
           </div>
         </section>

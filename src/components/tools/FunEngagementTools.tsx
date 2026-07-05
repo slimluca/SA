@@ -125,7 +125,7 @@ export function DogPersonalityQuiz() {
         </div>
         <ResultCard
           title={result?.title ?? "Pick a few answers"}
-          copy={result?.copy ?? "Answer the quiz and DogHaven will show a playful result with practical next links."}
+          copy={result?.copy ?? "Answer the quiz and Dog Haven will show a playful result with practical next links."}
           links={result?.links ?? [{ label: "Dog enrichment ideas", href: "/fun/dog-enrichment-ideas-south-africa" }]}
         />
       </div>

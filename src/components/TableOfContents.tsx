@@ -17,7 +17,7 @@ export function TableOfContents({ items }: { items: readonly TableOfContentsItem
   }
 
   return (
-    <nav className="mt-8 rounded-2xl border border-oat bg-white p-5 shadow-sm" aria-label="Guide contents">
+    <nav className="mt-6 rounded-xl border border-oat bg-white p-5 shadow-panel" aria-label="Guide contents">
       <h2 className="text-xl font-black text-cocoa">On this page</h2>
       <ol className="mt-4 grid gap-2 sm:grid-cols-2">
         {items.map((item) => (

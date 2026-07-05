@@ -593,7 +593,7 @@ const topics: BreedLifestyleTopic[] = [
       { question: "What should first-time owners budget for?", answer: "Food, vet care, parasite prevention, training, grooming, insurance or savings, supplies, and emergency care." },
     ],
     related: [
-      { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+      { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
       { title: "Puppy Care", description: "First-year puppy planning.", href: "/puppy/puppy-care-south-africa" },
       { title: "Dog Adoption", description: "Shelter and rescue guidance.", href: "/adoption/dog-adoption-south-africa" },
       ...commonRelated,

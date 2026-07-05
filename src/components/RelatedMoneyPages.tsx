@@ -7,14 +7,14 @@ export function RelatedMoneyPages({ pages }: { pages: CardLink[] }) {
   }
 
   return (
-    <section className="section-shell pt-4">
+    <section className="section-shell section-tight">
       <p className="section-kicker">Insurance and cost guides</p>
       <h2 className="section-title">Money decisions without fake rankings or pressure</h2>
       <p className="section-copy">
         Compare costs, cover, exclusions, feeding budgets, and emergency planning with neutral
         South Africa-specific guidance. No affiliate links, fake prices, or insurer rankings.
       </p>
-      <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {pages.map((page) => (
           <ContentLinkCard key={page.href} {...page} />
         ))}

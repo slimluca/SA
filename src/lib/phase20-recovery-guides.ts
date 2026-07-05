@@ -64,7 +64,7 @@ const phase20Guides: GuideContent[] = [
       "Dog grooming costs in South Africa vary widely by dog, coat, city, provider, travel, and what is included. This guide helps you compare quotes without relying on fake exact prices or unverified local listings.",
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not publish fake exact grooming prices or rank groomers.",
+      "Dog Haven does not publish fake exact grooming prices or rank groomers.",
       "Dog size, coat type, matting, behaviour, and mobile travel can all change the quote.",
       "Skin, ear, wound, severe matting, pain, ticks, or flea problems may need veterinary advice.",
       "Ask for a written quote that explains what is included before you book.",
@@ -117,7 +117,7 @@ const phase20Guides: GuideContent[] = [
           "Ask for a current written quote.",
           "Budget extra for long coats, curly coats, de-shedding, matting, or mobile travel.",
           "Use local cost guides for city-specific quote factors.",
-          "Use the DogHaven cost calculator to estimate grooming alongside food, vet care, and insurance.",
+          "Use the Dog Haven cost calculator to estimate grooming alongside food, vet care, and insurance.",
         ],
       },
     ],
@@ -125,7 +125,7 @@ const phase20Guides: GuideContent[] = [
       {
         question: "What is the average dog grooming cost in South Africa?",
         answer:
-          "DogHaven avoids unsourced averages because costs vary by city, provider, dog size, coat, condition, and service. Ask providers for current written quotes.",
+          "Dog Haven avoids unsourced averages because costs vary by city, provider, dog size, coat, condition, and service. Ask providers for current written quotes.",
       },
       {
         question: "Is mobile grooming more expensive?",
@@ -159,7 +159,7 @@ const phase20Guides: GuideContent[] = [
       "Dog training costs in South Africa depend on the format, trainer experience, dog behaviour, travel, class size, and support included. This page helps you compare options without fake prices or trainer rankings.",
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not rank trainers or publish fake exact training prices.",
+      "Dog Haven does not rank trainers or publish fake exact training prices.",
       "Puppy classes, group lessons, private sessions, and behaviour support are different services.",
       "Humane, reward-based methods should involve the owner and avoid fear or intimidation.",
       "Sudden behaviour changes, aggression, pain, or severe anxiety may need veterinary or qualified behaviour support.",
@@ -209,7 +209,7 @@ const phase20Guides: GuideContent[] = [
         checklist: [
           "Budget for puppy foundations before problem behaviour becomes ingrained.",
           "Ask whether group or private training best suits your dog.",
-          "Compare city cost factors in DogHaven local cost guides.",
+          "Compare city cost factors in Dog Haven local cost guides.",
           "Use the breed match quiz before choosing a high-energy or specialist breed.",
         ],
       },
@@ -350,7 +350,7 @@ const phase20Guides: GuideContent[] = [
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
-      "DogHaven does not publish fake clinic prices or fake vet listings.",
+      "Dog Haven does not publish fake clinic prices or fake vet listings.",
       "A consultation fee may not include vaccines, tests, medication, imaging, procedures, or follow-up care.",
       "Puppies, seniors, chronic conditions, and urgent symptoms may need more than a routine consult.",
       "Ask the clinic what is included before the appointment if cost planning is important.",
@@ -395,9 +395,9 @@ const phase20Guides: GuideContent[] = [
     ],
     faqs: [
       {
-        question: "Why does DogHaven not list vet consultation prices?",
+        question: "Why does Dog Haven not list vet consultation prices?",
         answer:
-          "Prices change and vary by clinic, city, appointment type, and what is included. DogHaven avoids fake price lists and encourages owners to ask clinics directly.",
+          "Prices change and vary by clinic, city, appointment type, and what is included. Dog Haven avoids fake price lists and encourages owners to ask clinics directly.",
       },
       {
         question: "Is a vaccination visit the same as a consult?",
@@ -428,7 +428,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A practical South African guide to choosing a vet, checking registration context, asking questions, planning emergencies, and using local city and province guidance without fake directories.",
     intro:
-      "DogHaven does not publish fake vet listings or phone numbers. This guide explains how South African dog owners can choose a vet more carefully, what to ask, and how to prepare for routine and emergency care.",
+      "Dog Haven does not publish fake vet listings or phone numbers. This guide explains how South African dog owners can choose a vet more carefully, what to ask, and how to prepare for routine and emergency care.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -477,9 +477,9 @@ const phase20Guides: GuideContent[] = [
     ],
     faqs: [
       {
-        question: "Does DogHaven list vets near me?",
+        question: "Does Dog Haven list vets near me?",
         answer:
-          "No. DogHaven is not a verified vet directory. Use this guide to know what to check directly with clinics and official sources.",
+          "No. Dog Haven is not a verified vet directory. Use this guide to know what to check directly with clinics and official sources.",
       },
       {
         question: "Should I choose the closest vet?",
@@ -514,7 +514,7 @@ const phase20Guides: GuideContent[] = [
       "Mobile dog grooming can be convenient for South African owners, especially with busy schedules, nervous dogs, seniors, or homes far from a parlour. It still needs the same safety, hygiene, coat, and handling questions as any grooming service.",
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not list or verify mobile groomers yet.",
+      "Dog Haven does not list or verify mobile groomers yet.",
       "Mobile grooming may reduce travel stress, but it is not automatically the right fit for every dog.",
       "Ask about water, electricity, parking, hygiene, handling, coat limits, and what happens if medical concerns are found.",
       "Severe matting, wounds, painful ears, skin infection, or parasites may need a vet plan.",
@@ -750,11 +750,11 @@ const phase20Guides: GuideContent[] = [
     description:
       "A neutral South African dog food price guide covering monthly food budget factors, dog size, life stage, food type, budget vs premium tradeoffs, and feeding calculator links.",
     intro:
-      "Dog food prices in South Africa change by brand, bag size, retailer, ingredients, life stage, dog size, calories, and availability. DogHaven does not publish fake current prices; this guide helps you understand the budget factors that matter.",
+      "Dog food prices in South Africa change by brand, bag size, retailer, ingredients, life stage, dog size, calories, and availability. Dog Haven does not publish fake current prices; this guide helps you understand the budget factors that matter.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
-      "DogHaven does not rank dog food brands or publish fake current prices.",
+      "Dog Haven does not rank dog food brands or publish fake current prices.",
       "Monthly cost depends on calories fed, dog size, age, activity, body condition, and food type.",
       "A cheaper bag is not always cheaper per day if feeding amounts are higher.",
       "Ask a vet for puppies, seniors, overweight dogs, allergies, chronic illness, or special diets.",
@@ -802,7 +802,7 @@ const phase20Guides: GuideContent[] = [
       {
         question: "What is the cheapest dog food in South Africa?",
         answer:
-          "DogHaven does not rank or recommend the cheapest brand. Compare suitability, daily feeding amount, safety, and your dog's health needs.",
+          "Dog Haven does not rank or recommend the cheapest brand. Compare suitability, daily feeding amount, safety, and your dog's health needs.",
       },
       {
         question: "Is premium dog food always better?",
@@ -812,7 +812,7 @@ const phase20Guides: GuideContent[] = [
       {
         question: "How can I estimate monthly food cost?",
         answer:
-          "Use feeding guidance on the food packaging, your dog's body condition, and DogHaven's feeding and cost calculators as planning tools.",
+          "Use feeding guidance on the food packaging, your dog's body condition, and Dog Haven's feeding and cost calculators as planning tools.",
       },
     ],
     related: [
@@ -836,7 +836,7 @@ const phase20Guides: GuideContent[] = [
       "Pet insurance may be worth considering if a large unexpected vet bill would be hard to pay from savings. It is not automatically right for every owner, every dog, or every policy. This guide is educational only and is not personalised financial advice.",
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not recommend or rank insurers.",
+      "Dog Haven does not recommend or rank insurers.",
       "This page is educational and is not personalised financial advice.",
       "Policy wording, premiums, excesses, waiting periods, exclusions, and limits can change.",
       "Read insurer documents directly and ask questions before buying cover.",
@@ -899,9 +899,9 @@ const phase20Guides: GuideContent[] = [
           "Not completely. You may still need money for excesses, exclusions, upfront payments, waiting periods, or costs above limits.",
       },
       {
-        question: "Does DogHaven recommend an insurer?",
+        question: "Does Dog Haven recommend an insurer?",
         answer:
-          "No. DogHaven does not rank insurers or provide personalised financial advice. Compare policy documents directly.",
+          "No. Dog Haven does not rank insurers or provide personalised financial advice. Compare policy documents directly.",
       },
     ],
     related: [

@@ -144,7 +144,7 @@ const insuranceSources: Source[] = [
 ];
 
 const costDisclaimer =
-  "Budget ranges on DogHaven are planning examples only. Real costs vary by province, city, clinic, dog size, health, age, inflation, product choice, and urgency. Always request direct quotes from vets, shelters, groomers, trainers, insurers, and suppliers.";
+  "Budget ranges on Dog Haven are planning examples only. Real costs vary by province, city, clinic, dog size, health, age, inflation, product choice, and urgency. Always request direct quotes from vets, shelters, groomers, trainers, insurers, and suppliers.";
 
 const phase5GuidePagesRaw: GuideContent[] = [
   {
@@ -707,7 +707,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
       {
         question: "Which pet insurer is best in South Africa?",
         answer:
-          "DogHaven does not rank insurers. The best fit depends on your dog, budget, risk tolerance, policy wording, exclusions, and claims process.",
+          "Dog Haven does not rank insurers. The best fit depends on your dog, budget, risk tolerance, policy wording, exclusions, and claims process.",
       },
       {
         question: "Will insurance cover my dog's existing problem?",
@@ -963,7 +963,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
           "Use it before switching foods, comparing cheap and premium options, adding toppers, choosing puppy or senior food, or deciding whether a symptom should be discussed with a vet rather than treated as a food problem.",
         ],
         table: {
-          headers: ["Decision", "Helpful DogHaven next step"],
+          headers: ["Decision", "Helpful Dog Haven next step"],
           rows: [
             ["Portion uncertainty", "Use the feeding calculator, then compare with the food label and body condition."],
             ["Monthly food budget", "Read the dog food cost guide and dog food prices guide before changing quality level."],

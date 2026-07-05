@@ -165,10 +165,10 @@ export function ContactForm() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="section-kicker">Send a message</p>
-          <h2 className="mt-2 text-2xl font-black text-cocoa">Contact DogHaven</h2>
+          <h2 className="mt-2 text-2xl font-black text-cocoa">Contact Dog Haven</h2>
           <p className="mt-3 max-w-2xl leading-7 text-bark">
             Use this form for editorial feedback, corrections, topic ideas, listing enquiries,
-            partnership enquiries, or general questions. DogHaven does not provide emergency
+            partnership enquiries, or general questions. Dog Haven does not provide emergency
             veterinary support by email.
           </p>
         </div>
@@ -190,7 +190,7 @@ export function ContactForm() {
             <div>
               <h3 className="font-black text-cocoa">Message sent</h3>
               <p className="mt-1 text-sm leading-6">
-                Thanks for helping improve DogHaven. We will review your message, but we cannot
+                Thanks for helping improve Dog Haven. We will review your message, but we cannot
                 promise immediate replies.
               </p>
             </div>
@@ -292,7 +292,7 @@ export function ContactForm() {
             onChange={(event) => updateField("consent", event.target.checked)}
           />
           <span>
-            I understand DogHaven does not provide emergency veterinary support and this message is
+            I understand Dog Haven does not provide emergency veterinary support and this message is
             not for urgent animal care.
           </span>
         </label>
@@ -311,7 +311,7 @@ export function ContactForm() {
 
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
           <p className="text-sm leading-6 text-bark">
-            We use the information you submit only to respond to your message and improve DogHaven.{" "}
+            We use the information you submit only to respond to your message and improve Dog Haven.{" "}
             <a className="font-black text-moss underline-offset-4 hover:underline" href="/privacy-policy">
               Privacy policy
             </a>

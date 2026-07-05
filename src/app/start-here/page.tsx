@@ -66,7 +66,7 @@ const sections = [
     title: "Free tools",
     description: "Use simple calculators, checklists, quizzes, name ideas, and food safety lookups without logins or personal data.",
     links: [
-      { title: "Tools Hub", description: "All free DogHaven tools in one place.", href: "/tools" },
+      { title: "Tools Hub", description: "All free Dog Haven tools in one place.", href: "/tools" },
       { title: "Dog Age Calculator", description: "Estimate broad life stage reminders.", href: "/tools/dog-age-calculator" },
       { title: "Breed Match Quiz", description: "Explore broad responsible breed categories.", href: "/tools/dog-breed-match-quiz" },
       { title: "Breed Comparison Checklist", description: "Compare breed care needs before choosing.", href: "/tools/dog-breed-comparison-checklist" },
@@ -119,26 +119,26 @@ const sections = [
 
 const faqs = [
   {
-    question: "Where should a new DogHaven reader start?",
+    question: "Where should a new Dog Haven reader start?",
     answer:
       "Start with the section that matches your immediate question: puppy, adoption, emergency, health, food, costs, training, grooming, dog-friendly lifestyle, or local guides.",
   },
   {
-    question: "Does DogHaven replace professional advice?",
+    question: "Does Dog Haven replace professional advice?",
     answer:
-      "No. DogHaven is educational. Urgent symptoms need a veterinarian, behaviour danger needs qualified help, and insurance or cost decisions should be checked directly with providers.",
+      "No. Dog Haven is educational. Urgent symptoms need a veterinarian, behaviour danger needs qualified help, and insurance or cost decisions should be checked directly with providers.",
   },
   {
-    question: "Are DogHaven local pages directories?",
+    question: "Are Dog Haven local pages directories?",
     answer:
-      "No. DogHaven does not publish unverified listings. Local pages help owners know what to ask and what to verify directly.",
+      "No. Dog Haven does not publish unverified listings. Local pages help owners know what to ask and what to verify directly.",
   },
 ];
 
 export const metadata: Metadata = createMetadata({
   title: "Start Here | Dog Haven South Africa",
   description:
-    "A simple starting page for South African dog owners, linking to DogHaven's most useful puppy, adoption, emergency, health, food, tools, cost, training, grooming, lifestyle, rules, province, and city guides.",
+    "A simple starting page for South African dog owners, linking to Dog Haven's most useful puppy, adoption, emergency, health, food, tools, cost, training, grooming, lifestyle, rules, province, and city guides.",
   path: "/start-here",
 });
 
@@ -148,7 +148,7 @@ export default function StartHerePage() {
       <JsonLd
         data={collectionPageSchema({
           title: "Start Here",
-          description: "A practical starting point for South African dog owners using DogHaven.",
+          description: "A practical starting point for South African dog owners using Dog Haven.",
           path: "/start-here",
         })}
       />
@@ -156,18 +156,18 @@ export default function StartHerePage() {
       <section className="section-shell">
         <Breadcrumbs items={[{ name: "Start Here", href: "/start-here" }]} />
         <p className="section-kicker">Start here</p>
-        <h1 className="section-title">Find the right DogHaven guide faster</h1>
+        <h1 className="section-title">Find the right Dog Haven guide faster</h1>
         <p className="section-copy">
-          DogHaven is built for practical South African dog ownership. Use this page to jump to the
+          Dog Haven is built for practical South African dog ownership. Use this page to jump to the
           most useful guides for your dog, your home, and the decision in front of you.
         </p>
 
-        <div className="mt-10 space-y-12">
+        <div className="mt-7 space-y-8">
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-2xl font-black text-cocoa">{section.title}</h2>
               <p className="mt-2 max-w-3xl leading-7 text-bark">{section.description}</p>
-              <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {section.links.map((link) => (
                   <ContentLinkCard key={`${section.title}-${link.title}`} {...link} />
                 ))}
@@ -176,9 +176,9 @@ export default function StartHerePage() {
           ))}
         </div>
 
-        <section className="mt-12">
+        <section className="mt-8">
           <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
-          <div className="mt-5">
+          <div className="mt-4">
             <FAQBlock items={faqs} />
           </div>
         </section>

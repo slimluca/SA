@@ -326,7 +326,7 @@ const breeds: BreedSpec[] = [
     summary:
       "Pit Bull type dogs need responsible, informed owners who prioritise safety, welfare, training, legal awareness, and honest assessment over image or protection expectations.",
     context:
-      "Pit Bull type dogs are a sensitive topic in South Africa. DogHaven does not promote hype, fear, or status ownership. Any powerful dog requires careful management, humane training, secure containment, and respect for public safety.",
+      "Pit Bull type dogs are a sensitive topic in South Africa. Dog Haven does not promote hype, fear, or status ownership. Any powerful dog requires careful management, humane training, secure containment, and respect for public safety.",
     bestFor: ["Experienced, responsible owners", "Homes committed to management and training", "Owners willing to check rules, insurance, and community safety"],
     notIdealFor: ["Status ownership", "Homes with poor fencing", "Owners wanting a dog for intimidation or fighting culture"],
     size: "Medium and powerful; strength matters more than height.",
@@ -748,7 +748,7 @@ function toGuide(breed: BreedSpec): GuideContent {
         heading: "Adoption and responsible breeder guidance",
         body: [
           breed.adoption,
-          "DogHaven does not publish fake breeder listings or verified badges. Verify organisations and breeders directly, ask for written records, meet dogs safely where possible, and walk away from pressure selling.",
+          "Dog Haven does not publish fake breeder listings or verified badges. Verify organisations and breeders directly, ask for written records, meet dogs safely where possible, and walk away from pressure selling.",
         ],
         checklist: [
           "Ask for vaccination, deworming, microchip, and veterinary records.",

@@ -271,7 +271,7 @@ const items: FoodSafetyItem[] = [
     shortAnswer:
       "No. Dogs should not be fed garlic, garlic powder, garlic butter, garlic sauce, or garlic-heavy leftovers.",
     context:
-      "Garlic is common in marinades, braai bread, sauces, stews, takeaways, spice mixes, and home remedies. DogHaven does not recommend using garlic as a flea remedy or health supplement for dogs.",
+      "Garlic is common in marinades, braai bread, sauces, stews, takeaways, spice mixes, and home remedies. Dog Haven does not recommend using garlic as a flea remedy or health supplement for dogs.",
     why: [
       "Garlic is part of the allium family and can damage red blood cells.",
       "Powdered or concentrated garlic can be especially concerning.",
@@ -287,7 +287,7 @@ const items: FoodSafetyItem[] = [
       {
         question: "Can garlic prevent fleas in dogs?",
         answer:
-          "DogHaven does not recommend garlic for flea prevention. Ask your vet for safe tick and flea products.",
+          "Dog Haven does not recommend garlic for flea prevention. Ask your vet for safe tick and flea products.",
       },
       {
         question: "Is garlic powder worse than fresh garlic?",
@@ -405,7 +405,7 @@ const items: FoodSafetyItem[] = [
     doNow: ["Remove access to bones and bins.", "Check breathing and comfort.", "Phone your vet and describe the bone type and amount.", "Follow vet instructions for monitoring or coming in."],
     avoid: ["Do not induce vomiting unless a vet instructs you.", "Do not give laxatives, oil, bread, or cotton wool without vet advice.", "Do not ignore pain, retching, or bloating."],
     vetNow: ["Breathing, choking, or gagging signs appear.", "Repeated vomiting, bloating, pain, bloody stool, or weakness occurs.", "Your dog ate many bones or sharp pieces."],
-    safer: ["Use dog-safe chew toys or vet-approved dental products.", "Keep braai and roast scraps in a sealed bin.", "Tell guests that DogHaven's house rule is no cooked bones."],
+    safer: ["Use dog-safe chew toys or vet-approved dental products.", "Keep braai and roast scraps in a sealed bin.", "Tell guests that Dog Haven's house rule is no cooked bones."],
     checklist: ["Bone type identified.", "Breathing checked.", "Vet contacted.", "No home remedies given.", "Bins secured."],
     faqs: [
       {
@@ -843,7 +843,7 @@ function guideFor(item: FoodSafetyItem): GuideContent {
     title: item.title,
     seoTitle: item.seoTitle,
     description: item.description,
-    intro: `${item.shortAnswer} This DogHaven guide explains the practical South African context, warning signs, safer choices, and when to phone a vet.`,
+    intro: `${item.shortAnswer} This Dog Haven guide explains the practical South African context, warning signs, safer choices, and when to phone a vet.`,
     updated: reviewed,
     isHealthGuide: !isLowRisk,
     safetyRating: {

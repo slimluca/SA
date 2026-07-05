@@ -153,27 +153,26 @@ export const featuredGuides = [
 
 export const trustItems = [
   "South Africa-focused",
-  "No fake listings",
   "Sources listed where needed",
-  "Built for real dog owners",
+  "Practical owner guidance",
   "Directory listings only after manual verification",
 ] as const;
 
 export const homeFaqs = [
   {
-    question: "Does DogHaven replace veterinary advice?",
+    question: "Does Dog Haven replace veterinary advice?",
     answer:
-      "No. DogHaven helps owners understand symptoms, preparation, prevention, and next steps, but urgent or medical concerns should be discussed with a qualified veterinarian.",
+      "No. Dog Haven helps owners understand symptoms, preparation, prevention, and next steps, but urgent or medical concerns should be discussed with a qualified veterinarian.",
   },
   {
-    question: "Will DogHaven publish business listings?",
+    question: "Will Dog Haven publish business listings?",
     answer:
-      "Directory listings may be added later only after manual verification. DogHaven will not publish fake listings, fake reviews, unsupported badges, or invented phone numbers.",
+      "Directory listings may be added later only after manual verification. Dog Haven will not publish fake listings, fake reviews, unsupported badges, or invented phone numbers.",
   },
   {
     question: "Why is the site focused on South Africa?",
     answer:
-      "Dog care decisions are shaped by local disease risks, climate, costs, adoption realities, travel patterns, and available services, so DogHaven is written for South African owners first.",
+      "Dog care decisions are shaped by local disease risks, climate, costs, adoption realities, travel patterns, and available services, so Dog Haven is written for South African owners first.",
   },
 ] as const;
 
@@ -205,13 +204,13 @@ export const contactReasons = [
   {
     title: "Share a correction",
     description:
-      "If something is unclear, outdated, or missing important context, DogHaven will review it carefully before updating the page.",
+      "If something is unclear, outdated, or missing important context, Dog Haven will review it carefully before updating the page.",
     icon: ShieldCheck,
   },
   {
     title: "Ask about listings",
     description:
-      "DogHaven is not accepting unverified directory listings yet. Future listings will require manual checks before publication.",
+      "Dog Haven is not accepting unverified directory listings yet. Future listings will require manual checks before publication.",
     icon: MapPinned,
   },
 ] as const;

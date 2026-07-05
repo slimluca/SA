@@ -9,11 +9,11 @@ type GuideCardProps = {
 
 export function GuideCard({ title, description, label, href }: GuideCardProps) {
   const content = (
-    <article className="flex h-full min-h-[230px] flex-col rounded-2xl border border-oat bg-white p-5 shadow-sm">
-      <p className="mb-4 inline-flex w-fit rounded-full bg-sky px-3 py-1 text-xs font-black uppercase tracking-wide text-cocoa">
+    <article className="flex h-full min-h-[180px] flex-col rounded-xl border border-oat/80 bg-white/88 p-5 shadow-panel">
+      <p className="mb-4 inline-flex w-fit rounded-full bg-sky px-3 py-1 text-xs font-black uppercase tracking-wide text-navy">
         {label}
       </p>
-      <h3 className="text-xl font-black leading-snug text-cocoa">{title}</h3>
+      <h3 className="text-xl font-black leading-snug text-navy">{title}</h3>
       <p className="mt-3 text-sm leading-6 text-bark">{description}</p>
     </article>
   );
@@ -23,7 +23,7 @@ export function GuideCard({ title, description, label, href }: GuideCardProps) {
   }
 
   return (
-    <Link href={href} className="block h-full transition hover:-translate-y-1 hover:shadow-soft">
+    <Link href={href} className="block h-full transition hover:shadow-soft">
       {content}
     </Link>
   );

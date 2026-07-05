@@ -415,7 +415,7 @@ function sectionsFor(city: ExpansionCity, service: ExpansionService) {
     {
       heading: "Cost and planning factors",
       body: [
-        "DogHaven does not publish invented exact prices. Use this section to understand what can affect a quote, then ask the provider for current written information.",
+        "Dog Haven does not publish invented exact prices. Use this section to understand what can affect a quote, then ask the provider for current written information.",
         "Local cost differences can come from travel distance, suburb, time of day, season, dog size, behaviour, coat or health needs, public holidays, and whether extras are included.",
       ],
       table: {
@@ -459,7 +459,7 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
     sections: sectionsFor(city, service),
     faqs: [
       {
-        question: `Does DogHaven list verified providers in ${city.name}?`,
+        question: `Does Dog Haven list verified providers in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then confirm services, prices, availability, contact details, and suitability directly before booking or visiting.",
       },
@@ -487,7 +487,7 @@ export const phase28LocalCityHubs: HubContent[] = phase28ExpansionCities.map((ci
   slug: `local-${city.slug}`,
   path: `/local/${city.slug}`,
   title: `${city.name} Local Dog Guides`,
-  seoTitle: `${city.name} Dog Services and Local Dog Owner Guide | DogHaven`,
+  seoTitle: `${city.name} Dog Services and Local Dog Owner Guide | Dog Haven`,
   description: `Helpful ${city.name} dog-owner guides for grooming, training, emergency vet planning, dog-friendly outings, cost planning, and safe provider questions with practical checks and verified local options where available.`,
   kicker: "Local city guide",
   intro: `${city.localContext} These guides help ${city.name} owners prepare safer questions, check local rules directly, and plan dog care without relying on fake business listings.`,
@@ -497,7 +497,7 @@ export const phase28LocalCityHubs: HubContent[] = phase28ExpansionCities.map((ci
     href: pathFor(city, service),
   })),
   related: [
-    { title: "All Local Guides", description: "Browse DogHaven local service guides by city and service type.", href: "/local" },
+    { title: "All Local Guides", description: "Browse Dog Haven local service guides by city and service type.", href: "/local" },
     { title: `${city.province} Province Guide`, description: "Province-level dog care, climate, and local risk context.", href: `/province/${city.provinceSlug}` },
     { title: "Dog Cost Calculator", description: "Estimate monthly costs before booking services.", href: "/tools/dog-cost-calculator" },
     { title: "Training Guides", description: "Humane behaviour and public manners guidance.", href: "/training" },

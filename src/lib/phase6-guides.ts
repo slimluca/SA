@@ -265,7 +265,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "Should training use punishment?",
         answer:
-          "DogHaven recommends humane, reward-based training and avoiding fear, pain, intimidation, or harsh correction.",
+          "Dog Haven recommends humane, reward-based training and avoiding fear, pain, intimidation, or harsh correction.",
       },
       {
         question: "How long should training sessions be?",
@@ -662,7 +662,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical South African checklist for choosing a humane dog trainer, including methods, owner involvement, qualifications, class safety, and red flags.",
     intro:
-      "DogHaven does not list or rank trainers. Instead, this guide helps you ask better questions so you can choose someone who treats dogs and people fairly, explains their methods, and keeps safety central.",
+      "Dog Haven does not list or rank trainers. Instead, this guide helps you ask better questions so you can choose someone who treats dogs and people fairly, explains their methods, and keeps safety central.",
     updated: "2026-05-13",
     quickFacts: [
       "Choose trainers who use humane, reward-based, welfare-focused methods.",
@@ -723,9 +723,9 @@ export const phase6GuidePages: GuideContent[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven recommend a trainer near me?",
+        question: "Can Dog Haven recommend a trainer near me?",
         answer:
-          "Not yet. DogHaven does not publish unverified listings. Use this checklist to vet trainers directly.",
+          "Not yet. Dog Haven does not publish unverified listings. Use this checklist to vet trainers directly.",
       },
       {
         question: "Is board-and-train a good idea?",
@@ -1219,7 +1219,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical checklist for choosing a South African dog groomer, covering handling, drying, matting, anxious dogs, senior dogs, vaccination policies, and safety questions.",
     intro:
-      "DogHaven does not publish unverified groomer listings. This guide helps you choose a groomer by asking safety and welfare questions before handing over your dog.",
+      "Dog Haven does not publish unverified groomer listings. This guide helps you choose a groomer by asking safety and welfare questions before handing over your dog.",
     updated: "2026-05-13",
     quickFacts: [
       "A good groomer should answer questions about handling, drying, matting, health concerns, and emergency procedures.",
@@ -1380,7 +1380,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "How do I find dog-friendly places near me?",
         answer:
-          "Use current official venue pages, phone ahead, and verify rules directly. DogHaven does not publish unverified listings.",
+          "Use current official venue pages, phone ahead, and verify rules directly. Dog Haven does not publish unverified listings.",
       },
       {
         question: "Can my dog go off lead if they are friendly?",

@@ -241,7 +241,7 @@ function indexingRecoveryLocalSections(city: LocalCity, service: LocalService) {
           "Before a longer outing, combine this page with the travel checklist and the city emergency preparation guide so rules, comfort, and urgent-care planning are covered together.",
         ],
         table: {
-          headers: ["Need", "Best DogHaven next step"],
+          headers: ["Need", "Best Dog Haven next step"],
           rows: [
             ["Beach or public-space rules", "Check official rules first, then read the beach rules guide."],
             ["Longer road trip", "Use the dog-friendly travel checklist before packing."],
@@ -273,7 +273,7 @@ function descriptionFor(city: LocalCity, service: LocalService) {
   if (service.key === "dog-friendly") {
     return `A practical ${city.name} dog-friendly guide covering rule checks, leash etiquette, heat, water, parks, beaches, cafes, accommodation, and travel planning without fake venue listings.`;
   }
-  return `A practical ${city.name} guide to ${service.seoLabel}, including how to choose safely, questions to ask, cost factors, warning signs, and helpful DogHaven links.`;
+  return `A practical ${city.name} guide to ${service.seoLabel}, including how to choose safely, questions to ask, cost factors, warning signs, and helpful Dog Haven links.`;
 }
 
 function seoTitleFor(city: LocalCity, service: LocalService) {
@@ -371,7 +371,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     intro: `Looking for dog grooming in ${city.name}? This page combines practical local grooming guidance with starting points you can verify before booking. Use it to compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
     updated: reviewed,
     quickFacts: [
-      "DogHaven does not list or rank local groomers unless they have been properly checked.",
+      "Dog Haven does not list or rank local groomers unless they have been properly checked.",
       "Mobile grooming can be convenient, while parlour grooming may offer more equipment and support for some coat types.",
       "Cost depends on dog size, coat type, matting, behaviour, travel, and what is included.",
       "Skin, ear, pain, parasites, or wound concerns should be checked by a vet rather than treated as routine grooming issues.",
@@ -410,7 +410,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         heading: "Cost factors without fake prices",
         body: [
-          "DogHaven avoids invented local prices because grooming costs change by provider, suburb, dog size, coat condition, travel, and inflation. Ask providers for a written estimate before booking.",
+          "Dog Haven avoids invented local prices because grooming costs change by provider, suburb, dog size, coat condition, travel, and inflation. Ask providers for a written estimate before booking.",
         ],
         table: {
           headers: ["Cost factor", "Why it changes the quote"],
@@ -459,7 +459,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
           "A groomer can notice concerns, but ongoing itch, sore skin, ear discharge, wounds, pain, or parasites may need a veterinarian.",
       },
       {
-        question: "Does DogHaven recommend specific groomers?",
+        question: "Does Dog Haven recommend specific groomers?",
         answer:
           "Use this guide as a starting point, then confirm services, prices, availability, handling methods, and suitability directly with each provider.",
       },
@@ -574,7 +574,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
           "No tool should replace safe management, welfare, and skilled reward-based training. If a dog is difficult to control, get qualified help and avoid methods that create fear or pain.",
       },
       {
-        question: "Does DogHaven list trainers?",
+        question: "Does Dog Haven list trainers?",
         answer:
           "Use this guide as a starting point, then confirm training methods, class structure, availability, pricing, and suitability directly with each provider.",
       },
@@ -600,7 +600,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `If you are looking for emergency vets in ${city.name}, use this page to prepare before an urgent situation. DogHaven does not list fake clinics or phone numbers. For a real emergency, phone a veterinarian or emergency animal clinic directly.`,
+    intro: `If you are looking for emergency vets in ${city.name}, use this page to prepare before an urgent situation. Dog Haven does not list fake clinics or phone numbers. For a real emergency, phone a veterinarian or emergency animal clinic directly.`,
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -684,7 +684,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
     ],
     faqs: [
       {
-        question: `Does DogHaven list emergency vets in ${city.name}?`,
+        question: `Does Dog Haven list emergency vets in ${city.name}?`,
         answer:
           "Use this guide as a starting point, then ask your regular vet for after-hours guidance and confirm emergency options directly before you need them.",
       },
@@ -721,7 +721,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog-friendly places in ${city.name}? DogHaven does not invent park, beach, cafe, hotel, or venue listings. This guide helps you check rules, plan safer outings, and avoid putting your dog or other people in awkward situations.`,
+    intro: `Looking for dog-friendly places in ${city.name}? Dog Haven does not invent park, beach, cafe, hotel, or venue listings. This guide helps you check rules, plan safer outings, and avoid putting your dog or other people in awkward situations.`,
     updated: reviewed,
     quickFacts: [
       "Dog-friendly rules can change by municipality, beach, park, estate, accommodation provider, venue, season, and time of day.",
@@ -876,7 +876,7 @@ export const localHub: HubContent = {
     "South African local dog service guides for grooming, training, emergency vet preparation, and dog-friendly places in major cities, with practical checks and verified local options where available.",
   kicker: "Local guides",
   intro:
-    "DogHaven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
+    "Dog Haven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Local Dog Guides`,
@@ -901,19 +901,19 @@ export const localHub: HubContent = {
   ],
   faqs: [
     {
-      question: "Are DogHaven local guides directories?",
+      question: "Are Dog Haven local guides directories?",
       answer:
         "Use these guides as starting points, then confirm services, contact details, prices, availability, and suitability directly with each provider.",
     },
     {
       question: "Why are there no specific groomer, trainer, vet, or venue names?",
       answer:
-        "DogHaven will not invent or imply verified listings. Local providers, rules, hours, and services can change, so owners should verify directly before booking or visiting.",
+        "Dog Haven will not invent or imply verified listings. Local providers, rules, hours, and services can change, so owners should verify directly before booking or visiting.",
     },
     {
       question: "What should I do in a dog emergency?",
       answer:
-        "Phone a veterinarian or emergency animal clinic directly. DogHaven provides preparation guidance, but it is not emergency veterinary support.",
+        "Phone a veterinarian or emergency animal clinic directly. Dog Haven provides preparation guidance, but it is not emergency veterinary support.",
     },
   ],
 };
@@ -935,14 +935,14 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
       ? "Cape Town dog service guide covering grooming, training, emergency vet preparation, dog-friendly rule checks, monthly costs, beaches, apartments, winter rain, summer heat and local planning."
       : `Helpful ${city.name} dog service guides covering grooming, training, emergency vet preparation, dog-friendly places, provider checks, and local planning.`,
   kicker: "Local city guide",
-  intro: `${city.localContext} Use these DogHaven guides to ask better questions, verify rules directly, and choose safer dog services without relying on fake local listings.`,
+  intro: `${city.localContext} Use these Dog Haven guides to ask better questions, verify rules directly, and choose safer dog services without relying on fake local listings.`,
   cards: localServices.map((service) => ({
     title: service.key === "emergency-vets" ? `Emergency Vets in ${city.name}` : `${service.serviceTitle} in ${city.name}`,
     description: service.cardDescription,
     href: pathFor(city, service),
   })),
   related: [
-    { title: "All Local Guides", description: "Browse DogHaven local service guides by city and service type.", href: "/local" },
+    { title: "All Local Guides", description: "Browse Dog Haven local service guides by city and service type.", href: "/local" },
     { title: `${city.name} City Guide`, description: "Wider dog-owner context for daily life in the city.", href: `/city/${city.slug}` },
     { title: `${city.province} Province Guide`, description: "Province-level climate, risk, travel, and dog-care context.", href: `/province/${city.provinceSlug}` },
     ...(city.slug === "cape-town"
@@ -956,7 +956,7 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
   ],
   faqs: [
     {
-      question: `Does DogHaven list specific dog businesses in ${city.name}?`,
+      question: `Does Dog Haven list specific dog businesses in ${city.name}?`,
       answer:
         "Use these guides as starting points, then confirm provider details, services, prices, opening hours, and suitability directly before booking or visiting.",
     },

@@ -22,7 +22,7 @@ export default function NotFound() {
         </span>
         <p className="mt-6 text-sm font-black uppercase text-moss">Page not found</p>
         <h1 className="mt-2 max-w-3xl text-4xl font-black leading-tight text-cocoa sm:text-5xl">
-          This DogHaven page wandered off.
+          This Dog Haven page wandered off.
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-bark">
           The guide you were looking for may have moved, or the link may be mistyped. Here are the

@@ -3,9 +3,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Editorial Policy | DogHaven",
+  title: "Editorial Policy | Dog Haven",
   description:
-    "DogHaven's editorial policy for practical, sourced, South Africa-focused dog care guidance.",
+    "Dog Haven's editorial policy for practical, sourced, South Africa-focused dog care guidance.",
   path: "/editorial-policy",
 });
 
@@ -14,9 +14,9 @@ export default function EditorialPolicyPage() {
     <section className="section-shell">
       <Breadcrumbs items={[{ name: "Editorial Policy", href: "/editorial-policy" }]} />
       <p className="section-kicker">Editorial Policy</p>
-      <h1 className="section-title">How DogHaven earns trust</h1>
+      <h1 className="section-title">How Dog Haven earns trust</h1>
       <p className="section-copy">
-        DogHaven is built for real South African dog owners. Editorial choices favour practical
+        Dog Haven is built for real South African dog owners. Editorial choices favour practical
         usefulness, clear limitations, local relevance, and responsible sourcing over volume.
       </p>
 
@@ -36,7 +36,7 @@ export default function EditorialPolicyPage() {
           },
           {
             title: "No invented trust signals",
-            text: "DogHaven does not publish fake reviews, fake ratings, fake listings, unsupported ranking claims, or unverified badges.",
+            text: "Dog Haven does not publish fake reviews, fake ratings, fake listings, unsupported ranking claims, or unverified badges.",
           },
           {
             title: "Source discipline",
@@ -44,7 +44,7 @@ export default function EditorialPolicyPage() {
           },
           {
             title: "Corrections",
-            text: "When a material error is found, DogHaven should review the evidence and update the page clearly and promptly.",
+            text: "When a material error is found, Dog Haven should review the evidence and update the page clearly and promptly.",
           },
         ].map((item) => (
           <article key={item.title} className="rounded-2xl border border-oat bg-white p-6 shadow-sm">

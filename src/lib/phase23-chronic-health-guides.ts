@@ -580,7 +580,7 @@ const topics: Topic[] = [
     ],
     context: [
       "South African homes may have slippery tiles, stairs, high beds, bakkie loading, uneven gardens, and long weekend hikes that can expose mobility problems.",
-      "Responsible breeders should be willing to discuss health screening, but DogHaven does not list or verify breeders.",
+      "Responsible breeders should be willing to discuss health screening, but Dog Haven does not list or verify breeders.",
     ],
     checklist: [
       "Watch for bunny-hopping, difficulty rising, reluctance to jump, swaying hindquarters, pain, or reduced exercise tolerance.",
@@ -863,7 +863,7 @@ const topics: Topic[] = [
       "Insurance wording, exclusions, excesses, limits, waiting periods, and pre-existing-condition rules can change. Read policy documents and ask the insurer directly.",
     ],
     context: [
-      "Costs can vary widely by city, clinic, dog size, condition, diagnostics, medication, transport, after-hours care, and inflation. DogHaven does not invent exact clinic prices.",
+      "Costs can vary widely by city, clinic, dog size, condition, diagnostics, medication, transport, after-hours care, and inflation. Dog Haven does not invent exact clinic prices.",
       "South African owners should plan for routine care and urgent care separately, especially for senior dogs and breeds with known health concerns.",
     ],
     checklist: [
@@ -888,7 +888,7 @@ const topics: Topic[] = [
       "Compare insurance before symptoms become pre-existing.",
       "Use routine checkups to catch dental, weight, skin, ear, and mobility issues earlier.",
       "Discuss realistic care plans openly with your vet.",
-      "Use DogHaven cost tools for planning, not quotes.",
+      "Use Dog Haven cost tools for planning, not quotes.",
     ],
     tableRows: [
       ["Recurring consults", "Follow-ups, medication checks, and monitoring visits may be needed."],

@@ -4,9 +4,9 @@ import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
-  title: "Terms of Use | DogHaven",
+  title: "Terms of Use | Dog Haven",
   description:
-    "DogHaven's terms of use for educational dog care content, responsible use, external links, and future listing boundaries.",
+    "Dog Haven's terms of use for educational dog care content, responsible use, external links, and future listing boundaries.",
   path: "/terms",
 });
 
@@ -15,7 +15,7 @@ export default function TermsPage() {
     <section className="section-shell">
       <Breadcrumbs items={[{ name: "Terms", href: "/terms" }]} />
       <p className="section-kicker">Terms of Use</p>
-      <h1 className="section-title">Use DogHaven as guidance, not a substitute for care</h1>
+      <h1 className="section-title">Use Dog Haven as guidance, not a substitute for care</h1>
       <p className="section-copy">
         By using DogHaven.co.za, you agree to use the information responsibly. The site provides
         educational dog care guidance for South African owners and does not provide veterinary,
@@ -26,7 +26,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-black text-cocoa">Educational information</h2>
           <p className="mt-2 leading-7 text-bark">
-            DogHaven content can help you prepare questions and understand general care topics. It
+            Dog Haven content can help you prepare questions and understand general care topics. It
             cannot diagnose, treat, or assess your dog. Contact a qualified veterinarian for medical
             concerns.
           </p>
@@ -41,7 +41,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-black text-cocoa">Listings and recommendations</h2>
           <p className="mt-2 leading-7 text-bark">
-            DogHaven does not currently publish business directory listings. If listings are added
+            Dog Haven does not currently publish business directory listings. If listings are added
             later, publication will not mean a guarantee of service quality, availability, pricing,
             or suitability for your dog.
           </p>

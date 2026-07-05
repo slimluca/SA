@@ -81,7 +81,7 @@ const costSafety = [
 const insuranceSafety = [
   "This guide is educational and is not financial advice.",
   "Policy wording matters more than marketing wording. Read the schedule, limits, exclusions, waiting periods, and claim rules.",
-  "DogHaven compares policy concepts without placing insurers in an order or promoting one above another.",
+  "Dog Haven compares policy concepts without placing insurers in an order or promoting one above another.",
 ];
 
 const costGuides: MoneyGuide[] = [
@@ -480,7 +480,7 @@ const costGuides: MoneyGuide[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven tell me the exact euthanasia cost?",
+        question: "Can Dog Haven tell me the exact euthanasia cost?",
         answer:
           "No. Costs vary by clinic, city, timing, dog size, consultation needs, and aftercare choices. Ask your vet for a current estimate.",
       },
@@ -713,7 +713,7 @@ const insuranceGuides: MoneyGuide[] = [
       },
     ],
     related: [
-      { title: "Pre-Existing Conditions Guide", description: "Existing DogHaven guide to policy wording.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
+      { title: "Pre-Existing Conditions Guide", description: "Existing Dog Haven guide to policy wording.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
       { title: "Chronic Dog Health Costs", description: "Budgeting for ongoing care.", href: "/health/chronic-dog-health-costs-south-africa" },
       { title: "Senior Dog Vet Checkups", description: "Why records matter for older dogs.", href: "/health/senior-dog-vet-checkups-south-africa" },
       ...insuranceRelated,
@@ -768,7 +768,7 @@ const insuranceGuides: MoneyGuide[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven tell me if my claim will be paid?",
+        question: "Can Dog Haven tell me if my claim will be paid?",
         answer:
           "No. Only the insurer can assess a claim against the policy wording and documents.",
       },
@@ -926,7 +926,7 @@ const insuranceGuides: MoneyGuide[] = [
       },
     ],
     related: [
-      { title: "Dog Insurance Waiting Periods", description: "Existing DogHaven waiting-period guide.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
+      { title: "Dog Insurance Waiting Periods", description: "Existing Dog Haven waiting-period guide.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
       { title: "Puppy Insurance", description: "Waiting-period questions for young dogs.", href: "/insurance/dog-insurance-for-puppies-south-africa" },
       { title: "Insurance for Emergencies", description: "How emergencies and timing interact.", href: "/insurance/dog-insurance-for-emergencies-south-africa" },
       ...insuranceRelated,

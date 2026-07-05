@@ -73,7 +73,7 @@ const topics: Topic[] = [
     quickFacts: [
       welfareNote,
       "Spaying timing should be discussed with your vet, especially for puppies, large breeds, rescues, dogs in heat, or dogs with medical concerns.",
-      "DogHaven does not give surgical instructions or recovery directions.",
+      "Dog Haven does not give surgical instructions or recovery directions.",
       "Preventing unwanted litters helps reduce pressure on shelters, rescue groups, SPCAs, and animal welfare organisations.",
     ],
     context: [
@@ -116,7 +116,7 @@ const topics: Topic[] = [
           "This is a veterinary decision. Tell your vet if your dog is in heat or recently was, and follow their advice.",
       },
       {
-        question: "Does DogHaven give post-surgery instructions?",
+        question: "Does Dog Haven give post-surgery instructions?",
         answer:
           "No. Your vet must give surgery-specific recovery instructions and warning signs for your dog.",
       },
@@ -140,7 +140,7 @@ const topics: Topic[] = [
       welfareNote,
       "Neutering may help prevent unwanted litters, but it is not a complete training plan for behaviour problems.",
       "Timing should be discussed with your vet, especially for large breeds, puppies, seniors, rescues, and dogs with health concerns.",
-      "DogHaven does not provide surgical or medication instructions.",
+      "Dog Haven does not provide surgical or medication instructions.",
     ],
     context: [
       "In South African suburbs, farms, estates, and townhouses, intact male dogs may try to reach female dogs in heat, which can lead to roaming, gate escapes, fights, road risk, and unwanted litters.",
@@ -249,9 +249,9 @@ const topics: Topic[] = [
           "Many shelters and rescues have sterilisation policies or agreements. Ask the organisation directly and keep records.",
       },
       {
-        question: "Can DogHaven tell me whether to sterilise my dog?",
+        question: "Can Dog Haven tell me whether to sterilise my dog?",
         answer:
-          "No. DogHaven provides education. Your vet should guide the decision for your dog.",
+          "No. Dog Haven provides education. Your vet should guide the decision for your dog.",
       },
     ],
     related: [
@@ -268,7 +268,7 @@ const topics: Topic[] = [
     description:
       "A South African guide to dog sterilisation cost factors, covering spay and neuter quotes, dog size, sex, age, health, pre-checks, medication, recovery, and clinic variation.",
     intro:
-      "Dog sterilisation costs in South Africa vary by clinic, city, dog size, sex, age, health, procedure complexity, and what is included. DogHaven does not invent exact clinic prices.",
+      "Dog sterilisation costs in South Africa vary by clinic, city, dog size, sex, age, health, procedure complexity, and what is included. Dog Haven does not invent exact clinic prices.",
     quickFacts: [
       "Ask clinics for current written estimates.",
       "A quote may include or exclude consultation, blood tests, medication, recovery items, follow-up checks, or complications.",
@@ -284,7 +284,7 @@ const topics: Topic[] = [
       "Ask what is included and excluded.",
       "Ask whether your dog needs a pre-surgery check or blood tests.",
       "Ask what follow-up costs could apply.",
-      "Use the DogHaven cost calculator and sterilisation planner.",
+      "Use the Dog Haven cost calculator and sterilisation planner.",
     ],
     vetQuestions: [
       "What is included in the estimate?",
@@ -307,7 +307,7 @@ const topics: Topic[] = [
       {
         question: "How much does dog sterilisation cost in South Africa?",
         answer:
-          "Costs vary too much for DogHaven to publish fake exact prices. Ask clinics or welfare organisations for current written quotes.",
+          "Costs vary too much for Dog Haven to publish fake exact prices. Ask clinics or welfare organisations for current written quotes.",
       },
       {
         question: "Why can spaying cost more than neutering?",
@@ -774,7 +774,7 @@ const topics: Topic[] = [
           "Yes. Pregnancy can happen from one mating.",
       },
       {
-        question: "Why does DogHaven discourage casual breeding?",
+        question: "Why does Dog Haven discourage casual breeding?",
         answer:
           "Breeding carries health, welfare, cost, emergency, and lifelong puppy-placement responsibilities. South Africa already has many dogs needing homes.",
       },
@@ -795,7 +795,7 @@ const topics: Topic[] = [
     intro:
       "Responsible dog breeding is not simply putting two dogs together. It involves veterinary care, health screening, breed knowledge, emergency planning, ethical puppy placement, legal and welfare responsibilities, and a willingness to take lifelong responsibility for outcomes.",
     quickFacts: [
-      "DogHaven strongly discourages casual breeding, breeding for quick profit, and breeding for status.",
+      "Dog Haven strongly discourages casual breeding, breeding for quick profit, and breeding for status.",
       "Pregnancy, birth, and puppy raising can be expensive and risky.",
       "Health screening, temperament, breed knowledge, contracts, records, and owner support matter.",
       "South African shelters, rescues, and SPCAs already carry heavy unwanted-litter pressure.",
@@ -832,7 +832,7 @@ const topics: Topic[] = [
       {
         question: "Is breeding a dog a good way to make money?",
         answer:
-          "DogHaven does not encourage breeding for profit. Responsible breeding is expensive, risky, and welfare-heavy.",
+          "Dog Haven does not encourage breeding for profit. Responsible breeding is expensive, risky, and welfare-heavy.",
       },
       {
         question: "What makes breeding responsible?",

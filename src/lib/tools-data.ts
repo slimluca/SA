@@ -38,7 +38,7 @@ export type ToolContent = {
 };
 
 const commonRelated: CardLink[] = [
-  { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+  { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
   { title: "Dog Food", description: "Feeding guides for South African homes.", href: "/food" },
   { title: "Dog Costs", description: "Budget for everyday and emergency care.", href: "/costs" },
 ];
@@ -137,7 +137,7 @@ export const tools: ToolContent[] = [
     title: "Dog Age Calculator",
     seoTitle: "Dog Age Calculator | South African Dog Life Stage Tool",
     description:
-      "A free dog age calculator that gives a general life-stage estimate by dog age and size, with care reminders and DogHaven links.",
+      "A free dog age calculator that gives a general life-stage estimate by dog age and size, with care reminders and Dog Haven links.",
     intro:
       "Estimate your dog's broad life stage and get practical care reminders for puppies, adults, mature dogs, and seniors.",
     note:
@@ -199,7 +199,7 @@ export const tools: ToolContent[] = [
     intro:
       "Generate family-friendly dog name ideas by style and name feel, then test favourites out loud before choosing.",
     note:
-      "Names are generated in your browser. DogHaven does not collect or save your choices. For language-inspired names, choose respectfully and check meaning or context when unsure.",
+      "Names are generated in your browser. Dog Haven does not collect or save your choices. For language-inspired names, choose respectfully and check meaning or context when unsure.",
     related: [
       { title: "Dog Names", description: "South African dog name guides and naming tips.", href: "/dog-names" },
       { title: "Puppy Name Shortlist", description: "Create a small local shortlist without saving data.", href: "/tools/puppy-name-shortlist" },
@@ -214,7 +214,7 @@ export const tools: ToolContent[] = [
           "No. The list is light, respectful, family-friendly inspiration only.",
       },
       {
-        question: "Does DogHaven save the generated names?",
+        question: "Does Dog Haven save the generated names?",
         answer:
           "No. The tool runs in your browser and does not save personal information.",
       },
@@ -224,7 +224,7 @@ export const tools: ToolContent[] = [
     slug: "puppy-name-shortlist",
     path: "/tools/puppy-name-shortlist",
     title: "Puppy Name Shortlist",
-    seoTitle: "Puppy Name Shortlist Tool South Africa | DogHaven",
+    seoTitle: "Puppy Name Shortlist Tool South Africa | Dog Haven",
     description:
       "A free puppy name shortlist tool for South African dog owners to test favourite names locally in the browser.",
     intro:
@@ -304,7 +304,7 @@ export const tools: ToolContent[] = [
           "It can help, but puppies also need puppy-specific vaccine, deworming, socialisation and home setup planning.",
       },
       {
-        question: "Does DogHaven save checked items?",
+        question: "Does Dog Haven save checked items?",
         answer:
           "No. The checklist runs in your browser and does not collect personal information.",
       },
@@ -314,11 +314,11 @@ export const tools: ToolContent[] = [
     slug: "dog-personality-quiz",
     path: "/tools/dog-personality-quiz",
     title: "Dog Personality Quiz",
-    seoTitle: "Dog Personality Quiz South Africa | Fun DogHaven Tool",
+    seoTitle: "Dog Personality Quiz South Africa | Fun Dog Haven Tool",
     description:
       "A light, fun dog personality quiz for South African owners with practical care links for calm, playful, clever, gentle and adventurous dogs.",
     intro:
-      "Answer a few playful questions and get a fun result with helpful DogHaven next steps.",
+      "Answer a few playful questions and get a fun result with helpful Dog Haven next steps.",
     note:
       "This is for fun only. It is not a behavioural assessment, diagnosis or training plan.",
     related: [
@@ -535,9 +535,9 @@ export const tools: ToolContent[] = [
     title: "Can My Dog Eat This?",
     seoTitle: "Can My Dog Eat This? | Dog Food Safety Lookup",
     description:
-      "A free dog food safety lookup for common foods covered by DogHaven, with safety category, short note, and links to full food guides.",
+      "A free dog food safety lookup for common foods covered by Dog Haven, with safety category, short note, and links to full food guides.",
     intro:
-      "Choose a common food and get a quick safety category plus a link to the full DogHaven guide.",
+      "Choose a common food and get a quick safety category plus a link to the full Dog Haven guide.",
     note:
       "This is not emergency advice. For dangerous foods, large amounts, symptoms, or uncertainty, contact a vet immediately. Do not induce vomiting unless a vet tells you to.",
     related: [
@@ -712,12 +712,12 @@ export const toolsHub = {
   slug: "tools",
   path: "/tools",
   title: "Free Dog Owner Tools",
-  seoTitle: "Free Dog Owner Tools South Africa | DogHaven",
+  seoTitle: "Free Dog Owner Tools South Africa | Dog Haven",
   description:
-    "Free DogHaven tools for South African dog owners, including feeding, cost, age, breed match, checklists, name ideas, travel planning, and food safety lookup.",
+    "Free Dog Haven tools for South African dog owners, including feeding, cost, age, breed match, checklists, name ideas, travel planning, and food safety lookup.",
   kicker: "Free tools",
   intro:
-    "DogHaven tools are built to make practical dog ownership easier: quick estimates, checklists, gentle reminders, and fun ideas without logins, personal data collection, or third-party scripts.",
+    "Dog Haven tools are built to make practical dog ownership easier: quick estimates, checklists, gentle reminders, and fun ideas without logins, personal data collection, or third-party scripts.",
   cards: tools.map((tool) => ({
     title: tool.title,
     description: tool.description,
@@ -748,7 +748,7 @@ export const toolsHub = {
   ],
   faqs: [
     {
-      question: "Do DogHaven tools collect personal information?",
+      question: "Do Dog Haven tools collect personal information?",
       answer:
         "No. These tools do not ask for names, emails, accounts, or personal details.",
     },
@@ -760,7 +760,7 @@ export const toolsHub = {
     {
       question: "Do the tools use third-party scripts?",
       answer:
-        "No. DogHaven tools are simple first-party website features.",
+        "No. Dog Haven tools are simple first-party website features.",
     },
   ],
 };

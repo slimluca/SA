@@ -56,7 +56,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         <p className="section-copy">{guide.intro}</p>
 
         {needsEducationalNote ? (
-          <div className="mt-6 rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
+          <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
             <p className="font-black text-cocoa">Educational guide</p>
             <p className="mt-1">
               This page is for general South African dog-owner education. It does not replace a
@@ -68,14 +68,14 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         ) : null}
 
         {guide.isHealthGuide ? (
-          <div className="mt-8">
+          <div className="mt-6">
             <EmergencyNotice />
           </div>
         ) : null}
 
         {guide.safetyRating ? (
           <section
-            className={`mt-8 rounded-2xl border p-5 shadow-sm ${safetyStyles[guide.safetyRating.label]}`}
+            className={`mt-6 rounded-xl border p-5 shadow-sm ${safetyStyles[guide.safetyRating.label]}`}
             aria-label="Food safety rating"
           >
             <p className="text-xs font-black uppercase tracking-wide">Food safety rating</p>
@@ -84,7 +84,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           </section>
         ) : null}
 
-        <section className="mt-8 rounded-2xl border border-oat bg-white p-6 shadow-sm">
+        <section className="mt-6 rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">Quick takeaways</h2>
           <ul className="mt-4 space-y-3">
             {guide.quickFacts.map((fact) => (
@@ -102,13 +102,13 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
 
         <TableOfContents items={tableOfContents} />
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <div className="space-y-8">
+        <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div className="space-y-6">
             {guide.sections.map((section) => (
               <section
                 key={section.heading}
                 id={toHeadingId(section.heading)}
-                className="scroll-mt-28 rounded-2xl border border-oat bg-white p-6 shadow-sm"
+                className="scroll-mt-28 rounded-xl border border-oat bg-white p-5 shadow-panel"
               >
                 <h2 className="text-2xl font-black leading-tight text-cocoa">{section.heading}</h2>
                 <div className="mt-4 space-y-4">

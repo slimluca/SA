@@ -68,7 +68,7 @@ const guides: LawGuide[] = [
     summary:
       "South African dog rules are not one single simple list. National animal health duties, municipal by-laws, body corporate rules, rental agreements, venue rules, and welfare responsibilities can all matter.",
     context:
-      "Dog owners in South Africa may deal with city by-laws, estate or complex conduct rules, lease clauses, beach and park signs, vaccination responsibilities, and animal welfare concerns. The safest approach is to treat DogHaven as a starting point, then check the official rule that applies to your exact address or outing.",
+      "Dog owners in South Africa may deal with city by-laws, estate or complex conduct rules, lease clauses, beach and park signs, vaccination responsibilities, and animal welfare concerns. The safest approach is to treat Dog Haven as a starting point, then check the official rule that applies to your exact address or outing.",
     checkItems: [
       "Your municipality's current dog, nuisance, leash, pound, beach, and public space rules.",
       "Rabies vaccination requirements and your dog's vaccination record.",
@@ -111,9 +111,9 @@ const guides: LawGuide[] = [
           "No. Some responsibilities are national or provincial, but many practical rules depend on the municipality, body corporate, estate, landlord, venue, park, or beach.",
       },
       {
-        question: "Can DogHaven tell me what rule applies to my address?",
+        question: "Can Dog Haven tell me what rule applies to my address?",
         answer:
-          "No. DogHaven gives general educational guidance. Check your municipality, lease, conduct rules, and official local sources for your situation.",
+          "No. Dog Haven gives general educational guidance. Check your municipality, lease, conduct rules, and official local sources for your situation.",
       },
       {
         question: "What is the safest first step if I am unsure?",
@@ -206,7 +206,7 @@ const guides: LawGuide[] = [
     summary:
       "After a dog bite, safety comes first: separate animals and people, get medical care for the person, contact a vet about the dog and rabies records, and seek legal or authority advice if the matter is serious or disputed.",
     context:
-      "Dog bite situations can involve medical care, rabies prevention, animal control, insurance, neighbour relationships, landlord or complex rules, and legal liability. DogHaven cannot give legal advice, but it can help you gather the right information quickly.",
+      "Dog bite situations can involve medical care, rabies prevention, animal control, insurance, neighbour relationships, landlord or complex rules, and legal liability. Dog Haven cannot give legal advice, but it can help you gather the right information quickly.",
     checkItems: [
       "Whether anyone needs urgent medical care.",
       "Whether rabies exposure is possible or the dog's vaccination record is unclear.",
@@ -244,9 +244,9 @@ const guides: LawGuide[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven tell me who is legally liable after a dog bite?",
+        question: "Can Dog Haven tell me who is legally liable after a dog bite?",
         answer:
-          "No. Liability depends on facts and law. DogHaven can help you think through records and safety steps, but legal advice should come from a qualified professional.",
+          "No. Liability depends on facts and law. Dog Haven can help you think through records and safety steps, but legal advice should come from a qualified professional.",
       },
       {
         question: "Should a dog be trained after a bite?",
@@ -588,9 +588,9 @@ const guides: LawGuide[] = [
     ],
     faqs: [
       {
-        question: "Can DogHaven list every dog-friendly beach rule?",
+        question: "Can Dog Haven list every dog-friendly beach rule?",
         answer:
-          "No. Rules change and vary locally. DogHaven explains what to check, but owners should verify official local rules before visiting.",
+          "No. Rules change and vary locally. Dog Haven explains what to check, but owners should verify official local rules before visiting.",
       },
       {
         question: "Are dog-friendly beaches always off lead?",
@@ -742,7 +742,7 @@ const guides: LawGuide[] = [
       },
     ],
     related: [
-      { title: "Start Here", description: "Find the right DogHaven guide faster.", href: "/start-here" },
+      { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
       { title: "Dog Costs", description: "Budget for routine and emergency care.", href: "/costs" },
       { title: "Adoption Safety", description: "Choose dogs responsibly.", href: "/adoption" },
       ...lawRelated,
@@ -811,7 +811,7 @@ function toGuide(guide: LawGuide): GuideContent {
       {
         heading: "When to contact someone official or professional",
         body: [
-          "Use DogHaven for education, then involve the right person when the decision affects safety, health, housing, a formal complaint, or possible legal liability.",
+          "Use Dog Haven for education, then involve the right person when the decision affects safety, health, housing, a formal complaint, or possible legal liability.",
         ],
         bullets: guide.contactItems,
       },
@@ -833,7 +833,7 @@ export const lawsHub: HubContent = {
     "Practical South African dog laws and rules guidance for rabies vaccination, dog bites, barking complaints, complexes, rentals, leads, beaches, travel, and responsible ownership.",
   kicker: "Laws and rules hub",
   intro:
-    "Dog ownership rules in South Africa can be local, contractual, health-related, welfare-related, or venue-specific. DogHaven keeps this hub practical and cautious so owners know what to check, who to contact, and how to avoid preventable disputes.",
+    "Dog ownership rules in South Africa can be local, contractual, health-related, welfare-related, or venue-specific. Dog Haven keeps this hub practical and cautious so owners know what to check, who to contact, and how to avoid preventable disputes.",
   cards: phase13GuidePages.map((guide) => ({
     title: guide.title,
     description: guide.description,
@@ -850,9 +850,9 @@ export const lawsHub: HubContent = {
   ],
   faqs: [
     {
-      question: "Does DogHaven give legal advice?",
+      question: "Does Dog Haven give legal advice?",
       answer:
-        "No. DogHaven provides general educational guidance for South African dog owners. For disputes, liability, eviction, formal notices, or legal decisions, speak to a qualified legal professional or the relevant authority.",
+        "No. Dog Haven provides general educational guidance for South African dog owners. For disputes, liability, eviction, formal notices, or legal decisions, speak to a qualified legal professional or the relevant authority.",
     },
     {
       question: "Why do rules vary so much?",
