@@ -28,6 +28,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-ZA">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1001166538143330"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="bg-cream font-sans text-bark">
         <JsonLd data={websiteSchema()} />
         <JsonLd data={organizationSchema()} />
