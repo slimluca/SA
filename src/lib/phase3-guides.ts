@@ -710,20 +710,21 @@ export const phase3GuidePages: GuideContent[] = [
     description:
       "Practical South African guide to ticks and fleas on dogs, including prevention, checks, warning signs, product safety, and when to contact a vet.",
     intro:
-      "Ticks and fleas are more than an itchy nuisance. In South Africa, ticks can be linked to serious illness such as biliary, while fleas can cause skin irritation, allergy, anaemia in vulnerable animals, and tapeworm exposure. A prevention routine is part of everyday dog care.",
+      "For most South African dogs, tick and flea control should be treated as routine prevention, not something to think about only after scratching starts. Ticks can be linked to serious illness such as biliary, while fleas can drive skin irritation, allergy, anaemia in vulnerable animals, and tapeworm exposure.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [
       "Urgent summary: contact a vet quickly if your dog has tick exposure plus weakness, pale gums, fever, dark urine, collapse, or severe lethargy.",
       "Use tick and flea products only as directed for your dog's species, weight, age, and health.",
       "Never use a dog-only product on a cat in the household unless your vet confirms it is safe.",
-      "Daily checks after walks and garden time help find ticks before they cause bigger problems.",
+      "Daily checks after walks, kennels, farms, beaches, bush routes, and garden time help find ticks before they cause bigger problems.",
     ],
     sections: [
       {
         heading: "Why prevention matters",
         body: [
           "Ticks and fleas can live in gardens, parks, kennels, bedding, carpets, shaded outdoor areas, farms, bush routes, and coastal walking spots. Dogs can bring parasites into the home, and household control may need more than treating the dog once.",
+          "Risk is not limited to long hikes. A suburban garden, school-run walk, dog park, boarding kennel, holiday cottage, or quick stop on a farm road can be enough exposure for some dogs.",
           "The best product is not the one that worked for someone else's dog. Ask your vet about your dog's size, swimming habits, skin sensitivity, age, pregnancy status, other pets, and local tick pressure.",
         ],
       },
@@ -801,6 +802,8 @@ export const phase3GuidePages: GuideContent[] = [
     ],
     related: [
       { title: "Biliary Tick Bite Fever", description: "Tick-borne illness warning signs.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+      { title: "Dog Scratching and Itchy Skin", description: "When itch, sores, or skin smell need a vet.", href: "/health/dog-scratching-and-itchy-skin-south-africa" },
+      { title: "Tick and Flea Treatment", description: "Compare prevention questions before choosing a product.", href: "/health/tick-and-flea-treatment-for-dogs-south-africa" },
       { title: "Dog Health", description: "More prevention guides.", href: "/health" },
       { title: "Dog Costs", description: "Budgeting for prevention.", href: "/costs/cost-of-owning-a-dog-south-africa" },
     ],
@@ -832,20 +835,21 @@ export const phase3GuidePages: GuideContent[] = [
     description:
       "A practical guide to toxic foods for dogs in South African homes, including chocolate, xylitol, grapes, raisins, onions, alcohol, and when to call a vet.",
     intro:
-      "Many dog food emergencies start in ordinary kitchens: chocolate, fruitcake, braai leftovers, onion-heavy stews, grapes, raisins, sugar-free sweets, and alcohol at gatherings. If your dog eats a risky food, do not wait for symptoms before asking a vet what to do.",
+      "If your dog ate chocolate, xylitol, grapes, raisins, alcohol, onion-heavy food, or a large amount of fatty leftovers, phone a vet promptly and keep the packaging or ingredient list. Many South African dog food emergencies start in ordinary kitchens, lunch boxes, braais, festive baking, and unattended party plates.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [
       "Urgent summary: phone a vet quickly after chocolate, xylitol, grapes, raisins, alcohol, or large onion/garlic exposure.",
       "The danger depends on the food, amount, dog size, health, and time since ingestion.",
       "Do not induce vomiting or give home treatments unless a vet instructs you.",
-      "Keep packaging, ingredient lists, and the time eaten ready for the vet.",
+      "Keep packaging, ingredient lists, your dog's weight, and the time eaten ready for the vet.",
     ],
     sections: [
       {
         heading: "Common toxic foods and kitchen risks",
         body: [
           "South African homes often include shared plates, lunch boxes, school snacks, festive baking, braai meat, sauces, and leftovers. Dogs do not understand that one plate is safe and another is not.",
+          "The most useful first step is a fast factual call: what was eaten, how much may be missing, when it happened, your dog's size, and whether any symptoms have started.",
           "Some foods are dangerous because of specific toxins, while others cause pancreatitis, choking, gut injury, or salt overload. When in doubt, ask a vet rather than trying to calculate risk alone.",
         ],
         table: {

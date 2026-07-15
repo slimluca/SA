@@ -414,9 +414,9 @@ const symptomGuides: SymptomGuide[] = [
       "A South African guide to itchy dogs, possible causes, fleas, ticks, allergies, infections, red flags, prevention, and when to see a vet.",
     symptom: "itchy skin",
     urgentSummary:
-      "Book a vet visit if scratching is intense, skin is red, bleeding, smelly, painful, hair is falling out, ears are involved, or your dog seems unwell.",
+      "Book a vet visit if scratching is intense, skin is red, bleeding, smelly, painful, hair is falling out, ears are involved, or your dog seems unwell; phone sooner for facial swelling, breathing trouble, collapse, or fast-worsening skin.",
     context:
-      "Itchy skin can be linked to fleas, ticks, mites, allergies, grass exposure, humidity, dry inland weather, food reactions, infections, or grooming products. South African dogs may flare after beach trips, dusty walks, spring grasses, flea season, or missed parasite prevention.",
+      "Itchy skin can be linked to fleas, ticks, mites, allergies, grass exposure, humidity, dry inland weather, food reactions, infections, or grooming products. South African dogs may flare after beach trips, dusty walks, spring grasses, summer humidity, dry Highveld winters, flea exposure, or missed parasite prevention.",
     causes: [
       "Fleas, ticks, mites, or insect bites.",
       "Environmental allergies from grasses, pollens, dust, or mould.",
@@ -432,8 +432,8 @@ const symptomGuides: SymptomGuide[] = [
       "Lethargy, fever, appetite loss, or pain.",
     ],
     ownerSteps: [
-      "Check for fleas, flea dirt, ticks, grass seeds, redness, and wounds.",
-      "Review parasite prevention and recent grooming products.",
+      "Check for fleas, flea dirt, ticks, grass seeds, redness, hot spots, ear signs, and wounds.",
+      "Review parasite prevention, recent grooming products, bedding changes, beach or grass exposure, and new treats or food.",
       "Prevent chewing trauma with vet advice if skin is damaged.",
       "Book a vet visit if itch is persistent, severe, or skin looks infected.",
     ],
@@ -479,6 +479,7 @@ const symptomGuides: SymptomGuide[] = [
     ],
     related: [
       { title: "Ticks and Fleas", description: "Parasite prevention and checks.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+      { title: "Dog Skin Allergies", description: "Allergy context without guessing the cause.", href: "/health/dog-skin-allergies-south-africa" },
       { title: "Dog Ear Infection Signs", description: "Ear itch and head shaking.", href: "/health/dog-ear-infection-signs-south-africa" },
       { title: "Dog Grooming", description: "Coat and skin care basics.", href: "/grooming/dog-grooming-south-africa" },
     ],

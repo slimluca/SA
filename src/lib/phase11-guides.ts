@@ -449,14 +449,14 @@ const guides: PuppyGuide[] = [
   },
   {
     slug: "puppy-food-south-africa",
-    title: "Puppy Food in South Africa",
-    seoTitle: "Puppy Food South Africa | Feeding and Growth Guide",
+    title: "Puppy Feeding Routine in South Africa",
+    seoTitle: "Puppy Feeding Routine South Africa | Growth and Food Guide",
     description:
       "A practical South African puppy food guide covering growth diets, feeding amounts, food transitions, treats, unsafe foods, costs, and vet advice.",
     summary:
-      "Puppies need food formulated for growth and sized to their age, breed, body condition, and health. Avoid brand hype and ask your vet if growth, stool, skin, or weight concerns appear.",
+      "Start with a complete growth diet, measured meals, and slow transitions. This puppy guide focuses on the first-year routine: what to feed, how to keep changes calm, and when food concerns need a vet.",
     context:
-      "South African puppy owners often balance cost, bag size, availability, load-shedding storage, treats, table scraps, and advice from sellers or social media. The safest choice is a complete puppy diet that suits your puppy and is monitored with your vet.",
+      "South African puppy owners often balance cost, bag size, availability, load-shedding storage, treats, table scraps, and advice from sellers or social media. The safest starting point is a complete puppy diet that suits your puppy's expected adult size and is monitored with your vet during vaccines and growth checks.",
     ageRows: [
       ["First week home", "Keep food stable unless your vet advises a change."],
       ["8-16 weeks", "Feed growth food in measured meals and watch stool and weight."],
@@ -466,7 +466,7 @@ const guides: PuppyGuide[] = [
     doList: [
       "Ask what the puppy has been eating and transition slowly if changing.",
       "Use measured meals instead of free-pouring.",
-      "Choose food appropriate for puppy growth and expected adult size.",
+      "Choose food appropriate for puppy growth and expected adult size, especially for large-breed puppies.",
       "Keep treats small and count them as part of daily intake.",
     ],
     avoidList: [
@@ -476,7 +476,7 @@ const guides: PuppyGuide[] = [
       "Do not change foods repeatedly during diarrhoea without vet advice.",
     ],
     contactList: [
-      "Contact a vet if your puppy has vomiting, diarrhoea, poor growth, weight loss, severe itching, or refuses food.",
+      "Contact a vet if your puppy has vomiting, diarrhoea, poor growth, weight loss, severe itching, a swollen belly, weakness, or refuses food.",
       "Contact a vet or veterinary nutrition professional before homemade or raw puppy diets.",
       "Contact the shelter or breeder for the original diet and feeding history.",
     ],
@@ -513,7 +513,8 @@ const guides: PuppyGuide[] = [
     ],
     related: [
       { title: "Dog Food South Africa", description: "Feeding choices and labels.", href: "/food/dog-food-south-africa" },
-      { title: "Puppy Food Guide", description: "Existing food hub puppy guide.", href: "/food/puppy-food-south-africa" },
+      { title: "Puppy Food Guide", description: "Food-hub guide to growth diets, budget, and transitions.", href: "/food/puppy-food-south-africa" },
+      { title: "Large Breed Puppy Food", description: "Controlled growth guidance for bigger puppies.", href: "/food/large-breed-puppy-food-south-africa" },
       { title: "Foods Dogs Should Never Eat", description: "Unsafe human foods.", href: "/food/foods-dogs-should-never-eat-south-africa" },
     ],
     sources: nutritionSources,
@@ -596,9 +597,9 @@ const guides: PuppyGuide[] = [
     description:
       "A humane guide to puppy biting and chewing, teething, safe chew choices, family rules, redirection, and when to contact a trainer or vet.",
     summary:
-      "Puppy biting and chewing are normal, but they still need kind boundaries. Give safe outlets, manage the environment, reward calm choices, and avoid punishment-heavy methods.",
+      "Puppy biting and chewing are normal, but families still need a clear plan: prevent access to danger, redirect early, build naps into the day, reward calm choices, and get help when biting feels unsafe.",
     context:
-      "Puppies chew furniture, shoes, school bags, plants, irrigation pipes, remotes, and electrical cords in South African homes. Chewing can be normal teething, boredom, overtiredness, stress, or lack of supervision.",
+      "Puppies chew furniture, shoes, school bags, plants, irrigation pipes, remotes, batteries, bin scraps, and electrical cords in South African homes. Chewing can be normal teething, boredom, overtiredness, stress, or lack of supervision, but swallowed objects and toxic items need fast veterinary advice.",
     ageRows: [
       ["8-12 weeks", "Mouthy play and exploration are common; use redirection and naps."],
       ["3-6 months", "Teething can increase chewing; rotate safe chew items."],
@@ -607,7 +608,7 @@ const guides: PuppyGuide[] = [
     ],
     doList: [
       "Offer safe puppy chews matched to size and chewing style.",
-      "Redirect to toys before biting escalates.",
+      "Redirect to toys before biting escalates and pause play before children become frightened or overexcited.",
       "Use short training sessions and enough sleep.",
       "Keep shoes, cords, bins, and toxic plants out of reach.",
     ],
@@ -619,7 +620,7 @@ const guides: PuppyGuide[] = [
     ],
     contactList: [
       "Contact a vet if chewing seems linked to pain, broken teeth, vomiting, or swallowed objects.",
-      "Contact a humane trainer if biting is intense, frightening children, or not improving.",
+      "Contact a humane trainer if biting is intense, frightening children, breaking skin repeatedly, or not improving.",
       "Contact emergency care if a puppy swallowed batteries, medication, poison, string, bones, or sharp objects.",
     ],
     checklist: [
@@ -655,6 +656,7 @@ const guides: PuppyGuide[] = [
     ],
     related: [
       { title: "Puppy-Proofing", description: "Protect your puppy and home.", href: "/puppy/puppy-proofing-your-home-south-africa" },
+      { title: "Puppy Socialisation", description: "Build confidence safely while vaccines are still in progress.", href: "/puppy/puppy-socialisation-south-africa" },
       { title: "Puppy Potty Training", description: "Routines and supervision.", href: "/puppy/puppy-potty-training-south-africa" },
       { title: "Dog Poisoning", description: "What to do after risky ingestion.", href: "/emergency/dog-poisoning-south-africa" },
     ],

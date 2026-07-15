@@ -16,6 +16,8 @@ const sections = [
     links: [
       { title: "Puppy Care Hub", description: "First-year puppy guidance for South African homes.", href: "/puppy" },
       { title: "New Puppy Checklist", description: "Records, supplies, safety, and first-week setup.", href: "/puppy/new-puppy-checklist-south-africa" },
+      { title: "Puppy Feeding Routine", description: "Growth food, measured meals, safe transitions, and vet signs.", href: "/puppy/puppy-food-south-africa" },
+      { title: "Puppy Biting and Chewing", description: "Kind boundaries, safe chews, child rules, and when to get help.", href: "/puppy/puppy-biting-and-chewing-south-africa" },
       { title: "Puppy Vaccinations", description: "Plan vaccines, rabies, and safe outings with your vet.", href: "/puppy/puppy-vaccination-schedule-south-africa" },
       { title: "Puppy Potty Training", description: "Humane toilet routines for homes, flats, and townhouses.", href: "/puppy/puppy-potty-training-south-africa" },
     ],
@@ -48,6 +50,7 @@ const sections = [
       { title: "Dog Health Hub", description: "Prevention, symptoms, and vet context.", href: "/health" },
       { title: "Vaccination Schedule", description: "Core vaccines and rabies planning.", href: "/health/vaccination-schedule-south-africa" },
       { title: "Ticks and Fleas", description: "Year-round parasite prevention.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+      { title: "Dog Scratching and Itchy Skin", description: "Fleas, allergies, skin red flags, and vet-call guidance.", href: "/health/dog-scratching-and-itchy-skin-south-africa" },
       { title: "Toxic Foods", description: "Common foods that can harm dogs.", href: "/health/toxic-foods-for-dogs-south-africa" },
     ],
   },
