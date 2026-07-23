@@ -795,7 +795,7 @@ export const provinceHub: HubContent = {
     {
       question: "Are these province pages dog business directories?",
       answer:
-        "No. Dog Haven does not publish unverified local listings. These pages help owners understand local care context and what to verify directly.",
+        "Province pages are planning guides. Selected linked local and service pages may include manually researched provider options, which readers must verify directly.",
     },
     {
       question: "Why does province matter for dog care?",
@@ -803,9 +803,9 @@ export const provinceHub: HubContent = {
         "Climate, ticks, snakes, beaches, rural travel, city density, local rules, and emergency access can change practical dog-care decisions.",
     },
     {
-      question: "Will Dog Haven add verified local listings later?",
+      question: "How does Dog Haven handle verified local listings?",
       answer:
-        "Possibly, but only after manual verification. Dog Haven will not publish fake listings, fake reviews, or invented phone numbers.",
+        "Dog Haven publishes provider details on selected local and service pages after manual research. They are starting points, not rankings or endorsements, and current details must be confirmed directly.",
     },
   ],
 };
@@ -875,7 +875,7 @@ function localFaqs(place: string, isCity: boolean): FAQ[] {
     {
       question: `Does Dog Haven list vets, groomers, trainers, or shelters in ${place}?`,
       answer:
-        "No. Dog Haven does not publish unverified local listings. Use these guides to know what to ask and verify providers directly.",
+        "Selected local and service pages include manually researched providers where reliable records are available. Coverage varies, so use every entry as a starting point and verify current details directly.",
     },
     {
       question: `How should I find emergency vet help in ${place}?`,
@@ -946,12 +946,12 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
     description:
       province.slug === "mpumalanga"
         ? "Practical Mpumalanga dog owner guide covering Lowveld heat, ticks, snakes, rural travel, wildlife-area rules, vet access, grooming, adoption, and emergency preparation."
-        : `Practical ${province.name} dog owner guidance covering climate, local risks, adoption, grooming, training, dog-friendly outings, and emergency preparation without fake listings.`,
+        : `Practical ${province.name} dog owner guidance covering climate, local risks, adoption, grooming, training, dog-friendly outings, provider checks, and emergency preparation.`,
     intro: province.intro,
     updated: reviewed,
     quickFacts: [
-      "Dog Haven does not publish unverified local business listings, fake phone numbers, fake reviews, or fake verified badges.",
-      "Use this page as a practical local planning guide, then verify vets, shelters, groomers, trainers, venues, parks, beaches, and accommodation directly.",
+      "Selected local and service pages show provider details only where records have been manually researched; coverage is not complete in every area.",
+      "Listings are starting points, not rankings or endorsements. Verify vets, shelters, groomers, trainers, venues, parks, beaches, and accommodation directly.",
       "Rules for parks, beaches, trails, estates, and venues can change. Check official local rules before visiting.",
       "For urgent symptoms, phone a veterinarian or emergency animal clinic immediately rather than searching for general advice.",
     ],
@@ -1005,7 +1005,7 @@ export const phase7ProvincePages: GuideContent[] = phase7ProvinceGuides.map((pro
         heading: "Emergency preparation",
         body: [
           "Emergency planning should happen before your dog is sick. Save your regular vet, ask about after-hours options, and keep records accessible.",
-          "Do not rely on Dog Haven for emergency listings yet. Phone a real veterinary practice or emergency animal clinic for urgent symptoms.",
+          "Where Dog Haven shows researched emergency-vet options, confirm current hours, services, and intake directly. For urgent symptoms, phone a veterinary practice or emergency animal clinic rather than waiting for a website response.",
         ],
         checklist: [
           "Regular vet details saved.",
@@ -1049,11 +1049,11 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
     hubPath: "/city",
     title: `${city.name} Dog Owner Guide`,
     seoTitle: `${city.name} Dog Owner Guide | Dog Haven South Africa`,
-    description: `Practical ${city.name} dog owner guidance covering local lifestyle, vets, adoption, training, grooming, dog-friendly places, costs, and emergency preparation without fake listings.`,
+    description: `Practical ${city.name} dog owner guidance covering local lifestyle, vets, adoption, training, grooming, dog-friendly places, provider checks, costs, and emergency preparation.`,
     intro: city.intro,
     updated: reviewed,
     quickFacts: [
-      "Dog Haven does not publish unverified local listings or pretend to have verified vets, shelters, groomers, trainers, parks, beaches, hotels, or restaurants.",
+      "Selected local and service pages include manually researched provider details where reliable source records are available; coverage varies by place and service.",
       "Use this guide to plan what to ask, what to check, and how to prepare as a dog owner in the city.",
       "Check official municipal, venue, park, beach, estate, accommodation, or conservation rules before taking your dog into public spaces.",
       "For urgent medical symptoms, phone a veterinarian or emergency animal clinic immediately.",
@@ -1071,9 +1071,9 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
         bullets: city.careNotes,
       },
       {
-        heading: "How to find a vet without relying on fake listings",
+        heading: "How to find and verify a local vet",
         body: [
-          "Dog Haven does not list local vets yet. Start by checking registered veterinary practices, asking your current vet for after-hours guidance, and confirming services directly before you need them.",
+          "Selected local pages publish manually researched veterinary options where reliable records are available. Use them as starting points, check registered practices, ask your current vet for after-hours guidance, and confirm services directly before you need them.",
           "For emergencies, phone a veterinary practice or emergency animal clinic. Do not wait for a web page to diagnose symptoms.",
         ],
         checklist: [

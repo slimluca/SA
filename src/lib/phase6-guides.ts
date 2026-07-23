@@ -662,7 +662,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical South African checklist for choosing a humane dog trainer, including methods, owner involvement, qualifications, class safety, and red flags.",
     intro:
-      "Dog Haven does not list or rank trainers. Instead, this guide helps you ask better questions so you can choose someone who treats dogs and people fairly, explains their methods, and keeps safety central.",
+      "Selected local pages include manually researched trainer options, but Dog Haven does not rank or endorse them. This guide helps you ask better questions so you can choose someone who treats dogs and people fairly, explains their methods, and keeps safety central.",
     updated: "2026-05-13",
     quickFacts: [
       "Choose trainers who use humane, reward-based, welfare-focused methods.",
@@ -725,7 +725,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "Can Dog Haven recommend a trainer near me?",
         answer:
-          "Not yet. Dog Haven does not publish unverified listings. Use this checklist to vet trainers directly.",
+          "Selected local pages provide manually researched trainer options as starting points, not recommendations or rankings. Use this checklist and confirm methods, availability, prices, and suitability directly.",
       },
       {
         question: "Is board-and-train a good idea?",
@@ -1380,7 +1380,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "How do I find dog-friendly places near me?",
         answer:
-          "Use current official venue pages, phone ahead, and verify rules directly. Dog Haven does not publish unverified listings.",
+          "Use current official venue pages, phone ahead, and verify rules directly. Any local options shown on Dog Haven are researched starting points, not guarantees that access rules are unchanged.",
       },
       {
         question: "Can my dog go off lead if they are friendly?",

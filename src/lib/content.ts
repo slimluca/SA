@@ -357,7 +357,7 @@ export const hubPages: HubContent[] = [
       {
         question: "Does Dog Haven list shelters or breeders?",
         answer:
-          "No. Dog Haven does not publish unverified listings. The adoption guides help owners know what to ask and what to verify directly.",
+          "Dog Haven does not currently verify shelter or breeder listings. The adoption guides help owners know what to ask and what records to confirm directly.",
       },
     ],
   },
@@ -582,7 +582,7 @@ export const hubPages: HubContent[] = [
         ],
       },
       {
-        title: "Choose groomers without fake listings",
+        title: "Choose and verify a groomer",
         body: [
           "Dog Haven does not invent groomer listings. Before booking, ask how the groomer handles anxious, senior, matted, reactive, or large dogs; how equipment is cleaned; what drying methods are used; and what happens if a skin, ear, or parasite problem appears.",
           "Mobile grooming can be convenient, but it still needs clear setup, hygiene, handling, parking, water, electricity, and stop-if-unsafe rules.",

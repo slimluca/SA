@@ -371,7 +371,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     intro: `Looking for dog grooming in ${city.name}? This page combines practical local grooming guidance with starting points you can verify before booking. Use it to compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
     updated: reviewed,
     quickFacts: [
-      "Dog Haven does not list or rank local groomers unless they have been properly checked.",
+      "Dog Haven shows groomer details only where records have been manually researched, and never as a ranking or endorsement.",
       "Mobile grooming can be convenient, while parlour grooming may offer more equipment and support for some coat types.",
       "Cost depends on dog size, coat type, matting, behaviour, travel, and what is included.",
       "Skin, ear, pain, parasites, or wound concerns should be checked by a vet rather than treated as routine grooming issues.",
@@ -600,7 +600,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `If you are looking for emergency vets in ${city.name}, use this page to prepare before an urgent situation. Dog Haven does not list fake clinics or phone numbers. For a real emergency, phone a veterinarian or emergency animal clinic directly.`,
+    intro: `If you are looking for emergency vets in ${city.name}, use this page to prepare before an urgent situation. Any provider options shown have been manually researched, but services and contact details can change. For a real emergency, phone a veterinarian or emergency animal clinic directly.`,
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [

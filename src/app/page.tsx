@@ -63,10 +63,11 @@ export default function HomePage() {
           <p className="section-kicker">Trust and editorial standards</p>
           <h2 className="section-title">Built to be useful before it is big</h2>
           <p className="section-copy">
-            Dog Haven is being built around practical South African owner needs, careful sourcing,
-            and clear boundaries. Directory content will only be published after manual checks, and
-            medical pages will point owners toward qualified veterinary care when symptoms or risk
-            require it.
+            Dog Haven combines practical South African guidance with clear sourcing and correction
+            standards. Selected local and service pages include manually researched provider
+            options as starting points, never paid-looking rankings or invented reviews. Medical
+            guidance stays within cautious educational boundaries and points owners to qualified
+            veterinary care when symptoms or risk require it.
           </p>
           <div className="mt-8">
             <TrustBar items={trustItems} />

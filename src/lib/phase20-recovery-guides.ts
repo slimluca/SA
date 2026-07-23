@@ -428,7 +428,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A practical South African guide to choosing a vet, checking registration context, asking questions, planning emergencies, and using local city and province guidance without fake directories.",
     intro:
-      "Dog Haven does not publish fake vet listings or phone numbers. This guide explains how South African dog owners can choose a vet more carefully, what to ask, and how to prepare for routine and emergency care.",
+      "Dog Haven publishes manually researched vet options on selected local pages, while this national guide explains how South African dog owners can choose a vet carefully, what to ask, and how to prepare for routine and emergency care. Every clinic's current services and contact details must be confirmed directly.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -514,7 +514,7 @@ const phase20Guides: GuideContent[] = [
       "Mobile dog grooming can be convenient for South African owners, especially with busy schedules, nervous dogs, seniors, or homes far from a parlour. It still needs the same safety, hygiene, coat, and handling questions as any grooming service.",
     updated: reviewed,
     quickFacts: [
-      "Dog Haven does not list or verify mobile groomers yet.",
+      "Selected local grooming pages include manually researched providers; use them as starting points and confirm current mobile coverage directly.",
       "Mobile grooming may reduce travel stress, but it is not automatically the right fit for every dog.",
       "Ask about water, electricity, parking, hygiene, handling, coat limits, and what happens if medical concerns are found.",
       "Severe matting, wounds, painful ears, skin infection, or parasites may need a vet plan.",

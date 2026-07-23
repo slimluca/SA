@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = createMetadata({
   title: "Terms of Use | Dog Haven",
   description:
-    "Dog Haven's terms of use for educational dog care content, responsible use, external links, and future listing boundaries.",
+    "Dog Haven's terms of use for educational dog care content, responsible use, external links, and provider listing boundaries.",
   path: "/terms",
 });
 
@@ -41,9 +41,10 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-black text-cocoa">Listings and recommendations</h2>
           <p className="mt-2 leading-7 text-bark">
-            Dog Haven does not currently publish business directory listings. If listings are added
-            later, publication will not mean a guarantee of service quality, availability, pricing,
-            or suitability for your dog.
+            Dog Haven publishes provider details on selected local and service pages only after
+            manual research. These options are starting points, not rankings, endorsements, or a
+            guarantee of service quality, availability, pricing, emergency intake, or suitability
+            for your dog. Confirm current details directly with the provider.
           </p>
         </section>
         <section>

@@ -741,7 +741,7 @@ export const dogServicesHub: HubContent = {
     {
       question: "Does Dog Haven list verified dog service providers?",
       answer:
-        "Not yet. Dog Haven dog service pages are planning guides, not verified directories. Owners should check every provider directly before booking.",
+        "Selected dog service pages show manually researched provider options where reliable source details are available. They are starting points, not rankings or endorsements, and owners should confirm every provider directly before booking.",
     },
     {
       question: "Why are there no provider prices or rankings?",

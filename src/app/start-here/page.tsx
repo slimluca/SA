@@ -134,7 +134,7 @@ const faqs = [
   {
     question: "Are Dog Haven local pages directories?",
     answer:
-      "No. Dog Haven does not publish unverified listings. Local pages help owners know what to ask and what to verify directly.",
+      "Selected local and service pages include manually researched provider options. They are starting points rather than rankings or endorsements, and owners must confirm current details directly. Other local pages provide practical planning guidance where verified coverage is still limited.",
   },
 ];
 

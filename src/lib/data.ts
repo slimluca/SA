@@ -155,7 +155,7 @@ export const trustItems = [
   "South Africa-focused",
   "Sources listed where needed",
   "Practical owner guidance",
-  "Directory listings only after manual verification",
+  "Selected provider options manually researched",
 ] as const;
 
 export const homeFaqs = [
@@ -165,9 +165,9 @@ export const homeFaqs = [
       "No. Dog Haven helps owners understand symptoms, preparation, prevention, and next steps, but urgent or medical concerns should be discussed with a qualified veterinarian.",
   },
   {
-    question: "Will Dog Haven publish business listings?",
+    question: "Does Dog Haven publish provider listings?",
     answer:
-      "Directory listings may be added later only after manual verification. Dog Haven will not publish fake listings, fake reviews, unsupported badges, or invented phone numbers.",
+      "Selected local and service pages publish manually researched provider details as starting points, not rankings or endorsements. Confirm current services, prices, availability, and emergency intake directly. Dog Haven does not publish invented reviews, unsupported badges, or fake phone numbers.",
   },
   {
     question: "Why is the site focused on South Africa?",
@@ -210,7 +210,7 @@ export const contactReasons = [
   {
     title: "Ask about listings",
     description:
-      "Dog Haven is not accepting unverified directory listings yet. Future listings will require manual checks before publication.",
+      "Provider suggestions are not published automatically. Dog Haven checks records manually and only adds details where there is enough reliable source information.",
     icon: MapPinned,
   },
 ] as const;
