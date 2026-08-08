@@ -1147,7 +1147,7 @@ export const phase4GuidePages: GuideContent[] = [
       "A practical South African guide to choosing a family dog by temperament, children, space, heat, grooming, costs, training, adoption, and responsible breeding.",
     intro:
       "The best family dog is not a breed list with a winner. It is a dog whose temperament, size, energy, handling tolerance, health, and daily needs fit your real household. Children, visitors, work hours, heat, costs, and resident pets matter as much as breed reputation.",
-    updated: "2026-05-13",
+    updated: "2026-08-08",
     quickFacts: [
       "No breed is automatically safe with children. Supervision and respectful handling are always required.",
       "Adult rescue dogs can be excellent family pets when the match is careful and the history is honestly discussed.",
@@ -1170,6 +1170,8 @@ export const phase4GuidePages: GuideContent[] = [
             ["Grooming", "Coat care becomes a recurring family responsibility."],
             ["Noise", "Complexes and close neighbours make barking more important."],
             ["Budget", "Food, vet care, training, grooming, and emergencies must be realistic."],
+            ["Health and insurance", "Breed tendencies, known conditions, exclusions, and emergency funding affect long-term fit."],
+            ["Home and climate", "Garden size, indoor space, shade, heat tolerance, and secure boundaries shape daily management."],
           ],
         },
       },
@@ -1201,17 +1203,36 @@ export const phase4GuidePages: GuideContent[] = [
         ],
       },
       {
-        heading: "Family safety rules",
+        heading: "Choosing a dog for children",
         body: [
-          "Good family dogs still need rules. Children should not climb on dogs, hug sleeping dogs, take food, grab ears, or disturb a dog in a bed or crate. Adults should supervise and step in early.",
+          "No breed is automatically safe with children. Match the individual dog's known temperament, size, strength, handling tolerance, and behaviour history to the youngest child and to the adults' ability to supervise. Puppies require intensive teaching and can nip or jump; a well-matched adult dog may offer a clearer picture of energy and behaviour.",
+          "Toddlers and young children cannot read every warning signal or manage a dog safely. Small dogs can be injured by rough handling, while large adolescent dogs can knock over or overpower a child without intending harm. Adults must manage both sides of every interaction and notice avoidance, freezing, growling, guarding, or escalating excitement before a bite occurs.",
         ],
         checklist: [
-          "Give the dog a child-free resting space.",
-          "Supervise all dog-child interaction.",
-          "Teach children to call the dog instead of chasing the dog.",
-          "Feed dogs away from children and other pets.",
-          "Use professional help for growling, snapping, fear, or guarding.",
+          "Use active adult supervision; being in the same house is not enough.",
+          "Give the dog a child-free resting space and never disturb a sleeping dog.",
+          "Keep children away from food bowls, chews, guarded toys, and feeding areas.",
+          "Teach children not to hug, climb on, corner, chase, tease, grab, or handle a dog roughly.",
+          "Protect small dogs from drops and squeezing, and manage the strength and jumping of large adolescent dogs.",
+          "Create calm visitor and school-friend routines, using gates or separation when supervision is stretched.",
+          "Teach bite-risk awareness: stop interaction and get qualified help for freezing, hard staring, growling, snapping, fear, pain, or guarding.",
         ],
+      },
+      {
+        heading: "Lifestyle, care, and long-term family fit",
+        body: [
+          "Compare exercise, training, grooming, shedding, heat tolerance, home and garden size, alone time, transport, holiday care, and visitor routines against an ordinary week. Garden access does not replace walks, enrichment, training, or companionship.",
+          "Budget for food by adult size, veterinary prevention and treatment, grooming, humane training, boarding or pet care, secure fencing, emergency savings, and insurance where suitable. Ask how hereditary, congenital, breed-related, and pre-existing conditions are treated before relying on cover.",
+        ],
+        table: {
+          headers: ["Choice", "Useful family consideration"],
+          rows: [
+            ["Puppy", "More predictable early history, but intensive toilet training, socialisation, supervision, chewing, and adolescent behaviour."],
+            ["Adult rescue or rehome", "Size and energy are clearer; ask for known child, visitor, handling, guarding, and bite history."],
+            ["Small dog", "May suit limited space, but can be fragile and may still be vocal, energetic, or grooming-intensive."],
+            ["Large dog", "May be steady, but strength, food, medication, transport, training, fencing, and handling costs increase."],
+          ],
+        },
       },
     ],
     faqs: [
@@ -1256,7 +1277,7 @@ export const phase4GuidePages: GuideContent[] = [
       "A practical South African guide to choosing dogs for flats, townhouses, complexes, and smaller gardens, with advice on barking, exercise, heat, rules, and adoption.",
     intro:
       "A small home does not automatically mean you need the smallest dog. The better question is which dog can live calmly with your space, neighbours, routine, exercise plan, body corporate rules, and budget.",
-    updated: "2026-05-13",
+    updated: "2026-08-08",
     quickFacts: [
       "Energy level, barking, toilet access, separation distress, and exercise matter more than size alone.",
       "Some small dogs are noisy and intense; some medium adult dogs are calm and easier to live with.",
@@ -1321,6 +1342,21 @@ export const phase4GuidePages: GuideContent[] = [
           "Close curtains or manage balcony access if outside triggers cause barking.",
           "Keep the dog cool in hot weather and avoid hot paving.",
           "Build alone-time gradually rather than leaving a new dog for a full day immediately.",
+        ],
+      },
+      {
+        heading: "Flats, apartments, townhouses, and rentals",
+        body: [
+          "Get written landlord, body corporate, complex, or estate approval before committing to a dog. Check limits on number, adult size, breed type, common areas, lifts, gardens, noise, and balcony use. A balcony is not a toilet plan, exercise area, or safe unsupervised place.",
+          "Plan the real route from the front door to a toilet area, including stairs or lifts, shared corridors, security gates, other dogs, and hot paving. Puppies, seniors, short-legged dogs, and dogs with joint or back concerns may struggle with frequent stairs. Small gardens still need secure fencing, shade, cleanup, and daily walks.",
+        ],
+        checklist: [
+          "Confirm written rental and body corporate approval before adoption or purchase.",
+          "Assess barking triggers through walls, corridors, gates, windows, and balconies.",
+          "Plan toilet breaks for mornings, workdays, evenings, bad weather, and illness.",
+          "Practise calm lift, stair, corridor, visitor, and neighbour routines.",
+          "Provide daily walks, sniffing, training, enrichment, and gradual alone-time practice.",
+          "Prevent unsupervised balcony access and provide cool indoor rest during hot weather.",
         ],
       },
     ],

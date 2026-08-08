@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { costServices, getPhase18LocalCostGuide } from "@/lib/phase18-local-cost-guides";
 import { localCities } from "@/lib/phase17-local-guides";
+import { shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -29,11 +30,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  return createMetadata({
+  const metadata = createMetadata({
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
   });
+
+  return shouldNoindexLocalGuide(guide.path)
+    ? { ...metadata, robots: { index: false, follow: true } }
+    : metadata;
 }
 
 export default async function LocalCostGuidePage({ params }: PageProps) {

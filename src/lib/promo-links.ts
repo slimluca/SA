@@ -8,12 +8,12 @@ export const homepageTools: CardLink[] = [
 ];
 
 export const homepagePopularGuides: CardLink[] = [
-  { title: "Ticks and Fleas in Dogs", description: "Year-round parasite checks, prevention questions, and South African risk context.", href: "/health/ticks-and-fleas-dogs-south-africa" },
-  { title: "Heatstroke in Dogs", description: "Hot-weather warning signs, urgent next steps, and prevention for South African owners.", href: "/emergency/heatstroke-in-dogs-south-africa" },
-  { title: "Snake Bites in Dogs", description: "What to do, what to avoid, and why fast veterinary care matters.", href: "/emergency/snake-bites-in-dogs-south-africa" },
-  { title: "Dog Poisoning", description: "Emergency toxin steps, vet-call details, and home-remedy risks.", href: "/emergency/dog-poisoning-south-africa" },
-  { title: "Dog Training South Africa", description: "Humane everyday training foundations for puppies and adult dogs.", href: "/training/dog-training-south-africa" },
-  { title: "Dog Grooming South Africa", description: "Coat, nails, ears, ticks, skin checks, and groomer questions.", href: "/grooming/dog-grooming-south-africa" },
+  { title: "Biliary Tick Bite Fever", description: "Warning signs, veterinary diagnosis, and South African Babesia context.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+  { title: "Ticks and Fleas", description: "Parasite checks, prevention questions, and South African exposure context.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+  { title: "Rabies in South Africa", description: "Dog-owner duties and urgent steps after possible human exposure.", href: "/emergency/rabies-south-africa" },
+  { title: "Dog Medical Aid and Pet Insurance", description: "Compare cover, limits, exclusions, and claims without provider rankings.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+  { title: "Puppy Scam Checklist", description: "Check sellers, records, payment pressure, and responsible sourcing.", href: "/adoption/puppy-scam-checklist-south-africa" },
+  { title: "Cost of Owning a Dog", description: "Plan recurring, preventive, and unexpected dog-care costs.", href: "/costs/cost-of-owning-a-dog-south-africa" },
 ];
 
 export const homepageMoneyPages: CardLink[] = [
@@ -59,7 +59,60 @@ export const hubPromos: Record<string, CardLink[]> = {
   ],
 };
 
-export function getArticlePromos(hubPath: string): CardLink[] {
+const tickHealthCluster: CardLink[] = [
+  { title: "Biliary Tick Bite Fever in Dogs", description: "Recognise warning signs and understand why veterinary diagnosis matters.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+  { title: "Tick and Flea Prevention", description: "Plan safer parasite prevention for your dog's age, size, and health.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+  { title: "Tick and Flea Treatment", description: "Questions to ask before choosing or combining parasite products.", href: "/health/tick-and-flea-treatment-for-dogs-south-africa" },
+  { title: "When Pale Gums Need Urgent Veterinary Care", description: "Check urgent anaemia and circulation warning signs.", href: "/health/dog-pale-gums-south-africa" },
+  { title: "Dog Not Eating", description: "Know when appetite loss needs same-day veterinary advice.", href: "/health/dog-not-eating-south-africa" },
+  { title: "When to Take Your Dog to the Vet", description: "Use symptom severity and timing to choose the next step.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+];
+
+const insuranceCluster: CardLink[] = [
+  { title: "Dog Medical Aid and Pet Insurance", description: "Understand cover types, limits, excesses, and payment flow.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+  { title: "Compare Dog Insurance", description: "Use a neutral policy comparison checklist.", href: "/insurance/compare-dog-insurance-south-africa" },
+  { title: "Pre-Existing Conditions", description: "Check how history and earlier symptoms may affect cover.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
+  { title: "Insurance Exclusions", description: "Read the limits and exclusions before relying on cover.", href: "/insurance/what-dog-insurance-does-not-cover-south-africa" },
+  { title: "Pet Insurance Claims", description: "Prepare invoices, clinical notes, forms, and proof of payment.", href: "/insurance/pet-insurance-claims-checklist-south-africa" },
+  { title: "Emergency Vet Budget", description: "Plan for deposits, excesses, exclusions, and reimbursement delays.", href: "/costs/how-to-budget-for-emergency-vet-bills-south-africa" },
+];
+
+const rabiesCluster: CardLink[] = [
+  { title: "Rabies in South Africa", description: "Separate dog-owner actions from urgent human exposure actions.", href: "/emergency/rabies-south-africa" },
+  { title: "Dog Vaccination Schedule", description: "Plan puppy and adult vaccination conversations with your vet.", href: "/health/vaccination-schedule-south-africa" },
+  { title: "Rabies Vaccination Law", description: "Understand South African vaccination duties and record keeping.", href: "/laws/rabies-vaccination-law-south-africa" },
+  { title: "When to Take Your Dog to the Vet", description: "Prepare for urgent veterinary escalation after an animal exposure.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+];
+
+const adoptionCluster: CardLink[] = [
+  { title: "Puppy Scam Checklist", description: "Check sellers, records, payment pressure, and collection arrangements.", href: "/adoption/puppy-scam-checklist-south-africa" },
+  { title: "Dog Adoption in South Africa", description: "Prepare for welfare checks, records, and a realistic home match.", href: "/adoption/dog-adoption-south-africa" },
+  { title: "Questions Before Adopting", description: "Ask about health, behaviour, history, support, and costs.", href: "/adoption/questions-to-ask-before-adopting-a-dog" },
+  { title: "Responsible Puppy Planning", description: "Prepare health, records, routine, and early-care questions.", href: "/puppy/puppy-care-south-africa" },
+  { title: "New Puppy Checklist", description: "Prepare the first days, supplies, records, and veterinary plan.", href: "/puppy/new-puppy-checklist-south-africa" },
+];
+
+function withoutCurrentPage(cards: CardLink[], guidePath: string) {
+  return cards.filter((card) => card.href !== guidePath).slice(0, 5);
+}
+
+export function getArticlePromos(hubPath: string, guidePath: string): CardLink[] {
+  if (tickHealthCluster.some((card) => card.href === guidePath)) {
+    return withoutCurrentPage(tickHealthCluster, guidePath);
+  }
+
+  if (hubPath === "/insurance") {
+    return withoutCurrentPage(insuranceCluster, guidePath);
+  }
+
+  if (guidePath === "/emergency/rabies-south-africa" || guidePath.includes("rabies")) {
+    return withoutCurrentPage(rabiesCluster, guidePath);
+  }
+
+  if (hubPath === "/adoption" || guidePath.includes("puppy-scam")) {
+    return withoutCurrentPage(adoptionCluster, guidePath);
+  }
+
   if (hubPath === "/food") {
     return [
       { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
@@ -67,7 +120,7 @@ export function getArticlePromos(hubPath: string): CardLink[] {
     ];
   }
 
-  if (hubPath === "/costs" || hubPath === "/insurance") {
+  if (hubPath === "/costs") {
     return [
       { title: "Dog Cost Calculator", description: "Estimate monthly dog ownership costs.", href: "/tools/dog-cost-calculator" },
     ];

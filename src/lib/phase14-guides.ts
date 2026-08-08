@@ -15,6 +15,8 @@ type MoneyGuide = {
   faqs: GuideContent["faqs"];
   related: CardLink[];
   sources: Source[];
+  updated?: string;
+  processSteps?: string[];
 };
 
 const reviewed = "2026-05-15";
@@ -73,6 +75,7 @@ const insuranceGuides: MoneyGuide[] = [
       "Compare dog insurance by reading the policy wording, not just the monthly premium. The cheapest premium can still be expensive if excesses, limits, exclusions, waiting periods, or claim rules do not suit your dog.",
     context:
       "South African pet insurance products can differ in accident cover, illness cover, routine care add-ons, exclusions, claim processes, and how they treat age, breed, dental issues, hereditary conditions, and pre-existing conditions. Dog Haven does not rank insurers or provide financial advice.",
+    updated: "2026-08-08",
     tableRows: [
       ["Monthly premium", "What you pay regularly, but it is only one part of the comparison."],
       ["Excess", "The amount or percentage you pay when claiming, sometimes per claim or condition."],
@@ -80,6 +83,8 @@ const insuranceGuides: MoneyGuide[] = [
       ["Per-condition limit", "A separate cap for one illness, injury, or treatment category."],
       ["Waiting periods", "Time before certain cover starts; accident and illness timing can differ."],
       ["Exclusions", "Items the policy will not cover, often including pre-existing conditions."],
+      ["Cover scope", "Compare accident, illness, chronic-condition, routine-care, dental, and hereditary wording rather than relying on product labels."],
+      ["Claims and payment", "Check forms, invoices, vet records, deadlines, disputes, and whether you pay the vet first or direct payment may be available."],
     ],
     questions: [
       "Is this accident-only, illness, comprehensive, or routine-care cover?",
@@ -87,6 +92,8 @@ const insuranceGuides: MoneyGuide[] = [
       "Are there annual, per-condition, dental, hereditary, or breed-related limits?",
       "How are pre-existing conditions assessed?",
       "What documents are needed for claims?",
+      "How are chronic conditions, dental care, and claim disputes handled?",
+      "Do I normally pay the vet first, and is direct vet payment ever available?",
       "Can premiums or terms change at renewal?",
     ],
     avoid: [
@@ -101,6 +108,7 @@ const insuranceGuides: MoneyGuide[] = [
       "Ask the insurer direct questions in writing.",
       "Compare excesses and limits side by side.",
       "Check claim process and payout timing.",
+      "Compare cover types, dental and chronic-condition wording, and direct-payment rules.",
       "Keep vet records complete before claiming.",
     ],
     faqs: [
@@ -124,7 +132,7 @@ const insuranceGuides: MoneyGuide[] = [
     sources: [sources.fsca, sources.fscaAdvice],
   },
   {
-    slug: "dog-insurance-comparison-south-africa",
+    slug: "retired-dog-insurance-comparison-article",
     hubPath: "/insurance",
     title: "Dog Insurance Comparison in South Africa",
     seoTitle: "Dog Insurance Comparison South Africa | What to Compare",
@@ -435,6 +443,7 @@ const insuranceGuides: MoneyGuide[] = [
       "A pre-existing condition is usually linked to signs, symptoms, diagnosis, or treatment before cover starts, but definitions differ. Read the policy wording and ask the insurer how they assess vet records.",
     context:
       "Owners often discover pre-existing condition wording only during a claim. It is better to understand it before buying, switching, or delaying vet care.",
+    updated: "2026-08-08",
     tableRows: [
       ["Symptom before cover", "May be considered even if diagnosis came later."],
       ["Previous treatment", "Vet notes, medicine, or follow-ups may affect claims."],
@@ -442,6 +451,8 @@ const insuranceGuides: MoneyGuide[] = [
       ["Related condition", "Some policies may link recurring or bilateral issues."],
       ["Medical history", "Insurers may request vet records before approving claims."],
       ["Disclosure", "Clear answers reduce claim surprises."],
+      ["Switching insurers", "A new policy may apply new waiting periods and assess earlier symptoms or treatment under its own wording."],
+      ["Claim preparation", "Keep complete clinical notes, invoices, diagnostic reports, and written insurer answers where required."],
     ],
     questions: [
       "How do you define pre-existing condition?",
@@ -449,6 +460,8 @@ const insuranceGuides: MoneyGuide[] = [
       "How far back do you review vet records?",
       "Can a condition ever be reviewed or excluded permanently?",
       "What records should I submit before claiming?",
+      "How will switching policies affect earlier symptoms, treatment, exclusions, and waiting periods?",
+      "Which claim documents and diagnostic records may be required?",
     ],
     avoid: [
       "Do not delay a vet visit to protect future insurance.",
@@ -461,6 +474,8 @@ const insuranceGuides: MoneyGuide[] = [
       "Keep complete vet notes and invoices.",
       "Disclose symptoms honestly.",
       "Compare waiting periods and exclusions.",
+      "Before switching, compare the new wording and waiting periods before cancelling existing cover.",
+      "Keep clinical notes, invoices, diagnostic reports, and claim correspondence together.",
       "Budget for conditions that may not be covered.",
     ],
     faqs: [
@@ -612,6 +627,7 @@ const insuranceGuides: MoneyGuide[] = [
       "A smoother pet insurance claim usually starts before the emergency: know the claim process, keep vet records, save invoices, and ask the insurer what documents they need.",
     context:
       "During a vet emergency, owners may be stressed and short on time. A simple claims folder can reduce admin pressure after treatment.",
+    updated: "2026-08-08",
     tableRows: [
       ["Policy number", "Keep it with emergency contacts."],
       ["Vet invoice", "Usually needed for reimbursement."],
@@ -619,6 +635,8 @@ const insuranceGuides: MoneyGuide[] = [
       ["Claim form", "Check whether owner and vet sections are needed."],
       ["Proof of payment", "May be needed if you paid the clinic upfront."],
       ["Follow-up invoices", "Submit according to insurer timing rules."],
+      ["Diagnostic reports", "Test or imaging reports may be required depending on the claim and current policy wording."],
+      ["Excess and limits", "Check the amount you remain responsible for and any annual, claim, or condition limit."],
     ],
     questions: [
       "Do I need pre-authorisation for planned treatment?",
@@ -626,6 +644,7 @@ const insuranceGuides: MoneyGuide[] = [
       "What is the claim deadline?",
       "What documents are needed for emergency claims?",
       "How do I appeal or query a rejected claim?",
+      "What is the process for clarifying a partial payment, exclusion, or disputed decision?",
     ],
     avoid: [
       "Do not delay urgent vet care while searching for policy wording.",
@@ -640,6 +659,16 @@ const insuranceGuides: MoneyGuide[] = [
       "Submit within the claim deadline.",
       "Keep copies of all correspondence.",
       "Track claim reference numbers.",
+      "Record the applicable excess and limits, and retain diagnostic reports where required.",
+    ],
+    processSteps: [
+      "Check the current policy wording, claim deadline, pre-authorisation rules, excess, and applicable limits without delaying urgent veterinary care.",
+      "Notify the insurer through its required channel and record the claim reference number.",
+      "Complete the current claim form, including any owner and veterinary sections the insurer requires.",
+      "Gather the itemised invoice, proof of payment, clinical notes, and diagnostic reports where required.",
+      "Submit the complete claim through the stated portal or address and keep copies of everything sent.",
+      "Track follow-up requests and respond through the recorded claim channel.",
+      "Check the outcome against the policy wording, excess, and limits; ask for written clarification or use the current complaint process if something is unclear or disputed.",
     ],
     faqs: [
       {
@@ -1112,6 +1141,7 @@ function toGuide(guide: MoneyGuide): GuideContent {
     description: guide.description,
     intro: guide.summary,
     updated: reviewed,
+    ...(guide.updated ? { updated: guide.updated } : {}),
     quickFacts: [
       isInsurance
         ? "Dog Haven does not provide financial advice, broker services, insurer rankings, or personalised recommendations."
@@ -1140,6 +1170,17 @@ function toGuide(guide: MoneyGuide): GuideContent {
           rows: guide.tableRows,
         },
       },
+      ...(guide.processSteps
+        ? [
+            {
+              heading: "Step-by-step claim process",
+              body: [
+                "Requirements vary by insurer and current policy wording. Use these steps as an administrative sequence, not a promise that a claim will be approved.",
+              ],
+              checklist: guide.processSteps,
+            },
+          ]
+        : []),
       {
         heading: "Questions to ask",
         body: [
@@ -1177,9 +1218,13 @@ function toGuide(guide: MoneyGuide): GuideContent {
   };
 }
 
-export const phase14GuidePages: GuideContent[] = [...insuranceGuides, ...costGuides].map(toGuide);
+const activeInsuranceGuides = insuranceGuides.filter(
+  (guide) => guide.slug !== "retired-dog-insurance-comparison-article",
+);
 
-export const phase14InsuranceCards: CardLink[] = insuranceGuides.map((guide) => ({
+export const phase14GuidePages: GuideContent[] = [...activeInsuranceGuides, ...costGuides].map(toGuide);
+
+export const phase14InsuranceCards: CardLink[] = activeInsuranceGuides.map((guide) => ({
   title: guide.title,
   description: guide.description,
   href: `/insurance/${guide.slug}`,

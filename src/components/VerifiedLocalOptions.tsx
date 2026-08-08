@@ -29,10 +29,10 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
         <>
           {providers.length < 4 ? (
             <div className="mt-4 rounded-xl border border-honey/45 bg-honey/10 p-5">
-              <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
+              <p className="text-base font-black text-cocoa">Verified starting shortlist</p>
               <p className="mt-2 text-sm leading-6 text-bark">
-                We are still adding more verified local options for this page. Use these entries
-                as a starting shortlist and confirm details directly before booking.
+                Dog Haven deliberately lists only options it could verify from an identifiable
+                public or official source. Confirm details directly before booking.
               </p>
             </div>
           ) : null}
@@ -98,10 +98,11 @@ export function VerifiedLocalOptions({ providers, showNotice }: VerifiedLocalOpt
         </>
       ) : (
         <div className="mt-4 rounded-xl border border-honey/45 bg-honey/10 p-5">
-          <p className="text-base font-black text-cocoa">Verified local options are still being built</p>
+          <p className="text-base font-black text-cocoa">No verified provider shortlist is published</p>
           <p className="mt-2 text-sm leading-6 text-bark">
-            Verified local options are still being built for this page. Use the checklist below
-            while you confirm providers directly.
+            Use the provider-checking checklist below and confirm services directly. Dog Haven
+            does not publish a provider until it can be checked against an identifiable public or
+            official source.
           </p>
         </div>
       )}

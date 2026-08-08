@@ -41,6 +41,7 @@ type BreedLifestyleTopic = {
   adoptionCautions: string[];
   faqs: GuideContent["faqs"];
   related: CardLink[];
+  updated?: string;
 };
 
 const commonRelated: CardLink[] = [
@@ -69,7 +70,7 @@ const generalCautions = [
 
 const topics: BreedLifestyleTopic[] = [
   {
-    slug: "best-dogs-for-families-south-africa",
+    slug: "retired-best-dogs-for-families-article",
     title: "Best Dogs for Families in South Africa",
     seoTitle: "Best Dogs for Families South Africa | Responsible Breed Guide",
     description:
@@ -128,7 +129,7 @@ const topics: BreedLifestyleTopic[] = [
     ],
   },
   {
-    slug: "best-dogs-for-kids-south-africa",
+    slug: "retired-best-dogs-for-kids-article",
     title: "Best Dogs for Kids in South Africa",
     seoTitle: "Best Dogs for Kids South Africa | Child-Safe Breed Planning",
     description:
@@ -180,7 +181,7 @@ const topics: BreedLifestyleTopic[] = [
       { question: "Is a puppy better than an adult dog for kids?", answer: "Not always. Puppies bite, jump, chew, and need intense supervision. A carefully matched adult dog can be easier for some families." },
     ],
     related: [
-      { title: "Best Family Dogs", description: "Family fit, supervision, costs, and care.", href: "/breeds/best-dogs-for-families-south-africa" },
+      { title: "Best Family Dogs", description: "Family fit, supervision, costs, and care.", href: "/breeds/best-family-dogs-south-africa" },
       { title: "Puppy Socialisation", description: "Safe early experiences with vet guidance.", href: "/puppy/puppy-socialisation-south-africa" },
       { title: "Questions Before Adopting", description: "Ask matching questions before bringing a dog home.", href: "/adoption/questions-to-ask-before-adopting-a-dog" },
       ...commonRelated,
@@ -241,7 +242,7 @@ const topics: BreedLifestyleTopic[] = [
     related: [
       { title: "Dachshund", description: "Small dog with back-care and barking considerations.", href: "/breeds/dachshund-south-africa" },
       { title: "Maltese Poodle", description: "Small companion dog planning for South Africa.", href: "/breeds/maltese-poodle-south-africa" },
-      { title: "Best Apartment Dogs", description: "Flat and complex living considerations.", href: "/breeds/best-apartment-dogs-south-africa" },
+      { title: "Best Dogs for Small Homes", description: "Flat and complex living considerations.", href: "/breeds/best-dogs-for-small-homes-south-africa" },
       ...commonRelated,
     ],
   },
@@ -317,6 +318,8 @@ const topics: BreedLifestyleTopic[] = [
     context: [
       "Security concerns are real, but choosing a dog for intimidation can create bite risk, welfare problems, barking complaints, insurance issues, and legal trouble.",
       "A well-managed alert dog should still be safe around family, visitors, vets, groomers, and public spaces.",
+      "An alert companion dog that barks when someone approaches is not the same as a professionally selected and trained security dog. Most households need reliable alerting, secure boundaries, and a controllable family companion rather than attack work.",
+      "Where children are present, supervision and separation systems matter more than a breed's reputation. No powerful dog should be left unsupervised with a child, and children should not manage guarding behaviour, gates, food, or high-value toys.",
     ],
     examples: [
       ["German Shepherd", "Trainable and alert, but needs work and socialisation."],
@@ -329,17 +332,22 @@ const topics: BreedLifestyleTopic[] = [
       "Is your fencing secure enough to prevent escape and boundary incidents?",
       "Will the dog live as a companion, not isolated as an alarm?",
       "Have you checked landlord, estate, body corporate, insurance, and municipal rules?",
+      "Can adults supervise every interaction with children and use gates or separate rooms during visitors, deliveries, meals, and excited play?",
+      "Do you understand the difference between a stable dog that alerts and specialist protection training, which should never be improvised at home?",
       ...generalChecklist,
     ],
     costCare: [
       "Budget for training, secure fencing, strong equipment, vet care, insurance or savings, and safe transport.",
       "Powerful dogs may cost more for food, boarding, behaviour support, and liability planning.",
       "Cheap puppies from suspicious sellers can lead to health and temperament problems.",
+      "Include secure gates, warning-free visitor management, robust leads and harnesses, and contingency care by an adult who can safely handle the dog.",
     ],
     trainingGrooming: [
       "Use humane, reward-based training focused on control, recall, calm greetings, and safe visitor routines.",
       "Avoid punishment-heavy methods that increase fear, frustration, or unpredictable behaviour.",
       "Socialisation should teach calm neutrality, not uncontrolled guarding.",
+      "Practise door, gate, delivery, veterinary, and public-space routines before they are urgent. Use physical separation when reliable control is uncertain.",
+      "Do not attempt attack or bite training yourself. If specialist security work is genuinely required, seek appropriately qualified professional advice and keep family and public safety central.",
     ],
     healthInsurance: [
       "Large guarding breeds may have joint, heart, skin, cruciate, or breed-related concerns.",
@@ -355,6 +363,7 @@ const topics: BreedLifestyleTopic[] = [
       { question: "What is the best guard dog for South Africa?", answer: "There is no universally best guard dog. Responsible ownership, secure fencing, training, temperament, and legal responsibility matter more than breed labels." },
       { question: "Should I train a dog to be aggressive?", answer: "No. Encouraging aggression is unsafe and unfair to the dog. Seek humane professional guidance for control and safety." },
       { question: "Can a guard dog be a family dog?", answer: "Some alert dogs can be family companions, but only with responsible management, socialisation, supervision, and training." },
+      { question: "Is an alert dog the same as a trained security dog?", answer: "No. Many companion dogs naturally alert by barking. Specialist security work involves much higher selection, training, handling, welfare, and liability demands and is not a do-it-yourself family project." },
     ],
     related: [
       { title: "Dog Laws", description: "Rules, bites, barking, public spaces, and responsibility.", href: "/laws" },
@@ -362,9 +371,10 @@ const topics: BreedLifestyleTopic[] = [
       { title: "German Shepherd", description: "Responsible alert breed ownership.", href: "/breeds/german-shepherd-south-africa" },
       ...commonRelated,
     ],
+    updated: "2026-08-08",
   },
   {
-    slug: "best-apartment-dogs-south-africa",
+    slug: "retired-best-apartment-dogs-article",
     title: "Best Apartment Dogs in South Africa",
     seoTitle: "Best Apartment Dogs South Africa | Flats, Rentals and Barking Guide",
     description:
@@ -770,7 +780,7 @@ const topics: BreedLifestyleTopic[] = [
       { question: "Which dogs are bad for small gardens?", answer: "Dogs with high exercise needs, constant barking, escape drive, or poor neighbour tolerance may struggle unless owners provide strong management." },
     ],
     related: [
-      { title: "Apartment Dogs", description: "Flat and complex living planning.", href: "/breeds/best-apartment-dogs-south-africa" },
+      { title: "Dogs for Small Homes", description: "Flat and complex living planning.", href: "/breeds/best-dogs-for-small-homes-south-africa" },
       { title: "Quiet Dog Breeds", description: "Barking and neighbour expectations.", href: "/breeds/quiet-dog-breeds-south-africa" },
       { title: "Dog Laws", description: "Complex, barking, and leash rule checks.", href: "/laws" },
       ...commonRelated,
@@ -836,7 +846,7 @@ const topics: BreedLifestyleTopic[] = [
     ],
   },
   {
-    slug: "best-dogs-for-security-and-family-south-africa",
+    slug: "retired-security-and-family-dogs-article",
     title: "Best Dogs for Security and Family in South Africa",
     seoTitle: "Dogs for Security and Family South Africa | Responsible Safety Guide",
     description:
@@ -890,7 +900,7 @@ const topics: BreedLifestyleTopic[] = [
     related: [
       { title: "Guard Dogs", description: "Responsible guard dog planning.", href: "/breeds/best-guard-dogs-south-africa" },
       { title: "Dog Bite Laws", description: "Safety and responsibility after dog bites.", href: "/laws/dog-bite-laws-south-africa" },
-      { title: "Best Family Dogs", description: "Family dog planning without guard hype.", href: "/breeds/best-dogs-for-families-south-africa" },
+      { title: "Best Family Dogs", description: "Family dog planning without guard hype.", href: "/breeds/best-family-dogs-south-africa" },
       ...commonRelated,
     ],
   },
@@ -948,7 +958,7 @@ const topics: BreedLifestyleTopic[] = [
     ],
     related: [
       { title: "Nuisance Barking", description: "Neighbour complaints and humane steps.", href: "/laws/nuisance-barking-south-africa" },
-      { title: "Apartment Dogs", description: "Barking, enrichment, and rental planning.", href: "/breeds/best-apartment-dogs-south-africa" },
+      { title: "Dogs for Small Homes", description: "Barking, enrichment, and rental planning.", href: "/breeds/best-dogs-for-small-homes-south-africa" },
       { title: "Separation Anxiety", description: "When alone-time distress causes noise.", href: "/training/separation-anxiety-dogs-south-africa" },
       ...commonRelated,
     ],
@@ -1014,7 +1024,18 @@ const topics: BreedLifestyleTopic[] = [
   },
 ];
 
-export const phase25BreedLifestyleGuidePages: GuideContent[] = topics.map((topic) => ({
+const retiredBreedLifestyleSlugs = new Set([
+  "retired-best-dogs-for-families-article",
+  "retired-best-dogs-for-kids-article",
+  "retired-best-apartment-dogs-article",
+  "retired-security-and-family-dogs-article",
+]);
+
+const activeBreedLifestyleTopics = topics.filter(
+  (topic) => !retiredBreedLifestyleSlugs.has(topic.slug),
+);
+
+export const phase25BreedLifestyleGuidePages: GuideContent[] = activeBreedLifestyleTopics.map((topic) => ({
   slug: topic.slug,
   path: `/breeds/${topic.slug}`,
   hubTitle: "Breed Guides",
@@ -1023,7 +1044,7 @@ export const phase25BreedLifestyleGuidePages: GuideContent[] = topics.map((topic
   seoTitle: topic.seoTitle,
   description: topic.description,
   intro: topic.intro,
-  updated: reviewed,
+  updated: topic.updated ?? reviewed,
   quickFacts: [
     topic.summary,
     "This guide is not a ranking and does not claim any breed is perfect for every home.",
@@ -1092,19 +1113,19 @@ export const phase25BreedCards: CardLink[] = [
 export const phase25PuppyCards: CardLink[] = [
   { title: "Choosing the Right Dog Breed", description: "Choose by adult needs, not puppy cuteness.", href: "/breeds/choosing-the-right-dog-breed-south-africa" },
   { title: "First-Time Owner Dogs", description: "Beginner-friendly breed planning with realistic tradeoffs.", href: "/breeds/best-dogs-for-first-time-owners-south-africa" },
-  { title: "Family Dogs", description: "Child supervision, family routines, and cost planning.", href: "/breeds/best-dogs-for-families-south-africa" },
+  { title: "Family Dogs", description: "Child supervision, family routines, and cost planning.", href: "/breeds/best-family-dogs-south-africa" },
   { title: "Small Dogs", description: "Small-home puppy planning, barking, grooming, and fragility.", href: "/breeds/best-small-dogs-south-africa" },
 ];
 
 export const phase25AdoptionCards: CardLink[] = [
   { title: "Choosing the Right Dog Breed", description: "Use lifestyle fit before adopting or buying.", href: "/breeds/choosing-the-right-dog-breed-south-africa" },
-  { title: "Family Dogs", description: "Match temperament, children, space, and care needs.", href: "/breeds/best-dogs-for-families-south-africa" },
+  { title: "Family Dogs", description: "Match temperament, children, space, and care needs.", href: "/breeds/best-family-dogs-south-africa" },
   { title: "Breed Comparison Checklist", description: "Compare adoption and breeder questions before deciding.", href: "/tools/dog-breed-comparison-checklist" },
 ];
 
 export const phase25TrainingCards: CardLink[] = [
   { title: "Guard Dogs", description: "Responsible training and safety without aggression hype.", href: "/breeds/best-guard-dogs-south-africa" },
-  { title: "Apartment Dogs", description: "Barking, enrichment, leash manners, and neighbour planning.", href: "/breeds/best-apartment-dogs-south-africa" },
+  { title: "Dogs for Small Homes", description: "Barking, enrichment, leash manners, and neighbour planning.", href: "/breeds/best-dogs-for-small-homes-south-africa" },
   { title: "Quiet Dog Breeds", description: "Realistic barking expectations and training support.", href: "/breeds/quiet-dog-breeds-south-africa" },
   { title: "First-Time Owner Dogs", description: "Training difficulty and beginner-friendly expectations.", href: "/breeds/best-dogs-for-first-time-owners-south-africa" },
 ];

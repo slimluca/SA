@@ -641,25 +641,25 @@ const phase5GuidePagesRaw: GuideContent[] = [
     path: "/insurance/pet-insurance-for-dogs-south-africa",
     hubTitle: "Insurance",
     hubPath: "/insurance",
-    title: "Pet Insurance for Dogs in South Africa",
-    seoTitle: "Pet Insurance for Dogs South Africa | Plain-English Guide",
+    title: "Dog Medical Aid and Pet Insurance in South Africa",
+    seoTitle: "Dog Medical Aid & Pet Insurance South Africa | Cover Guide",
     description:
-      "A plain-English South African guide to dog insurance, covering premiums, excesses, annual limits, exclusions, claims, waiting periods, and routine-care add-ons.",
+      "A neutral South African guide to dog medical aid and pet insurance, covering cover types, limits, excesses, exclusions, waiting periods, claims, and emergency payment questions.",
     intro:
-      "Pet insurance can make large vet bills easier to manage, but it is not a magic card that pays for everything. South African dog owners need to compare policy documents, not slogans, and understand exactly what happens when a claim is made.",
-    updated: "2026-05-13",
+      "South African consumers often search for dog medical aid, pet medical aid, pet cover, or pet insurance. Providers may use these terms differently, so compare the actual policy or benefit wording: what event is covered, what you still pay, when cover starts, and how money moves during an emergency.",
+    updated: "2026-08-08",
     quickFacts: [
       "This guide is educational only and is not personalised financial advice.",
-      "Do not choose insurance by premium alone. Compare excesses, annual limits, exclusions, waiting periods, claim process, and age rules.",
+      "Do not choose dog medical aid or pet insurance by premium alone. Compare cover type, excesses, co-payments, annual and sub-limits, exclusions, waiting periods, claims, and age rules.",
       "Pre-existing conditions are often excluded or treated differently, so timing matters.",
       "Ask each insurer direct questions and keep written answers with your policy documents.",
     ],
     sections: [
       {
-        heading: "What pet insurance may cover",
+        heading: "Start with the cover type, not the product name",
         body: [
-          "Policies differ, but dog insurance commonly groups cover into accidents, illnesses, hospitalisation, surgery, diagnostics, medication, and sometimes optional routine-care benefits.",
-          "Routine care add-ons may include items such as vaccines, check-ups, dental scale benefits, or parasite prevention, but these are policy-specific and may have limits.",
+          "Accident-only cover is generally aimed at eligible unexpected injuries. Broader accident-and-illness cover may include eligible diagnostics, hospitalisation, surgery, and treatment for new illnesses, subject to every limit and exclusion. Routine or wellness benefits are different again and may be included, optional, capped, or absent.",
+          "The words medical aid, cover, plan, and insurance do not by themselves tell you what is included. Ask for the full current wording and benefit schedule, then compare the same real-life scenarios across options.",
         ],
         table: {
           headers: ["Policy feature", "Question to ask"],
@@ -667,9 +667,26 @@ const phase5GuidePagesRaw: GuideContent[] = [
             ["Accident cover", "What counts as an accident and when does cover start?"],
             ["Illness cover", "Which illnesses are covered and what waiting period applies?"],
             ["Annual limit", "What is the maximum paid per year, per condition, or per claim?"],
-            ["Excess", "How much do I pay before the insurer contributes?"],
+            ["Excess and co-payment", "Is it a fixed amount, a percentage, or both, and does it apply per claim or condition?"],
             ["Pre-existing conditions", "How does the insurer define and handle them?"],
             ["Claims", "Do I pay upfront and claim back, or can the vet be paid directly?"],
+          ],
+        },
+      },
+      {
+        heading: "Limits and wording that change the real value",
+        body: [
+          "A headline annual limit can hide smaller per-condition, procedure, diagnostic, medication, hospital, or specialist sub-limits. Check whether hereditary and congenital conditions have separate wording, whether recurring conditions share one limit, and whether limits reset at renewal.",
+          "Waiting periods and pre-existing-condition definitions deserve special attention. Ask how earlier symptoms are treated even when no diagnosis existed, and what happens when switching from another provider. Disclose veterinary history honestly and keep written answers.",
+        ],
+        table: {
+          headers: ["Term", "What to verify in writing"],
+          rows: [
+            ["Annual maximum", "The total eligible amount across the policy year."],
+            ["Per-condition or sub-limit", "Smaller caps for a diagnosis, test, procedure, medicine, or benefit category."],
+            ["Waiting period", "When accident, illness, orthopaedic, dental, or wellness benefits actually begin."],
+            ["Hereditary or congenital wording", "Whether these conditions are covered, limited, or excluded for your dog."],
+            ["Age rules", "Entry ages, later-life co-payments, renewability, and benefit changes."],
           ],
         },
       },
@@ -693,6 +710,22 @@ const phase5GuidePagesRaw: GuideContent[] = [
           "Age limits, breed rules, and premium increases.",
           "Dental, hereditary, chronic, behavioural, prescription food, and alternative therapy rules.",
           "Claim documents, time limits, and payment process.",
+          "Whether hereditary or congenital conditions have separate limits or exclusions.",
+          "Whether age changes the excess, co-payment, cover, or renewal terms.",
+        ],
+      },
+      {
+        heading: "Claims and emergency admission questions",
+        body: [
+          "Ask what a normal claim requires: itemised invoices, proof of payment, clinical notes, claim forms, prior records, and submission deadlines. Confirm whether the owner usually pays the vet first and seeks reimbursement, or whether direct payment can ever be arranged. Do not assume your vet and provider have a direct-payment relationship.",
+          "For emergency hospital admission, ask the clinic what deposit or estimate is required and ask the cover provider whether pre-authorisation is needed or available. Keep an emergency fund for deposits, excesses, co-payments, excluded items, costs above limits, and the period before any reimbursement.",
+        ],
+        checklist: [
+          "Save the current claims contact details and submission route.",
+          "Keep the policy schedule, benefit table, exclusions, and written answers together.",
+          "Ask whether pre-authorisation is required for admission, surgery, or advanced diagnostics.",
+          "Confirm who pays the veterinary practice first and what proof the claim needs.",
+          "Plan for the portion that remains your responsibility even when a claim is eligible.",
         ],
       },
       {
@@ -722,6 +755,9 @@ const phase5GuidePagesRaw: GuideContent[] = [
     ],
     related: [
       { title: "Waiting Periods", description: "Know when cover starts.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
+      { title: "Compare Dog Insurance", description: "Compare cover types, limits, excesses, and exclusions.", href: "/insurance/compare-dog-insurance-south-africa" },
+      { title: "Pre-Existing Conditions", description: "Understand how health history and earlier symptoms may affect cover.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
+      { title: "Claims Checklist", description: "Prepare invoices, clinical notes, and proof of payment.", href: "/insurance/pet-insurance-claims-checklist-south-africa" },
       { title: "Is Insurance Worth It?", description: "Compare cover and savings.", href: "/insurance/is-pet-insurance-worth-it-south-africa" },
       { title: "Emergency Vet Costs", description: "Plan for urgent bills.", href: "/costs/emergency-vet-costs-south-africa" },
     ],
@@ -738,7 +774,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
       "A plain-English guide to dog insurance waiting periods in South Africa, including accident cover, illness cover, pre-existing conditions, exclusions, and claims.",
     intro:
       "A waiting period is the time after joining a policy before certain benefits can be claimed. It exists so insurance covers unexpected future events, not problems that are already present. The exact rules differ by insurer, so always read the policy wording.",
-    updated: "2026-05-13",
+    updated: "2026-08-08",
     quickFacts: [
       "This guide is educational only and is not personalised financial advice.",
       "Waiting periods differ between accident, illness, routine care, orthopaedic, dental, and other benefit types.",
@@ -760,6 +796,8 @@ const phase5GuidePagesRaw: GuideContent[] = [
             ["Routine-care waiting period", "Whether wellness benefits have their own wait."],
             ["Pre-existing condition", "How signs, symptoms, diagnosis, and vet records are interpreted."],
             ["Specific exclusions", "Dental, hereditary, orthopaedic, behavioural, or breed-related limits."],
+            ["Policy-specific waiting period", "Whether a procedure, condition, or added benefit has its own start date."],
+            ["Switching insurers", "Whether the new policy applies fresh waits or assesses earlier symptoms under pre-existing-condition wording."],
           ],
         },
       },
@@ -783,6 +821,21 @@ const phase5GuidePagesRaw: GuideContent[] = [
         body: [
           "Insurance is easiest to arrange while a dog is healthy. Once a dog has a limp, skin problem, ear infections, vomiting episodes, seizures, or chronic medication, future cover can become more complicated.",
           "This does not mean every older or previously sick dog cannot be insured. It means you need to compare wording carefully and ask the insurer exactly what would be excluded.",
+        ],
+      },
+      {
+        heading: "Before switching or cancelling existing cover",
+        body: [
+          "Do not assume time served under one policy transfers to another. Before cancelling existing cover, obtain the new policy wording and written confirmation of its start date, accident and illness waiting periods, policy-specific waits, exclusions, and treatment of symptoms or vet visits that happened before or during the change.",
+          "Compare any gap between policies, new excesses and limits, and whether an application or upgrade must first be accepted. Keep the old policy active until you understand the new cover and have made your own informed decision; Dog Haven cannot advise whether a particular owner should switch.",
+        ],
+        checklist: [
+          "Confirm the exact new policy start date in writing.",
+          "List accident, illness, dental, orthopaedic, hereditary, and other policy-specific waiting periods.",
+          "Ask how symptoms, tests, treatment, or vet notes before the new start date will be assessed.",
+          "Check new pre-existing-condition definitions, exclusions, excesses, and limits.",
+          "Understand whether changing plan level triggers fresh waiting periods.",
+          "Do not cancel old cover until you have compared both current documents and any coverage gap.",
         ],
       },
       {

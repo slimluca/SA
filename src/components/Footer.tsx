@@ -22,20 +22,11 @@ export function Footer() {
             Dog Haven is South Africa&apos;s practical dog care guide for owners who want calm,
             useful, locally aware advice before they make decisions for their dogs.
           </p>
-          <nav className="mt-6" aria-label="Dog Haven network footer links">
-            <h2 className="text-sm font-bold uppercase tracking-wide text-navy">Dog Haven network</h2>
-            <div className="mt-3 grid gap-2 text-sm text-bark">
-              <Link href="https://doghaven.it" className="transition hover:text-sage">
-                Dog Haven Italy
-              </Link>
-              <Link href="https://doghaven.us" className="transition hover:text-sage">
-                Dog Haven USA
-              </Link>
-              <Link href="https://doghavengroup.com" className="transition hover:text-sage">
-                Dog Haven Group
-              </Link>
-            </div>
-          </nav>
+          <p className="mt-6 text-sm text-bark">
+            <Link href="/dog-haven-network" className="font-bold transition hover:text-sage">
+              Dog Haven Network
+            </Link>
+          </p>
         </div>
 
         <div className="grid items-start gap-x-8 gap-y-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">

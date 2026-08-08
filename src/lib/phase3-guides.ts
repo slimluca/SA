@@ -590,27 +590,27 @@ export const phase3GuidePages: GuideContent[] = [
     description:
       "South African guide to biliary tick bite fever in dogs, including warning signs, tick prevention, urgent symptoms, and when to contact a vet.",
     intro:
-      "Biliary, often called tick bite fever by South African dog owners, is a serious tick-borne disease linked to Babesia parasites. It is not something to diagnose or treat at home. If your dog is tired, off food, pale, feverish, weak, or has dark urine after tick exposure, contact a veterinarian quickly.",
-    updated: "2026-05-13",
+      "In South Africa, owners often use “biliary” or “tickbite fever” for canine babesiosis. The important distinction is that finding a tick is evidence of exposure, not a diagnosis: a veterinarian must assess the dog and may need blood tests. If your dog is unusually tired, off food, pale, feverish, weak, or passing dark urine, contact a veterinarian promptly.",
+    updated: "2026-08-08",
     isHealthGuide: true,
     quickFacts: [
       "Urgent summary: suspected biliary needs veterinary assessment, especially with pale gums, weakness, jaundice, dark urine, or collapse.",
-      "Ticks are common in many South African settings, including gardens, parks, farms, kennels, beaches, and walking routes.",
-      "Not every tick carries disease, but tick exposure plus illness signs should be taken seriously.",
+      "In South Africa, canine babesiosis is predominantly associated with Babesia rossi, a species capable of severe disease.",
+      "Seeing a tick does not prove tick-borne disease, and not seeing one does not rule it out; symptoms and veterinary testing matter.",
       "Prevention, daily tick checks, and prompt vet care are the safest approach.",
     ],
     sections: [
       {
-        heading: "What biliary means",
+        heading: "What South Africans mean by biliary",
         body: [
-          "Biliary in dogs is commonly associated with Babesia infection transmitted by ticks. The parasite can damage red blood cells and lead to anaemia and other complications. South African veterinary information commonly links biliary with the yellow dog tick and Babesia rossi.",
-          "Owners may notice vague signs first: a quiet dog, poor appetite, fever, or pale gums. Because complications can become severe, early veterinary assessment matters.",
+          "Biliary is the everyday South African name commonly used for canine babesiosis, also casually called tickbite fever. It is caused by Babesia parasites that infect red blood cells; local veterinary research identifies Babesia rossi as the predominant and particularly virulent cause of clinical canine babesiosis in South Africa.",
+          "Some owners also search for “bosluiskoors”. That word is useful when describing what a caller means, but it is not a diagnosis: several tick-borne conditions occur in dogs and can share vague signs. A veterinarian must distinguish babesiosis from other infections, anaemia, poisoning, immune disease, and unrelated causes.",
         ],
       },
       {
-        heading: "Warning signs",
+        heading: "Owner-noticed warning signs",
         body: [
-          "Signs can overlap with other illnesses, so do not assume every tired dog has biliary. The combination of tick exposure and illness signs is the reason to call a vet.",
+          "Early signs can be nonspecific. MSD Animal Health South Africa highlights lethargy, appetite loss, and pale gums or inner eyelids among signs owners commonly notice. These signs overlap with other serious illnesses, so use them as reasons to call a vet, not as a home diagnosis.",
         ],
         bullets: [
           "Lethargy, weakness, fever, or reluctance to move.",
@@ -621,9 +621,16 @@ export const phase3GuidePages: GuideContent[] = [
         ],
       },
       {
+        heading: "A tick sighting is not a biliary diagnosis",
+        body: [
+          "Not every tick carries Babesia, and transmission cannot be confirmed by looking at a tick or bite mark. Conversely, owners may never find the tick that caused exposure. Removing an attached tick is sensible, but it does not test the dog, reverse an infection, or make later illness signs safe to ignore.",
+          "A veterinarian may combine the history and physical examination with blood-cell assessment, a blood smear, or other laboratory testing. The appropriate tests and timing depend on the individual dog; photographs and internet symptom lists cannot replace that process.",
+        ],
+      },
+      {
         heading: "What owners should do",
         body: [
-          "Phone your vet and explain the signs, when they started, whether ticks were found, and what tick prevention your dog uses. Your vet may need to examine your dog, run blood tests, assess anaemia, and begin appropriate treatment.",
+          "Phone your vet and explain the signs, when they started, whether ticks were found, and what tick prevention your dog uses. Also share age, weight, other conditions or medication, gum and urine changes, appetite, breathing, vomiting, travel, kennel or farm exposure, and whether another dog is ill. Your vet may need to examine your dog, run blood tests, and assess anaemia or organ complications.",
           "Do not wait for the dog to eat normally again if the gums are pale, the urine is dark, or weakness is worsening. Puppies, senior dogs, and dogs with other illnesses may have less reserve.",
         ],
         checklist: [
@@ -647,9 +654,9 @@ export const phase3GuidePages: GuideContent[] = [
         ],
       },
       {
-        heading: "Prevention in South Africa",
+        heading: "Prevention questions to discuss with your vet",
         body: [
-          "Tick prevention should be year-round in many areas, not only during obvious tick season. Ask your vet which product is suitable for your dog's age, weight, health, swimming habits, and household pets.",
+          "No prevention method removes all risk. Ask your vet whether protection should be year-round in your area and which labelled product suits your dog's exact weight, age, health, pregnancy status, swimming habits, tick exposure, and other pets in the home.",
         ],
         checklist: [
           "Use vet-recommended tick prevention correctly and on schedule.",
@@ -694,6 +701,16 @@ export const phase3GuidePages: GuideContent[] = [
         note: "Professional veterinary context in South Africa.",
       },
       {
+        label: "University of Pretoria: canine babesiosis",
+        href: "https://repository.up.ac.za/handle/2263/11021?show=full",
+        note: "Onderstepoort review of canine babesiosis, including clinical findings, diagnosis, complications, and Babesia rossi context.",
+      },
+      {
+        label: "University of Pretoria: Babesia rossi in South African dogs",
+        href: "https://repository.up.ac.za/items/767f3052-11ae-4dd3-a3de-6aa00af8dd22",
+        note: "South African research including domestic dogs presented at Onderstepoort Veterinary Academic Hospital.",
+      },
+      {
         label: "CDC preventing ticks on pets",
         href: "https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html",
         note: "General tick prevention and checking guidance for pets.",
@@ -711,11 +728,11 @@ export const phase3GuidePages: GuideContent[] = [
       "Practical South African guide to ticks and fleas on dogs, including prevention, checks, warning signs, product safety, and when to contact a vet.",
     intro:
       "For most South African dogs, tick and flea control should be treated as routine prevention, not something to think about only after scratching starts. Ticks can be linked to serious illness such as biliary, while fleas can drive skin irritation, allergy, anaemia in vulnerable animals, and tapeworm exposure.",
-    updated: "2026-05-13",
+    updated: "2026-08-08",
     isHealthGuide: true,
     quickFacts: [
       "Urgent summary: contact a vet quickly if your dog has tick exposure plus weakness, pale gums, fever, dark urine, collapse, or severe lethargy.",
-      "Use tick and flea products only as directed for your dog's species, weight, age, and health.",
+      "Choose products for the individual dog's species, exact weight band, age, health, and household, then use them exactly as labelled or prescribed.",
       "Never use a dog-only product on a cat in the household unless your vet confirms it is safe.",
       "Daily checks after walks, kennels, farms, beaches, bush routes, and garden time help find ticks before they cause bigger problems.",
     ],
@@ -747,11 +764,18 @@ export const phase3GuidePages: GuideContent[] = [
           "Consistency matters. Missing doses or using the wrong weight band can leave gaps in protection.",
         ],
         checklist: [
-          "Use vet-recommended prevention on schedule.",
-          "Check high-risk body areas after walks, hikes, beaches, farms, kennels, and garden play.",
+          "Use the correctly selected product exactly as labelled or prescribed and keep to its schedule.",
+          "After outdoor activity, run your hands through the coat and check ears, eyelids, collar area, armpits, groin, between toes, and the tail base.",
           "Wash bedding and vacuum carpets if fleas are suspected.",
           "Treat all pets in the household with species-appropriate products.",
           "Ask your vet before combining collars, tablets, sprays, dips, or spot-ons.",
+        ],
+      },
+      {
+        heading: "Why household flea control takes time",
+        body: [
+          "Adult fleas seen on a dog are only one part of the household problem. Eggs and developing stages may be present in bedding, carpets, furniture edges, shaded resting areas, and places used by other pets. Treating the dog once without a consistent household and all-pet plan can allow the cycle to continue.",
+          "Ask your vet which animals need species-appropriate treatment and how to combine regular vacuuming, bedding care, and environmental steps safely. Never apply a dog product to a cat unless it is specifically labelled and recommended for that cat.",
         ],
       },
       {
@@ -1189,7 +1213,7 @@ export const phase3GuidePages: GuideContent[] = [
     ],
     related: [
       { title: "Dog Vomiting", description: "Repeated vomiting and same-day vet signs.", href: "/health/dog-vomiting-south-africa" },
-      { title: "Dog Diarrhoea", description: "Bloody stool, puppy risk, and dehydration signs.", href: "/health/dog-diarrhea-south-africa" },
+      { title: "Dog Diarrhoea", description: "Bloody stool, puppy risk, and dehydration signs.", href: "/health/dog-diarrhoea-south-africa" },
       { title: "Dog Not Eating", description: "Appetite loss and urgent warning signs.", href: "/health/dog-not-eating-south-africa" },
       { title: "Dog Coughing", description: "Breathing and cough warning signs.", href: "/health/dog-coughing-south-africa" },
       { title: "Dog Poisoning", description: "Toxin emergencies.", href: "/emergency/dog-poisoning-south-africa" },

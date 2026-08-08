@@ -212,7 +212,7 @@ export const hubPages: HubContent[] = [
         title: "Apartment and Flat-Friendly Dogs",
         description:
           "Compare barking, toilet routines, enrichment, lift access, neighbours, and daily walks before choosing a flat-friendly dog.",
-        href: "/breeds/best-apartment-dogs-south-africa",
+        href: "/breeds/best-dogs-for-small-homes-south-africa",
       },
       {
         title: "Family Dog Planning",
@@ -237,7 +237,7 @@ export const hubPages: HubContent[] = [
           "Breed labels can help you ask better questions, but they are not guarantees. Individual temperament, early handling, health, and daily routine matter as much as breed reputation.",
         ],
         links: [
-          { title: "Best Apartment Dogs", description: "Flat, rental, noise, and enrichment planning.", href: "/breeds/best-apartment-dogs-south-africa" },
+          { title: "Best Dogs for Small Homes", description: "Flat, rental, noise, and enrichment planning.", href: "/breeds/best-dogs-for-small-homes-south-africa" },
           { title: "Best Family Dogs", description: "Child supervision, routines, and realistic family fit.", href: "/breeds/best-family-dogs-south-africa" },
         ],
       },
@@ -647,10 +647,10 @@ export const hubPages: HubContent[] = [
       },
     ],
     related: [
-      { title: "Pre-Existing Conditions", description: "How past symptoms, records, and timing can affect cover.", href: "/insurance/pet-insurance-and-pre-existing-conditions-south-africa" },
-      { title: "Claim Process", description: "Documents, invoices, records, time limits, and claim follow-up.", href: "/insurance/dog-insurance-claim-process-south-africa" },
+      { title: "Pre-Existing Conditions", description: "How past symptoms, records, and timing can affect cover.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
+      { title: "Claims Checklist", description: "Step-by-step claims, documents, invoices, records, and follow-up.", href: "/insurance/pet-insurance-claims-checklist-south-africa" },
       { title: "What Insurance Does Not Cover", description: "Exclusions, limits, routine care, and wording checks.", href: "/insurance/what-dog-insurance-does-not-cover-south-africa" },
-      { title: "Waiting Periods Explained", description: "When cover starts and what may still be excluded.", href: "/insurance/dog-insurance-waiting-periods-explained-south-africa" },
+      { title: "Waiting Periods", description: "When cover starts and what may still be excluded.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
       { title: "Vet Costs", description: "Understand routine, diagnostic, and treatment cost factors.", href: "/costs/vet-costs-for-dogs-south-africa" },
       { title: "Emergency Vet Costs", description: "Plan for after-hours care and urgent estimates.", href: "/costs/emergency-vet-costs-south-africa" },
     ],
@@ -673,7 +673,7 @@ export const hubPages: HubContent[] = [
           "Keep your policy number, vaccination records, vet history, and emergency clinic details easy to find. Insurance works best alongside some savings for excesses, exclusions, waiting periods, and costs above limits.",
         ],
         links: [
-          { title: "Dog Insurance Claim Process", description: "Documents, invoices, records, and follow-up.", href: "/insurance/dog-insurance-claim-process-south-africa" },
+          { title: "Pet Insurance Claims Checklist", description: "Claim steps, documents, invoices, records, and follow-up.", href: "/insurance/pet-insurance-claims-checklist-south-africa" },
           { title: "Emergency Vet Costs", description: "After-hours care and urgent cost planning.", href: "/costs/emergency-vet-costs-south-africa" },
         ],
       },
@@ -855,27 +855,28 @@ export const guidePages: GuideContent[] = [
     description:
       "A practical South African rabies guide for dog owners covering vaccination, bite response, exposure risk, symptoms, prevention, and urgent care.",
     intro:
-      "Rabies is rare for many urban dog owners to encounter, but it is serious enough that every bite, scratch, and vaccination gap deserves calm attention. In South Africa, rabies remains a public health concern in animals, and dogs are central to prevention because vaccination protects both pets and people.",
-    updated: "2026-05-12",
+      "Rabies is fatal after symptoms begin but preventable through lifelong vaccination of dogs and cats and urgent medical care after a possible human exposure. This guide separates what a dog owner should do for an animal incident from what an exposed person must do immediately in South Africa.",
+    updated: "2026-08-08",
     isHealthGuide: true,
     quickFacts: [
       "Rabies is almost always fatal once symptoms appear, so prevention and rapid exposure response matter.",
-      "Dogs and cats in South Africa are legally required to be vaccinated against rabies.",
-      "If a person is bitten, scratched, or exposed to saliva from a possibly rabid animal, they should seek urgent medical advice.",
+      "South African law requires dogs and cats to be correctly vaccinated against rabies throughout their lives; keep the vaccination record available.",
+      "After a possible human exposure, wash or flush the area immediately with soap and running water for at least 15 minutes, then go to a clinic or hospital as soon as possible for a rabies risk assessment.",
       "If your dog bites someone or is bitten by an unknown animal, contact your vet and follow local health or state veterinary guidance.",
     ],
     sections: [
       {
-        heading: "Why rabies matters for South African dog owners",
+        heading: "Current South African risk context",
         body: [
-          "Rabies is a viral disease that affects the nervous system of mammals, including dogs, cats, wildlife, livestock, and people. The risk is not evenly spread across every suburb or province, but South African owners should treat prevention as routine rather than optional.",
+          "Rabies is a viral disease of mammals. The NICD says most animal cases in South Africa involve domestic dogs, and most South African human cases are associated with domestic-dog exposure. Government guidance identifies dog-rabies risk as especially important in KwaZulu-Natal, Eastern Cape, and Limpopo, while cases can occur in every province.",
           "A vaccinated dog is far less likely to become part of a tragic chain of exposure. That matters for households, neighbours, domestic workers, children, visitors, vets, groomers, shelter staff, and anyone who handles animals.",
+          "Government guidance also warns that rabies is established in Cape fur seals and may occur along the Northern Cape, Western Cape, and Eastern Cape coast as far as Algoa Bay. Keep dogs controlled and away from seals, including pups; do not approach, touch, feed, or attempt to capture a seal that appears ill, weak, unusually tame, or aggressive.",
         ],
       },
       {
         heading: "Vaccination responsibilities",
         body: [
-          "Rabies vaccination is a legal and public health responsibility in South Africa. Your veterinarian can confirm the correct vaccine timing for your province, your dog's age, previous vaccine record, and any outbreak instructions in your area.",
+          "Rabies vaccination is a lifelong legal and public-health responsibility in South Africa. Current national guidance describes a first vaccine from 12 weeks of age, a booster within the following one to 12 months, and subsequent boosters according to the legal schedule, vaccine instructions, and local risk; annual boosters may be advised in high-risk areas. Your state or private veterinarian should confirm the schedule for your dog.",
           "Keep proof of vaccination somewhere easy to access. You may need it for travel, boarding, grooming, adoption paperwork, veterinary records, or if your dog is involved in a bite incident.",
         ],
         checklist: [
@@ -887,20 +888,33 @@ export const guidePages: GuideContent[] = [
         ],
       },
       {
-        heading: "What to do after a dog bite or possible exposure",
+        heading: "Dog owner actions after an animal incident",
         body: [
-          "If a person is bitten or scratched, wash the wound thoroughly with running water and soap, then seek medical care urgently. A doctor or clinic needs to assess whether rabies post-exposure treatment is required. Do not wait for symptoms.",
-          "If your dog was bitten by another animal, call your vet. Try to identify the animal safely, but do not chase, handle, or provoke a strange animal. Your vet may need vaccination history, wound details, and information about the location and circumstances.",
+          "If your dog bites a person or is bitten, scratched, or licked on broken skin by an unknown or suspect animal, separate animals and people without handling saliva, then phone a veterinarian immediately. Give the dog's vaccination dates, the location and time, the species involved, observed behaviour, and details of any wounds.",
+          "Do not chase, restrain, transport, or kill a suspect animal yourself. Report a suspected rabid animal to the local state veterinary office, animal health technician, welfare authority, or police, and follow their instructions. Keep people and other animals away from the scene.",
         ],
         table: {
           headers: ["Situation", "Practical next step"],
           rows: [
-            ["A person is bitten or scratched", "Wash the wound and seek urgent medical advice."],
+            ["A person is bitten, scratched, or exposed to saliva", "Begin washing immediately and go to a clinic or hospital as soon as possible."],
             ["Your dog is bitten by an unknown animal", "Phone your vet and share vaccination status and location."],
             ["You see unusual behaviour in a stray or wild animal", "Do not handle it; contact local animal health or municipal channels."],
             ["Your dog's rabies vaccine is overdue", "Book a vet appointment and ask what catch-up timing is appropriate."],
           ],
         },
+      },
+      {
+        heading: "Human exposure actions: wash, then seek care now",
+        body: [
+          "A possible human exposure includes a bite or scratch, or suspect saliva contacting broken skin or the eyes, nose, or mouth. Immediately wash and flush wounds or scratches with soap and running water for at least 15 minutes. If saliva reached an eye or other mucous membrane, rinse it thoroughly with water.",
+          "Then go to the nearest clinic or hospital as soon as possible and explain that rabies exposure is possible. Do not wait for the animal to become ill, for test results, or for symptoms in the person. A healthcare professional must assess the exposure category and decide on post-exposure prophylaxis, which may include rabies vaccine and rabies immunoglobulin. Previous vaccination does not remove the need for professional assessment.",
+        ],
+        checklist: [
+          "Note the time, place, animal species, behaviour, owner details, and vaccination information if safely available.",
+          "Tell the healthcare facility where on the body the exposure occurred and whether skin was broken or saliva reached eyes, mouth, nose, or an existing wound.",
+          "Continue the full treatment plan exactly as the healthcare team instructs.",
+          "Contact veterinary or public-health authorities about the animal; do not attempt capture yourself.",
+        ],
       },
       {
         heading: "Possible signs that need urgent attention",
@@ -953,9 +967,14 @@ export const guidePages: GuideContent[] = [
         note: "Public health information on rabies risk, exposure, and prevention.",
       },
       {
-        label: "South African Government rabies information",
-        href: "https://www.gov.za/news/media-statements/agriculture-land-reform-and-rural-development-rabies-still-poses-risk-south",
-        note: "Official reminders that rabies remains a risk and that dogs and cats must be vaccinated.",
+        label: "NICD rabies updates and human exposure guidance",
+        href: "https://www.nicd.ac.za/rabies-updates/",
+        note: "Current South African public-health guidance on wound washing, urgent post-exposure care, and reporting a suspect animal.",
+      },
+      {
+        label: "South African Government rabies risk guidance",
+        href: "https://www.gov.za/news/media-statements/agriculture-warns-public-and-travellers-bout-rabies-dogs-cape-fur-seals-and",
+        note: "November 2025 national guidance on dog-rabies risk, lifelong pet vaccination, human exposure response, and Cape fur seals.",
       },
       {
         label: "Western Cape Government rabies prevention",

@@ -18,6 +18,7 @@ type SymptomGuide = {
   faqs: GuideContent["faqs"];
   related: CardLink[];
   sources?: Source[];
+  updated?: string;
 };
 
 const reviewed = "2026-05-15";
@@ -174,7 +175,7 @@ const symptomGuides: SymptomGuide[] = [
     ],
   },
   {
-    slug: "dog-diarrhea-south-africa",
+    slug: "retired-dog-diarrhoea-article",
     title: "Dog Diarrhoea in South Africa: When It Needs a Vet",
     seoTitle: "Dog Diarrhea South Africa | When It Needs a Vet",
     description:
@@ -495,7 +496,8 @@ const symptomGuides: SymptomGuide[] = [
     urgentSummary:
       "See a vet if your dog has ear pain, head shaking, bad smell, discharge, swelling, bleeding, balance problems, or a sudden head tilt.",
     context:
-      "Ear problems can follow allergies, swimming, humidity, grass seeds, mites, wax build-up, or infection. Dogs in coastal areas, dogs with floppy ears, and dogs that swim or visit grassy parks may need extra ear checks.",
+      "Ear problems can follow allergies, swimming, humidity, grass seeds, mites, wax build-up, infection, injury, or other foreign material. Dogs in coastal areas, dogs with floppy ears, and dogs that swim or visit grassy parks may need extra ear checks. Recurring ear trouble can be connected to wider skin or allergy problems, so the whole dog may need assessment.",
+    updated: "2026-08-08",
     causes: [
       "Allergies and recurring skin inflammation.",
       "Moisture after swimming, bathing, or humid weather.",
@@ -515,11 +517,13 @@ const symptomGuides: SymptomGuide[] = [
       "Note smell, discharge, redness, swelling, and head shaking.",
       "Book a vet visit because ears often need examination before treatment.",
       "Mention swimming, grooming, allergies, and grass exposure.",
+      "Ask whether an ear examination or swab is needed and whether the eardrum is safe for any recommended cleaning or drops.",
     ],
     avoid: [
       "Do not put cotton buds down the ear canal.",
       "Do not use leftover ear drops from another dog or old infection.",
       "Do not pour home mixtures, oils, or peroxide into the ear.",
+      "Do not reuse an old cleaning product until a vet confirms it is appropriate for this ear problem.",
     ],
     callNow: [
       "Head tilt, balance problems, severe pain, bleeding, or swelling.",
@@ -538,6 +542,7 @@ const symptomGuides: SymptomGuide[] = [
       "Dry visible outer ear areas gently after swimming if advised.",
       "Manage allergies with a vet rather than repeated cleaning.",
       "Ask groomers not to pluck or clean deeply without veterinary guidance.",
+      "After swimming, ask your vet whether and how the visible outer ear should be dried for your dog.",
     ],
     faqs: [
       {
@@ -791,7 +796,7 @@ const symptomGuides: SymptomGuide[] = [
       },
     ],
     related: [
-      { title: "Dog Diarrhoea", description: "When stool changes need a vet.", href: "/health/dog-diarrhea-south-africa" },
+      { title: "Dog Diarrhoea", description: "When stool changes need a vet.", href: "/health/dog-diarrhoea-south-africa" },
       { title: "Ticks and Fleas", description: "Parasite prevention basics.", href: "/health/ticks-and-fleas-dogs-south-africa" },
       { title: "Puppy Health", description: "Vaccines and prevention planning.", href: "/health/vaccination-schedule-south-africa" },
     ],
@@ -807,13 +812,15 @@ const symptomGuides: SymptomGuide[] = [
     urgentSummary:
       "Book a vet visit if bad breath is strong, sudden, paired with drooling, bleeding, swelling, loose teeth, pain, not eating, or weight loss.",
     context:
-      "Bad breath is often joked about, but it can signal dental disease, gum infection, mouth injury, foreign material, kidney or metabolic illness, or diet-related issues. Many South African dogs only get dental attention once pain affects eating.",
+      "Bad breath is often joked about, but it can signal dental disease, gum problems, a broken or infected tooth, mouth injury, trapped foreign material, diet-related issues, or possible systemic illness. Many South African dogs only get dental attention once pain affects eating. Unusual thirst, weight loss, vomiting, appetite change, or weakness alongside breath changes means the vet needs the whole health picture, not only a mouth smell.",
+    updated: "2026-08-08",
     causes: [
       "Plaque, tartar, gingivitis, or periodontal disease.",
       "Broken teeth, retained baby teeth, mouth wounds, or foreign material.",
       "Oral infection, masses, or ulcers.",
       "Diet, scavenging, or eating faeces.",
       "Internal illness in some cases, especially if breath changes suddenly.",
+      "Possible kidney, metabolic, digestive, or other systemic illness when breath changes occur with thirst, urination, vomiting, weight loss, or weakness.",
     ],
     redFlags: [
       "Drooling, pawing at the mouth, or crying when chewing.",
@@ -827,6 +834,7 @@ const symptomGuides: SymptomGuide[] = [
       "Book a vet dental check for persistent bad breath.",
       "Mention appetite, chewing changes, drooling, and weight loss.",
       "Ask your vet about safe tooth brushing and dental prevention.",
+      "Tell the vet about diet, chews, scavenging, unusual thirst, urination, vomiting, and weight change.",
     ],
     avoid: [
       "Do not use human toothpaste.",
@@ -1043,7 +1051,7 @@ function symptomGuideToPage(guide: SymptomGuide): GuideContent {
     seoTitle: guide.seoTitle,
     description: guide.description,
     intro: `${guide.urgentSummary} This guide is educational and helps South African dog owners prepare better questions for a veterinarian.`,
-    updated: reviewed,
+    updated: guide.updated ?? reviewed,
     isHealthGuide: true,
     quickFacts: [
       `Urgent summary: ${guide.urgentSummary}`,
@@ -1133,7 +1141,7 @@ export const phase10EmergencyCards: CardLink[] = [
   {
     title: "Dog Diarrhoea",
     description: "Bloody diarrhoea, puppy risk, dehydration, and when same-day vet care is needed.",
-    href: "/health/dog-diarrhea-south-africa",
+    href: "/health/dog-diarrhoea-south-africa",
   },
   {
     title: "Dog Coughing",
@@ -1147,7 +1155,9 @@ export const phase10EmergencyCards: CardLink[] = [
   },
 ];
 
-export const phase10GuidePages: GuideContent[] = symptomGuides.map(symptomGuideToPage);
+export const phase10GuidePages: GuideContent[] = symptomGuides
+  .filter((guide) => guide.slug !== "retired-dog-diarrhoea-article")
+  .map(symptomGuideToPage);
 
 export function getPhase10Guide(slug: string) {
   return phase10GuidePages.find((guide) => guide.slug === slug);

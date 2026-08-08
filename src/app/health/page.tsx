@@ -14,7 +14,15 @@ import { phase29HealthSymptomCards } from "@/lib/phase29-health-symptom-guides";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("health");
+const priorityHealthCards = [
+  { title: "Biliary Tick Bite Fever", description: "South African canine babesiosis warning signs and urgent veterinary next steps.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+  { title: "Ticks and Fleas", description: "Exposure checks, prevention questions, product safety, and warning signs.", href: "/health/ticks-and-fleas-dogs-south-africa" },
+  { title: "Rabies in South Africa", description: "Vaccination duties and urgent dog-owner and human-exposure actions.", href: "/emergency/rabies-south-africa" },
+  { title: "When to Take Your Dog to the Vet", description: "A symptom-led guide to same-day and emergency veterinary care.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+  { title: "Dog Vaccination Schedule", description: "Puppy and adult vaccination planning for South African owners.", href: "/health/vaccination-schedule-south-africa" },
+];
 const allHealthCards = [
+  ...priorityHealthCards,
   ...baseHub.cards,
   ...phase3HealthCards,
   ...phase10HealthCards,
@@ -33,6 +41,11 @@ const uniqueHealthCards = Array.from(
 );
 
 const groupDefinitions = [
+  {
+    title: "South Africa priority health guides",
+    description: "Start with locally important prevention, exposure, vaccination, and urgent-care guidance.",
+    matches: (href: string) => priorityHealthCards.some((card) => card.href === href),
+  },
   {
     title: "Start here",
     description: "Use these first for vet decisions, routine planning, and preparing useful information before an appointment.",

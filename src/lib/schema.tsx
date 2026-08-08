@@ -92,24 +92,34 @@ export function collectionPageSchema({
 }
 
 export function articleSchema({ title, description, path, dateModified }: ArticleInput) {
+  const canonicalUrl = absoluteUrl(path);
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
-    url: absoluteUrl(path),
+    url: canonicalUrl,
     dateModified,
-    datePublished: dateModified,
     inLanguage: "en-ZA",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
     author: {
       "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.domain,
+      name: "Dog Haven Editorial Team",
+      url: absoluteUrl("/about"),
     },
     publisher: {
       "@type": "Organization",
+      "@id": absoluteUrl("/#organization"),
       name: siteConfig.name,
       url: siteConfig.domain,
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/brand/dog-haven-south-africa-icon.png"),
+      },
     },
     isPartOf: {
       "@type": "WebSite",

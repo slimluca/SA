@@ -15,7 +15,7 @@ import { createMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Haven South Africa | Dog Care Guides, Tools and Costs",
+  title: "Dog Care South Africa | Practical Guides & Free Tools | Dog Haven",
   description:
     "Practical South African dog care guides, free dog tools, puppy help, food safety, symptoms, insurance, dog costs, breeds, adoption and dog-friendly planning.",
   path: "/",
@@ -35,8 +35,8 @@ export default function HomePage() {
       <section className="section-shell section-tight">
         <PopularGuides
           kicker="Popular Dog Haven guides"
-          title="Fast answers for food safety, puppy care, and vet decisions"
-          intro="These pages cover the questions owners often need first: what dogs can eat, when vomiting is urgent, how to care for a puppy, and how to choose food without brand hype."
+          title="Important South African dog-care guides"
+          intro="Start with locally relevant guidance on biliary, ticks, rabies, dog medical aid, puppy scams, and the cost of responsible dog ownership."
           guides={homepagePopularGuides}
         />
       </section>

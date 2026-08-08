@@ -219,7 +219,7 @@ const costGuides: MoneyGuide[] = [
     related: [
       { title: "Dog Limping", description: "When limping needs same-day care.", href: "/health/dog-limping-south-africa" },
       { title: "Dog Surgery Costs", description: "How imaging can connect to surgery planning.", href: "/costs/dog-surgery-costs-south-africa" },
-      { title: "Dog Insurance Claim Process", description: "What records may help with claims.", href: "/insurance/dog-insurance-claim-process-south-africa" },
+      { title: "Pet Insurance Claims Checklist", description: "Claim steps, records, invoices, and follow-up.", href: "/insurance/pet-insurance-claims-checklist-south-africa" },
       ...costRelated,
     ],
   },
@@ -649,7 +649,7 @@ const insuranceGuides: MoneyGuide[] = [
     ],
   },
   {
-    slug: "pet-insurance-and-pre-existing-conditions-south-africa",
+    slug: "retired-pre-existing-conditions-article",
     hubPath: "/insurance",
     title: "Pet Insurance and Pre-Existing Conditions in South Africa",
     seoTitle: "Pet Insurance and Pre-Existing Conditions South Africa | Dog Cover Guide",
@@ -720,7 +720,7 @@ const insuranceGuides: MoneyGuide[] = [
     ],
   },
   {
-    slug: "dog-insurance-claim-process-south-africa",
+    slug: "retired-dog-insurance-claim-process-article",
     hubPath: "/insurance",
     title: "Dog Insurance Claim Process in South Africa",
     seoTitle: "Dog Insurance Claim Process South Africa | Documents and Steps",
@@ -857,12 +857,12 @@ const insuranceGuides: MoneyGuide[] = [
     related: [
       { title: "Dog Dental Cleaning Costs", description: "Dental bill factors and insurance questions.", href: "/costs/dog-dental-cleaning-cost-south-africa" },
       { title: "Dog Insurance Waiting Periods", description: "When cover may start.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
-      { title: "Pre-Existing Conditions", description: "How history can affect cover.", href: "/insurance/pet-insurance-and-pre-existing-conditions-south-africa" },
+      { title: "Pre-Existing Conditions", description: "How symptoms, records, and history can affect cover.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
       ...insuranceRelated,
     ],
   },
   {
-    slug: "dog-insurance-waiting-periods-explained-south-africa",
+    slug: "retired-dog-insurance-waiting-periods-article",
     hubPath: "/insurance",
     title: "Dog Insurance Waiting Periods Explained in South Africa",
     seoTitle: "Dog Insurance Waiting Periods Explained South Africa",
@@ -991,7 +991,16 @@ function toGuide(guide: MoneyGuide): GuideContent {
   };
 }
 
-export const phase30CostInsuranceGuidePages: GuideContent[] = [...costGuides, ...insuranceGuides].map(toGuide);
+const retiredInsuranceSlugs = new Set([
+  "retired-pre-existing-conditions-article",
+  "retired-dog-insurance-claim-process-article",
+  "retired-dog-insurance-waiting-periods-article",
+]);
+
+export const phase30CostInsuranceGuidePages: GuideContent[] = [
+  ...costGuides,
+  ...insuranceGuides.filter((guide) => !retiredInsuranceSlugs.has(guide.slug)),
+].map(toGuide);
 
 export function getPhase30Guide(slug: string) {
   return phase30CostInsuranceGuidePages.find((guide) => guide.slug === slug);

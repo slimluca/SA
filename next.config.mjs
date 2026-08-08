@@ -6,6 +6,40 @@ const redirect = (source, destination) => ({
 });
 
 const legacyRedirects = [
+  // Phase 2B targeted food and breed consolidation
+  ["/breeds/best-dogs-for-families-south-africa", "/breeds/best-family-dogs-south-africa"],
+  ["/breeds/best-dogs-for-families-south-africa/", "/breeds/best-family-dogs-south-africa"],
+  ["/breeds/best-dogs-for-kids-south-africa", "/breeds/best-family-dogs-south-africa"],
+  ["/breeds/best-dogs-for-kids-south-africa/", "/breeds/best-family-dogs-south-africa"],
+  ["/breeds/best-apartment-dogs-south-africa", "/breeds/best-dogs-for-small-homes-south-africa"],
+  ["/breeds/best-apartment-dogs-south-africa/", "/breeds/best-dogs-for-small-homes-south-africa"],
+  ["/food/how-to-choose-dog-food-south-africa", "/food/best-dog-food-south-africa"],
+  ["/food/how-to-choose-dog-food-south-africa/", "/food/best-dog-food-south-africa"],
+  ["/food/kibble-vs-wet-food-vs-raw-dog-food-south-africa", "/food/dog-food-comparison-south-africa"],
+  ["/food/kibble-vs-wet-food-vs-raw-dog-food-south-africa/", "/food/dog-food-comparison-south-africa"],
+  ["/breeds/best-dogs-for-security-and-family-south-africa", "/breeds/best-guard-dogs-south-africa"],
+  ["/breeds/best-dogs-for-security-and-family-south-africa/", "/breeds/best-guard-dogs-south-africa"],
+
+  // Consolidated health articles
+  ["/health/dog-diarrhea-south-africa", "/health/dog-diarrhoea-south-africa"],
+  ["/health/dog-diarrhea-south-africa/", "/health/dog-diarrhoea-south-africa"],
+  ["/health/tick-bite-fever-in-dogs-south-africa", "/health/biliary-tick-bite-fever-dogs-south-africa"],
+  ["/health/tick-bite-fever-in-dogs-south-africa/", "/health/biliary-tick-bite-fever-dogs-south-africa"],
+  ["/biliary-tick-bite-fever-survival-guide-south-africa", "/health/biliary-tick-bite-fever-dogs-south-africa"],
+  ["/biliary-tick-bite-fever-survival-guide-south-africa/", "/health/biliary-tick-bite-fever-dogs-south-africa"],
+  ["/insurance/dog-insurance-comparison-south-africa", "/insurance/compare-dog-insurance-south-africa"],
+  ["/insurance/dog-insurance-comparison-south-africa/", "/insurance/compare-dog-insurance-south-africa"],
+  ["/insurance/dog-insurance-waiting-periods-explained-south-africa", "/insurance/dog-insurance-waiting-periods-south-africa"],
+  ["/insurance/dog-insurance-waiting-periods-explained-south-africa/", "/insurance/dog-insurance-waiting-periods-south-africa"],
+  ["/insurance/pet-insurance-and-pre-existing-conditions-south-africa", "/insurance/pre-existing-conditions-pet-insurance-south-africa"],
+  ["/insurance/pet-insurance-and-pre-existing-conditions-south-africa/", "/insurance/pre-existing-conditions-pet-insurance-south-africa"],
+  ["/insurance/dog-insurance-claim-process-south-africa", "/insurance/pet-insurance-claims-checklist-south-africa"],
+  ["/insurance/dog-insurance-claim-process-south-africa/", "/insurance/pet-insurance-claims-checklist-south-africa"],
+  ["/health/dog-bad-breath-causes-south-africa", "/health/dog-bad-breath-south-africa"],
+  ["/health/dog-bad-breath-causes-south-africa/", "/health/dog-bad-breath-south-africa"],
+  ["/health/dog-ear-infection-south-africa", "/health/dog-ear-infection-signs-south-africa"],
+  ["/health/dog-ear-infection-south-africa/", "/health/dog-ear-infection-signs-south-africa"],
+
   // Retired public trust pages
   ["/adsense-readiness", "/editorial-policy"],
   ["/adsense-readiness/", "/editorial-policy"],

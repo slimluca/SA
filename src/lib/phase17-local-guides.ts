@@ -703,7 +703,7 @@ function emergencyGuide(city: LocalCity, service: LocalService): GuideContent {
       { title: "Emergency Help", description: "Urgent dog symptoms and first-step guidance.", href: "/emergency" },
       { title: "Dog Poisoning", description: "What to do when poisoning is possible.", href: "/emergency/dog-poisoning-south-africa" },
       { title: "Dog Vomiting", description: "When vomiting needs same-day vet advice.", href: "/health/dog-vomiting-south-africa" },
-      { title: "Dog Diarrhea", description: "Red flags for puppies and adult dogs.", href: "/health/dog-diarrhea-south-africa" },
+      { title: "Dog Diarrhoea", description: "Red flags for puppies and adult dogs.", href: "/health/dog-diarrhoea-south-africa" },
       { title: "Emergency Vet Costs", description: "Plan financially for urgent care.", href: "/costs/emergency-vet-costs-south-africa" },
       { title: "Vet Visit Checklist", description: "Prepare clearer notes for a vet call or visit.", href: "/tools/vet-visit-checklist" },
       ...commonLocalRelated(city),
@@ -876,7 +876,7 @@ export const localHub: HubContent = {
     "South African local dog service guides for grooming, training, emergency vet preparation, and dog-friendly places in major cities, with practical checks and verified local options where available.",
   kicker: "Local guides",
   intro:
-    "Dog Haven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
+    "Dog Haven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Provider shortlists appear only where options can be checked against identifiable public or official sources.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Local Dog Guides`,

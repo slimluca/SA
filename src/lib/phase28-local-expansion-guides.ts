@@ -508,7 +508,7 @@ export const phase28LocalCityHubs: HubContent[] = phase28ExpansionCities.map((ci
     {
       question: `Are these ${city.name} pages business directories?`,
       answer:
-        "They are practical planning guides with verified local options where available. When provider research is still being built, we say that clearly and give owners a checklist for direct verification.",
+        "They are practical planning guides with verified local options where available. If no shortlist is published, owners receive a checklist for direct verification.",
     },
     {
       question: `Which ${city.name} guide should I read first?`,

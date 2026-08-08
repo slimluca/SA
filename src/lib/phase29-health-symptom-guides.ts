@@ -176,7 +176,7 @@ const topics: SymptomTopic[] = [
     ],
   },
   {
-    slug: "dog-ear-infection-south-africa",
+    slug: "retired-dog-ear-infection-article",
     title: "Dog Ear Infection Signs in South Africa",
     seoTitle: "Dog Ear Infection South Africa | Signs, Vet Care and What Not to Do",
     description:
@@ -1536,7 +1536,7 @@ function expansionTopicToGuide(topic: ExpansionSymptomTopic): GuideContent {
 }
 
 export const phase29HealthSymptomGuidePages: GuideContent[] = [
-  ...topics.map(topicToGuide),
+  ...topics.filter((topic) => topic.slug !== "retired-dog-ear-infection-article").map(topicToGuide),
   ...expansionTopics.map(expansionTopicToGuide),
 ];
 

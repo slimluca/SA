@@ -372,7 +372,7 @@ const topics: NameTopic[] = [
     ],
     related: [
       { title: "Boerboel Breed Guide", description: "Responsible Boerboel ownership in South Africa.", href: "/breeds/boerboel-dog-breed-south-africa" },
-      { title: "Security and Family Dogs", description: "Safety-focused breed planning.", href: "/breeds/best-dogs-for-security-and-family-south-africa" },
+      { title: "Guard Dogs", description: "Safety-focused, responsible guard dog planning.", href: "/breeds/best-guard-dogs-south-africa" },
       ...commonRelated,
     ],
     faqs: [

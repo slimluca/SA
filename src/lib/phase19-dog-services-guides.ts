@@ -108,7 +108,7 @@ function commonRelated(city: (typeof localCities)[number]): CardLink[] {
 function generalServiceNote(city: (typeof localCities)[number]) {
   return [
     `Dog services in ${city.name} can vary by suburb, provider experience, transport, availability, dog size, behaviour, health needs, season, and what is included.`,
-    "This page combines practical service guidance with verified local options where available. When verified options are still being built, use the checklist to confirm providers directly before booking.",
+    "This page combines practical service guidance with verified local options where available. If no shortlist is published, use the checklist to confirm providers directly before booking.",
     city.localContext,
   ];
 }
@@ -716,7 +716,7 @@ export const dogServicesHub: HubContent = {
     "South African dog service planning guides for boarding kennels, dog daycare, pet sitters, dog walkers, and holiday dog care in major cities.",
   kicker: "Dog service guides",
   intro:
-    "Dog Haven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. Where verified local options are available, we show sourced starting points; otherwise we clearly say that provider research is still being built.",
+    "Dog Haven dog service guides help South African owners choose boarding, daycare, pet sitting, dog walking, and holiday care more safely. Provider shortlists appear only where options can be checked against identifiable public or official sources.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Dog Services`,

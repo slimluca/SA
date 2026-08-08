@@ -58,7 +58,7 @@ const sections = [
     title: "Food and costs",
     description: "Choose practical feeding plans and budget before expenses become stressful.",
     links: [
-      { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/how-to-choose-dog-food-south-africa" },
+      { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/best-dog-food-south-africa" },
       { title: "Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/costs/dog-cost-calculator-south-africa" },
       { title: "Compare Dog Insurance", description: "Understand premiums, excesses, limits, and exclusions.", href: "/insurance/compare-dog-insurance-south-africa" },

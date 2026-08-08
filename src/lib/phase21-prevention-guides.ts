@@ -145,14 +145,14 @@ const phase21Guides: GuideContent[] = [
     ],
     related: [
       { title: "Ticks and Fleas", description: "Broader parasite guidance for South African dogs.", href: "/health/ticks-and-fleas-dogs-south-africa" },
-      { title: "Tick Bite Fever", description: "Warning signs and vet-care guidance.", href: "/health/tick-bite-fever-in-dogs-south-africa" },
+      { title: "Biliary Tick Bite Fever", description: "Warning signs and vet-care guidance.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
       ...coreRelated,
     ],
     sources: vetSources,
   },
   {
-    slug: "tick-bite-fever-in-dogs-south-africa",
-    path: "/health/tick-bite-fever-in-dogs-south-africa",
+    slug: "retired-tick-bite-fever-article",
+    path: "/health/biliary-tick-bite-fever-dogs-south-africa",
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Tick Bite Fever in Dogs in South Africa",
@@ -1096,17 +1096,19 @@ const phase21Guides: GuideContent[] = [
   },
 ];
 
-export const phase21PreventionGuidePages = phase21Guides;
+export const phase21PreventionGuidePages = phase21Guides.filter(
+  (guide) => guide.slug !== "retired-tick-bite-fever-article",
+);
 
 export function getPhase21Guide(slug: string) {
-  return phase21Guides.find((guide) => guide.slug === slug);
+  return phase21PreventionGuidePages.find((guide) => guide.slug === slug);
 }
 
 export function getPhase21GuidesByHub(hubPath: string) {
   return phase21Guides.filter((guide) => guide.hubPath === hubPath);
 }
 
-export const phase21HealthCards: CardLink[] = phase21Guides.map((guide) => ({
+export const phase21HealthCards: CardLink[] = phase21PreventionGuidePages.map((guide) => ({
   title: guide.title,
   description: guide.description,
   href: guide.path,
@@ -1135,7 +1137,7 @@ export const phase21LocalCostCards: CardLink[] = [
 ];
 
 export const phase21EmergencyCards: CardLink[] = [
-  { title: "Tick Bite Fever", description: "Possible warning signs after tick exposure and when to phone a vet.", href: "/health/tick-bite-fever-in-dogs-south-africa" },
+  { title: "Biliary Tick Bite Fever", description: "Possible warning signs after tick exposure and when to phone a vet.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
 ];
 
 export const phase21InsuranceCards: CardLink[] = [

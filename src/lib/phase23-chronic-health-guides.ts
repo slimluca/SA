@@ -65,6 +65,7 @@ type Topic = {
   tableRows: string[][];
   faqs: { question: string; answer: string }[];
   related: CardLink[];
+  updated?: string;
 };
 
 const topics: Topic[] = [
@@ -134,7 +135,7 @@ const topics: Topic[] = [
     ],
     related: [
       { title: "Dog Teeth Cleaning", description: "What to ask before a vet dental cleaning.", href: "/health/dog-teeth-cleaning-south-africa" },
-      { title: "Bad Breath Causes", description: "When breath changes need a vet check.", href: "/health/dog-bad-breath-causes-south-africa" },
+      { title: "Dog Bad Breath", description: "Dental, mouth-pain, systemic, and urgent warning signs.", href: "/health/dog-bad-breath-south-africa" },
       { title: "Chronic Health Costs", description: "Plan for recurring dental and long-term care expenses.", href: "/health/chronic-dog-health-costs-south-africa" },
       ...commonRelated,
     ],
@@ -211,7 +212,7 @@ const topics: Topic[] = [
     ],
   },
   {
-    slug: "dog-bad-breath-causes-south-africa",
+    slug: "retired-dog-bad-breath-causes-article",
     title: "Dog Bad Breath Causes in South Africa",
     seoTitle: "Dog Bad Breath Causes South Africa | When to Call a Vet",
     description:
@@ -922,7 +923,9 @@ const topics: Topic[] = [
   },
 ];
 
-export const phase23ChronicHealthGuidePages: GuideContent[] = topics.map((topic) => ({
+export const phase23ChronicHealthGuidePages: GuideContent[] = topics
+  .filter((topic) => topic.slug !== "retired-dog-bad-breath-causes-article")
+  .map((topic) => ({
   slug: topic.slug,
   path: `/health/${topic.slug}`,
   hubTitle: "Dog Health",
@@ -931,7 +934,7 @@ export const phase23ChronicHealthGuidePages: GuideContent[] = topics.map((topic)
   seoTitle: topic.seoTitle,
   description: topic.description,
   intro: topic.intro,
-  updated: reviewed,
+  updated: topic.updated ?? reviewed,
   isHealthGuide: true,
   quickFacts: topic.quickFacts,
   sections: [
@@ -966,7 +969,7 @@ export const phase23ChronicHealthGuidePages: GuideContent[] = topics.map((topic)
   faqs: topic.faqs,
   related: topic.related,
   sources,
-}));
+  }));
 
 export function getPhase23Guide(slug: string) {
   return phase23ChronicHealthGuidePages.find((guide) => guide.slug === slug);

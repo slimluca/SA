@@ -11,9 +11,10 @@ import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
+import Link from "next/link";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
-  const articlePromos = getArticlePromos(guide.hubPath);
+  const articlePromos = getArticlePromos(guide.hubPath, guide.path);
   const localProviders = getProvidersForPath(guide.path);
   const showProviderSection = isLocalServicePath(guide.path);
   const safetyStyles = {
@@ -54,6 +55,17 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         <p className="section-kicker">{guide.hubTitle}</p>
         <h1 className="section-title">{guide.title}</h1>
         <p className="section-copy">{guide.intro}</p>
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-bark">
+          Prepared by the{" "}
+          <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/about">
+            Dog Haven editorial team
+          </Link>{" "}
+          using South African, veterinary, and official sources. Learn how we{" "}
+          <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/editorial-policy">
+            research and correct our guides
+          </Link>
+          .
+        </p>
 
         {needsEducationalNote ? (
           <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">

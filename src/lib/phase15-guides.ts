@@ -14,6 +14,7 @@ type FoodGuide = {
   faqs: GuideContent["faqs"];
   related: CardLink[];
   sources?: Source[];
+  updated?: string;
 };
 
 const reviewed = "2026-05-15";
@@ -67,7 +68,8 @@ const guides: FoodGuide[] = [
     summary:
       "The best dog food is the food that suits your dog's life stage, size, body condition, health, digestion, activity, budget, and your vet's guidance. Dog Haven does not crown one brand as best.",
     context:
-      "South African owners balance supermarket availability, vet-shop foods, online delivery, township and rural access, high summer heat, puppy growth, senior care, allergies, and budget pressure. A practical choice should be sustainable and safe, not just fashionable.",
+      "South African owners balance supermarket availability, vet-shop foods, online delivery, township and rural access, high summer heat, power interruptions, puppy growth, senior care, allergies, and budget pressure. A practical choice should be nutritionally appropriate, sustainable, safely stored, and consistently available—not just fashionable.",
+    updated: "2026-08-08",
     rows: [
       ["Life stage", "Puppies, adults, seniors, pregnant dogs, and large-breed puppies need different planning."],
       ["Dog size", "Small, large, and giant dogs differ in kibble size, calories, and growth concerns."],
@@ -75,6 +77,9 @@ const guides: FoodGuide[] = [
       ["Complete and balanced claim", "Check whether the food is intended as a complete daily diet."],
       ["Digestibility", "Stool quality, vomiting, gas, and body condition matter more than marketing promises."],
       ["Budget and access", "The food must be affordable and reliably available where you live."],
+      ["Cost per day", "Compare the daily feeding amount and calories, not only the bag price or price per kilogram."],
+      ["Storage", "Check resealing, cool dry storage, opened-food instructions, hot-weather risk, and whether refrigeration can survive power interruptions."],
+      ["Medical needs", "Persistent itching, vomiting, diarrhoea, weight change, or diagnosed disease needs veterinary assessment before repeated diet experiments."],
     ],
     questions: [
       "Is this food complete for my dog's life stage?",
@@ -82,6 +87,8 @@ const guides: FoodGuide[] = [
       "Who formulates the food and what quality controls are used?",
       "Is there a puppy, senior, small-breed, or large-breed formula if needed?",
       "What should I do if my dog vomits, has diarrhoea, or becomes itchy?",
+      "How should this food be stored after opening in hot weather or during power interruptions?",
+      "Does my dog need a veterinary medical diet or structured allergy investigation?",
     ],
     avoid: [
       "Do not choose only by packaging claims or social media hype.",
@@ -94,6 +101,8 @@ const guides: FoodGuide[] = [
       "Check daily calories and feeding guide.",
       "Assess body condition monthly.",
       "Transition gradually.",
+      "Calculate cost per day and confirm reliable South African availability before switching.",
+      "Store food exactly as directed and avoid buying more than can stay fresh and safe.",
       "Ask a vet for puppies, seniors, overweight dogs, and dogs with symptoms.",
     ],
     faqs: [
@@ -116,7 +125,7 @@ const guides: FoodGuide[] = [
     related: foodRelated,
   },
   {
-    slug: "how-to-choose-dog-food-south-africa",
+    slug: "retired-how-to-choose-dog-food-article",
     title: "How to Choose Dog Food in South Africa",
     seoTitle: "How to Choose Dog Food South Africa | Practical Guide",
     description:
@@ -181,13 +190,16 @@ const guides: FoodGuide[] = [
     summary:
       "Compare dog foods by suitability, not popularity: life stage, calories, complete nutrition, digestibility, safety, cost per day, storage, and your dog's response.",
     context:
-      "South African homes may have load-shedding concerns, hot storage areas, limited freezer space, rural supply issues, or tight monthly budgets. Practical feeding has to work in real life.",
+      "South African homes may have load-shedding concerns, hot storage areas, limited freezer or refrigerator space, rural supply issues, travel needs, or tight monthly budgets. Practical feeding has to remain nutritionally appropriate and food-safe in real life.",
+    updated: "2026-08-08",
     rows: [
-      ["Kibble", "Convenient, shelf-stable, and easy to portion, but calorie density matters."],
-      ["Wet food", "Can help palatability and hydration, but storage and cost may differ."],
-      ["Raw diets", "Need careful safety and veterinary nutrition guidance."],
-      ["Mixed feeding", "Can work if total calories stay controlled."],
-      ["Home-prepared", "Should be formulated with veterinary nutrition help."],
+      ["Dry kibble", "Often complete, convenient, calorie-dense, and shelf-stable before opening; check portions, water access, resealing, and cool dry storage."],
+      ["Wet food", "Often palatable with high moisture, but can cost more per day and needs safe refrigeration after opening."],
+      ["Raw feeding", "May be chosen by some owners, but requires strict hygiene, reliable cold storage, nutritional balance, and vet-informed planning."],
+      ["Mixed feeding", "Can combine formats and palatability if the complete diet contribution and total calories remain controlled."],
+      ["Home-prepared diets", "May suit specific circumstances only when properly formulated; improvised recipes can be nutritionally incomplete."],
+      ["Puppies", "Need complete growth-appropriate nutrition; large-breed puppy growth and mineral balance require particular care."],
+      ["Medical conditions", "Texture or diet type may matter, but diagnosed disease and therapeutic diets need veterinary guidance."],
       ["Treats", "Useful for training, but should stay a small part of daily intake."],
     ],
     questions: [
@@ -196,12 +208,16 @@ const guides: FoodGuide[] = [
       "How will I store it safely during hot weather or power interruptions?",
       "Does the cost work per day, not just per bag or tin?",
       "Does my dog maintain healthy stool and body condition?",
+      "Is refrigeration or freezing reliable enough for opened wet, raw, or home-prepared food during load shedding?",
+      "What hygiene steps protect people and pets when handling uncooked animal products?",
     ],
     avoid: [
       "Do not compare only price per kilogram; compare calories and daily amount.",
       "Do not feed raw food casually without understanding hygiene risk.",
       "Do not assume wet food or fresh food is automatically healthier.",
       "Do not forget treats when calculating calories.",
+      "Do not assume raw feeding is automatically healthier or that every raw-feeding situation has identical risk.",
+      "Do not use an unformulated home-prepared recipe as a complete long-term diet.",
     ],
     checklist: [
       "Compare life stage.",
@@ -209,6 +225,8 @@ const guides: FoodGuide[] = [
       "Compare storage needs.",
       "Compare monthly cost.",
       "Compare your dog's digestion and body condition.",
+      "Compare refrigeration, freezer, hot-weather, and power-interruption requirements.",
+      "Ask a vet before raw, home-prepared, puppy, or medical-diet changes.",
     ],
     faqs: [
       {
@@ -228,12 +246,12 @@ const guides: FoodGuide[] = [
       },
     ],
     related: [
-      { title: "Kibble vs Wet vs Raw", description: "Compare feeding types in more detail.", href: "/food/kibble-vs-wet-food-vs-raw-dog-food-south-africa" },
+      { title: "Best Dog Food", description: "Choose by life stage, body condition, availability, and budget.", href: "/food/best-dog-food-south-africa" },
       ...foodRelated,
     ],
   },
   {
-    slug: "kibble-vs-wet-food-vs-raw-dog-food-south-africa",
+    slug: "retired-kibble-wet-raw-comparison-article",
     title: "Kibble vs Wet Food vs Raw Dog Food in South Africa",
     seoTitle: "Kibble vs Wet vs Raw Dog Food South Africa | Comparison",
     description:
@@ -349,7 +367,7 @@ const guides: FoodGuide[] = [
     ],
     related: [
       { title: "Dog Vomiting", description: "Know urgent vomiting signs.", href: "/health/dog-vomiting-south-africa" },
-      { title: "Dog Diarrhea", description: "When loose stool needs a vet.", href: "/health/dog-diarrhea-south-africa" },
+      { title: "Dog Diarrhoea", description: "When loose stool needs a vet.", href: "/health/dog-diarrhoea-south-africa" },
       ...foodRelated,
     ],
     sources: allergySources,
@@ -1089,7 +1107,7 @@ function toGuide(guide: FoodGuide): GuideContent {
     seoTitle: guide.seoTitle,
     description: guide.description,
     intro: guide.summary,
-    updated: reviewed,
+    updated: guide.updated ?? reviewed,
     quickFacts: [
       "Dog Haven food pages are educational and do not replace veterinary nutrition advice.",
       "Needs vary by age, breed, weight, activity, health, body condition, budget, and vet guidance.",
@@ -1153,9 +1171,16 @@ function toGuide(guide: FoodGuide): GuideContent {
   };
 }
 
-export const phase15GuidePages: GuideContent[] = guides.map(toGuide);
+const retiredFoodGuideSlugs = new Set([
+  "retired-how-to-choose-dog-food-article",
+  "retired-kibble-wet-raw-comparison-article",
+]);
 
-export const phase15FoodCards: CardLink[] = guides.map((guide) => ({
+const activeFoodGuides = guides.filter((guide) => !retiredFoodGuideSlugs.has(guide.slug));
+
+export const phase15GuidePages: GuideContent[] = activeFoodGuides.map(toGuide);
+
+export const phase15FoodCards: CardLink[] = activeFoodGuides.map((guide) => ({
   title: guide.title,
   description: guide.description,
   href: `/food/${guide.slug}`,

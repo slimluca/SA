@@ -7,10 +7,11 @@ type Source = {
 export function SourceList({ sources }: { sources: readonly Source[] }) {
   return (
     <section className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
-      <h2 className="text-xl font-black text-cocoa">Useful source starting points</h2>
+      <h2 className="text-xl font-black text-cocoa">Sources and further reading</h2>
       <p className="mt-2 text-sm leading-6 text-bark">
-        Dog Haven cites primary, veterinary, public health, and official sources where they are
-        relevant to a guide. These links are starting points for the editorial foundation.
+        These references support factual, safety, legal, veterinary, or local context in this
+        guide. For time-sensitive requirements, alerts, and services, check the current official
+        source before acting.
       </p>
       <ul className="mt-4 space-y-3">
         {sources.map((source) => (

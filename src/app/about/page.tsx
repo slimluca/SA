@@ -53,10 +53,12 @@ export default function AboutPage() {
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">How guides are selected and written</h2>
           <p className="mt-3 leading-7 text-bark">
-            Topics are chosen around recurring South African owner decisions, especially questions
-            where unclear advice could waste time, money, or delay care. Drafts define the reader&apos;s
-            decision, check local relevance, use appropriate sources, state safety limits, and link
-            to a useful next step before publication.
+            The Dog Haven Editorial Team is the organisation responsible for planning, sourcing,
+            checking, publishing, and correcting these guides. Topics are chosen around recurring
+            South African owner decisions, especially questions where unclear advice could waste
+            time, money, or delay care. Drafts define the reader&apos;s decision, check local relevance,
+            use appropriate sources, state safety limits, and link to a useful next step before
+            publication.
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
