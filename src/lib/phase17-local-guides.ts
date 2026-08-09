@@ -368,7 +368,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog grooming in ${city.name}? This page combines practical local grooming guidance with starting points you can verify before booking. Use it to compare mobile and parlour grooming, ask better questions, spot red flags, and plan coat care around real ${city.name} conditions.`,
+    intro: `Dog grooming in ${city.name} may involve a mobile service, a parlour, or coat care at home. Compare handling, hygiene, health checks and current availability before booking, then plan around the local climate and your dog's coat.`,
     updated: reviewed,
     quickFacts: [
       "Dog Haven shows groomer details only where records have been manually researched, and never as a ranking or endorsement.",
@@ -461,7 +461,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         question: "Does Dog Haven recommend specific groomers?",
         answer:
-          "Use this guide as a starting point, then confirm services, prices, availability, handling methods, and suitability directly with each provider.",
+          "Confirm services, prices, availability, handling methods, and suitability directly with each provider before booking.",
       },
     ],
     related: [
@@ -485,7 +485,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog training in ${city.name}? This page combines practical local training guidance with starting points you can verify before booking. Use it to choose humane support for puppies, adult dogs, leash manners, barking, recall, and everyday public behaviour.`,
+    intro: `Dog training in ${city.name} ranges from puppy classes to private behaviour support. Ask how the trainer works, what owner involvement is expected, and how they approach lead manners, barking, recall, fear and everyday public behaviour.`,
     updated: reviewed,
     quickFacts: [
       "Choose reward-based, humane training that involves the owner and avoids fear-heavy methods.",
@@ -576,7 +576,7 @@ function trainingGuide(city: LocalCity, service: LocalService): GuideContent {
       {
         question: "Does Dog Haven list trainers?",
         answer:
-          "Use this guide as a starting point, then confirm training methods, class structure, availability, pricing, and suitability directly with each provider.",
+          "Confirm training methods, class structure, availability, pricing, and suitability directly with each provider before booking.",
       },
     ],
     related: [
@@ -721,7 +721,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
-    intro: `Looking for dog-friendly places in ${city.name}? Dog Haven does not invent park, beach, cafe, hotel, or venue listings. This guide helps you check rules, plan safer outings, and avoid putting your dog or other people in awkward situations.`,
+    intro: `Before visiting a dog-friendly place in ${city.name}, confirm the current rules with the park, beach, cafe, hotel or venue. Plan for heat, water, waste, leads and your dog's comfort around other people and animals.`,
     updated: reviewed,
     quickFacts: [
       "Dog-friendly rules can change by municipality, beach, park, estate, accommodation provider, venue, season, and time of day.",

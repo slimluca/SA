@@ -157,7 +157,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
     description:
       "A practical monthly dog budget guide for South African owners covering food, vet care, parasite control, grooming, training, insurance, and emergency savings.",
     intro:
-      "The monthly cost of a dog in South Africa is not one neat number. A tiny healthy adult dog, a large active dog, a puppy, and a senior dog with medication can live in completely different budget worlds. This guide helps you build a realistic monthly plan without pretending prices are fixed across the country.",
+      "The monthly cost of a dog in South Africa is not one neat number. A small healthy adult, a large active dog, a puppy and a senior dog on medication can have very different budgets. Build your monthly plan around the dog in front of you and current local prices.",
     updated: "2026-05-13",
     quickFacts: [
       costDisclaimer,
@@ -257,7 +257,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
     description:
       "A South African puppy first-year budget guide covering vaccines, parasite control, sterilisation, microchipping, food, training, equipment, and emergency planning.",
     intro:
-      "A puppy's first year is usually more expensive than a calm adult dog's routine year. Growth, vaccine visits, training, chewing, equipment changes, sterilisation decisions, and food transitions all arrive close together. This guide helps you plan before the cute photo becomes a monthly bill.",
+      "A puppy's first year is usually more expensive than a settled adult dog's routine year. Growth, vaccine visits, training, chewing, equipment changes, sterilisation decisions, and food transitions all arrive close together. Price them before bringing the puppy home.",
     updated: "2026-05-13",
     quickFacts: [
       costDisclaimer,
@@ -362,7 +362,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
     description:
       "A practical South African guide to dog vet costs, including consults, vaccines, diagnostics, medication, dental care, sterilisation, and why quotes vary.",
     intro:
-      "Veterinary care in South Africa is usually private healthcare for animals. The consultation is only one part of a bill: diagnostics, medication, procedures, hospitalisation, anaesthesia, and after-hours care can all add cost. This guide helps you understand the categories before you are standing at reception in a panic.",
+      "Veterinary care in South Africa is usually private healthcare for animals. The consultation is only one part of a bill; diagnostics, medication, procedures, hospitalisation, anaesthesia, and after-hours care can all add cost. Knowing those categories makes it easier to ask focused questions before treatment begins.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [
@@ -565,7 +565,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
       {
         heading: "What can make emergency bills large",
         body: [
-          "Emergency bills are not only a consult fee. A snake bite, poisoning, heatstroke, parvovirus, blocked bladder, gastric emergency, or trauma case may need several layers of care quickly.",
+          "Emergency bills often extend beyond the consultation. A snake bite, poisoning, heatstroke, parvovirus, blocked bladder, gastric emergency, or trauma case may need several layers of care quickly.",
         ],
         table: {
           headers: ["Cost driver", "Why it matters"],
@@ -827,7 +827,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
         heading: "Before switching or cancelling existing cover",
         body: [
           "Do not assume time served under one policy transfers to another. Before cancelling existing cover, obtain the new policy wording and written confirmation of its start date, accident and illness waiting periods, policy-specific waits, exclusions, and treatment of symptoms or vet visits that happened before or during the change.",
-          "Compare any gap between policies, new excesses and limits, and whether an application or upgrade must first be accepted. Keep the old policy active until you understand the new cover and have made your own informed decision; Dog Haven cannot advise whether a particular owner should switch.",
+          "Compare any gap between policies, new excesses and limits, and whether an application or upgrade must first be accepted. Keep the old policy active until you understand and accept the new cover; Dog Haven cannot advise a particular owner to switch.",
         ],
         checklist: [
           "Confirm the exact new policy start date in writing.",
@@ -1012,7 +1012,7 @@ const phase5GuidePagesRaw: GuideContent[] = [
       {
         heading: "Why this dog food guide is useful",
         body: [
-          "Dog food advice becomes much more helpful when it starts with the individual dog instead of a brand argument. This page helps South African owners compare food by life stage, body condition, stool quality, skin signs, budget, storage, treats, and veterinary guidance.",
+          "Useful dog food advice starts with the individual dog, not a brand argument. Compare food by life stage, body condition, stool quality, skin signs, budget, storage, treats, and any veterinary guidance.",
           "Use it before switching foods, comparing cheap and premium options, adding toppers, choosing puppy or senior food, or deciding whether a symptom should be discussed with a vet rather than treated as a food problem.",
         ],
         table: {
@@ -1175,9 +1175,9 @@ const phase5GuidePagesRaw: GuideContent[] = [
     title: "How to Read Dog Food Labels in South Africa",
     seoTitle: "How to Read Dog Food Labels South Africa | Practical Guide",
     description:
-      "A practical guide to reading dog food labels in South Africa, including life stage, feeding guides, ingredients, analysis, claims, treats, and vet diet questions.",
+      "Read South African dog food labels by checking life stage, feeding guides, ingredients, analysis, claims, treats, and veterinary diet instructions.",
     intro:
-      "Dog food labels are designed to inform you, but they can also be confusing. Ingredient lists, feeding guides, life-stage claims, marketing words, and analysis tables all need context. This guide helps you read the bag with calmer eyes.",
+      "Dog food labels contain useful information, but ingredient lists, feeding guides, life-stage claims, marketing words, and analysis tables all need context. Read the whole bag rather than relying on one prominent claim.",
     updated: "2026-05-13",
     quickFacts: [
       "A label is useful, but it does not tell you everything about ingredient quality, digestibility, or whether the food suits your dog.",

@@ -208,7 +208,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "What practical training should cover",
         body: [
-          "Training is not only sit and paw. The most useful skills are the ones that make daily South African life safer: coming when called, walking on lead, settling when visitors arrive, tolerating gentle handling, waiting at gates, and coping with normal household sounds.",
+          "The most useful training skills make daily South African life safer: coming when called, walking on lead, settling when visitors arrive, tolerating gentle handling, waiting at gates, and coping with normal household sounds.",
           "A clear routine is often more powerful than long sessions. Short, kind, consistent practice works better than waiting for a problem and then reacting harshly.",
         ],
         table: {
@@ -381,7 +381,7 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Dog Behaviour Problems in South Africa",
     seoTitle: "Dog Behaviour Problems South Africa | Practical Help Guide",
     description:
-      "A practical guide to dog behaviour problems in South Africa, including barking, jumping, chewing, digging, reactivity, guarding, fear, and when to get help.",
+      "Dog behaviour problems in South Africa, including barking, jumping, chewing, digging, reactivity, guarding, fear, and when to get help.",
     intro:
       "Behaviour problems are rarely solved by being louder than the dog. Barking, jumping, chewing, digging, guarding, fear, and reactivity usually have causes: stress, lack of outlets, pain, confusion, fear, poor socialisation, or habits that were accidentally rewarded.",
     updated: "2026-05-13",
@@ -567,7 +567,7 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Separation Anxiety in Dogs in South Africa",
     seoTitle: "Separation Anxiety Dogs South Africa | Practical Help Guide",
     description:
-      "A practical guide to separation anxiety in South African dogs, covering signs, safe management, gradual alone-time training, vet help, and what not to do.",
+      "Separation anxiety in South African dogs, including signs, safe management, gradual alone-time training, veterinary help, and what not to do.",
     intro:
       "Separation anxiety is not spite. A distressed dog may bark, howl, destroy doors, drool, pace, escape, or soil indoors because being alone feels unsafe. The fix is usually careful, gradual work, not punishment.",
     updated: "2026-05-13",
@@ -662,7 +662,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical South African checklist for choosing a humane dog trainer, including methods, owner involvement, qualifications, class safety, and red flags.",
     intro:
-      "Selected local pages include manually researched trainer options, but Dog Haven does not rank or endorse them. This guide helps you ask better questions so you can choose someone who treats dogs and people fairly, explains their methods, and keeps safety central.",
+      "Selected local pages include manually researched trainer options, but Dog Haven does not rank or endorse them. Ask how a trainer treats dogs and people, explains their methods, handles risk, and involves the owner before you book.",
     updated: "2026-05-13",
     quickFacts: [
       "Choose trainers who use humane, reward-based, welfare-focused methods.",
@@ -755,7 +755,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical South African dog grooming guide covering coat types, bathing, brushing, nails, ears, paws, ticks, beaches, heat, puppies, seniors, and vet warning signs.",
     intro:
-      "Dog grooming is not only about looking neat. In South Africa it also helps owners notice ticks, grass seeds, matting, hot spots, sore ears, cracked paws, beach sand, dust, shedding, and skin changes before they become bigger problems.",
+      "Dog grooming supports comfort and routine health checks. It helps South African owners notice ticks, grass seeds, matting, hot spots, sore ears, cracked paws, beach sand, dust, shedding, and skin changes before they become bigger problems.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [
@@ -1111,9 +1111,9 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Dog Shedding in South Africa",
     seoTitle: "Dog Shedding South Africa | Brushing, Coat Care and Skin Warning Signs",
     description:
-      "A practical guide to dog shedding in South Africa, covering seasonal coat changes, brushing, ticks, fleas, allergies, nutrition, and when hair loss needs a vet.",
+      "Dog shedding in South Africa, including seasonal coat changes, brushing, ticks, fleas, allergies, nutrition, and when hair loss needs a vet.",
     intro:
-      "Some shedding is normal. Sudden bald patches, itching, redness, scabs, fleas, bad smell, or painful skin are not just a housekeeping problem. This guide helps you separate normal loose hair from signs that need care.",
+      "Some shedding is normal. Sudden bald patches, itching, redness, scabs, fleas, bad smell, or painful skin point to more than a housekeeping problem. Check the skin beneath the loose hair and contact a vet when it looks sore or unhealthy.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [
@@ -1155,7 +1155,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "Why this shedding guide is useful",
         body: [
-          "Shedding searches often start with hair on the couch, but the useful question is whether the skin underneath looks healthy. This page helps South African owners connect coat changes with heat, dust, fleas, ticks, allergies, food, grooming routines, and vet warning signs.",
+          "Hair on the couch is often what owners notice first, but the skin underneath matters more. In South African dogs, coat changes may sit alongside heat, dust, fleas, ticks, allergies, food changes, grooming routines, or signs that need a vet.",
           "It is especially useful before booking a groomer, changing food, buying a de-shedding tool, or assuming bald patches are normal seasonal shedding.",
         ],
         table: {
@@ -1219,7 +1219,7 @@ export const phase6GuidePages: GuideContent[] = [
     description:
       "A practical checklist for choosing a South African dog groomer, covering handling, drying, matting, anxious dogs, senior dogs, vaccination policies, and safety questions.",
     intro:
-      "Dog Haven does not publish unverified groomer listings. This guide helps you choose a groomer by asking safety and welfare questions before handing over your dog.",
+      "Dog Haven does not publish unverified groomer listings. Before handing over your dog, ask how the groomer handles safety, stress, health concerns, equipment, and emergencies.",
     updated: "2026-05-13",
     quickFacts: [
       "A good groomer should answer questions about handling, drying, matting, health concerns, and emergency procedures.",
@@ -1311,7 +1311,7 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Dog-Friendly Places in South Africa",
     seoTitle: "Dog-Friendly Places South Africa | Practical Outing Guide",
     description:
-      "A practical guide to dog-friendly places in South Africa, including rule checks, leashes, heat, water, waste bags, behaviour, vaccination, and etiquette.",
+      "Plan visits to dog-friendly places in South Africa with rule checks, leads, heat, water, waste bags, behaviour, vaccination, and etiquette in mind.",
     intro:
       "Dog-friendly does not mean every dog should go everywhere. A good outing matches your dog's health, behaviour, training, heat tolerance, and the current rules of the place you want to visit.",
     updated: "2026-05-13",
@@ -1494,7 +1494,7 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Dog-Friendly Beaches in South Africa",
     seoTitle: "Dog-Friendly Beaches South Africa | Rules and Safety Guide",
     description:
-      "A practical guide to dog-friendly beaches in South Africa, covering rule checks, leashes, heat, tides, salt water, waste bags, other dogs, and safe swimming.",
+      "Plan a South African beach visit with your dog by checking rules, leads, heat, tides, salt water, waste disposal, other dogs, and swimming safety.",
     intro:
       "A beach can be paradise for one dog and chaos for another. Before you go, check the latest official beach rules, time restrictions, leash requirements, water safety, heat, and whether your dog can cope around people and other dogs.",
     updated: "2026-05-13",
@@ -1580,7 +1580,7 @@ export const phase6GuidePages: GuideContent[] = [
     title: "Pet-Friendly Accommodation in South Africa",
     seoTitle: "Pet-Friendly Accommodation South Africa | Dog Travel Checklist",
     description:
-      "A practical guide to pet-friendly accommodation in South Africa, covering pet policies, deposits, size limits, fencing, cleaning rules, heat, ticks, and dog behaviour.",
+      "Book pet-friendly accommodation in South Africa after checking policies, deposits, size limits, fencing, cleaning rules, heat, ticks, and your dog's behaviour.",
     intro:
       "Pet-friendly accommodation is not one standard promise. Each property can set its own rules for dog size, number, breed, sleeping areas, furniture, deposits, cleaning, fencing, noise, and where dogs may go.",
     updated: "2026-05-13",

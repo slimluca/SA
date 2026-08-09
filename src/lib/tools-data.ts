@@ -38,7 +38,7 @@ export type ToolContent = {
 };
 
 const commonRelated: CardLink[] = [
-  { title: "Start Here", description: "Find the right Dog Haven guide faster.", href: "/start-here" },
+  { title: "Start Here", description: "Browse Dog Haven by the question you need answered.", href: "/start-here" },
   { title: "Dog Food", description: "Feeding guides for South African homes.", href: "/food" },
   { title: "Dog Costs", description: "Budget for everyday and emergency care.", href: "/costs" },
 ];
@@ -52,7 +52,7 @@ export const tools: ToolContent[] = [
     description:
       "Free South African dog feeding calculator for daily food estimates by weight, age stage, activity, body condition and food type.",
     intro:
-      "Estimate a general daily feeding starting point, then compare it with your food packaging and your dog's body condition.",
+      "Estimate an initial daily amount, then compare it with the food packaging and your dog's body condition.",
     note:
       "This is an educational estimate only. Ask a vet for puppies, seniors, pregnant dogs, overweight dogs, underweight dogs, and dogs with health issues.",
     related: [
@@ -69,7 +69,7 @@ export const tools: ToolContent[] = [
       {
         question: "Can I use it for puppies?",
         answer:
-          "Use it only as a starting point. Puppies need growth monitoring and vet-guided feeding.",
+          "Use it only as an initial estimate. Puppies need growth monitoring and vet-guided feeding.",
       },
     ],
   },
@@ -110,7 +110,7 @@ export const tools: ToolContent[] = [
     description:
       "A free interactive puppy checklist for South African owners covering vet visits, vaccines, food, puppy-proofing, socialisation, ID, and scam checks.",
     intro:
-      "Tick off the practical steps that make the first week with a South African puppy calmer and safer.",
+      "Work through the health, safety and household tasks for a puppy's first week in a South African home.",
     note:
       "This checklist is educational. Puppies with vomiting, diarrhoea, weakness, coughing, or poor appetite need a veterinarian.",
     related: [
@@ -288,7 +288,7 @@ export const tools: ToolContent[] = [
     description:
       "A free printable-style dog care checklist for feeding, water, exercise, grooming, parasite prevention, vet care, dental checks, training, emergency contacts and budget reminders.",
     intro:
-      "Use this everyday dog care checklist as a calm reminder for routine care, prevention and emergency planning.",
+      "Use this everyday checklist to keep routine care, prevention and emergency preparation organised.",
     note:
       "This is a general planning checklist. It does not replace veterinary care, provider quotes, insurance documents or local rules.",
     related: [

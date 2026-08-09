@@ -461,7 +461,7 @@ function guideFor(city: ExpansionCity, service: ExpansionService): GuideContent 
       {
         question: `Does Dog Haven list verified providers in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm services, prices, availability, contact details, and suitability directly before booking or visiting.",
+          "Confirm services, prices, availability, contact details, and suitability directly before booking or visiting.",
       },
       {
         question: "How should I compare local options?",

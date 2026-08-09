@@ -6,7 +6,7 @@ const vetSources: Source[] = [
   {
     label: "South African Veterinary Council",
     href: "https://savc.org.za/",
-    note: "South African veterinary professional context and a useful starting point for checking veterinary care.",
+    note: "South African veterinary professional context for checking registered veterinary care.",
   },
   {
     label: "South African Veterinary Association",
@@ -160,7 +160,7 @@ const phase21Guides: GuideContent[] = [
     description:
       "A cautious South African guide to tick bite fever in dogs, covering warning signs, tick exposure, prevention, what not to do, and when to contact a vet urgently.",
     intro:
-      "Tick bite fever is a serious concern for South African dog owners because ticks are common in many gardens, parks, farms, coastal areas, and walking routes. This page helps owners recognise possible warning signs without pretending to diagnose.",
+      "Tick bite fever is a serious concern in South Africa because dogs encounter ticks in gardens, parks, farms, coastal areas, and along walking routes. Learn the warning signs, but leave diagnosis and treatment to a veterinarian.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -333,7 +333,7 @@ const phase21Guides: GuideContent[] = [
     description:
       "A South African dog deworming guide covering age, risk, lifestyle, product instructions, vet guidance, puppies, households, and warning signs.",
     intro:
-      "Deworming schedules are not one-size-fits-all. South African dogs may need different routines depending on age, health, parasite exposure, household risk, hunting or scavenging, travel, and the product your vet recommends.",
+      "Deworming schedules vary. Your dog's age, health, parasite exposure, household risk, hunting or scavenging habits, travel, and the product your vet recommends all affect the routine.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [

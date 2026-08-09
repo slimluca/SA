@@ -6,7 +6,7 @@ const sources: Source[] = [
   {
     label: "South African Veterinary Council",
     href: "https://savc.org.za/",
-    note: "South African veterinary professional context and a useful starting point for checking veterinary care.",
+    note: "South African veterinary professional context for checking registered chronic-care support.",
   },
   {
     label: "South African Veterinary Association",
@@ -789,7 +789,7 @@ const topics: Topic[] = [
       "Senior dog checkups help owners catch changes earlier and ask better questions. The right schedule depends on your dog's age, size, breed, medical history, medication, and current symptoms.",
     quickFacts: [
       ...disclaimer,
-      "A senior checkup is not only for obviously sick dogs.",
+      "Senior checkups can find changes before a dog appears obviously ill.",
       "Ask your vet which screening tests are useful for your dog rather than copying another owner's plan.",
     ],
     context: [

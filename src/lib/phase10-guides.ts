@@ -257,7 +257,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Not Eating in South Africa: When to Worry",
     seoTitle: "Dog Not Eating South Africa | When to Call a Vet",
     description:
-      "A practical guide to dogs not eating, possible causes, warning signs, owner checks, and when same-day vet care is needed.",
+      "Why dogs stop eating, warning signs to watch, useful owner checks, and when same-day vet care is needed.",
     symptom: "not eating",
     urgentSummary:
       "Call a vet the same day if your dog refuses food and is weak, vomiting, painful, breathing oddly, has pale gums, has tick exposure, or is a puppy, senior, or diabetic dog.",
@@ -335,7 +335,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Coughing in South Africa: When It Is Serious",
     seoTitle: "Dog Coughing South Africa | When to Call a Vet",
     description:
-      "A practical guide to dog coughing, possible causes, red flags, kennel cough context, breathing symptoms, and when vet care is urgent.",
+      "Dog coughing, possible causes, red flags, kennel cough context, breathing symptoms, and when veterinary care is urgent.",
     symptom: "coughing",
     urgentSummary:
       "Call a vet urgently if coughing comes with breathing difficulty, blue or pale gums, collapse, severe weakness, bloated abdomen, or coughing after choking or smoke exposure.",
@@ -491,7 +491,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Ear Infection Signs in South Africa",
     seoTitle: "Dog Ear Infection Signs South Africa | When to See a Vet",
     description:
-      "A practical guide to dog ear infection signs, head shaking, smell, discharge, pain, grass seeds, allergies, and when vet care is needed.",
+      "Dog ear infection signs, including head shaking, smell, discharge, pain, grass seeds, allergies, and when veterinary care is needed.",
     symptom: "ear signs",
     urgentSummary:
       "See a vet if your dog has ear pain, head shaking, bad smell, discharge, swelling, bleeding, balance problems, or a sudden head tilt.",
@@ -573,7 +573,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Limping in South Africa: When to Call a Vet",
     seoTitle: "Dog Limping South Africa | Injury and Vet Warning Signs",
     description:
-      "A practical guide to dog limping, possible causes, red flags, owner observations, grass seeds, tick illness, injuries, and when same-day vet care is needed.",
+      "Dog limping, possible causes, red flags, useful observations, grass seeds, tick illness, injuries, and when same-day vet care is needed.",
     symptom: "limping",
     urgentSummary:
       "Call a vet the same day if your dog cannot bear weight, is in severe pain, has swelling, a wound, fever, weakness, paralysis signs, or limping after a fall, fight, or car incident.",
@@ -651,7 +651,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Eye Discharge in South Africa",
     seoTitle: "Dog Eye Discharge South Africa | Vet Warning Signs",
     description:
-      "A practical guide to dog eye discharge, redness, squinting, injury, dust, allergies, grass seeds, and when eye symptoms need urgent vet care.",
+      "Dog eye discharge, redness, squinting, injury, dust, allergies, grass seeds, and signs that need urgent veterinary care.",
     symptom: "eye discharge",
     urgentSummary:
       "Eye pain, squinting, cloudiness, injury, swelling, sudden vision change, or thick yellow-green discharge should be checked by a vet promptly.",
@@ -807,7 +807,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Bad Breath in South Africa: Dental Warning Signs",
     seoTitle: "Dog Bad Breath South Africa | Dental Signs and Vet Advice",
     description:
-      "A practical guide to bad breath in dogs, dental disease signs, mouth pain, red flags, prevention, and when to book a vet visit.",
+      "Bad breath in dogs, dental disease signs, mouth pain, red flags, prevention, and when to book a veterinary visit.",
     symptom: "bad breath",
     urgentSummary:
       "Book a vet visit if bad breath is strong, sudden, paired with drooling, bleeding, swelling, loose teeth, pain, not eating, or weight loss.",
@@ -888,7 +888,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Drinking Lots of Water in South Africa",
     seoTitle: "Dog Drinking Lots of Water South Africa | Vet Warning Signs",
     description:
-      "A practical guide to dogs drinking more water, heat, diet, diabetes, kidney concerns, warning signs, and when same-day vet care is needed.",
+      "Why dogs may drink more water, including heat, diet, diabetes, kidney concerns, warning signs, and when same-day vet care is needed.",
     symptom: "drinking lots of water",
     urgentSummary:
       "Call a vet the same day if increased drinking is sudden, extreme, paired with vomiting, weight loss, weakness, not eating, accidents, or changes in urination.",
@@ -966,7 +966,7 @@ const symptomGuides: SymptomGuide[] = [
     title: "Dog Weight Loss in South Africa: When to See a Vet",
     seoTitle: "Dog Weight Loss South Africa | Causes and Vet Warning Signs",
     description:
-      "A practical guide to dog weight loss, possible causes, red flags, body condition, parasites, dental disease, and when to contact a vet.",
+      "Dog weight loss, possible causes, red flags, body condition, parasites, dental disease, and when to contact a vet.",
     symptom: "weight loss",
     urgentSummary:
       "Book a vet visit if your dog is losing weight without a planned diet, especially with increased thirst, vomiting, diarrhoea, coughing, weakness, bad breath, or appetite changes.",

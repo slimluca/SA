@@ -9,11 +9,38 @@ export const siteConfig = {
 
 export const navigation = [
   { label: "Start Here", href: "/start-here" },
-  { label: "Puppy", href: "/puppy" },
   { label: "Health", href: "/health" },
   { label: "Emergency", href: "/emergency" },
   { label: "Breeds", href: "/breeds" },
+  { label: "Food", href: "/food" },
   { label: "Adoption", href: "/adoption" },
+] as const;
+
+export const moreNavigationGroups = [
+  {
+    title: "Dog care",
+    links: [
+      { label: "Puppy", href: "/puppy" },
+      { label: "Training", href: "/training" },
+      { label: "Grooming", href: "/grooming" },
+      { label: "Dog-Friendly", href: "/dog-friendly" },
+    ],
+  },
+  {
+    title: "Planning",
+    links: [
+      { label: "Costs", href: "/costs" },
+      { label: "Insurance", href: "/insurance" },
+      { label: "Tools", href: "/tools" },
+    ],
+  },
+  {
+    title: "Local help",
+    links: [
+      { label: "Local", href: "/local" },
+      { label: "Dog Services", href: "/dog-services" },
+    ],
+  },
 ] as const;
 
 export const mobileNavigation = [
@@ -28,9 +55,9 @@ export const mobileNavigation = [
   { label: "Insurance", href: "/insurance" },
   { label: "Costs", href: "/costs" },
   { label: "Tools", href: "/tools" },
-  { label: "Dog Names", href: "/dog-names" },
-  { label: "Fun", href: "/fun" },
+  { label: "Dog-Friendly", href: "/dog-friendly" },
   { label: "Local", href: "/local" },
+  { label: "Dog Services", href: "/dog-services" },
   { label: "Contact", href: "/contact" },
 ] as const;
 

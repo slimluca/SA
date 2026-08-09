@@ -134,7 +134,7 @@ const guides: LawGuide[] = [
     title: "Rabies Vaccination Law in South Africa",
     seoTitle: "Rabies Vaccination Law South Africa | Dog Owner Guide",
     description:
-      "A practical guide to rabies vaccination responsibilities for South African dog owners, including records, bites, travel, and when to speak to a vet.",
+      "South African rabies vaccination responsibilities, including records, bite response, travel, and when to speak to a vet.",
     summary:
       "Rabies vaccination is a serious public health responsibility for South African dog owners. Keep your dog's rabies record current and ask your vet or provincial veterinary services what schedule applies to your dog.",
     context:
@@ -341,7 +341,7 @@ const guides: LawGuide[] = [
     title: "Dogs in Complexes and Sectional Title in South Africa",
     seoTitle: "Dogs in Complexes South Africa | Sectional Title Pet Rules",
     description:
-      "A practical guide to dogs in South African complexes, sectional title schemes, estates, body corporate rules, written permission, nuisance concerns, and disputes.",
+      "Rules for dogs in South African complexes, sectional title schemes and estates, including written permission, nuisance concerns, and disputes.",
     summary:
       "Before keeping a dog in a complex, read the conduct rules and get permission in writing where required. Pet disputes often involve noise, size, number of pets, common areas, waste, safety, and fair process.",
     context:
@@ -410,7 +410,7 @@ const guides: LawGuide[] = [
     title: "Pet-Friendly Rentals in South Africa: Dog Owner Guide",
     seoTitle: "Pet-Friendly Rentals South Africa | Dog Owner Checklist",
     description:
-      "A practical guide to renting with dogs in South Africa, including lease clauses, written permission, deposits, inspections, complexes, and responsible ownership.",
+      "Renting with dogs in South Africa, including lease clauses, written permission, deposits, inspections, complex rules, and owner duties.",
     summary:
       "Do not rely on a verbal 'pets are fine' when renting with a dog. Ask for written permission, read the lease and complex rules, clarify deposits and inspections, and keep your dog's records ready.",
     context:
@@ -479,7 +479,7 @@ const guides: LawGuide[] = [
     title: "Dog Leash Laws in South Africa: What to Check",
     seoTitle: "Dog Leash Laws South Africa | Public Space Rule Guide",
     description:
-      "A practical guide to checking dog leash rules in South African public spaces, parks, complexes, beaches, trails, suburbs, and dog-friendly venues.",
+      "Check dog leash rules for South African parks, complexes, beaches, trails, suburbs, public spaces, and dog-friendly venues.",
     summary:
       "Leash rules can change by municipality, park, beach, estate, trail, and venue. If you are not sure, keep your dog on lead, check signs, and verify the official local rule before visiting.",
     context:
@@ -548,7 +548,7 @@ const guides: LawGuide[] = [
     title: "Dog-Friendly Beach Rules in South Africa",
     seoTitle: "Dog-Friendly Beach Rules South Africa | Owner Checklist",
     description:
-      "A practical guide to checking dog-friendly beach rules in South Africa, including leads, seasons, times, waste, heat, tides, wildlife, and local by-laws.",
+      "Check South African dog-friendly beach rules, including leads, seasonal hours, waste, heat, tides, wildlife, and local by-laws.",
     summary:
       "Dog beach rules are local and can change by municipality, beach, season, time of day, conservation area, and signage. Check official rules before you go and keep your dog under control.",
     context:
@@ -616,7 +616,7 @@ const guides: LawGuide[] = [
     title: "Travelling With Dogs in South Africa: Rules to Check",
     seoTitle: "Travelling With Dogs South Africa Rules | Practical Checklist",
     description:
-      "A practical guide to dog travel rules in South Africa, including rabies records, accommodation, road trips, public spaces, province travel, and border checks.",
+      "Dog travel rules in South Africa, including rabies records, accommodation, road trips, public spaces, provincial travel, and border checks.",
     summary:
       "Before travelling with a dog, check rabies records, accommodation pet rules, municipal public space rules, heat risk, vehicle safety, and any border or destination requirements.",
     context:

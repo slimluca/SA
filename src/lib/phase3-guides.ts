@@ -857,7 +857,7 @@ export const phase3GuidePages: GuideContent[] = [
     title: "Toxic Foods for Dogs in South Africa",
     seoTitle: "Toxic Foods for Dogs South Africa | What Not to Feed",
     description:
-      "A practical guide to toxic foods for dogs in South African homes, including chocolate, xylitol, grapes, raisins, onions, alcohol, and when to call a vet.",
+      "Toxic foods in South African homes, including chocolate, xylitol, grapes, raisins, onions, alcohol, and when to call a vet.",
     intro:
       "If your dog ate chocolate, xylitol, grapes, raisins, alcohol, onion-heavy food, or a large amount of fatty leftovers, phone a vet promptly and keep the packaging or ingredient list. Many South African dog food emergencies start in ordinary kitchens, lunch boxes, braais, festive baking, and unattended party plates.",
     updated: "2026-05-13",
@@ -1113,7 +1113,7 @@ export const phase3GuidePages: GuideContent[] = [
     description:
       "A practical South African guide to deciding when dog symptoms need emergency care, same-day vet advice, or a routine appointment.",
     intro:
-      "Dog owners often know something is wrong before they know how urgent it is. This guide helps you decide when to phone a vet, when to go immediately, and what information to prepare. It does not diagnose your dog and should not delay urgent care.",
+      "Dog owners often know something is wrong before they know how urgent it is. Use the symptoms and timing to decide when to phone a vet, when to leave immediately, and what information to prepare. Online information cannot diagnose your dog and should never delay urgent care.",
     updated: "2026-05-13",
     isHealthGuide: true,
     quickFacts: [

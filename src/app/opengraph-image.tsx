@@ -48,23 +48,24 @@ export default function Image() {
         </div>
         <div
           style={{
-            width: 430,
-            height: 170,
-            borderRadius: 22,
-            border: "6px solid #bf8424",
-            background: "#fffaf0",
+            width: 390,
+            height: 165,
+            borderRadius: 28,
+            background: "#f2d8b9",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            overflow: "hidden",
             boxShadow: "0 24px 60px rgba(7,27,56,0.18)",
+            overflow: "hidden",
           }}
         >
+          {/* next/image is not available inside ImageResponse's generated markup. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://www.doghaven.co.za/brand/dog-haven-south-africa-logo.png"
-            alt="Dog Haven South Africa logo"
-            width="380"
-            height="127"
+            alt="Dog Haven South Africa"
+            width="390"
+            height="165"
             style={{ objectFit: "contain" }}
           />
         </div>

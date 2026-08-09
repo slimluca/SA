@@ -49,7 +49,7 @@ export const phase4BreedCards: CardLink[] = [
   {
     title: "AfriCanis Breed Guide",
     description:
-      "A practical guide to the AfriCanis as a Southern African landrace, including temperament, space, health, and adoption fit.",
+      "The AfriCanis as a Southern African landrace, including temperament, space, health, and adoption fit.",
     href: "/breeds/africanis-dog-breed-south-africa",
   },
   {
@@ -130,7 +130,7 @@ export const phase4GuidePages: GuideContent[] = [
     description:
       "A practical South African dog adoption guide covering shelters, SPCAs, rescue groups, home checks, adoption fees, records, red flags, and first-week planning.",
     intro:
-      "Dog adoption in South Africa can be deeply rewarding, but it should never be rushed. Good adoption protects the dog, your household, your neighbours, and any pets you already have. This guide explains what a careful process often looks like and how to ask useful questions without inventing certainty where every shelter or rescue works differently.",
+      "Dog adoption in South Africa can be deeply rewarding, but it should never be rushed. A careful process protects the dog, your household, your neighbours, and any pets you already have. Shelter and rescue procedures differ, so ask what applies to the individual dog and organisation.",
     updated: "2026-05-13",
     quickFacts: [
       "Adoption usually involves an application, questions about your home, and often a home check or pre-home inspection.",

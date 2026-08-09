@@ -690,7 +690,7 @@ function toGuide(breed: BreedSpec): GuideContent {
     title: `${breed.name} in South Africa`,
     seoTitle: `${breed.seoName} | Practical Breed Guide`,
     description: `A South Africa-specific ${breed.name} guide covering temperament, exercise, grooming, training, family fit, health, costs, adoption, and responsible breeder questions.`,
-    intro: `${breed.summary} This guide helps South African owners think beyond looks, status, and trends before choosing a dog.`,
+    intro: `${breed.summary} Before choosing a dog, compare the individual animal's needs and temperament with your household rather than relying on looks, status, or trends.`,
     updated: reviewed,
     quickFacts: [
       `Short summary: ${breed.summary}`,

@@ -2,7 +2,7 @@ import type { CardLink } from "@/lib/content";
 
 export const homepageTools: CardLink[] = [
   { title: "All Free Dog Tools", description: "Calculators, checklists, quizzes, and quick lookups.", href: "/tools" },
-  { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+  { title: "Dog Feeding Calculator", description: "Calculate an initial daily portion.", href: "/tools/dog-feeding-calculator" },
   { title: "Dog Cost Calculator", description: "Estimate monthly dog ownership costs.", href: "/tools/dog-cost-calculator" },
   { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
 ];
@@ -29,7 +29,7 @@ export const hubPromos: Record<string, CardLink[]> = {
   tools: homepageTools,
   food: [
     { title: "Best Dog Food South Africa", description: "How to choose for your dog without brand rankings.", href: "/food/best-dog-food-south-africa" },
-    { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+    { title: "Dog Feeding Calculator", description: "Estimate a daily portion before checking the label.", href: "/tools/dog-feeding-calculator" },
     { title: "Can My Dog Eat This?", description: "Quick food safety lookup.", href: "/tools/can-my-dog-eat-this" },
   ],
   insurance: [
@@ -116,7 +116,7 @@ export function getArticlePromos(hubPath: string, guidePath: string): CardLink[]
   if (hubPath === "/food") {
     return [
       { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
-      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Feeding Calculator", description: "Calculate an initial portion and adjust for body condition.", href: "/tools/dog-feeding-calculator" },
     ];
   }
 

@@ -97,7 +97,7 @@ export const premiumHubConfigs: Record<string, PremiumHubConfig> = {
       { title: "Bloat", description: "Recognise a rapidly expanding abdomen, unproductive retching, distress, and collapse risk.", href: "/emergency/bloat-in-dogs-south-africa" },
     ],
     guidance: {
-      title: "Urgent, calm, and practical",
+      title: "What to do before leaving for the vet",
       body: [
         "Emergency pages describe warning signs and preparation, not a home diagnosis. Phone the veterinary clinic before arrival when possible so the team can advise on transport and prepare for the suspected problem.",
       ],
@@ -166,12 +166,12 @@ export const premiumHubConfigs: Record<string, PremiumHubConfig> = {
       { title: "Choose food for your dog", description: "Compare life stage, body condition, health, daily cost, and availability.", href: "/food/best-dog-food-south-africa" },
       { title: "Estimate a starting portion", description: "Use the feeding calculator, then monitor the individual dog.", href: "/tools/dog-feeding-calculator" },
     ],
-    featureTitle: "Make a better food decision",
+    featureTitle: "Choose food for the dog in front of you",
     featureIntro: "No single food is universally best. A suitable choice depends on life stage, body condition, activity, health, digestibility, feeding amount, storage, availability, household budget, and veterinary guidance where needed.",
     features: [
       { title: "Best Dog Food: How to Choose", description: "A neutral decision guide without unsupported brand rankings.", href: "/food/best-dog-food-south-africa", image: { src: "/images/guides/choosing-dog-food-south-africa.webp", alt: "Dog owner comparing plain dog food options" } },
       { title: "Dog Food Comparison", description: "Compare labels, feeding amounts, format, cost, and practical fit.", href: "/food/dog-food-comparison-south-africa" },
-      { title: "Feeding Calculator", description: "Estimate a starting point and adjust with body-condition and veterinary guidance.", href: "/tools/dog-feeding-calculator" },
+      { title: "Feeding Calculator", description: "Estimate an initial portion, then adjust using body condition and veterinary advice.", href: "/tools/dog-feeding-calculator" },
       { title: "Toxic Foods", description: "Know which household foods require prevention and urgent veterinary advice.", href: "/health/toxic-foods-for-dogs-south-africa", image: { src: "/images/guides/toxic-foods-dogs-south-africa.webp", alt: "Dog owner keeping risky foods out of reach" } },
     ],
     guidance: {

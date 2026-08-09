@@ -108,7 +108,7 @@ function commonRelated(city: (typeof localCities)[number]): CardLink[] {
 function generalServiceNote(city: (typeof localCities)[number]) {
   return [
     `Dog services in ${city.name} can vary by suburb, provider experience, transport, availability, dog size, behaviour, health needs, season, and what is included.`,
-    "This page combines practical service guidance with verified local options where available. If no shortlist is published, use the checklist to confirm providers directly before booking.",
+    "Verified local options appear where reliable source details are available. If a page has no shortlist, use its questions and checklist when contacting providers directly.",
     city.localContext,
   ];
 }
@@ -225,7 +225,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog boarding and kennel guide covering vaccination checks, hygiene, sleeping arrangements, exercise, feeding, emergency planning, trial stays, and questions to ask.`,
-    intro: `Choosing dog boarding kennels in ${city.name} should be about safety, transparency, and your dog's temperament, careful questions, transparent details, and direct provider checks. This guide helps you compare kennels carefully before a holiday, work trip, hospital stay, or home renovation.`,
+    intro: `Choose dog boarding kennels in ${city.name} by checking safety, hygiene, supervision, emergency plans and how the setup suits your dog's temperament. Visit where possible and confirm current details before a holiday, work trip, hospital stay or home renovation.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("boarding kennel"),
     sections: [
@@ -285,7 +285,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
       {
         question: `Does Dog Haven list verified boarding kennels in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm kennel services, prices, availability, health requirements, and suitability directly before booking.",
+          "Confirm kennel services, prices, availability, health requirements, and suitability directly before booking.",
       },
       {
         question: "Should kennels ask for vaccination records?",
@@ -319,7 +319,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog daycare guide covering temperament, staff supervision, group sizes, vaccination checks, introductions, heat, water, rest, and over-arousal warning signs.`,
-    intro: `Dog daycare in ${city.name} can be useful for some dogs, but it is not the right fit for every temperament. This guide helps owners check supervision, group management, rest routines, and safety before booking.`,
+    intro: `Dog daycare in ${city.name} can suit sociable dogs that cope well in groups, but it is stressful for others. Check supervision, group management, rest routines, trial procedures and safety before booking.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("dog daycare"),
     sections: [
@@ -383,7 +383,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
       {
         question: `Does Dog Haven list verified dog daycare providers in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm daycare services, supervision, prices, availability, and suitability directly before booking.",
+          "Confirm daycare services, supervision, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Is daycare good for every dog?",
@@ -416,7 +416,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} pet sitter guide covering home visits, overnight sitting, references, written care notes, keys, updates, emergency contacts, and questions before booking.`,
-    intro: `Pet sitters in ${city.name} can help dogs stay in a familiar home, but trust and detail matter. This guide explains how to check references, set written instructions, plan key handover, and prepare emergency contacts.`,
+    intro: `A pet sitter in ${city.name} can keep your dog in familiar surroundings, but the arrangement depends on trust and careful instructions. Check references, agree on key handover, write down the routine, and provide emergency contacts.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("pet sitter"),
     sections: [
@@ -479,7 +479,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
       {
         question: `Does Dog Haven list verified pet sitters in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm sitter services, references, prices, availability, and suitability directly before booking.",
+          "Confirm sitter services, references, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Is a pet sitter better than boarding?",
@@ -511,7 +511,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} dog walker guide covering leash safety, solo vs group walks, heat precautions, transport, recall, escape risk, responsibility questions, and local public-space rules.`,
-    intro: `Dog walkers in ${city.name} can help with busy workdays and high-energy dogs, but safe walking needs more than a lead and a route. This guide helps owners ask about control, heat, transport, group walks, and local rules before booking.`,
+    intro: `A dog walker in ${city.name} should be able to explain control, heat precautions, transport, group size and local rules. Ask how they handle escapes, conflict, illness and sudden weather before booking.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("dog walker"),
     sections: [
@@ -574,7 +574,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
       {
         question: `Does Dog Haven list verified dog walkers in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm walker services, safety routines, prices, availability, and suitability directly before booking.",
+          "Confirm walker services, safety routines, prices, availability, and suitability directly before booking.",
       },
       {
         question: "Are group walks safe?",
@@ -607,7 +607,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `A practical ${city.name} holiday dog care guide covering December planning, boarding vs sitters, vaccination records, emergency vet details, food, medication, travel rules, and heat precautions.`,
-    intro: `Holiday dog care in ${city.name} needs early planning, especially around December, school holidays, long weekends, and peak travel. This guide helps you compare boarding, sitters, family care, and dog-friendly travel without relying on fake provider lists.`,
+    intro: `Holiday dog care in ${city.name} books up quickly around December, school holidays and long weekends. Compare boarding, sitters, trusted family care and dog-friendly travel early, then verify availability and requirements directly.`,
     updated: reviewed,
     quickFacts: verificationQuickFacts("holiday dog care"),
     sections: [
@@ -670,7 +670,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
       {
         question: `Does Dog Haven list verified holiday dog care providers in ${city.name}?`,
         answer:
-          "Use this guide as a starting point, then confirm kennels, sitters, walkers, travel rules, prices, and availability directly before booking.",
+          "Confirm kennels, sitters, walkers, travel rules, prices, and availability directly before booking.",
       },
       {
         question: "When should I book holiday dog care?",

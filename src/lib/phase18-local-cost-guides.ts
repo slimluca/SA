@@ -232,7 +232,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `Practical ${city.name} dog grooming price guidance covering mobile vs parlour grooming, coat type, matting, seasonal care, quote questions, and cost factors without fake exact prices.`,
-    intro: `Dog grooming prices in ${city.name} depend on much more than a quick bath. This guide explains what affects the quote, what to ask before booking, and how to budget without relying on fake local price lists or unverified groomer rankings.`,
+    intro: `Dog grooming prices in ${city.name} depend on coat, size, condition, handling needs, travel and what the appointment includes. Ask for a current written quote and confirm the service before booking.`,
     updated: reviewed,
     quickFacts: [
       "Dog Haven does not invent exact grooming prices or rank local groomers.",
@@ -337,7 +337,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
     description: `Practical ${city.name} dog training cost guidance covering puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
-    intro: `Dog training costs in ${city.name} can vary widely because puppy classes, private sessions, group classes, home visits, and behaviour support are not the same service. This guide helps you compare training quotes without fake rankings or invented prices.`,
+    intro: `Dog training costs in ${city.name} vary because puppy classes, private sessions, group classes, home visits and behaviour support are different services. Compare current quotes alongside methods, class size, owner involvement and follow-up support.`,
     updated: reviewed,
     quickFacts: [
       "Dog Haven does not rank trainers or invent exact local training prices.",
@@ -443,7 +443,7 @@ function emergencyVetPage(city: (typeof localCities)[number], service: CostServi
     description:
       descriptionFor(city, service) ||
       `Practical ${city.name} emergency vet cost guidance covering after-hours care, diagnostics, hospitalisation, transport, insurance questions, and urgent-care budgeting.`,
-    intro: `Emergency vet costs in ${city.name} can be stressful because decisions often happen quickly. This guide explains what can affect the bill, what records to keep ready, and why urgent care should not be delayed while searching online.`,
+    intro: `Emergency vet costs in ${city.name} can be stressful because decisions often happen quickly. The bill may include after-hours consultation, tests, medicine, procedures or hospital care. Keep records ready, but never delay urgent treatment while searching for prices online.`,
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -552,7 +552,7 @@ function monthlyPage(city: (typeof localCities)[number], service: CostService): 
     description:
       descriptionFor(city, service) ||
       `Practical ${city.name} monthly dog cost guide covering food, parasite control, grooming, vet care, insurance, toys, training, transport, and emergency savings without fake exact prices.`,
-    intro: `Monthly dog costs in ${city.name} depend on your dog's size, age, coat, health, food, lifestyle, housing, transport, and emergency planning. This guide helps you build a realistic budget without pretending every household pays the same.`,
+    intro: `Monthly dog costs in ${city.name} depend on size, age, coat, health, food, lifestyle, housing and transport. Use current local prices for your own dog, and leave room for preventive care and emergencies.`,
     updated: reviewed,
     quickFacts: [
       "Dog Haven uses cost factors, not fake exact monthly prices.",

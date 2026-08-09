@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Editorial Policy | Dog Haven",
   description:
-    "Dog Haven's editorial policy for practical, sourced, South Africa-focused dog care guidance.",
+    "How Dog Haven researches, checks, updates and corrects its South African dog care content.",
   path: "/editorial-policy",
 });
 
@@ -17,8 +17,8 @@ export default function EditorialPolicyPage() {
       <h1 className="section-title">How Dog Haven earns trust</h1>
       <p className="section-copy">
         This is the working method used to plan, source, check, publish, and correct Dog Haven
-        guidance. It favours practical usefulness, clear limits, South African relevance, and
-        traceable evidence over volume.
+        content. It favours useful answers, honest limits, South African relevance, and traceable
+        evidence over publishing volume.
       </p>
 
       <div className="mt-8 space-y-5">

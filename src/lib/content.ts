@@ -94,7 +94,7 @@ export const hubPages: HubContent[] = [
       {
         title: "Vaccination Schedule South Africa",
         description:
-          "A practical guide to core puppy and adult dog vaccines, rabies timing, boosters, and questions to ask your vet.",
+          "Core puppy and adult dog vaccines, rabies timing, boosters, and questions to ask your vet.",
         href: "/health/vaccination-schedule-south-africa",
       },
       {
@@ -335,7 +335,7 @@ export const hubPages: HubContent[] = [
         ],
       },
       {
-        title: "Prepare for the first month, not only collection day",
+        title: "Prepare for the whole first month",
         body: [
           "The first few weeks are where food changes, toilet routines, sleep, boundaries, vet checks, ID, and introductions can either settle calmly or become stressful. Prepare a quiet setup, keep records accessible, and budget for the first vet visit before the dog arrives.",
           "If the dog is a puppy, senior, nervous, underweight, recently ill, or moving between homes, give the transition more structure and fewer surprises.",
@@ -383,7 +383,7 @@ export const hubPages: HubContent[] = [
       {
         title: "Best Dog Food South Africa",
         description:
-          "How to choose for your individual dog without fake brand rankings or one-size-fits-all claims.",
+          "How to choose for your individual dog without fake brand rankings or universal claims.",
         href: "/food/best-dog-food-south-africa",
       },
       {
@@ -400,7 +400,7 @@ export const hubPages: HubContent[] = [
       },
     ],
     related: [
-      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Feeding Calculator", description: "Estimate an initial daily portion for your dog.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Cost Calculator", description: "Plan food as part of the monthly dog budget.", href: "/tools/dog-cost-calculator" },
       { title: "Dog Food Comparison", description: "Compare kibble, wet food, raw diets, and mixed feeding.", href: "/food/dog-food-comparison-south-africa" },
       { title: "Foods Dogs Should Never Eat", description: "Know dangerous foods and when to call a vet.", href: "/food/foods-dogs-should-never-eat-south-africa" },
@@ -496,7 +496,7 @@ export const hubPages: HubContent[] = [
       {
         title: "Train for ordinary South African routines",
         body: [
-          "Training is not only sit and stay. It is safer gate habits, calmer greetings, lead manners near traffic, recall where legal and appropriate, settling when visitors arrive, and helping dogs cope with suburbs, complexes, parks, beaches, and vet visits.",
+          "Useful training goes beyond sit and stay. It builds safer gate habits, calmer greetings, lead manners near traffic, recall where legal and appropriate, and the ability to settle around visitors, suburbs, complexes, parks, beaches, and vet visits.",
           "Puppies can start learning gentle routines at home immediately, but public exposure should follow your vet's vaccine guidance. Adult and rescue dogs can also learn, especially when expectations are realistic and the household is consistent.",
         ],
         links: [
@@ -548,7 +548,7 @@ export const hubPages: HubContent[] = [
       "South African dog grooming guides covering coat type, matting, mobile groomers, groomer questions, nails, ears, ticks and fleas, heat, shedding, and grooming costs.",
     kicker: "Grooming hub",
     intro:
-      "Grooming is not only about looking tidy. In South Africa it helps owners notice ticks and fleas, grass seeds, sore ears, overgrown nails, matting, heat discomfort, skin changes, and coat problems before they become bigger issues.",
+      "Grooming keeps a dog comfortable and gives owners a chance to find ticks and fleas, grass seeds, sore ears, overgrown nails, matting, heat discomfort, skin changes, and coat problems early.",
     cards: [
       {
         title: "Dog Grooming South Africa",
@@ -633,7 +633,7 @@ export const hubPages: HubContent[] = [
       "Plain-English South African dog insurance guides covering cover, exclusions, waiting periods, pre-existing conditions, emergency claims, claim process, and vet costs.",
     kicker: "Insurance hub",
     intro:
-      "Pet insurance is not one-size-fits-all, and the wording matters more than the sales page. Dog Haven helps South African owners compare the questions that matter before signing up: exclusions, waiting periods, pre-existing conditions, emergency cover, claim process, annual limits, chronic care, and what happens as a dog ages.",
+      "Pet insurance policies differ, and the wording matters more than the sales page. Before signing up, compare exclusions, waiting periods, pre-existing conditions, emergency cover, the claims process, annual limits, chronic care, and what happens as your dog ages.",
     cards: [
       {
         title: "Pet Insurance for Dogs",
@@ -1001,7 +1001,7 @@ export const guidePages: GuideContent[] = [
     description:
       "A practical South African guide to canine parvovirus signs, puppy risk, vaccination prevention, cleaning, and when to contact a vet urgently.",
     intro:
-      "Canine parvovirus is one of the puppy illnesses South African owners should take seriously because it can move fast, especially in young, unvaccinated, or incompletely vaccinated dogs. This guide helps you recognise red flags and act quickly without trying to treat a dangerous illness at home.",
+      "Canine parvovirus can progress quickly, especially in young, unvaccinated, or partly vaccinated dogs. Learn the red flags, contact a vet promptly, and do not try to treat this dangerous illness at home.",
     updated: "2026-05-12",
     isHealthGuide: true,
     quickFacts: [
@@ -1335,7 +1335,7 @@ export const guidePages: GuideContent[] = [
     description:
       "A practical South African dog ownership budget guide covering setup costs, monthly food, vet care, grooming, training, insurance, and emergency savings.",
     intro:
-      "The real cost of a dog is not the adoption fee or puppy price. It is the monthly routine, the annual prevention, the equipment that wears out, and the emergency you hope never happens. This guide helps you build a realistic South African dog budget without pretending every household or dog is the same.",
+      "The real cost of a dog goes well beyond the adoption fee or puppy price. Monthly care, annual prevention, worn equipment and unexpected emergencies all belong in a realistic South African dog budget.",
     updated: "2026-05-12",
     quickFacts: [
       "Dog size affects food, medication, bedding, transport, grooming, and sometimes insurance costs.",
@@ -1443,9 +1443,9 @@ export const guidePages: GuideContent[] = [
     title: "Best Dog Breeds for South African Homes",
     seoTitle: "Best Dog Breeds for South African Homes | Practical Breed Guide",
     description:
-      "A practical guide to choosing dog breeds for South African homes, including climate, space, exercise, grooming, children, costs, and adoption fit.",
+      "Choose a dog for a South African home by considering climate, space, exercise, grooming, children, costs, and adoption fit.",
     intro:
-      "There is no single best dog breed for South Africa. The better question is: which dog fits your home, heat, daily rhythm, budget, experience, and long-term care capacity? This guide helps you choose with fewer regrets.",
+      "There is no single best dog breed for South Africa. Ask which individual dog fits your home, climate, daily rhythm, budget, experience, and long-term ability to provide care.",
     updated: "2026-05-12",
     quickFacts: [
       "Choose for lifestyle fit before appearance.",

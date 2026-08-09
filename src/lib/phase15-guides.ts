@@ -53,7 +53,7 @@ const allergySources: Source[] = [
 
 const foodRelated: CardLink[] = [
   { title: "Dog Food South Africa", description: "Life stage, size, budget, and feeding basics.", href: "/food/dog-food-south-africa" },
-  { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+  { title: "Dog Feeding Calculator", description: "Estimate an initial daily portion.", href: "/tools/dog-feeding-calculator" },
   { title: "Dog Food Cost", description: "Plan monthly food spend without fake prices.", href: "/costs/dog-food-cost-south-africa" },
   { title: "Can My Dog Eat This?", description: "Quick safety lookup for common foods.", href: "/tools/can-my-dog-eat-this" },
 ];
@@ -68,7 +68,7 @@ const guides: FoodGuide[] = [
     summary:
       "The best dog food is the food that suits your dog's life stage, size, body condition, health, digestion, activity, budget, and your vet's guidance. Dog Haven does not crown one brand as best.",
     context:
-      "South African owners balance supermarket availability, vet-shop foods, online delivery, township and rural access, high summer heat, power interruptions, puppy growth, senior care, allergies, and budget pressure. A practical choice should be nutritionally appropriate, sustainable, safely stored, and consistently available—not just fashionable.",
+      "South African owners balance supermarket availability, vet-shop foods, online delivery, township and rural access, high summer heat, power interruptions, puppy growth, senior care, allergies, and budget pressure. A suitable food should be nutritionally appropriate, affordable, safely stored, and consistently available. Fashion should not drive the choice.",
     updated: "2026-08-08",
     rows: [
       ["Life stage", "Puppies, adults, seniors, pregnant dogs, and large-breed puppies need different planning."],
@@ -315,7 +315,7 @@ const guides: FoodGuide[] = [
     title: "Dog Food for Sensitive Stomachs in South Africa",
     seoTitle: "Dog Food for Sensitive Stomach South Africa | Owner Guide",
     description:
-      "A practical guide to feeding dogs with sensitive stomachs in South Africa, including vet red flags, gradual transitions, ingredients, stool tracking, and food questions.",
+      "Feeding dogs with sensitive stomachs in South Africa, including vet red flags, gradual transitions, ingredients, stool tracking, and food questions.",
     summary:
       "A sensitive stomach is a description, not a diagnosis. If vomiting, diarrhoea, weight loss, blood, pain, or repeated episodes occur, speak to a vet before trying multiple foods.",
     context:
@@ -557,7 +557,7 @@ const guides: FoodGuide[] = [
     title: "Senior Dog Food in South Africa",
     seoTitle: "Senior Dog Food South Africa | Older Dog Feeding Guide",
     description:
-      "A practical guide to feeding senior dogs in South Africa, covering body condition, dental health, protein questions, calories, vet checks, and chronic disease caution.",
+      "Feeding senior dogs in South Africa, with advice on body condition, dental health, protein, calories, vet checks, and chronic disease.",
     summary:
       "Senior dogs do not all need the same food. Body condition, muscle, teeth, appetite, kidney or heart concerns, medication, and vet advice should shape feeding decisions.",
     context:
@@ -679,7 +679,7 @@ const guides: FoodGuide[] = [
     title: "How Much Should I Feed My Dog?",
     seoTitle: "How Much Should I Feed My Dog? | South Africa Guide",
     description:
-      "A practical guide to dog feeding amounts, including calories, weight, life stage, activity, body condition, treats, and food label guidance.",
+      "Work out dog feeding amounts using calories, weight, life stage, activity, body condition, treats, and the food label.",
     summary:
       "Start with the feeding guide on the food package, then adjust for body condition, activity, treats, age, sterilisation, and vet advice. Feeding amounts are estimates, not fixed rules.",
     context:
@@ -911,7 +911,7 @@ const guides: FoodGuide[] = [
     title: "Dog Treats in South Africa: Safer Choices and Training Snacks",
     seoTitle: "Dog Treats South Africa | Safer Training and Snack Guide",
     description:
-      "A practical guide to dog treats in South Africa, covering training treats, calories, biltong and boerewors caution, dental treats, puppies, and safer snack habits.",
+      "Choose dog treats in South Africa with training, calories, puppies, dental products, and biltong or boerewors risks in mind.",
     summary:
       "Treats are useful for training and bonding, but they should stay a small part of daily calories. Avoid salty, fatty, spiced, cooked-bone, xylitol, onion, and garlic risks.",
     context:
@@ -1024,7 +1024,7 @@ const guides: FoodGuide[] = [
       },
     ],
     related: [
-      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Feeding Calculator", description: "Calculate a daily portion, then monitor body condition.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Food Cost", description: "Plan monthly feeding cost.", href: "/costs/dog-food-cost-south-africa" },
       { title: "Dog Food Labels", description: "Understand feeding guides and label wording.", href: "/food/how-to-read-dog-food-labels-south-africa" },
       { title: "Can My Dog Eat This?", description: "Check common food safety questions.", href: "/tools/can-my-dog-eat-this" },

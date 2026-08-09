@@ -6,7 +6,7 @@ const sources: Source[] = [
   {
     label: "South African Veterinary Council",
     href: "https://savc.org.za/",
-    note: "South African veterinary professional context and a useful starting point for checking veterinary care.",
+    note: "South African veterinary professional context for checking registered sterilisation care.",
   },
   {
     label: "South African Veterinary Association",

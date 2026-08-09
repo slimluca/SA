@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   ...createMetadata({
     title: "Dog Haven | South Africa's Practical Dog Care Guide",
     description:
-      "Dog Haven helps South African dog owners with practical guidance on health, emergencies, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places.",
+      "Dog Haven covers dog health, emergencies, breeds, adoption, training, grooming, food, insurance, costs, and dog-friendly places for South African owners.",
   }),
   icons: {
     icon: "/icon.png",

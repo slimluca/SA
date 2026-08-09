@@ -170,7 +170,7 @@ const guides: PuppyGuide[] = [
     summary:
       "A good puppy checklist starts with records and safety, not toys. Confirm health paperwork, choose a vet, puppy-proof the home, and plan the first week before the puppy arrives.",
     context:
-      "Whether you adopt from a shelter, use a rescue group, or buy from a responsible breeder, South African owners should verify vaccination records, deworming, microchipping, sterilisation policies, and who to contact if the puppy becomes ill after handover.",
+      "Before bringing a puppy home from a shelter, rescue group or responsible breeder, verify vaccination and deworming records, microchipping, sterilisation policies, and who to contact if the puppy becomes ill after handover.",
     ageRows: [
       ["Before handover", "Confirm records, payment safety, collection plan, and questions for the shelter or breeder."],
       ["First 24 hours", "Keep the home calm, offer the same food, start toilet trips, and watch for illness."],
@@ -381,7 +381,7 @@ const guides: PuppyGuide[] = [
     title: "Puppy First Vet Visit in South Africa",
     seoTitle: "Puppy First Vet Visit South Africa | What to Ask",
     description:
-      "A practical guide to a puppy's first vet visit in South Africa, including records, vaccines, deworming, food, microchips, insurance, and red flags.",
+      "Prepare for a puppy's first South African vet visit with records, vaccine and deworming questions, food details, microchip information, insurance documents, and warning signs to mention.",
     summary:
       "The first vet visit checks far more than vaccines. It is where you confirm records, health, parasite prevention, food, growth, socialisation safety, microchipping, and emergency planning.",
     context:
@@ -1108,7 +1108,7 @@ export const puppyHub: HubContent = {
     "Practical South African puppy care guides covering first-year setup, vaccines, deworming, food, potty training, biting, crying, socialisation, costs, and puppy-proofing.",
   kicker: "Puppy hub",
   intro:
-    "Bringing home a puppy is joyful, messy, expensive, and full of tiny decisions. Dog Haven's puppy hub helps South African owners plan the first year with calm, practical guidance on health, food, training, costs, safety, and when to ask a vet or trainer for help.",
+    "Bringing home a puppy is joyful, messy, expensive, and full of small decisions. This puppy hub covers health, food, training, costs and safety through the first year, including when a vet or trainer should step in.",
   notice:
     "Puppy content on Dog Haven is educational. Puppies with vomiting, diarrhoea, weakness, coughing, not eating, collapse, breathing trouble, or suspected poisoning need urgent veterinary advice.",
   cards: phase11GuidePages.map((guide) => ({

@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
     <section className="section-shell">
       <Breadcrumbs items={[{ name: "Privacy Policy", href: "/privacy-policy" }]} />
       <p className="section-kicker">Privacy Policy</p>
-      <h1 className="section-title">Privacy matters, even on a practical guide</h1>
+      <h1 className="section-title">How Dog Haven handles visitor information</h1>
       <p className="section-copy">
         This policy explains how DogHaven.co.za handles information. The site is currently a
         content guide and does not include advertising tags, affiliate tracking, public accounts, or

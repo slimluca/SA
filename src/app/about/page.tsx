@@ -14,22 +14,22 @@ export default function AboutPage() {
     <section className="section-shell">
       <Breadcrumbs items={[{ name: "About", href: "/about" }]} />
       <p className="section-kicker">About Dog Haven</p>
-      <h1 className="section-title">A practical dog care guide for South African owners</h1>
+      <h1 className="section-title">Dog care written for South African owners</h1>
       <p className="section-copy">
-        Dog Haven exists to make dog care easier to understand for people living in South Africa.
-        Owners often need clear help before they know which professional to call, which question to
-        ask, or which cost to budget for. This site is designed to answer those practical moments
-        with warmth, care, and local context.
+        Dog Haven makes dog care easier to understand for people living in South Africa. Owners
+        often need information before they know which professional to call, what to ask, or how
+        much to budget. The site addresses those moments with useful local context and honest
+        limits.
       </p>
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">Who Dog Haven serves</h2>
           <p className="mt-3 leading-7 text-bark">
-            Dog Haven is for current and prospective dog owners who need a clear next step: new
-            puppy and adoption planning, symptom and emergency preparation, everyday care,
-            service-provider questions, or realistic ownership budgets. The guides are educational
-            and are written to support decisions, not to make them on a reader&apos;s behalf.
+            Dog Haven is for current and prospective owners dealing with a new puppy, adoption,
+            symptoms, an emergency, everyday care, service providers, or the cost of ownership.
+            The guides explain the options and questions without making personal decisions for the
+            reader.
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">What makes the guides different</h2>
           <p className="mt-3 leading-7 text-bark">
-            Guides connect general dog-care information to practical owner actions: warning signs,
+            Guides connect general dog-care information to useful owner actions: warning signs,
             questions to ask, records to keep, costs to plan for, and checks to make locally. Dog
             Haven avoids invented statistics, unsupported prices, paid-looking rankings, fake
             reviews, and certainty where a veterinarian or current provider must answer.
@@ -69,7 +69,7 @@ export default function AboutPage() {
             public source. These options are starting points, not rankings or endorsements. Readers
             must confirm current services, availability, prices, rules, and emergency intake
             directly. Where there are not enough verified options, the page still provides a
-            practical checking and planning guide.
+            questions and checklists for readers researching their own options.
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">

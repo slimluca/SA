@@ -166,7 +166,7 @@ export const phase7ProvinceGuides: ProvinceGuide[] = [
     name: "Western Cape",
     slug: "western-cape",
     intro:
-      "Western Cape dog ownership often mixes coastal walks, mountain weather, wine-country weekends, windy suburbs, summer heat, winter rain, and busy urban living. This guide helps owners plan practical care without relying on unverified listings.",
+      "Western Cape dog ownership often mixes coastal walks, mountain weather, wine-country weekends, windy suburbs, summer heat, winter rain, and busy urban living. Plan around current local rules and conditions rather than relying on unverified listings.",
     overview: [
       "Many Western Cape owners need to balance beaches, apartments, estates, farms, holiday towns, and traffic-heavy metro routines.",
       "Cape Town and nearby towns can offer many dog-friendly possibilities, but rules vary by beach, trail, municipality, estate, and venue.",

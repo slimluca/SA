@@ -177,7 +177,7 @@ export const flagshipGuides: GuideContent[] = [
     title: "Ticks and Fleas on Dogs in South Africa",
     seoTitle: "Ticks and Fleas on Dogs South Africa | Checks and Prevention",
     description: "A practical South African guide to checking dogs for ticks and fleas, household control, product safety, prevention routines, and veterinary warning signs.",
-    intro: "Ticks and fleas are not only a summer or bush-walk problem. South African dogs can encounter them in gardens, parks, long grass, farms, boarding facilities, holiday accommodation, and ordinary travel stops. A reliable routine combines the right species-specific product, hands-on checks, household control where needed, and fast veterinary advice when skin or illness signs appear.",
+    intro: "Ticks and fleas can affect South African dogs throughout the year, including in gardens, parks, long grass, farms, boarding facilities, holiday accommodation, and ordinary travel stops. A reliable routine combines the right species-specific product, hands-on checks, household control where needed, and fast veterinary advice when skin or illness signs appear.",
     updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/ticks-fleas-dog-check-south-africa.webp",

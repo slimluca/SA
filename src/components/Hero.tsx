@@ -16,7 +16,7 @@ export function Hero({ title, intro }: HeroProps) {
             <div className="flex min-w-0 flex-col justify-center">
               <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-honey/50 bg-cream/85 px-3 py-2 text-sm font-bold text-bark shadow-sm">
                 <Sparkles className="h-4 w-4 text-honey" aria-hidden="true" />
-                Practical, local, dog-loving guidance
+                South African dog care
               </div>
               <h1 className="max-w-4xl text-4xl font-black leading-[1.08] text-navy sm:text-5xl lg:text-[3.25rem]">
                 {title}

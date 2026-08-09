@@ -225,7 +225,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Onions?",
     seoTitle: "Can Dogs Eat Onions? | Dog Food Safety South Africa",
     description:
-      "A practical guide to onion risk in dogs, including cooked onions, powders, stews, symptoms, and when to contact a vet.",
+      "Onion risks for dogs, including cooked onion, powders, stews, symptoms, and when to contact a vet.",
     rating: "Dangerous",
     shortAnswer:
       "No. Dogs should not eat onions, including cooked onion, onion powder, onion gravy, and onion-heavy leftovers.",
@@ -348,7 +348,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Chicken Bones?",
     seoTitle: "Can Dogs Eat Chicken Bones? | Dog Safety South Africa",
     description:
-      "A practical guide to chicken bones and dogs, including cooked bone risks, choking, obstruction, symptoms, and when to call a vet.",
+      "Chicken bone risks for dogs, including cooked bones, choking, obstruction, symptoms, and when to call a vet.",
     rating: "Dangerous",
     shortAnswer:
       "No. Dogs should not be given chicken bones, especially cooked chicken bones. They can splinter, choke, obstruct, or injure the gut.",
@@ -474,7 +474,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Rice?",
     seoTitle: "Can Dogs Eat Rice? | Dog Food Safety South Africa",
     description:
-      "A practical guide to rice for dogs, including plain preparation, upset stomach myths, moderation, and when to call a vet.",
+      "Rice for dogs, including plain preparation, upset-stomach myths, moderation, and when to call a vet.",
     rating: "Safe in small amounts",
     shortAnswer:
       "Plain cooked rice can be safe for many dogs in small amounts, but it should not replace balanced dog food or veterinary care for diarrhoea.",
@@ -516,7 +516,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Eggs?",
     seoTitle: "Can Dogs Eat Eggs? | Dog Food Safety South Africa",
     description:
-      "A practical guide to eggs for dogs, covering cooked eggs, raw egg risks, moderation, allergies, pancreatitis, and balanced diets.",
+      "Eggs for dogs, including cooked eggs, raw egg risks, moderation, allergies, pancreatitis, and balanced diets.",
     rating: "Safe in small amounts",
     shortAnswer:
       "Many dogs can eat a small amount of plain cooked egg. Avoid raw eggs, salty seasoning, butter, oil, and feeding eggs as a major part of the diet.",
@@ -558,7 +558,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Cheese?",
     seoTitle: "Can Dogs Eat Cheese? | Dog Food Safety South Africa",
     description:
-      "A practical guide to cheese for dogs, including lactose, fat, salt, portion size, pancreatitis risk, and safer treat choices.",
+      "Cheese for dogs, including lactose, fat, salt, portion size, pancreatitis risk, and safer treat choices.",
     rating: "Risky",
     shortAnswer:
       "Some dogs tolerate a tiny piece of plain cheese, but it is fatty, salty, calorie-dense, and can upset the stomach. Avoid it for dogs with pancreatitis, obesity, or dairy sensitivity.",
@@ -600,7 +600,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Bread?",
     seoTitle: "Can Dogs Eat Bread? | Dog Food Safety South Africa",
     description:
-      "A practical guide to bread and dogs, including plain bread, raw dough, raisins, xylitol, spreads, weight gain, and vet warning signs.",
+      "Bread and dogs, including plain bread, raw dough, raisins, xylitol, spreads, weight gain, and veterinary warning signs.",
     rating: "Risky",
     shortAnswer:
       "Plain baked bread is usually not toxic in a small amount, but it is not very useful for dogs. Raw dough, raisin bread, xylitol products, garlic bread, and rich spreads can be dangerous.",
@@ -684,7 +684,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Apples?",
     seoTitle: "Can Dogs Eat Apples? | Dog Food Safety South Africa",
     description:
-      "A practical guide to apples for dogs, including seeds, cores, choking risk, sugar, moderation, and safer serving ideas.",
+      "Apples for dogs, including seeds, cores, choking risk, sugar, moderation, and safer serving ideas.",
     rating: "Safe in small amounts",
     shortAnswer:
       "Yes, many dogs can eat small pieces of plain apple flesh. Remove the core and seeds, cut into bite-size pieces, and keep portions moderate.",
@@ -722,7 +722,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Bananas?",
     seoTitle: "Can Dogs Eat Bananas? | Dog Food Safety South Africa",
     description:
-      "A practical guide to bananas for dogs, including moderation, sugar, portion size, stomach upset, and when bananas may not suit a dog.",
+      "Bananas for dogs, including moderation, sugar, portion size, stomach upset, and when this fruit may not suit a dog.",
     rating: "Safe in small amounts",
     shortAnswer:
       "Yes, many dogs can eat a small piece of plain banana. It should be occasional and portion-controlled because banana is sugary and not a balanced meal.",
@@ -760,7 +760,7 @@ const items: FoodSafetyItem[] = [
     title: "Can Dogs Eat Carrots?",
     seoTitle: "Can Dogs Eat Carrots? | Dog Food Safety South Africa",
     description:
-      "A practical guide to carrots for dogs, including raw and cooked carrots, choking risk, portion size, puppies, and safer treat use.",
+      "Carrots for dogs, including raw and cooked preparation, choking risk, portion size, puppies, and safer treat use.",
     rating: "Safe in small amounts",
     shortAnswer:
       "Yes, many dogs can eat small pieces of plain carrot. Cut them safely, avoid seasoning, and use them as treats rather than a diet replacement.",
@@ -927,7 +927,7 @@ const neverEatGuide: GuideContent = {
   description:
     "South African dog food safety list covering chocolate, grapes, raisins, onions, garlic, xylitol, alcohol, cooked bones and risky leftovers.",
   intro:
-    "Some foods are not worth testing with a dog. This guide gives South African owners a quick, practical safety list for kitchens, lunch boxes, braais, holidays, and visitors.",
+    "Some foods are not worth testing with a dog. Keep this safety list handy for kitchens, lunch boxes, braais, holidays, and visitors.",
   updated: reviewed,
   isHealthGuide: true,
   safetyRating: {

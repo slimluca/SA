@@ -93,7 +93,7 @@ const costGuides: MoneyGuide[] = [
     description:
       "Understand dog surgery cost factors in South Africa, including anaesthetic, diagnostics, hospitalisation, medication, follow-ups, urgency, and insurance questions.",
     intro:
-      "Dog surgery costs can feel overwhelming because the final bill depends on far more than the operation name. This guide helps South African owners understand what affects a surgical estimate and what to ask before non-emergency treatment.",
+      "Dog surgery costs can feel overwhelming because the final bill depends on far more than the operation name. Ask what the estimate includes, which tests or hospital care may be added, and how changes will be discussed before non-emergency treatment.",
     quickFacts: [
       ...costSafety,
       "Emergency surgery, specialist referral, complications, large dogs, and overnight care can change the estimate significantly.",
@@ -160,7 +160,7 @@ const costGuides: MoneyGuide[] = [
     title: "Dog X-Ray Costs in South Africa",
     seoTitle: "Dog X-Ray Cost South Africa | Vet Imaging Cost Factors",
     description:
-      "A practical guide to dog x-ray cost factors in South Africa, including sedation, views, injury, surgery planning, emergency timing, and what to ask the vet.",
+      "Dog X-ray cost factors in South Africa, including sedation, the number of views, injury, surgery planning, emergency timing, and questions for the vet.",
     intro:
       "A dog x-ray estimate depends on why the x-ray is needed, how many images are required, whether sedation is needed, and whether the case is routine or urgent.",
     quickFacts: [
@@ -369,7 +369,7 @@ const costGuides: MoneyGuide[] = [
     description:
       "Understand cost factors for suspected tick bite fever in South African dogs, including consultation, blood tests, medication, hospital care, and follow-up checks.",
     intro:
-      "Tick bite fever, often discussed by South African owners as biliary, can become serious. This guide explains the cost factors to ask about without guessing treatment or publishing unsupported prices.",
+      "Tick bite fever, often called biliary in South Africa, can become serious. Ask the clinic which examination, tests, treatment and monitoring may be needed rather than relying on unsupported online prices.",
     quickFacts: [
       ...costSafety,
       "Pale gums, weakness, fever signs, dark urine, not eating, collapse, or fast worsening after tick exposure should prompt urgent veterinary advice.",
@@ -439,7 +439,7 @@ const costGuides: MoneyGuide[] = [
     description:
       "A careful South African guide to dog euthanasia cost factors, including vet consultation, after-hours care, cremation choices, home visits, transport, and questions to ask.",
     intro:
-      "Euthanasia is an emotional decision, and cost questions can feel difficult to ask. This guide explains practical cost factors without inventing prices, and helps South African owners prepare calm questions for a veterinarian.",
+      "Euthanasia is an emotional decision, and cost questions can feel difficult to ask. A veterinarian can explain the appointment, location options, aftercare and current fees so the family can prepare without added uncertainty.",
     quickFacts: [
       ...costSafety,
       "Costs can change if euthanasia happens during an emergency, after hours, at home, at a clinic, or with cremation or burial arrangements.",
@@ -510,7 +510,7 @@ const costGuides: MoneyGuide[] = [
     description:
       "A practical South African monthly dog cost guide covering food, vet care, parasite prevention, grooming, training, insurance, transport, and emergency savings without fake averages.",
     intro:
-      "Monthly dog costs are not only food. A realistic budget includes routine care, prevention, grooming, training, replacement items, transport, insurance or savings, and a buffer for emergencies.",
+      "A monthly dog budget covers more than food. Include routine care, prevention, grooming, training, replacement items, transport, insurance or savings, and an emergency buffer.",
     quickFacts: [
       ...costSafety,
       "Large dogs, puppies, seniors, chronic conditions, high-maintenance coats, and city transport can change the monthly budget.",
@@ -568,7 +568,7 @@ const costGuides: MoneyGuide[] = [
     ],
     related: [
       { title: "Dog Cost Calculator", description: "Estimate monthly cost categories.", href: "/tools/dog-cost-calculator" },
-      { title: "Dog Feeding Calculator", description: "Estimate daily feeding as a starting point.", href: "/tools/dog-feeding-calculator" },
+      { title: "Dog Feeding Calculator", description: "Estimate food portions for budgeting.", href: "/tools/dog-feeding-calculator" },
       { title: "Cost of Owning a Dog", description: "Broader setup and recurring cost guide.", href: "/costs/cost-of-owning-a-dog-south-africa" },
       { title: "Pet Insurance", description: "Understand cover, excesses, and exclusions.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
       ...costRelated,
@@ -656,7 +656,7 @@ const insuranceGuides: MoneyGuide[] = [
     description:
       "Understand how pre-existing condition rules may affect dog insurance in South Africa, what to ask insurers, and why vet records matter.",
     intro:
-      "Pre-existing condition wording can be one of the most important parts of a dog insurance policy. This guide explains what to ask without assuming how any specific insurer will decide a claim.",
+      "Pre-existing condition wording can be one of the most important parts of a dog insurance policy. Ask how earlier symptoms, consultations, diagnoses and treatment affect cover without assuming how a future claim will be decided.",
     quickFacts: [
       ...insuranceSafety,
       "Pre-existing condition rules can differ between policies and may depend on symptoms, diagnosis, vet records, and timing.",
@@ -727,7 +727,7 @@ const insuranceGuides: MoneyGuide[] = [
     description:
       "A neutral guide to the dog insurance claim process in South Africa, including invoices, vet notes, forms, excesses, limits, and what to ask.",
     intro:
-      "Dog insurance claims are easier when you know what documents to keep and what questions to ask. This guide explains the usual moving parts without promising claim outcomes.",
+      "Dog insurance claims are easier when records are organised. Keep the policy wording, clinical notes, invoices, proof of payment and required forms, and confirm the insurer's current process before submitting.",
     quickFacts: [
       ...insuranceSafety,
       "Claim outcomes depend on policy wording, documents, limits, excesses, waiting periods, exclusions, and insurer assessment.",
@@ -798,7 +798,7 @@ const insuranceGuides: MoneyGuide[] = [
     description:
       "Understand common dog insurance exclusion questions in South Africa, including pre-existing conditions, waiting periods, routine care, dental, breed limits, and excesses.",
     intro:
-      "Dog insurance can be useful, but every policy has limits and exclusions. This guide helps South African owners ask better questions about what may not be covered.",
+      "Dog insurance can be useful, but every policy has limits and exclusions. Read what is omitted, capped or subject to waiting periods before relying on the cover.",
     quickFacts: [
       ...insuranceSafety,
       "Do not assume routine care, dental care, behaviour support, hereditary conditions, or pre-existing conditions are covered unless the policy says so.",
@@ -869,7 +869,7 @@ const insuranceGuides: MoneyGuide[] = [
     description:
       "A plain-English South African guide to dog insurance waiting periods, accident timing, illness timing, exclusions, switching policies, and claim questions.",
     intro:
-      "Waiting periods are one reason owners should not wait until a dog is already sick to understand insurance. This guide explains the questions to ask without ranking insurers.",
+      "Waiting periods are one reason to read insurance terms before a dog is ill. Check when accident, illness, routine-care and condition-specific benefits begin without relying on insurer rankings.",
     quickFacts: [
       ...insuranceSafety,
       "Accident, illness, routine care, dental, cruciate, hereditary, or other waiting periods can differ by policy.",

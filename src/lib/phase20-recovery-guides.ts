@@ -61,7 +61,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A practical South African dog grooming cost guide covering coat type, dog size, matting, mobile vs parlour grooming, ticks, fleas, seasonal grooming, and city price variation.",
     intro:
-      "Dog grooming costs in South Africa vary widely by dog, coat, city, provider, travel, and what is included. This guide helps you compare quotes without relying on fake exact prices or unverified local listings.",
+      "Dog grooming costs in South Africa vary by dog, coat, city, provider, travel and what is included. Compare current written quotes and confirm the service instead of relying on unverified price lists.",
     updated: reviewed,
     quickFacts: [
       "Dog Haven does not publish fake exact grooming prices or rank groomers.",
@@ -156,7 +156,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A South African dog training cost guide covering puppy classes, private sessions, group lessons, behaviour support, humane methods, city variation, and quote questions.",
     intro:
-      "Dog training costs in South Africa depend on the format, trainer experience, dog behaviour, travel, class size, and support included. This page helps you compare options without fake prices or trainer rankings.",
+      "Dog training costs in South Africa depend on the format, trainer experience, dog behaviour, travel, class size and support included. Compare current quotes alongside methods, owner involvement and follow-up support.",
     updated: reviewed,
     quickFacts: [
       "Dog Haven does not rank trainers or publish fake exact training prices.",
@@ -346,7 +346,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A practical South African guide to vet consultation cost factors, routine consults, vaccinations, follow-ups, diagnostics, city variation, and questions to ask clinics.",
     intro:
-      "Vet consultation costs in South Africa vary by clinic, city, appointment type, time, diagnostics, and what is included. This guide helps you ask clearer questions without inventing exact clinic prices.",
+      "Vet consultation costs in South Africa vary by clinic, city, appointment type, timing, diagnostics and what is included. Ask the clinic for current fees and what may be charged separately.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [
@@ -668,7 +668,7 @@ const phase20Guides: GuideContent[] = [
     title: "Dog Obedience Classes in South Africa",
     seoTitle: "Dog Obedience Classes South Africa | What to Expect",
     description:
-      "A practical guide to dog obedience classes in South Africa, covering leash manners, recall, group vs private training, positive methods, realistic expectations, and questions to ask.",
+      "Choose dog obedience classes in South Africa by comparing lead manners, recall work, group and private formats, training methods, expectations, and owner involvement.",
     intro:
       "Dog obedience classes can help with everyday manners, recall, leash walking, settling, and safer public behaviour. The goal should be a calmer partnership, not robotic obedience or punishment-heavy control.",
     updated: reviewed,
@@ -750,7 +750,7 @@ const phase20Guides: GuideContent[] = [
     description:
       "A neutral South African dog food price guide covering monthly food budget factors, dog size, life stage, food type, budget vs premium tradeoffs, and feeding calculator links.",
     intro:
-      "Dog food prices in South Africa change by brand, bag size, retailer, ingredients, life stage, dog size, calories, and availability. Dog Haven does not publish fake current prices; this guide helps you understand the budget factors that matter.",
+      "Dog food prices in South Africa change by brand, bag size, retailer, ingredients, life stage, dog size, calories, and availability. Compare daily feeding cost using current prices rather than relying on a static national figure.",
     updated: reviewed,
     isHealthGuide: true,
     quickFacts: [

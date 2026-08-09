@@ -1005,7 +1005,7 @@ const costGuides: MoneyGuide[] = [
     title: "How to Budget for Emergency Vet Bills in South Africa",
     seoTitle: "Emergency Vet Bills South Africa | Dog Budget Guide",
     description:
-      "A practical guide to budgeting for emergency vet bills in South Africa, including savings buffers, insurance, after-hours care, quotes, and welfare-safe decisions.",
+      "Budget for emergency vet bills in South Africa using savings buffers, insurance, after-hours planning, quotes, and welfare-safe decisions.",
     summary:
       "Emergency vet bills are stressful because they happen quickly. Build a buffer, understand your insurance if you have it, save emergency contacts, and know how to ask vets clear cost questions without delaying urgent care.",
     context:

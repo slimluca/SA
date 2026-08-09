@@ -149,7 +149,7 @@ export function PremiumHubPage({ hub, config, promotedGuides }: PremiumHubPagePr
           <div className="max-w-3xl">
             <p className="section-kicker">Explore by topic</p>
             <h2 className="mt-2 text-3xl font-black text-cocoa">Find the right guide faster</h2>
-            <p className="mt-3 leading-7 text-bark">Move from the broad question to the most relevant practical guide. Every link remains available in the page’s crawlable HTML.</p>
+            <p className="mt-3 leading-7 text-bark">Choose the topic closest to your current question. Every guide remains linked directly on this page.</p>
           </div>
           <div className="mt-8 space-y-10">
             {groupedLinks.filter((group) => group.links.length > 0).map((group) => (

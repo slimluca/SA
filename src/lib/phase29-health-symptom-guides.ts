@@ -101,7 +101,7 @@ const topics: SymptomTopic[] = [
     description:
       "A South African guide to dog diarrhoea, including blood, puppies, dehydration, parvo risk, parasites, diet changes, and when to call a vet urgently.",
     intro:
-      "Dog diarrhoea can be mild, but it can also become serious quickly, especially in puppies, small dogs, senior dogs, and dogs that are vomiting too. This guide helps South African owners decide what to observe, what to tell the vet, and when not to wait.",
+      "Dog diarrhoea can be mild, but it may become serious quickly in puppies, small dogs, senior dogs, or dogs that are also vomiting. Note what you see, tell the vet how the dog is behaving, and do not wait when warning signs appear.",
     quickFacts: [
       ...educationalFacts,
       "Blood, repeated watery diarrhoea, vomiting, weakness, pale gums, severe pain, or a young puppy with diarrhoea should be treated as urgent.",
@@ -342,7 +342,7 @@ const topics: SymptomTopic[] = [
     description:
       "Understand why a dog may drink more water, what to observe, South African heat considerations, and when increased thirst needs a vet.",
     intro:
-      "A dog may drink more after heat, exercise, salty food, or a routine change, but ongoing increased thirst can also be a sign that a vet should investigate. This guide helps you record useful details without guessing the diagnosis.",
+      "A dog may drink more after heat, exercise, salty food, or a routine change. Ongoing increased thirst needs investigation, so record amounts, urination and other changes for the vet instead of guessing the cause.",
     quickFacts: [
       ...educationalFacts,
       "Do not restrict water from a thirsty dog unless a vet gives a specific instruction.",
@@ -667,7 +667,7 @@ const expansionTopics: ExpansionSymptomTopic[] = [
     description:
       "A South African guide to blood in dog stool, including red blood, black stool, diarrhoea, parvo risk, parasites, poisoning concerns, and when to call a vet urgently.",
     intro:
-      "Blood in a dog's stool should not be brushed off, especially when there is diarrhoea, vomiting, weakness, pain, or puppy parvo risk. This guide helps South African owners describe what they are seeing and know when to call a vet urgently.",
+      "Blood in a dog's stool should not be brushed off, especially with diarrhoea, vomiting, weakness, pain, or puppy parvo risk. Note the colour and amount, describe the dog's other symptoms, and call a vet urgently when warning signs are present.",
     symptomFocus: "blood in stool",
     causes: [
       "Gut irritation, diet change, parasites, infection, or stress.",
