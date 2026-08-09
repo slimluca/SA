@@ -18,7 +18,7 @@ type FeatureCardProps = {
 
 export function FeatureCard({ title, description, icon: Icon, accent, href }: FeatureCardProps) {
   const content = (
-    <article className="group flex h-full min-h-[172px] flex-col rounded-xl border border-oat/80 bg-white/88 p-5 shadow-panel transition hover:border-gold/45 hover:bg-white hover:shadow-soft">
+    <article className="group flex flex-col rounded-xl border border-oat/80 bg-white/88 p-5 shadow-panel transition hover:border-gold/45 hover:bg-white hover:shadow-soft">
       <div className={`mb-4 flex h-11 w-11 flex-none items-center justify-center rounded-xl ${accentClasses[accent]}`}>
         <Icon className="h-5 w-5" aria-hidden="true" />
       </div>
@@ -32,7 +32,7 @@ export function FeatureCard({ title, description, icon: Icon, accent, href }: Fe
   }
 
   return (
-    <Link href={href} className="block h-full">
+    <Link href={href} className="block">
       {content}
     </Link>
   );

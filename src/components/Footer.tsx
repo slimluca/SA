@@ -7,16 +7,15 @@ export function Footer() {
     <footer className="border-t border-oat bg-ivory text-navy">
       <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(260px,0.9fr)_minmax(0,2.4fr)] lg:gap-12 lg:px-8">
         <div className="max-w-sm">
-          <div className="mb-3 flex items-center">
-            <span className="flex h-28 w-28 shrink-0 items-center justify-center overflow-hidden rounded-full bg-ivory shadow-logo ring-1 ring-gold/35 sm:h-32 sm:w-32">
-              <Image
-                src="/brand/dog-haven-south-africa-icon.png"
-                alt="Dog Haven South Africa logo"
-                width={256}
-                height={256}
-                className="h-full w-full object-contain"
-              />
-            </span>
+          <div className="mb-4 flex items-center">
+            <Image
+              src="/brand/dog-haven-south-africa-logo.webp"
+              alt="Dog Haven South Africa"
+              width={1672}
+              height={941}
+              sizes="(min-width: 1024px) 290px, 250px"
+              className="h-auto w-full max-w-[250px] rounded-xl object-contain shadow-sm sm:max-w-[290px]"
+            />
           </div>
           <p className="text-sm leading-6 text-bark">
             Dog Haven is South Africa&apos;s practical dog care guide for owners who want calm,

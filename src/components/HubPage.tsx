@@ -2,8 +2,10 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { FAQBlock } from "@/components/FAQBlock";
 import { PopularGuides } from "@/components/PopularGuides";
+import { PremiumHubPage } from "@/components/PremiumHubPage";
 import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
 import type { CardLink, HubContent } from "@/lib/content";
+import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { hubPromos } from "@/lib/promo-links";
 import { JsonLd, collectionPageSchema, faqSchema } from "@/lib/schema";
 
@@ -15,6 +17,12 @@ type HubCardGroup = {
 
 export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: HubCardGroup[] }) {
   const promotedGuides = hubPromos[hub.slug] ?? [];
+  const premiumConfig = getPremiumHubConfig(hub.slug);
+
+  if (premiumConfig) {
+    return <PremiumHubPage hub={hub} config={premiumConfig} promotedGuides={promotedGuides} />;
+  }
+
   const showProviderNotice =
     hub.path === "/local" ||
     hub.path === "/local-costs" ||
@@ -32,7 +40,7 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
         <p className="section-copy">{hub.intro}</p>
 
         {hub.sections && hub.sections.length > 0 ? (
-          <div className="mt-7 grid gap-5 lg:grid-cols-2">
+          <div className="mt-7 space-y-7">
             {hub.sections.map((section) => (
               <section key={section.title} className="rounded-xl border border-oat bg-white p-5 shadow-panel">
                 <h2 className="text-2xl font-black leading-tight text-cocoa">{section.title}</h2>
@@ -75,7 +83,7 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
               <section key={group.title}>
                 <h2 className="text-2xl font-black text-cocoa">{group.title}</h2>
                 <p className="mt-2 max-w-3xl leading-7 text-bark">{group.description}</p>
-                <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-4 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {group.cards.map((card) => (
                     <ContentLinkCard key={`${hub.slug}-${card.href}`} {...card} />
                   ))}
@@ -86,7 +94,7 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
         ) : (
           <div className="mt-8">
             <h2 className="text-2xl font-black text-cocoa">Start here</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <div className="mt-4 grid items-start gap-4 md:grid-cols-3">
               {hub.cards.map((card) => (
                 <ContentLinkCard key={`${hub.slug}-${card.title}`} {...card} />
               ))}
@@ -94,17 +102,17 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
           </div>
         )}
 
-        <div className="mt-9 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
+        <div className="mt-9 space-y-9">
           <section>
             <h2 className="text-2xl font-black text-cocoa">Related Dog Haven hubs</h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <div className="mt-4 grid items-start gap-4 sm:grid-cols-2">
               {hub.related.map((card) => (
                 <ContentLinkCard key={`${hub.slug}-related-${card.title}`} {...card} />
               ))}
             </div>
           </section>
 
-          <section>
+          <section className="max-w-4xl">
             <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
             <div className="mt-4">
               <FAQBlock items={hub.faqs} />

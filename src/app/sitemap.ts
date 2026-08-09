@@ -29,6 +29,7 @@ import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-gui
 import { shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
+import { flagshipGuides } from "@/lib/flagship-guides";
 
 const staticRoutes = [
   "/",
@@ -83,6 +84,7 @@ const guides: GuideContent[] = [
   ...phase28LocalGuidePages,
   ...phase29HealthSymptomGuidePages,
   ...phase30CostInsuranceGuidePages,
+  ...flagshipGuides,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

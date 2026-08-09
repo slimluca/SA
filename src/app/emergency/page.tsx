@@ -9,9 +9,11 @@ import { phase18EmergencyCostCards } from "@/lib/phase18-local-cost-guides";
 import { phase20EmergencyCards } from "@/lib/phase20-recovery-guides";
 import { phase21EmergencyCards } from "@/lib/phase21-prevention-guides";
 import { phase23EmergencyCards } from "@/lib/phase23-chronic-health-guides";
+import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("emergency");
+const hubVisual = getPremiumHubConfig("emergency")!;
 const hub = {
   ...baseHub,
   cards: [
@@ -31,6 +33,10 @@ export const metadata: Metadata = createMetadata({
   title: hub.seoTitle,
   description: hub.description,
   path: hub.path,
+  image: hubVisual.image.src,
+  imageAlt: hubVisual.image.alt,
+  imageWidth: hubVisual.image.width,
+  imageHeight: hubVisual.image.height,
 });
 
 export default function EmergencyPage() {

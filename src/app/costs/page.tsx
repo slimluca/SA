@@ -15,9 +15,11 @@ import { phase23CostCards } from "@/lib/phase23-chronic-health-guides";
 import { phase25CostCards } from "@/lib/phase25-breed-lifestyle-guides";
 import { phase26CostCards } from "@/lib/phase26-dog-name-guides";
 import { phase30CostCards } from "@/lib/phase30-cost-insurance-guides";
+import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("costs");
+const hubVisual = getPremiumHubConfig("costs")!;
 const hub = {
   ...baseHub,
   cards: [
@@ -43,6 +45,10 @@ export const metadata: Metadata = createMetadata({
   title: hub.seoTitle,
   description: hub.description,
   path: hub.path,
+  image: hubVisual.image.src,
+  imageAlt: hubVisual.image.alt,
+  imageWidth: hubVisual.image.width,
+  imageHeight: hubVisual.image.height,
 });
 
 export default function CostsPage() {

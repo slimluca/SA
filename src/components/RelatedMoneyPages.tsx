@@ -14,7 +14,7 @@ export function RelatedMoneyPages({ pages }: { pages: CardLink[] }) {
         Compare costs, cover, exclusions, feeding budgets, and emergency planning with neutral
         South Africa-specific guidance. No affiliate links, fake prices, or insurer rankings.
       </p>
-      <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-5 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {pages.map((page) => (
           <ContentLinkCard key={page.href} {...page} />
         ))}

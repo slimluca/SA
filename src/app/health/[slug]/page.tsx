@@ -9,6 +9,7 @@ import { getPhase22Guide, getPhase22GuidesByHub } from "@/lib/phase22-sterilisat
 import { getPhase23Guide, getPhase23GuidesByHub } from "@/lib/phase23-chronic-health-guides";
 import { getPhase29HealthSymptomGuide, getPhase29HealthSymptomGuidesByHub } from "@/lib/phase29-health-symptom-guides";
 import { createMetadata } from "@/lib/seo";
+import { getFlagshipGuide } from "@/lib/flagship-guides";
 
 type PageProps = {
   params: Promise<{
@@ -34,6 +35,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const guide =
+    getFlagshipGuide(slug) ??
     getPhase23Guide(slug) ??
     getPhase29HealthSymptomGuide(slug) ??
     getPhase22Guide(slug) ??
@@ -50,12 +52,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
+    image: guide.primaryImage?.src,
+    imageAlt: guide.primaryImage?.alt,
+    imageWidth: guide.primaryImage?.width,
+    imageHeight: guide.primaryImage?.height,
   });
 }
 
 export default async function HealthGuidePage({ params }: PageProps) {
   const { slug } = await params;
   const guide =
+    getFlagshipGuide(slug) ??
     getPhase23Guide(slug) ??
     getPhase29HealthSymptomGuide(slug) ??
     getPhase22Guide(slug) ??

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { getPhase4Guide, getPhase4GuidesByHub } from "@/lib/phase4-guides";
 import { createMetadata } from "@/lib/seo";
+import { getFlagshipGuide } from "@/lib/flagship-guides";
 
 type PageProps = {
   params: Promise<{
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase4Guide(slug);
+  const guide = getFlagshipGuide(slug) ?? getPhase4Guide(slug);
 
   if (!guide || guide.hubPath !== "/adoption") {
     return {};
@@ -28,12 +29,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
+    image: guide.primaryImage?.src,
+    imageAlt: guide.primaryImage?.alt,
+    imageWidth: guide.primaryImage?.width,
+    imageHeight: guide.primaryImage?.height,
   });
 }
 
 export default async function AdoptionGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase4Guide(slug);
+  const guide = getFlagshipGuide(slug) ?? getPhase4Guide(slug);
 
   if (!guide || guide.hubPath !== "/adoption") {
     notFound();

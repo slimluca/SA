@@ -18,7 +18,7 @@ export function PopularGuides({ kicker = "Most useful guides", title, intro, gui
       <p className="section-kicker">{kicker}</p>
       <h2 className="mt-2 text-2xl font-black leading-tight text-navy sm:text-3xl">{title}</h2>
       {intro ? <p className="mt-3 max-w-3xl leading-7 text-bark">{intro}</p> : null}
-      <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-4 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {guides.map((guide) => (
           <ContentLinkCard key={`${title}-${guide.href}`} {...guide} />
         ))}

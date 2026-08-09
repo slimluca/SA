@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import { GuideArticle } from "@/components/GuideArticle";
-import { getGuide } from "@/lib/content";
+import { getFlagshipGuide } from "@/lib/flagship-guides";
 import { createMetadata } from "@/lib/seo";
 
-const guide = getGuide("vaccination-schedule-south-africa");
+const guide = getFlagshipGuide("vaccination-schedule-south-africa")!;
 
 export const metadata: Metadata = createMetadata({
   title: guide.seoTitle,
   description: guide.description,
   path: guide.path,
+  image: guide.primaryImage?.src,
+  imageAlt: guide.primaryImage?.alt,
+  imageWidth: guide.primaryImage?.width,
+  imageHeight: guide.primaryImage?.height,
 });
 
 export default function VaccinationScheduleSouthAfricaPage() {

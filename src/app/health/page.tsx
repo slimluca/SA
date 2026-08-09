@@ -11,9 +11,11 @@ import { phase21HealthCards } from "@/lib/phase21-prevention-guides";
 import { phase22HealthCards } from "@/lib/phase22-sterilisation-guides";
 import { phase23HealthCards } from "@/lib/phase23-chronic-health-guides";
 import { phase29HealthSymptomCards } from "@/lib/phase29-health-symptom-guides";
+import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("health");
+const hubVisual = getPremiumHubConfig("health")!;
 const priorityHealthCards = [
   { title: "Biliary Tick Bite Fever", description: "South African canine babesiosis warning signs and urgent veterinary next steps.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
   { title: "Ticks and Fleas", description: "Exposure checks, prevention questions, product safety, and warning signs.", href: "/health/ticks-and-fleas-dogs-south-africa" },
@@ -133,6 +135,10 @@ export const metadata: Metadata = createMetadata({
   title: hub.seoTitle,
   description: hub.description,
   path: hub.path,
+  image: hubVisual.image.src,
+  imageAlt: hubVisual.image.alt,
+  imageWidth: hubVisual.image.width,
+  imageHeight: hubVisual.image.height,
 });
 
 export default function HealthPage() {

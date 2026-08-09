@@ -6,6 +6,9 @@ type SeoInput = {
   description: string;
   path?: string;
   image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function createMetadata({
@@ -13,6 +16,9 @@ export function createMetadata({
   description,
   path = "/",
   image = "/opengraph-image",
+  imageAlt = `${siteConfig.name} practical dog care guide`,
+  imageWidth = 1200,
+  imageHeight = 630,
 }: SeoInput): Metadata {
   const canonical = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
@@ -34,9 +40,9 @@ export function createMetadata({
       images: [
         {
           url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: `${siteConfig.name} practical dog care guide`,
+          width: imageWidth,
+          height: imageHeight,
+          alt: imageAlt,
         },
       ],
     },
@@ -44,7 +50,7 @@ export function createMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [imageUrl],
+      images: [{ url: imageUrl, alt: imageAlt }],
     },
   };
 }

@@ -1126,11 +1126,13 @@ function symptomGuideToPage(guide: SymptomGuide): GuideContent {
   };
 }
 
-export const phase10HealthCards: CardLink[] = symptomGuides.map((guide) => ({
-  title: guide.title.replace(" in South Africa", "").replace(": When to Call a Vet", "").replace(": When It Needs a Vet", ""),
-  description: guide.description,
-  href: `/health/${guide.slug}`,
-}));
+export const phase10HealthCards: CardLink[] = symptomGuides
+  .filter((guide) => guide.slug !== "retired-dog-diarrhoea-article")
+  .map((guide) => ({
+    title: guide.title.replace(" in South Africa", "").replace(": When to Call a Vet", "").replace(": When It Needs a Vet", ""),
+    description: guide.description,
+    href: `/health/${guide.slug}`,
+  }));
 
 export const phase10EmergencyCards: CardLink[] = [
   {

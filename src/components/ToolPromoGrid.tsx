@@ -17,7 +17,7 @@ export function ToolPromoGrid({ tools }: { tools: CardLink[] }) {
           These tools do not collect personal information or replace professional advice. They help
           South African owners estimate, organise, and check common dog-care questions faster.
         </p>
-        <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool) => (
             <ContentLinkCard key={tool.href} {...tool} />
           ))}

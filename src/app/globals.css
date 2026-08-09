@@ -130,8 +130,7 @@ body > header {
 }
 
 .site-header-inner,
-.section-shell,
-body > footer > div {
+.section-shell {
   width: 100%;
   max-width: 72rem;
   margin-right: auto;
@@ -201,21 +200,6 @@ body > footer a {
   overflow-wrap: anywhere;
 }
 
-main > section:first-child {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, #fffaf0 0%, #fbf5e9 74%, rgba(18, 70, 166, 0.035) 100%);
-}
-
-main > section:first-child > div {
-  width: 100%;
-  max-width: 72rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 2rem 1rem;
-}
-
 h1,
 h2,
 h3 {
@@ -249,23 +233,6 @@ main aside,
 main form,
 main table {
   border-color: #e5dcc8;
-}
-
-main article,
-main details,
-main aside > section,
-main section > div > article,
-main section > div > a > article {
-  border: 1px solid rgba(229, 220, 200, 0.9);
-  border-radius: 0.75rem;
-  background: rgba(255, 252, 246, 0.9);
-  box-shadow: 0 10px 30px rgba(7, 27, 56, 0.055);
-}
-
-main article,
-main details,
-main aside > section {
-  padding: 1.25rem;
 }
 
 details summary {
@@ -302,13 +269,6 @@ body > footer {
   color: #071b38;
 }
 
-body > footer > div {
-  display: grid;
-  gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 body > footer p,
 body > footer li {
   color: #253044;
@@ -320,9 +280,7 @@ body > footer h2 {
 
 @media (min-width: 640px) {
   .site-header-inner,
-  .section-shell,
-  body > footer > div,
-  main > section:first-child > div {
+  .section-shell {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -375,16 +333,11 @@ button[class*="bg-sage"] {
     display: flex;
   }
 
-  body > footer > div {
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  }
 }
 
 @media (min-width: 1024px) {
   .site-header-inner,
-  .section-shell,
-  body > footer > div,
-  main > section:first-child > div {
+  .section-shell {
     padding-right: 2rem;
     padding-left: 2rem;
   }

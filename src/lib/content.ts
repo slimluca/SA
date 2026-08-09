@@ -41,6 +41,8 @@ export type ArticleSection = {
   body: string[];
   bullets?: string[];
   checklist?: string[];
+  callout?: "important" | "caution";
+  links?: CardLink[];
   table?: {
     headers: string[];
     rows: string[][];
@@ -57,6 +59,12 @@ export type GuideContent = {
   description: string;
   intro: string;
   updated: string;
+  primaryImage?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
   isHealthGuide?: boolean;
   safetyRating?: {
     label: "Safe in small amounts" | "Risky" | "Dangerous" | "Emergency";

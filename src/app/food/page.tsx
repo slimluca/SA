@@ -7,9 +7,11 @@ import { phase11FoodCards } from "@/lib/phase11-guides";
 import { phase15FoodCards } from "@/lib/phase15-guides";
 import { phase20FoodCards } from "@/lib/phase20-recovery-guides";
 import { phase23FoodCards } from "@/lib/phase23-chronic-health-guides";
+import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
 
 const baseHub = getHub("food");
+const hubVisual = getPremiumHubConfig("food")!;
 const hub = {
   ...baseHub,
   cards: [
@@ -27,6 +29,10 @@ export const metadata: Metadata = createMetadata({
   title: hub.seoTitle,
   description: hub.description,
   path: hub.path,
+  image: hubVisual.image.src,
+  imageAlt: hubVisual.image.alt,
+  imageWidth: hubVisual.image.width,
+  imageHeight: hubVisual.image.height,
 });
 
 export default function FoodPage() {

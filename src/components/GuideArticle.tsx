@@ -12,8 +12,11 @@ import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-di
 import { getArticlePromos } from "@/lib/promo-links";
 import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
+import Image from "next/image";
+import { flagshipSlugs } from "@/lib/flagship-guides";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
+  const isFlagship = (flagshipSlugs as readonly string[]).includes(guide.slug);
   const articlePromos = getArticlePromos(guide.hubPath, guide.path);
   const localProviders = getProvidersForPath(guide.path);
   const showProviderSection = isLocalServicePath(guide.path);
@@ -33,6 +36,19 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
     guide.hubPath === "/insurance" ||
     guide.hubPath === "/costs" ||
     guide.hubPath === "/food";
+  const primaryImage = guide.primaryImage ? (
+    <figure className="mt-6 max-w-4xl overflow-hidden rounded-xl border border-oat bg-white">
+      <Image
+        src={guide.primaryImage.src}
+        alt={guide.primaryImage.alt}
+        width={guide.primaryImage.width}
+        height={guide.primaryImage.height}
+        sizes="(min-width: 1024px) 832px, (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
+        className="h-auto w-full object-cover"
+        priority
+      />
+    </figure>
+  ) : null;
 
   return (
     <>
@@ -42,6 +58,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           description: guide.description,
           path: guide.path,
           dateModified: guide.updated,
+          image: guide.primaryImage?.src,
         })}
       />
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
@@ -58,7 +75,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         <p className="mt-4 max-w-3xl text-sm leading-6 text-bark">
           Prepared by the{" "}
           <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/about">
-            Dog Haven editorial team
+            Dog Haven Editorial Team
           </Link>{" "}
           using South African, veterinary, and official sources. Learn how we{" "}
           <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/editorial-policy">
@@ -66,6 +83,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           </Link>
           .
         </p>
+
+        {!guide.isHealthGuide ? primaryImage : null}
 
         {needsEducationalNote ? (
           <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
@@ -84,6 +103,10 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             <EmergencyNotice />
           </div>
         ) : null}
+
+        {guide.isHealthGuide ? primaryImage : null}
+
+        {isFlagship ? <TableOfContents items={tableOfContents} /> : null}
 
         {guide.safetyRating ? (
           <section
@@ -112,15 +135,24 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
 
         {guide.slug === "dog-cost-calculator-south-africa" ? <DogCostEstimator /> : null}
 
-        <TableOfContents items={tableOfContents} />
+        {!isFlagship ? <TableOfContents items={tableOfContents} /> : null}
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <div className="space-y-6">
+        <div className="mt-8 max-w-4xl space-y-6">
             {guide.sections.map((section) => (
               <section
                 key={section.heading}
                 id={toHeadingId(section.heading)}
-                className="scroll-mt-28 rounded-xl border border-oat bg-white p-5 shadow-panel"
+                className={
+                  isFlagship
+                    ? `scroll-mt-28 border-t-2 px-0 py-7 first:border-t-0 first:pt-1 ${
+                        section.callout === "important"
+                          ? "border-l-4 border-l-sage border-t-oat bg-sage/5 pl-5 pr-4 sm:pr-5"
+                          : section.callout === "caution"
+                            ? "border-l-4 border-l-honey border-t-oat bg-honey/10 pl-5 pr-4 sm:pr-5"
+                            : "border-oat"
+                      }`
+                    : "scroll-mt-28 rounded-xl border border-oat bg-white p-5 shadow-panel"
+                }
               >
                 <h2 className="text-2xl font-black leading-tight text-cocoa">{section.heading}</h2>
                 <div className="mt-4 space-y-4">
@@ -143,10 +175,11 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
                 ) : null}
 
                 {section.checklist ? (
-                  <ul className="mt-5 grid gap-3">
+                  <ul className={isFlagship ? "mt-5 grid gap-3 rounded-xl bg-cream p-4" : "mt-5 grid gap-3"}>
                     {section.checklist.map((item) => (
-                      <li key={item} className="rounded-xl bg-cream px-4 py-3 text-sm font-semibold leading-6 text-cocoa">
-                        {item}
+                      <li key={item} className={isFlagship ? "flex gap-3 text-sm font-semibold leading-6 text-cocoa" : "rounded-xl bg-cream px-4 py-3 text-sm font-semibold leading-6 text-cocoa"}>
+                        {isFlagship ? <span className="mt-1.5 h-4 w-4 flex-none rounded border-2 border-sage bg-white" aria-hidden="true" /> : null}
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -180,6 +213,22 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
                     </div>
                   </div>
                 ) : null}
+
+                {section.links?.length ? (
+                  <div className="mt-6 border-l-2 border-sage pl-4">
+                    <h3 className="text-base font-black text-cocoa">Related reading</h3>
+                    <ul className="mt-2 space-y-2">
+                      {section.links.map((link) => (
+                        <li key={link.href} className="text-sm leading-6 text-bark">
+                          <Link className="font-bold text-moss underline-offset-4 hover:underline" href={link.href}>
+                            {link.title}
+                          </Link>{" "}
+                          <span>{link.description}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </section>
             ))}
 
@@ -189,9 +238,9 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
                 <FAQBlock items={guide.faqs} />
               </div>
             </section>
-          </div>
+        </div>
 
-          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <aside aria-label="Further guidance and sources" className="mt-10 grid items-start gap-6 md:grid-cols-2 xl:grid-cols-3">
             <HelpfulNextSteps links={articlePromos} />
             <section className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
               <h2 className="text-xl font-black text-cocoa">Related guides</h2>
@@ -202,8 +251,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
               </div>
             </section>
             <SourceList sources={guide.sources} />
-          </aside>
-        </div>
+        </aside>
       </article>
     </>
   );

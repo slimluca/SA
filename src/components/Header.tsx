@@ -13,12 +13,12 @@ export function Header() {
     <header className="sticky top-0 z-[9998] border-b border-oat/80 bg-cream/96 backdrop-blur">
       <div className="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
         <Link href="/" className="flex min-w-0 items-center text-cocoa" aria-label="Dog Haven home">
-          <span className="flex h-14 w-[184px] shrink-0 items-center overflow-hidden sm:h-16 sm:w-[230px] md:h-14 md:w-[210px] lg:h-16 lg:w-[270px] xl:w-[300px]">
+          <span className="flex h-[68px] w-[158px] shrink-0 items-center overflow-hidden sm:h-[74px] sm:w-[172px] md:h-[68px] md:w-[158px] lg:h-[76px] lg:w-[178px] xl:w-[198px]">
             <Image
-              src="/brand/dog-haven-south-africa-logo.png"
-              alt="Dog Haven South Africa logo"
-              width={520}
-              height={173}
+              src="/brand/dog-haven-south-africa-header-logo.webp"
+              alt="Dog Haven South Africa"
+              width={957}
+              height={420}
               className="h-full w-full object-contain"
               priority
             />
@@ -42,7 +42,7 @@ export function Header() {
           </Link>
           <button
             type="button"
-            className="fixed right-4 top-3 z-[10000] inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-navy shadow-sm transition hover:border-sage hover:text-moss sm:px-4 md:static md:hidden"
+            className="fixed right-4 top-7 z-[10000] inline-flex items-center gap-2 rounded-full border border-oat bg-white px-3 py-2 text-sm font-black text-navy shadow-sm transition hover:border-sage hover:text-moss sm:top-8 sm:px-4 md:static md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -59,7 +59,7 @@ export function Header() {
         role="navigation"
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
-        className="fixed inset-x-0 top-[76px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur sm:top-[84px] md:hidden"
+        className="fixed inset-x-0 top-[92px] z-[9999] border-b border-oat bg-cream/98 px-4 pb-4 pt-3 shadow-soft backdrop-blur sm:top-[98px] md:hidden"
         style={{ display: menuOpen ? "block" : "none" }}
       >
         <div className="mx-auto max-w-6xl">

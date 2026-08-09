@@ -15,6 +15,7 @@ type ArticleInput = {
   description: string;
   path: string;
   dateModified: string;
+  image?: string;
 };
 
 export function websiteSchema() {
@@ -91,7 +92,7 @@ export function collectionPageSchema({
   };
 }
 
-export function articleSchema({ title, description, path, dateModified }: ArticleInput) {
+export function articleSchema({ title, description, path, dateModified, image }: ArticleInput) {
   const canonicalUrl = absoluteUrl(path);
 
   return {
@@ -101,6 +102,7 @@ export function articleSchema({ title, description, path, dateModified }: Articl
     description,
     url: canonicalUrl,
     dateModified,
+    image: image ? absoluteUrl(image) : undefined,
     inLanguage: "en-ZA",
     mainEntityOfPage: {
       "@type": "WebPage",
