@@ -4,6 +4,7 @@ import { GuideArticle } from "@/components/GuideArticle";
 import { getFlagshipGuide } from "@/lib/flagship-guides";
 import { getPhase3Guide, getPhase3GuidesByHub } from "@/lib/phase3-guides";
 import { createMetadata } from "@/lib/seo";
+import { getLinkableAssetGuide, linkableAssetGuides } from "@/lib/linkable-assets";
 
 type PageProps = {
   params: Promise<{
@@ -12,14 +13,14 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getPhase3GuidesByHub("/emergency").map((guide) => ({
+  return [...getPhase3GuidesByHub("/emergency"), ...linkableAssetGuides].map((guide) => ({
     slug: guide.slug,
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase3Guide(slug);
+  const guide = getLinkableAssetGuide(slug) ?? getFlagshipGuide(slug) ?? getPhase3Guide(slug);
 
   if (!guide || guide.hubPath !== "/emergency") {
     return {};
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function EmergencyGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase3Guide(slug);
+  const guide = getLinkableAssetGuide(slug) ?? getFlagshipGuide(slug) ?? getPhase3Guide(slug);
 
   if (!guide || guide.hubPath !== "/emergency") {
     notFound();

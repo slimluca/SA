@@ -140,6 +140,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Can I give activated charcoal at home?", answer: "Do not give charcoal unless a veterinarian specifically directs and supervises its use. It is not appropriate for every toxin and can be dangerous when aspiration is possible." },
     ],
     related: [
+      { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
       { title: "Toxic Foods for Dogs", description: "Food hazards and urgent exposure preparation.", href: "/health/toxic-foods-for-dogs-south-africa" },
       { title: "When to Take Your Dog to the Vet", description: "Recognise signs that should not wait.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
       { title: "Emergency Vet Cost Planning", description: "Prepare financially for urgent veterinary care.", href: "/costs/how-to-budget-for-emergency-vet-bills-south-africa" },
@@ -256,6 +257,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Does improvement after cooling mean the dog can stay home?", answer: "Not when heatstroke is suspected. Internal complications may not be obvious, so follow the veterinary team's assessment and transport instructions." },
     ],
     related: [
+      { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
       { title: "Dogs for Active Owners", description: "Responsible exercise and outdoor-companion planning.", href: "/breeds/best-dogs-for-active-owners-south-africa" },
       { title: "Ticks and Fleas", description: "Outdoor parasite checks and prevention planning.", href: "/health/ticks-and-fleas-dogs-south-africa" },
       { title: "Dog-Friendly Outings", description: "Plan suitable places and safer trips.", href: "/dog-friendly/dog-friendly-places-south-africa" },

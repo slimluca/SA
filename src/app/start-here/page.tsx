@@ -38,6 +38,7 @@ const sections = [
     description: "Know when a symptom should not wait and what to say when phoning a vet.",
     links: [
       { title: "Emergency Hub", description: "Start here for urgent dog-care guidance.", href: "/emergency" },
+      { title: "Printable Emergency Checklist", description: "Record contacts, medical details, transport and sitter handover information.", href: "/emergency/dog-emergency-checklist-south-africa" },
       { title: "Dog Poisoning", description: "What to do if poisoning is possible.", href: "/emergency/dog-poisoning-south-africa" },
       { title: "Heatstroke", description: "Hot-weather emergency warning signs.", href: "/emergency/heatstroke-in-dogs-south-africa" },
       { title: "When to Take Your Dog to the Vet", description: "Symptom-led vet decision guide.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
@@ -58,6 +59,7 @@ const sections = [
     title: "Food and costs",
     description: "Choose practical feeding plans and budget before expenses become stressful.",
     links: [
+      { title: "Dog Ownership Cost Report", description: "Current public price examples, an open CSV dataset, and a printable budget worksheet.", href: "/costs/south-africa-dog-ownership-cost-report" },
       { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/best-dog-food-south-africa" },
       { title: "Feeding Calculator", description: "Estimate an initial daily portion.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/costs/dog-cost-calculator-south-africa" },

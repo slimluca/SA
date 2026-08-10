@@ -17,6 +17,7 @@ import { phase26CostCards } from "@/lib/phase26-dog-name-guides";
 import { phase30CostCards } from "@/lib/phase30-cost-insurance-guides";
 import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
+import { costReportCards } from "@/lib/cost-report";
 
 const baseHub = getHub("costs");
 const hubVisual = getPremiumHubConfig("costs")!;
@@ -24,6 +25,7 @@ const hub = {
   ...baseHub,
   cards: [
     ...baseHub.cards,
+    ...costReportCards,
     ...phase5CostCards,
     ...phase11CostCards,
     ...phase12CostCards,

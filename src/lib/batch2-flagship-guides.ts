@@ -108,6 +108,7 @@ export const batch2FlagshipGuides: GuideContent[] = [
       { question: "Does vaccination mean an exposure can be ignored?", answer: "No. Vaccination is essential protection, but a veterinarian or state veterinary official should still assess a possible exposure and the dog's documented status." },
     ],
     related: [
+      { title: "Dog Emergency Checklist", description: "Print contacts, records and transport details before an urgent incident.", href: "/emergency/dog-emergency-checklist-south-africa" },
       { title: "Dog Vaccination Schedule", description: "Plan puppy, adult, rabies, record, and catch-up discussions.", href: "/health/vaccination-schedule-south-africa" },
       { title: "Rabies Vaccination Law", description: "Review official South African vaccination and record context.", href: "/laws/rabies-vaccination-law-south-africa" },
       { title: "Emergency Help", description: "Prepare for urgent veterinary calls and transport.", href: "/emergency" },

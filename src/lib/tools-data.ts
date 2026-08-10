@@ -85,6 +85,7 @@ export const tools: ToolContent[] = [
     note:
       "This is a planning tool, not a quote. Ask vets, groomers, trainers, insurers, shelters, and suppliers for current prices.",
     related: [
+      { title: "Dog Ownership Cost Report", description: "Check the calculator against 46 dated public-price examples and download the source-linked dataset.", href: "/costs/south-africa-dog-ownership-cost-report" },
       { title: "Dog Cost Calculator Guide", description: "How to think about the estimate.", href: "/costs/dog-cost-calculator-south-africa" },
       { title: "Monthly Dog Costs", description: "Build a realistic South African dog budget.", href: "/costs/monthly-cost-of-owning-a-dog-south-africa" },
       ...commonRelated,
@@ -718,6 +719,26 @@ export const toolsHub = {
   kicker: "Free tools",
   intro:
     "Dog Haven tools are built to make practical dog ownership easier: quick estimates, checklists, gentle reminders, and fun ideas without logins, personal data collection, or third-party scripts.",
+  sections: [
+    {
+      title: "Original Dog Haven resources",
+      body: [
+        "Download or cite these first-party resources created for South African dog owners. Both are ungated and include clear scope and source information.",
+      ],
+      links: [
+        {
+          title: "South African Dog Ownership Cost Report",
+          description: "Research resource with 46 public-price examples, methodology, an 11-page PDF and source-linked CSV.",
+          href: "/costs/south-africa-dog-ownership-cost-report",
+        },
+        {
+          title: "South African Dog Emergency Checklist",
+          description: "Five-page printable for veterinary contacts, health details, transport and pet-sitter preparation.",
+          href: "/emergency/dog-emergency-checklist-south-africa",
+        },
+      ],
+    },
+  ],
   cards: tools.map((tool) => ({
     title: tool.title,
     description: tool.description,

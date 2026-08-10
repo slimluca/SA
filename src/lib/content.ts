@@ -65,6 +65,31 @@ export type GuideContent = {
     width: number;
     height: number;
   };
+  downloadAsset?: {
+    href: string;
+    label: string;
+    description: string;
+    fileType: string;
+  };
+  dataAsset?: {
+    href: string;
+    label: string;
+    description: string;
+    fileType: string;
+  };
+  dataset?: {
+    name: string;
+    description: string;
+    distributionPath: string;
+    recordCount: number;
+    dateChecked: string;
+  };
+  originalResource?: {
+    label: "Research resource" | "Printable resource";
+    summary: string;
+    citation?: string;
+    shareLabel: string;
+  };
   isHealthGuide?: boolean;
   safetyRating?: {
     label: "Safe in small amounts" | "Risky" | "Dangerous" | "Emergency";

@@ -1,18 +1,21 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
+import { CostReportCharts } from "@/components/CostReportCharts";
 import { DogCostEstimator } from "@/components/DogCostEstimator";
 import { EmergencyNotice } from "@/components/EmergencyNotice";
 import { FAQBlock } from "@/components/FAQBlock";
 import { HelpfulNextSteps } from "@/components/HelpfulNextSteps";
+import { OriginalResourcePanel } from "@/components/OriginalResourcePanel";
 import { SourceList } from "@/components/SourceList";
 import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
 import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
-import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, datasetSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
+import { Download, FileSpreadsheet } from "lucide-react";
 import { flagshipSlugs } from "@/lib/flagship-guides";
 
 export function GuideArticle({ guide }: { guide: GuideContent }) {
@@ -61,6 +64,14 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           image: guide.primaryImage?.src,
         })}
       />
+      {guide.dataset ? (
+        <JsonLd
+          data={datasetSchema({
+            ...guide.dataset,
+            path: guide.path,
+          })}
+        />
+      ) : null}
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
       <article className="section-shell">
         <Breadcrumbs
@@ -106,6 +117,45 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
 
         {guide.isHealthGuide ? primaryImage : null}
 
+        {guide.originalResource ? (
+          <OriginalResourcePanel
+            {...guide.originalResource}
+            url={`https://www.doghaven.co.za${guide.path}`}
+          />
+        ) : null}
+
+        {guide.downloadAsset ? (
+          <section className="mt-7 max-w-4xl rounded-2xl border-2 border-sage/40 bg-sage/5 p-5 shadow-sm sm:p-6" aria-labelledby="download-resource-heading">
+            <p className="text-xs font-black uppercase tracking-[0.16em] text-moss">Free printable resource</p>
+            <h2 id="download-resource-heading" className="mt-2 text-2xl font-black leading-tight text-cocoa">{guide.downloadAsset.label}</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-bark">{guide.downloadAsset.description}</p>
+            <a
+              href={guide.downloadAsset.href}
+              download
+              className="mt-5 inline-flex min-h-12 items-center gap-2 rounded-full bg-moss px-5 py-3 text-sm font-black text-white outline-none transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-moss focus-visible:ring-offset-2"
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+              Download {guide.downloadAsset.fileType}
+            </a>
+          </section>
+        ) : null}
+
+        {guide.dataAsset ? (
+          <section className="mt-4 max-w-4xl rounded-2xl border border-oat bg-white p-5 shadow-sm sm:p-6" aria-labelledby="download-data-heading">
+            <p className="text-xs font-black uppercase tracking-[0.16em] text-moss">Open research data</p>
+            <h2 id="download-data-heading" className="mt-2 text-xl font-black leading-tight text-cocoa">{guide.dataAsset.label}</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-bark">{guide.dataAsset.description}</p>
+            <a
+              href={guide.dataAsset.href}
+              download
+              className="mt-5 inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-moss px-5 py-3 text-sm font-black text-moss outline-none transition hover:bg-sage/10 focus-visible:ring-2 focus-visible:ring-moss focus-visible:ring-offset-2"
+            >
+              <FileSpreadsheet className="h-4 w-4" aria-hidden="true" />
+              Download {guide.dataAsset.fileType}
+            </a>
+          </section>
+        ) : null}
+
         {isFlagship ? <TableOfContents items={tableOfContents} /> : null}
 
         {guide.safetyRating ? (
@@ -132,6 +182,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         </section>
 
         <VerifiedLocalOptions providers={localProviders} showNotice={showProviderSection} />
+
+        {guide.slug === "south-africa-dog-ownership-cost-report" ? <CostReportCharts /> : null}
 
         {guide.slug === "dog-cost-calculator-south-africa" ? <DogCostEstimator /> : null}
 

@@ -16,7 +16,12 @@ export function SourceList({ sources }: { sources: readonly Source[] }) {
       <ul className="mt-4 space-y-3">
         {sources.map((source) => (
           <li key={source.href}>
-            <a href={source.href} className="font-bold text-moss underline-offset-4 hover:underline">
+            <a
+              href={source.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-moss underline-offset-4 hover:underline"
+            >
               {source.label}
             </a>
             <p className="mt-1 text-sm leading-6 text-bark">{source.note}</p>

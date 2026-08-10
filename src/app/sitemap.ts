@@ -30,6 +30,8 @@ import { shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 import { flagshipGuides } from "@/lib/flagship-guides";
+import { linkableAssetGuides } from "@/lib/linkable-assets";
+import { costReportGuide } from "@/lib/cost-report";
 
 const staticRoutes = [
   "/",
@@ -85,6 +87,8 @@ const guides: GuideContent[] = [
   ...phase29HealthSymptomGuidePages,
   ...phase30CostInsuranceGuidePages,
   ...flagshipGuides,
+  ...linkableAssetGuides,
+  costReportGuide,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

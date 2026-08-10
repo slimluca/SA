@@ -131,6 +131,53 @@ export function articleSchema({ title, description, path, dateModified, image }:
   };
 }
 
+export function datasetSchema({
+  name,
+  description,
+  path,
+  distributionPath,
+  recordCount,
+  dateChecked,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  distributionPath: string;
+  recordCount: number;
+  dateChecked: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name,
+    description,
+    url: absoluteUrl(path),
+    inLanguage: "en-ZA",
+    dateModified: dateChecked,
+    temporalCoverage: dateChecked,
+    spatialCoverage: {
+      "@type": "Country",
+      name: "South Africa",
+    },
+    size: `${recordCount} records`,
+    creator: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.domain,
+    },
+    distribution: {
+      "@type": "DataDownload",
+      contentUrl: absoluteUrl(distributionPath),
+      encodingFormat: "text/csv",
+    },
+  };
+}
+
 export function JsonLd({ data }: { data: object }) {
   return (
     <script

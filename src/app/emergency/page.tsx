@@ -11,6 +11,7 @@ import { phase21EmergencyCards } from "@/lib/phase21-prevention-guides";
 import { phase23EmergencyCards } from "@/lib/phase23-chronic-health-guides";
 import { getPremiumHubConfig } from "@/lib/premium-hubs";
 import { createMetadata } from "@/lib/seo";
+import { linkableAssetEmergencyCards } from "@/lib/linkable-assets";
 
 const baseHub = getHub("emergency");
 const hubVisual = getPremiumHubConfig("emergency")!;
@@ -18,6 +19,7 @@ const hub = {
   ...baseHub,
   cards: [
     ...baseHub.cards,
+    ...linkableAssetEmergencyCards,
     ...phase3EmergencyCards,
     ...phase10EmergencyCards,
     ...phase14EmergencyCards,

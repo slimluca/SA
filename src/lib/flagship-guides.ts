@@ -1,6 +1,7 @@
 import type { GuideContent } from "@/lib/content";
 import { batch2FlagshipGuides } from "@/lib/batch2-flagship-guides";
 import { batch3FlagshipGuides } from "@/lib/batch3-flagship-guides";
+import { batch4FlagshipGuides } from "@/lib/batch4-flagship-guides";
 
 export const flagshipSlugs = [
   "biliary-tick-bite-fever-dogs-south-africa",
@@ -18,6 +19,11 @@ export const flagshipSlugs = [
   "dog-behaviour-problems-south-africa",
   "best-dogs-for-active-owners-south-africa",
   "best-dogs-for-small-homes-south-africa",
+  "snake-bites-in-dogs-south-africa",
+  "dog-diarrhoea-south-africa",
+  "compare-dog-insurance-south-africa",
+  "puppy-training-south-africa",
+  "monthly-cost-of-owning-a-dog-south-africa",
 ] as const;
 
 export const flagshipGuides: GuideContent[] = [
@@ -701,6 +707,7 @@ export const flagshipGuides: GuideContent[] = [
   },
   ...batch2FlagshipGuides,
   ...batch3FlagshipGuides,
+  ...batch4FlagshipGuides,
 ];
 
 export function getFlagshipGuide(slug: string) {
