@@ -663,6 +663,7 @@ const topics: BreedLifestyleTopic[] = [
     ],
     related: [
       { title: "Border Collie", description: "High-energy breed planning.", href: "/breeds/border-collie-south-africa" },
+      { title: "Labrador Retriever", description: "Exercise, heat, weight, training, and family-life considerations.", href: "/breeds/labrador-retriever-south-africa" },
       { title: "Jack Russell Terrier", description: "Small but busy dog planning.", href: "/breeds/jack-russell-terrier-south-africa" },
       { title: "Hiking With Dogs", description: "Rules, heat, ticks, water, and safety.", href: "/dog-friendly/hiking-with-dogs-south-africa" },
       ...commonRelated,
@@ -1017,6 +1018,7 @@ const topics: BreedLifestyleTopic[] = [
     ],
     related: [
       { title: "Breed Comparison Checklist", description: "Compare dog types before choosing.", href: "/tools/dog-breed-comparison-checklist" },
+      { title: "Labrador Retriever", description: "See how one popular breed's adult needs translate into daily life.", href: "/breeds/labrador-retriever-south-africa" },
       { title: "Mixed Breed Dogs", description: "Responsible mixed-breed planning.", href: "/breeds/mixed-breed-dogs-south-africa" },
       { title: "Dog Adoption", description: "Adoption and rescue matching guidance.", href: "/adoption/dog-adoption-south-africa" },
       ...commonRelated,

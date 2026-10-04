@@ -623,6 +623,7 @@ export const flagshipGuides: GuideContent[] = [
         ],
         links: [
           { title: "Plan dog food costs", description: "Understand feeding and price factors without relying on a fake national average.", href: "/costs/dog-food-cost-south-africa" },
+          { title: "Choose dog food neutrally", description: "Compare suitability, daily cost, storage, and veterinary guidance without brand rankings.", href: "/food/best-dog-food-south-africa" },
           { title: "Estimate your own categories", description: "Use the Dog Haven cost calculator as a planning worksheet.", href: "/tools/dog-cost-calculator" },
         ],
       },
@@ -695,6 +696,7 @@ export const flagshipGuides: GuideContent[] = [
     ],
     related: [
       { title: "Dog Cost Calculator", description: "Turn your own local figures into a practical monthly estimate.", href: "/tools/dog-cost-calculator" },
+      { title: "Cape Town Monthly Dog Costs", description: "Apply the same budget structure to Cape Town-specific routines and cost factors.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
       { title: "Pet Insurance for Dogs", description: "Understand cover alongside emergency savings.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
       { title: "Emergency Vet Costs", description: "Prepare for urgent consultation, diagnostics, hospitalisation, and follow-up.", href: "/costs/emergency-vet-costs-south-africa" },
       { title: "Dog Food Costs", description: "Plan feeding by size, life stage, diet, and pack use.", href: "/costs/dog-food-cost-south-africa" },

@@ -1029,7 +1029,9 @@ export const phase4GuidePages: GuideContent[] = [
     related: [
       { title: "Best Family Dogs", description: "Compare family fit carefully.", href: "/breeds/best-family-dogs-south-africa" },
       { title: "Heatstroke in Dogs", description: "Know hot-weather danger signs.", href: "/emergency/heatstroke-in-dogs-south-africa" },
-      { title: "Dog Food", description: "Plan feeding and body condition.", href: "/food" },
+      { title: "Choosing Dog Food", description: "Compare life stage, body condition, daily cost, and suitability without brand rankings.", href: "/food/best-dog-food-south-africa" },
+      { title: "Dog Health", description: "Plan prevention, routine care, and questions for your veterinarian.", href: "/health" },
+      { title: "Cost of Owning a Dog", description: "Budget for food, prevention, training, insurance, and emergencies.", href: "/costs/cost-of-owning-a-dog-south-africa" },
     ],
     sources: [
       {

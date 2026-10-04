@@ -167,10 +167,10 @@ export const hubPages: HubContent[] = [
   {
     slug: "emergency",
     path: "/emergency",
-    title: "Dog Emergency Help",
-    seoTitle: "Dog Emergency Help in South Africa | Dog Haven",
+    title: "Dog Emergency Signs and Urgent Help",
+    seoTitle: "Dog Emergency Signs South Africa | Urgent Vet Guidance",
     description:
-      "South Africa-focused dog emergency guidance for rabies exposure, parvovirus signs, poisoning, heat stress, injuries, and urgent vet decisions.",
+      "Recognise dog emergency signs, prepare for an urgent vet call, and find South African guidance for poisoning, heatstroke, rabies, injuries, and severe illness.",
     kicker: "Emergency hub",
     intro:
       "Emergencies are easier to handle when you know what information matters. This hub helps South African dog owners recognise urgent situations, prepare for vet calls, and avoid delays when symptoms are serious.",
@@ -228,7 +228,7 @@ export const hubPages: HubContent[] = [
     slug: "breeds",
     path: "/breeds",
     title: "Dog Breed Guides for South African Homes",
-    seoTitle: "Dog Breed Guides South Africa | Choose for Home, Heat and Lifestyle",
+    seoTitle: "Dog Breeds South Africa | Choose for Home and Lifestyle",
     description:
       "South African dog breed guides for choosing by home size, climate, children, activity level, grooming, training, vet costs, and long-term fit.",
     kicker: "Breed hub",
@@ -1558,6 +1558,7 @@ export const guidePages: GuideContent[] = [
       },
     ],
     related: [
+      { title: "Labrador Retriever", description: "See how family fit, exercise, heat, food, and health needs come together for one popular breed.", href: "/breeds/labrador-retriever-south-africa" },
       { title: "Puppy Scam Checklist", description: "Verify before paying.", href: "/adoption/puppy-scam-checklist-south-africa" },
       { title: "Dog Costs", description: "Budget by size and coat.", href: "/costs/cost-of-owning-a-dog-south-africa" },
       { title: "Training", description: "Plan for temperament and routines.", href: "/training" },

@@ -68,7 +68,11 @@ function pathFor(city: (typeof localCities)[number], service: CostService) {
 }
 
 function titleFor(city: (typeof localCities)[number], service: CostService) {
-  if (service.key === "monthly") return `Monthly Dog Costs in ${city.name}: Ownership Budget Guide`;
+  if (service.key === "monthly") {
+    return city.slug === "cape-town"
+      ? "Monthly Cost of Owning a Dog in Cape Town"
+      : `Monthly Dog Costs in ${city.name}: Ownership Budget Guide`;
+  }
   if (service.key === "emergency-vet") return `Emergency Vet Costs in ${city.name}: Budget Planning Guide`;
   return `${service.titleLabel} in ${city.name}: Cost Factors and Questions`;
 }
@@ -79,7 +83,7 @@ function seoTitleFor(city: (typeof localCities)[number], service: CostService) {
   }
 
   if (city.slug === "cape-town" && service.key === "monthly") {
-    return "Monthly Dog Costs Cape Town | Food, Vet, Grooming and Insurance Budget";
+    return "Monthly Dog Costs in Cape Town | Budget Guide";
   }
 
   if (service.key === "grooming") return `Dog Grooming Prices in ${city.name} | Quote Factors and Questions`;
@@ -94,7 +98,7 @@ function descriptionFor(city: (typeof localCities)[number], service: CostService
   }
 
   if (city.slug === "cape-town" && service.key === "monthly") {
-    return "Cape Town monthly dog cost guide covering food, vet care, parasite prevention, grooming after beaches and winter rain, training, insurance, transport, and emergency savings.";
+    return "Plan monthly dog costs in Cape Town across food, vet care, parasite prevention, grooming, training, insurance, transport, annual expenses, and emergency savings.";
   }
 
   return "";

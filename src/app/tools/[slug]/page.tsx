@@ -152,6 +152,41 @@ export default async function ToolPage({ params }: PageProps) {
         <div className="mt-6 rounded-[1.5rem] border border-oat bg-white p-3 shadow-panel sm:p-5">
           <ToolWidget slug={tool.slug} />
         </div>
+        {tool.slug === "dog-cost-calculator" ? (
+          <section className="mt-10" aria-labelledby="cost-calculator-guidance">
+            <p className="section-kicker">Use the estimate well</p>
+            <h2 id="cost-calculator-guidance" className="section-title">What the dog cost calculator includes</h2>
+            <p className="section-copy">
+              The result is a planning range built from the choices you enter. It is not a national average, provider quote, or prediction of veterinary needs.
+            </p>
+            <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Use current local inputs</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  Enter the food, grooming, training, insurance, parasite-control, service, and routine-care amounts that apply to your dog and area. South African prices vary by city, suburb, dog size, health, provider, and what a quote includes.
+                </p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Read each input as a monthly allowance</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  For costs that arrive annually or occasionally, divide the expected yearly total by twelve. This can include check-ups, vaccinations, equipment replacement, licence or property costs where applicable, boarding, and planned dental care.
+                </p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Interpret the result as a budget check</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  Compare the estimate with recent bank statements and written quotes. If the total is higher than expected, review optional services separately from welfare essentials and ask professionals about safe, realistic alternatives.
+                </p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Keep emergencies separate</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  A routine monthly estimate cannot predict injury, illness, diagnostics, hospitalisation, or chronic care. Add an emergency-savings plan and, if considering insurance, check waiting periods, exclusions, limits, excesses, and whether upfront payment may be required.
+                </p>
+              </article>
+            </div>
+          </section>
+        ) : null}
         <section className="mt-8">
           <h2 className="text-2xl font-black text-cocoa">Helpful next guides</h2>
           <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">

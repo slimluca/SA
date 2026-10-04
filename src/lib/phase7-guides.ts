@@ -773,13 +773,39 @@ export const cityCards: CardLink[] = phase7CityGuides.map((city) => ({
 export const provinceHub: HubContent = {
   slug: "province",
   path: "/province",
-  title: "Dog Owner Guides by South African Province",
-  seoTitle: "South African Province Dog Owner Guides | Dog Haven Local Care",
+  title: "South African Dog Owner Guides by Province",
+  seoTitle: "Dog Owner Guides by Province | South Africa",
   description:
-    "South Africa-specific dog owner guides by province, covering heat, ticks, snakes, beaches, rural travel, local risks, adoption, grooming, training, outings, costs and emergency planning.",
+    "Choose a South African province for practical dog-care guidance on climate, ticks, snakes, travel, local rules, services, costs, outings, and emergency planning.",
   kicker: "Province guides",
   intro:
     "Dog care changes by province: heat, rain, ticks, snakes, beaches, rural distance, city density, rental rules, and emergency access all shape practical ownership. These guides are not directories. They help you know what to check locally.",
+  sections: [
+    {
+      title: "Climate and seasonal risks",
+      body: [
+        "Heat, rainfall, humidity, veld conditions, ticks, snakes, beaches, and water access differ across South Africa. Use the province guide as context, then ask your veterinarian about risks for your dog's exact area and routine.",
+      ],
+    },
+    {
+      title: "Distance, services and travel",
+      body: [
+        "Urban access and rural travel times can change how owners plan veterinary care, boarding, grooming, training, transport, and emergency contacts. Check current providers and opening hours directly.",
+      ],
+    },
+    {
+      title: "Rules and public spaces",
+      body: [
+        "Municipal by-laws, estate or complex rules, beaches, parks, conservation areas, and accommodation policies can vary within the same province. Verify the rule for the exact place before visiting.",
+      ],
+    },
+    {
+      title: "Local ownership costs",
+      body: [
+        "Food availability, travel, professional services, housing, and veterinary access can affect a household budget. Use current local quotes rather than treating a national estimate as a fixed price.",
+      ],
+    },
+  ],
   cards: provinceCards,
   related: [
     { title: "Local Service Guides", description: "City guides for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local" },
@@ -813,13 +839,13 @@ export const provinceHub: HubContent = {
 export const cityHub: HubContent = {
   slug: "city",
   path: "/city",
-  title: "Dog Owner Guides by South African City",
-  seoTitle: "Dog Owner Guides by City | Dog Haven South Africa",
+  title: "City Dog Ownership Guides in South Africa",
+  seoTitle: "City Dog Ownership Guides | South Africa",
   description:
-    "Local dog owner guides for major South African cities, covering vets, adoption, training, grooming, dog-friendly rules, heat, traffic, costs, and emergency preparation.",
+    "Explore South African city dog-owner guides covering housing, heat, traffic, public-space rules, daily routines, vet access, adoption, costs, and emergency planning.",
   kicker: "City guides",
   intro:
-    "City dog ownership is shaped by traffic, housing, parks, beaches, public rules, vet access, heat, ticks, and daily routines. These city guides focus on how to choose and what to check, without inventing local listings.",
+    "These city guides focus on everyday dog ownership: housing, traffic, climate, public-space rules, travel times, vet access, costs, and routines. For groomers, trainers, sitters, boarding, and other provider choices, use the local service guides.",
   cards: cityCards,
   related: [
     { title: "Local Service Guides", description: "Grooming, training, emergency vet, and dog-friendly service-intent guides by city.", href: "/local" },
@@ -827,6 +853,7 @@ export const cityHub: HubContent = {
     { title: "Training", description: "Prepare dogs for public spaces and city routines.", href: "/training" },
     { title: "Grooming", description: "Coat, skin, tick, paw, and beach-care planning.", href: "/grooming" },
     { title: "Dog Laws", description: "Leash, barking, rental, complex, and public-space rule checks.", href: "/laws" },
+    { title: "Dog Adoption", description: "Plan shelter, rescue, and rehoming questions before choosing a dog.", href: "/adoption/dog-adoption-south-africa" },
   ],
   faqs: [
     {

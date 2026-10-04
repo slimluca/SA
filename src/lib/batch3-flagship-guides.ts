@@ -650,6 +650,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
     ],
     related: [
       { title: "Best Small Dogs", description: "Compare small-dog care and temperament considerations.", href: "/breeds/best-small-dogs-south-africa" },
+      { title: "Labrador Retriever", description: "Understand when a larger active dog may or may not fit a smaller home.", href: "/breeds/labrador-retriever-south-africa" },
       { title: "Dog Adoption", description: "Assess household fit and ask rescues practical questions.", href: "/adoption/dog-adoption-south-africa" },
       { title: "Dog Behaviour Problems", description: "Understand barking, fear, reactivity, and separation concerns.", href: "/training/dog-behaviour-problems-south-africa" },
     ],

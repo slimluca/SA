@@ -870,13 +870,13 @@ export const phase17DogFriendlyCards: CardLink[] = localCities.map((city) => ({
 export const localHub: HubContent = {
   slug: "local",
   path: "/local",
-  title: "Local Dog Service Guides in South Africa",
-  seoTitle: "Local Dog Service Guides South Africa | Grooming, Training, Emergency Vets",
+  title: "Local Dog Services by City in South Africa",
+  seoTitle: "Local Dog Services by City | South Africa",
   description:
-    "South African local dog service guides for grooming, training, emergency vet preparation, and dog-friendly places in major cities, with practical checks and verified local options where available.",
+    "Find city-level South African guidance for groomers, trainers, emergency vets, boarding, pet sitters, dog walkers, daycare, and dog-friendly places, with practical provider checks.",
   kicker: "Local guides",
   intro:
-    "Dog Haven local guides help South African dog owners know what to ask, what to verify, and how to choose safer dog services. Provider shortlists appear only where options can be checked against identifiable public or official sources.",
+    "Use these city-level service guides to compare groomers, trainers, emergency vets, boarding, daycare, pet sitters, dog walkers, and dog-friendly places. Provider options appear only where Dog Haven can link to identifiable public or official sources; always confirm current details directly.",
   cards: [
     ...localCities.map((city) => ({
       title: `${city.name} Local Dog Guides`,
@@ -896,6 +896,7 @@ export const localHub: HubContent = {
     { title: "Dog-Friendly Places", description: "Plan safer outings and verify rules.", href: "/dog-friendly" },
     { title: "Emergency Help", description: "Urgent symptoms and vet preparation.", href: "/emergency" },
     { title: "Dog Laws", description: "Rules for leashes, beaches, barking, rentals, and complexes.", href: "/laws" },
+    { title: "Dog Adoption", description: "Prepare shelter, rescue, and rehoming questions before bringing a dog home.", href: "/adoption/dog-adoption-south-africa" },
     { title: "Cape Town Local Guides", description: "A stronger city hub for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local/cape-town" },
     { title: "Gqeberha Dog-Friendly Places", description: "Check coastal rules, beach comfort, outing etiquette, and vet preparation.", href: "/local/gqeberha/dog-friendly-places-gqeberha" },
   ],
