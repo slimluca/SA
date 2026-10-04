@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
+import { resolveGuideForHub } from "@/lib/guide-resolver";
 import { getFlagshipGuide } from "@/lib/flagship-guides";
 import { getPhase4Guide, getPhase4GuidesByHub } from "@/lib/phase4-guides";
 import { getPhase12Guide, getPhase12GuidesByHub } from "@/lib/phase12-guides";
@@ -25,7 +26,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase4Guide(slug) ?? getPhase12Guide(slug) ?? getPhase25Guide(slug);
+  const guide = resolveGuideForHub(
+    "/breeds",
+    getFlagshipGuide(slug, "/breeds"),
+    getPhase4Guide(slug, "/breeds"),
+    getPhase12Guide(slug),
+    getPhase25Guide(slug),
+  );
 
   if (!guide || guide.hubPath !== "/breeds") {
     return {};
@@ -44,7 +51,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BreedGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase4Guide(slug) ?? getPhase12Guide(slug) ?? getPhase25Guide(slug);
+  const guide = resolveGuideForHub(
+    "/breeds",
+    getFlagshipGuide(slug, "/breeds"),
+    getPhase4Guide(slug, "/breeds"),
+    getPhase12Guide(slug),
+    getPhase25Guide(slug),
+  );
 
   if (!guide || guide.hubPath !== "/breeds") {
     notFound();

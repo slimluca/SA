@@ -12,7 +12,7 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getPhase6Guide(slug);
+  const guide = getPhase6Guide(slug, "/dog-friendly");
 
   if (!guide || guide.hubPath !== "/dog-friendly") {
     return {};
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function DogFriendlyGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getPhase6Guide(slug);
+  const guide = getPhase6Guide(slug, "/dog-friendly");
 
   if (!guide || guide.hubPath !== "/dog-friendly") {
     notFound();

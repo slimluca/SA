@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
+import { resolveGuideForHub } from "@/lib/guide-resolver";
 import { getPhase3Guide, getPhase3GuidesByHub } from "@/lib/phase3-guides";
 import { getPhase10Guide, getPhase10GuidesByHub } from "@/lib/phase10-guides";
 import { getPhase20Guide, getPhase20GuidesByHub } from "@/lib/phase20-recovery-guides";
@@ -34,15 +35,17 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide =
-    getFlagshipGuide(slug) ??
-    getPhase23Guide(slug) ??
-    getPhase29HealthSymptomGuide(slug) ??
-    getPhase22Guide(slug) ??
-    getPhase21Guide(slug) ??
-    getPhase20Guide(slug) ??
-    getPhase3Guide(slug) ??
-    getPhase10Guide(slug);
+  const guide = resolveGuideForHub(
+    "/health",
+    getFlagshipGuide(slug, "/health"),
+    getPhase23Guide(slug),
+    getPhase29HealthSymptomGuide(slug),
+    getPhase22Guide(slug),
+    getPhase21Guide(slug),
+    getPhase20Guide(slug, "/health"),
+    getPhase3Guide(slug, "/health"),
+    getPhase10Guide(slug),
+  );
 
   if (!guide || guide.hubPath !== "/health") {
     return {};
@@ -61,15 +64,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HealthGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide =
-    getFlagshipGuide(slug) ??
-    getPhase23Guide(slug) ??
-    getPhase29HealthSymptomGuide(slug) ??
-    getPhase22Guide(slug) ??
-    getPhase21Guide(slug) ??
-    getPhase20Guide(slug) ??
-    getPhase3Guide(slug) ??
-    getPhase10Guide(slug);
+  const guide = resolveGuideForHub(
+    "/health",
+    getFlagshipGuide(slug, "/health"),
+    getPhase23Guide(slug),
+    getPhase29HealthSymptomGuide(slug),
+    getPhase22Guide(slug),
+    getPhase21Guide(slug),
+    getPhase20Guide(slug, "/health"),
+    getPhase3Guide(slug, "/health"),
+    getPhase10Guide(slug),
+  );
 
   if (!guide || guide.hubPath !== "/health") {
     notFound();

@@ -841,7 +841,7 @@ const topics: BreedLifestyleTopic[] = [
     related: [
       { title: "Hypoallergenic Dogs", description: "Allergy-aware breed planning.", href: "/breeds/hypoallergenic-dogs-south-africa" },
       { title: "Dog Shedding", description: "Normal shedding vs skin warning signs.", href: "/grooming/dog-shedding-south-africa" },
-      { title: "Dog Grooming Costs", description: "Plan coat maintenance costs.", href: "/grooming/dog-grooming-costs-south-africa" },
+      { title: "Dog Grooming Costs", description: "Plan coat maintenance costs.", href: "/costs/dog-grooming-costs-south-africa" },
       ...commonRelated,
     ],
   },

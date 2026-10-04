@@ -1240,8 +1240,8 @@ export const phase3GuidePages: GuideContent[] = [
   },
 ];
 
-export function getPhase3Guide(slug: string) {
-  return phase3GuidePages.find((guide) => guide.slug === slug);
+export function getPhase3Guide(slug: string, hubPath?: string) {
+  return phase3GuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase3GuidesByHub(hubPath: "/emergency" | "/health") {

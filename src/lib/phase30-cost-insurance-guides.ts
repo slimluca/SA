@@ -1002,8 +1002,8 @@ export const phase30CostInsuranceGuidePages: GuideContent[] = [
   ...insuranceGuides.filter((guide) => !retiredInsuranceSlugs.has(guide.slug)),
 ].map(toGuide);
 
-export function getPhase30Guide(slug: string) {
-  return phase30CostInsuranceGuidePages.find((guide) => guide.slug === slug);
+export function getPhase30Guide(slug: string, hubPath?: string) {
+  return phase30CostInsuranceGuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase30GuidesByHub(hubPath: "/costs" | "/insurance") {

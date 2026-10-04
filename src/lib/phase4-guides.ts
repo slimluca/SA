@@ -1393,8 +1393,8 @@ export const phase4GuidePages: GuideContent[] = [
   },
 ];
 
-export function getPhase4Guide(slug: string) {
-  return phase4GuidePages.find((guide) => guide.slug === slug);
+export function getPhase4Guide(slug: string, hubPath?: string) {
+  return phase4GuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase4GuidesByHub(hubPath: string) {

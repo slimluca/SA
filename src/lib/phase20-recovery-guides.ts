@@ -916,8 +916,8 @@ const phase20Guides: GuideContent[] = [
 
 export const phase20RecoveryGuidePages = phase20Guides;
 
-export function getPhase20Guide(slug: string) {
-  return phase20Guides.find((guide) => guide.slug === slug);
+export function getPhase20Guide(slug: string, hubPath?: string) {
+  return phase20Guides.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase20GuidesByHub(hubPath: string) {

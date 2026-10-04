@@ -1288,8 +1288,8 @@ export const phase14EmergencyCards: CardLink[] = [
   },
 ];
 
-export function getPhase14Guide(slug: string) {
-  return phase14GuidePages.find((guide) => guide.slug === slug);
+export function getPhase14Guide(slug: string, hubPath?: string) {
+  return phase14GuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase14GuidesByHub(hubPath: "/insurance" | "/costs") {

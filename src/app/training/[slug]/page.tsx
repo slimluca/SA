@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
+import { resolveGuideForHub } from "@/lib/guide-resolver";
 import { getFlagshipGuide } from "@/lib/flagship-guides";
 import { getPhase6Guide } from "@/lib/phase6-guides";
 import { getPhase20Guide } from "@/lib/phase20-recovery-guides";
@@ -14,7 +15,12 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase20Guide(slug) ?? getPhase6Guide(slug);
+  const guide = resolveGuideForHub(
+    "/training",
+    getFlagshipGuide(slug, "/training"),
+    getPhase20Guide(slug, "/training"),
+    getPhase6Guide(slug, "/training"),
+  );
 
   if (!guide || guide.hubPath !== "/training") {
     return {};
@@ -33,7 +39,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TrainingGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase20Guide(slug) ?? getPhase6Guide(slug);
+  const guide = resolveGuideForHub(
+    "/training",
+    getFlagshipGuide(slug, "/training"),
+    getPhase20Guide(slug, "/training"),
+    getPhase6Guide(slug, "/training"),
+  );
 
   if (!guide || guide.hubPath !== "/training") {
     notFound();

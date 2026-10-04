@@ -189,8 +189,10 @@ const legacyRedirects = [
   // Grooming
   ["/dog-grooming-south-africa", "/grooming"],
   ["/dog-grooming-south-africa/", "/grooming"],
-  ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices", "/grooming/dog-grooming-costs-south-africa"],
-  ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices/", "/grooming/dog-grooming-costs-south-africa"],
+  ["/grooming/dog-grooming-costs-south-africa", "/costs/dog-grooming-costs-south-africa"],
+  ["/grooming/dog-grooming-costs-south-africa/", "/costs/dog-grooming-costs-south-africa"],
+  ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices", "/costs/dog-grooming-costs-south-africa"],
+  ["/dog-grooming-south-africa-2026-mobile-vs-parlour-prices/", "/costs/dog-grooming-costs-south-africa"],
   ["/dog-grooming-prices-south-africa", "/costs/dog-grooming-costs-south-africa"],
   ["/dog-grooming-prices-south-africa/", "/costs/dog-grooming-costs-south-africa"],
 

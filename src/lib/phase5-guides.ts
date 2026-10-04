@@ -1544,8 +1544,8 @@ export const phase5GuidePages: GuideContent[] = phase5GuidePagesRaw.filter(
   (guide) => !phase5RetiredDuplicateSlugs.has(guide.slug),
 );
 
-export function getPhase5Guide(slug: string) {
-  return phase5GuidePages.find((guide) => guide.slug === slug);
+export function getPhase5Guide(slug: string, hubPath?: string) {
+  return phase5GuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase5GuidesByHub(hubPath: string) {

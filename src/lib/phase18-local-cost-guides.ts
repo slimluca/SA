@@ -318,7 +318,7 @@ function groomingPage(city: (typeof localCities)[number], service: CostService):
     ],
     related: [
       { title: `${city.name} Grooming Guide`, description: "How to choose grooming support safely.", href: `/local/${city.slug}/dog-grooming-${city.slug}` },
-      { title: "Dog Grooming Costs", description: "National grooming cost factors.", href: "/grooming/dog-grooming-costs-south-africa" },
+      { title: "Dog Grooming Costs", description: "National grooming cost factors.", href: "/costs/dog-grooming-costs-south-africa" },
       { title: "Grooming Hub", description: "Coat, nails, shedding, and groomer choice.", href: "/grooming" },
       { title: "Dog Shedding", description: "Plan brushing and coat maintenance.", href: "/grooming/dog-shedding-south-africa" },
       { title: "Breed Guides", description: "Understand coat and size before choosing a dog.", href: "/breeds" },

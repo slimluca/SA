@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
+import { resolveGuideForHub } from "@/lib/guide-resolver";
 import { getPhase5Guide, getPhase5GuidesByHub } from "@/lib/phase5-guides";
 import { getPhase14Guide, getPhase14GuidesByHub } from "@/lib/phase14-guides";
 import { getPhase20Guide, getPhase20GuidesByHub } from "@/lib/phase20-recovery-guides";
@@ -28,7 +29,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase30Guide(slug) ?? getPhase20Guide(slug) ?? getPhase5Guide(slug) ?? getPhase14Guide(slug);
+  const guide = resolveGuideForHub(
+    "/insurance",
+    getFlagshipGuide(slug, "/insurance"),
+    getPhase30Guide(slug, "/insurance"),
+    getPhase20Guide(slug, "/insurance"),
+    getPhase5Guide(slug, "/insurance"),
+    getPhase14Guide(slug, "/insurance"),
+  );
 
   if (!guide || guide.hubPath !== "/insurance") {
     return {};
@@ -47,7 +55,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function InsuranceGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getFlagshipGuide(slug) ?? getPhase30Guide(slug) ?? getPhase20Guide(slug) ?? getPhase5Guide(slug) ?? getPhase14Guide(slug);
+  const guide = resolveGuideForHub(
+    "/insurance",
+    getFlagshipGuide(slug, "/insurance"),
+    getPhase30Guide(slug, "/insurance"),
+    getPhase20Guide(slug, "/insurance"),
+    getPhase5Guide(slug, "/insurance"),
+    getPhase14Guide(slug, "/insurance"),
+  );
 
   if (!guide || guide.hubPath !== "/insurance") {
     notFound();

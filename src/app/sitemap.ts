@@ -43,6 +43,8 @@ const staticRoutes = [
   "/terms",
 ];
 
+const retiredSitemapPaths = new Set(["/grooming/dog-grooming-costs-south-africa"]);
+
 const hubs = [
   ...hubPages,
   provinceHub,
@@ -99,7 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of guides) {
-    if (shouldNoindexLocalGuide(guide.path)) continue;
+    if (retiredSitemapPaths.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
 
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),

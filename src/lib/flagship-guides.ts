@@ -710,6 +710,6 @@ export const flagshipGuides: GuideContent[] = [
   ...batch4FlagshipGuides,
 ];
 
-export function getFlagshipGuide(slug: string) {
-  return flagshipGuides.find((guide) => guide.slug === slug);
+export function getFlagshipGuide(slug: string, hubPath?: string) {
+  return flagshipGuides.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }

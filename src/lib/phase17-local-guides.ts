@@ -466,7 +466,7 @@ function groomingGuide(city: LocalCity, service: LocalService): GuideContent {
     ],
     related: [
       { title: "Dog Grooming Hub", description: "Coat, nails, shedding, groomer choice, and grooming costs.", href: "/grooming" },
-      { title: "Dog Grooming Costs", description: "Understand grooming cost factors without fake exact prices.", href: "/grooming/dog-grooming-costs-south-africa" },
+      { title: "Dog Grooming Costs", description: "Understand grooming cost factors without fake exact prices.", href: "/costs/dog-grooming-costs-south-africa" },
       { title: "Dog Shedding", description: "Plan brushing, coat care, and seasonal shedding.", href: "/grooming/dog-shedding-south-africa" },
       { title: "Itchy Skin Signs", description: "When skin symptoms need a vet.", href: "/health/dog-scratching-and-itchy-skin-south-africa" },
       { title: "Dog Cost Calculator", description: "Estimate monthly ownership costs.", href: "/tools/dog-cost-calculator" },

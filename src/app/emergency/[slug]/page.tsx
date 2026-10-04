@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
+import { resolveGuideForHub } from "@/lib/guide-resolver";
 import { getFlagshipGuide } from "@/lib/flagship-guides";
 import { getPhase3Guide, getPhase3GuidesByHub } from "@/lib/phase3-guides";
 import { createMetadata } from "@/lib/seo";
@@ -20,7 +21,12 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getLinkableAssetGuide(slug) ?? getFlagshipGuide(slug) ?? getPhase3Guide(slug);
+  const guide = resolveGuideForHub(
+    "/emergency",
+    getLinkableAssetGuide(slug),
+    getFlagshipGuide(slug, "/emergency"),
+    getPhase3Guide(slug, "/emergency"),
+  );
 
   if (!guide || guide.hubPath !== "/emergency") {
     return {};
@@ -39,7 +45,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function EmergencyGuidePage({ params }: PageProps) {
   const { slug } = await params;
-  const guide = getLinkableAssetGuide(slug) ?? getFlagshipGuide(slug) ?? getPhase3Guide(slug);
+  const guide = resolveGuideForHub(
+    "/emergency",
+    getLinkableAssetGuide(slug),
+    getFlagshipGuide(slug, "/emergency"),
+    getPhase3Guide(slug, "/emergency"),
+  );
 
   if (!guide || guide.hubPath !== "/emergency") {
     notFound();

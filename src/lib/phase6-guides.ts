@@ -50,7 +50,7 @@ export const phase6GroomingCards: CardLink[] = [
     title: "Dog Grooming Costs",
     description:
       "Understand cautious grooming cost ranges, coat type, matting, dog size, behaviour, add-ons, and when to request quotes.",
-    href: "/grooming/dog-grooming-costs-south-africa",
+    href: "/costs/dog-grooming-costs-south-africa",
   },
   {
     title: "How Often to Groom",
@@ -831,7 +831,7 @@ export const phase6GuidePages: GuideContent[] = [
       },
     ],
     related: [
-      { title: "Grooming Costs", description: "Plan grooming budgets.", href: "/grooming/dog-grooming-costs-south-africa" },
+      { title: "Grooming Costs", description: "Plan grooming budgets.", href: "/costs/dog-grooming-costs-south-africa" },
       { title: "Ticks and Fleas", description: "Check parasite risks.", href: "/health/ticks-and-fleas-dogs-south-africa" },
       { title: "Choose a Groomer", description: "Ask safety questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
     ],
@@ -1849,8 +1849,8 @@ export const phase6GuidePages: GuideContent[] = [
   },
 ];
 
-export function getPhase6Guide(slug: string) {
-  return phase6GuidePages.find((guide) => guide.slug === slug);
+export function getPhase6Guide(slug: string, hubPath?: string) {
+  return phase6GuidePages.find((guide) => guide.slug === slug && (!hubPath || guide.hubPath === hubPath));
 }
 
 export function getPhase6GuidesByHub(hubPath: string) {
