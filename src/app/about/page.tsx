@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { UtilityHero } from "@/components/UtilityHero";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata({
@@ -11,17 +11,9 @@ export const metadata: Metadata = createMetadata({
 
 export default function AboutPage() {
   return (
-    <section className="section-shell">
-      <Breadcrumbs items={[{ name: "About", href: "/about" }]} />
-      <p className="section-kicker">About Dog Haven</p>
-      <h1 className="section-title">Dog care written for South African owners</h1>
-      <p className="section-copy">
-        Dog Haven makes dog care easier to understand for people living in South Africa. Owners
-        often need information before they know which professional to call, what to ask, or how
-        much to budget. The site addresses those moments with useful local context and honest
-        limits.
-      </p>
-
+    <>
+      <UtilityHero path="/about" kicker="About Dog Haven" title="Dog care written for South African owners" intro="Dog Haven makes dog care easier to understand for people living in South Africa. Owners often need information before they know which professional to call, what to ask, or how much to budget. The site addresses those moments with useful local context and honest limits." />
+      <section className="section-shell py-12 sm:py-16">
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">Who Dog Haven serves</h2>
@@ -100,6 +92,7 @@ export default function AboutPage() {
           </p>
         </article>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

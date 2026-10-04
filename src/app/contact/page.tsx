@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { UtilityHero } from "@/components/UtilityHero";
 import { ContactForm } from "@/components/ContactForm";
 import { contactReasons } from "@/lib/data";
 import { createMetadata } from "@/lib/seo";
@@ -13,16 +13,9 @@ export const metadata: Metadata = createMetadata({
 
 export default function ContactPage() {
   return (
-    <section className="section-shell">
-      <Breadcrumbs items={[{ name: "Contact", href: "/contact" }]} />
-      <p className="section-kicker">Contact</p>
-      <h1 className="section-title">Help make Dog Haven more useful</h1>
-      <p className="section-copy">
-        Dog Haven welcomes topic suggestions, correction requests, and source ideas that
-        can help South African dog owners make better decisions. For medical concerns about your
-        own dog, please contact a veterinarian directly.
-      </p>
-
+    <>
+      <UtilityHero path="/contact" kicker="Contact" title="Help make Dog Haven more useful" intro="Dog Haven welcomes topic suggestions, correction requests, and source ideas that can help South African dog owners make better decisions. For medical concerns about your own dog, please contact a veterinarian directly." />
+      <section className="section-shell py-12 sm:py-16">
       <div className="mt-8">
         <ContactForm />
       </div>
@@ -38,6 +31,7 @@ export default function ContactPage() {
           </article>
         ))}
       </div>
-    </section>
+      </section>
+    </>
   );
 }

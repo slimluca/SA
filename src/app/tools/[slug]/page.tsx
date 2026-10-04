@@ -136,16 +136,20 @@ export default async function ToolPage({ params }: PageProps) {
     <>
       <JsonLd data={articleSchema({ title: tool.title, description: tool.description, path: tool.path, dateModified: "2026-05-15" })} />
       <JsonLd data={faqSchema(tool.faqs)} />
-      <section className="section-shell">
-        <Breadcrumbs items={[{ name: "Tools", href: "/tools" }, { name: tool.title, href: tool.path }]} />
-        <p className="section-kicker">Free Dog Haven tool</p>
-        <h1 className="section-title">{tool.title}</h1>
-        <p className="section-copy">{tool.intro}</p>
-        <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
+      <section className="bg-emerald-deep text-white">
+        <div className="section-shell py-10 sm:py-14">
+          <div className="[&_a]:text-white/75 [&_span]:text-white/70"><Breadcrumbs items={[{ name: "Tools", href: "/tools" }, { name: tool.title, href: tool.path }]} /></div>
+          <p className="light-kicker">Free Dog Haven tool</p>
+          <h1 className="mt-4 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl">{tool.title}</h1>
+          <p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">{tool.intro}</p>
+        </div>
+      </section>
+      <div className="section-shell py-10 sm:py-14">
+        <div className="rounded-2xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
           <p className="font-black text-cocoa">Educational note</p>
           <p className="mt-1">{tool.note}</p>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 rounded-[1.5rem] border border-oat bg-white p-3 shadow-panel sm:p-5">
           <ToolWidget slug={tool.slug} />
         </div>
         <section className="mt-8">
@@ -163,7 +167,7 @@ export default async function ToolPage({ params }: PageProps) {
             <FAQBlock items={tool.faqs} />
           </div>
         </section>
-      </section>
+      </div>
     </>
   );
 }

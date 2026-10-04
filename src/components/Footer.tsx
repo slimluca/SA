@@ -4,8 +4,8 @@ import { footerNavigationSections } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#dfc39f] bg-[#f2d8b9] text-navy">
-      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(260px,0.9fr)_minmax(0,2.4fr)] lg:gap-12 lg:px-8">
+    <footer className="border-t border-white/10 bg-emerald-deep text-white">
+      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(240px,.9fr)_minmax(0,2.4fr)] lg:gap-12 lg:px-8">
         <div className="max-w-sm">
           <div className="mb-4 flex items-center">
             <Image
@@ -14,15 +14,15 @@ export function Footer() {
               width={1200}
               height={527}
               sizes="(min-width: 1024px) 300px, 280px"
-              className="h-auto w-full max-w-[300px]"
+              className="h-auto w-full max-w-[220px]"
             />
           </div>
-          <p className="text-sm leading-6 text-bark">
+          <p className="text-sm leading-6 text-white/70">
             Dog Haven gives South African owners grounded information on health, everyday care and
             planning, with clear limits where a veterinarian or qualified professional is needed.
           </p>
-          <p className="mt-6 text-sm text-bark">
-            <Link href="/dog-haven-network" className="font-bold transition hover:text-sage">
+          <p className="mt-6 text-sm text-white/80">
+            <Link href="/dog-haven-network" className="inline-flex min-h-6 items-center font-bold transition hover:text-[#f3c76d] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f3c76d]">
               Dog Haven Network
             </Link>
           </p>
@@ -31,11 +31,11 @@ export function Footer() {
         <div className="grid items-start gap-x-8 gap-y-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {footerNavigationSections.map((section) => (
             <nav key={section.title} aria-label={`${section.title} footer links`} className="min-w-0">
-              <h2 className="text-sm font-bold uppercase tracking-wide text-navy">{section.title}</h2>
-              <ul className="mt-3 space-y-2 text-sm text-bark">
+              <h2 className="text-sm font-bold uppercase tracking-wide text-white">{section.title}</h2>
+              <ul className="mt-3 space-y-2 text-sm text-white/70">
                 {section.links.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="transition hover:text-sage">
+                    <Link href={item.href} className="inline-flex min-h-6 items-center transition hover:text-[#f3c76d] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f3c76d]">
                       {item.label}
                     </Link>
                   </li>
@@ -45,9 +45,9 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div className="border-t border-[#dfc39f] px-4 py-4 text-center text-xs text-bark">
-        &copy; {new Date().getFullYear()} DogHaven.co.za. Information is educational and does not
-        replace veterinary care.
+      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/60">
+        &copy; {new Date().getFullYear()} Dog Haven South Africa · Information is educational and does not replace veterinary care ·{" "}
+        <a href="https://sitesbyluca.com/" rel="nofollow" className="inline-flex min-h-6 items-center rounded font-bold text-white/80 hover:text-[#f3c76d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f3c76d]">Website by Sites by Luca</a>
       </div>
     </footer>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { UtilityHero } from "@/components/UtilityHero";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata({
@@ -11,16 +11,9 @@ export const metadata: Metadata = createMetadata({
 
 export default function EditorialPolicyPage() {
   return (
-    <section className="section-shell">
-      <Breadcrumbs items={[{ name: "Editorial Policy", href: "/editorial-policy" }]} />
-      <p className="section-kicker">Editorial Policy</p>
-      <h1 className="section-title">How Dog Haven earns trust</h1>
-      <p className="section-copy">
-        This is the working method used to plan, source, check, publish, and correct Dog Haven
-        content. It favours useful answers, honest limits, South African relevance, and traceable
-        evidence over publishing volume.
-      </p>
-
+    <>
+      <UtilityHero path="/editorial-policy" kicker="Editorial Policy" title="How Dog Haven earns trust" intro="This is the working method used to plan, source, check, publish, and correct Dog Haven content. It favours useful answers, honest limits, South African relevance, and traceable evidence over publishing volume." compact />
+      <section className="section-shell py-12 sm:py-16">
       <div className="mt-8 space-y-5">
         {[
           {
@@ -77,6 +70,7 @@ export default function EditorialPolicyPage() {
         </a>
         .
       </p>
-    </section>
+      </section>
+    </>
   );
 }

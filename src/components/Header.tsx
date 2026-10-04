@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, Search, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { mobileNavigation, moreNavigationGroups, navigation } from "@/lib/site";
 
@@ -48,8 +48,8 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-[9998] border-b border-oat/90 bg-cream/95 shadow-[0_4px_18px_rgba(75,54,36,0.06)] backdrop-blur-xl">
-      <div className="section-shell flex items-center gap-4 !py-1.5 xl:gap-5">
+    <header className="sticky top-0 z-[9998] border-b border-oat/70 bg-[#fffdf8]/95 shadow-[0_4px_18px_rgba(15,54,44,0.07)] backdrop-blur-xl">
+      <div className="section-shell flex items-center gap-4 !py-1 xl:gap-5">
         <Link
           href="/"
           className="flex shrink-0 items-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-moss focus-visible:ring-offset-2"
@@ -61,8 +61,8 @@ export function Header() {
             width={1200}
             height={527}
             priority
-            sizes="(min-width: 1280px) 236px, (min-width: 640px) 210px, 190px"
-            className="h-auto w-[190px] sm:w-[210px] xl:w-[236px]"
+            sizes="(min-width: 1280px) 170px, (min-width: 640px) 155px, 142px"
+            className="h-auto w-[142px] sm:w-[155px] xl:w-[170px]"
           />
         </Link>
 
@@ -132,6 +132,7 @@ export function Header() {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2">
+          <Link href="/#site-search" aria-label="Search Dog Haven" className="hidden h-11 w-11 items-center justify-center rounded-full text-navy outline-none transition hover:bg-cream hover:text-moss focus-visible:ring-2 focus-visible:ring-moss lg:inline-flex"><Search className="h-5 w-5" aria-hidden="true" /></Link>
           <Link
             href="/contact"
             className="hidden min-h-11 items-center rounded-full bg-sage px-5 py-2.5 text-sm font-black text-white shadow-sm outline-none transition hover:bg-moss focus-visible:ring-2 focus-visible:ring-moss focus-visible:ring-offset-2 xl:inline-flex"

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ContentLinkCard } from "@/components/ContentLinkCard";
 import { FAQBlock } from "@/components/FAQBlock";
 import { JsonLd, collectionPageSchema, faqSchema } from "@/lib/schema";
 import { phase20StartHereCards } from "@/lib/phase20-recovery-guides";
@@ -158,32 +160,45 @@ export default function StartHerePage() {
         })}
       />
       <JsonLd data={faqSchema(faqs)} />
-      <section className="section-shell">
-        <Breadcrumbs items={[{ name: "Start Here", href: "/start-here" }]} />
-        <p className="section-kicker">Start here</p>
-        <h1 className="section-title">Find the right Dog Haven guide faster</h1>
-        <p className="section-copy">
-          Dog Haven is built for practical South African dog ownership. Use this page to jump to the
-          most useful guides for your dog, your home, and the decision in front of you.
-        </p>
+      <header className="relative isolate overflow-hidden bg-emerald-deep text-white">
+        <Image src="/images/home/south-africa-dog-lifestyle.webp" alt="A South African dog owner spending time outdoors with a dog" fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.98),rgba(3,55,45,.84)_48%,rgba(3,55,45,.18))]" />
+        <div className="section-shell relative flex min-h-[500px] items-center py-10 sm:min-h-[540px] lg:py-16">
+          <div className="max-w-2xl">
+            <div className="[&_a]:text-white/75 [&_span]:text-white/70"><Breadcrumbs items={[{ name: "Start Here", href: "/start-here" }]} /></div>
+            <p className="light-kicker">Your Dog Haven compass</p>
+            <h1 className="mt-4 max-w-2xl text-4xl font-black leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">Find the right Dog Haven guide faster</h1>
+            <p className="mt-5 max-w-xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8">Dog Haven is built for practical South African dog ownership. Use this page to jump to the most useful guides for your dog, your home, and the decision in front of you.</p>
+            <Link href="#guide-paths" className="primary-light-button mt-8">Choose a starting point <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </header>
 
-        <div className="mt-7 space-y-8">
+      <section id="guide-paths" className="section-shell scroll-mt-24 py-14 sm:py-20">
+        <p className="section-kicker">Choose by situation</p>
+        <h2 className="section-title">A clearer path through dog ownership.</h2>
+        <p className="section-copy">Start with the question closest to yours, then follow the supporting guides as your plans develop.</p>
+        <div className="mt-10 space-y-12">
           {sections.map((section) => (
             <section key={section.title}>
-              <h2 className="text-2xl font-black text-cocoa">{section.title}</h2>
+              <h3 className="text-2xl font-black text-navy">{section.title}</h3>
               <p className="mt-2 max-w-3xl leading-7 text-bark">{section.description}</p>
-              <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-4 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
                 {section.links.map((link) => (
-                  <ContentLinkCard key={`${section.title}-${link.title}`} {...link} />
+                  <Link key={`${section.title}-${link.href}`} href={link.href} className="group flex min-h-24 items-start justify-between gap-4 border-t border-oat py-4 outline-none focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-moss">
+                    <span><span className="block font-black leading-6 text-navy group-hover:text-moss">{link.title}</span><span className="mt-1 block text-sm leading-6 text-bark">{link.description}</span></span>
+                    <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-sage transition group-hover:translate-x-1" aria-hidden="true" />
+                  </Link>
                 ))}
               </div>
             </section>
           ))}
         </div>
 
-        <section className="mt-8">
-          <h2 className="text-2xl font-black text-cocoa">Common questions</h2>
-          <div className="mt-4">
+        <section className="mt-16 max-w-4xl border-t border-oat pt-12">
+          <p className="section-kicker">Before you begin</p>
+          <h2 className="section-title">Common questions.</h2>
+          <div className="mt-7">
             <FAQBlock items={faqs} />
           </div>
         </section>

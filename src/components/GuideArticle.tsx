@@ -23,6 +23,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
   const articlePromos = getArticlePromos(guide.hubPath, guide.path);
   const localProviders = getProvidersForPath(guide.path);
   const showProviderSection = isLocalServicePath(guide.path);
+  const relatedGuides = Array.from(new Map(guide.related.map((card) => [card.href, card])).values());
   const safetyStyles = {
     "Safe in small amounts": "border-sage/35 bg-sage/10 text-moss",
     Risky: "border-honey/55 bg-honey/15 text-cocoa",
@@ -40,14 +41,13 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
     guide.hubPath === "/costs" ||
     guide.hubPath === "/food";
   const primaryImage = guide.primaryImage ? (
-    <figure className="mt-6 max-w-4xl overflow-hidden rounded-xl border border-oat bg-white">
+    <figure className="relative min-h-64 overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 shadow-soft sm:min-h-80 lg:min-h-[390px]">
       <Image
         src={guide.primaryImage.src}
         alt={guide.primaryImage.alt}
-        width={guide.primaryImage.width}
-        height={guide.primaryImage.height}
-        sizes="(min-width: 1024px) 832px, (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
-        className="h-auto w-full object-cover"
+        fill
+        sizes="(min-width: 1024px) 48vw, calc(100vw - 2rem)"
+        className="object-cover"
         priority
       />
     </figure>
@@ -73,29 +73,31 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         />
       ) : null}
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
-      <article className="section-shell">
-        <Breadcrumbs
-          items={[
-            { name: guide.hubTitle, href: guide.hubPath },
-            { name: guide.title, href: guide.path },
-          ]}
-        />
-        <p className="section-kicker">{guide.hubTitle}</p>
-        <h1 className="section-title">{guide.title}</h1>
-        <p className="section-copy">{guide.intro}</p>
-        <p className="mt-4 max-w-3xl text-sm leading-6 text-bark">
+      <article>
+        <header className="bg-emerald-deep text-white">
+          <div className={`section-shell grid min-w-0 gap-8 py-10 lg:items-center lg:py-14 ${primaryImage ? "lg:grid-cols-[.88fr_1.12fr]" : ""}`}>
+            <div className="min-w-0">
+              <div className="[&_a]:text-white/75 [&_span]:text-white/70"><Breadcrumbs items={[{ name: guide.hubTitle, href: guide.hubPath }, { name: guide.title, href: guide.path }]} /></div>
+              <p className="light-kicker">{guide.hubTitle}</p>
+              <h1 className="mt-4 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl">{guide.title}</h1>
+              <p className="mt-5 max-w-2xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">{guide.intro}</p>
+              <p className="mt-5 max-w-2xl text-sm leading-6 text-white/65">
           Prepared by the{" "}
-          <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/about">
+          <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/about">
             Dog Haven Editorial Team
           </Link>{" "}
           using South African, veterinary, and official sources. Learn how we{" "}
-          <Link className="font-bold text-moss underline-offset-4 hover:underline" href="/editorial-policy">
+          <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/editorial-policy">
             research and correct our guides
           </Link>
           .
-        </p>
+              </p>
+            </div>
+            {primaryImage}
+          </div>
+        </header>
 
-        {!guide.isHealthGuide ? primaryImage : null}
+        <div className="section-shell py-10 sm:py-14">
 
         {needsEducationalNote ? (
           <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
@@ -114,8 +116,6 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             <EmergencyNotice />
           </div>
         ) : null}
-
-        {guide.isHealthGuide ? primaryImage : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
@@ -169,8 +169,9 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           </section>
         ) : null}
 
-        <section className="mt-6 rounded-xl border border-oat bg-white p-5 shadow-panel">
-          <h2 className="text-2xl font-black text-cocoa">Quick takeaways</h2>
+        <section className="mt-6 max-w-4xl rounded-[1.35rem] border border-oat bg-white p-5 shadow-panel sm:p-6">
+          <p className="section-kicker">At a glance</p>
+          <h2 className="mt-2 text-2xl font-black text-navy">Quick takeaways</h2>
           <ul className="mt-4 space-y-3">
             {guide.quickFacts.map((fact) => (
               <li key={fact} className="flex gap-3 text-sm leading-6 text-bark">
@@ -203,10 +204,10 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
                             ? "border-l-4 border-l-honey border-t-oat bg-honey/10 pl-5 pr-4 sm:pr-5"
                             : "border-oat"
                       }`
-                    : "scroll-mt-28 rounded-xl border border-oat bg-white p-5 shadow-panel"
+                    : "scroll-mt-28 rounded-[1.35rem] border border-oat bg-white p-5 shadow-panel sm:p-7"
                 }
               >
-                <h2 className="text-2xl font-black leading-tight text-cocoa">{section.heading}</h2>
+                <h2 className="text-2xl font-black leading-tight text-navy sm:text-3xl">{section.heading}</h2>
                 <div className="mt-4 space-y-4">
                   {section.body.map((paragraph) => (
                     <p key={paragraph} className="leading-7 text-bark">
@@ -292,18 +293,19 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             </section>
         </div>
 
-        <aside aria-label="Further guidance and sources" className="mt-10 grid items-start gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <aside aria-label="Further guidance and sources" className="mt-12 grid items-start gap-6 border-t border-oat pt-10 md:grid-cols-2 xl:grid-cols-3">
             <HelpfulNextSteps links={articlePromos} />
             <section className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
               <h2 className="text-xl font-black text-cocoa">Related guides</h2>
               <div className="mt-4 space-y-3">
-                {guide.related.map((card) => (
-                  <ContentLinkCard key={`${guide.slug}-${card.title}`} {...card} />
+                {relatedGuides.map((card) => (
+                  <ContentLinkCard key={`${guide.slug}-${card.href}`} {...card} />
                 ))}
               </div>
             </section>
             <SourceList sources={guide.sources} />
         </aside>
+        </div>
       </article>
     </>
   );

@@ -18,6 +18,7 @@ const config: Config = {
         bark: "#253044",
         sage: "#007a3d",
         moss: "#005f32",
+        "emerald-deep": "#03372d",
         honey: "#f1b82d",
         gold: "#bf8424",
         sky: "#e4edf9",

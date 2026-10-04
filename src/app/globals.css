@@ -60,6 +60,38 @@ html {
   .section-copy {
     @apply mt-4 max-w-3xl text-base leading-7 text-bark;
   }
+
+  .light-kicker {
+    @apply flex items-center gap-3 text-xs font-black uppercase tracking-[0.16em] text-[#f3c76d];
+  }
+
+  .light-kicker::before {
+    content: "";
+    @apply block h-1 w-8 rounded-full bg-[#f3c76d];
+  }
+
+  .primary-button,
+  .secondary-button,
+  .primary-light-button,
+  .secondary-light-button {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black outline-none transition focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+
+  .primary-button {
+    @apply bg-sage text-white hover:bg-moss focus-visible:ring-moss;
+  }
+
+  .secondary-button {
+    @apply border border-oat bg-white text-navy hover:border-sage hover:text-moss focus-visible:ring-moss;
+  }
+
+  .primary-light-button {
+    @apply bg-sage text-white hover:bg-[#08905b] focus-visible:ring-white;
+  }
+
+  .secondary-light-button {
+    @apply border border-white/55 bg-white/10 text-white backdrop-blur hover:bg-white/20 focus-visible:ring-white;
+  }
 }
 
 body {
@@ -118,6 +150,10 @@ body {
 main {
   min-height: 100vh;
   background: rgba(251, 245, 233, 0.76);
+}
+
+main:has(> .dog-haven-network-page) {
+  min-height: 0;
 }
 
 body > header {
@@ -276,6 +312,13 @@ body > footer li {
 
 body > footer h2 {
   color: #071b38;
+}
+
+body > footer.bg-emerald-deep,
+body > footer.bg-emerald-deep p,
+body > footer.bg-emerald-deep li,
+body > footer.bg-emerald-deep h2 {
+  color: inherit;
 }
 
 @media (min-width: 640px) {

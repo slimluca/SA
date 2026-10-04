@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { UtilityHero } from "@/components/UtilityHero";
 import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -12,16 +12,9 @@ export const metadata: Metadata = createMetadata({
 
 export default function TermsPage() {
   return (
-    <section className="section-shell">
-      <Breadcrumbs items={[{ name: "Terms", href: "/terms" }]} />
-      <p className="section-kicker">Terms of Use</p>
-      <h1 className="section-title">Use Dog Haven as guidance, not a substitute for care</h1>
-      <p className="section-copy">
-        By using DogHaven.co.za, you agree to use the information responsibly. The site provides
-        educational dog care guidance for South African owners and does not provide veterinary,
-        legal, financial, or emergency services.
-      </p>
-
+    <>
+      <UtilityHero path="/terms" kicker="Terms of Use" title="Use Dog Haven as guidance, not a substitute for care" intro="By using DogHaven.co.za, you agree to use the information responsibly. The site provides educational dog care guidance for South African owners and does not provide veterinary, legal, financial, or emergency services." compact />
+      <section className="section-shell max-w-5xl py-12 sm:py-16">
       <div className="mt-8 space-y-5 rounded-2xl border border-oat bg-white p-6 shadow-sm">
         <section>
           <h2 className="text-xl font-black text-cocoa">Educational information</h2>
@@ -58,6 +51,7 @@ export default function TermsPage() {
           </p>
         </section>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

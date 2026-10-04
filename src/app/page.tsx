@@ -1,22 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPinned, Wrench } from "lucide-react";
+import { ArrowRight, Bone, Calculator, GraduationCap, HeartPulse, MapPin, PawPrint, ShieldPlus, Stethoscope } from "lucide-react";
 import { FAQBlock } from "@/components/FAQBlock";
-import { HomeHero } from "@/components/HomeHero";
-import { ProvinceGrid } from "@/components/ProvinceGrid";
 import { SearchBox } from "@/components/SearchBox";
-import { SourceList } from "@/components/SourceList";
-import { TrustBar } from "@/components/TrustBar";
-import { categories, featuredGuides, homeFaqs, provinces, sourceLinks, trustItems } from "@/lib/data";
-import { homepageMoneyPages, homepagePopularGuides, homepageTools } from "@/lib/promo-links";
+import { homeFaqs } from "@/lib/data";
 import { createMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
   title: "Dog Care South Africa | Practical Guides & Free Tools | Dog Haven",
-  description:
-    "Practical South African dog care guides, free dog tools, puppy help, food safety, symptoms, insurance, dog costs, breeds, adoption and dog-friendly planning.",
+  description: "Practical South African dog care guides, free dog tools, puppy help, food safety, symptoms, insurance, dog costs, breeds, adoption and dog-friendly planning.",
   path: "/",
   image: "/images/home/dog-haven-south-africa-hero.webp",
   imageAlt: "Dog and owner walking along a quiet South African coastal path",
@@ -24,377 +18,92 @@ export const metadata: Metadata = createMetadata({
   imageHeight: 1024,
 });
 
-type EditorialLinkProps = {
-  title: string;
-  description: string;
-  href: string;
-  inverse?: boolean;
-};
-
-function EditorialLink({ title, description, href, inverse = false }: EditorialLinkProps) {
-  return (
-    <Link
-      href={href}
-      className={`group flex items-start justify-between gap-4 border-t py-4 outline-none transition focus-visible:rounded-lg focus-visible:ring-2 ${
-        inverse
-          ? "border-white/20 text-white focus-visible:ring-white"
-          : "border-oat text-cocoa focus-visible:ring-moss"
-      }`}
-    >
-      <span>
-        <span className={`block font-black leading-6 ${inverse ? "text-white" : "text-cocoa group-hover:text-moss"}`}>
-          {title}
-        </span>
-        <span className={`mt-1 block text-sm leading-6 ${inverse ? "text-white/80" : "text-bark"}`}>
-          {description}
-        </span>
-      </span>
-      <ArrowRight
-        className={`mt-1 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 ${inverse ? "text-honey" : "text-sage"}`}
-        aria-hidden="true"
-      />
-    </Link>
-  );
-}
-
-type FeatureLink = {
-  title: string;
-  description: string;
-  href: string;
-};
-
-type EditorialFeatureProps = {
-  kicker: string;
-  title: string;
-  paragraphs: string[];
-  image: string;
-  imageAlt: string;
-  links: FeatureLink[];
-  imageRight?: boolean;
-};
-
-function EditorialFeature({
-  kicker,
-  title,
-  paragraphs,
-  image,
-  imageAlt,
-  links,
-  imageRight = false,
-}: EditorialFeatureProps) {
-  return (
-    <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-      <div className={imageRight ? "lg:order-2" : undefined}>
-        <div className="relative aspect-[3/2] overflow-hidden rounded-[1.75rem] bg-oat shadow-soft">
-          <Image src={image} alt={imageAlt} fill sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" />
-        </div>
-      </div>
-      <div className={imageRight ? "lg:order-1" : undefined}>
-        <p className="section-kicker">{kicker}</p>
-        <h2 className="section-title">{title}</h2>
-        <div className="mt-5 space-y-4 text-base leading-7 text-bark">
-          {paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-        </div>
-        <div className="mt-6 grid items-start gap-x-8 sm:grid-cols-2">
-          {links.map((link) => <EditorialLink key={link.href} {...link} />)}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const extraDestinations = [
-  {
-    title: "Local Dog Guides",
-    description: "Services, climate, outings and practical planning in South African places.",
-    href: "/local",
-    icon: MapPinned,
-  },
-  {
-    title: "Free Dog Tools",
-    description: "Calculators, checklists, quizzes and quick owner lookups.",
-    href: "/tools",
-    icon: Wrench,
-  },
+const topics = [
+  { title: "Health & wellbeing", copy: "Prevention, symptoms and clearer vet conversations.", href: "/health", image: "/images/home/south-africa-dog-health-care.webp", icon: HeartPulse },
+  { title: "Find your breed", copy: "Compare the life you offer with a dog's real needs.", href: "/breeds", image: "/images/hubs/dog-breeds-south-africa.webp", icon: PawPrint },
+  { title: "Food & nutrition", copy: "Make thoughtful feeding and food-safety decisions.", href: "/food", image: "/images/guides/choosing-dog-food-south-africa.webp", icon: Bone },
+  { title: "Adoption & puppy care", copy: "Prepare for responsible, unrushed beginnings.", href: "/adoption", image: "/images/home/south-africa-dog-family-adoption.webp", icon: ShieldPlus },
 ] as const;
 
-const healthLinks: FeatureLink[] = [
-  { title: "Dog health", description: "Symptoms, prevention and when veterinary care matters.", href: "/health" },
-  { title: "Emergency guidance", description: "Calm next steps for urgent risks and exposures.", href: "/emergency" },
-  { title: "Biliary tick bite fever", description: "Recognise locally important warning signs.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
-  { title: "Rabies in South Africa", description: "Owner actions and urgent human-exposure steps.", href: "/emergency/rabies-south-africa" },
-];
-
-const familyLinks: FeatureLink[] = [
-  { title: "Breed guides", description: "Compare needs, temperament and household fit.", href: "/breeds" },
-  { title: "Dog adoption", description: "Prepare for responsible matching and records.", href: "/adoption" },
-  { title: "Puppy care", description: "Plan the first year with realistic routines.", href: "/puppy" },
-  { title: "Training", description: "Build useful skills through humane consistency.", href: "/training" },
-];
-
-const everydayLinks: FeatureLink[] = [
-  { title: "Dog food", description: "Choose and feed with your individual dog in mind.", href: "/food" },
-  { title: "Best dog food guide", description: "Assess labels and fit without brand rankings.", href: "/food/best-dog-food-south-africa" },
-  { title: "Feeding calculator", description: "Estimate a sensible starting quantity.", href: "/tools/dog-feeding-calculator" },
-  { title: "Toxic foods", description: "Check common food risks and urgent warning signs.", href: "/health/toxic-foods-for-dogs-south-africa" },
-  { title: "Grooming", description: "Coat, nail, ear and skin-care routines.", href: "/grooming" },
-];
-
-const localLinks: FeatureLink[] = [
-  { title: "Dog-friendly South Africa", description: "Plan outings with safety and etiquette in mind.", href: "/dog-friendly" },
-  { title: "Local guides", description: "Explore practical information by place.", href: "/local" },
-  { title: "City guides", description: "Find city-level context where it is available.", href: "/city" },
-  { title: "Dog services", description: "Prepare questions before choosing support.", href: "/dog-services" },
-  { title: "Dog laws", description: "Understand common owner duties and local rules.", href: "/laws" },
-];
+const careLinks = [
+  { title: "Health guides", href: "/health", icon: HeartPulse },
+  { title: "Emergency help", href: "/emergency", icon: ShieldPlus },
+  { title: "Routine care", href: "/tools/dog-health-calendar", icon: Stethoscope },
+] as const;
 
 export default function HomePage() {
-  const destinations = [...categories, ...extraDestinations];
-
   return (
     <>
-      {homeFaqs.length > 0 ? <JsonLd data={faqSchema(homeFaqs)} /> : null}
-      <HomeHero />
-
-      <section className="section-shell py-12 sm:py-16">
-        <div className="max-w-4xl">
-          <p className="section-kicker">A practical place to begin</p>
-          <h2 className="section-title">Better dog decisions start with clear local context</h2>
-          <div className="mt-5 space-y-4 text-base leading-7 text-bark">
-            <p>
-              Dog Haven helps South African owners work through real questions about health,
-              safety, food, training, adoption, breeds, costs, services and everyday life.
-            </p>
-            <p>
-              Use the guides to understand what matters, what to observe and which questions to
-              ask. Individual symptoms, diagnoses and treatments still belong with a veterinarian
-              or appropriately qualified professional.
-            </p>
-            <p>
-              Local conditions matter too: heat, parasites, travel distances, housing rules and
-              access to care can all change the sensible next step.
-            </p>
-          </div>
-        </div>
-        <div className="mt-7 max-w-3xl"><SearchBox /></div>
-      </section>
-
-      <section id="explore" className="scroll-mt-24 border-y border-oat bg-white/55">
-        <div className="section-shell py-12 sm:py-16">
-          <div className="max-w-3xl">
-            <p className="section-kicker">Explore Dog Haven</p>
-            <h2 className="section-title">Start with the question in front of you</h2>
-            <p className="section-copy">
-              Move directly into the topic that fits today&apos;s decision. Every pathway leads to a
-              focused library of practical guidance.
-            </p>
-          </div>
-          <div className="mt-8 grid items-start gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
-            {destinations.map((destination) => {
-              const Icon = destination.icon;
-              return (
-                <Link
-                  key={destination.href}
-                  href={destination.href}
-                  className="group grid grid-cols-[40px_1fr_auto] items-start gap-3 border-t border-oat py-5 outline-none transition focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-moss"
-                >
-                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sage/10 text-moss">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <span>
-                    <span className="block font-black leading-6 text-cocoa group-hover:text-moss">{destination.title}</span>
-                    <span className="mt-1 block text-sm leading-6 text-bark">{destination.description}</span>
-                  </span>
-                  <ArrowRight className="mt-1 h-4 w-4 text-sage transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-shell py-12 sm:py-16 lg:py-20">
-        <EditorialFeature
-          kicker="Health and emergencies"
-          title="Know what can wait, and what should not"
-          image="/images/home/south-africa-dog-health-care.webp"
-          imageAlt="Dog owner calmly checking a healthy dog's coat and general condition"
-          paragraphs={[
-            "Everyday observation helps owners notice meaningful changes in appetite, energy, breathing, gums, movement and behaviour. The goal is not home diagnosis; it is a clearer description of what is happening and how quickly it is changing.",
-            "South African risks such as biliary, heat exposure and rabies make timing especially important. Poisoning response and vaccination planning also benefit from clear preparation. Emergency guides prioritise immediate safety, professional escalation and the information a clinic may need.",
-          ]}
-          links={healthLinks}
-        />
-      </section>
-
-      <section className="border-y border-oat bg-oat/30">
-        <div className="section-shell py-12 sm:py-16 lg:py-20">
-          <EditorialFeature
-            kicker="Choosing and welcoming a dog"
-            title="Find the right fit for the household, not the perfect-looking dog"
-            image="/images/home/south-africa-dog-family-adoption.webp"
-            imageAlt="Family spending calm time with a dog while considering household fit"
-            imageRight
-            paragraphs={[
-              "A strong match considers exercise, noise, grooming, training, children, other animals, housing and the time available every day. Breed tendencies can inform the discussion, but they never replace the temperament and history of the individual dog.",
-              "Adoption and puppy guides help families verify records, recognise payment pressure, prepare the home and set realistic expectations for settling in.",
-            ]}
-            links={familyLinks}
-          />
-        </div>
-      </section>
-
-      <section className="section-shell py-12 sm:py-16 lg:py-20">
-        <EditorialFeature
-          kicker="Food and everyday care"
-          title="Build routines that are sustainable for dog and owner"
-          image="/images/home/south-africa-dog-everyday-care.webp"
-          imageAlt="Dog owner preparing an everyday care routine for a healthy dog"
-          paragraphs={[
-            "Food, movement, grooming, parasite prevention and quiet rest all work together. Good routines are consistent enough to notice changes, but flexible enough for age, health, body condition and professional advice.",
-            "Dog Haven avoids one-size-fits-all feeding claims and brand rankings. Instead, the guides explain labels, portions, transitions, food safety and useful questions for a veterinary consultation.",
-          ]}
-          links={everydayLinks}
-        />
-      </section>
-
-      <section className="bg-sage text-white">
-        <div className="section-shell py-12 sm:py-16 lg:py-20">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            <div>
-              <p className="text-sm font-black uppercase tracking-wide text-honey">Costs and insurance</p>
-              <h2 className="mt-2 text-3xl font-black leading-tight text-white sm:text-4xl">
-                Plan for routine care and the bill you cannot predict
-              </h2>
-              <div className="mt-5 space-y-4 leading-7 text-white/85">
-                <p>
-                  Responsible ownership includes recurring food and preventive-care costs, plus a
-                  realistic plan for diagnostics, after-hours treatment or hospitalisation.
-                </p>
-                <p>
-                  Compare cover through current policy wording, exclusions, limits, excesses and
-                  claim processes. Calculators are planning aids, not quotes or guarantees.
-                </p>
-              </div>
-              <div className="mt-6 grid items-start gap-x-8 sm:grid-cols-2">
-                  {homepageMoneyPages.slice(0, 3).map((page) => <EditorialLink key={page.href} {...page} inverse />)}
-                  <EditorialLink {...homepageTools[2]} inverse />
-              </div>
-            </div>
-            <div className="relative aspect-[3/2] overflow-hidden rounded-[1.75rem] bg-white/10 shadow-soft">
-              <Image
-                src="/images/home/south-africa-dog-cost-planning.webp"
-                alt="Dog owner planning household costs for responsible dog care"
-                fill
-                sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover"
-              />
+      <JsonLd data={faqSchema(homeFaqs)} />
+      <section className="relative isolate min-h-[620px] overflow-hidden bg-emerald-deep text-white lg:min-h-[690px]">
+        <Image src="/images/home/dog-haven-south-africa-hero.webp" alt="Dog and owner walking along a South African coastal path" fill priority sizes="100vw" className="object-cover object-[62%_center]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.96)_0%,rgba(3,55,45,.78)_35%,rgba(3,55,45,.12)_72%,rgba(3,55,45,.03)_100%)]" />
+        <div className="section-shell relative flex min-h-[620px] items-center py-16 lg:min-h-[690px]">
+          <div className="max-w-[610px] py-10">
+            <p className="light-kicker">Dog Haven South Africa</p>
+            <h1 className="mt-5 max-w-xl text-5xl font-black leading-[.98] tracking-[-.035em] text-white sm:text-6xl lg:text-7xl">A better life<br />with your dog.</h1>
+            <p className="mt-6 max-w-lg text-lg leading-8 text-white/90">Practical local guidance for healthier dogs, happier homes and everyday South African adventures.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="#explore" className="primary-light-button">Explore Dog Haven <ArrowRight className="h-4 w-4" /></Link>
+              <Link href="/start-here" className="secondary-light-button">Start here</Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-shell py-12 sm:py-16 lg:py-20">
-        <EditorialFeature
-          kicker="Life with dogs in South Africa"
-          title="Plan around climate, place and the people you share it with"
-          image="/images/home/south-africa-dog-lifestyle.webp"
-          imageAlt="Dog and owner enjoying time outdoors in South Africa"
-          imageRight
-          paragraphs={[
-            "A safe outing in one province or season may need different preparation in another. Heat, water, ticks, wildlife, travel distances and access rules all deserve a quick check before the lead goes on.",
-              "Local guides also help owners think through rentals, neighbours, public etiquette and the questions to ask a walker, groomer, trainer, sitter or boarding service. Provider details are included only where verified information is available.",
-          ]}
-          links={localLinks}
-        />
-      </section>
+      <div className="relative z-20 -mt-16 px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl rounded-[1.6rem] border border-white/80 bg-[#fffaf0]/95 p-4 shadow-[0_24px_65px_rgba(20,45,35,.2)] backdrop-blur sm:p-5">
+          <SearchBox />
+          <div className="mt-4 grid grid-cols-2 divide-x divide-oat text-center sm:grid-cols-4">
+            {[{ label: "Health", href: "/health", icon: HeartPulse }, { label: "Breeds", href: "/breeds", icon: PawPrint }, { label: "Food", href: "/food", icon: Bone }, { label: "Training", href: "/training", icon: GraduationCap }].map(({ label, href, icon: Icon }) => (
+              <Link key={href} href={href} className="inline-flex min-h-11 items-center justify-center gap-2 px-2 text-sm font-black text-moss hover:text-sage"><Icon className="h-4 w-4" />{label}</Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
-      <section className="border-y border-oat bg-white/55">
-        <div className="section-shell py-12 sm:py-16">
-          <div className="max-w-3xl">
-            <p className="section-kicker">Free owner tools</p>
-            <h2 className="section-title">Estimate, organise and prepare</h2>
-            <p className="section-copy">
-              Use these quick tools as planning aids, then adjust for your individual dog and
-              current professional advice.
-            </p>
-          </div>
-          <div className="mt-7 grid items-start gap-x-10 sm:grid-cols-2">
-            {homepageTools.map((tool) => <EditorialLink key={tool.href} {...tool} />)}
-          </div>
+      <section id="explore" className="section-shell scroll-mt-24 pt-20 sm:pt-24">
+        <p className="section-kicker">Welcome to Dog Haven South Africa</p>
+        <h2 className="section-title max-w-4xl">Good guidance. <span className="text-moss">Real South African life.</span></h2>
+        <p className="section-copy max-w-4xl">Dog Haven is a practical, locally focused resource for dog owners. From health and emergencies to breeds, food, adoption and everyday care, we help you make informed decisions so you and your dog can enjoy a healthier, happier life together.</p>
+        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {topics.map(({ title, copy, href, image, icon: Icon }) => (
+            <Link key={href} href={href} className="group overflow-hidden rounded-[1.35rem] border border-oat bg-emerald-deep text-white shadow-panel transition hover:-translate-y-1 hover:shadow-soft">
+              <div className="relative aspect-[5/4] overflow-hidden"><Image src={image} alt="" fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover transition duration-500 group-hover:scale-105" /></div>
+              <div className="p-5"><div className="flex items-center gap-2"><Icon className="h-5 w-5 text-gold" /><h3 className="font-black text-white">{title}</h3></div><p className="mt-2 text-sm leading-6 text-white/75">{copy}</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-black text-[#f3c76d]">Explore <ArrowRight className="h-4 w-4" /></span></div>
+            </Link>
+          ))}
         </div>
       </section>
 
-      <section className="section-shell py-12 sm:py-16">
-        <div className="max-w-3xl">
-          <p className="section-kicker">Featured reading</p>
-          <h2 className="section-title">South African guides owners reach for first</h2>
-          <p className="section-copy">
-            Begin with locally important safety, adoption and budgeting guidance, then follow the
-            contextual links into more specific decisions.
-          </p>
-        </div>
-        <div className="mt-8 grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
-          <Link href="/health/biliary-tick-bite-fever-dogs-south-africa" className="group overflow-hidden rounded-[1.75rem] border border-oat bg-white shadow-soft">
-            <div className="relative aspect-[16/9] overflow-hidden">
-              <Image src="/images/guides/biliary-tick-check-dog-south-africa.webp" alt="Owner checking a dog for ticks in South Africa" fill sizes="(min-width: 1024px) 58vw, 100vw" className="object-cover transition duration-500 group-hover:scale-[1.02]" />
+      <section className="mt-8 bg-emerald-deep text-white">
+        <div className="grid min-h-[550px] lg:grid-cols-2">
+          <div className="relative min-h-[380px]"><Image src="/images/home/south-africa-dog-everyday-care.webp" alt="South African dog owner spending calm time outdoors with a dog" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" /></div>
+          <div className="flex items-center px-5 py-14 sm:px-10 lg:px-14 xl:px-20">
+            <div className="max-w-xl"><p className="light-kicker">Everyday care</p><h2 className="mt-4 text-4xl font-black leading-tight text-white sm:text-5xl">Everyday care starts with knowing your dog.</h2><p className="mt-5 leading-7 text-white/80">The more you understand your dog, the easier it is to keep them healthy, safe and happy. Explore practical guidance created for South African owners.</p>
+              <div className="mt-8 space-y-3">{careLinks.map(({ title, href, icon: Icon }) => <Link key={href} href={href} className="group flex min-h-13 items-center justify-between rounded-full border border-white/30 px-5 py-3 text-sm font-black text-white hover:bg-white/10"><span className="flex items-center gap-3"><Icon className="h-5 w-5 text-[#f3c76d]" />{title}</span><ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></Link>)}</div>
             </div>
-            <div className="p-6 sm:p-7">
-              <p className="section-kicker">Lead health guide</p>
-              <h3 className="mt-2 text-2xl font-black text-cocoa group-hover:text-moss">Biliary tick bite fever in dogs</h3>
-              <p className="mt-3 leading-7 text-bark">Understand warning signs, why veterinary diagnosis matters and how South African tick exposure changes the conversation.</p>
-            </div>
-          </Link>
-          <div className="grid content-start gap-x-8 sm:grid-cols-2 lg:grid-cols-1">
-            {homepagePopularGuides.slice(1).map((guide) => <EditorialLink key={guide.href} {...guide} />)}
           </div>
-        </div>
-        <div className="mt-8 grid items-start gap-x-10 sm:grid-cols-2">
-          {featuredGuides.slice(0, 4).map((guide) => <EditorialLink key={guide.href} title={guide.title} description={guide.description} href={guide.href} />)}
         </div>
       </section>
 
-      <section className="border-y border-oat bg-oat/30">
-        <div className="section-shell py-12 sm:py-16">
-          <div className="max-w-3xl">
-            <p className="section-kicker">Province explorer</p>
-            <h2 className="section-title">Dog care varies by place, climate and access</h2>
-            <p className="section-copy">
-              Weather, tick pressure, travel distances, rental rules, public-space etiquette and
-              emergency-care availability all shape responsible planning.
-            </p>
-          </div>
-          <div className="mt-7"><ProvinceGrid provinces={provinces} /></div>
+      <section className="section-shell py-14 sm:py-20">
+        <p className="section-kicker">Practical tools</p><h2 className="section-title">Practical tools. <span className="text-moss">Clearer decisions.</span></h2><p className="section-copy">Use real Dog Haven tools to plan, make informed choices and care for your dog with more confidence.</p>
+        <div className="mt-8 grid gap-5 lg:grid-cols-2">
+          <Link href="/tools/dog-cost-calculator" className="group grid overflow-hidden rounded-[1.5rem] border border-[#b9d8c7] bg-[#edf7f0] shadow-panel sm:grid-cols-[190px_1fr]"><div className="flex min-h-44 items-center justify-center bg-[radial-gradient(circle,#d1eee0,transparent_68%)]"><Calculator className="h-20 w-20 text-sage" /></div><div className="p-6"><h3 className="text-xl font-black text-navy">Dog cost calculator</h3><p className="mt-2 text-sm leading-6 text-bark">Build a monthly planning range from your own care choices.</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-moss">Open calculator <ArrowRight className="h-4 w-4" /></span></div></Link>
+          <Link href="/tools/can-my-dog-eat-this" className="group grid overflow-hidden rounded-[1.5rem] border border-oat bg-white shadow-panel sm:grid-cols-[190px_1fr]"><div className="relative min-h-44"><Image src="/images/guides/toxic-foods-dogs-south-africa.webp" alt="Food safety planning for dogs" fill loading="eager" sizes="190px" className="object-cover" /></div><div className="p-6"><h3 className="text-xl font-black text-navy">Can my dog eat this?</h3><p className="mt-2 text-sm leading-6 text-bark">Check common foods and open the full safety guide.</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-moss">Check a food <ArrowRight className="h-4 w-4" /></span></div></Link>
         </div>
       </section>
 
-      <section className="section-shell py-12 sm:py-16">
-        <div className="max-w-4xl">
-          <p className="section-kicker">Trust and editorial standards</p>
-          <h2 className="section-title">Useful guidance with clear boundaries</h2>
-          <p className="section-copy">
-            Dog Haven combines practical South African context with transparent sourcing and
-            correction standards. Medical guidance stays educational and directs owners to
-            qualified care when symptoms or risk require it.
-          </p>
-        </div>
-        <div className="mt-7"><TrustBar items={trustItems} /></div>
+      <section className="relative isolate overflow-hidden py-20 text-white">
+        <Image src="/images/home/south-africa-dog-outdoors-hero.webp" alt="Dog and owner enjoying a South African coastal adventure" fill loading="eager" sizes="100vw" className="object-cover" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.93),rgba(3,55,45,.56),rgba(3,55,45,.12))]" />
+        <div className="section-shell relative"><p className="light-kicker">Explore South Africa</p><h2 className="mt-4 max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl">More South African adventures. Together.</h2><p className="mt-4 max-w-xl leading-7 text-white/85">From mountain trails to coastal walks, plan outings around weather, access, wildlife, water and your individual dog.</p><div className="mt-7 flex flex-wrap gap-3">{["Cape Town", "Johannesburg", "Durban"].map((city) => <Link key={city} href={`/local/${city.toLowerCase().replace(" ", "-")}`} className="inline-flex items-center gap-2 rounded-full border border-white/35 px-4 py-2 text-sm font-bold text-white hover:bg-white/10"><MapPin className="h-4 w-4 text-[#f3c76d]" />{city}</Link>)}</div></div>
       </section>
 
-      <section className="border-t border-oat bg-white/55">
-        <div className="section-shell space-y-10 py-12 sm:py-16">
-          <div className="max-w-4xl">
-            <p className="section-kicker">Common questions</p>
-            <h2 className="section-title">What Dog Haven can—and cannot—do</h2>
-            <p className="section-copy">
-              Use the site to prepare, understand and ask better questions, never to delay urgent
-              care or treat general information as an individual diagnosis.
-            </p>
-            <div className="mt-7"><FAQBlock items={homeFaqs} /></div>
-          </div>
-          <div className="max-w-4xl"><SourceList sources={sourceLinks} /></div>
-        </div>
-      </section>
+      <section className="section-shell py-14 sm:py-20"><div className="grid items-center gap-8 lg:grid-cols-[1.05fr_.95fr]"><div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem]"><Image src="/images/home/south-africa-dog-lifestyle.webp" alt="Dog looking across a South African landscape" fill loading="eager" sizes="(min-width:1024px) 52vw, 100vw" className="object-cover" /></div><div><p className="section-kicker">Our purpose</p><h2 className="section-title">Made for life with dogs in South Africa.</h2><p className="section-copy">We’re here to support a better life for every dog and owner—with trustworthy, easy-to-follow information created for real-world life, from busy cities to small towns and everyday adventures in between.</p><Link href="/about" className="primary-button mt-7">Explore Dog Haven <ArrowRight className="h-4 w-4" /></Link></div></div></section>
+
+      <section className="border-t border-oat bg-white/60"><div className="section-shell py-14"><div className="max-w-4xl"><p className="section-kicker">Useful lower-page guidance</p><h2 className="section-title">Clear information, responsible boundaries.</h2><p className="section-copy">Dog Haven combines South African context with transparent sourcing and correction standards. Medical information is educational and never replaces veterinary examination, diagnosis or treatment.</p><div className="mt-7"><FAQBlock items={homeFaqs} /></div></div></div></section>
     </>
   );
 }

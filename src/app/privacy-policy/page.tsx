@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { UtilityHero } from "@/components/UtilityHero";
 import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -12,16 +12,9 @@ export const metadata: Metadata = createMetadata({
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="section-shell">
-      <Breadcrumbs items={[{ name: "Privacy Policy", href: "/privacy-policy" }]} />
-      <p className="section-kicker">Privacy Policy</p>
-      <h1 className="section-title">How Dog Haven handles visitor information</h1>
-      <p className="section-copy">
-        This policy explains how DogHaven.co.za handles information. The site is currently a
-        content guide and does not include advertising tags, affiliate tracking, public accounts, or
-        directory submission forms.
-      </p>
-
+    <>
+      <UtilityHero path="/privacy-policy" kicker="Privacy Policy" title="How Dog Haven handles visitor information" intro="This policy explains how DogHaven.co.za handles information, contact messages, analytics, cookies and third-party services." compact />
+      <section className="section-shell max-w-5xl py-12 sm:py-16">
       <div className="mt-8 space-y-5 rounded-2xl border border-oat bg-white p-6 shadow-sm">
         <section>
           <h2 className="text-xl font-black text-cocoa">Information you send</h2>
@@ -95,6 +88,7 @@ export default function PrivacyPolicyPage() {
           </p>
         </section>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

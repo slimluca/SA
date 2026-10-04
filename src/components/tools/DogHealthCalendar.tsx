@@ -81,12 +81,12 @@ export function DogHealthCalendar() {
   }, [lifestyle, stage]);
 
   return (
-    <div className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
-      <div className="grid gap-4 md:grid-cols-2">
-        <label className="grid gap-2 text-sm font-bold text-cocoa">
+    <div className="min-w-0 rounded-2xl border border-oat bg-white p-5 shadow-sm">
+      <div className="grid min-w-0 gap-4 md:grid-cols-2">
+        <label className="grid min-w-0 gap-2 text-sm font-bold text-cocoa">
           Dog life stage
           <select
-            className="rounded-xl border border-oat bg-cream px-3 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+            className="min-w-0 w-full rounded-xl border border-oat bg-cream px-3 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
             value={stage}
             onChange={(event) => setStage(event.target.value as keyof typeof lifeStages)}
           >
@@ -98,10 +98,10 @@ export function DogHealthCalendar() {
           </select>
         </label>
 
-        <label className="grid gap-2 text-sm font-bold text-cocoa">
+        <label className="grid min-w-0 gap-2 text-sm font-bold text-cocoa">
           Lifestyle and exposure
           <select
-            className="rounded-xl border border-oat bg-cream px-3 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
+            className="min-w-0 w-full rounded-xl border border-oat bg-cream px-3 py-3 text-bark outline-none transition focus:border-sage focus:ring-4 focus:ring-sage/15"
             value={lifestyle}
             onChange={(event) => setLifestyle(event.target.value as keyof typeof lifestyles)}
           >

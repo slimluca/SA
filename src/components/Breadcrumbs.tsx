@@ -13,7 +13,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <>
       <JsonLd data={breadcrumbSchema(allItems)} />
-      <nav aria-label="Breadcrumb" className="mb-4 flex flex-wrap items-center gap-2 text-sm font-semibold text-bark">
+      <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-[0.08em] text-bark">
         {allItems.map((item, index) => {
           const isLast = index === allItems.length - 1;
           return (
@@ -22,7 +22,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
               {isLast ? (
                 <span className="text-cocoa">{item.name}</span>
               ) : (
-                <Link href={item.href} className="inline-flex items-center gap-1 hover:text-moss">
+                <Link href={item.href} className="inline-flex min-h-8 items-center gap-1 rounded outline-none hover:text-moss focus-visible:ring-2 focus-visible:ring-moss">
                   {index === 0 && <Home className="h-4 w-4" aria-hidden="true" />}
                   {item.name}
                 </Link>
