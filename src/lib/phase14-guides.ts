@@ -53,7 +53,7 @@ const insuranceRelated: CardLink[] = [
   { title: "Pet Insurance Basics", description: "Plain-English cover, excess, and exclusions.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
   { title: "Waiting Periods", description: "Understand timing before cover starts.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
   { title: "Emergency Vet Costs", description: "Plan for urgent bills and after-hours care.", href: "/costs/emergency-vet-costs-south-africa" },
-  { title: "Dog Cost Calculator", description: "Estimate monthly planning pressure.", href: "/costs/dog-cost-calculator-south-africa" },
+  { title: "Dog Cost Calculator", description: "Estimate monthly planning pressure.", href: "/tools/dog-cost-calculator" },
 ];
 
 const costRelated: CardLink[] = [

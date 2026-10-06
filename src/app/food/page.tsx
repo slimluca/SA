@@ -22,7 +22,11 @@ const hub = {
     ...phase15FoodCards,
     ...phase20FoodCards,
     ...phase23FoodCards,
-  ],
+  ].filter(
+    (card) =>
+      card.href !== "/food/dog-feeding-calculator-south-africa" &&
+      card.href !== "/food/how-much-to-feed-a-dog-south-africa",
+  ),
 };
 
 export const metadata: Metadata = createMetadata({

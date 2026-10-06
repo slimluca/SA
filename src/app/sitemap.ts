@@ -43,7 +43,16 @@ const staticRoutes = [
   "/terms",
 ];
 
-const retiredSitemapPaths = new Set(["/grooming/dog-grooming-costs-south-africa"]);
+const retiredSitemapPaths = new Set([
+  "/grooming/dog-grooming-costs-south-africa",
+  "/costs/dog-cost-calculator-south-africa",
+  "/food/dog-feeding-calculator-south-africa",
+  "/food/how-much-to-feed-a-dog-south-africa",
+  "/costs/monthly-dog-costs-south-africa",
+  "/costs/dog-sterilisation-cost-south-africa",
+  "/health/dog-ear-infections-south-africa",
+  "/health/dog-drinking-a-lot-of-water-south-africa",
+]);
 
 const hubs = [
   ...hubPages,

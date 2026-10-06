@@ -998,7 +998,7 @@ export const phase23FoodCards: CardLink[] = [
 export const phase23GroomingCards: CardLink[] = [
   { title: "Dog Skin Allergies", description: "Grass, dust, fleas, food sensitivity, and grooming questions.", href: "/health/dog-skin-allergies-south-africa" },
   { title: "Dog Hot Spots", description: "Fast-worsening skin sores and when a vet check should not wait.", href: "/health/dog-hot-spots-south-africa" },
-  { title: "Dog Ear Infections", description: "Ear smell, shaking, swimming, allergies, and safe cleaning questions.", href: "/health/dog-ear-infections-south-africa" },
+  { title: "Dog Ear Infection Signs", description: "Ear smell, shaking, swimming, allergies, and safe cleaning questions.", href: "/health/dog-ear-infection-signs-south-africa" },
   { title: "Senior Dog Care", description: "Gentle grooming, nails, skin, coat, lumps, and comfort for older dogs.", href: "/health/senior-dog-care-south-africa" },
 ];
 
@@ -1018,7 +1018,7 @@ export const phase23InsuranceCards: CardLink[] = [
 
 export const phase23EmergencyCards: CardLink[] = [
   { title: "Dog Hot Spots", description: "Painful skin sores can worsen quickly and may need prompt vet care.", href: "/health/dog-hot-spots-south-africa" },
-  { title: "Dog Ear Infections", description: "Severe pain, head tilt, balance issues, or swelling should not wait.", href: "/health/dog-ear-infections-south-africa" },
+  { title: "Dog Ear Infection Signs", description: "Severe pain, head tilt, balance issues, or swelling should not wait.", href: "/health/dog-ear-infection-signs-south-africa" },
   { title: "Dog Arthritis", description: "Sudden severe lameness or inability to stand needs urgent help.", href: "/health/dog-arthritis-south-africa" },
   { title: "Senior Dog Care", description: "Older dogs need faster action when symptoms change suddenly.", href: "/health/senior-dog-care-south-africa" },
 ];
@@ -1026,6 +1026,6 @@ export const phase23EmergencyCards: CardLink[] = [
 export const phase23DogServicesCards: CardLink[] = [
   { title: "Senior Dog Care Checklist", description: "Prepare boarding, daycare, sitter, or walker notes for older dogs.", href: "/tools/senior-dog-care-checklist" },
   { title: "Dog Arthritis", description: "Ask services about floors, stairs, rest, transport, and gentle handling.", href: "/health/dog-arthritis-south-africa" },
-  { title: "Dog Ear Infections", description: "Discuss swimming, grooming, and ear comfort before high-contact services.", href: "/health/dog-ear-infections-south-africa" },
+  { title: "Dog Ear Infection Signs", description: "Discuss swimming, grooming, and ear comfort before high-contact services.", href: "/health/dog-ear-infection-signs-south-africa" },
   { title: "Dog Skin Allergies", description: "Share skin, food, parasite, and grooming notes with carers.", href: "/health/dog-skin-allergies-south-africa" },
 ];

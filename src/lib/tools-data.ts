@@ -86,7 +86,6 @@ export const tools: ToolContent[] = [
       "This is a planning tool, not a quote. Ask vets, groomers, trainers, insurers, shelters, and suppliers for current prices.",
     related: [
       { title: "Dog Ownership Cost Report", description: "Check the calculator against 46 dated public-price examples and download the source-linked dataset.", href: "/costs/south-africa-dog-ownership-cost-report" },
-      { title: "Dog Cost Calculator Guide", description: "How to think about the estimate.", href: "/costs/dog-cost-calculator-south-africa" },
       { title: "Monthly Dog Costs", description: "Build a realistic South African dog budget.", href: "/costs/monthly-cost-of-owning-a-dog-south-africa" },
       ...commonRelated,
     ],

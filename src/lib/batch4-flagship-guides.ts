@@ -350,7 +350,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
         ],
         links: [
           { title: "Build a monthly dog budget", description: "Separate essential, periodic, optional and unexpected costs.", href: "/costs/monthly-cost-of-owning-a-dog-south-africa" },
-          { title: "Use the dog cost calculator", description: "Enter your own local figures rather than a national average.", href: "/costs/dog-cost-calculator-south-africa" },
+          { title: "Use the dog cost calculator", description: "Enter your own local figures rather than a national average.", href: "/tools/dog-cost-calculator" },
         ],
       },
     ],
@@ -609,7 +609,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
           "Compare the estimate with receipts and update it when the dog's needs or local prices change.",
         ],
         links: [
-          { title: "Use the dog cost calculator", description: "Enter your own figures and see the monthly planning total.", href: "/costs/dog-cost-calculator-south-africa" },
+          { title: "Use the dog cost calculator", description: "Enter your own figures and see the monthly planning total.", href: "/tools/dog-cost-calculator" },
           { title: "Plan adoption costs", description: "Check setup and ongoing care before bringing a dog home.", href: "/adoption/dog-adoption-south-africa" },
           { title: "Plan puppy training", description: "Build early classes and support into first-year costs.", href: "/training/puppy-training-south-africa" },
         ],
@@ -622,7 +622,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { question: "Do I need emergency savings if I have insurance?", answer: "Usually some accessible funds are still useful for excesses, exclusions, amounts above limits, upfront payment and non-covered care. Check the specific claim process and policy wording." },
     ],
     related: [
-      { title: "Dog Cost Calculator", description: "Build an estimate from your own household figures.", href: "/costs/dog-cost-calculator-south-africa" },
+      { title: "Dog Cost Calculator", description: "Build an estimate from your own household figures.", href: "/tools/dog-cost-calculator" },
       { title: "Compare Dog Insurance", description: "Compare contract terms without provider rankings.", href: "/insurance/compare-dog-insurance-south-africa" },
       { title: "Dog Food Costs", description: "Calculate a recurring food line from actual use.", href: "/costs/dog-food-cost-south-africa" },
     ],

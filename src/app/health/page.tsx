@@ -45,7 +45,16 @@ const allHealthCards = [
 ];
 
 const uniqueHealthCards = Array.from(
-  new Map(allHealthCards.filter((card) => card.href !== "/health").map((card) => [card.href, card])).values(),
+  new Map(
+    allHealthCards
+      .filter(
+        (card) =>
+          card.href !== "/health" &&
+          card.href !== "/health/dog-ear-infections-south-africa" &&
+          card.href !== "/health/dog-drinking-a-lot-of-water-south-africa",
+      )
+      .map((card) => [card.href, card]),
+  ).values(),
 );
 
 const groupDefinitions = [

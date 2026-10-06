@@ -26,7 +26,7 @@ const hub = {
     ...phase23InsuranceCards,
     ...phase30InsuranceCards,
     ...phase25InsuranceCards,
-  ],
+  ].filter((card) => !card.href.includes("/insurance/retired-")),
 };
 
 export const metadata: Metadata = createMetadata({

@@ -64,7 +64,7 @@ const sections = [
       { title: "Dog Ownership Cost Report", description: "Current public price examples, an open CSV dataset, and a printable budget worksheet.", href: "/costs/south-africa-dog-ownership-cost-report" },
       { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/best-dog-food-south-africa" },
       { title: "Feeding Calculator", description: "Estimate an initial daily portion.", href: "/tools/dog-feeding-calculator" },
-      { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/costs/dog-cost-calculator-south-africa" },
+      { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/tools/dog-cost-calculator" },
       { title: "Compare Dog Insurance", description: "Understand premiums, excesses, limits, and exclusions.", href: "/insurance/compare-dog-insurance-south-africa" },
       ...phase20StartHereCards,
     ],

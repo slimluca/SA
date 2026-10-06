@@ -893,7 +893,7 @@ const symptomGuides: SymptomGuide[] = [
     urgentSummary:
       "Call a vet the same day if increased drinking is sudden, extreme, paired with vomiting, weight loss, weakness, not eating, accidents, or changes in urination.",
     context:
-      "Dogs may drink more after hot weather, exercise, salty food, dry food changes, or panting. But increased thirst can also be linked to diabetes, kidney disease, infection, medication effects, hormonal disease, fever, poisoning, or dehydration.",
+      "Dogs may drink more after hot weather, exercise, salty food, dry food changes, or panting. South African summer heat, hot paving, outdoor kennels, beach days, hikes, and load-shedding disruptions to fans or shade can increase water needs. But increased thirst can also be linked to diabetes, kidney disease, infection, medication effects, hormonal disease, fever, poisoning, or dehydration.",
     causes: [
       "Heat, exercise, panting, dry food, salty snacks, or lactation.",
       "Vomiting, diarrhoea, fever, dehydration, or infection.",
@@ -926,6 +926,7 @@ const symptomGuides: SymptomGuide[] = [
     ],
     checklist: [
       "Approximate water intake.",
+      "Whether other pets share the bowl, making intake difficult to measure.",
       "Urination frequency and accidents.",
       "Appetite and weight changes.",
       "Vomiting, diarrhoea, fever, or lethargy.",

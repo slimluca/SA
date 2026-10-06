@@ -683,7 +683,7 @@ const guides: FoodGuide[] = [
     summary:
       "Start with the feeding guide on the food package, then adjust for body condition, activity, treats, age, sterilisation, and vet advice. Feeding amounts are estimates, not fixed rules.",
     context:
-      "South African owners often feed by scoops, handfuls, or shared scraps. Measuring accurately helps prevent slow weight gain and makes food budgeting easier.",
+      "South African owners often feed by scoops, handfuls, or shared scraps. Measuring accurately helps prevent slow weight gain and makes food budgeting easier. Kibble, wet food, raw food, and mixed feeding have different calorie density, while heat, storage, price changes, treats, and table scraps all affect practical portion planning.",
     rows: [
       ["Weight", "Most labels start with body weight or expected adult weight."],
       ["Life stage", "Puppies, adults, seniors, and pregnant dogs differ."],
@@ -704,6 +704,7 @@ const guides: FoodGuide[] = [
       "Do not follow the bag blindly if body condition changes.",
       "Do not let every family member add extra food.",
       "Do not crash-diet an overweight dog without vet guidance.",
+      "Do not use unsafe leftovers such as cooked bones, onions, garlic, grapes, chocolate, biltong, or boerewors.",
     ],
     checklist: [
       "Read feeding guide.",

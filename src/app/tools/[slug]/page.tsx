@@ -187,6 +187,33 @@ export default async function ToolPage({ params }: PageProps) {
             </div>
           </section>
         ) : null}
+        {tool.slug === "dog-feeding-calculator" ? (
+          <section className="mt-10" aria-labelledby="feeding-calculator-guidance">
+            <p className="section-kicker">Use the estimate safely</p>
+            <h2 id="feeding-calculator-guidance" className="section-title">How to turn the estimate into a feeding plan</h2>
+            <p className="section-copy">
+              Weight is only a starting point. Compare the result with the calorie information and feeding guide on the exact food, then adjust gradually for life stage, activity, body condition, treats, and veterinary advice.
+            </p>
+            <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Measure the actual food</h3>
+                <p className="mt-3 leading-7 text-bark">Use grams where possible because cup sizes, kibble shapes, wet food, raw food, and mixed feeding have different calorie density. Include chews, toppers, training treats, and table scraps in the daily total.</p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Watch the dog, not only the number</h3>
+                <p className="mt-3 leading-7 text-bark">Recheck weight and body condition regularly. Persistent weight gain or loss, vomiting, diarrhoea, appetite changes, or a special medical diet need veterinary guidance rather than repeated calculator adjustments.</p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Treat life stages differently</h3>
+                <p className="mt-3 leading-7 text-bark">Puppies, seniors, pregnant dogs, working dogs, and dogs that are underweight or overweight need individual planning. Do not use a general estimate as a medical or growth-feeding prescription.</p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Change portions gradually</h3>
+                <p className="mt-3 leading-7 text-bark">Start with the food label and calculator, keep meal measurements consistent, and make small changes while monitoring stool, appetite, weight, and body condition.</p>
+              </article>
+            </div>
+          </section>
+        ) : null}
         <section className="mt-8">
           <h2 className="text-2xl font-black text-cocoa">Helpful next guides</h2>
           <div className="mt-4 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">

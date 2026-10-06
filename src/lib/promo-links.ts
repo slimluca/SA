@@ -20,7 +20,7 @@ export const homepageMoneyPages: CardLink[] = [
   { title: "Pet Insurance for Dogs", description: "Premiums, excesses, limits, exclusions, claims, and waiting periods.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
   { title: "Vet Costs for Dogs", description: "Understand routine, diagnostic, and urgent vet cost factors.", href: "/costs/vet-costs-for-dogs-south-africa" },
   { title: "Emergency Vet Costs", description: "Plan for after-hours care, diagnostics, hospitalisation, and urgent decisions.", href: "/costs/emergency-vet-costs-south-africa" },
-  { title: "Dog Cost Calculator Guide", description: "Use a planning estimate without fake exact prices.", href: "/costs/dog-cost-calculator-south-africa" },
+  { title: "Dog Cost Calculator", description: "Use a planning estimate without fake exact prices.", href: "/tools/dog-cost-calculator" },
   { title: "Compare Dog Insurance", description: "Compare policy wording, limits, exclusions, and claim questions.", href: "/insurance/compare-dog-insurance-south-africa" },
   { title: "Johannesburg Emergency Vet Costs", description: "City-specific urgent-care budget planning without fake clinic prices.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
 ];
@@ -39,7 +39,7 @@ export const hubPromos: Record<string, CardLink[]> = {
   ],
   costs: [
     { title: "Dog Cost Calculator", description: "Estimate monthly ownership costs.", href: "/tools/dog-cost-calculator" },
-    { title: "Dog Cost Calculator Guide", description: "Plan monthly costs with cautious ranges.", href: "/costs/dog-cost-calculator-south-africa" },
+    { title: "Dog Cost Calculator", description: "Plan monthly costs with cautious ranges.", href: "/tools/dog-cost-calculator" },
     { title: "Emergency Vet Bill Budget", description: "Prepare before urgent care happens.", href: "/costs/how-to-budget-for-emergency-vet-bills-south-africa" },
   ],
   health: [

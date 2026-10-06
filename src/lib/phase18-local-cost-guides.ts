@@ -111,7 +111,7 @@ function sourceList(city: (typeof localCities)[number]): Source[] {
 function commonRelated(city: (typeof localCities)[number]): CardLink[] {
   return [
     { title: "Dog Cost Calculator", description: "Estimate monthly dog ownership costs.", href: "/tools/dog-cost-calculator" },
-    { title: "Dog Cost Calculator Guide", description: "Understand the planning estimate.", href: "/costs/dog-cost-calculator-south-africa" },
+    { title: "Dog Cost Calculator", description: "Build a planning estimate.", href: "/tools/dog-cost-calculator" },
     { title: `${city.name} Local Services`, description: "Local service-intent guides for the city.", href: `/local/${city.slug}` },
     { title: `${city.name} City Guide`, description: "Daily dog-owner context for the city.", href: `/city/${city.slug}` },
     { title: `${city.province} Province Guide`, description: "Province-level climate, rules, and local care context.", href: `/province/${city.provinceSlug}` },
@@ -691,7 +691,7 @@ export const localCostHub: HubContent = {
   ],
   related: [
     { title: "Dog Cost Calculator", description: "Estimate monthly dog costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
-    { title: "Dog Cost Calculator Guide", description: "Understand the Dog Haven estimate.", href: "/costs/dog-cost-calculator-south-africa" },
+    { title: "Dog Cost Calculator", description: "Build a Dog Haven estimate.", href: "/tools/dog-cost-calculator" },
     { title: "Cape Town Monthly Dog Costs", description: "A practical city budget page for food, grooming, vet care, travel, and seasonal costs.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
     { title: "Johannesburg Emergency Vet Costs", description: "Prepare for urgent vet cost factors, transport, records, and insurance questions.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
     { title: "Local Service Guides", description: "City service guides for grooming, training, emergency vets, and dog-friendly places.", href: "/local" },

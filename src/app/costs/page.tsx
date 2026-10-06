@@ -40,7 +40,12 @@ const hub = {
     ...phase30CostCards,
     ...phase25CostCards,
     ...phase26CostCards,
-  ],
+  ].filter(
+    (card) =>
+      card.href !== "/costs/dog-cost-calculator-south-africa" &&
+      card.href !== "/costs/monthly-dog-costs-south-africa" &&
+      card.href !== "/costs/dog-sterilisation-cost-south-africa",
+  ),
 };
 
 export const metadata: Metadata = createMetadata({

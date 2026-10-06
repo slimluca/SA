@@ -6,6 +6,22 @@ const redirect = (source, destination) => ({
 });
 
 const legacyRedirects = [
+  // Phase 2C1 high-confidence cannibalisation cleanup
+  ["/costs/dog-cost-calculator-south-africa", "/tools/dog-cost-calculator"],
+  ["/costs/dog-cost-calculator-south-africa/", "/tools/dog-cost-calculator"],
+  ["/food/dog-feeding-calculator-south-africa", "/tools/dog-feeding-calculator"],
+  ["/food/dog-feeding-calculator-south-africa/", "/tools/dog-feeding-calculator"],
+  ["/food/how-much-to-feed-a-dog-south-africa", "/food/how-much-should-i-feed-my-dog"],
+  ["/food/how-much-to-feed-a-dog-south-africa/", "/food/how-much-should-i-feed-my-dog"],
+  ["/costs/monthly-dog-costs-south-africa", "/costs/monthly-cost-of-owning-a-dog-south-africa"],
+  ["/costs/monthly-dog-costs-south-africa/", "/costs/monthly-cost-of-owning-a-dog-south-africa"],
+  ["/costs/dog-sterilisation-cost-south-africa", "/health/dog-sterilisation-cost-south-africa"],
+  ["/costs/dog-sterilisation-cost-south-africa/", "/health/dog-sterilisation-cost-south-africa"],
+  ["/health/dog-ear-infections-south-africa", "/health/dog-ear-infection-signs-south-africa"],
+  ["/health/dog-ear-infections-south-africa/", "/health/dog-ear-infection-signs-south-africa"],
+  ["/health/dog-drinking-a-lot-of-water-south-africa", "/health/dog-drinking-lots-of-water-south-africa"],
+  ["/health/dog-drinking-a-lot-of-water-south-africa/", "/health/dog-drinking-lots-of-water-south-africa"],
+
   // Phase 2B targeted food and breed consolidation
   ["/breeds/best-dogs-for-families-south-africa", "/breeds/best-family-dogs-south-africa"],
   ["/breeds/best-dogs-for-families-south-africa/", "/breeds/best-family-dogs-south-africa"],
