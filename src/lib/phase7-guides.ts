@@ -22,11 +22,15 @@ type CityGuide = {
   name: string;
   slug: string;
   province: string;
+  description?: string;
+  updated?: string;
   intro: string;
   lifestyle: string[];
   careNotes: string[];
   outingNotes: string[];
   emergencyNotes: string[];
+  distinctiveSections?: GuideContent["sections"];
+  related?: CardLink[];
   sources: LocalSource[];
 };
 
@@ -490,8 +494,11 @@ export const phase7CityGuides: CityGuide[] = [
     name: "Pretoria",
     slug: "pretoria",
     province: "Gauteng",
+    description:
+      "Pretoria dog owner guide for hot Highveld summers, thunderstorms, estate and suburban routines, leash-controlled nature walks, traffic, and daily care planning.",
+    updated: "2026-10-07",
     intro:
-      "Pretoria dog ownership mixes jacaranda-lined suburbs, estates, flats, hot summers, thunderstorms, government precincts, and busy commuter routes.",
+      "Pretoria dog ownership mixes hot Highveld summers, severe thunderstorms, dry winter veld, estates, flats, suburban gardens, and commuter routes that can make the same walk or vet journey very different by time of day.",
     lifestyle: [
       "Many dogs need calm behaviour around gates, domestic workers, gardeners, visitors, and school traffic.",
       "Suburban walks can include other dogs behind fences, cyclists, runners, and traffic-heavy roads.",
@@ -511,7 +518,51 @@ export const phase7CityGuides: CityGuide[] = [
       "Save your regular vet and after-hours clinic options, especially if you commute across the metro.",
       "Keep vaccination and medication records on your phone.",
     ],
-    sources: [cityOfficialSources.pretoria, provinceSources.gauteng],
+    distinctiveSections: [
+      {
+        heading: "Plan Pretoria routines around heat, storms, and dry winter veld",
+        body: [
+          "Tshwane identifies severe thunderstorms with strong winds, hail, lightning, and heavy rain as a city-wide hazard, while dry winter veld increases fire exposure on the metro's open and peri-urban edges. For dog owners, that makes a seasonal routine more useful than one fixed walking schedule.",
+          "On hot summer days, move exercise away from exposed afternoon paving. Before forecast storms, bring outdoor dogs in early, secure gates, and prepare a quiet indoor space for dogs that panic at thunder. In dry winter conditions, avoid smoke or active burn areas and check paws and coats after veld-edge walks.",
+        ],
+        table: {
+          headers: ["Pretoria condition", "Practical owner decision"],
+          rows: [
+            ["Hot summer afternoon", "Use a shaded early or later route and test paving before a longer walk."],
+            ["Thunderstorm building", "Exercise earlier, close escape points, update ID details, and keep the dog indoors before thunder starts."],
+            ["Dry winter veld", "Avoid fire-affected paths and check for dry grass, seeds, and irritated paws after walks."],
+            ["Estate or complex living", "Confirm pet, noise, waste, visitor, and shared-space rules before choosing a routine."],
+          ],
+        },
+      },
+      {
+        heading: "Choose Tshwane walks by rule and terrain, not by an old list",
+        body: [
+          "The City of Tshwane lists several pet-friendly walks, but its public-amenities rule requires dogs to be leashed in public areas. Individual reserves can add conditions: Faerie Glen, for example, requires a dog permit, while other listed nature areas allow leashed dogs on specified trails.",
+          "Check the current municipal page or entrance notice before leaving home. Match rocky or longer trails to the dog's age and fitness, carry water, and turn back if heat, wildlife, cyclists, or crowding makes control difficult.",
+        ],
+      },
+    ],
+    related: [
+      { title: "Pretoria Local Dog Guides", description: "Separate provider and service planning for grooming, training, vets, and outings.", href: "/local/pretoria" },
+      { title: "Pretoria Monthly Dog Costs", description: "Plan food, routine care, services, transport, and emergency savings.", href: "/local-costs/pretoria/monthly-dog-costs-pretoria" },
+      { title: "Gauteng Dog Owner Guide", description: "Wider Highveld climate, housing, traffic, and seasonal context.", href: "/province/gauteng" },
+      { title: "Dog-Friendly Travel Checklist", description: "Prepare water, records, lead control, heat plans, and emergency contacts.", href: "/tools/dog-friendly-travel-checklist" },
+    ],
+    sources: [
+      cityOfficialSources.pretoria,
+      {
+        label: "City of Tshwane nature conservation",
+        href: "https://www.tshwane.gov.za/?page_id=1201",
+        note: "Official list of pet-friendly walks and the municipal leash requirement for public areas.",
+      },
+      {
+        label: "City of Tshwane 2026/27 draft IDP",
+        href: "https://www.tshwane.gov.za/wp-content/uploads/2026/03/18.-Tabling-of-CoT-Draft-2026-2027-IDP-1.pdf",
+        note: "Official hazard assessment covering severe thunderstorms and dry-winter veld fires across Tshwane.",
+      },
+      provinceSources.gauteng,
+    ],
   },
   {
     name: "Durban",
@@ -544,8 +595,11 @@ export const phase7CityGuides: CityGuide[] = [
     name: "Gqeberha",
     slug: "gqeberha",
     province: "Eastern Cape",
+    description:
+      "Gqeberha dog owner guide for windy coastal routines, beach-by-beach access checks, sand and salt care, suburban life, and Eastern Cape travel planning.",
+    updated: "2026-10-07",
     intro:
-      "Gqeberha dog ownership often includes wind, beaches, suburban homes, traffic corridors, coastal grass, and active outdoor lifestyles.",
+      "Gqeberha's official planning material describes Nelson Mandela Bay as a windy city with a mild climate, and its published dog-control schedule shows why owners cannot treat every beach as one shared dog-friendly space.",
     lifestyle: [
       "Windy coastal walks can still dehydrate dogs, so carry water even when it feels cool.",
       "Beach and public-space access should be checked through official municipal information.",
@@ -565,14 +619,58 @@ export const phase7CityGuides: CityGuide[] = [
       "Save nearby vet and after-hours details before beach or travel days.",
       "Keep a towel, water, and lead in the car for outing mishaps.",
     ],
-    sources: [cityOfficialSources.gqeberha, provinceSources["eastern-cape"]],
+    distinctiveSections: [
+      {
+        heading: "Use Gqeberha's wind as a route-planning factor",
+        body: [
+          "A cool-feeling beachfront day can still mean a long exposed walk through wind, salt spray, and blowing sand. Choose a shorter or more sheltered route when conditions are strong, carry fresh water, and keep leads secure around traffic, cyclists, waves, and wildlife-sensitive areas.",
+          "After a coastal outing, rinse salt and sand from paws where needed, check between toes, brush the coat, and dry the ears rather than leaving a wet or sandy dog in the car for the drive home.",
+        ],
+        checklist: [
+          "Check wind and heat before choosing an exposed beachfront route.",
+          "Pack fresh water so seawater is never the drinking option.",
+          "Use secure identification and a lead that remains controllable in gusts.",
+          "Inspect paws, ears, and coat before leaving the beach area.",
+        ],
+      },
+      {
+        heading: "Beach access changes by location within Nelson Mandela Bay",
+        body: [
+          "The municipality's beach-control schedule distinguishes bathing areas, walkways, grassed areas, dunes, and nature reserves. It allows dogs on lead in some defined areas, excludes them from others, and requires owners to have a way to remove faeces where dogs are permitted.",
+          "That means an old claim that a whole named beach is dog-friendly is not enough. Check the exact section and current signage before each visit, keep out of bathing or conservation areas where dogs are excluded, and have a backup neighbourhood walk if access is unclear.",
+        ],
+      },
+    ],
+    related: [
+      { title: "Gqeberha Local Dog Guides", description: "Provider and service guidance kept separate from everyday city ownership.", href: "/local/gqeberha" },
+      { title: "Gqeberha Dog-Friendly Places", description: "Detailed checks for beaches, public spaces, venues, and coastal outings.", href: "/local/gqeberha/dog-friendly-places-gqeberha" },
+      { title: "Eastern Cape Dog Owner Guide", description: "Coastal, rural-travel, tick, and emergency-access context.", href: "/province/eastern-cape" },
+      { title: "Dog-Friendly Travel Checklist", description: "Prepare water, records, rules, and emergency steps for coastal trips.", href: "/tools/dog-friendly-travel-checklist" },
+    ],
+    sources: [
+      cityOfficialSources.gqeberha,
+      {
+        label: "Nelson Mandela Bay adopted IDP 2023/24",
+        href: "https://www.nelsonmandelabay.gov.za/DataRepository/Documents/2023-24-idp-adopted_29cG1.pdf",
+        note: "Official municipal context describing Nelson Mandela Bay's mild, windy coastal setting and beaches.",
+      },
+      {
+        label: "Nelson Mandela Bay dog control on beaches",
+        href: "https://www.nelsonmandelabay.gov.za/DataRepository/Documents/7tfQZ_Dog%20controll%20on%20beaches.pdf",
+        note: "Official beach-by-beach schedule identifying dog-permitted and restricted areas and leash and waste requirements.",
+      },
+      provinceSources["eastern-cape"],
+    ],
   },
   {
     name: "Bloemfontein",
     slug: "bloemfontein",
     province: "Free State",
+    description:
+      "Bloemfontein dog owner guide for semi-arid summers, winter frost, dry suburban routines, open-space rules, paw care, and Free State travel planning.",
+    updated: "2026-10-07",
     intro:
-      "Bloemfontein dog care is practical and seasonal: hot summers, cold winters, dry dust, suburban yards, sport fields, and longer regional travel all affect routines.",
+      "Bloemfontein sits in a semi-arid summer-rainfall setting where warm summers, cold dry winters, frost, open ground, and evaporation make genuinely seasonal dog routines more useful than a year-round template.",
     lifestyle: [
       "Large yards do not replace walks, enrichment, training, and social contact.",
       "Dogs may need cold-weather comfort in winter and heat-safe routines in summer.",
@@ -592,14 +690,61 @@ export const phase7CityGuides: CityGuide[] = [
       "Keep a transport plan for urgent care, especially after hours or outside central areas.",
       "Save vet records and vaccination history on your phone.",
     ],
-    sources: [cityOfficialSources.bloemfontein, provinceSources["free-state"]],
+    distinctiveSections: [
+      {
+        heading: "Build a Bloemfontein routine for summer rain and winter frost",
+        body: [
+          "Mangaung's environmental planning describes Bloemfontein as semi-arid, with most rain falling in summer and frost occurring through the colder part of the year. Owners therefore need two distinct routines: heat- and storm-aware exercise in summer, then warmer starts and paw comfort checks on frosty winter mornings.",
+          "Dry air, dust, and exposed ground also make route choice important. A shaded suburban loop may be more suitable than an open field on a hot afternoon, while short-coated, thin, senior, or arthritic dogs may need a later start and warm resting place after a cold outing.",
+        ],
+        table: {
+          headers: ["Bloemfontein season", "Daily adjustment"],
+          rows: [
+            ["Hot summer afternoon", "Shift the walk, choose shade, and avoid exposed tar or open fields."],
+            ["Summer storm period", "Exercise before the storm and secure gates for dogs that bolt at thunder."],
+            ["Frosty winter morning", "Delay the outing or shorten it for cold-sensitive dogs and check stiff seniors after rest."],
+            ["Dry, dusty spell", "Inspect eyes and paws, brush out dry grass, and choose less exposed routes when practical."],
+          ],
+        },
+      },
+      {
+        heading: "Treat yards and open space as managed environments",
+        body: [
+          "A larger Bloemfontein garden can help with toileting and short activity, but it does not replace sniffing walks, training, or contact with the household. Inspect boundary fencing and gates before storm season and after building or garden work, especially where a frightened dog could reach a road.",
+          "For municipal parks and enclosed public amenities, Mangaung's open-space policy includes leash control. Carry waste bags, avoid organised sport areas when busy, and check the exact site's current rules instead of assuming every field has the same access conditions.",
+        ],
+      },
+    ],
+    related: [
+      { title: "Bloemfontein Local Dog Guides", description: "Separate grooming, training, vet, and service planning for the city.", href: "/local/bloemfontein" },
+      { title: "Free State Dog Owner Guide", description: "Province context for seasonal extremes, travel, farms, and local risks.", href: "/province/free-state" },
+      { title: "Dog Health Calendar", description: "Plan routine prevention and care across Bloemfontein's seasons.", href: "/tools/dog-health-calendar" },
+      { title: "Vet Visit Checklist", description: "Keep symptoms, medicines, records, and transport notes ready.", href: "/tools/vet-visit-checklist" },
+    ],
+    sources: [
+      cityOfficialSources.bloemfontein,
+      {
+        label: "Mangaung Environmental Implementation and Management Plan",
+        href: "https://www.mangaung.co.za/wp-content/uploads/2022/05/EIMP.pdf",
+        note: "Official municipal climate, frost, temperature, topography, and environmental context for Mangaung and Bloemfontein.",
+      },
+      {
+        label: "Mangaung Urban Open Space Policy",
+        href: "https://www.mangaung.co.za/wp-content/uploads/2018/05/Urban-Open-Space-Policy-DRAFT-29-May-2018.pdf",
+        note: "Municipal open-space policy containing leash controls for animals in public amenities.",
+      },
+      provinceSources["free-state"],
+    ],
   },
   {
     name: "East London",
     slug: "east-london",
     province: "Eastern Cape",
+    description:
+      "East London dog owner guide for humid coastal weather, year-round rain, beach and estuary outings, wet-coat care, holiday crowds, and cross-city travel planning.",
+    updated: "2026-10-07",
     intro:
-      "East London dog care often involves beaches, river areas, humid spells, windy walks, suburban yards, and travel between coastal and inland areas.",
+      "East London combines a humid coast, rainfall in every season, beaches and estuaries, suburban routes, and N2, N6, and R72 travel connections, so wet-weather care and realistic journey planning both shape everyday dog ownership.",
     lifestyle: [
       "Beach and river outings need rule checks, fresh water, recall control, and post-walk grooming.",
       "Warm humid conditions can worsen ear, skin, tick, and flea issues.",
@@ -619,14 +764,58 @@ export const phase7CityGuides: CityGuide[] = [
       "Beach injuries, heat stress, snake encounters, and poisoning concerns should be discussed with a vet quickly.",
       "Know after-hours access before weekend outings.",
     ],
-    sources: [cityOfficialSources["east-london"], provinceSources["eastern-cape"]],
+    distinctiveSections: [
+      {
+        heading: "Plan for East London's rain and summer humidity",
+        body: [
+          "Buffalo City's air-quality plan records moderate to high rainfall through the year in East London and higher humidity across the metro in summer. A practical local routine therefore needs a wet-weather fallback rather than assuming rain is only a short summer issue.",
+          "After rain, swimming, or an estuary outing, dry ears and dense coats, rinse dirty or salty paws where needed, and do not leave damp bedding in an enclosed room or vehicle. On humid summer days, shorten exposed exercise for heat-sensitive dogs even when cloud cover makes the temperature feel manageable.",
+        ],
+        checklist: [
+          "Keep a towel and dry lead in the car during coastal or rainy months.",
+          "Use a shorter paved or sheltered route when trails and verges are saturated.",
+          "Check ears, skin folds, paws, and coat after swimming or repeated wet walks.",
+          "Move vigorous exercise out of humid midday conditions.",
+        ],
+      },
+      {
+        heading: "Match coastal outings to access, crowds, and the drive home",
+        body: [
+          "Buffalo City manages beaches, coastal conservation areas, sports fields, and nature reserves, including walking trails at Nahoon Point and Nahoon Estuary. These are shared or environmentally sensitive spaces, not automatic off-lead dog areas, so check current signs and municipal rules before taking a dog in.",
+          "Weekend and holiday traffic can be heavy at popular coastal sites. Choose a quieter alternative for dogs that struggle with crowds, keep an exit route in mind, and save a reachable vet option before travelling from a beach, Gonubie, Beacon Bay, or an inland route.",
+        ],
+      },
+    ],
+    related: [
+      { title: "East London Local Dog Guides", description: "Separate provider, grooming, training, vet, and outing guidance.", href: "/local/east-london" },
+      { title: "East London Emergency Vet Planning", description: "Prepare records, transport, after-hours questions, and urgent calls.", href: "/local/east-london/emergency-vets-east-london" },
+      { title: "Eastern Cape Dog Owner Guide", description: "Coastal and rural travel context, ticks, outings, and vet access.", href: "/province/eastern-cape" },
+      { title: "Dog-Friendly Travel Checklist", description: "Plan water, towels, records, rules, and emergency contacts.", href: "/tools/dog-friendly-travel-checklist" },
+    ],
+    sources: [
+      cityOfficialSources["east-london"],
+      {
+        label: "Buffalo City Air Quality Management Plan",
+        href: "https://www.buffalocity.gov.za/CM/uploads/documents/6746368268971.pdf",
+        note: "Official local temperature, rainfall, and humidity context, including East London's year-round rainfall pattern.",
+      },
+      {
+        label: "Buffalo City amenities",
+        href: "https://www.buffalocity.gov.za/amenities.php",
+        note: "Official municipal information on coastal amenities and walking trails at Nahoon Point and Nahoon Estuary.",
+      },
+      provinceSources["eastern-cape"],
+    ],
   },
   {
     name: "George",
     slug: "george",
     province: "Western Cape",
+    description:
+      "George dog owner guide for Garden Route rain, wet-weather routines, forests and trails, municipal beach restrictions, tourism traffic, and regional travel.",
+    updated: "2026-10-07",
     intro:
-      "George dog ownership sits between mountains, forests, beaches, rain, tourism, estates, and Garden Route travel. Outdoor access is wonderful when rules and safety are respected.",
+      "George dog ownership sits between the Outeniqua foothills, forest and dam routes, municipal beaches, wet-weather days, tourism traffic, and Garden Route travel where access rules can change within a short drive.",
     lifestyle: [
       "Dogs may encounter cyclists, hikers, livestock, wildlife, tourists, and other dogs on popular routes.",
       "Wet weather and forest walks can increase grooming, paw, tick, and ear checks.",
@@ -646,7 +835,58 @@ export const phase7CityGuides: CityGuide[] = [
       "Have vet contacts ready when travelling along the Garden Route.",
       "Keep a first-aid kit and tick remover in your outing bag.",
     ],
-    sources: [cityOfficialSources.george, provinceSources["western-cape"]],
+    distinctiveSections: [
+      {
+        heading: "Separate a George trail plan from a dog-access plan",
+        body: [
+          "George's official tourism material highlights an extensive network of forest, dam, mountain, and coastal routes, but a route being promoted for walking does not mean dogs are permitted. Municipal, SANParks, plantation, reserve, and private-land rules can differ along the same Garden Route day trip.",
+          "Check the land manager and dog rule for the exact route before leaving. On permitted walks, account for wet roots, mud, river crossings, cyclists, wildlife, and sudden weather changes; use a lead where required and carry enough water for the return leg rather than relying on streams.",
+        ],
+        table: {
+          headers: ["George outing", "Check before taking the dog"],
+          rows: [
+            ["Forest or mountain route", "Land manager, dog access, lead rule, trail condition, wildlife, and turnaround time."],
+            ["Garden Route Dam area", "Current access signage, shared-path users, water conditions, and muddy ground after rain."],
+            ["Beachfront", "Whether the exact sand area permits dogs and which paved areas remain accessible on lead."],
+            ["Holiday stay", "Written pet policy, fencing, shared spaces, nearby walks, and an emergency contact."],
+          ],
+        },
+      },
+      {
+        heading: "George has specific beach, leash, and waste rules",
+        body: [
+          "George Municipality states that dogs are not allowed on municipal beach sand except in specifically designated areas. In public streets and public spaces, dogs must be leashed and controlled unless an area is formally designated for free running, and handlers must carry bags and remove faeces.",
+          "Do not generalise a rule from Wilderness to Victoria Bay, Herold's Bay, Gwaing, or SANParks-managed land. Read current signs or the municipal map for the exact access point, and use a non-beach route when the permitted area is unclear.",
+        ],
+      },
+      {
+        heading: "Use wet-weather and peak-season backups",
+        body: [
+          "Rain can leave coats, ears, paws, bedding, and vehicle interiors damp after routine outings. Keep a towel near the door, dry the dog before settling, inspect paws after muddy or stony trails, and substitute indoor scent work or a shorter paved route when conditions are unsafe.",
+          "During holiday periods, busier roads, trails, beaches, and accommodation increase the value of early walks, secure identification, confirmed pet rules, and a vet contact saved before leaving home.",
+        ],
+      },
+    ],
+    related: [
+      { title: "Western Cape Dog Owner Guide", description: "Province context for winter rain, summer heat, coast, mountains, and travel.", href: "/province/western-cape" },
+      { title: "Dog-Friendly Travel Checklist", description: "Prepare for Garden Route drives, accommodation, rules, and emergencies.", href: "/tools/dog-friendly-travel-checklist" },
+      { title: "Dog Leash Laws", description: "Understand how to verify municipal and place-specific control rules.", href: "/laws/dog-leash-laws-south-africa" },
+      { title: "Vet Visit Checklist", description: "Keep records and symptom notes ready during regional travel.", href: "/tools/vet-visit-checklist" },
+    ],
+    sources: [
+      cityOfficialSources.george,
+      {
+        label: "George Municipality parks and recreation",
+        href: "https://www.george.gov.za/community-services-2/parks-recreation/",
+        note: "Official beach, leash, waste, public-space, and designated dog-area guidance.",
+      },
+      {
+        label: "George, Wilderness and Uniondale tourism trail guide",
+        href: "https://www.george.gov.za/wp-content/uploads/2024/04/George-Wilderness-Uniondale-Tourism-Digital-Brochure.pdf",
+        note: "Official municipal tourism context for the area's forest, dam, mountain, and coastal trail network.",
+      },
+      provinceSources["western-cape"],
+    ],
   },
   {
     name: "Stellenbosch",
@@ -1076,9 +1316,11 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
     hubPath: "/city",
     title: `${city.name} Dog Owner Guide`,
     seoTitle: `${city.name} Dog Owner Guide | Dog Haven South Africa`,
-    description: `Practical ${city.name} dog owner guidance covering local lifestyle, vets, adoption, training, grooming, dog-friendly places, provider checks, costs, and emergency preparation.`,
+    description:
+      city.description ??
+      `Practical ${city.name} dog owner guidance covering local lifestyle, vets, adoption, training, grooming, dog-friendly places, provider checks, costs, and emergency preparation.`,
     intro: city.intro,
-    updated: reviewed,
+    updated: city.updated ?? reviewed,
     quickFacts: [
       "Selected local and service pages include manually researched provider details where reliable source records are available; coverage varies by place and service.",
       "Use this guide to plan what to ask, what to check, and how to prepare as a dog owner in the city.",
@@ -1097,6 +1339,7 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
         ],
         bullets: city.careNotes,
       },
+      ...(city.distinctiveSections ?? []),
       {
         heading: "How to find and verify a local vet",
         body: [
@@ -1155,11 +1398,13 @@ export const phase7CityPages: GuideContent[] = phase7CityGuides.map((city) => {
       },
     ],
     faqs: localFaqs(city.name, true),
-    related: commonRelated([
-      { title: `${city.province} Province Guide`, description: "Wider provincial dog-care context.", href: province ? `/province/${province.slug}` : "/province" },
-      { title: "Dog Costs", description: "Budget for food, vet care, and emergency savings.", href: "/costs" },
-      { title: "Insurance", description: "Understand pet insurance trade-offs.", href: "/insurance" },
-    ]),
+    related:
+      city.related ??
+      commonRelated([
+        { title: `${city.province} Province Guide`, description: "Wider provincial dog-care context.", href: province ? `/province/${province.slug}` : "/province" },
+        { title: "Dog Costs", description: "Budget for food, vet care, and emergency savings.", href: "/costs" },
+        { title: "Insurance", description: "Understand pet insurance trade-offs.", href: "/insurance" },
+      ]),
     sources: sourceList(city.sources),
   };
 });
