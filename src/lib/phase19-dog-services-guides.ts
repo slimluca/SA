@@ -94,14 +94,74 @@ function sourceList(city: (typeof localCities)[number]): Source[] {
   return [city.source, ...coreSources];
 }
 
-function commonRelated(city: (typeof localCities)[number]): CardLink[] {
+function serviceLink(city: (typeof localCities)[number], serviceKey: DogServiceKey): CardLink {
+  const service = dogServices.find((item) => item.key === serviceKey)!;
+  return {
+    title: `${service.titleLabel} in ${city.name}`,
+    description: service.cardDescription,
+    href: pathFor(city, service),
+  };
+}
+
+function relatedFor(city: (typeof localCities)[number], service: DogService): CardLink[] {
+  const useCoastalJourney = new Set(["cape-town", "durban", "gqeberha"]).has(city.slug);
+  const localHub = {
+    title: `${city.name} Local Dog Guides`,
+    description: "Local grooming, training, emergency vet, and dog-friendly guidance.",
+    href: `/local/${city.slug}`,
+  };
+
+  if (service.key === "boarding") {
+    return [
+      localHub,
+      serviceLink(city, "holiday-care"),
+      { title: "Vaccination Schedule", description: "Prepare the health records a kennel may request.", href: "/health/vaccination-schedule-south-africa" },
+      useCoastalJourney
+        ? { title: `${city.name} Dog Cost Guide`, description: "Plan boarding alongside routine and emergency costs.", href: `/local-costs/${city.slug}/monthly-dog-costs-${city.slug}` }
+        : { title: `${city.province} Dog Owner Guide`, description: "Plan climate, travel, local risks, and emergency preparation.", href: `/province/${city.provinceSlug}` },
+    ];
+  }
+
+  if (service.key === "daycare") {
+    return [
+      localHub,
+      serviceLink(city, "dog-walkers"),
+      { title: "Puppy Socialisation", description: "Compare structured early exposure with group daycare.", href: "/puppy/puppy-socialisation-south-africa" },
+      useCoastalJourney
+        ? { title: "Dog Training", description: "Work on recall, calm greetings, and over-arousal.", href: "/training" }
+        : { title: "Dog Age Calculator", description: "Consider life stage, stamina, rest, and group-play fit.", href: "/tools/dog-age-calculator" },
+    ];
+  }
+
+  if (service.key === "pet-sitters") {
+    return [
+      localHub,
+      serviceLink(city, "holiday-care"),
+      { title: "Vet Visit Checklist", description: "Prepare medication, allergy, and emergency notes for a sitter.", href: "/tools/vet-visit-checklist" },
+      useCoastalJourney
+        ? { title: "Dog Costs", description: "Budget for home care, travel, and emergencies.", href: "/costs" }
+        : { title: "New Dog Shopping List", description: "Prepare home supplies, routines, and care notes.", href: "/tools/new-dog-shopping-list" },
+    ];
+  }
+
+  if (service.key === "dog-walkers") {
+    return [
+      localHub,
+      serviceLink(city, "pet-sitters"),
+      { title: `${city.name} Dog-Friendly Places`, description: "Check local outing rules, access, heat, and etiquette.", href: `/local/${city.slug}/dog-friendly-places-${city.slug}` },
+      useCoastalJourney
+        ? { title: "Dog Training", description: "Improve lead manners, recall, and public behaviour.", href: "/training" }
+        : { title: "Dog Leash Laws", description: "Check lead control and public-space responsibilities.", href: "/laws/dog-leash-laws-south-africa" },
+    ];
+  }
+
   return [
-    { title: `${city.name} Local Dog Guides`, description: "Grooming, training, emergency vet preparation, and dog-friendly checks.", href: `/local/${city.slug}` },
-    { title: `${city.name} Cost Guides`, description: "City cost factors for grooming, training, emergency vet care, and monthly budgets.", href: `/local-costs/${city.slug}/monthly-dog-costs-${city.slug}` },
-    { title: `${city.name} City Guide`, description: "Local dog-owner context for housing, weather, traffic, and outings.", href: `/city/${city.slug}` },
-    { title: `${city.province} Province Guide`, description: "Province-level climate, risks, travel, and rule-check context.", href: `/province/${city.provinceSlug}` },
-    { title: "Dog Cost Calculator", description: "Estimate monthly ownership costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
-    { title: "Vet Visit Checklist", description: "Prepare information before a vet appointment or urgent call.", href: "/tools/vet-visit-checklist" },
+    localHub,
+    serviceLink(city, "daycare"),
+    { title: `${city.name} Dog Cost Guide`, description: "Plan holiday care alongside travel and emergency costs.", href: `/local-costs/${city.slug}/monthly-dog-costs-${city.slug}` },
+    useCoastalJourney
+      ? { title: "Dog-Friendly Travel Checklist", description: "Prepare water, records, rules, heat, and emergency steps.", href: "/tools/dog-friendly-travel-checklist" }
+      : { title: "Pet-Friendly Accommodation", description: "Check stay rules, access, safety, and current pet policies.", href: "/dog-friendly/pet-friendly-accommodation-south-africa" },
   ];
 }
 
@@ -298,14 +358,7 @@ function boardingGuide(city: (typeof localCities)[number], service: DogService):
           "It can be helpful for anxious dogs, first-time boarders, puppies, seniors, and dogs with separation concerns, if the provider offers it safely.",
       },
     ],
-    related: [
-      { title: "Puppy Care", description: "First-year health, records, and safer routines.", href: "/puppy/puppy-care-south-africa" },
-      { title: "Vaccination Schedule", description: "Core vaccination questions to ask your vet.", href: "/health/vaccination-schedule-south-africa" },
-      { title: "Emergency Help", description: "Urgent symptom guidance for South African owners.", href: "/emergency" },
-      { title: "Vet Visit Checklist", description: "Prepare care notes and questions.", href: "/tools/vet-visit-checklist" },
-      { title: "Dog Cost Calculator", description: "Plan boarding alongside monthly costs.", href: "/tools/dog-cost-calculator" },
-      ...commonRelated(city),
-    ],
+    related: relatedFor(city, service),
     sources: sourceList(city),
   };
 }
@@ -396,13 +449,7 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
           "Watch for limping, coughing, vomiting, diarrhoea, extreme tiredness, stress behaviours, or reluctance to return. Contact a vet for health concerns.",
       },
     ],
-    related: [
-      { title: "Dog Training", description: "Humane training and public behaviour guidance.", href: "/training" },
-      { title: "Puppy Socialisation", description: "Safer exposure for young dogs.", href: "/puppy/puppy-socialisation-south-africa" },
-      { title: "Dog Age Calculator", description: "Understand broad life-stage needs.", href: "/tools/dog-age-calculator" },
-      { title: "Breed Match Quiz", description: "Think through energy, space, grooming, and social needs.", href: "/tools/dog-breed-match-quiz" },
-      ...commonRelated(city),
-    ],
+    related: relatedFor(city, service),
     sources: sourceList(city),
   };
 }
@@ -492,12 +539,7 @@ function sitterGuide(city: (typeof localCities)[number], service: DogService): G
           "Yes. Written notes reduce mistakes around food, medication, keys, gates, vet contacts, walks, and updates.",
       },
     ],
-    related: [
-      { title: "New Dog Shopping List", description: "Prepare basics and home routines.", href: "/tools/new-dog-shopping-list" },
-      { title: "Vet Visit Checklist", description: "Record medication and health notes.", href: "/tools/vet-visit-checklist" },
-      { title: "Dog Costs", description: "Budget for care, travel, and emergencies.", href: "/costs" },
-      ...commonRelated(city),
-    ],
+    related: relatedFor(city, service),
     sources: sourceList(city),
   };
 }
@@ -587,13 +629,7 @@ function walkerGuide(city: (typeof localCities)[number], service: DogService): G
           "Heat can be dangerous. Ask walkers about shade, water, timing, hot pavements, shorter walks, and when walks are cancelled or changed.",
       },
     ],
-    related: [
-      { title: "Dog Leash Laws", description: "Understand rule-check basics before public walks.", href: "/laws/dog-leash-laws-south-africa" },
-      { title: "Dog Training", description: "Leash manners, recall, barking, and behaviour support.", href: "/training" },
-      { title: `${city.name} Dog-Friendly Places`, description: "How to check outing rules and etiquette.", href: `/local/${city.slug}/dog-friendly-places-${city.slug}` },
-      { title: "Dog-Friendly Travel Checklist", description: "Plan water, leashes, records, and emergency steps.", href: "/tools/dog-friendly-travel-checklist" },
-      ...commonRelated(city),
-    ],
+    related: relatedFor(city, service),
     sources: sourceList(city),
   };
 }
@@ -683,14 +719,7 @@ function holidayGuide(city: (typeof localCities)[number], service: DogService): 
           "Only if the dog is suited to travel and the accommodation, transport, weather, rules, and emergency plan are suitable.",
       },
     ],
-    related: [
-      { title: "Dog-Friendly Travel Checklist", description: "Plan water, records, rules, heat, and emergency steps.", href: "/tools/dog-friendly-travel-checklist" },
-      { title: "Local Cost Guides", description: "Budget by city for care, emergencies, and monthly costs.", href: "/local-costs" },
-      { title: "Pet-Friendly Accommodation", description: "How to check stays without fake venue listings.", href: "/dog-friendly/pet-friendly-accommodation-south-africa" },
-      { title: "Emergency Help", description: "Urgent symptoms and vet-call preparation.", href: "/emergency" },
-      { title: "Vaccination Schedule", description: "Records to discuss with your vet.", href: "/health/vaccination-schedule-south-africa" },
-      ...commonRelated(city),
-    ],
+    related: relatedFor(city, service),
     sources: sourceList(city),
   };
 }

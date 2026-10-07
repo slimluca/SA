@@ -1342,6 +1342,8 @@ const phase5GuidePagesRaw: GuideContent[] = [
     related: [
       { title: "Toxic Foods", description: "Know dangerous food risks.", href: "/health/toxic-foods-for-dogs-south-africa" },
       { title: "Boerewors Safety", description: "Understand another local food risk.", href: "/food/can-dogs-eat-boerewors" },
+      { title: "Can Dogs Eat Cooked Bones?", description: "Understand bone and braai-leftover risks.", href: "/food/can-dogs-eat-cooked-bones" },
+      { title: "Can Dogs Eat Cheese?", description: "Compare salt, fat, and portion cautions.", href: "/food/can-dogs-eat-cheese" },
       { title: "Dog Food Guide", description: "Build a safer diet.", href: "/food/dog-food-south-africa" },
     ],
     sources: foodSources,
@@ -1433,6 +1435,8 @@ const phase5GuidePagesRaw: GuideContent[] = [
     ],
     related: [
       { title: "Biltong Safety", description: "Avoid salty dried meat treats.", href: "/food/can-dogs-eat-biltong" },
+      { title: "Can Dogs Eat Cooked Bones?", description: "Check cooked-bone and braai-leftover risks.", href: "/food/can-dogs-eat-cooked-bones" },
+      { title: "Can Dogs Eat Onions?", description: "Understand onion risks in seasoned foods.", href: "/food/can-dogs-eat-onions" },
       { title: "Toxic Foods", description: "Understand unsafe ingredients.", href: "/health/toxic-foods-for-dogs-south-africa" },
       { title: "Dog Poisoning", description: "Know emergency next steps.", href: "/emergency/dog-poisoning-south-africa" },
     ],

@@ -832,8 +832,55 @@ const items: FoodSafetyItem[] = [
   },
 ];
 
+const relatedFoodSlugs: Record<string, readonly [string, string]> = {
+  "can-dogs-eat-chocolate": ["can-dogs-eat-grapes", "can-dogs-eat-peanut-butter"],
+  "can-dogs-eat-grapes": ["can-dogs-eat-chocolate", "can-dogs-eat-bread"],
+  "can-dogs-eat-onions": ["can-dogs-eat-garlic", "can-dogs-eat-boerewors"],
+  "can-dogs-eat-garlic": ["can-dogs-eat-onions", "can-dogs-eat-boerewors"],
+  "can-dogs-eat-avocado": ["can-dogs-eat-cheese", "can-dogs-eat-eggs"],
+  "can-dogs-eat-chicken-bones": ["can-dogs-eat-cooked-bones", "can-dogs-eat-boerewors"],
+  "can-dogs-eat-cooked-bones": ["can-dogs-eat-chicken-bones", "can-dogs-eat-boerewors"],
+  "can-dogs-eat-mielie-pap": ["can-dogs-eat-rice", "can-dogs-eat-pumpkin"],
+  "can-dogs-eat-rice": ["can-dogs-eat-mielie-pap", "can-dogs-eat-pumpkin"],
+  "can-dogs-eat-eggs": ["can-dogs-eat-cheese", "can-dogs-eat-avocado"],
+  "can-dogs-eat-cheese": ["can-dogs-eat-eggs", "can-dogs-eat-avocado"],
+  "can-dogs-eat-bread": ["can-dogs-eat-peanut-butter", "can-dogs-eat-grapes"],
+  "can-dogs-eat-peanut-butter": ["can-dogs-eat-bread", "can-dogs-eat-chocolate"],
+  "can-dogs-eat-apples": ["can-dogs-eat-bananas", "can-dogs-eat-carrots"],
+  "can-dogs-eat-bananas": ["can-dogs-eat-apples", "can-dogs-eat-carrots"],
+  "can-dogs-eat-carrots": ["can-dogs-eat-apples", "can-dogs-eat-pumpkin"],
+  "can-dogs-eat-pumpkin": ["can-dogs-eat-carrots", "can-dogs-eat-rice"],
+};
+
+const localFoodLinks: Record<string, CardLink> = {
+  "can-dogs-eat-biltong": {
+    title: "Can Dogs Eat Biltong?",
+    description: "Compare salt, seasoning, fat, and dried-meat risks.",
+    href: "/food/can-dogs-eat-biltong",
+  },
+  "can-dogs-eat-boerewors": {
+    title: "Can Dogs Eat Boerewors?",
+    description: "Check fat, seasoning, onion, garlic, and braai-related risks.",
+    href: "/food/can-dogs-eat-boerewors",
+  },
+};
+
+function relatedFoodLink(slug: string): CardLink {
+  const relatedItem = items.find((item) => item.slug === slug);
+  if (relatedItem) {
+    return {
+      title: relatedItem.title,
+      description: relatedItem.description,
+      href: `/food/${relatedItem.slug}`,
+    };
+  }
+
+  return localFoodLinks[slug]!;
+}
+
 function guideFor(item: FoodSafetyItem): GuideContent {
   const isLowRisk = item.rating === "Safe in small amounts";
+  const relatedFoodLinks = relatedFoodSlugs[item.slug].map(relatedFoodLink);
 
   return {
     slug: item.slug,
@@ -912,7 +959,7 @@ function guideFor(item: FoodSafetyItem): GuideContent {
       },
     ],
     faqs: item.faqs,
-    related: [...(isLowRisk ? safeFoodRelated : commonRelated)],
+    related: [...relatedFoodLinks, ...(isLowRisk ? safeFoodRelated : commonRelated)],
     sources: item.extraSources ?? coreFoodSafetySources,
   };
 }
