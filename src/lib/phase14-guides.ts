@@ -9,6 +9,7 @@ type MoneyGuide = {
   summary: string;
   context: string;
   tableRows: string[][];
+  tableHeaders?: string[];
   questions: string[];
   avoid: string[];
   checklist: string[];
@@ -31,6 +32,26 @@ const sources = {
     label: "FSCA consumer education on financial advice",
     href: "https://www.fscamymoney.co.za/Pages/Managing%20your%20money/Financial-advisory-and-intermediary-service.aspx",
     note: "Consumer education on financial advice and intermediaries in South Africa.",
+  },
+  oneplan: {
+    label: "Oneplan Pet Plans and Pricing",
+    href: "https://oneplan.co.za/plans/PetPlans",
+    note: "Official plan page and published starting premiums/annual limits, checked 8 November 2026. Quote and policy wording may change.",
+  },
+  medipet: {
+    label: "MediPet Compare Plans",
+    href: "https://medipet.co.za/compare-plans/",
+    note: "Official plan page and published dog premiums/annual limits, checked 8 November 2026. Quote and policy wording may change.",
+  },
+  dotsure: {
+    label: "Pick n Pay Pet Club by dotsure",
+    href: "https://www.dotsure.co.za/picknpaypetclub",
+    note: "Official partner product page and published starting premiums/annual limits, checked 8 November 2026. These offers may be channel-specific and can change.",
+  },
+  outsurance: {
+    label: "OUTsurance Pet Insurance",
+    href: "https://www.outsurance.co.za/pet-insurance/",
+    note: "Official plan page and published annual limits, checked 8 November 2026. The page reviewed did not publish premiums; request a quote.",
   },
   savc: {
     label: "South African Veterinary Council",
@@ -68,23 +89,20 @@ const insuranceGuides: MoneyGuide[] = [
     slug: "compare-dog-insurance-south-africa",
     hubPath: "/insurance",
     title: "Compare Dog Insurance in South Africa",
-    seoTitle: "Compare Dog Insurance South Africa | Policy Checklist",
+    seoTitle: "Compare Dog Insurance South Africa | Plans, Prices & Cover",
     description:
-      "Compare dog insurance in South Africa with a neutral checklist for premiums, excesses, limits, exclusions, waiting periods and claims.",
+      "Compare published dog insurance plan prices and annual limits from South African providers, with official source links and a clear policy-wording checklist.",
     summary:
       "Compare dog insurance by reading the policy wording, not just the monthly premium. The cheapest premium can still be expensive if excesses, limits, exclusions, waiting periods, or claim rules do not suit your dog.",
     context:
       "South African pet insurance products can differ in accident cover, illness cover, routine care add-ons, exclusions, claim processes, and how they treat age, breed, dental issues, hereditary conditions, and pre-existing conditions. Dog Haven does not rank insurers or provide financial advice.",
-    updated: "2026-08-08",
+    updated: "2026-11-08",
+    tableHeaders: ["Provider", "Published dog plan examples and starting premiums", "Published annual limits and comparison notes"],
     tableRows: [
-      ["Monthly premium", "What you pay regularly, but it is only one part of the comparison."],
-      ["Excess", "The amount or percentage you pay when claiming, sometimes per claim or condition."],
-      ["Annual limit", "The maximum the policy may pay in a year."],
-      ["Per-condition limit", "A separate cap for one illness, injury, or treatment category."],
-      ["Waiting periods", "Time before certain cover starts; accident and illness timing can differ."],
-      ["Exclusions", "Items the policy will not cover, often including pre-existing conditions."],
-      ["Cover scope", "Compare accident, illness, chronic-condition, routine-care, dental, and hereditary wording rather than relying on product labels."],
-      ["Claims and payment", "Check forms, invoices, vet records, deadlines, disputes, and whether you pay the vet first or direct payment may be available."],
+      ["Oneplan", "Accident: R80/month; Primary: from R160/month; Classic: from R280/month; Super: from R430/month.", "Overall annual limits shown for those plans: R8,500; R18,000; R52,000; and R75,000 respectively. The page also lists separate benefit caps, waiting periods, and optional add-ons."],
+      ["MediPet", "Accident Basic: R199/month; Lite: from R325; LitePlus: from R1,499; Essential: from R489; Ultimate360: from R769.", "Annual limits shown in the same order: R25,000; R40,000; R40,000; R62,000; and R75,000. Benefits and optional add-ons differ by plan."],
+      ["dotsure via Pick n Pay Pet Club", "Accidental: from R99/month; Vital: from R219; Elite: from R399; Deluxe: from R430; Ultimate: from R1,399.", "Annual policy limits shown in the same order: R17,000; R30,000; R47,000; R82,000; and R140,000. The page is for the Pick n Pay Pet Club offer."],
+      ["OUTsurance", "The official page reviewed did not publish monthly premiums; request an individual quote.", "Published overall annual limits: Accidental R26,500; Core R50,000; Standard R50,000; Executive R75,000. Per-claim limits, waiting periods, and benefit scope vary by plan."],
     ],
     questions: [
       "Is this accident-only, illness, comprehensive, or routine-care cover?",
@@ -129,7 +147,7 @@ const insuranceGuides: MoneyGuide[] = [
       },
     ],
     related: insuranceRelated,
-    sources: [sources.fsca, sources.fscaAdvice],
+    sources: [sources.oneplan, sources.medipet, sources.dotsure, sources.outsurance, sources.fsca, sources.fscaAdvice],
   },
   {
     slug: "retired-dog-insurance-comparison-article",
@@ -1166,7 +1184,7 @@ function toGuide(guide: MoneyGuide): GuideContent {
           "Tables are a starting point for comparison, not a substitute for current quotes or policy documents.",
         ],
         table: {
-          headers: [isInsurance ? "Policy factor" : "Cost factor", "Why it matters"],
+          headers: guide.tableHeaders ?? [isInsurance ? "Policy factor" : "Cost factor", "Why it matters"],
           rows: guide.tableRows,
         },
       },
