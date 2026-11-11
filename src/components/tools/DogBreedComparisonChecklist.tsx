@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const sections = [
   {
@@ -156,6 +157,14 @@ export function DogBreedComparisonChecklist() {
           </section>
         ))}
       </div>
+
+      <KeepExploring
+        links={[
+          { title: "Breed match quiz", href: "/tools/dog-breed-match-quiz" },
+          { title: "Adoption guides", href: "/adoption" },
+          { title: "Cost calculator", href: "/tools/dog-cost-calculator" },
+        ]}
+      />
     </div>
   );
 }
