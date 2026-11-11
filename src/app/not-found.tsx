@@ -3,14 +3,14 @@ import { Home, PawPrint } from "lucide-react";
 import { ContentLinkCard } from "@/components/ContentLinkCard";
 
 const helpfulLinks = [
+  { title: "Start Here", description: "Find the right guide for your situation.", href: "/start-here" },
   { title: "Emergency", description: "Urgent symptoms and what to prepare before phoning a vet.", href: "/emergency" },
   { title: "Health", description: "Vaccines, ticks, toxic foods, vet visits, and prevention.", href: "/health" },
+  { title: "Tools", description: "Free calculators and checklists for everyday dog decisions.", href: "/tools" },
   { title: "Breeds", description: "Choose a dog that fits your home, climate, and routine.", href: "/breeds" },
   { title: "Adoption", description: "Shelter questions, puppy scam safety, and first-week planning.", href: "/adoption" },
   { title: "Costs", description: "Monthly budgets, vet costs, puppy costs, and emergency savings.", href: "/costs" },
   { title: "Food", description: "Dog food choices, puppy food, labels, and unsafe local foods.", href: "/food" },
-  { title: "Province Guides", description: "Local dog-care context by South African province.", href: "/province" },
-  { title: "City Guides", description: "Dog-owner guidance for major South African cities.", href: "/city" },
 ];
 
 export default function NotFound() {
