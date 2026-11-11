@@ -9,6 +9,7 @@ import { OriginalResourcePanel } from "@/components/OriginalResourcePanel";
 import { SourceList } from "@/components/SourceList";
 import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
 import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
+import { AuthorTrustBox } from "@/components/AuthorTrustBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -291,6 +292,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
                 <FAQBlock items={guide.faqs} />
               </div>
             </section>
+
+            <AuthorTrustBox updated={guide.updated} />
         </div>
 
         <aside aria-label="Further guidance and sources" className="mt-12 grid items-start gap-6 border-t border-oat pt-10 md:grid-cols-2 xl:grid-cols-3">
