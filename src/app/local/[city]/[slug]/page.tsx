@@ -35,10 +35,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
+  // These local service guides are highly templated and Google is not indexing them.
+  // Noindex them so crawl budget and signals focus on stronger content.
   return createMetadata({
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
+    noindex: true,
   });
 }
 
