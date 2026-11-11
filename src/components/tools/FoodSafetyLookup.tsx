@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const foods = [
   { key: "chocolate", label: "Chocolate", rating: "Emergency", note: "Chocolate can be dangerous. Contact a vet urgently if eaten.", href: "/food/can-dogs-eat-chocolate" },
@@ -85,6 +86,14 @@ export function FoodSafetyLookup() {
       <p className="mt-4 text-sm leading-6 text-bark">
         If your dog ate a dangerous food, ate a large amount, or has vomiting, weakness, tremors, collapse, pain, breathing changes, or unusual behaviour, contact a veterinarian urgently.
       </p>
+
+      <KeepExploring
+        links={[
+          { title: "Feeding calculator", href: "/tools/dog-feeding-calculator" },
+          { title: "Toxic foods guide", href: "/health/toxic-foods-for-dogs-south-africa" },
+          { title: "Emergency guides", href: "/emergency" },
+        ]}
+      />
     </div>
   );
 }
