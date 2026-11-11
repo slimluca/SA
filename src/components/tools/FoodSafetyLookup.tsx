@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 const foods = [
   { key: "chocolate", label: "Chocolate", rating: "Emergency", note: "Chocolate can be dangerous. Contact a vet urgently if eaten.", href: "/food/can-dogs-eat-chocolate" },
@@ -33,22 +33,47 @@ const styleByRating: Record<string, string> = {
 };
 
 export function FoodSafetyLookup() {
+  const [query, setQuery] = useState("");
   const [selected, setSelected] = useState(foods[0]);
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return foods;
+    return foods.filter((food) => food.label.toLowerCase().includes(q));
+  }, [query]);
 
   return (
     <div className="rounded-2xl border border-oat bg-white p-5 shadow-sm">
       <label className="grid gap-2 text-sm font-bold text-cocoa">
-        Choose a food
-        <select
+        Search or choose a food
+        <input
+          type="search"
+          placeholder="Try chocolate, grapes, biltong…"
           className="rounded-xl border border-oat bg-cream px-3 py-3 text-bark"
-          value={selected.key}
-          onChange={(event) => setSelected(foods.find((food) => food.key === event.target.value) ?? foods[0])}
-        >
-          {foods.map((food) => (
-            <option key={food.key} value={food.key}>{food.label}</option>
-          ))}
-        </select>
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </label>
+
+      <div className="mt-4 grid max-h-48 gap-2 overflow-y-auto rounded-xl border border-oat bg-cream p-2">
+        {filtered.length === 0 ? (
+          <p className="px-3 py-4 text-sm text-bark">No matching food. Try another name or browse the list.</p>
+        ) : (
+          filtered.map((food) => (
+            <button
+              key={food.key}
+              type="button"
+              onClick={() => setSelected(food)}
+              className={`rounded-lg px-3 py-2 text-left text-sm font-bold transition ${
+                selected.key === food.key ? "bg-moss text-white" : "bg-white text-cocoa hover:bg-sage/20"
+              }`}
+            >
+              {food.label}
+            </button>
+          ))
+        )}
+      </div>
+
       <section className={`mt-5 rounded-2xl border p-5 ${styleByRating[selected.rating]}`}>
         <p className="text-sm font-black uppercase tracking-wide">Safety category</p>
         <h2 className="mt-2 text-3xl font-black">{selected.rating}</h2>
