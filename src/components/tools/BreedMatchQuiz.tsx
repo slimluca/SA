@@ -91,6 +91,21 @@ export function BreedMatchQuiz() {
           ))}
         </div>
       </div>
+
+      <div className="mt-6 rounded-2xl border border-sage/30 bg-sage/5 p-5">
+        <p className="text-sm font-black text-cocoa">Keep exploring</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="/tools/dog-breed-comparison-checklist" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Breed comparison checklist
+          </Link>
+          <Link href="/adoption" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Adoption guides
+          </Link>
+          <Link href="/tools/dog-cost-calculator" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Cost calculator
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
