@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 export type ChecklistGroup = {
   title: string;
@@ -48,6 +49,14 @@ export function ChecklistTool({ groups }: { groups: ChecklistGroup[] }) {
           </section>
         ))}
       </div>
+
+      <KeepExploring
+        links={[
+          { title: "New puppy checklist", href: "/tools/new-puppy-home-checklist" },
+          { title: "Dog care checklist", href: "/tools/dog-care-printable-checklist" },
+          { title: "Start here", href: "/start-here" },
+        ]}
+      />
     </div>
   );
 }
