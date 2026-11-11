@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const checklistData = {
   puppy: {
@@ -86,6 +87,14 @@ export function PrintableChecklistTool({ type }: { type: keyof typeof checklistD
           </section>
         ))}
       </div>
+
+      <KeepExploring
+        links={[
+          { title: "Puppy readiness quiz", href: "/tools/puppy-readiness-quiz" },
+          { title: "Dog care routine builder", href: "/tools/dog-care-routine-builder" },
+          { title: "Start here", href: "/start-here" },
+        ]}
+      />
     </div>
   );
 }
