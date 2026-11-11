@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const ageMultipliers = {
@@ -99,11 +100,26 @@ export function DogFeedingCalculator() {
         <p className="text-sm font-black uppercase tracking-wide text-bark">Estimated daily starting point</p>
         <p className="mt-2 text-3xl font-black text-cocoa">{result.calories.toLocaleString("en-ZA")} kcal/day</p>
         <p className="mt-2 text-lg font-black text-moss">
-          About {result.gramsLow}g - {result.gramsHigh}g per day for this food type estimate
+          About {result.gramsLow}g – {result.gramsHigh}g per day for this food type estimate
         </p>
         <p className="mt-3 text-sm leading-6 text-bark">
           Check your exact food label because calories vary widely. Adjust with body condition and veterinary advice.
         </p>
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-sage/30 bg-sage/5 p-5">
+        <p className="text-sm font-black text-cocoa">Keep exploring</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="/tools/can-my-dog-eat-this" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Can my dog eat this?
+          </Link>
+          <Link href="/tools/dog-cost-calculator" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Dog cost calculator
+          </Link>
+          <Link href="/food/how-much-should-i-feed-my-dog" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Feeding guide
+          </Link>
+        </div>
       </div>
     </div>
   );
