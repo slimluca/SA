@@ -4,7 +4,6 @@ import { GuideArticle } from "@/components/GuideArticle";
 import { dogServices, getPhase19DogServiceGuide } from "@/lib/phase19-dog-services-guides";
 import { localCities } from "@/lib/phase17-local-guides";
 import { createMetadata } from "@/lib/seo";
-import { shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 
 type PageProps = {
   params: Promise<{
@@ -30,15 +29,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const metadata = createMetadata({
+  // Force noindex on these templated service pages.
+  return createMetadata({
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
+    noindex: true,
   });
-
-  return shouldNoindexLocalGuide(guide.path)
-    ? { ...metadata, robots: { index: false, follow: true } }
-    : metadata;
 }
 
 export default async function DogServiceGuidePage({ params }: PageProps) {
