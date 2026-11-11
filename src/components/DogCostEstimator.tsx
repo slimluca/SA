@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const sizeRanges = {
@@ -155,6 +156,21 @@ export function DogCostEstimator() {
           Use this as a conversation starter. Request actual quotes from vets, groomers, trainers,
           insurers, shelters, and suppliers before committing to a dog or policy.
         </p>
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-sage/30 bg-sage/5 p-5">
+        <p className="text-sm font-black text-cocoa">Keep exploring</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="/costs/south-africa-dog-ownership-cost-report" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Cost report
+          </Link>
+          <Link href="/tools/dog-feeding-calculator" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Feeding calculator
+          </Link>
+          <Link href="/insurance" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Insurance guides
+          </Link>
+        </div>
       </div>
     </section>
   );
