@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const names = {
   cute: ["Bean", "Nunu", "Milo", "Lulu", "Biscuit", "Pip", "Teddy", "Mochi", "Poppy", "Buttons"],
@@ -90,6 +91,14 @@ export function DogNameGenerator() {
         Names are generated in your browser and are not stored. Test favourites out loud before
         choosing, and avoid names that sound too similar to cues such as sit, stay, no, down or come.
       </p>
+
+      <KeepExploring
+        links={[
+          { title: "Puppy name shortlist", href: "/tools/puppy-name-shortlist" },
+          { title: "Dog names guide", href: "/dog-names" },
+          { title: "New puppy checklist", href: "/tools/new-puppy-home-checklist" },
+        ]}
+      />
     </div>
   );
 }
