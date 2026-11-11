@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const checklistSections = [
   {
@@ -111,7 +112,7 @@ export function SeniorDogCareChecklist() {
         <p className="font-black text-cocoa">Senior care planning note</p>
         <p className="mt-1">
           This checklist runs in your browser and does not collect or store personal information. It
-          helps you prepare observations for your vet, but your veterinarian&apos;s advice comes
+          helps you prepare observations for your vet, but your veterinarian's advice comes
           first.
         </p>
         <p className="mt-3 font-bold text-cocoa">
@@ -143,6 +144,14 @@ export function SeniorDogCareChecklist() {
           </section>
         ))}
       </div>
+
+      <KeepExploring
+        links={[
+          { title: "Health calendar", href: "/tools/dog-health-calendar" },
+          { title: "Senior dog food", href: "/food/senior-dog-food-south-africa" },
+          { title: "Vet visit checklist", href: "/tools/vet-visit-checklist" },
+        ]}
+      />
     </div>
   );
 }
