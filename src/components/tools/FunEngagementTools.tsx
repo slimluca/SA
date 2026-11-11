@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 type QuizOption = {
   label: string;
@@ -129,6 +130,13 @@ export function DogPersonalityQuiz() {
           links={result?.links ?? [{ label: "Dog enrichment ideas", href: "/fun/dog-enrichment-ideas-south-africa" }]}
         />
       </div>
+      <KeepExploring
+        links={[
+          { title: "Care routine builder", href: "/tools/dog-care-routine-builder" },
+          { title: "Enrichment ideas", href: "/fun" },
+          { title: "Training guides", href: "/training" },
+        ]}
+      />
     </ToolShell>
   );
 }
@@ -180,6 +188,13 @@ export function PuppyReadinessQuiz() {
           ]}
         />
       </div>
+      <KeepExploring
+        links={[
+          { title: "New puppy checklist", href: "/tools/new-puppy-home-checklist" },
+          { title: "Puppy guides", href: "/puppy" },
+          { title: "Adoption safety", href: "/adoption" },
+        ]}
+      />
     </ToolShell>
   );
 }
@@ -219,6 +234,13 @@ export function DogCareRoutineBuilder() {
         ))}
       </div>
       <LinkChips links={[{ label: "Dog health calendar", href: "/tools/dog-health-calendar" }, { label: "Weekly planner", href: "/tools/weekly-dog-care-planner" }, { label: "Dog food", href: "/food" }]} />
+      <KeepExploring
+        links={[
+          { title: "Weekly planner", href: "/tools/weekly-dog-care-planner" },
+          { title: "Health calendar", href: "/tools/dog-health-calendar" },
+          { title: "Feeding calculator", href: "/tools/dog-feeding-calculator" },
+        ]}
+      />
     </ToolShell>
   );
 }
@@ -338,6 +360,13 @@ function ChecklistWidget({ title, note, groups }: { title: string; note: string;
         ))}
       </div>
       <LinkChips links={[{ label: "Dog-friendly places", href: "/dog-friendly" }, { label: "Dog laws", href: "/laws" }, { label: "Local guides", href: "/local" }]} />
+      <KeepExploring
+        links={[
+          { title: "More tools", href: "/tools" },
+          { title: "Dog-friendly places", href: "/dog-friendly" },
+          { title: "Start here", href: "/start-here" },
+        ]}
+      />
     </ToolShell>
   );
 }
