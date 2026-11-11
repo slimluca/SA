@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const starterNames = ["Milo", "Lulu", "Pip", "Nala", "Bean", "Scout", "Cleo", "Koda"];
 
@@ -83,6 +84,14 @@ export function PuppyNameShortlist() {
           </p>
         )}
       </section>
+
+      <KeepExploring
+        links={[
+          { title: "Name generator", href: "/tools/dog-name-generator" },
+          { title: "Dog names guide", href: "/dog-names" },
+          { title: "New puppy checklist", href: "/tools/new-puppy-home-checklist" },
+        ]}
+      />
     </div>
   );
 }
