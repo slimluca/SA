@@ -54,6 +54,15 @@ const retiredSitemapPaths = new Set([
   "/health/dog-drinking-a-lot-of-water-south-africa",
 ]);
 
+// High-volume templated local expansion pages that Google is not indexing.
+// Removing them from the sitemap reduces crawl waste and focuses signals on stronger content.
+const excludeFromSitemap = new Set([
+  ...phase28LocalGuidePages.map((g) => g.path),
+  ...phase17LocalGuidePages.map((g) => g.path),
+  ...phase19DogServiceGuidePages.map((g) => g.path),
+  ...phase18LocalCostGuidePages.map((g) => g.path),
+]);
+
 const hubs = [
   ...hubPages,
   provinceHub,
@@ -63,7 +72,7 @@ const hubs = [
   toolsHub,
   localHub,
   ...localCityHubs,
-  ...phase28LocalCityHubs,
+  // phase28LocalCityHubs intentionally kept for now as hubs may still have value
   localCostHub,
   dogServicesHub,
   dogNamesHub,
@@ -84,9 +93,6 @@ const guides: GuideContent[] = [
   ...phase13GuidePages,
   ...phase14GuidePages,
   ...phase15GuidePages,
-  ...phase17LocalGuidePages,
-  ...phase18LocalCostGuidePages,
-  ...phase19DogServiceGuidePages,
   ...phase20RecoveryGuidePages,
   ...phase21PreventionGuidePages,
   ...phase22SterilisationGuidePages,
@@ -94,7 +100,6 @@ const guides: GuideContent[] = [
   ...phase25BreedLifestyleGuidePages,
   ...phase26DogNameGuidePages,
   ...phase27FunGuidePages,
-  ...phase28LocalGuidePages,
   ...phase29HealthSymptomGuidePages,
   ...phase30CostInsuranceGuidePages,
   ...flagshipGuides,
@@ -110,7 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of guides) {
-    if (retiredSitemapPaths.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
+    if (retiredSitemapPaths.has(guide.path) || excludeFromSitemap.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
 
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),
