@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const sizeFactors = {
@@ -63,6 +64,21 @@ export function DogAgeCalculator() {
         <p className="mt-2 text-3xl font-black text-cocoa">{result.stage}</p>
         <p className="mt-2 text-sm font-semibold text-bark">Very rough human-age style estimate: about {result.humanLike} years.</p>
         <p className="mt-3 leading-7 text-bark">{result.reminder}</p>
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-sage/30 bg-sage/5 p-5">
+        <p className="text-sm font-black text-cocoa">Keep exploring</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="/tools/dog-health-calendar" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Health calendar
+          </Link>
+          <Link href="/tools/senior-dog-care-checklist" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Senior care checklist
+          </Link>
+          <Link href="/puppy" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-moss shadow-sm hover:bg-sage/10">
+            Puppy guides
+          </Link>
+        </div>
       </div>
     </div>
   );
