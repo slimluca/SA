@@ -34,6 +34,15 @@ export default function AboutPage() {
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
+          <h2 className="text-2xl font-black text-cocoa">The Dog Haven Editorial Team</h2>
+          <p className="mt-3 leading-7 text-bark">
+            The Dog Haven Editorial Team is the group responsible for planning, researching,
+            writing, checking, and correcting the guides on this site. We focus on practical owner
+            decisions, clear safety boundaries, and sources that can be verified. We do not claim
+            veterinary review or professional credentials we do not hold.
+          </p>
+        </article>
+        <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">What makes the guides different</h2>
           <p className="mt-3 leading-7 text-bark">
             Guides connect general dog-care information to useful owner actions: warning signs,
@@ -45,12 +54,10 @@ export default function AboutPage() {
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">How guides are selected and written</h2>
           <p className="mt-3 leading-7 text-bark">
-            The Dog Haven Editorial Team is the organisation responsible for planning, sourcing,
-            checking, publishing, and correcting these guides. Topics are chosen around recurring
-            South African owner decisions, especially questions where unclear advice could waste
-            time, money, or delay care. Drafts define the reader&apos;s decision, check local relevance,
-            use appropriate sources, state safety limits, and link to a useful next step before
-            publication.
+            Topics are chosen around recurring South African owner decisions, especially questions
+            where unclear advice could waste time, money, or delay care. Drafts define the
+            reader's decision, check local relevance, use appropriate sources, state safety
+            limits, and link to a useful next step before publication.
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
@@ -60,14 +67,14 @@ export default function AboutPage() {
             been manually researched against an official provider source or a clearly identified
             public source. These options are starting points, not rankings or endorsements. Readers
             must confirm current services, availability, prices, rules, and emergency intake
-            directly. Where there are not enough verified options, the page still provides a
+            directly. Where there are not enough verified options, the page still provides
             questions and checklists for readers researching their own options.
           </p>
         </article>
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">What Dog Haven cannot verify</h2>
           <p className="mt-3 leading-7 text-bark">
-            A published source cannot guarantee a provider&apos;s present availability, service quality,
+            A published source cannot guarantee a provider's present availability, service quality,
             price, suitability for a particular dog, or response in an emergency. Venue rules,
             laws, product information, and professional availability can also change. Check the
             current details with the responsible organisation or professional before relying on
