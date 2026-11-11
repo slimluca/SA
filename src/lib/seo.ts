@@ -9,6 +9,7 @@ type SeoInput = {
   imageAlt?: string;
   imageWidth?: number;
   imageHeight?: number;
+  noindex?: boolean;
 };
 
 export function createMetadata({
@@ -19,6 +20,7 @@ export function createMetadata({
   imageAlt = `${siteConfig.name} practical dog care guide`,
   imageWidth = 1200,
   imageHeight = 630,
+  noindex = false,
 }: SeoInput): Metadata {
   const canonical = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
@@ -30,6 +32,12 @@ export function createMetadata({
     alternates: {
       canonical,
     },
+    robots: noindex
+      ? {
+          index: false,
+          follow: true,
+        }
+      : undefined,
     openGraph: {
       title,
       description,
