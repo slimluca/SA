@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { KeepExploring } from "@/components/tools/KeepExploring";
 
 const lifeStages = {
   puppy: {
@@ -118,7 +119,7 @@ export function DogHealthCalendar() {
         <p className="text-sm font-black uppercase tracking-wide text-moss">Planning note</p>
         <p className="mt-2 leading-7 text-bark">
           {lifeStages[stage].note} This tool does not store data or create exact medical
-          reminders. Use it as a prompt list, then follow your veterinarian&apos;s schedule and
+          reminders. Use it as a prompt list, then follow your veterinarian's schedule and
           product instructions.
         </p>
       </div>
@@ -158,6 +159,14 @@ export function DogHealthCalendar() {
           </div>
         ))}
       </div>
+
+      <KeepExploring
+        links={[
+          { title: "Senior care checklist", href: "/tools/senior-dog-care-checklist" },
+          { title: "Vet visit checklist", href: "/tools/vet-visit-checklist" },
+          { title: "Health guides", href: "/health" },
+        ]}
+      />
     </div>
   );
 }
