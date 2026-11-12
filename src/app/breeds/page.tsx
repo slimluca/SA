@@ -34,8 +34,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Best Dog Breeds for South Africa | Family, Apartment & Active Owners | Dog Haven",
+  description: "Choose the right dog breed for South African homes. Compare heat tolerance, size, grooming, exercise needs, family fit, and costs. Free breed quiz and comparison checklist.",
   path: hub.path,
   image: hubVisual.image.src,
   imageAlt: hubVisual.image.alt,
