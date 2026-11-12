@@ -10,6 +10,7 @@ import { SourceList } from "@/components/SourceList";
 import { TableOfContents, toHeadingId } from "@/components/TableOfContents";
 import { VerifiedLocalOptions } from "@/components/VerifiedLocalOptions";
 import { AuthorTrustBox } from "@/components/AuthorTrustBox";
+import { HeatstrokeActionBox } from "@/components/HeatstrokeActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -117,6 +118,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
             <EmergencyNotice />
           </div>
         ) : null}
+
+        {guide.slug === "heatstroke-in-dogs-south-africa" ? <HeatstrokeActionBox /> : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
