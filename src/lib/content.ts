@@ -1022,12 +1022,12 @@ export const guidePages: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Parvovirus in Dogs in South Africa: Puppy Red Flags and Urgent Care",
-    seoTitle: "Parvovirus in Dogs South Africa | Symptoms, Risk and Vet Care",
+    seoTitle: "Parvovirus in Dogs South Africa: Symptoms, Prevention & Emergency Care (2026)",
     description:
       "A practical South African guide to canine parvovirus signs, puppy risk, vaccination prevention, cleaning, and when to contact a vet urgently.",
     intro:
       "Canine parvovirus can progress quickly, especially in young, unvaccinated, or partly vaccinated dogs. Learn the red flags, contact a vet promptly, and do not try to treat this dangerous illness at home.",
-    updated: "2026-05-12",
+    updated: "2026-11-12",
     isHealthGuide: true,
     quickFacts: [
       "Parvovirus can cause severe vomiting, diarrhoea, dehydration, weakness, and rapid decline.",
@@ -1098,6 +1098,21 @@ export const guidePages: GuideContent[] = [
         question: "Can I treat parvo at home?",
         answer:
           "A puppy with suspected parvo needs veterinary care. Treatment often involves fluids, monitoring, and supportive care that cannot be safely replaced by home remedies.",
+      },
+      {
+        question: "How long after vaccination is a puppy safe from parvo?",
+        answer:
+          "Full protection usually requires a series of vaccines and time after the final dose. Ask your vet when it is safe to socialise in higher-risk areas. Until then, avoid dog parks, pet shops, and shared grass.",
+      },
+      {
+        question: "What should I do if my puppy has bloody diarrhoea?",
+        answer:
+          "Phone a vet immediately. Bloody or foul diarrhoea in a puppy can be a red flag for parvovirus. Isolate the puppy from other dogs, collect vaccine history, and follow the clinic’s arrival instructions.",
+      },
+      {
+        question: "Is parvo common in South Africa?",
+        answer:
+          "Yes. Many South African vets report high numbers of cases, especially in unvaccinated or incompletely vaccinated dogs. Prevention through vaccination and careful socialisation is critical.",
       },
       {
         question: "When can my puppy go to public places?",
