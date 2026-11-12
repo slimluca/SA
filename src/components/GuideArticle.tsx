@@ -14,6 +14,8 @@ import { HeatstrokeActionBox } from "@/components/HeatstrokeActionBox";
 import { ToxicFoodActionBox } from "@/components/ToxicFoodActionBox";
 import { CostPlanningBox } from "@/components/CostPlanningBox";
 import { PoisoningActionBox } from "@/components/PoisoningActionBox";
+import { BiliaryActionBox } from "@/components/BiliaryActionBox";
+import { DiarrhoeaActionBox } from "@/components/DiarrhoeaActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -126,6 +128,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         {guide.slug === "toxic-foods-for-dogs-south-africa" ? <ToxicFoodActionBox /> : null}
         {guide.slug === "south-africa-dog-ownership-cost-report" ? <CostPlanningBox /> : null}
         {guide.slug === "dog-poisoning-south-africa" ? <PoisoningActionBox /> : null}
+        {guide.slug === "biliary-tick-bite-fever-dogs-south-africa" ? <BiliaryActionBox /> : null}
+        {guide.slug === "dog-diarrhoea-south-africa" ? <DiarrhoeaActionBox /> : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
