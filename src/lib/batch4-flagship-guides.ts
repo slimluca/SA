@@ -227,6 +227,8 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { question: "Should I fast my dog after diarrhoea?", answer: "Do not apply a fixed fasting rule to every dog. Puppies and dogs with some health conditions may be harmed by inappropriate fasting. Ask a veterinarian what feeding plan fits this dog's age, health and symptoms." },
       { question: "Can stress cause loose stool?", answer: "Stress can be associated with diarrhoea, but it does not prove the cause. Infection, parasites, diet, toxins, foreign material and disease can look similar, so take other symptoms and progression seriously." },
       { question: "Should I take a stool sample to the vet?", answer: "Ask the clinic. A recent sample may help in some cases, but a photo may be sufficient initially and an urgent visit should never be delayed to collect one." },
+      { question: "What should I record before calling the vet about diarrhoea?", answer: "Note frequency, colour, blood or mucus, whether the dog is eating and drinking, any recent food changes, scavenging, ticks, or possible toxin exposure, and how long it has been happening." },
+      { question: "Can I give my dog human anti-diarrhoea medicine?", answer: "No. Human medicines can be dangerous for dogs. Contact a veterinarian for advice rather than giving leftover or over-the-counter products." },
     ],
     related: [
       { title: "When to Take Your Dog to the Vet", description: "Match symptoms and progression to the right level of care.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
