@@ -174,7 +174,7 @@ export default async function ToolPage({ params }: PageProps) {
               </article>
             </div>
             <p className="mt-6 leading-7 text-bark">
-              The American Animal Hospital Association describes canine life stages using development and an individual dog's expected lifespan; it notes that size, lifestyle, and health status affect the right care plan. Read the <a className="font-bold text-moss underline-offset-4 hover:underline" href="https://www.aaha.org/resources/life-stage-canine-2019/canine-life-stage-definitions/" target="_blank" rel="noreferrer">AAHA canine life-stage guidance</a>. A research-based human-age equation has also been studied in Labradors, but it should not be read as a universal, size-adjusted conversion.
+              The American Animal Hospital Association describes canine life stages using development and an individual dog&apos;s expected lifespan; it notes that size, lifestyle, and health status affect the right care plan. Read the <a className="font-bold text-moss underline-offset-4 hover:underline" href="https://www.aaha.org/resources/life-stage-canine-2019/canine-life-stage-definitions/" target="_blank" rel="noreferrer">AAHA canine life-stage guidance</a>. A research-based human-age equation has also been studied in Labradors, but it should not be read as a universal, size-adjusted conversion.
             </p>
           </section>
         ) : null}
