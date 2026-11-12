@@ -24,8 +24,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Dog Grooming South Africa | Costs, Home Care & Choosing a Groomer | Dog Haven",
+  description: "Dog grooming guides for South Africa: coat care, nail trimming, ear cleaning, mobile vs parlour costs, and how to choose a safe groomer. Practical advice for all breeds.",
   path: hub.path,
 });
 
