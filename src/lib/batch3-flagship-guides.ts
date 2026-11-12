@@ -7,12 +7,12 @@ export const batch3FlagshipGuides: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Dog Poisoning in South Africa: What Owners Should Do First",
-    seoTitle: "Dog Poisoning South Africa | Symptoms and Emergency Steps",
+    seoTitle: "Dog Poisoning South Africa: Symptoms, First Steps & When to Call the Vet (2026)",
     description:
       "Urgent South African dog-poisoning guidance covering household toxins, warning signs, veterinary call preparation, safe transport, and what owners should not do.",
     intro:
       "Suspected poisoning is an emergency even when a dog still looks normal. A product may cause rapid illness, delayed organ damage, abnormal bleeding, or neurological signs, and different formulations require different veterinary decisions. Remove access without putting yourself at risk, keep other animals away, identify what may be involved, and phone a veterinarian or emergency animal clinic immediately.",
-    updated: "2026-08-09",
+    updated: "2026-11-12",
     primaryImage: {
       src: "/images/guides/dog-poisoning-prevention-south-africa.webp",
       alt: "Dog owner safely storing household products away from a dog",
@@ -140,6 +140,10 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Can I give activated charcoal at home?", answer: "Do not give charcoal unless a veterinarian specifically directs and supervises its use. It is not appropriate for every toxin and can be dangerous when aspiration is possible." },
       { question: "What should I bring to the vet after a possible poisoning?", answer: "Bring the product packaging, any photos of the substance or plant, and notes on the estimated amount, time of exposure, and the dog's weight and symptoms." },
       { question: "Are human medicines a poisoning risk for dogs?", answer: "Yes. Human medicines are a separate hazard. Contact a veterinarian urgently with the exact medicine, strength, amount, and time if exposure may have occurred." },
+      { question: "Are rat baits and snail pellets common risks in South Africa?", answer: "Yes. Rodent and slug products are widely used around homes and gardens. Contact a vet immediately if you suspect access, even if the dog still looks normal." },
+      { question: "What about antifreeze, pool chemicals, or garage products?", answer: "Antifreeze is highly toxic. Pool chemicals, fuels, and cleaners can cause severe injury. Treat any known exposure as urgent and phone a vet with product details." },
+      { question: "Can loadshedding increase poisoning risk?", answer: "Yes. Outages can lead to open storage, moved products, or dogs exploring garages. Check for spills or access after power returns." },
+
     ],
     related: [
       { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
