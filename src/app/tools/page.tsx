@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/seo";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
-  title: toolsHub.seoTitle,
-  description: toolsHub.description,
-  path: toolsHub.path,
+  title: "Free Dog Tools South Africa | Calculators, Quizzes & Checklists | Dog Haven",
+  description: "Free interactive tools for South African dog owners: feeding calculator, cost estimator, food safety lookup, breed quiz, age calculator, and printable checklists. No login required.",
+  path: "/tools",
 });
 
 const featured = [
