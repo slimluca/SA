@@ -32,8 +32,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Dog Training South Africa | Puppy School, Obedience & Behaviour Guides | Dog Haven",
+  description: "Humane dog training guides for South Africa: puppy school, recall, lead manners, barking, reactivity, and choosing a trainer. Practical everyday advice.",
   path: hub.path,
 });
 
