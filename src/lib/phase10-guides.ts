@@ -167,6 +167,16 @@ const symptomGuides: SymptomGuide[] = [
         answer:
           "No. Repeated vomiting can cause dehydration and may signal poisoning, obstruction, infection, or internal illness. Phone a vet.",
       },
+      {
+        question: "What should I record before calling the vet about vomiting?",
+        answer:
+          "Note frequency, colour, blood, whether the dog is drinking and active, recent food or scavenging, possible toxins, and how long it has been happening.",
+      },
+      {
+        question: "Can a dog vomit from heat or stress in South Africa?",
+        answer:
+          "Yes, heat, stress, and sudden diet changes can contribute, but they do not rule out more serious causes. Persistent or severe vomiting still needs veterinary advice.",
+      },
     ],
     related: [
       { title: "Dog Poisoning", description: "What to do after toxin exposure.", href: "/emergency/dog-poisoning-south-africa" },
