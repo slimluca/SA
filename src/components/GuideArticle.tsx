@@ -25,7 +25,7 @@ import { VetTimingActionBox } from "@/components/VetTimingActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
-import { JsonLd, articleSchema, datasetSchema, faqSchema, howToSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, datasetSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
 import { Download, FileSpreadsheet } from "lucide-react";
@@ -86,95 +86,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         />
       ) : null}
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
-      {guide.slug === "heatstroke-in-dogs-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do if your dog has suspected heatstroke in South Africa",
-            description: "Immediate steps for suspected heatstroke: move to cool area, contact a vet, begin controlled cooling, offer water carefully, and transport for assessment.",
-            steps: [
-              { name: "Move out of the heat", text: "Move the dog to shade or a cool, ventilated area immediately. Stop all exercise." },
-              { name: "Phone a veterinarian", text: "Phone a veterinarian or emergency clinic while arranging transport. Describe the dog’s condition, how long it was in the heat, and any cooling already started." },
-              { name: "Begin controlled cooling", text: "Begin controlled cooling: cool or tepid water on the body with airflow (fan or vehicle ventilation). Do not use ice baths or extreme cold." },
-              { name: "Offer water carefully", text: "Offer small amounts of water only if the dog is alert and can swallow normally. Do not force water." },
-              { name: "Transport for veterinary care", text: "Transport as directed. Continue safe cooling on the way. Even if the dog looks better, it still needs veterinary assessment." },
-            ],
-          })}
-        />
-      ) : null}
-      {guide.slug === "parvovirus-in-dogs-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do if you suspect parvovirus in your puppy in South Africa",
-            description: "Urgent steps for suspected parvo: contact a vet immediately, isolate the puppy, gather vaccine history, and follow clinic arrival instructions.",
-            steps: [
-              { name: "Phone a veterinarian immediately", text: "Call your vet or an emergency clinic as soon as you see repeated vomiting, bloody diarrhoea, or severe lethargy in a puppy." },
-              { name: "Isolate the puppy", text: "Keep the puppy away from other dogs. Parvo spreads easily through faeces and contaminated surfaces." },
-              { name: "Gather useful information", text: "Have vaccine records ready. Note when symptoms started and any known exposure to other dogs." },
-              { name: "Follow arrival instructions", text: "The clinic may ask you to wait outside or use a specific entrance to protect other patients." },
-              { name: "Do not attempt home treatment", text: "Do not give human medicine or force-feed. Professional supportive care is essential." },
-            ],
-          })}
-        />
-      ) : null}
-      {guide.slug === "toxic-foods-for-dogs-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do if your dog ate a toxic food in South Africa",
-            description: "Immediate steps after a dog eats chocolate, xylitol, grapes, or other dangerous food.",
-            steps: [
-              { name: "Remove access", text: "Remove any remaining food or packaging. Do not give more." },
-              { name: "Call a vet", text: "Phone a veterinarian or emergency clinic immediately with the product, ingredients, estimated amount, and time." },
-              { name: "Do not induce vomiting", text: "Do not induce vomiting or give salt, oil, milk, or charcoal unless the vet specifically instructs you." },
-              { name: "Note details", text: "Note the dog’s weight, age, and any symptoms." },
-              { name: "Transport as directed", text: "Follow the vet’s advice on transport and bring the packaging if safe." },
-            ],
-          })}
-        />
-      ) : null}
-      {guide.slug === "dog-poisoning-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do for suspected dog poisoning in South Africa",
-            description: "Urgent first steps after possible exposure to toxins, baits, or chemicals.",
-            steps: [
-              { name: "Remove from area", text: "Remove the dog from the area. Keep other animals and children away." },
-              { name: "Call a vet", text: "Phone a veterinarian or emergency clinic immediately. Have the product packaging ready if safe to collect." },
-              { name: "Do not induce vomiting", text: "Do not induce vomiting or give milk, oil, salt, or charcoal unless the vet specifically instructs you." },
-              { name: "Note details", text: "Note the time, estimated amount, dog’s weight, and any symptoms." },
-              { name: "Transport as directed", text: "Follow the vet’s advice on transport. Bring the packaging and any photos." },
-            ],
-          })}
-        />
-      ) : null}
-      {guide.slug === "biliary-tick-bite-fever-dogs-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do if you suspect biliary (tick bite fever) in your dog",
-            description: "Steps when a dog shows signs after possible tick exposure in South Africa.",
-            steps: [
-              { name: "Call a vet promptly", text: "Phone a veterinarian if your dog is lethargic, off food, has pale gums, dark urine, or is getting worse after possible tick exposure." },
-              { name: "Do not wait", text: "Biliary can progress quickly. Do not wait for multiple symptoms." },
-              { name: "Prepare information", text: "Tell the clinic about recent walks, tick checks, prevention product, and current signs." },
-              { name: "Transport as advised", text: "Follow advice on when to come in. Early testing and treatment improve outcomes." },
-            ],
-          })}
-        />
-      ) : null}
-      {guide.slug === "snake-bites-in-dogs-south-africa" ? (
-        <JsonLd
-          data={howToSchema({
-            name: "What to do for a suspected snake bite in a dog in South Africa",
-            description: "Immediate actions after a possible snake bite.",
-            steps: [
-              { name: "Keep the dog still", text: "Keep the dog as still and calm as possible. Limit walking and excitement." },
-              { name: "Call a vet immediately", text: "Phone a veterinarian or emergency clinic immediately. Say it may be a snake bite and give your location." },
-              { name: "Do not use myths", text: "Do not cut, suck, apply a tourniquet, or give human medicines or home remedies." },
-              { name: "Note the snake if safe", text: "If safe, note the snake’s appearance or take a clear photo from a distance. Do not try to catch or kill it." },
-              { name: "Transport as directed", text: "Transport as directed. Call ahead so the clinic can prepare." },
-            ],
-          })}
-        />
-      ) : null}
+
 
       <article>
         <header className="bg-emerald-deep text-white">
