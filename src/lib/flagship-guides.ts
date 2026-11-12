@@ -161,6 +161,8 @@ export const flagshipGuides: GuideContent[] = [
       { question: "Can biliary be fatal?", answer: "Severe or complicated canine babesiosis can be life-threatening. Prompt assessment matters, particularly when a dog is pale, weak, collapsing, breathing abnormally, or deteriorating quickly." },
       { question: "Can my dog get biliary despite tick prevention?", answer: "No prevention method removes every risk. Correct product selection, on-time use, physical tick checks, and prompt veterinary care for illness signs work together." },
       { question: "How long does recovery take?", answer: "It depends on severity, complications, treatment response, and the individual dog. Follow the treating vet's recheck plan and ask what improvement and warning signs to expect." },
+      { question: "What should I tell the vet if I suspect biliary?", answer: "Describe when signs started, any ticks found or possible exposure, gum colour, urine changes, appetite, weakness, and the last tick-prevention product used." },
+      { question: "Should I wait to see if my dog improves after a tick bite?", answer: "No. Weakness, pale gums, appetite loss, or rapid worsening after possible tick exposure need prompt veterinary assessment. Do not wait for more symptoms." },
     ],
     related: [
       { title: "Ticks and Fleas", description: "Physical checks, household control, product safety, and prevention routines.", href: "/health/ticks-and-fleas-dogs-south-africa" },
