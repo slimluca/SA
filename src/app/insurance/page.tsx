@@ -30,8 +30,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Dog Insurance South Africa | Compare Policies, Costs & Claims | Dog Haven",
+  description: "Compare dog insurance in South Africa: premiums, excesses, exclusions, waiting periods, and claims process. Practical guides to help you choose cover that fits your dog.",
   path: hub.path,
 });
 
