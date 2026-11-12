@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HubPage } from "@/components/HubPage";
-import { toolsHub, tools } from "@/lib/tools-data";
+import { toolsHub } from "@/lib/tools-data";
 import { createMetadata } from "@/lib/seo";
 import { ArrowRight } from "lucide-react";
 
@@ -66,9 +66,9 @@ export default function ToolsPage() {
           <h2 className="text-xl font-black text-navy">Why these tools help</h2>
           <p className="mt-2 text-sm leading-6 text-bark">All tools run in your browser. No login, no personal data, and no third-party tracking. Use them to plan feeding, costs, food safety, and routines, then cross-check with the related guides for South African context.</p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <a href="/emergency" className="text-sm font-semibold text-emerald-800 underline">Emergency guides</a>
-            <a href="/health" className="text-sm font-semibold text-emerald-800 underline">Health guides</a>
-            <a href="/costs" className="text-sm font-semibold text-emerald-800 underline">Cost planning</a>
+            <Link href="/emergency" className="text-sm font-semibold text-emerald-800 underline">Emergency guides</Link>
+            <Link href="/health" className="text-sm font-semibold text-emerald-800 underline">Health guides</Link>
+            <Link href="/costs" className="text-sm font-semibold text-emerald-800 underline">Cost planning</Link>
           </div>
         </div>
       </section>
