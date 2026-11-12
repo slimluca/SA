@@ -7,7 +7,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Dog Poisoning in South Africa: What Owners Should Do First",
-    seoTitle: "Dog Poisoning South Africa: Symptoms, First Steps & When to Call the Vet (2026)",
+    seoTitle: "Dog Poisoning in South Africa: Symptoms and First Steps",
     description:
       "Urgent South African dog-poisoning guidance covering household toxins, warning signs, veterinary call preparation, safe transport, and what owners should not do.",
     intro:
@@ -142,7 +142,6 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Are human medicines a poisoning risk for dogs?", answer: "Yes. Human medicines are a separate hazard. Contact a veterinarian urgently with the exact medicine, strength, amount, and time if exposure may have occurred." },
       { question: "Are rat baits and snail pellets common risks in South Africa?", answer: "Yes. Rodent and slug products are widely used around homes and gardens. Contact a vet immediately if you suspect access, even if the dog still looks normal." },
       { question: "What about antifreeze, pool chemicals, or garage products?", answer: "Antifreeze is highly toxic. Pool chemicals, fuels, and cleaners can cause severe injury. Treat any known exposure as urgent and phone a vet with product details." },
-      { question: "Can loadshedding increase poisoning risk?", answer: "Yes. Outages can lead to open storage, moved products, or dogs exploring garages. Check for spills or access after power returns." },
 
     ],
     related: [
@@ -163,7 +162,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Heatstroke in Dogs in South Africa",
-    seoTitle: "Heatstroke in Dogs South Africa: Signs, Cooling Steps & Emergency Guide (2026)",
+    seoTitle: "Heatstroke in Dogs in South Africa: Signs and Emergency Steps",
     description:
       "Practical South African dog heatstroke guidance covering warning signs, urgent veterinary action, cautious first steps, high-risk dogs, and hot-weather prevention.",
     intro:
