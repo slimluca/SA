@@ -134,7 +134,7 @@ export default async function ToolPage({ params }: PageProps) {
 
   return (
     <>
-      <JsonLd data={articleSchema({ title: tool.title, description: tool.description, path: tool.path, dateModified: "2026-05-15" })} />
+      <JsonLd data={articleSchema({ title: tool.title, description: tool.description, path: tool.path, dateModified: tool.slug === "dog-age-calculator" ? "2026-11-12" : "2026-05-15" })} />
       <JsonLd data={faqSchema(tool.faqs)} />
       <section className="bg-emerald-deep text-white">
         <div className="section-shell py-10 sm:py-14">
@@ -152,6 +152,32 @@ export default async function ToolPage({ params }: PageProps) {
         <div className="mt-6 rounded-[1.5rem] border border-oat bg-white p-3 shadow-panel sm:p-5">
           <ToolWidget slug={tool.slug} />
         </div>
+        {tool.slug === "dog-age-calculator" ? (
+          <section className="mt-10 max-w-4xl" aria-labelledby="dog-age-guidance">
+            <p className="section-kicker">Understand the estimate</p>
+            <h2 id="dog-age-guidance" className="section-title">Dog age is more than a human-year number</h2>
+            <p className="section-copy">
+              The familiar rule that one dog year equals seven human years is an oversimplification. Dogs develop quickly in their early years, and ageing later varies with breed, adult size, health, and individual history. This tool gives a broad life-stage prompt; it cannot calculate a precise human equivalent or predict how long a dog will live.
+            </p>
+            <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Use the stage as a conversation starter</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  Puppy, young adult, mature adult, and senior are broad planning labels. Growth and maturity do not happen at identical ages for every dog, and a size category cannot account for breed, body condition, or chronic health problems.
+                </p>
+              </article>
+              <article className="rounded-[1.25rem] border border-oat bg-white p-6 shadow-panel">
+                <h3 className="text-xl font-black text-navy">Plan care around the individual dog</h3>
+                <p className="mt-3 leading-7 text-bark">
+                  Ask your veterinarian when preventive checks should change for your dog. Appetite, weight, movement, thirst, dental health, vision, hearing, and behaviour can matter more than a calculator result.
+                </p>
+              </article>
+            </div>
+            <p className="mt-6 leading-7 text-bark">
+              The American Animal Hospital Association describes canine life stages using development and an individual dog's expected lifespan; it notes that size, lifestyle, and health status affect the right care plan. Read the <a className="font-bold text-moss underline-offset-4 hover:underline" href="https://www.aaha.org/resources/life-stage-canine-2019/canine-life-stage-definitions/" target="_blank" rel="noreferrer">AAHA canine life-stage guidance</a>. A research-based human-age equation has also been studied in Labradors, but it should not be read as a universal, size-adjusted conversion.
+            </p>
+          </section>
+        ) : null}
         {tool.slug === "dog-cost-calculator" ? (
           <section className="mt-10" aria-labelledby="cost-calculator-guidance">
             <p className="section-kicker">Use the estimate well</p>
