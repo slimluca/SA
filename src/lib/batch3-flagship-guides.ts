@@ -255,6 +255,9 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Should I use an ice bath for suspected heatstroke?", answer: "Do not use an ice bath or extreme cooling. Move the dog out of the heat, begin controlled cooling with cool water and airflow, contact a veterinarian, and do not delay transport." },
       { question: "Is a dog safe in a parked car with windows open?", answer: "No. An open window, shade, or water does not make a parked vehicle safe. Arrange continuous adult supervision in a genuinely cool environment or do not take the dog." },
       { question: "Does improvement after cooling mean the dog can stay home?", answer: "Not when heatstroke is suspected. Internal complications may not be obvious, so follow the veterinary team's assessment and transport instructions." },
+      { question: "How quickly can a car become dangerous for a dog in South African heat?", answer: "On a hot day a parked car can become life-threatening within minutes, even with windows cracked. Never leave a dog in a vehicle." },
+      { question: "Which dogs need extra caution in South African summers?", answer: "Flat-faced breeds, overweight dogs, puppies, seniors, heavy-coated dogs, and dogs that are unfit or not used to the heat are at higher risk. Working and highly active dogs can also overheat quickly during exercise." },
+      { question: "What details should I give the vet when calling about possible heatstroke?", answer: "Tell them the dog's current condition, how long it was exposed to heat or exercise, any cooling already started, the dog's size or breed, age, and whether it is vomiting, weak, confused, or collapsed." },
     ],
     related: [
       { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
