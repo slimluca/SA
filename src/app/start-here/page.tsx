@@ -143,9 +143,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = createMetadata({
-  title: "Start Here | Dog Haven South Africa",
+  title: "Start Here | Dog Care Guides & Tools for South Africa | Dog Haven",
   description:
-    "A simple starting page for South African dog owners, linking to Dog Haven's most useful puppy, adoption, emergency, health, food, tools, cost, training, grooming, lifestyle, rules, province, and city guides.",
+    "New to Dog Haven? Start here for practical South African dog care: puppy checklists, adoption safety, emergency signs, food safety tools, cost calculators, training, and local guides.",
   path: "/start-here",
 });
 
