@@ -19,6 +19,8 @@ import { DiarrhoeaActionBox } from "@/components/DiarrhoeaActionBox";
 import { PuppyCareActionBox } from "@/components/PuppyCareActionBox";
 import { SnakeBiteActionBox } from "@/components/SnakeBiteActionBox";
 import { BloatActionBox } from "@/components/BloatActionBox";
+import { VomitingActionBox } from "@/components/VomitingActionBox";
+import { ParvoActionBox } from "@/components/ParvoActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -136,6 +138,8 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         {guide.slug === "puppy-training-south-africa" ? <PuppyCareActionBox /> : null}
         {guide.slug === "snake-bites-in-dogs-south-africa" ? <SnakeBiteActionBox /> : null}
         {guide.slug === "bloat-in-dogs-south-africa" ? <BloatActionBox /> : null}
+        {guide.slug === "dog-vomiting-south-africa" ? <VomitingActionBox /> : null}
+        {guide.slug === "parvovirus-in-dogs-south-africa" ? <ParvoActionBox /> : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
