@@ -60,7 +60,6 @@ export default function Image() {
           }}
         >
           {/* next/image is not available inside ImageResponse's generated markup. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://www.doghaven.co.za/brand/dog-haven-south-africa-logo.png"
             alt="Dog Haven South Africa"
