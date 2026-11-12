@@ -112,7 +112,7 @@ export function SeniorDogCareChecklist() {
         <p className="font-black text-cocoa">Senior care planning note</p>
         <p className="mt-1">
           This checklist runs in your browser and does not collect or store personal information. It
-          helps you prepare observations for your vet, but your veterinarian's advice comes
+          helps you prepare observations for your vet, but your veterinarian&apos;s advice comes
           first.
         </p>
         <p className="mt-3 font-bold text-cocoa">
