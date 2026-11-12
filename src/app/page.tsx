@@ -25,6 +25,15 @@ const topics = [
   { title: "Adoption & puppy care", copy: "Prepare for responsible, unrushed beginnings.", href: "/adoption", image: "/images/home/south-africa-dog-family-adoption.webp", icon: ShieldPlus },
 ] as const;
 
+const emergencyQuickLinks = [
+  { title: "Heatstroke", href: "/emergency/heatstroke-in-dogs-south-africa" },
+  { title: "Poisoning", href: "/emergency/dog-poisoning-south-africa" },
+  { title: "Toxic foods", href: "/health/toxic-foods-for-dogs-south-africa" },
+  { title: "Snake bites", href: "/emergency/snake-bites-in-dogs-south-africa" },
+  { title: "Bloat", href: "/emergency/bloat-in-dogs-south-africa" },
+  { title: "Biliary", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+] as const;
+
 const careLinks = [
   { title: "Health guides", href: "/health", icon: HeartPulse },
   { title: "Emergency help", href: "/emergency", icon: ShieldPlus },
@@ -89,6 +98,12 @@ export default function HomePage() {
         <p className="section-kicker">Free tools</p>
         <h2 className="section-title">Popular free tools</h2>
         <p className="mt-2 max-w-2xl text-sm text-bark">Feeding calculator, cost estimator, food safety lookup, and more. No login required.</p>
+        <div className="mt-6 flex flex-wrap gap-2">
+          {emergencyQuickLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-sm font-semibold text-red-800 hover:bg-red-100">{link.title}</Link>
+          ))}
+        </div>
+        <p className="mt-2 text-xs text-bark">Urgent topics: clear steps if something goes wrong.</p>
         <p className="section-copy">No login. No personal data. Use these tools to plan feeding, costs, food safety and puppy care.</p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {popularTools.map((tool) => (
