@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -28,20 +27,12 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-ZA">
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1001166538143330"
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className="bg-cream font-sans text-bark">
         <JsonLd data={websiteSchema()} />
         <JsonLd data={organizationSchema()} />
         <Header />
         <main>{children}</main>
         <Footer />
-        <GoogleAnalytics gaId="G-78DFVZYFJM" />
       </body>
     </html>
   );
