@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Calculator, FileText } from "lucide-react";
+import { Calculator, FileText } from "lucide-react";
 
 export function CostPlanningBox() {
   return (
