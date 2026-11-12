@@ -163,7 +163,7 @@ export const flagshipGuides: GuideContent[] = [
       { question: "How long does recovery take?", answer: "It depends on severity, complications, treatment response, and the individual dog. Follow the treating vet's recheck plan and ask what improvement and warning signs to expect." },
       { question: "What should I tell the vet if I suspect biliary?", answer: "Describe when signs started, any ticks found or possible exposure, gum colour, urine changes, appetite, weakness, and the last tick-prevention product used." },
       { question: "Should I wait to see if my dog improves after a tick bite?", answer: "No. Weakness, pale gums, appetite loss, or rapid worsening after possible tick exposure need prompt veterinary assessment. Do not wait for more symptoms." },
-      { question: "How common is biliary (tick bite fever) in South Africa?", answer: "Very common in many areas. Ticks are widespread, and biliary is a leading reason for urgent vet visits, especially in summer and high-tick regions." },
+      { question: "How common is biliary (tick bite fever) in South Africa?", answer: "Canine babesiosis occurs in South Africa, but published rates vary substantially by region, period, and the dogs sampled. Older clinic-based studies are not a current national average. Ask a local veterinarian about risk and prevention in your area." },
       { question: "What are the early signs of biliary in dogs?", answer: "Lethargy, fever, loss of appetite, pale gums, dark urine, or jaundice. Any of these after possible tick exposure needs a prompt vet call." },
       { question: "How do I prevent biliary in South African dogs?", answer: "Year-round tick prevention recommended by your vet, regular checks after walks, and keeping gardens and resting areas managed. Discuss the best product for your area and dog." },
 
@@ -178,6 +178,8 @@ export const flagshipGuides: GuideContent[] = [
       { label: "University of Pretoria: canine babesiosis", href: "https://repository.up.ac.za/handle/2263/11021?show=full", note: "Onderstepoort review of canine babesiosis, including clinical findings, diagnosis, complications, and Babesia rossi context." },
       { label: "University of Pretoria: Babesia rossi in South African dogs", href: "https://repository.up.ac.za/items/767f3052-11ae-4dd3-a3de-6aa00af8dd22", note: "South African research involving dogs presented at Onderstepoort Veterinary Academic Hospital." },
       { label: "South African Veterinary Council", href: "https://savc.org.za/", note: "Professional veterinary context and public information for South Africa." },
+      { label: "Molecular detection of tick-borne infections in South African dogs", href: "https://pubmed.ncbi.nlm.nih.gov/18502588/", note: "South African study documenting tick-borne pathogens in domestic dogs; sampling results should not be treated as a current national prevalence estimate." },
+      { label: "Long-term follow-up of dogs exposed to Babesia rossi in South Africa", href: "https://pubmed.ncbi.nlm.nih.gov/32004510/", note: "Longitudinal study of one South African dog population, illustrating why local findings do not represent every region or dog population." },
       { label: "CDC: preventing ticks on pets", href: "https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html", note: "General guidance on prevention and checking pets for ticks." },
     ],
   },
