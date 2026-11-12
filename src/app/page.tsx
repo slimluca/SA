@@ -88,6 +88,7 @@ export default function HomePage() {
       <section className="section-shell py-10">
         <p className="section-kicker">Free tools</p>
         <h2 className="section-title">Popular free tools</h2>
+        <p className="mt-2 max-w-2xl text-sm text-bark">Feeding calculator, cost estimator, food safety lookup, and more. No login required.</p>
         <p className="section-copy">No login. No personal data. Use these tools to plan feeding, costs, food safety and puppy care.</p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {popularTools.map((tool) => (
