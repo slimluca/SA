@@ -228,6 +228,9 @@ export const batch2FlagshipGuides: GuideContent[] = [
       { question: "Can I make my dog vomit at home?", answer: "Not unless a veterinarian specifically instructs you after assessing the exposure. Inducing vomiting can be dangerous in some situations." },
       { question: "Are braai leftovers safe for dogs?", answer: "Mixed leftovers may contain cooked bones, skewers, onion or garlic, excess fat, salt, sauces, or alcohol. Use a planned dog-safe treat instead." },
       { question: "Are human medicines covered by this food guide?", answer: "No. Human medicines are a separate poisoning hazard. Contact a veterinarian urgently with the exact medicine, strength, amount, and time if exposure may have occurred." },
+      { question: "What should I do if my dog eats xylitol or sugar-free peanut butter?", answer: "Treat it as urgent. Xylitol can cause rapid low blood sugar and liver damage. Phone a veterinarian immediately with the product and estimated amount." },
+      { question: "Is one grape or raisin dangerous?", answer: "Yes. Grapes and raisins can cause kidney injury unpredictably. There is no known safe amount. Contact a vet even after a small amount." },
+      { question: "How can I reduce toxic food risk at a braai or party?", answer: "Keep bones, skewers, onion, garlic, alcohol, and fatty leftovers out of reach. Supervise children and visitors, and use a planned dog-safe treat instead." },
     ],
     related: [
       { title: "Dog Poisoning", description: "Urgent toxin-call preparation and emergency warning signs.", href: "/emergency/dog-poisoning-south-africa" },
