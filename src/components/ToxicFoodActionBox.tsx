@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function ToxicFoodActionBox() {
   return (
