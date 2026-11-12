@@ -49,8 +49,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Dog Ownership Costs South Africa | Monthly Budget Calculator & Guides | Dog Haven",
+  description: "What does it really cost to own a dog in South Africa? Free cost calculator, monthly budget guides, vet costs, food, insurance, and grooming price factors.",
   path: hub.path,
   image: hubVisual.image.src,
   imageAlt: hubVisual.image.alt,
