@@ -13,6 +13,7 @@ import { AuthorTrustBox } from "@/components/AuthorTrustBox";
 import { HeatstrokeActionBox } from "@/components/HeatstrokeActionBox";
 import { ToxicFoodActionBox } from "@/components/ToxicFoodActionBox";
 import { CostPlanningBox } from "@/components/CostPlanningBox";
+import { PoisoningActionBox } from "@/components/PoisoningActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -124,6 +125,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         {guide.slug === "heatstroke-in-dogs-south-africa" ? <HeatstrokeActionBox /> : null}
         {guide.slug === "toxic-foods-for-dogs-south-africa" ? <ToxicFoodActionBox /> : null}
         {guide.slug === "south-africa-dog-ownership-cost-report" ? <CostPlanningBox /> : null}
+        {guide.slug === "dog-poisoning-south-africa" ? <PoisoningActionBox /> : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
