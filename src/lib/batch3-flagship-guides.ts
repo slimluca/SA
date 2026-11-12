@@ -281,7 +281,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { label: "South African Veterinary Council", href: "https://savc.org.za/", note: "South African professional context for registered veterinary assessment and emergency care." },
     ],
   },
-  {,
+  {
     slug: "dog-behaviour-problems-south-africa",
     path: "/training/dog-behaviour-problems-south-africa",
     hubTitle: "Dog Training",
