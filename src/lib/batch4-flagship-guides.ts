@@ -112,6 +112,8 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { question: "Does the vet need the snake to be identified?", answer: "Do not delay care or endanger anyone to identify it. Share a safe-distance photo only if one was obtained without approaching the snake. The veterinarian will also assess the circumstances and the dog's clinical signs." },
       { question: "Can I give an antihistamine or pain medicine on the way?", answer: "Do not give medication unless the treating veterinarian specifically instructs you for this dog. Home medicine cannot replace urgent assessment and may complicate care or waste time." },
       { question: "What if my dog seems better after the first few minutes?", answer: "Still speak to a veterinarian. Signs can evolve, and the clinic should decide whether immediate examination or specific observation is appropriate." },
+      { question: "What should I do while waiting for the vet after a snake bite?", answer: "Keep the dog as still and calm as possible. Limit walking and excitement. Do not cut, suck, apply a tourniquet, or give home remedies." },
+      { question: "How can I reduce snake bite risk for my dog in South Africa?", answer: "Supervise dogs in long grass, bush, or near water. Keep gardens clear of debris that snakes may use for cover. Know the nearest emergency vet before you need one." },
     ],
     related: [
       { title: "Dog Emergency Help", description: "Recognise urgent signs and prepare transport and clinic details.", href: "/emergency" },
