@@ -61,6 +61,17 @@ export default function ToolsPage() {
           </div>
         </div>
       </section>
+      <section className="section-shell py-8">
+        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+          <h2 className="text-xl font-black text-navy">Why these tools help</h2>
+          <p className="mt-2 text-sm leading-6 text-bark">All tools run in your browser. No login, no personal data, and no third-party tracking. Use them to plan feeding, costs, food safety, and routines, then cross-check with the related guides for South African context.</p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <a href="/emergency" className="text-sm font-semibold text-emerald-800 underline">Emergency guides</a>
+            <a href="/health" className="text-sm font-semibold text-emerald-800 underline">Health guides</a>
+            <a href="/costs" className="text-sm font-semibold text-emerald-800 underline">Cost planning</a>
+          </div>
+        </div>
+      </section>
       <HubPage hub={toolsHub} />
     </>
   );
