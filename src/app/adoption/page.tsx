@@ -26,8 +26,8 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: hub.seoTitle,
-  description: hub.description,
+  title: "Dog Adoption South Africa | Shelter Questions, Scam Checklist & Safety | Dog Haven",
+  description: "Safe dog adoption in South Africa: puppy scam checklist, shelter questions, first-week planning, records, and costs. Avoid pressure and prepare properly.",
   path: hub.path,
   image: hubVisual.image.src,
   imageAlt: hubVisual.image.alt,
