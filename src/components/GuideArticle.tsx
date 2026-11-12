@@ -25,7 +25,7 @@ import { VetTimingActionBox } from "@/components/VetTimingActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
-import { JsonLd, articleSchema, datasetSchema, faqSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, datasetSchema, faqSchema, howToSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
 import { Download, FileSpreadsheet } from "lucide-react";
@@ -86,6 +86,36 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         />
       ) : null}
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
+      {guide.slug === "heatstroke-in-dogs-south-africa" ? (
+        <JsonLd
+          data={howToSchema({
+            name: "What to do if your dog has suspected heatstroke in South Africa",
+            description: "Immediate steps for suspected heatstroke: move to cool area, contact a vet, begin controlled cooling, offer water carefully, and transport for assessment.",
+            steps: [
+              { name: "Move out of the heat", text: "Move the dog to shade or a cool, ventilated area immediately. Stop all exercise." },
+              { name: "Phone a veterinarian", text: "Phone a veterinarian or emergency clinic while arranging transport. Describe the dog’s condition, how long it was in the heat, and any cooling already started." },
+              { name: "Begin controlled cooling", text: "Begin controlled cooling: cool or tepid water on the body with airflow (fan or vehicle ventilation). Do not use ice baths or extreme cold." },
+              { name: "Offer water carefully", text: "Offer small amounts of water only if the dog is alert and can swallow normally. Do not force water." },
+              { name: "Transport for veterinary care", text: "Transport as directed. Continue safe cooling on the way. Even if the dog looks better, it still needs veterinary assessment." },
+            ],
+          })}
+        />
+      ) : null}
+      {guide.slug === "parvovirus-in-dogs-south-africa" ? (
+        <JsonLd
+          data={howToSchema({
+            name: "What to do if you suspect parvovirus in your puppy in South Africa",
+            description: "Urgent steps for suspected parvo: contact a vet immediately, isolate the puppy, gather vaccine history, and follow clinic arrival instructions.",
+            steps: [
+              { name: "Phone a veterinarian immediately", text: "Call your vet or an emergency clinic as soon as you see repeated vomiting, bloody diarrhoea, or severe lethargy in a puppy." },
+              { name: "Isolate the puppy", text: "Keep the puppy away from other dogs. Parvo spreads easily through faeces and contaminated surfaces." },
+              { name: "Gather useful information", text: "Have vaccine records ready. Note when symptoms started and any known exposure to other dogs." },
+              { name: "Follow arrival instructions", text: "The clinic may ask you to wait outside or use a specific entrance to protect other patients." },
+              { name: "Do not attempt home treatment", text: "Do not give human medicine or force-feed. Professional supportive care is essential." },
+            ],
+          })}
+        />
+      ) : null}
       <article>
         <header className="bg-emerald-deep text-white">
           <div className={`section-shell grid min-w-0 gap-8 py-10 lg:items-center lg:py-14 ${primaryImage ? "lg:grid-cols-[.88fr_1.12fr]" : ""}`}>
