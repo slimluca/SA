@@ -138,6 +138,8 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Should I wait for symptoms if my dog seems normal?", answer: "No. Some dangerous effects are delayed. Phone a veterinarian after a known or credible exposure and give the product, timing, amount, weight, and current-condition details." },
       { question: "What if I do not know exactly what my dog ate?", answer: "Describe the location, damaged containers, missing items, possible timeframe, and current signs. Take clear photographs safely and let the veterinary team guide the next step." },
       { question: "Can I give activated charcoal at home?", answer: "Do not give charcoal unless a veterinarian specifically directs and supervises its use. It is not appropriate for every toxin and can be dangerous when aspiration is possible." },
+      { question: "What should I bring to the vet after a possible poisoning?", answer: "Bring the product packaging, any photos of the substance or plant, and notes on the estimated amount, time of exposure, and the dog's weight and symptoms." },
+      { question: "Are human medicines a poisoning risk for dogs?", answer: "Yes. Human medicines are a separate hazard. Contact a veterinarian urgently with the exact medicine, strength, amount, and time if exposure may have occurred." },
     ],
     related: [
       { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
