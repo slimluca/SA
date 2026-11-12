@@ -126,10 +126,10 @@ export const batch2FlagshipGuides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Toxic Foods for Dogs in South African Homes",
-    seoTitle: "Toxic Foods for Dogs South Africa | Urgent Household Guide",
+    seoTitle: "Toxic Foods for Dogs South Africa: Chocolate, Xylitol, Grapes & Emergency Steps (2026)",
     description: "Practical guidance on dangerous foods for dogs, kitchen and braai prevention, exposure information for the vet, and why owners should not wait for symptoms.",
     intro: "An ordinary kitchen, braai, handbag, child's snack, visitor's plate, or unsecured bin can expose a dog to food that is toxic or physically dangerous. The risk depends on the substance, amount, dog, and timing, so do not use an online dose calculation to decide that a known exposure is safe. Remove access, keep the packaging, and contact a veterinarian promptly.",
-    updated: "2026-08-09",
+    updated: "2026-11-12",
     primaryImage: { src: "/images/guides/toxic-foods-dogs-south-africa.webp", alt: "Dog owner keeping potentially harmful foods safely out of reach", width: 1536, height: 1024 },
     isHealthGuide: true,
     quickFacts: [
@@ -231,6 +231,10 @@ export const batch2FlagshipGuides: GuideContent[] = [
       { question: "What should I do if my dog eats xylitol or sugar-free peanut butter?", answer: "Treat it as urgent. Xylitol can cause rapid low blood sugar and liver damage. Phone a veterinarian immediately with the product and estimated amount." },
       { question: "Is one grape or raisin dangerous?", answer: "Yes. Grapes and raisins can cause kidney injury unpredictably. There is no known safe amount. Contact a vet even after a small amount." },
       { question: "How can I reduce toxic food risk at a braai or party?", answer: "Keep bones, skewers, onion, garlic, alcohol, and fatty leftovers out of reach. Supervise children and visitors, and use a planned dog-safe treat instead." },
+      { question: "Is biltong or droëwors safe for dogs in South Africa?", answer: "Most commercial biltong is high in salt and can contain spices or preservatives. Small plain pieces may be occasional, but it is safer to use a planned dog treat. Avoid anything with garlic or onion." },
+      { question: "What about cooked bones from a South African braai?", answer: "Cooked bones can splinter and cause choking, tooth damage, or internal injury. Never give cooked bones. Raw bones still carry risks and need veterinary guidance." },
+      { question: "Does South African peanut butter contain xylitol?", answer: "Some sugar-free or diabetic-friendly brands do. Always read the label for xylitol, birch sugar, or E967. Any known exposure needs an immediate vet call." },
+      { question: "Can my dog eat pap or mielie pap?", answer: "Plain cooked maize porridge is usually low risk in small amounts, but it is not a balanced diet. Avoid versions with salt, butter, or spices." },
     ],
     related: [
       { title: "Dog Poisoning", description: "Urgent toxin-call preparation and emergency warning signs.", href: "/emergency/dog-poisoning-south-africa" },
