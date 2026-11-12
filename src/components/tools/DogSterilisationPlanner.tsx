@@ -155,7 +155,7 @@ export function DogSterilisationPlanner() {
         <p className="font-black text-cocoa">Planning note</p>
         <p className="mt-1">
           This tool does not collect or store personal information. It is only a checklist to help
-          you prepare questions for your veterinarian. Your vet's instructions come first.
+          you prepare questions for your veterinarian. Your vet&apos;s instructions come first.
         </p>
       </div>
 

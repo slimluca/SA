@@ -263,18 +263,12 @@ const legacyRedirects = [
   ["/diy-dog-brain-games-enrichment-south-africa/", "/fun/dog-enrichment-ideas-south-africa"],
 
   // Additional 404 cleanup from Search Console (2026-11-11)
+  // Keep redirects specific; malformed catch-all patterns fail Next.js builds and can mask real 404s.
   ["/bravecto-vs-nexgard-vs-simparica", "/health/ticks-and-fleas-dogs-south-africa"],
   ["/bravecto-vs-nexgard-vs-simparica/", "/health/ticks-and-fleas-dogs-south-africa"],
   ["/author/admin", "/about"],
   ["/author/admin/", "/about"],
   ["/$", "/"],
-  ["/$/", "/"],
-  ["/&", "/"],
-  ["/&/", "/"],
-  ["/*", "/"],
-  ["/*/", "/"],
-  ["/wp-content/*", "/"],
-  ["/wp-content/*/", "/"],
 
   // Old WordPress feeds
   ["/comments/feed", "/"],

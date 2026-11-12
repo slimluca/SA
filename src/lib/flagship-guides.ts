@@ -33,7 +33,7 @@ export const flagshipGuides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Biliary Tick Bite Fever in Dogs in South Africa",
-    seoTitle: "Biliary (Tick Bite Fever) in Dogs South Africa: Symptoms, Prevention & Vet Timing (2026)",
+    seoTitle: "Biliary (Tick Bite Fever) in Dogs in South Africa: Symptoms and Vet Care",
     description:
       "Understand canine biliary in South Africa, possible warning signs, urgent veterinary care, testing, tick exposure, prevention, and recovery questions.",
     intro:
@@ -163,7 +163,7 @@ export const flagshipGuides: GuideContent[] = [
       { question: "How long does recovery take?", answer: "It depends on severity, complications, treatment response, and the individual dog. Follow the treating vet's recheck plan and ask what improvement and warning signs to expect." },
       { question: "What should I tell the vet if I suspect biliary?", answer: "Describe when signs started, any ticks found or possible exposure, gum colour, urine changes, appetite, weakness, and the last tick-prevention product used." },
       { question: "Should I wait to see if my dog improves after a tick bite?", answer: "No. Weakness, pale gums, appetite loss, or rapid worsening after possible tick exposure need prompt veterinary assessment. Do not wait for more symptoms." },
-      { question: "How common is biliary (tick bite fever) in South Africa?", answer: "Very common in many areas. Ticks are widespread, and biliary is a leading reason for urgent vet visits, especially in summer and high-tick regions." },
+      { question: "How common is biliary (tick bite fever) in South Africa?", answer: "Canine babesiosis occurs in South Africa, but published rates vary substantially by region, period, and the dogs sampled. Older clinic-based studies are not a current national average. Ask a local veterinarian about risk and prevention in your area." },
       { question: "What are the early signs of biliary in dogs?", answer: "Lethargy, fever, loss of appetite, pale gums, dark urine, or jaundice. Any of these after possible tick exposure needs a prompt vet call." },
       { question: "How do I prevent biliary in South African dogs?", answer: "Year-round tick prevention recommended by your vet, regular checks after walks, and keeping gardens and resting areas managed. Discuss the best product for your area and dog." },
 
@@ -178,6 +178,8 @@ export const flagshipGuides: GuideContent[] = [
       { label: "University of Pretoria: canine babesiosis", href: "https://repository.up.ac.za/handle/2263/11021?show=full", note: "Onderstepoort review of canine babesiosis, including clinical findings, diagnosis, complications, and Babesia rossi context." },
       { label: "University of Pretoria: Babesia rossi in South African dogs", href: "https://repository.up.ac.za/items/767f3052-11ae-4dd3-a3de-6aa00af8dd22", note: "South African research involving dogs presented at Onderstepoort Veterinary Academic Hospital." },
       { label: "South African Veterinary Council", href: "https://savc.org.za/", note: "Professional veterinary context and public information for South Africa." },
+      { label: "Molecular detection of tick-borne infections in South African dogs", href: "https://pubmed.ncbi.nlm.nih.gov/18502588/", note: "South African study documenting tick-borne pathogens in domestic dogs; sampling results should not be treated as a current national prevalence estimate." },
+      { label: "Long-term follow-up of dogs exposed to Babesia rossi in South Africa", href: "https://pubmed.ncbi.nlm.nih.gov/32004510/", note: "Longitudinal study of one South African dog population, illustrating why local findings do not represent every region or dog population." },
       { label: "CDC: preventing ticks on pets", href: "https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html", note: "General guidance on prevention and checking pets for ticks." },
     ],
   },
@@ -190,7 +192,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Ticks and Fleas on Dogs South Africa | Checks and Prevention",
     description: "A practical South African guide to checking dogs for ticks and fleas, household control, product safety, prevention routines, and veterinary warning signs.",
     intro: "Ticks and fleas can affect South African dogs throughout the year, including in gardens, parks, long grass, farms, boarding facilities, holiday accommodation, and ordinary travel stops. A reliable routine combines the right species-specific product, hands-on checks, household control where needed, and fast veterinary advice when skin or illness signs appear.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/ticks-fleas-dog-check-south-africa.webp",
       alt: "Owner checking a dog's coat and skin for ticks and fleas",
@@ -314,7 +316,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Pet Insurance for Dogs South Africa | Neutral Cover Guide",
     description: "A provider-neutral South African guide to dog insurance and dog medical aid, including cover, limits, excesses, waiting periods, exclusions, claims, and savings.",
     intro: "Pet insurance, dog insurance, and dog medical aid are phrases South African owners often use for plans that help with eligible veterinary costs. Product names are not reliable shortcuts: the policy wording determines what is covered, what remains your responsibility, when benefits start, and whether you pay the vet before claiming reimbursement.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/pet-insurance-dog-planning-south-africa.webp",
       alt: "Dog owner reviewing veterinary costs and pet insurance information at home",
@@ -444,7 +446,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Puppy Scam Checklist South Africa | Safer Adoption and Buying",
     description: "A practical South African puppy scam checklist covering deposits, seller checks, stolen photos, video calls, records, safe viewing, payment, evidence, and reporting.",
     intro: "Puppy scams exploit excitement, sympathy, and the fear that somebody else will take the dog. A polished advert, vaccination claim, registration logo, or convincing transport story is not proof. Slow the process down and verify the seller, the puppy, the records, the location, and the payment terms before money changes hands.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/puppy-scam-verification-south-africa.webp",
       alt: "Prospective puppy owner checking information before making a payment",
@@ -575,7 +577,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Cost of Owning a Dog in South Africa | National Budget Guide",
     description: "Build a realistic South African dog budget for setup, food, veterinary care, prevention, grooming, training, insurance, services, senior care, and emergencies.",
     intro: "There is no honest national price that fits every South African dog. Size, age, health, diet, coat, behaviour, location, travel, supplier changes, and household routines all shift the total. A useful budget separates initial setup, predictable monthly care, annual or occasional costs, and emergencies so one quiet month is not mistaken for the true cost of ownership.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/dog-ownership-budget-south-africa.webp",
       alt: "Dog owner planning a household budget for ongoing dog-care costs",

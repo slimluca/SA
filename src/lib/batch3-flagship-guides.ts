@@ -7,7 +7,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Dog Poisoning in South Africa: What Owners Should Do First",
-    seoTitle: "Dog Poisoning South Africa: Symptoms, First Steps & When to Call the Vet (2026)",
+    seoTitle: "Dog Poisoning in South Africa: Symptoms and First Steps",
     description:
       "Urgent South African dog-poisoning guidance covering household toxins, warning signs, veterinary call preparation, safe transport, and what owners should not do.",
     intro:
@@ -142,7 +142,6 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "Are human medicines a poisoning risk for dogs?", answer: "Yes. Human medicines are a separate hazard. Contact a veterinarian urgently with the exact medicine, strength, amount, and time if exposure may have occurred." },
       { question: "Are rat baits and snail pellets common risks in South Africa?", answer: "Yes. Rodent and slug products are widely used around homes and gardens. Contact a vet immediately if you suspect access, even if the dog still looks normal." },
       { question: "What about antifreeze, pool chemicals, or garage products?", answer: "Antifreeze is highly toxic. Pool chemicals, fuels, and cleaners can cause severe injury. Treat any known exposure as urgent and phone a vet with product details." },
-      { question: "Can loadshedding increase poisoning risk?", answer: "Yes. Outages can lead to open storage, moved products, or dogs exploring garages. Check for spills or access after power returns." },
 
     ],
     related: [
@@ -158,126 +157,12 @@ export const batch3FlagshipGuides: GuideContent[] = [
     ],
   },
   {
-    P26-11-12",
-    primaryImage: {
-      src: "/images/guides/dog-heat-safety-south-africa.webp",
-      alt: "Dog resting safely in the shade with water during warm weather",
-      width: 1536,
-      height: 1024,
-    },
-    isHealthGuide: true,
-    quickFacts: [
-      "A hot car is dangerous even for a short stop. Shade, an open window, or a bowl of water does not make a parked vehicle safe.",
-      "Heavy panting, excessive drooling, weakness, confusion, vomiting, abnormal gum colour, collapse, or seizures can signal an emergency.",
-      "Move the dog out of the heat, begin controlled cooling with cool water and airflow, and travel for veterinary care without delaying to attempt prolonged home treatment.",
-      "Flat-faced, older, very young, overweight, heavy-coated, medically affected, working, and highly active dogs may need especially conservative plans.",
-    ],
-    sections: [
-      {
-        heading: "Why dogs overheat",
-        body: [
-          "Dogs depend mainly on panting and limited heat loss through their paws rather than sweating across the body as people do. High air temperature, humidity, direct sun, physical effort, stress, poor ventilation, warm surfaces, dehydration, and inadequate recovery can overwhelm this cooling system. A dog may continue trying to follow an owner even after safe exercise capacity has been exceeded.",
-          "South African conditions vary from humid coastal weather to dry inland heat, sudden heatwaves, hot paved suburbs, beaches, farms, trails, and power interruptions that affect indoor airflow. Risk is created by the combination of the individual dog, intensity, duration, acclimatisation, surface temperature, shade, water, airflow, and the ability to stop early.",
-        ],
-      },
-      {
-        heading: "When heat becomes an emergency",
-        body: [
-          "Heavy panting that does not settle promptly with rest deserves attention. Excessive drooling, weakness, wobbliness, confusion, vomiting, diarrhoea, abnormal gum colour, breathing difficulty, collapse, or seizures require urgent veterinary action. Do not rely on a single temperature reading or wait for every sign to appear.",
-          "Move the dog to shade or a cool, ventilated area and phone a veterinarian or emergency clinic. Tell them the dog's condition, location, estimated duration of heat or exercise, risk factors, and what cooling has started. A dog that appears better after cooling can still have internal complications and needs professional assessment when heatstroke is suspected.",
-        ],
-        callout: "caution",
-      },
-      {
-        heading: "Cautious first steps while arranging veterinary care",
-        body: [
-          "Remove the dog from the hot environment and stop exercise. Use cool or tepid water on the body with moving air from a fan or vehicle ventilation where practical. Offer small access to drinking water only if the dog is alert and can swallow normally, but do not force water into the mouth. Begin transport as directed and continue safe cooling on the way when possible.",
-          "Avoid ice baths, very cold immersion, wrapping the dog in wet towels for a prolonged period, or any method that delays the veterinary journey. Wet coverings can trap heat as they warm. A confused or collapsed dog, or a dog having a seizure, can bite or aspirate, so prioritise safe handling, airflow, and professional instructions.",
-        ],
-      },
-      {
-        heading: "Everyday situations and safer planning",
-        body: [
-          "Prevention depends on changing the plan before the dog is committed to the outing. Check the weather and humidity, but also judge sun exposure, surface heat, wind, shade, drinking water, transport, fitness, and escape routes back to a cool place.",
-        ],
-        table: {
-          headers: ["Situation", "Risk", "Safer planning"],
-          rows: [
-            ["Parked vehicle", "Temperatures can rise rapidly and ventilation is inadequate.", "Do not leave the dog in the vehicle. Arrange a dog-safe destination, adult supervision, or leave the dog safely at home."],
-            ["Midday pavement or townhouse paths", "Radiant heat and hot surfaces add to body heat and may injure paws.", "Walk early or late, choose shade and cooler surfaces, and shorten or cancel the outing when conditions are unsafe."],
-            ["Beach, hike, or open garden", "Direct sun, reflected heat, limited shade, excitement, and distance from help increase exposure.", "Carry water, plan shade and turnaround points, use a lead where required, and stop well before fatigue."],
-            ["Running, training, or working", "Drive and concentration can mask fatigue while effort produces more heat.", "Use brief sessions, frequent recovery, cool hours, conservative intensity, and individual veterinary guidance."],
-            ["Poorly ventilated room or power interruption", "Still air, humidity, and enclosed heat reduce cooling even without direct sun.", "Provide safe cross-ventilation, cool resting areas, backup planning, supervision, and relocation if the space becomes unsafe."],
-          ],
-        },
-      },
-      {
-        heading: "Dogs needing extra caution",
-        body: [
-          "Flat-faced dogs may have less efficient airflow and can deteriorate rapidly. Puppies, seniors, overweight dogs, heavy-coated dogs, dogs that are unfit or not acclimatised, and dogs with airway, heart, neurological, or other medical conditions also need conservative limits. A dog recovering from illness or taking medication may have additional considerations that require veterinary advice.",
-          "Working and highly active dogs are not protected by fitness alone. Their enthusiasm, speed, protective equipment, terrain, and sustained effort can increase heat production. Growing puppies should not be used for forced distance exercise, while older dogs may need shorter, slower routes and easier access to shade and transport.",
-        ],
-      },
-      {
-        heading: "Before a hot-weather walk or outing",
-        body: [
-          "Cancel or shorten an outing when the safe plan is uncertain. Indoor sniffing, food puzzles, gentle training, and calm enrichment are valid alternatives to exercise in dangerous heat.",
-        ],
-        checklist: [
-          "Check temperature, humidity, sun exposure, route shade, surface heat, wind, and the return journey.",
-          "Choose an early or late time and identify a cool place where the dog can recover.",
-          "Carry enough drinking water and a suitable bowl; do not rely on public taps or natural water sources.",
-          "Assess the dog's breathing, energy, body condition, coat, health, age, fitness, and recent recovery.",
-          "Use secure, comfortable walking equipment and plan a shorter turnaround point than the dog's maximum ability.",
-          "Check beach, trail, estate, park, and public-control rules before leaving.",
-          "Make sure transport will remain cool and that the dog will never wait in a parked vehicle.",
-        ],
-      },
-      {
-        heading: "Heat-aware routines at home",
-        body: [
-          "Shade moves during the day, and a paved courtyard, balcony, kennel, garage, or enclosed room can become much hotter than expected. Provide more than one water source, cool indoor rest, reliable airflow, and supervision during severe conditions. A garden with water is not automatically safe when there is no effective shade or ventilation.",
-          "Keep dogs at a healthy body condition with veterinary support, maintain coats appropriately rather than shaving without advice, and build fitness gradually in cooler conditions. Review summer routines before travel, daycare, boarding, outdoor events, hikes, and holidays.",
-        ],
-        links: [
-          { title: "Dogs for Active Owners", description: "Match activity plans to heat, fitness, training, and recovery.", href: "/breeds/best-dogs-for-active-owners-south-africa" },
-          { title: "Dog Walk Planner", description: "Plan distance, water, timing, equipment, and conditions.", href: "/tools/dog-walk-planner" },
-          { title: "Hiking With Dogs", description: "Prepare for South African trails and outdoor risks.", href: "/dog-friendly/hiking-with-dogs-south-africa" },
-        ],
-      },
-    ],
-    faqs: [
-      { question: "Can a dog get heatstroke in the shade?", answer: "Yes. High temperature, humidity, poor airflow, exertion, stress, and individual risk can overwhelm cooling even without direct sun." },
-      { question: "Should I use an ice bath for suspected heatstroke?", answer: "Do not use an ice bath or extreme cooling. Move the dog out of the heat, begin controlled cooling with cool water and airflow, contact a veterinarian, and do not delay transport." },
-      { question: "Is a dog safe in a parked car with windows open?", answer: "No. An open window, shade, or water does not make a parked vehicle safe. Arrange continuous adult supervision in a genuinely cool environment or do not take the dog." },
-      { question: "Does improvement after cooling mean the dog can stay home?", answer: "Not when heatstroke is suspected. Internal complications may not be obvious, so follow the veterinary team's assessment and transport instructions." },
-      { question: "How quickly can a car become dangerous for a dog in South African heat?", answer: "On a hot day a parked car can become life-threatening within minutes, even with windows cracked. Never leave a dog in a vehicle." },
-      { question: "Which dogs need extra caution in South African summers?", answer: "Flat-faced breeds, overweight dogs, puppies, seniors, heavy-coated dogs, and dogs that are unfit or not used to the heat are at higher risk. Working and highly active dogs can also overheat quickly during exercise." },
-      { question: "What details should I give the vet when calling about possible heatstroke?", answer: "Tell them the dog's current condition, how long it was exposed to heat or exercise, any cooling already started, the dog's size or breed, age, and whether it is vomiting, weak, confused, or collapsed." },
-      { question: "What temperature is too hot for a dog walk in South Africa?", answer: "Many vets advise extra caution above 25–28°C, especially with humidity, direct sun, or high-risk dogs. Test pavement with the back of your hand; if it is too hot for you, it is too hot for paws. Prefer early morning or evening walks." },
-      { question: "Can loadshedding increase heatstroke risk for dogs?", answer: "Yes. Power cuts can stop fans, air conditioning, and reliable indoor airflow. Have a backup plan such as battery fans, cool rooms, or moving the dog to a shaded, ventilated area with water." },
-      { question: "Is it safe to walk a dog on the beach in summer?", answer: "Beaches can be extremely hot. Avoid midday, provide shade and water, watch for sand burn on paws, and never leave a dog in a car while you swim. Watch for exhaustion signs." },
-      { question: "How do I cool a dog with suspected heatstroke without making it worse?", answer: "Move to shade, apply cool (not icy) water to the body especially belly, armpits and paws, and use airflow. Do not wrap in a wet towel that traps heat. Phone a vet immediately and transport." },
-    ],
-    related: [
-      { title: "Dog Emergency Checklist", description: "Prepare contacts, records and safe transport before an emergency.", href: "/emergency/dog-emergency-checklist-south-africa" },
-      { title: "Dogs for Active Owners", description: "Responsible exercise and outdoor-companion planning.", href: "/breeds/best-dogs-for-active-owners-south-africa" },
-      { title: "Ticks and Fleas", description: "Outdoor parasite checks and prevention planning.", href: "/health/ticks-and-fleas-dogs-south-africa" },
-      { title: "Dog-Friendly Outings", description: "Plan suitable places and safer trips.", href: "/dog-friendly/dog-friendly-places-south-africa" },
-    ],
-    sources: [
-      { label: "RSPCA: heatstroke in dogs", href: "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/health/heatstroke", note: "Veterinary-reviewed welfare guidance on heatstroke signs, urgent action, cooling, and prevention." },
-      { label: "Royal Veterinary College: heatstroke in dogs and cats", href: "https://www.rvc.ac.uk/small-animal-vet/teaching-and-research/fact-files/heatstroke-in-dogs-and-cats", note: "Veterinary owner guidance about heat-related illness, cooling, risk factors, and urgent care." },
-      { label: "South African Veterinary Council", href: "https://savc.org.za/", note: "South African professional context for registered veterinary assessment and emergency care." },
-    ],
-  },
-  {
     slug: "heatstroke-in-dogs-south-africa",
     path: "/emergency/heatstroke-in-dogs-south-africa",
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Heatstroke in Dogs in South Africa",
-    seoTitle: "Heatstroke in Dogs South Africa: Signs, Cooling Steps & Emergency Guide (2026)",
+    seoTitle: "Heatstroke in Dogs in South Africa: Signs and Emergency Steps",
     description:
       "Practical South African dog heatstroke guidance covering warning signs, urgent veterinary action, cautious first steps, high-risk dogs, and hot-weather prevention.",
     intro:
@@ -378,7 +263,7 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { question: "How quickly can a car become dangerous for a dog in South African heat?", answer: "On a hot day a parked car can become life-threatening within minutes, even with windows cracked. Never leave a dog in a vehicle." },
       { question: "Which dogs need extra caution in South African summers?", answer: "Flat-faced breeds, overweight dogs, puppies, seniors, heavy-coated dogs, and dogs that are unfit or not used to the heat are at higher risk. Working and highly active dogs can also overheat quickly during exercise." },
       { question: "What details should I give the vet when calling about possible heatstroke?", answer: "Tell them the dog's current condition, how long it was exposed to heat or exercise, any cooling already started, the dog's size or breed, age, and whether it is vomiting, weak, confused, or collapsed." },
-      { question: "What temperature is too hot for a dog walk in South Africa?", answer: "Many vets advise extra caution above 25–28°C, especially with humidity, direct sun, or high-risk dogs. Test pavement with the back of your hand; if it is too hot for you, it is too hot for paws. Prefer early morning or evening walks." },
+      { question: "What temperature is too hot for a dog walk in South Africa?", answer: "There is no single safe temperature for every dog. Humidity, direct sun, hot surfaces, exertion, airflow, fitness, age, breed, and health all affect risk. Choose cooler hours, avoid hot pavement, and stop if your dog shows heat-stress signs. Ask your veterinarian for advice for your dog." },
       { question: "Can loadshedding increase heatstroke risk for dogs?", answer: "Yes. Power cuts can stop fans, air conditioning, and reliable indoor airflow. Have a backup plan such as battery fans, cool rooms, or moving the dog to a shaded, ventilated area with water." },
       { question: "Is it safe to walk a dog on the beach in summer?", answer: "Beaches can be extremely hot. Avoid midday, provide shade and water, watch for sand burn on paws, and never leave a dog in a car while you swim. Watch for exhaustion signs." },
       { question: "How do I cool a dog with suspected heatstroke without making it worse?", answer: "Move to shade, apply cool (not icy) water to the body especially belly, armpits and paws, and use airflow. Do not wrap in a wet towel that traps heat. Phone a vet immediately and transport." },
@@ -393,9 +278,10 @@ export const batch3FlagshipGuides: GuideContent[] = [
       { label: "RSPCA: heatstroke in dogs", href: "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/health/heatstroke", note: "Veterinary-reviewed welfare guidance on heatstroke signs, urgent action, cooling, and prevention." },
       { label: "Royal Veterinary College: heatstroke in dogs and cats", href: "https://www.rvc.ac.uk/small-animal-vet/teaching-and-research/fact-files/heatstroke-in-dogs-and-cats", note: "Veterinary owner guidance about heat-related illness, cooling, risk factors, and urgent care." },
       { label: "South African Veterinary Council", href: "https://savc.org.za/", note: "South African professional context for registered veterinary assessment and emergency care." },
+      { label: "University of Pretoria: heatstroke in dogs", href: "https://www.up.ac.za/faculty-of-veterinary-science/news/how-tell-if-your-dog-has-heatstroke-and-what-do-0", note: "South African veterinary faculty guidance on heatstroke signs, risk factors, and emergency care." },
     ],
   },
-  {,
+  {
     slug: "dog-behaviour-problems-south-africa",
     path: "/training/dog-behaviour-problems-south-africa",
     hubTitle: "Dog Training",

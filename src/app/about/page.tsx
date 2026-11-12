@@ -56,7 +56,7 @@ export default function AboutPage() {
           <p className="mt-3 leading-7 text-bark">
             Topics are chosen around recurring South African owner decisions, especially questions
             where unclear advice could waste time, money, or delay care. Drafts define the
-            reader's decision, check local relevance, use appropriate sources, state safety
+            reader&apos;s decision, check local relevance, use appropriate sources, state safety
             limits, and link to a useful next step before publication.
           </p>
         </article>
@@ -74,7 +74,7 @@ export default function AboutPage() {
         <article className="rounded-xl border border-oat bg-white p-5 shadow-panel">
           <h2 className="text-2xl font-black text-cocoa">What Dog Haven cannot verify</h2>
           <p className="mt-3 leading-7 text-bark">
-            A published source cannot guarantee a provider's present availability, service quality,
+            A published source cannot guarantee a provider&apos;s present availability, service quality,
             price, suitability for a particular dog, or response in an emergency. Venue rules,
             laws, product information, and professional availability can also change. Check the
             current details with the responsible organisation or professional before relying on

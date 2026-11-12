@@ -119,7 +119,7 @@ export function DogHealthCalendar() {
         <p className="text-sm font-black uppercase tracking-wide text-moss">Planning note</p>
         <p className="mt-2 leading-7 text-bark">
           {lifeStages[stage].note} This tool does not store data or create exact medical
-          reminders. Use it as a prompt list, then follow your veterinarian's schedule and
+          reminders. Use it as a prompt list, then follow your veterinarian&apos;s schedule and
           product instructions.
         </p>
       </div>
