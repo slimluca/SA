@@ -31,6 +31,15 @@ const careLinks = [
   { title: "Routine care", href: "/tools/dog-health-calendar", icon: Stethoscope },
 ] as const;
 
+const popularTools = [
+  { title: "Dog Cost Calculator", href: "/tools/dog-cost-calculator", copy: "Monthly ownership budget range" },
+  { title: "Feeding Calculator", href: "/tools/dog-feeding-calculator", copy: "Daily portion by weight & age" },
+  { title: "Can My Dog Eat This?", href: "/tools/can-my-dog-eat-this", copy: "Food safety lookup" },
+  { title: "New Puppy Checklist", href: "/tools/puppy-checklist", copy: "First-week setup" },
+  { title: "Breed Match Quiz", href: "/tools/dog-breed-match-quiz", copy: "Responsible matching" },
+  { title: "Dog Age Calculator", href: "/tools/dog-age-calculator", copy: "Life stage estimate" },
+] as const;
+
 export default function HomePage() {
   return (
     <>
@@ -45,7 +54,7 @@ export default function HomePage() {
             <p className="mt-6 max-w-lg text-lg leading-8 text-white/90">Practical local guidance for healthier dogs, happier homes and everyday South African adventures.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="#explore" className="primary-light-button">Explore Dog Haven <ArrowRight className="h-4 w-4" /></Link>
-              <Link href="/start-here" className="secondary-light-button">Start here</Link>
+              <Link href="/tools" className="secondary-light-button">Free tools</Link>
             </div>
           </div>
         </div>
@@ -74,6 +83,22 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="section-shell py-10">
+        <p className="section-kicker">Free tools</p>
+        <h2 className="section-title">Popular free tools</h2>
+        <p className="section-copy">No login. No personal data. Use these tools to plan feeding, costs, food safety and puppy care.</p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {popularTools.map((tool) => (
+            <Link key={tool.href} href={tool.href} className="group rounded-2xl border border-oat bg-white p-5 shadow-sm hover:border-sage hover:shadow-panel">
+              <h3 className="font-black text-navy group-hover:text-moss">{tool.title}</h3>
+              <p className="mt-1 text-sm text-bark">{tool.copy}</p>
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-black text-moss">Open tool <ArrowRight className="h-4 w-4" /></span>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-6"><Link href="/tools" className="secondary-button">See all free tools <ArrowRight className="h-4 w-4" /></Link></div>
       </section>
 
       <section className="mt-8 bg-emerald-deep text-white">
