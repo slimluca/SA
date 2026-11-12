@@ -190,7 +190,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Ticks and Fleas on Dogs South Africa | Checks and Prevention",
     description: "A practical South African guide to checking dogs for ticks and fleas, household control, product safety, prevention routines, and veterinary warning signs.",
     intro: "Ticks and fleas can affect South African dogs throughout the year, including in gardens, parks, long grass, farms, boarding facilities, holiday accommodation, and ordinary travel stops. A reliable routine combines the right species-specific product, hands-on checks, household control where needed, and fast veterinary advice when skin or illness signs appear.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/ticks-fleas-dog-check-south-africa.webp",
       alt: "Owner checking a dog's coat and skin for ticks and fleas",
@@ -314,7 +314,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Pet Insurance for Dogs South Africa | Neutral Cover Guide",
     description: "A provider-neutral South African guide to dog insurance and dog medical aid, including cover, limits, excesses, waiting periods, exclusions, claims, and savings.",
     intro: "Pet insurance, dog insurance, and dog medical aid are phrases South African owners often use for plans that help with eligible veterinary costs. Product names are not reliable shortcuts: the policy wording determines what is covered, what remains your responsibility, when benefits start, and whether you pay the vet before claiming reimbursement.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/pet-insurance-dog-planning-south-africa.webp",
       alt: "Dog owner reviewing veterinary costs and pet insurance information at home",
@@ -444,7 +444,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Puppy Scam Checklist South Africa | Safer Adoption and Buying",
     description: "A practical South African puppy scam checklist covering deposits, seller checks, stolen photos, video calls, records, safe viewing, payment, evidence, and reporting.",
     intro: "Puppy scams exploit excitement, sympathy, and the fear that somebody else will take the dog. A polished advert, vaccination claim, registration logo, or convincing transport story is not proof. Slow the process down and verify the seller, the puppy, the records, the location, and the payment terms before money changes hands.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/puppy-scam-verification-south-africa.webp",
       alt: "Prospective puppy owner checking information before making a payment",
@@ -575,7 +575,7 @@ export const flagshipGuides: GuideContent[] = [
     seoTitle: "Cost of Owning a Dog in South Africa | National Budget Guide",
     description: "Build a realistic South African dog budget for setup, food, veterinary care, prevention, grooming, training, insurance, services, senior care, and emergencies.",
     intro: "There is no honest national price that fits every South African dog. Size, age, health, diet, coat, behaviour, location, travel, supplier changes, and household routines all shift the total. A useful budget separates initial setup, predictable monthly care, annual or occasional costs, and emergencies so one quiet month is not mistaken for the true cost of ownership.",
-    updated: "2026-11-12",
+    updated: "2026-08-09",
     primaryImage: {
       src: "/images/guides/dog-ownership-budget-south-africa.webp",
       alt: "Dog owner planning a household budget for ongoing dog-care costs",
