@@ -141,7 +141,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
       "Possible causes of dog diarrhoea, dehydration and puppy risks, urgent warning signs, what to record, and when to contact a South African vet.",
     intro:
       "Diarrhoea describes a change in stool, not a diagnosis. One soft stool in an otherwise bright adult dog is a different situation from repeated watery diarrhoea in a puppy or diarrhoea accompanied by vomiting, blood, pain or weakness. Look at the whole dog, record what is happening, and contact a veterinarian sooner when the dog is young, elderly, medically vulnerable or deteriorating.",
-    updated: "2026-11-12",
+    updated: "2026-08-10",
     primaryImage: {
       src: "/images/guides/dog-digestive-health-south-africa.webp",
       alt: "Dog owner monitoring a dog's general condition at home",
@@ -258,7 +258,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
       "Compare South African dog insurance policy wording, limits, sub-limits, excesses, waiting periods, exclusions, claims, age rules and renewal terms.",
     intro:
       "A useful insurance comparison starts with the full policy wording, schedule and current quote, not a headline premium or a plan name. Put the same questions to every insurer and write the answers in one worksheet. The result should show what the policy may pay, what remains your responsibility, when cover starts and which events or conditions fall outside it.",
-    updated: "2026-11-12",
+    updated: "2026-08-10",
     primaryImage: {
       src: "/images/guides/compare-dog-insurance-south-africa.webp",
       alt: "Dog owner comparing pet insurance documents and veterinary costs",
@@ -391,7 +391,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
       "Reward-based puppy training for South African homes: settling in, toilet routine, recall, lead skills, handling, mouthing, calm behaviour and socialisation.",
     intro:
       "Training begins with safety, sleep, predictable routines and short moments of learning. A puppy does not need a packed timetable or harsh correction. They need household members to reward the same useful behaviours, prevent rehearsals of unwanted behaviour and introduce new people, animals, places and sounds at a pace the puppy can handle.",
-    updated: "2026-11-12",
+    updated: "2026-08-10",
     primaryImage: {
       src: "/images/guides/puppy-training-south-africa.webp",
       alt: "Owner practising gentle reward-based training with a puppy at home",
@@ -526,7 +526,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
       "Build a monthly South African dog budget from essential, periodic, optional and unexpected costs without relying on a misleading national average.",
     intro:
       "There is no credible single monthly amount for every South African dog. Food needs change with size and activity; veterinary, medication and grooming needs change with health, age and coat; services and prices change by location and lifestyle. The reliable number is the one built from current local prices for your dog, with irregular costs converted into monthly set-asides.",
-    updated: "2026-11-12",
+    updated: "2026-08-10",
     primaryImage: {
       src: "/images/guides/monthly-dog-cost-planning-south-africa.webp",
       alt: "Dog owner planning monthly household costs for caring for a dog",
