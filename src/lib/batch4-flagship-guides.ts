@@ -7,7 +7,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Snake Bites in Dogs in South Africa",
-    seoTitle: "Snake Bites in Dogs South Africa: What to Do Immediately & Antivenom Guidance (2026)",
+    seoTitle: "Snake Bites in Dogs in South Africa: What to Do Immediately",
     description:
       "What South African dog owners should do after a suspected snake bite, urgent warning signs, safe transport, dangerous first-aid myths, and prevention.",
     intro:
@@ -115,7 +115,6 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { question: "What should I do while waiting for the vet after a snake bite?", answer: "Keep the dog as still and calm as possible. Limit walking and excitement. Do not cut, suck, apply a tourniquet, or give home remedies." },
       { question: "How can I reduce snake bite risk for my dog in South Africa?", answer: "Supervise dogs in long grass, bush, or near water. Keep gardens clear of debris that snakes may use for cover. Know the nearest emergency vet before you need one." },
       { question: "Which snakes are a risk to dogs in South Africa?", answer: "Puff adders, cobras, and mambas are among the more dangerous species. Any snake bite should be treated as potentially serious until a vet assesses the dog." },
-      { question: "Should I try to identify or catch the snake?", answer: "No. Do not risk a second bite. If safe, take a clear photo from a distance or note the colour and pattern. The clinic can advise on antivenom if needed." },
       { question: "How quickly do symptoms appear after a snake bite?", answer: "They can appear within minutes or be delayed. Swelling, pain, weakness, breathing changes, or collapse need immediate veterinary care. Call ahead." },
 
     ],
