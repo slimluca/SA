@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const sizeFactors = {
-  small: { label: "Small", senior: 10 },
-  medium: { label: "Medium", senior: 8 },
-  large: { label: "Large", senior: 7 },
-  giant: { label: "Giant", senior: 6 },
+  small: { label: "Small", senior: 12 },
+  medium: { label: "Medium", senior: 10 },
+  large: { label: "Large", senior: 8 },
+  giant: { label: "Giant", senior: 7 },
 } as const;
 
 export function DogAgeCalculator() {
@@ -18,13 +18,13 @@ export function DogAgeCalculator() {
   const result = useMemo(() => {
     const age = Math.max(0, years) + Math.max(0, Math.min(months, 11)) / 12;
     const seniorAt = sizeFactors[size].senior;
-    let stage = "Adult";
+    let stage = "Mature adult";
     let reminder = "Keep routine vet checks, dental care, parasite prevention, weight control, and daily enrichment steady.";
 
     if (age < 1) {
       stage = "Puppy";
       reminder = "Focus on vaccines, deworming, safe socialisation, food for growth, and gentle training.";
-    } else if (age < 2) {
+    } else if (age < 3) {
       stage = "Young adult";
       reminder = "Adolescent dogs need training consistency, exercise, safe public manners, and body condition checks.";
     } else if (age >= seniorAt) {
@@ -35,8 +35,7 @@ export function DogAgeCalculator() {
       reminder = "Start watching dental health, stiffness, weight, lumps, appetite, thirst, and insurance or emergency planning.";
     }
 
-    const humanLike = Math.round(16 * Math.log(Math.max(age, 0.2)) + 31);
-    return { stage, reminder, humanLike };
+    return { stage, reminder };
   }, [months, size, years]);
 
   return (
@@ -62,7 +61,7 @@ export function DogAgeCalculator() {
       <div className="mt-6 rounded-2xl border border-sage/35 bg-sage/10 p-5">
         <p className="text-sm font-black uppercase tracking-wide text-moss">Approximate life stage</p>
         <p className="mt-2 text-3xl font-black text-cocoa">{result.stage}</p>
-        <p className="mt-2 text-sm font-semibold text-bark">Very rough human-age style estimate: about {result.humanLike} years.</p>
+        <p className="mt-2 text-sm font-semibold text-bark">A broad estimate only; breed, health, and development can shift this timing.</p>
         <p className="mt-3 leading-7 text-bark">{result.reminder}</p>
       </div>
 

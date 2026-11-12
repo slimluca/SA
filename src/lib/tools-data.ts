@@ -141,7 +141,7 @@ export const tools: ToolContent[] = [
     intro:
       "Estimate your dog's broad life stage and get practical care reminders for puppies, adults, mature dogs, and seniors.",
     note:
-      "Dog age conversion is not exact. Breed, size, health, weight, and lifestyle all affect ageing.",
+      "This is a broad age-stage estimate only. Breed, adult size, body condition, and health affect development and ageing; it cannot predict lifespan or replace veterinary advice.",
     related: [
       { title: "Puppy Care", description: "First-year puppy guidance.", href: "/puppy" },
       { title: "Senior Dog Food", description: "Feeding older dogs thoughtfully.", href: "/food/senior-dog-food-south-africa" },
