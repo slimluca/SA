@@ -16,6 +16,7 @@ import { CostPlanningBox } from "@/components/CostPlanningBox";
 import { PoisoningActionBox } from "@/components/PoisoningActionBox";
 import { BiliaryActionBox } from "@/components/BiliaryActionBox";
 import { DiarrhoeaActionBox } from "@/components/DiarrhoeaActionBox";
+import { PuppyCareActionBox } from "@/components/PuppyCareActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
@@ -130,6 +131,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         {guide.slug === "dog-poisoning-south-africa" ? <PoisoningActionBox /> : null}
         {guide.slug === "biliary-tick-bite-fever-dogs-south-africa" ? <BiliaryActionBox /> : null}
         {guide.slug === "dog-diarrhoea-south-africa" ? <DiarrhoeaActionBox /> : null}
+        {guide.slug === "puppy-training-south-africa" ? <PuppyCareActionBox /> : null}
 
         {guide.originalResource ? (
           <OriginalResourcePanel
