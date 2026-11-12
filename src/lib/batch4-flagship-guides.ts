@@ -497,6 +497,8 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { question: "Should my puppy meet every dog for socialisation?", answer: "No. Calm observation and selected safe interactions are more useful than compulsory greetings. Protect the puppy from overwhelming encounters and ask your vet about local disease risk." },
       { question: "What should I do when my puppy bites?", answer: "Redirect to a suitable toy, pause play calmly if teeth are too hard and check for tiredness or over-stimulation. Seek professional help if biting is intense, worsening, associated with guarding or possibly linked to pain." },
       { question: "How long should a training session be?", answer: "End while the puppy is still succeeding. Several brief repetitions folded into normal life are usually more productive than a long formal session. The right duration varies by puppy and environment." },
+      { question: "How can I puppy-proof my South African home?", answer: "Secure bins, cords, toxic foods, plants, pools, and balconies. Supervise outdoor time and remove anything a puppy can chew or swallow. Use the free puppy checklist to plan the first weeks." },
+      { question: "When should I take a new puppy to the vet?", answer: "Book a check within a few days of arrival. Bring any vaccine or deworming records. Contact a vet promptly for vomiting, diarrhoea, weakness, or refusal to eat." },
     ],
     related: [
       { title: "New Puppy Checklist", description: "Prepare the home, records and first days.", href: "/puppy/new-puppy-checklist-south-africa" },
