@@ -1020,7 +1020,20 @@ export const phase6GuidePages: GuideContent[] = [
           "It depends on coat, skin, smell, lifestyle, and vet advice. Use dog-safe shampoo and avoid over-bathing itchy dogs without guidance.",
       },
       {
-   slug: "dog-nail-clipping-south-africa",
+        question: "Why does my dog shed more in some seasons?",
+        answer:
+          "Seasonal coat changes are common, especially in double-coated dogs. Sudden bald patches, itching, or skin redness need a vet check.",
+      },
+    ],
+    related: [
+      { title: "Dog Shedding", description: "Manage loose hair and skin signs.", href: "/grooming/dog-shedding-south-africa" },
+      { title: "Dog Nail Clipping", description: "Keep paws comfortable.", href: "/grooming/dog-nail-clipping-south-africa" },
+      { title: "Dog Grooming", description: "Build a full routine.", href: "/grooming/dog-grooming-south-africa" },
+    ],
+    sources: groomingSources,
+  },
+  {
+    slug: "dog-nail-clipping-south-africa",
     path: "/grooming/dog-nail-clipping-south-africa",
     hubTitle: "Grooming",
     hubPath: "/grooming",
@@ -1115,17 +1128,7 @@ export const phase6GuidePages: GuideContent[] = [
       { title: "Choose a Groomer", description: "Ask handling questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
       { title: "Dog Behaviour Problems", description: "Understand fear and handling.", href: "/training/dog-behaviour-problems-south-africa" },
     ],
-    sources: nailCareSources,tion: "Is grinding better than clipping?",
-        answer:
-          "Some dogs prefer grinding, others dislike the sound. Introduce either method gently and use professional help if your dog is fearful.",
-      },
-    ],
-    related: [
-      { title: "Dog Grooming", description: "Build a grooming routine.", href: "/grooming/dog-grooming-south-africa" },
-      { title: "Choose a Groomer", description: "Ask handling questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
-      { title: "Dog Behaviour Problems", description: "Understand fear and handling.", href: "/training/dog-behaviour-problems-south-africa" },
-    ],
-    sources: groomingSources,
+    sources: nailCareSources,
   },
   {
     slug: "dog-shedding-south-africa",
