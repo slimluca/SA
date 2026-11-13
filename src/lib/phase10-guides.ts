@@ -596,6 +596,7 @@ const symptomGuides: SymptomGuide[] = [
     ],
     sources: eyeEarSkinSources,
   },
+  {
     slug: "dog-limping-south-africa",
     title: "Dog Limping in South Africa: When to Call a Vet",
     seoTitle: "Dog Limping in South Africa: Causes & Vet Warning Signs",
