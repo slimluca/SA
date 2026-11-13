@@ -13,7 +13,7 @@ import { phase12GuidePages } from "@/lib/phase12-guides";
 import { lawsHub, phase13GuidePages } from "@/lib/phase13-guides";
 import { phase14GuidePages } from "@/lib/phase14-guides";
 import { phase15GuidePages } from "@/lib/phase15-guides";
-import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
+import { localCityHubs, localHub } from "@/lib/phase17-local-guides";
 import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
 import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
 import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
@@ -23,10 +23,8 @@ import { phase23ChronicHealthGuidePages } from "@/lib/phase23-chronic-health-gui
 import { phase25BreedLifestyleGuidePages } from "@/lib/phase25-breed-lifestyle-guides";
 import { dogNamesHub, phase26DogNameGuidePages } from "@/lib/phase26-dog-name-guides";
 import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
-import { phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
 import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
-import { getProvidersForPath, shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 import { flagshipGuides } from "@/lib/flagship-guides";
@@ -109,7 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of guides) {
-    if (retiredSitemapPaths.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
+    if (retiredSitemapPaths.has(guide.path)) continue;
 
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),
