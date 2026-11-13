@@ -23,6 +23,7 @@ import { phase23ChronicHealthGuidePages } from "@/lib/phase23-chronic-health-gui
 import { phase25BreedLifestyleGuidePages } from "@/lib/phase25-breed-lifestyle-guides";
 import { dogNamesHub, phase26DogNameGuidePages } from "@/lib/phase26-dog-name-guides";
 import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
+import { phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
 import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
 import { absoluteUrl } from "@/lib/site";
