@@ -9,8 +9,8 @@ import { createMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Care South Africa | Free Tools, Guides & Practical Advice | Dog Haven",
-  description: "Practical South African dog care: free feeding & cost calculators, food safety lookup, puppy checklists, health guides, adoption safety, training, and local dog-friendly advice. Start here.",
+  title: "Dog Care in South Africa: Practical Guides & Free Tools | Dog Haven",
+  description: "Dog care advice for South African owners, with practical health and emergency guides, breed advice, adoption help, feeding and cost calculators, training, and dog-friendly places.",
   path: "/",
   image: "/images/home/dog-haven-south-africa-hero.webp",
   imageAlt: "Dog and owner walking along a quiet South African coastal path",
@@ -59,8 +59,8 @@ export default function HomePage() {
         <div className="section-shell relative flex min-h-[620px] items-center py-16 lg:min-h-[690px]">
           <div className="max-w-[610px] py-10">
             <p className="light-kicker">Dog Haven South Africa</p>
-            <h1 className="mt-5 max-w-xl text-5xl font-black leading-[.98] tracking-[-.035em] text-white sm:text-6xl lg:text-7xl">A better life<br />with your dog.</h1>
-            <p className="mt-6 max-w-lg text-lg leading-8 text-white/90">Practical local guidance for healthier dogs, happier homes and everyday South African adventures.</p>
+            <h1 className="mt-5 max-w-xl text-5xl font-black leading-[.98] tracking-[-.035em] text-white sm:text-6xl lg:text-7xl">Dog care in<br />South Africa.</h1>
+            <p className="mt-6 max-w-lg text-lg leading-8 text-white/90">Clear, practical guidance for South African dog owners—from everyday health and feeding to emergencies, training and life with dogs at home.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="#explore" className="primary-light-button">Explore Dog Haven <ArrowRight className="h-4 w-4" /></Link>
               <Link href="/tools" className="secondary-light-button">Free tools</Link>
