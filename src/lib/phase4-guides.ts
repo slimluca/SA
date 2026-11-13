@@ -342,12 +342,12 @@ export const phase4GuidePages: GuideContent[] = [
     hubTitle: "Adoption Safety",
     hubPath: "/adoption",
     title: "Adopting an Adult Dog in South Africa",
-    seoTitle: "Adopting an Adult Dog South Africa | Practical Rescue Guide",
+    seoTitle: "Adult Dog Adoption in South Africa: Rescue & Home Guide",
     description:
-      "A practical South African guide to adopting an adult dog, including temperament questions, health records, shelter checks, first-month planning, and adjustment.",
+      "A practical guide to adopting an adult dog in South Africa: assess the rescue, ask about health and behaviour, prepare your home, introduce pets safely, and plan the first month.",
     intro:
       "Adult dogs are often overlooked because puppies get attention first, but a well-matched adult dog can be a wonderful choice. You may have a clearer idea of size, coat, energy, and temperament, while still needing patience for the dog to decompress and learn your home.",
-    updated: "2026-05-13",
+    updated: "2026-11-13",
     quickFacts: [
       "Adult dogs may offer more predictable size, coat, energy level, and basic temperament than young puppies.",
       "Ask about the dog's known history with children, cats, other dogs, visitors, vehicles, being alone, and handling.",
@@ -371,7 +371,7 @@ export const phase4GuidePages: GuideContent[] = [
       {
         heading: "Questions to ask the shelter or rescue",
         body: [
-          "History may be incomplete, especially for strays or surrendered dogs. Ask what is known, what is uncertain, and what staff have observed since the dog arrived.",
+          "History may be incomplete, especially for strays or surrendered dogs. Ask what is known, what is uncertain, and what staff have observed since the dog arrived. Request copies of available vaccination, sterilisation, microchip, parasite-treatment, medication, and veterinary records, and ask what follow-up care is still due.",
         ],
         checklist: [
           "How does the dog respond to handling, leads, kennels, food, and visitors?",
@@ -380,13 +380,29 @@ export const phase4GuidePages: GuideContent[] = [
           "What exercise and enrichment does the dog seem to need?",
           "What health checks, vaccines, sterilisation, and parasite treatments are recorded?",
           "Is there any known bite history, injury, medication, or chronic condition?",
+          "What does the adoption fee include, and what support is available after the dog goes home?",
+          "What is the organisation’s written return or rehoming policy if the match cannot be kept safe?",
+          "Can the dog be introduced to my resident pets in a planned, supervised way before I decide?",
+        ],
+      },
+      {
+        heading: "Meet the dog and check the fit",
+        body: [
+          "Arrange a calm meeting with the people who will live with the dog. Ask the rescue to describe what it has actually observed and what remains unknown; a single meeting cannot guarantee behaviour in a different home. If you have children, cats, or another dog, explain this before the meeting and ask the organisation how to assess compatibility safely.",
+          "Be honest about your home setup: landlord or body-corporate rules, secure gates and fencing, time alone on workdays, transport, nearby walking options, and access to veterinary care. Ask whether a trial or foster-to-adopt arrangement is available and get its terms in writing rather than assuming one is offered.",
+        ],
+        checklist: [
+          "Have each household member meet the dog calmly, following the rescue’s handling advice.",
+          "Ask about known behaviour around children, cats, dogs, food, toys, visitors, leads, and being left alone; treat unknown history as unknown, not as proof of a problem or proof of safety.",
+          "Check rental, estate, body-corporate, and municipal rules before committing.",
+          "Agree the adoption fee, included care, records, post-adoption contact, and return policy in writing.",
         ],
       },
       {
         heading: "First month adjustment",
         body: [
           "Many adult rescue dogs need time before their real personality is visible. A dog may be shut down, overexcited, clingy, restless, or confused at first. Keep routines predictable while the dog learns that the new home is safe.",
-          "Avoid testing everything in the first weekend. Dog parks, busy braais, off-lead beach walks, and big visitor groups can wait until you know the dog better.",
+          "Avoid testing everything in the first weekend. Dog parks, busy braais, off-lead beach walks, and big visitor groups can wait until you know the dog better. Give the dog a quiet retreat, keep gates and leads secure, and introduce visitors gradually.",
         ],
         table: {
           headers: ["First month focus", "Practical plan"],
@@ -395,7 +411,9 @@ export const phase4GuidePages: GuideContent[] = [
             ["Food", "Keep diet stable at first and transition slowly if changing food."],
             ["Walks", "Use secure equipment and choose quieter routes while you learn reactions."],
             ["Visitors", "Introduce calmly and avoid crowding the dog."],
-            ["Training", "Reward simple routines and contact a qualified trainer if behaviour worries you."],
+            ["Training", "Keep practice short and reward-based; contact the rescue, a qualified behaviour professional, or a vet early if behaviour worries you."],
+            ["Resident pets", "Use a managed, gradual introduction plan and separate spaces; do not leave new animals together unsupervised until their behaviour is reliably safe."],
+            ["Veterinary care", "Book a check-up, bring available records, and ask what vaccines, parasite prevention, medicines, or follow-up are due."],
           ],
         },
       },
