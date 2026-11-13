@@ -2,6 +2,7 @@ import type { CardLink, GuideContent, HubContent, Source } from "@/lib/content";
 import { localCities } from "@/lib/phase17-local-guides";
 
 const reviewed = "2026-05-19";
+const capeTownTrainingPath = "/local-costs/cape-town/dog-training-costs-cape-town";
 
 type CostServiceKey = "grooming" | "training" | "emergency-vet" | "monthly";
 
@@ -340,9 +341,15 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
     hubPath: "/local-costs",
     title: titleFor(city, service),
     seoTitle: seoTitleFor(city, service),
-    description: `Practical ${city.name} dog training cost guidance covering puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
-    intro: `Dog training costs in ${city.name} vary because puppy classes, private sessions, group classes, home visits and behaviour support are different services. Compare current quotes alongside methods, class size, owner involvement and follow-up support.`,
-    updated: reviewed,
+    description:
+      city.slug === "cape-town"
+        ? "Compare published Cape Town dog training prices for group classes, private home training, socialisation and behaviour support, with a dated provider example and questions to ask before booking."
+        : `Practical ${city.name} dog training cost guidance covering puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
+    intro:
+      city.slug === "cape-town"
+        ? "Cape Town training prices vary by format and provider. This page gives one clearly labelled public price example from a local provider, not a market average or endorsement. Confirm the current fee, location, class dates and inclusions directly before booking."
+        : `Dog training costs in ${city.name} vary because puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
+    updated: city.slug === "cape-town" && service.key === "training" ? "2026-11-13" : reviewed,
     quickFacts: [
       "Dog Haven does not rank trainers or invent exact local training prices.",
       "Training cost depends on the format, trainer experience, travel, class size, and behaviour complexity.",
@@ -354,6 +361,28 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
         heading: `Training cost context in ${city.name}`,
         body: [...generalCostNote(city.name), city.trainingNote],
       },
+      ...(city.slug === "cape-town"
+        ? [
+            {
+              heading: "Published Cape Town dog training price example",
+              body: [
+                "The Canine Club’s public Cape Town price list gives a useful example of how fees differ by service. These are that provider’s listed prices, not a survey, recommendation, or promise that every trainer charges the same. Prices and availability can change, so confirm directly before booking.",
+              ],
+              table: {
+                headers: ["Service listed", "Published price", "Pricing basis"],
+                rows: [
+                  ["Group class obedience training", "R185", "Per class, per dog"],
+                  ["Private obedience training at home", "R305", "Per dog"],
+                  ["Socialisation training", "R220", "Per dog"],
+                  ["Training walk", "R220", "Per dog, per walk"],
+                  ["Behaviour consultation", "R650", "Per consultation"],
+                  ["Behaviour management session", "R380", "Per session"],
+                  ["Puppy school course", "R950", "Course price; confirm inclusions"],
+                ],
+              },
+            },
+          ]
+        : []),
       ...indexingRecoveryCostSections(city, service),
       {
         heading: "What affects dog training costs",
@@ -432,7 +461,17 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
       { title: "Breed Match Quiz", description: "Explore breed needs responsibly.", href: "/tools/dog-breed-match-quiz" },
       ...commonRelated(city),
     ],
-    sources: sourceList(city),
+    sources:
+      city.slug === "cape-town"
+        ? [
+            ...sourceList(city),
+            {
+              label: "The Canine Club — Puppy Classes & Training",
+              href: "https://canineclubcpt.com/puppy-classes-and-training",
+              note: "Official Cape Town provider price listing checked 8 November 2026. Prices can change; confirm current fees and inclusions directly.",
+            },
+          ]
+        : sourceList(city),
   };
 }
 
@@ -693,6 +732,7 @@ export const localCostHub: HubContent = {
     { title: "Dog Cost Calculator", description: "Estimate monthly dog costs without sharing personal information.", href: "/tools/dog-cost-calculator" },
     { title: "Dog Cost Calculator", description: "Build a Dog Haven estimate.", href: "/tools/dog-cost-calculator" },
     { title: "Cape Town Monthly Dog Costs", description: "A practical city budget page for food, grooming, vet care, travel, and seasonal costs.", href: "/local-costs/cape-town/monthly-dog-costs-cape-town" },
+    { title: "Cape Town Dog Training Costs", description: "See a cited local price example for group classes, home training and behaviour support.", href: capeTownTrainingPath },
     { title: "Johannesburg Emergency Vet Costs", description: "Prepare for urgent vet cost factors, transport, records, and insurance questions.", href: "/local-costs/johannesburg/emergency-vet-costs-johannesburg" },
     { title: "Local Service Guides", description: "City service guides for grooming, training, emergency vets, and dog-friendly places.", href: "/local" },
     { title: "City Guides", description: "Daily local context for major South African cities.", href: "/city" },
@@ -728,6 +768,11 @@ export const phase18CostCards: CardLink[] = [
     title: "Cape Town Grooming Prices",
     description: "Understand dog grooming quote factors in Cape Town.",
     href: "/local-costs/cape-town/dog-grooming-prices-cape-town",
+  },
+  {
+    title: "Cape Town Dog Training Costs",
+    description: "Compare published local training price examples and quote questions.",
+    href: capeTownTrainingPath,
   },
   {
     title: "Johannesburg Training Costs",
