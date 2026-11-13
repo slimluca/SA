@@ -62,11 +62,11 @@ export const costReportGuide: GuideContent = {
   hubTitle: "Dog Costs",
   hubPath: "/costs",
   title: "South African Dog Ownership Cost Report",
-  seoTitle: "South African Dog Ownership Cost Report | Public Price Data",
+  seoTitle: "South African Dog Ownership Cost Report | August 2026 Price Data",
   description:
-    "A transparent South African dog-cost report using 46 current public price examples, a downloadable CSV dataset and printable ownership budget worksheet.",
+    "A transparent South African dog-cost report with 46 source-linked price examples checked on 10 August 2026, a downloadable CSV and printable budget worksheet. Verify current prices with providers.",
   intro:
-    "Dog ownership does not have one honest national price tag. This report records current public examples from South African retailers, veterinary practices, groomers, trainers, boarding services, welfare organisations and insurers, then shows how to turn those examples into a budget for an individual dog.",
+    "Dog ownership does not have one honest national price tag. This report records 46 public examples from South African retailers, veterinary practices, groomers, trainers, boarding services, welfare organisations and insurers as displayed on 10 August 2026. It is a dated snapshot, not a live price list or national average; check with each provider before relying on an amount. Use the examples to plan a budget for an individual dog.",
   updated: "2026-08-10",
   primaryImage: {
     src: "/images/guides/south-africa-dog-ownership-cost-report.png",
@@ -104,7 +104,7 @@ export const costReportGuide: GuideContent = {
     shareLabel: "Copy report link",
   },
   quickFacts: [
-    "The dataset contains 46 public price records across eight cost categories, checked on 10 August 2026.",
+    "The dataset contains 46 public price observations across eight cost categories, checked on 10 August 2026. Prices may have changed since they were recorded; confirm directly with the source.",
     "The examples cover Gauteng, Western Cape, KwaZulu-Natal, Free State and national online retail, but they are not a statistically representative national sample.",
     `Nine insurer-published starting premiums ran from ${formatRand(insuranceValues[0])} to ${formatRand(insuranceValues.at(-1) ?? 0)}; the sample median was ${formatRand(insuranceMedian)}. These are starting prices, not personalised quotes or equivalent cover.`,
     "Dog size changes food use, weight-based parasite products, grooming effort, boarding bands and some veterinary procedures, so owners should calculate from their own dog rather than copy a headline total.",
