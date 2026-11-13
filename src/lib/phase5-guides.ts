@@ -641,10 +641,10 @@ const phase5GuidePagesRaw: GuideContent[] = [
     path: "/insurance/pet-insurance-for-dogs-south-africa",
     hubTitle: "Insurance",
     hubPath: "/insurance",
-    title: "Dog Medical Aid and Pet Insurance in South Africa",
-    seoTitle: "Dog Medical Aid & Pet Insurance South Africa | Cover Guide",
+    title: "How Dog Insurance Works in South Africa",
+    seoTitle: "How Dog Insurance Works in South Africa | Cover, Limits & Claims",
     description:
-      "A neutral South African guide to dog medical aid and pet insurance, covering cover types, limits, excesses, exclusions, waiting periods, claims, and emergency payment questions.",
+      "Understand how South African dog insurance and medical aid work, including accident and illness cover, benefit limits, excesses, exclusions, waiting periods, emergency payments, and claims. Compare policy wording before choosing a plan.",
     intro:
       "South African consumers often search for dog medical aid, pet medical aid, pet cover, or pet insurance. Providers may use these terms differently, so compare the actual policy or benefit wording: what event is covered, what you still pay, when cover starts, and how money moves during an emergency.",
     updated: "2026-08-08",
