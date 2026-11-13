@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GuideArticle } from "@/components/GuideArticle";
 import { dogServices, getPhase19DogServiceGuide } from "@/lib/phase19-dog-services-guides";
 import { localCities } from "@/lib/phase17-local-guides";
+import { getProvidersForPath } from "@/lib/local-provider-directory";
 import { createMetadata } from "@/lib/seo";
 
 type PageProps = {
@@ -29,12 +30,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  // Force noindex on these templated service pages.
+  // Keep templated city-service pages noindex unless a page has a maintained, source-checked local shortlist.
+  const indexableProviderPage =
+    guide.path === "/dog-services/durban/dog-daycare-durban" &&
+    getProvidersForPath(guide.path).length >= 3;
+
   return createMetadata({
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
-    noindex: true,
+    noindex: !indexableProviderPage,
   });
 }
 
