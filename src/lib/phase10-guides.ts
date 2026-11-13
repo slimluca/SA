@@ -682,21 +682,7 @@ const symptomGuides: SymptomGuide[] = [
       { title: "Dog Nail Clipping", description: "Nail care and grooming safety.", href: "/grooming/dog-nail-clipping-south-africa" },
       { title: "When to Take Your Dog to the Vet", description: "A broader symptom-led decision guide.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
     ],
-    sources: mobilitySources,       answer:
-          "No. Arthritis is one possibility, but injuries, paw problems, tick illness, and other causes can look similar.",
-      },
-      {
-        question: "When is limping urgent?",
-        answer:
-          "No weight-bearing, severe pain, swelling, wounds, back signs, paralysis signs, or trauma should be checked urgently.",
-      },
-    ],
-    related: [
-      { title: "Biliary Tick Bite Fever", description: "Tick-related illness warning signs.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
-      { title: "Hiking With Dogs", description: "Safer trails and paw checks.", href: "/dog-friendly/hiking-with-dogs-south-africa" },
-      { title: "Dog Nail Clipping", description: "Nail care and grooming safety.", href: "/grooming/dog-nail-clipping-south-africa" },
-    ],
-    sources: parasiteSources,
+    sources: mobilitySources,
   },
   {
     slug: "dog-eye-discharge-south-africa",
