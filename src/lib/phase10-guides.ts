@@ -69,6 +69,20 @@ const parasiteSources: Source[] = [
   ...coreSymptomSources,
 ];
 
+const mobilitySources: Source[] = [
+  {
+    label: "Cornell University College of Veterinary Medicine: What to expect when taking your limping dog to the veterinarian",
+    href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/what-expect-when-taking-your-limping-dog-veterinarian",
+    note: "Veterinary-school guidance on the history, examination, diagnostics, and information owners can bring for a limping dog.",
+  },
+  {
+    label: "VCA Animal Hospitals: First Aid for Limping Dogs",
+    href: "https://vcahospitals.com/animal-medical-dental-group/know-your-pet/first-aid-for-limping-dogs",
+    note: "Veterinarian-authored overview of lameness, safe observations, activity restriction, and when veterinary assessment is needed.",
+  },
+  ...coreSymptomSources,
+];
+
 const eyeEarSkinSources: Source[] = [
   {
     label: "Cornell flea and tick prevention",
@@ -561,86 +575,109 @@ const symptomGuides: SymptomGuide[] = [
           "If the ear is painful, smelly, swollen, or discharging, see a vet first. Cleaning the wrong way can hurt or worsen problems.",
       },
       {
-        question: "Can grass seeds get into dog ears?",
-        answer:
-          "Yes. Sudden head shaking or pain after grassy walks should be checked by a vet.",
-      },
-      {
-        question: "Are ear infections contagious?",
-        answer:
-          "Many are not directly contagious, but mites and shared underlying issues can occur. Your vet can identify the cause.",
-      },
-    ],
-    related: [
-      { title: "Itchy Skin", description: "Allergies, fleas, and skin signs.", href: "/health/dog-scratching-and-itchy-skin-south-africa" },
-      { title: "Dog Grooming", description: "Ear and coat care basics.", href: "/grooming/dog-grooming-south-africa" },
-      { title: "Choose a Groomer", description: "Safe grooming questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
-    ],
-    sources: eyeEarSkinSources,
-  },
-  {
-    slug: "dog-limping-south-africa",
+        question: "    slug: "dog-limping-south-africa",
     title: "Dog Limping in South Africa: When to Call a Vet",
-    seoTitle: "Dog Limping South Africa | Injury and Vet Warning Signs",
+    seoTitle: "Dog Limping in South Africa: Causes & Vet Warning Signs",
     description:
-      "Dog limping, possible causes, red flags, useful observations, grass seeds, tick illness, injuries, and when same-day vet care is needed.",
+      "Learn what to do when a dog is limping in South Africa, which signs need urgent veterinary care, what to observe safely, and what to tell your vet.",
     symptom: "limping",
     urgentSummary:
-      "Call a vet the same day if your dog cannot bear weight, is in severe pain, has swelling, a wound, fever, weakness, paralysis signs, or limping after a fall, fight, or car incident.",
+      "Seek urgent veterinary help for a dog that cannot stand or bear weight, has severe pain, an obvious deformity or open wound, or starts limping after a major fall, vehicle impact, or animal attack. Call your vet promptly for a new or persistent limp.",
     context:
-      "Limping can follow torn nails, paw cuts, grass seeds, sprains, fractures, tick-borne illness, joint disease, hip or knee problems, bites, or back pain. South African dogs may injure paws on hot paving, thorns, beaches, hikes, farms, or city traffic.",
+      "Limping (lameness) means a dog is not using one or more legs normally because of pain or weakness. The cause can be in the paw, nail, skin, muscle, tendon, ligament, joint, bone, back, or nervous system; some causes have no visible mark. In South Africa, check for possible paw cuts, thorns or grass seeds after walks, hikes and beach outings, and consider hot paving, road trauma, bites and tick exposure when describing what happened. A limp alone cannot identify the cause.",
     causes: [
-      "Paw pad cuts, thorns, grass seeds, broken nails, or burns from hot surfaces.",
-      "Sprains, strains, ligament injuries, or fractures.",
-      "Arthritis, hip or knee problems, or growth-related pain.",
-      "Bites, abscesses, or tick-borne illness causing pain or weakness.",
-      "Back, neck, or nerve problems.",
+      "Paw or nail problems, including a torn nail, pad cut, small puncture, thorn, grass seed, or irritation between the toes.",
+      "Sprains, strains, bruising, tendon or ligament injury after exercise, slipping, jumping, or rough play.",
+      "Fracture or dislocation, particularly after a fall, vehicle impact, or other significant trauma.",
+      "Joint or bone conditions that may cause gradual, intermittent, or recurring stiffness, especially as a dog ages.",
+      "Back or nerve problems, which may also affect balance, foot placement, strength, or the ability to stand.",
+      "Bite wounds, infection, or tick-borne illness when limping occurs with feverish behaviour, weakness, lethargy, or other illness signs.",
     ],
     redFlags: [
-      "Cannot put weight on the leg.",
-      "Severe pain, swelling, deformity, bleeding, or open wound.",
-      "Dragging feet, wobbliness, paralysis signs, or back pain.",
-      "Limping after being hit, falling, fighting, or rough play.",
-      "Fever, lethargy, tick exposure, or multiple sore legs.",
+      "Your dog cannot stand, cannot bear weight, or suddenly stops using a leg.",
+      "Severe pain, a visibly abnormal limb, marked swelling, uncontrolled bleeding, or an open wound.",
+      "The limp began after being hit by a car, falling from a height, or being attacked.",
+      "Dragging a paw, knuckling, wobbliness, weakness in more than one leg, or back or neck pain.",
+      "Limping with collapse, pale gums, breathing difficulty, feverish behaviour, or marked lethargy.",
+      "A puppy, senior dog, or dog with a known health problem is painful or deteriorating.",
     ],
     ownerSteps: [
-      "Rest your dog and prevent running or jumping.",
-      "Check paws for thorns, cuts, hot-pavement burns, or broken nails if safe.",
-      "Phone a vet for severe, sudden, or persistent limping.",
-      "Use videos to show the gait if the limp comes and goes.",
+      "Stop walks, running, jumping, stairs, and play; keep your dog calm and confined while you arrange advice.",
+      "From a safe distance, note which leg is affected and whether your dog can stand and place any weight on it. Do not make them walk for a video.",
+      "If your dog is calm and allows it, look without squeezing or bending the limb for an obvious pad cut, broken nail, thorn, or swelling. Stop if there is pain, distress, bleeding, or a bite risk.",
+      "Phone your vet for guidance on urgency, especially if the limp is sudden, painful, worsening, or not settling. Describe any trauma or possible tick exposure.",
+      "Take a short video of a naturally occurring limp only if it does not require exercise or delay care; dogs may move differently at the clinic.",
+      "For a dog who cannot walk, ask the clinic how to move them safely before transport.",
     ],
     avoid: [
-      "Do not give human painkillers.",
-      "Do not force your dog to walk to test the leg.",
-      "Do not pull deeply embedded objects from wounds without vet advice.",
+      "Do not give paracetamol, ibuprofen, aspirin, or any other human pain medicine unless a veterinarian has specifically instructed you.",
+      "Do not pull out a deeply embedded object, probe a wound, straighten a limb, or bend joints to find the painful area.",
+      "Do not force your dog to walk, jump, or use stairs to test the leg.",
+      "Do not apply a tight bandage, splint, cream, or leftover medicine without veterinary advice.",
+      "Do not wait at home after major trauma, inability to stand, severe pain, or a visible deformity.",
     ],
     callNow: [
-      "No weight-bearing, severe pain, deformity, swelling, or open wound.",
-      "Back pain, dragging feet, wobbliness, or paralysis signs.",
-      "Limping with fever, tick exposure, collapse, or marked weakness.",
+      "Your dog cannot stand, cannot bear weight, or has severe or rapidly worsening pain.",
+      "There is an obvious deformity, an open wound, uncontrolled bleeding, or major swelling.",
+      "The limp followed a vehicle impact, a fall from height, or an animal attack, even if the dog seems alert.",
+      "Your dog is dragging a limb, stumbling, weak in several legs, or has back or neck pain.",
+      "The limp occurs with collapse, pale gums, breathing trouble, marked weakness, or possible poisoning or tick illness.",
     ],
     checklist: [
-      "Which leg and when it started.",
-      "Weight-bearing or not.",
-      "Paw pads, nails, swelling, wounds, or heat.",
-      "Recent fall, fight, hike, beach, or hot pavement.",
-      "Tick exposure, fever, appetite, and energy.",
+      "When the limp began, whether it was sudden or gradual, and whether it is getting better or worse.",
+      "Which leg appears affected and whether your dog can stand, walk, or put any weight on it.",
+      "Recent falls, vehicle or animal incidents, rough play, long walks, hikes, beach visits, hot paving, or unusual activity.",
+      "Any visible cut, broken nail, thorn, swelling, bleeding, or tender area, without pressing on it.",
+      "Changes in appetite, energy, breathing, balance, gum colour, temperature if already measured safely, or signs of tick exposure.",
+      "Your dog's age, existing conditions, current medicines, and any pain relief already given.",
+      "A short video of the natural gait if available and safe to take.",
     ],
     prevention: [
-      "Avoid hot pavement in summer.",
-      "Check paws after hikes, beaches, and grassy parks.",
-      "Keep nails trimmed safely.",
-      "Build exercise gradually instead of sudden weekend overload.",
+      "Check paws and nails after walks, hikes, beaches, farms, grassy areas, and rough play; look between the toes without digging into the skin.",
+      "Avoid exercise on very hot surfaces and choose cooler times and safer routes during hot weather.",
+      "Increase exercise gradually after inactivity and adapt activity to your dog's age, fitness, and health.",
+      "Use a lead near roads, supervise play, and secure gardens and gates to reduce avoidable trauma.",
+      "Ask your vet about recurring stiffness or intermittent limping rather than treating repeated episodes as normal ageing.",
     ],
     faqs: [
       {
-        question: "Can I give my dog paracetamol or ibuprofen for limping?",
+        question: "When should I take my limping dog to a vet?",
         answer:
-          "No. Human painkillers can be dangerous for dogs. Ask a vet for safe pain control.",
+          "Contact a vet promptly for a new, painful, worsening, or persistent limp. Seek urgent help if your dog cannot stand or bear weight, has severe pain, an open wound or visible deformity, or was involved in major trauma.",
       },
       {
-        question: "Is limping after rest always arthritis?",
+        question: "Can I give my dog paracetamol or ibuprofen for limping?",
         answer:
+          "Do not give human painkillers unless a veterinarian has specifically prescribed or instructed them for your dog. Contact a vet for safe pain-relief advice.",
+      },
+      {
+        question: "Should I examine or move my dog's leg?",
+        answer:
+          "Avoid bending, squeezing, or manipulating a painful leg. If your dog is calm, you can look for an obvious paw or nail problem without probing it, but stop if they show pain or distress.",
+      },
+      {
+        question: "What should I tell the vet about a limp?",
+        answer:
+          "Share when it began, whether it is worsening, which leg seems affected, whether your dog can bear weight, any recent activity or trauma, medicines given, and any other changes. A short video of the natural gait may help if taking it is safe.",
+      },
+      {
+        question: "Can a thorn or grass seed make a dog limp?",
+        answer:
+          "A paw injury or material caught between the toes can cause limping, but other problems can look similar and some are not visible from the outside. Do not dig into a paw or remove a deeply embedded object; ask your vet if the limp is painful or continues.",
+      },
+      {
+        question: "Does limping always mean an injured leg?",
+        answer:
+          "No. Limping may involve a paw, limb, joint, back, or nervous system, and illness can also cause weakness. A veterinarian needs to assess the dog to identify the cause.",
+      },
+    ],
+    related: [
+      { title: "Biliary Tick Bite Fever", description: "Tick-related illness warning signs.", href: "/health/biliary-tick-bite-fever-dogs-south-africa" },
+      { title: "Hiking With Dogs", description: "Safer trails and paw checks.", href: "/dog-friendly/hiking-with-dogs-south-africa" },
+      { title: "Dog Nail Clipping", description: "Nail care and grooming safety.", href: "/grooming/dog-nail-clipping-south-africa" },
+      { title: "When to Take Your Dog to the Vet", description: "A broader symptom-led decision guide.", href: "/health/when-to-take-your-dog-to-the-vet-south-africa" },
+    ],
+    sources: mobilitySources,       answer:
           "No. Arthritis is one possibility, but injuries, paw problems, tick illness, and other causes can look similar.",
       },
       {
