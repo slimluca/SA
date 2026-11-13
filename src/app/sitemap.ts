@@ -64,9 +64,15 @@ const excludeFromSitemap = new Set([
 ]);
 
 // One city-service page has a current, source-checked shortlist of four Durban daycare providers.
-const priorityLocalProviderPaths = new Set([
-  "/dog-services/durban/dog-daycare-durban",
-]);
+const priorityLocalProviderPaths = new Set(
+  phase19DogServiceGuidePages
+    .filter(
+      (guide) =>
+        guide.path === "/dog-services/durban/dog-daycare-durban" &&
+        getProvidersForPath(guide.path).length >= 3,
+    )
+    .map((guide) => guide.path),
+);
 
 const hubs = [
   ...hubPages,
@@ -98,6 +104,7 @@ const guides: GuideContent[] = [
   ...phase13GuidePages,
   ...phase14GuidePages,
   ...phase15GuidePages,
+  ...phase19DogServiceGuidePages,
   ...phase20RecoveryGuidePages,
   ...phase21PreventionGuidePages,
   ...phase22SterilisationGuidePages,
