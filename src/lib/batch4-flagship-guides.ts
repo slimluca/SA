@@ -252,12 +252,12 @@ export const batch4FlagshipGuides: GuideContent[] = [
     hubTitle: "Pet Insurance",
     hubPath: "/insurance",
     title: "Compare Dog Insurance in South Africa",
-    seoTitle: "Compare Dog Insurance South Africa | Policy Worksheet",
+    seoTitle: "Compare Dog Insurance South Africa | Plans, Prices & Cover",
     description:
-      "Compare South African dog insurance policy wording, limits, sub-limits, excesses, waiting periods, exclusions, claims, age rules and renewal terms.",
+      "Compare South African dog insurance plans, published starting premiums and annual limits, then check excesses, waiting periods, exclusions and current policy wording.",
     intro:
-      "A useful insurance comparison starts with the full policy wording, schedule and current quote, not a headline premium or a plan name. Put the same questions to every insurer and write the answers in one worksheet. The result should show what the policy may pay, what remains your responsibility, when cover starts and which events or conditions fall outside it.",
-    updated: "2026-08-10",
+      "This page pairs a side-by-side summary of publicly published dog plan prices and annual limits with a practical worksheet for checking the policy wording. Figures were checked on 8 November 2026; premiums and benefits can change, and quotes depend on the dog and plan. Use current provider documents before relying on any figure.",
+    updated: "2026-11-08",
     primaryImage: {
       src: "/images/guides/compare-dog-insurance-south-africa.webp",
       alt: "Dog owner comparing pet insurance documents and veterinary costs",
@@ -281,6 +281,21 @@ export const batch4FlagshipGuides: GuideContent[] = [
           { title: "Understand pet insurance first", description: "Review the basic relationship between cover and emergency savings.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
           { title: "Check waiting periods", description: "See why start dates and condition-specific periods matter.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
         ],
+      },
+      {
+        heading: "Published plan examples and annual limits",
+        body: [
+          "These figures come from provider plan pages checked on 8 November 2026. They are examples, not a like-for-like ranking: cover type, sub-limits, exclusions, age rules, excesses, waiting periods and quote eligibility differ. A starting premium is not a promise of your dog's price. Recheck the linked page and current contract wording before relying on a figure.",
+        ],
+        table: {
+          headers: ["Provider", "Published plan examples for dogs", "Published annual limit examples"],
+          rows: [
+            ["Oneplan", "Accident: R80/month; Primary: from R160; Classic: from R280; Super: from R430.", "R8,500; R18,000; R52,000; and R75,000 respectively."],
+            ["MediPet", "Accident Basic: R199/month; Lite: from R325; LitePlus: from R1,499; Essential: from R489; Ultimate360: from R769.", "R25,000; R40,000; R40,000; R62,000; and R75,000 respectively."],
+            ["dotsure via Pick n Pay Pet Club", "Accidental: from R99/month; Vital: from R219; Elite: from R399; Deluxe: from R430; Ultimate: from R1,399.", "R17,000; R30,000; R47,000; R82,000; and R140,000 respectively."],
+            ["OUTsurance", "The official page reviewed did not publish monthly premiums; request a quote.", "Accidental: R26,500; Core: R50,000; Standard: R50,000; Executive: R75,000. Per-claim limits and cover differ."],
+          ],
+        },
       },
       {
         heading: "Policy comparison worksheet",
@@ -377,6 +392,10 @@ export const batch4FlagshipGuides: GuideContent[] = [
       { label: "Financial Sector Conduct Authority: consumers", href: "https://www.fsca.co.za/Consumers/", note: "Official South African financial-sector consumer information and complaint context." },
       { label: "OUTsurance pet policy wording", href: "https://www.outsurance.co.za/globalassets/documents/outsurance-sa/pet/pet_policy_wording.pdf", note: "Current provider policy wording checked as an example of definitions, benefits, exclusions and claims terms; no provider is endorsed." },
       { label: "MediPet policy and terms", href: "https://medipet.co.za/terms-and-conditions-2024/", note: "Current provider terms checked as an example of disclosure, renewal, cancellation and policy-document precedence; no provider is endorsed." },
+      { label: "Oneplan Pet Plans and Pricing", href: "https://oneplan.co.za/plans/PetPlans", note: "Official plan page and published starting premiums and annual limits, checked 8 November 2026; figures and terms may change." },
+      { label: "MediPet Compare Plans", href: "https://medipet.co.za/compare-plans/", note: "Official plan page and published dog premiums and annual limits, checked 8 November 2026; figures and terms may change." },
+      { label: "dotsure / Pick n Pay Pet Club plans", href: "https://www.dotsure.co.za/picknpaypetclub", note: "Official partner product page and published starting premiums and annual limits, checked 8 November 2026; offer channel and terms may change." },
+      { label: "OUTsurance Pet Insurance", href: "https://www.outsurance.co.za/pet-insurance/", note: "Official plan page and published annual limits, checked 8 November 2026. No monthly premium was listed on the page reviewed." },
     ],
   },
   {
