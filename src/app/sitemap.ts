@@ -54,24 +54,6 @@ const retiredSitemapPaths = new Set([
   "/health/dog-drinking-a-lot-of-water-south-africa",
 ]);
 
-// High-volume templated local expansion pages that Google is not indexing.
-// Removing them from the sitemap reduces crawl waste and focuses signals on stronger content.
-const excludeFromSitemap = new Set([
-  ...phase28LocalGuidePages.map((g) => g.path),
-  ...phase17LocalGuidePages.map((g) => g.path),
-  ...phase19DogServiceGuidePages.map((g) => g.path),
-]);
-
-// One city-service page has a current, source-checked shortlist of four Durban daycare providers.
-const priorityLocalProviderPaths = new Set(
-  phase19DogServiceGuidePages
-    .filter(
-      (guide) =>
-        guide.path === "/dog-services/durban/dog-daycare-durban" &&
-        getProvidersForPath(guide.path).length >= 3,
-    )
-    .map((guide) => guide.path),
-);
 
 const hubs = [
   ...hubPages,
@@ -127,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of guides) {
-    if (retiredSitemapPaths.has(guide.path) || (excludeFromSitemap.has(guide.path) && !priorityLocalProviderPaths.has(guide.path)) || shouldNoindexLocalGuide(guide.path)) continue;
+    if (retiredSitemapPaths.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
 
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),
