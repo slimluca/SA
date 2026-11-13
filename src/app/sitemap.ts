@@ -26,7 +26,7 @@ import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
 import { phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
 import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
-import { shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
+import { getProvidersForPath, shouldNoindexLocalGuide } from "@/lib/local-provider-directory";
 import { absoluteUrl } from "@/lib/site";
 import { tools, toolsHub } from "@/lib/tools-data";
 import { flagshipGuides } from "@/lib/flagship-guides";
@@ -61,6 +61,11 @@ const excludeFromSitemap = new Set([
   ...phase17LocalGuidePages.map((g) => g.path),
   ...phase19DogServiceGuidePages.map((g) => g.path),
   ...phase18LocalCostGuidePages.map((g) => g.path),
+]);
+
+// One city-service page has a current, source-checked shortlist of four Durban daycare providers.
+const priorityLocalProviderPaths = new Set([
+  "/dog-services/durban/dog-daycare-durban",
 ]);
 
 const hubs = [
@@ -115,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of guides) {
-    if (retiredSitemapPaths.has(guide.path) || excludeFromSitemap.has(guide.path) || shouldNoindexLocalGuide(guide.path)) continue;
+    if (retiredSitemapPaths.has(guide.path) || (excludeFromSitemap.has(guide.path) && !priorityLocalProviderPaths.has(guide.path)) || shouldNoindexLocalGuide(guide.path)) continue;
 
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),
