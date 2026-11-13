@@ -69,24 +69,6 @@ const parasiteSources: Source[] = [
   ...coreSymptomSources,
 ];
 
-const mobilitySources: Source[] = [
-  {
-    label: "Cornell University College of Veterinary Medicine: What to expect when taking your limping dog to the veterinarian",
-    href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/what-to-expect-when-taking-your-limping-dog-to-the-veterinarian",
-    note: "Veterinary-school guidance on the history, examination, diagnostics, and information owners can bring for a limping dog.",
-  },
-  {
-    label: "VCA Animal Hospitals: First Aid for Limping Dogs",
-    href: "https://vcahospitals.com/animal-medical-dental-group/know-your-pet/first-aid-for-limping-dogs",
-    note: "Veterinarian-authored overview of lameness, safe observations, activity restriction, and when veterinary assessment is needed.",
-  },
-  {
-    label: "VCA Animal Hospitals: Lameness in Dogs",
-    href: "https://vcahospitals.com/animal-medical-center-ne-al/know-your-pet/lameness-in-dogs",
-    note: "Veterinary overview of acute and chronic lameness, examination, and diagnostic testing.",
-  },
-];
-
 const eyeEarSkinSources: Source[] = [
   {
     label: "Cornell flea and tick prevention",
@@ -579,7 +561,24 @@ const symptomGuides: SymptomGuide[] = [
           "If the ear is painful, smelly, swollen, or discharging, see a vet first. Cleaning the wrong way can hurt or worsen problems.",
       },
       {
-        question: "    slug: "dog-limping-south-africa",
+        question: "Can grass seeds get into dog ears?",
+        answer:
+          "Yes. Sudden head shaking or pain after grassy walks should be checked by a vet.",
+      },
+      {
+        question: "Are ear infections contagious?",
+        answer:
+          "Many are not directly contagious, but mites and shared underlying issues can occur. Your vet can identify the cause.",
+      },
+    ],
+    related: [
+      { title: "Itchy Skin", description: "Allergies, fleas, and skin signs.", href: "/health/dog-scratching-and-itchy-skin-south-africa" },
+      { title: "Dog Grooming", description: "Ear and coat care basics.", href: "/grooming/dog-grooming-south-africa" },
+      { title: "Choose a Groomer", description: "Safe grooming questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
+    ],
+    sources: eyeEarSkinSources,
+  },
+    slug: "dog-limping-south-africa",
     title: "Dog Limping in South Africa: When to Call a Vet",
     seoTitle: "Dog Limping in South Africa: Causes & Vet Warning Signs",
     description:
