@@ -29,12 +29,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  // Force noindex on these templated local cost pages.
+  // Keep templated city pages out of search until they have enough unique evidence.
+  const indexable =
+    city === "cape-town" && slug === "dog-training-costs-cape-town";
   return createMetadata({
     title: guide.seoTitle,
     description: guide.description,
     path: guide.path,
-    noindex: true,
+    noindex: !indexable,
   });
 }
 
