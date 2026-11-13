@@ -13,7 +13,7 @@ import { phase12GuidePages } from "@/lib/phase12-guides";
 import { lawsHub, phase13GuidePages } from "@/lib/phase13-guides";
 import { phase14GuidePages } from "@/lib/phase14-guides";
 import { phase15GuidePages } from "@/lib/phase15-guides";
-import { localCityHubs, localHub } from "@/lib/phase17-local-guides";
+import { localCityHubs, localHub, phase17LocalGuidePages } from "@/lib/phase17-local-guides";
 import { localCostHub, phase18LocalCostGuidePages } from "@/lib/phase18-local-cost-guides";
 import { dogServicesHub, phase19DogServiceGuidePages } from "@/lib/phase19-dog-services-guides";
 import { phase20RecoveryGuidePages } from "@/lib/phase20-recovery-guides";
@@ -83,6 +83,7 @@ const guides: GuideContent[] = [
   ...phase13GuidePages,
   ...phase14GuidePages,
   ...phase15GuidePages,
+  ...phase17LocalGuidePages,
   ...phase18LocalCostGuidePages,
   ...phase19DogServiceGuidePages,
   ...phase20RecoveryGuidePages,
@@ -92,6 +93,7 @@ const guides: GuideContent[] = [
   ...phase25BreedLifestyleGuidePages,
   ...phase26DogNameGuidePages,
   ...phase27FunGuidePages,
+  ...phase28LocalGuidePages,
   ...phase29HealthSymptomGuidePages,
   ...phase30CostInsuranceGuidePages,
   ...flagshipGuides,
