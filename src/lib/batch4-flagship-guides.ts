@@ -254,9 +254,9 @@ export const batch4FlagshipGuides: GuideContent[] = [
     title: "Best Pet Insurance for Dogs in South Africa? How to Compare",
     seoTitle: "Best Pet Insurance South Africa? Compare Dog Cover",
     description:
-      "Looking for the best pet insurance for dogs in South Africa? Compare Oneplan, Dotsure, PawPaw and MediPet by cover type, limits, excesses, waiting periods and exclusions.",
+      "Compare published South African dog insurance premiums and plan limits from Oneplan, Dotsure, PawPaw, MediPet and OUTsurance, with dated sources and policy caveats.",
     intro:
-      "There is no single best pet insurance policy for every South African dog. A useful comparison depends on your dog's age and medical history, the cover you need, the cost you can afford each month, and the amount you could pay yourself when a claim is excluded, capped or reimbursed later. Start with the examples below, then verify the current policy wording and your own quote.",
+      "There is no single best pet insurance policy for every South African dog. This dated comparison records the starting prices and annual limits providers publish for selected plans; it is a market snapshot, not a ranking or a personalised quote. Your dog's actual premium, eligibility, exclusions and claim payment depend on the policy wording, schedule, underwriting and medical history. Confirm each detail directly before relying on it.",
     updated: "2026-11-13",
     primaryImage: {
       src: "/images/guides/compare-dog-insurance-south-africa.webp",
@@ -289,19 +289,21 @@ export const batch4FlagshipGuides: GuideContent[] = [
           "The phrase “best pet insurance” is personal: a low premium may come with narrower cover, while broader benefits may cost more or include caps, excesses and waiting periods. Compare the same needs across providers and calculate what you would pay on realistic example claims.",
         ],
         table: {
-          headers: ["Provider and official plan page", "What its published options indicate", "What to verify in your quote and wording"],
+          headers: ["Provider and official plan page", "Published dog-plan examples checked 13 November 2026", "Important comparison points"],
           rows: [
-            ["Oneplan — Plans", "The plan range separates benefit levels and shows hospital and day-to-day benefits, with some optional boosters.", "The exact annual and per-event limits, what each booster adds, waiting periods, excess rules and how claims are paid."],
-            ["Dotsure — Pet plan options", "Its plan tiers describe accident benefits and illness cover, with benefits varying between options.", "Whether illness cover is partial or broader on the selected tier, the relevant caps and excesses, exclusions, waiting periods and policy-specific premium."],
-            ["PawPaw — Plans", "Its published range includes accident-only options, annual-limit plans, a comprehensive option and a household Pack option.", "Whether the chosen benefit is capped per year or per claim, any claim-count or household rules, age and breed terms, and the excess/co-insurance."],
-            ["MediPet — FAQ and cover information", "Its published range describes several levels from accident cover to more comprehensive options, with optional benefits on some plans.", "The named underwriter, plan-specific waiting periods and excesses, chronic-care or routine-care add-ons, pre-existing-condition terms and claim process."],
+            ["Oneplan — Plans", "Accident: from R80/month, R8,500 annual limit; Primary: R160, R18,000; Hospital: R190, R48,500; Classic: R280, R52,000; Super: R430, R75,000.", "Prices are risk-profile dependent. Hospital and day-to-day benefits differ by plan; add-ons can change excesses or benefits. Check waiting periods and age eligibility."],
+            ["Dotsure — Pet plan options", "Accidental: from R99/month; Vital: R219; Elite: R399; Deluxe: R430; Ultimate: R1,399. Its comparison describes no illness cover on Accidental, partial illness cover on Vital, and broader illness benefits on higher tiers.", "The published comparison says plan limits and benefits are tier-specific; confirm the selected policy's annual and treatment limits, excesses, exclusions, waiting periods and any optional add-ons."],
+            ["PawPaw — Plans", "Accident 10: R80/month with R10,000 limit; Accident 20: R156 with R20,000; Smart: from R195 with R30,000 annual limit; Comprehensive: from R321 and advertised with no overall annual limit.", "PawPaw labels prices and cover as indicative. Check claim caps, co-insurance, category limits, household rules and which lifestyle or day-to-day benefits are included."],
+            ["MediPet — Compare Plans", "Accident Basic: R199/month and R25,000 annual maximum; Lite: from R325 and R40,000; Essential: from R489 and R62,000; Ultimate360: from R769 and R75,000.", "Lite has a maximum of four claims per policy year and a R13,760 maximum per claim. Plan excesses, age rules, add-ons, waiting periods and pre-existing-condition terms differ. MediPet also lists a separate R17 monthly veterinary service fee."],
+            ["OUTsurance — Pet insurance", "Published overall annual limits: R26,500 for Accidental; R50,000 for Core and Standard; R75,000 for Executive. OUTsurance advertises pet cover from R65/month, but premiums are calculated for the individual pet.", "Treat R65 as an advertised starting point, not a dog-specific quote. Check the fixed excess, benefit limits, 12-month hereditary/congenital waiting period, exclusions and plan-specific cover."],
           ],
         },
         links: [
           { title: "Oneplan pet plans", description: "Check current plan benefits and documents on the provider site.", href: "https://www.oneplan.co.za/plans/PetPlans" },
           { title: "Dotsure pet plan options", description: "Review the provider's current tier summaries and plan documents.", href: "https://www.dotsure.co.za/pet-plan-options" },
           { title: "PawPaw plans", description: "Compare the provider's published plan options and current details.", href: "https://pawpawpets.co.za/plans/" },
-          { title: "MediPet FAQ", description: "Check current cover explanations and policy questions on the provider site.", href: "https://medipet.co.za/faq/" },
+          { title: "MediPet plan comparison", description: "Check current dog-plan limits, starting prices and add-ons.", href: "https://medipet.co.za/compare-plans/" },
+          { title: "OUTsurance pet plans", description: "Check plan limits, benefits, exclusions and quote details.", href: "https://www.outsurance.co.za/pet-insurance/" },
         ],
       },
       {
@@ -397,7 +399,9 @@ export const batch4FlagshipGuides: GuideContent[] = [
     ],
     sources: [
       { label: "Financial Sector Conduct Authority: consumers", href: "https://www.fsca.co.za/Consumers/", note: "Official South African financial-sector consumer information and complaint context." },
-      { label: "OUTsurance pet policy wording", href: "https://www.outsurance.co.za/globalassets/documents/outsurance-sa/pet/pet_policy_wording.pdf", note: "Current provider policy wording checked as an example of definitions, benefits, exclusions and claims terms; no provider is endorsed." },
+      { label: "OUTsurance pet insurance plans", href: "https://www.outsurance.co.za/pet-insurance/", note: "Official plan table and advertised starting premium checked on 13 November 2026; personalised dog quotes and policy wording govern." },
+      { label: "OUTsurance pet policy wording", href: "https://www.outsurance.co.za/globalassets/documents/outsurance-sa/pet/pet_policy_wording.pdf", note: "Provider policy wording for definitions, benefits, exclusions and claims terms; no provider is endorsed." },
+      { label: "Dotsure plan comparison", href: "https://blog.dotsure.co.za/compare-pet-insurance-plans/", note: "Provider-published table checked on 13 November 2026 for tier starting prices and stated benefit differences; verify the current policy schedule." },
       { label: "MediPet FAQ and cover information", href: "https://medipet.co.za/faq/", note: "Provider-published plan and coverage explanations checked on 13 November 2026; policy wording and personalised terms take priority." },
       { label: "Oneplan pet plans", href: "https://www.oneplan.co.za/plans/PetPlans", note: "Provider-published plan summaries checked on 13 November 2026; benefits, terms and personalised quotes can change." },
       { label: "Dotsure pet plan options", href: "https://www.dotsure.co.za/pet-plan-options", note: "Provider-published tier summaries checked on 13 November 2026; benefits, terms and personalised quotes can change." },
