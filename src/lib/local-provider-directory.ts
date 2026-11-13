@@ -4307,19 +4307,11 @@ export function getProvidersForPath(path: string) {
   );
 }
 
-const indexableLocalCostPaths = new Set([
-  "/local-costs/cape-town/monthly-dog-costs-cape-town",
-  "/local-costs/johannesburg/emergency-vet-costs-johannesburg",
-]);
-
 export function shouldNoindexLocalGuide(path: string) {
   if (path.startsWith("/dog-services/")) {
     return getProvidersForPath(path).length === 0;
   }
 
-  if (path.startsWith("/local-costs/")) {
-    return !indexableLocalCostPaths.has(path);
-  }
-
+  // Published local cost guides are indexable and included in the sitemap.
   return false;
 }
