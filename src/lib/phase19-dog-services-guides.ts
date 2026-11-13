@@ -1,7 +1,8 @@
 import type { CardLink, GuideContent, HubContent, Source } from "@/lib/content";
 import { localCities } from "@/lib/phase17-local-guides";
+import { getProvidersForPath } from "@/lib/local-provider-directory";
 
-const reviewed = "2026-05-19";
+const reviewed = "2026-11-13";
 
 type DogServiceKey = "boarding" | "daycare" | "pet-sitters" | "dog-walkers" | "holiday-care";
 
@@ -194,7 +195,7 @@ function costFactorSection(serviceLabel: string) {
 
 function verificationQuickFacts(serviceLabel: string) {
   return [
-    `Dog Haven treats ${serviceLabel} pages as planning guides unless verified provider options are shown on the page.`,
+    `This ${serviceLabel} guide includes source-backed local options where public contact details are available. Listings are starting points, not rankings, endorsements, or guarantees of current availability.`,
     "Do not rely on social media claims, photos, or reviews alone. Verify the provider directly before booking.",
     "Ask about vaccination records, emergency vet plans, supervision, insurance or responsibility, and what happens if your dog becomes ill or stressed.",
     "Avoid providers who pressure you to pay before answering safety, handling, and emergency questions.",
@@ -435,8 +436,9 @@ function daycareGuide(city: (typeof localCities)[number], service: DogService): 
     faqs: [
       {
         question: `Does Dog Haven list verified dog daycare providers in ${city.name}?`,
-        answer:
-          "Confirm daycare services, supervision, prices, availability, and suitability directly before booking.",
+        answer: getProvidersForPath(pathFor(city, service)).length > 0
+          ? "This page shows source-backed local options as starting points, not rankings or endorsements. Confirm current services, prices, availability, eligibility, supervision, and suitability directly with each provider before booking."
+          : "There is no current source-backed provider shortlist on this page. Use the questions and checklist below when contacting local providers, and confirm their services, prices, availability, and safety policies directly.",
       },
       {
         question: "Is daycare good for every dog?",
