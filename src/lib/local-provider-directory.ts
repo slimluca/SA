@@ -2087,9 +2087,9 @@ export const localProviders: LocalProvider[] = [
     areaServed: "Durban",
     sourceUrl: "https://durbandoghotel.com/",
     sourceLabel: "Official Durban Dog Hotel website",
-    lastChecked: "2026-06-15",
+    lastChecked: "2026-11-13",
     notes:
-      "Durban dog boarding and daycare provider with public phone and email details listed on its official website. Confirm availability and care arrangements before booking.",
+      "Durban dog boarding and daycare provider. Its official FAQ describes a meet-and-greet to assess whether a dog is comfortable in a group and notes a one-to-one care option; call to confirm current fit, schedule, and terms.",
     verificationStatus: "verified-direct",
   },
   {
@@ -2117,9 +2117,9 @@ export const localProviders: LocalProvider[] = [
     areaServed: "Pinetown and Durban",
     sourceUrl: "https://www.doggy-daycareptn.com/",
     sourceLabel: "Official Doggy Daycare Pinetown website",
-    lastChecked: "2026-06-15",
+    lastChecked: "2026-11-13",
     notes:
-      "Durban-area daycare and boarding provider with public phone details listed on its official website. Confirm current availability directly.",
+      "Pinetown daycare and boarding provider. Its official website currently says dogs must be house-trained, at least five months old, and 25 kg or under; confirm eligibility, current availability, and booking terms directly.",
     verificationStatus: "verified-direct",
   },
   {
@@ -2133,9 +2133,9 @@ export const localProviders: LocalProvider[] = [
     areaServed: "Durban and KwaZulu-Natal",
     sourceUrl: "https://superdogskzn.co.za/",
     sourceLabel: "Official SuperDogz KZN website",
-    lastChecked: "2026-06-15",
+    lastChecked: "2026-11-13",
     notes:
-      "KwaZulu-Natal dog daycare and training provider with public phone and email details listed on its official website. Confirm services before booking.",
+      "KwaZulu-Natal dog boarding and training provider whose official site describes supervised daycare, including as an add-on for boarding. Ask whether daytime-only daycare is currently available and confirm group assessment, hours, and terms.",
     verificationStatus: "verified-direct",
   },
   {
@@ -2309,9 +2309,9 @@ export const localProviders: LocalProvider[] = [
     areaServed: "Redhill and Durban",
     sourceUrl: "https://barkingdogsspa.co.za/index.php/services/",
     sourceLabel: "Official Barking Dogs Spa services page",
-    lastChecked: "2026-06-15",
+    lastChecked: "2026-11-13",
     notes:
-      "Durban boarding, daycare, pet sitting, and grooming provider with public contact details listed on its official website. Confirm services and booking terms directly.",
+      "Redhill daycare, boarding, pet-sitting, and grooming provider. Its official services page describes supervised social play; confirm group setup, hours, eligibility, and booking terms directly.",
     verificationStatus: "verified-direct",
   },
   {
