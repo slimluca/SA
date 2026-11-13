@@ -491,7 +491,7 @@ export const phase6GuidePages: GuideContent[] = [
       "A practical South African leash training guide for safer pavement walks, estates, parks, beaches, vet visits, and dog-friendly public places.",
     intro:
       "Good leash manners make daily life safer. They help your dog pass gates, children, other dogs, cyclists, traffic, cafes, parks, beaches, and vet waiting rooms without pulling you into trouble.",
-    updated: "2026-05-13",
+    updated: "2026-11-13",
     quickFacts: [
       "Leash training is a skill, not a battle of strength.",
       "Reward the position and pace you want before pulling starts.",
@@ -502,7 +502,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "Equipment basics",
         body: [
-          "Choose equipment that fits safely and allows control without causing pain. A sturdy lead, comfortable harness or collar, ID tag, and treats are enough for many dogs. Strong or reactive dogs may need professional fitting and training help.",
+          "Choose a fixed-length lead and a comfortable, well-fitted harness or collar that the dog cannot back out of. Check the fit and clips before each walk. Use food rewards to teach the behaviour; avoid choke, prong, or electronic collars and leash corrections. For a powerful, fearful, or reactive dog, ask a qualified reward-based trainer or veterinarian to help select safe equipment.",
         ],
         checklist: [
           "Lead in good condition, not frayed.",
@@ -516,16 +516,18 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "Teach loose-lead walking",
         body: [
-          "Start in a low-distraction area. Reward your dog for being near you, checking in, and moving with a loose lead. If the lead tightens, stop, change direction, or create space instead of dragging.",
+          "Begin indoors, in a garden, or on a quiet driveway where your dog can still take food and respond to you. Mark and reward the moment the lead hangs in a loose curve and your dog chooses to stay near you. Practise a few steps, reward again, then pause so the session stays easy. Gradually add distance and everyday distractions only while your dog can still learn.",
+          "If the lead goes tight, stop moving or calmly turn away to regain slack; do not jerk the lead. If your dog is staring, barking, lunging, or cannot take food, increase distance from the trigger and try again when they can settle. Repeated lunging or fear needs an individual training plan, not a busier practice location.",
         ],
         table: {
           headers: ["Step", "What to do"],
           rows: [
-            ["Start easy", "Practise in the garden, driveway, or quiet pavement."],
-            ["Reward position", "Treat beside your leg before pulling starts."],
-            ["Add distractions", "Increase difficulty slowly."],
-            ["Use distance", "Move away from dogs, gates, or traffic if your dog struggles."],
-            ["Finish well", "End before your dog is exhausted or frustrated."],
+            ["Choose an easy space", "Begin where your dog can notice you and take a reward, such as indoors, a garden, or a quiet driveway."],
+            ["Reward slack", "When the lead forms a loose curve and your dog is near you or checks in, mark the moment and reward beside your leg."],
+            ["Build gradually", "Take a few comfortable steps, reward, and pause. Add time, distance, and new places one at a time."],
+            ["Reset without a tug", "If the lead tightens, stop or turn calmly until slack returns; then reward and continue."],
+            ["Make space from triggers", "If your dog fixates, barks, lunges, or stops responding, increase distance and use a quieter route."],
+            ["End while successful", "Keep practice brief and stop before your dog is tired, frightened, or frustrated."],
           ],
         },
       },
@@ -553,7 +555,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "Should I use a retractable lead?",
         answer:
-          "Retractable leads can be risky in busy areas because control is poor and the cord can injure people or dogs. A fixed lead is usually safer for training.",
+          "A retractable lead can make it harder to prevent a sudden rush and its cord can cause injury. A fixed-length lead gives clearer control during training, especially near roads, gates, and other dogs.",
       },
       {
         question: "Why does my dog pull harder when I pull back?",
@@ -563,7 +565,7 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "Can leash-reactive dogs improve?",
         answer:
-          "Many can improve with distance, reward-based behaviour work, management, and qualified support when needed.",
+          "Many dogs can improve with careful management, rewarding calm choices, enough distance to stay under threshold, and qualified help. If your dog is frightened or reactive, do not force close greetings or use leash corrections.",
       },
     ],
     related: [
