@@ -678,6 +678,12 @@ export const hubPages: HubContent[] = [
           "Questions about emergency vet care, deposits, reimbursement, exclusions, and claim documents.",
         href: "/insurance/dog-insurance-for-emergencies-south-africa",
       },
+      {
+        title: "Compare Dog Insurance Plans in South Africa",
+        description:
+          "A dated, source-linked comparison of plan examples, limits, excesses, and policy features.",
+        href: "/insurance/compare-dog-insurance-south-africa",
+      },
     ],
     related: [
       { title: "Pre-Existing Conditions", description: "How past symptoms, records, and timing can affect cover.", href: "/insurance/pre-existing-conditions-pet-insurance-south-africa" },
