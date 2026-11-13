@@ -348,7 +348,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
     intro:
       city.slug === "cape-town"
         ? "Cape Town training prices vary by format and provider. This page gives one clearly labelled public price example from a local provider, not a market average or endorsement. Confirm the current fee, location, class dates and inclusions directly before booking."
-        : `Dog training costs in ${city.name} vary because puppy classes, group lessons, private sessions, behaviour support, humane methods, quote questions, and cost factors.`,
+        : `Dog training costs in ${city.name} vary because puppy classes, private sessions, group classes, home visits and behaviour support are different services. Compare current quotes alongside methods, class size, owner involvement and follow-up support.`,
     updated: city.slug === "cape-town" && service.key === "training" ? "2026-11-13" : reviewed,
     quickFacts: [
       "Dog Haven does not rank trainers or invent exact local training prices.",
