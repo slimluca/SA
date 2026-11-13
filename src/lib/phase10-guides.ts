@@ -69,6 +69,24 @@ const parasiteSources: Source[] = [
   ...coreSymptomSources,
 ];
 
+const mobilitySources: Source[] = [
+  {
+    label: "Cornell University College of Veterinary Medicine: What to expect when taking your limping dog to the veterinarian",
+    href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/what-to-expect-when-taking-your-limping-dog-to-the-veterinarian",
+    note: "Veterinary-school guidance on the history, examination, diagnostics, and information owners can bring for a limping dog.",
+  },
+  {
+    label: "VCA Animal Hospitals: First Aid for Limping Dogs",
+    href: "https://vcahospitals.com/animal-medical-dental-group/know-your-pet/first-aid-for-limping-dogs",
+    note: "Veterinarian-authored overview of lameness, safe observations, activity restriction, and when veterinary assessment is needed.",
+  },
+  {
+    label: "VCA Animal Hospitals: Lameness in Dogs",
+    href: "https://vcahospitals.com/animal-medical-center-ne-al/know-your-pet/lameness-in-dogs",
+    note: "Veterinary overview of acute and chronic lameness, examination, and diagnostic testing.",
+  },
+];
+
 const eyeEarSkinSources: Source[] = [
   {
     label: "Cornell flea and tick prevention",
