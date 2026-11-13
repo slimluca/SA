@@ -66,6 +66,7 @@ const costRelated: CardLink[] = [
 
 const insuranceRelated: CardLink[] = [
   { title: "Pet Insurance for Dogs", description: "Plain-English insurance basics for South African owners.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
+  { title: "Compare Dog Insurance Plans", description: "A dated, source-linked comparison of South African plan examples and policy features.", href: "/insurance/compare-dog-insurance-south-africa" },
   { title: "Dog Insurance Waiting Periods", description: "Understand when cover may start.", href: "/insurance/dog-insurance-waiting-periods-south-africa" },
   { title: "Is Pet Insurance Worth It?", description: "Neutral budgeting questions without insurer rankings.", href: "/insurance/is-pet-insurance-worth-it-south-africa" },
   { title: "Emergency Vet Costs", description: "Cost factors for urgent care and after-hours treatment.", href: "/costs/emergency-vet-costs-south-africa" },
