@@ -743,7 +743,7 @@ export const hubPages: HubContent[] = [
   {
     slug: "costs",
     path: "/costs",
-    title: "Cost of Owning a Dog in South Africa",
+    title: "Dog Ownership Costs in South Africa",
     seoTitle: "Dog Costs South Africa | Monthly and First-Year Ownership Budget",
     description:
       "Budget guides for South African dog owners covering food, vet care, vaccines, grooming, training, insurance, emergency savings, and first-year costs.",
