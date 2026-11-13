@@ -759,6 +759,12 @@ export const dogServicesHub: HubContent = {
       description: service.cardDescription,
       href: pathFor(defaultServiceCity, service),
     })),
+    {
+      title: "Dog Daycare in Durban: Local Providers and Safety Checks",
+      description:
+        "Compare four source-checked Durban-area options and use practical checks for supervision, introductions, group size, rest, and heat.",
+      href: "/dog-services/durban/dog-daycare-durban",
+    },
   ],
   related: [
     { title: "Local Guides", description: "City guides for grooming, training, emergency vet preparation, and dog-friendly checks.", href: "/local" },
