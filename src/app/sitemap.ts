@@ -60,7 +60,7 @@ const excludeFromSitemap = new Set([
   ...phase28LocalGuidePages.map((g) => g.path),
   ...phase17LocalGuidePages.map((g) => g.path),
   ...phase19DogServiceGuidePages.map((g) => g.path),
-  ...phase18LocalCostGuidePages.map((g) => g.path),
+  ...phase18LocalCostGuidePages.filter((g) => g.path !== "/local-costs/cape-town/dog-training-costs-cape-town").map((g) => g.path),
 ]);
 
 // One city-service page has a current, source-checked shortlist of four Durban daycare providers.
@@ -104,6 +104,7 @@ const guides: GuideContent[] = [
   ...phase13GuidePages,
   ...phase14GuidePages,
   ...phase15GuidePages,
+  ...phase18LocalCostGuidePages,
   ...phase19DogServiceGuidePages,
   ...phase20RecoveryGuidePages,
   ...phase21PreventionGuidePages,
