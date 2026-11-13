@@ -80,7 +80,11 @@ const mobilitySources: Source[] = [
     href: "https://vcahospitals.com/animal-medical-dental-group/know-your-pet/first-aid-for-limping-dogs",
     note: "Veterinarian-authored overview of lameness, safe observations, activity restriction, and when veterinary assessment is needed.",
   },
-  ...coreSymptomSources,
+  {
+    label: "VCA Animal Hospitals: Lameness in Dogs",
+    href: "https://vcahospitals.com/animal-medical-center-ne-al/know-your-pet/lameness-in-dogs",
+    note: "Veterinary overview of acute and chronic lameness, examination, and diagnostic testing.",
+  },
 ];
 
 const eyeEarSkinSources: Source[] = [
@@ -580,6 +584,7 @@ const symptomGuides: SymptomGuide[] = [
     seoTitle: "Dog Limping in South Africa: Causes & Vet Warning Signs",
     description:
       "Learn what to do when a dog is limping in South Africa, which signs need urgent veterinary care, what to observe safely, and what to tell your vet.",
+    updated: "2026-11-13",
     symptom: "limping",
     urgentSummary:
       "Seek urgent veterinary help for a dog that cannot stand or bear weight, has severe pain, an obvious deformity or open wound, or starts limping after a major fall, vehicle impact, or animal attack. Call your vet promptly for a new or persistent limp.",
