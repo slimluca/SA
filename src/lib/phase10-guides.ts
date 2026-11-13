@@ -72,7 +72,7 @@ const parasiteSources: Source[] = [
 const mobilitySources: Source[] = [
   {
     label: "Cornell University College of Veterinary Medicine: What to expect when taking your limping dog to the veterinarian",
-    href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/what-expect-when-taking-your-limping-dog-veterinarian",
+    href: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/what-to-expect-when-taking-your-limping-dog-to-the-veterinarian",
     note: "Veterinary-school guidance on the history, examination, diagnostics, and information owners can bring for a limping dog.",
   },
   {
