@@ -23,6 +23,8 @@ type BreedSpec = {
   questions: string[];
   checklist: string[];
   faqs: GuideContent["faqs"];
+  sources?: Source[];
+  updated?: string;
 };
 
 const reviewed = "2026-05-15";
@@ -591,28 +593,46 @@ const breeds: BreedSpec[] = [
   },
   {
     slug: "doberman-south-africa",
+    updated: "2026-11-13",
     name: "Doberman",
     seoName: "Doberman South Africa",
     summary:
-      "Dobermans are athletic, sensitive, intelligent dogs that need responsible training, companionship, health screening, and owners who avoid protection-dog hype.",
+      "The Doberman is an alert, athletic companion that needs daily activity, close human contact, humane training, and thoughtful health planning. Choose for temperament and household fit, never as a substitute for security systems or safe handling.",
     context:
-      "Dobermans are sometimes chosen in South Africa for security image, but they need close human involvement, training, and careful health planning. Isolation in a yard is poor ownership.",
+      "Dobermans are sometimes marketed around protection in South Africa, but a dog should not be treated as an alarm or deterrent. Their short coat, athletic build, need for daily companionship, secure handling, and cardiac health questions all belong in the decision. South African heat, access to shade and water, and the owner’s real workday matter as much as garden size.",
     bestFor: ["Experienced active owners", "Training-focused homes", "Owners wanting a companion first"],
     notIdealFor: ["Outdoor-only security expectations", "Owners away all day", "Homes with no health or training budget"],
     size: "Large, athletic, and strong.",
-    exercise: "High; daily exercise and mental work.",
+    exercise: "Plan for daily walks and short training or scent-based activities, adjusted to age and health. A large garden does not replace interaction and structured exercise. Ask a vet before strenuous exercise if the dog has heart symptoms or a known condition.",
     grooming: "Low coat care.",
     shedding: "Low to moderate.",
     barking: "Can be alert; management matters.",
     training: "Highly trainable, sensitive, and needs humane consistency.",
     family: "Can bond closely with families; supervise and socialise well.",
     space: "Needs space or serious daily exercise; townhouse living is demanding.",
-    climate: "Short coat needs sun, cold, and heat awareness.",
-    health: ["Heart disease screening, hips, neck/spine, and bleeding disorders can be relevant.", "Discuss insurance and screening with a vet."],
-    cost: "Training, food, insurance, and cardiac or specialist care can be significant.",
+    climate: "A short coat offers little protection from cold or strong sun. Provide a warm indoor resting place, shade and water, and choose cooler exercise times in hot weather; never leave the dog in a parked vehicle.",
+    sources: [
+      {
+        label: "Doberman Pinscher Club of America: Health",
+        href: "https://dpca.org/breed/health/",
+        note: "Breed-club overview of Doberman health conditions, including cardiomyopathy, and the limits of available testing.",
+      },
+      {
+        label: "European Society of Veterinary Cardiology: DCM screening guidelines for Doberman Pinschers",
+        href: "https://pubmed.ncbi.nlm.nih.gov/28965673/",
+        note: "Peer-reviewed veterinary task-force recommendations describing repeated Holter monitoring and echocardiography for screening.",
+      },
+      {
+        label: "Kennel Union of Southern Africa breed standards",
+        href: "https://www.kusa.co.za/index.php/documents/breed-standards/10-kusa-breeds/kusa-breed-standards",
+        note: "South African breed-standard reference for comparing physical traits and breed descriptions.",
+      },
+    ],
+    health: ["Dilated cardiomyopathy (DCM) is an important Doberman health concern; a normal one-time check does not rule out later disease. Ask a veterinarian what ongoing heart monitoring is appropriate for this individual dog.", "When assessing a breeder, ask for dated veterinary cardiac evaluations and written health records for parents and close relatives. Also ask about von Willebrand disease and hip testing; screening choices and interpretation belong with a veterinarian.", "Watch for fainting, unexplained weakness, exercise intolerance, breathing difficulty, or collapse, and seek prompt veterinary advice if these occur."],
+    cost: "Budget for training, quality food, routine veterinary care, and possible ongoing cardiac investigations or specialist care. Ask insurers about exclusions and waiting periods before relying on cover.",
     adoption: "Rescue may be possible. If buying, verify health screening, temperament, records, and breeder ethics.",
-    questions: ["Can I provide companionship and training?", "Can I afford health screening and insurance?", "Am I avoiding security-image motives?"],
-    checklist: ["Training plan.", "Health screening questions.", "Insurance review.", "Exercise routine.", "Secure fencing."],
+    questions: ["Can I give this dog daily company, training, and exercise throughout its life?", "Have I planned safe control around visitors, children, other dogs, gates, and public spaces?", "Can I budget for routine veterinary care and possible cardiac assessment?", "Am I choosing a companion rather than a security image?", "If buying, can the breeder provide current, verifiable health records for both parents and close relatives?"],
+    checklist: ["Meet the individual dog and ask about its behaviour in ordinary home situations.", "Plan daily exercise, reward-based training, enrichment, and indoor companionship.", "Confirm secure fencing, gates, lead equipment, and visitor management.", "Ask a veterinarian which health checks and cardiac monitoring fit the dog’s age and history.", "Request written health records for breeding dogs and ask what the results mean.", "Compare insurance cover, exclusions, excesses, and waiting periods before purchase or adoption."],
     faqs: [
       { question: "Are Dobermans good guard dogs?", answer: "Do not choose a dog only for guarding. Dobermans need companionship, training, welfare, and safe handling." },
       { question: "Can Dobermans live outside?", answer: "They are people-focused and short-coated. Outdoor-only living is not a good plan." },
@@ -691,7 +711,7 @@ function toGuide(breed: BreedSpec): GuideContent {
     seoTitle: `${breed.seoName} | Practical Breed Guide`,
     description: `A South Africa-specific ${breed.name} guide covering temperament, exercise, grooming, training, family fit, health, costs, adoption, and responsible breeder questions.`,
     intro: `${breed.summary} Before choosing a dog, compare the individual animal's needs and temperament with your household rather than relying on looks, status, or trends.`,
-    updated: reviewed,
+    updated: breed.updated ?? reviewed,
     quickFacts: [
       `Short summary: ${breed.summary}`,
       "Breed can shape likely needs, but individual temperament, health, training, socialisation, and environment matter.",
@@ -780,7 +800,7 @@ function toGuide(breed: BreedSpec): GuideContent {
       { title: "Pet Insurance", description: "Understand cover, exclusions, and waiting periods.", href: "/insurance/pet-insurance-for-dogs-south-africa" },
       { title: "Dog-Friendly Places", description: "Plan safe public outings.", href: "/dog-friendly/dog-friendly-places-south-africa" },
     ],
-    sources: breedSources,
+    sources: breed.sources ?? breedSources,
   };
 }
 
