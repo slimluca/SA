@@ -163,6 +163,20 @@ const groomingSources: Source[] = [
   ...welfareSources,
 ];
 
+const nailCareSources: Source[] = [
+  {
+    label: "VCA Animal Hospitals: How to Trim a Dog's Nails",
+    href: "https://vcahospitals.com/know-your-pet/how-to-trim-a-dogs-nails",
+    note: "Veterinary guidance on identifying the quick, taking small amounts, handling dark nails, and responding to minor bleeding.",
+  },
+  {
+    label: "VCA Animal Hospitals: Taking the Stress out of Nail Trimming for Dogs",
+    href: "https://vcahospitals.com/lakeline/know-your-pet/taking-the-stress-out-of-nail-trimming-for-dogs",
+    note: "Veterinary behaviour guidance on gradual handling, recognising fear, and when to pause or seek professional help.",
+  },
+  ...welfareSources,
+];
+
 const dogFriendlySources: Source[] = [
   {
     label: "City of Cape Town dog walking and beaches",
@@ -1004,20 +1018,7 @@ export const phase6GuidePages: GuideContent[] = [
           "It depends on coat, skin, smell, lifestyle, and vet advice. Use dog-safe shampoo and avoid over-bathing itchy dogs without guidance.",
       },
       {
-        question: "Why does my dog shed more in some seasons?",
-        answer:
-          "Seasonal coat changes are common, especially in double-coated dogs. Sudden bald patches, itching, or skin redness need a vet check.",
-      },
-    ],
-    related: [
-      { title: "Dog Shedding", description: "Manage loose hair and skin signs.", href: "/grooming/dog-shedding-south-africa" },
-      { title: "Dog Nail Clipping", description: "Keep paws comfortable.", href: "/grooming/dog-nail-clipping-south-africa" },
-      { title: "Dog Grooming", description: "Build a full routine.", href: "/grooming/dog-grooming-south-africa" },
-    ],
-    sources: groomingSources,
-  },
-  {
-    slug: "dog-nail-clipping-south-africa",
+   slug: "dog-nail-clipping-south-africa",
     path: "/grooming/dog-nail-clipping-south-africa",
     hubTitle: "Grooming",
     hubPath: "/grooming",
@@ -1027,10 +1028,12 @@ export const phase6GuidePages: GuideContent[] = [
       "A practical South African guide to dog nail clipping, long nails, paw handling, anxious dogs, groomer or vet help, bleeding risk, and when to seek care.",
     intro:
       "Long nails can affect comfort, posture, and grip. Nail clipping can also be stressful if a dog is scared or has had the quick cut before. The goal is steady, gentle maintenance, not a wrestling match.",
-    updated: "2026-05-13",
+    updated: "2026-11-13",
     isHealthGuide: true,
     quickFacts: [
       "If you are unsure where the quick is, ask a groomer or vet to show you.",
+      "Dark nails make the quick harder to see; do not try to take off a large amount at once.",
+      "Stop if your dog pulls away, freezes, trembles, growls, or becomes distressed. Do not restrain and push through a fearful session.",
       "Do not force a panicking dog through nail clipping. Build handling gradually or get professional help.",
       "Broken, bleeding, infected, or painful nails should be checked by a vet.",
       "Dogs who walk mostly on grass may not wear nails down as much as dogs on pavement.",
@@ -1053,18 +1056,27 @@ export const phase6GuidePages: GuideContent[] = [
       {
         heading: "Safer nail-care approach",
         body: [
-          "If clipping at home, use proper dog nail tools and take tiny amounts. Reward paw handling separately from clipping so the dog learns that touch is safe.",
+          "If clipping at home, use sharp dog nail clippers and good lighting. Hold the paw gently, remove only a tiny sliver at a time, and stop well before the quick. With dark nails, trim just the tip and ask a vet or groomer to demonstrate the safe angle. Keep sessions brief and reward each calm step.",
         ],
         table: {
           headers: ["Step", "Plan"],
           rows: [
-            ["Handling", "Touch paw, reward, release. Keep it short."],
-            ["Tool introduction", "Let the dog sniff clippers or grinder and reward calm behaviour."],
-            ["Tiny trims", "Take small tips instead of trying to shorten everything at once."],
-            ["Breaks", "Stop before the dog panics."],
-            ["Professional help", "Use a groomer or vet if nails are black, overgrown, or the dog is fearful."],
+            ["Paw comfort", "Touch a shoulder or leg briefly, reward, then stop. Build up to touching a paw only while the dog stays relaxed."],
+            ["Tool comfort", "Show the clippers or grinder without trimming. Reward calm looking or sniffing, then put the tool away."],
+            ["One small step", "Try one tiny trim only when the dog is comfortable. Take a small amount at a time; dark nails may hide the quick."],
+            ["Pause early", "Stop if the dog tenses, withdraws, trembles, growls, or tries to escape. Return to an easier handling step next time."],
+            ["Finish over sessions", "Several short sessions are safer than forcing every nail in one sitting."],
+            ["Professional help", "Ask a groomer or vet to demonstrate or handle overgrown nails, painful nails, difficult dewclaws, or a dog that cannot tolerate handling."],
           ],
         },
+      },
+      {
+        heading: "If a nail starts bleeding",
+        body: [
+          "Accidentally cutting the quick can hurt and cause bleeding. Keep your dog calm. If you already have styptic powder and know how to use it, follow its directions; otherwise contact your veterinary clinic for advice. Seek veterinary care if bleeding is heavy, does not stop, the nail is badly torn, or your dog remains very painful.",
+          "Do not use nail-clipping as a reason to force a frightened dog through handling. A vet can discuss low-stress care and whether medication or a different plan is appropriate.",
+        ],
+        callout: "caution",
       },
       {
         heading: "When to use a groomer or vet",
@@ -1088,10 +1100,20 @@ export const phase6GuidePages: GuideContent[] = [
       {
         question: "What if I cut the quick?",
         answer:
-          "Stay calm, apply appropriate first-aid pressure, and contact a vet if bleeding is heavy, does not stop, or the dog is in pain.",
+          "Keep your dog calm. Use styptic powder only if you have it and know how to apply it; contact a vet if bleeding is heavy or does not stop, the nail is torn, or your dog is very painful.",
       },
       {
         question: "Is grinding better than clipping?",
+        answer:
+          "Some dogs prefer grinding, others dislike the sound. Introduce either method gently and use professional help if your dog is fearful.",
+      },
+    ],
+    related: [
+      { title: "Dog Grooming", description: "Build a grooming routine.", href: "/grooming/dog-grooming-south-africa" },
+      { title: "Choose a Groomer", description: "Ask handling questions.", href: "/grooming/how-to-choose-a-dog-groomer-south-africa" },
+      { title: "Dog Behaviour Problems", description: "Understand fear and handling.", href: "/training/dog-behaviour-problems-south-africa" },
+    ],
+    sources: nailCareSources,tion: "Is grinding better than clipping?",
         answer:
           "Some dogs prefer grinding, others dislike the sound. Introduce either method gently and use professional help if your dog is fearful.",
       },
