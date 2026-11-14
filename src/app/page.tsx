@@ -140,6 +140,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section-shell py-12 sm:py-16">
+        <div className="grid gap-6 rounded-[1.5rem] border border-oat bg-[#fffaf0] p-7 shadow-panel sm:p-9 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="max-w-2xl">
+            <p className="section-kicker">Plan for dog care</p>
+            <h2 className="section-title">Prepare for routine costs and unexpected vet bills.</h2>
+            <p className="section-copy mt-3">See the main costs of owning a dog and compare South African insurance plan features, limits and exclusions before choosing cover.</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/insurance/compare-dog-insurance-south-africa" className="primary-button">Compare dog insurance <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/costs" className="text-sm font-black text-moss underline decoration-moss/40 underline-offset-4 hover:text-sage">Explore dog costs</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="relative isolate overflow-hidden py-20 text-white">
         <Image src="/images/home/south-africa-dog-outdoors-hero.webp" alt="Dog and owner enjoying a South African coastal adventure" fill loading="eager" sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.93),rgba(3,55,45,.56),rgba(3,55,45,.12))]" />
