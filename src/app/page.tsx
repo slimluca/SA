@@ -12,7 +12,7 @@ export const metadata: Metadata = createMetadata({
   title: "Dog Care in South Africa | Guides & Free Tools | Dog Haven",
   description: "Practical dog care in South Africa: health, emergency, breed, food, training and adoption guides, free calculators, dog-friendly places and local advice.",
   path: "/",
-  image: "/images/home/dog-haven-south-africa-hero.webp",
+  image: "/images/home/south-africa-choosing-dog-hero.webp",
   imageAlt: "Dog and owner walking along a quiet South African coastal path",
   imageWidth: 1536,
   imageHeight: 1024,
@@ -54,7 +54,7 @@ export default function HomePage() {
     <>
       <JsonLd data={faqSchema(homeFaqs)} />
       <section className="relative isolate min-h-[620px] overflow-hidden bg-emerald-deep text-white lg:min-h-[690px]">
-        <Image src="/images/home/dog-haven-south-africa-hero.webp" alt="Dog and owner walking along a South African coastal path" fill priority sizes="100vw" className="object-cover object-[62%_top]" />
+        <Image src="/images/home/south-africa-choosing-dog-hero.webp" alt="Dog owner with two dogs in a leafy South African garden" fill priority sizes="100vw" className="object-cover object-[62%_top]" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.96)_0%,rgba(3,55,45,.78)_35%,rgba(3,55,45,.12)_72%,rgba(3,55,45,.03)_100%)]" />
         <div className="section-shell relative flex min-h-[620px] items-center py-16 lg:min-h-[690px]">
           <div className="max-w-[610px] py-10">
