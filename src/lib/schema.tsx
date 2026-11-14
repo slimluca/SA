@@ -33,10 +33,15 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": absoluteUrl("/#organization"),
     name: siteConfig.name,
     url: siteConfig.domain,
     email: siteConfig.email,
     description: siteConfig.description,
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/brand/dog-haven-south-africa-icon.png"),
+    },
   };
 }
 
