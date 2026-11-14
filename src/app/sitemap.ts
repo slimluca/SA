@@ -109,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const route of [...staticRoutes, ...hubs.map((hub) => hub.path), ...tools.map((tool) => tool.path)]) {
     const image =
       route === "/"
-        ? "/images/home/south-africa-choosing-dog-hero.webp"
+        ? "/images/home/dog-haven-south-africa-owner-two-dogs-garden.png"
         : premiumHubConfigs[route.slice(1)]?.image.src;
 
     entries.set(route, {
