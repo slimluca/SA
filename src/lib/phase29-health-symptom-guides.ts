@@ -49,17 +49,17 @@ const coreSources: Source[] = [
     note: "South African veterinary context for responsible pet health and timely veterinary care.",
   },
   {
-    label: "VCA Animal Hospitals - Common emergencies in dogs",
+    label: "VCA Animal Hospitals: Common emergencies in dogs",
     href: "https://vcahospitals.com/know-your-pet/common-emergencies-in-dogs",
     note: "Veterinary guidance on warning signs such as repeated vomiting, diarrhoea, breathing difficulty, weakness, and collapse.",
   },
   {
-    label: "Merck Veterinary Manual - Stomach and intestine disorders in dogs",
+    label: "Merck Veterinary Manual: Stomach and intestine disorders in dogs",
     href: "https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs",
     note: "Veterinary reference for digestive warning signs, dehydration, obstruction concerns, and veterinary assessment.",
   },
   {
-    label: "Merck Veterinary Manual - Canine parvovirus",
+    label: "Merck Veterinary Manual: Canine parvovirus",
     href: "https://www.merckvetmanual.com/digestive-system/infectious-diseases-of-the-gastrointestinal-tract-in-small-animals/canine-parvovirus-infection-parvoviral-enteritis-in-dogs",
     note: "Veterinary reference for parvovirus signs such as lethargy, appetite loss, vomiting, and diarrhoea.",
   },
@@ -67,12 +67,12 @@ const coreSources: Source[] = [
 
 const seizureSources: Source[] = [
   {
-    label: "VCA Animal Hospitals - Seizures in dogs",
+    label: "VCA Animal Hospitals: Seizures in dogs",
     href: "https://vcahospitals.com/know-your-pet/seizures-general-for-dogs",
     note: "Veterinary overview of seizures, post-seizure behaviour, and why veterinary assessment matters.",
   },
   {
-    label: "VCA Animal Hospitals - Seizures and syncope",
+    label: "VCA Animal Hospitals: Seizures and syncope",
     href: "https://vcahospitals.com/know-your-pet/seizures-and-syncope",
     note: "Veterinary context for seizure-like episodes and fainting-like events.",
   },

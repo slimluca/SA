@@ -54,6 +54,15 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
     guide.hubPath === "/insurance" ||
     guide.hubPath === "/costs" ||
     guide.hubPath === "/food";
+  const educationalNote = guide.hubPath === "/emergency"
+    ? { heading: "When to contact a vet", body: "Use this guide to prepare, but contact a veterinarian promptly if your dog may be in danger or needs urgent care." }
+    : guide.isHealthGuide
+      ? { heading: "Veterinary guidance", body: "This is general health information. A veterinarian can examine your dog and advise on diagnosis and treatment." }
+      : guide.hubPath === "/insurance"
+        ? { heading: "Check the policy details", body: "Benefits, exclusions and prices vary by policy. Confirm the current terms with the insurer and request a written quote." }
+        : guide.hubPath === "/costs"
+          ? { heading: "About the cost estimates", body: "Costs vary by provider, location and your dog’s needs. Confirm current fees directly before you budget." }
+          : { heading: "Food safety", body: "Risk depends on the ingredient, amount and your dog’s health. If your dog has eaten something unsafe, contact a veterinarian for advice." };
   const primaryImage = guide.primaryImage ? (
     <figure className="relative min-h-64 overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 shadow-soft sm:min-h-80 lg:min-h-[390px]">
       <Image
@@ -98,15 +107,15 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
               <h1 className="mt-4 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl">{guide.title}</h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">{guide.intro}</p>
               <p className="mt-5 max-w-2xl text-sm leading-6 text-white/65">
-          Prepared by the{" "}
-          <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/about">
-            Dog Haven Editorial Team
-          </Link>{" "}
-          using South African, veterinary, and official sources. Learn how we{" "}
-          <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/editorial-policy">
-            research and correct our guides
-          </Link>
-          .
+                By the{" "}
+                <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/about">
+                  Dog Haven editorial team
+                </Link>
+                . Read our{" "}
+                <Link className="font-bold text-white underline decoration-[#f3c76d] underline-offset-4" href="/editorial-policy">
+                  editorial standards
+                </Link>
+                .
               </p>
             </div>
             {primaryImage}
@@ -117,12 +126,9 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
 
         {needsEducationalNote ? (
           <div className="mt-5 rounded-xl border border-honey/45 bg-honey/12 p-5 text-sm leading-6 text-bark">
-            <p className="font-black text-cocoa">Educational guide</p>
+            <p className="font-black text-cocoa">{educationalNote.heading}</p>
             <p className="mt-1">
-              This page is for general South African dog-owner education. It does not replace a
-              veterinarian, qualified behaviour professional, insurer, or other relevant
-              professional. For urgent symptoms or fast-worsening problems, contact a vet
-              immediately.
+              {educationalNote.body}
             </p>
           </div>
         ) : null}

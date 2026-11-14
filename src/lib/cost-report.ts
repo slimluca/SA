@@ -138,11 +138,11 @@ export const costReportGuide: GuideContent = {
       table: {
         headers: ["Comparable public sample", "Observed examples", "Important limit"],
         rows: [
-          ["Vitalvet annual dog vaccination across three listed branches", "R325-R450; sample median R375", "One provider group; confirm inclusions and current branch price"],
-          ["Pampered Paws full grooms across listed size and coat groups", "R225-R450; sample median R312.50", "One Cape Town provider; coat condition and extras can change price"],
-          ["Insurer-published plan starting premiums", "R80-R430 per month; sample median R219", "Nine unlike plans from two insurers; personalised premiums vary"],
-          ["Selected group puppy-course examples", "R500-R1,480 per course", "Course length, location and structure differ; no median comparison used"],
-          ["Selected standard boarding examples", "R130-R350 per day or night", "Size, season, stay length, facility and inclusions differ"],
+          ["Vitalvet annual dog vaccination across three listed branches", "R325 to R450; sample median R375", "One provider group; confirm inclusions and current branch price"],
+          ["Pampered Paws full grooms across listed size and coat groups", "R225 to R450; sample median R312.50", "One Cape Town provider; coat condition and extras can change price"],
+          ["Insurer-published plan starting premiums", "R80 to R430 per month; sample median R219", "Nine unlike plans from two insurers; personalised premiums vary"],
+          ["Selected group puppy-course examples", "R500 to R1,480 per course", "Course length, location and structure differ; no median comparison used"],
+          ["Selected standard boarding examples", "R130 to R350 per day or night", "Size, season, stay length, facility and inclusions differ"],
         ],
       },
     },
@@ -159,7 +159,7 @@ export const costReportGuide: GuideContent = {
         "Service or product unit recorded",
         "Location recorded when the service is local",
         "Promotion, starting price or range status disclosed",
-        "Direct source URL and 2026-08-10 checked date retained",
+        "Direct source URL and 10 August 2026 checked date retained",
       ],
     },
     {
@@ -202,7 +202,7 @@ export const costReportGuide: GuideContent = {
       heading: "Professional grooming",
       body: [
         "Size is only one grooming cost driver. Coat type, matting, behaviour, hand-scissoring, de-shedding, travel and frequency can change the quote. The Cape Town sample keeps one provider's service definition consistent across size and coat groups, which makes it suitable for a narrow observed range chart.",
-        "The observed R225-R450 full-groom range and R312.50 sample median belong to six listings from one provider. They should not be relabelled as a Cape Town or South African average.",
+        "The observed full-groom range from R225 to R450 and R312.50 sample median belong to six listings from one provider. They should not be relabelled as a Cape Town or South African average.",
       ],
       table: {
         headers: ["Public example", "Listed price", "Basis", "Location", "Source"],
@@ -229,7 +229,7 @@ export const costReportGuide: GuideContent = {
     {
       heading: "Insurance",
       body: [
-        "The dataset records nine insurer-published starting premiums from Oneplan and dotsure.co.za. The observed range is R80-R430 per pet per month and the sample median is R219. Those numbers compare starting prices, not equivalent protection, and they are not personalised premiums.",
+        "The dataset records nine insurer-published starting premiums from Oneplan and dotsure.co.za. The observed range is R80 to R430 per pet per month and the sample median is R219. Those numbers compare starting prices, not equivalent protection, and they are not personalised premiums.",
         "A useful comparison includes the excess, co-payment, annual and per-event limits, sub-limits, waiting periods, exclusions, pre-existing-condition rules, hereditary or congenital cover, routine-care benefits and claims process. Request a quote for the actual dog and retain the policy wording used for the decision.",
       ],
       table: {

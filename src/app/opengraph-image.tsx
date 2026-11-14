@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Dog Haven - South Africa's practical dog care guide";
+export const alt = "Dog Haven: South Africa's practical dog care guide";
 export const size = {
   width: 1200,
   height: 630,
