@@ -115,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.set(guide.path, {
       url: absoluteUrl(guide.path),
       lastModified: new Date(`${guide.updated}T00:00:00.000Z`),
+      images: guide.primaryImage ? [absoluteUrl(guide.primaryImage.src)] : undefined,
     });
   }
 
