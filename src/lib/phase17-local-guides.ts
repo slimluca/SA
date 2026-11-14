@@ -722,7 +722,7 @@ function dogFriendlyGuide(city: LocalCity, service: LocalService): GuideContent 
     seoTitle: seoTitleFor(city, service),
     description: descriptionFor(city, service),
     intro: `Before visiting a dog-friendly place in ${city.name}, confirm the current rules with the park, beach, cafe, hotel or venue. Plan for heat, water, waste, leads and your dog's comfort around other people and animals.`,
-    updated: reviewed,
+    updated: city.slug === "johannesburg" ? "2026-11-14" : reviewed,
     quickFacts: [
       "Dog-friendly rules can change by municipality, beach, park, estate, accommodation provider, venue, season, and time of day.",
       "Always check official or venue rules before visiting with a dog.",
