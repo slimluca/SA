@@ -24,7 +24,7 @@ export const costReportRecordCount = costExamples.length;
 export const costReportCards: CardLink[] = [
   {
     title: "South African Dog Ownership Cost Report",
-    description: "Explore 46 current public price examples and build a dog-care budget without relying on a fake national average.",
+    description: "Explore 46 public price examples checked on 10 August 2026 and build a dog-care budget without relying on a fake national average.",
     href: costReportPath,
   },
 ];
@@ -64,7 +64,7 @@ export const costReportGuide: GuideContent = {
   title: "South African Dog Ownership Cost Report",
   seoTitle: "South African Dog Ownership Cost Report | August 2026 Price Data",
   description:
-    "A transparent South African dog-cost report with 46 source-linked price examples checked on 10 August 2026, a downloadable CSV and printable budget worksheet. Verify current prices with providers.",
+    "A South African dog-cost report with 46 source-linked prices checked on 10 August 2026, an open CSV and printable worksheet. Verify prices with providers.",
   intro:
     "Dog ownership does not have one honest national price tag. This report records 46 public examples from South African retailers, veterinary practices, groomers, trainers, boarding services, welfare organisations and insurers as displayed on 10 August 2026. It is a dated snapshot, not a live price list or national average; check with each provider before relying on an amount. Use the examples to plan a budget for an individual dog.",
   updated: "2026-08-10",
@@ -382,7 +382,7 @@ export const costReportGuide: GuideContent = {
   sources: [
     { label: "AACL Johannesburg adoption process", href: "https://www.aacl.co.za/adoption-process/", note: "Published Johannesburg adoption fee and included services; checked 10 August 2026." },
     { label: "Woodrock Animal Rescue adoption fees", href: "https://www.woodrockanimalrescue.co.za/adopt-dogs", note: "Published adult-dog and puppy adoption fees; checked 10 August 2026." },
-    { label: "Takealot dog product listings", href: "https://www.takealot.com/pets/equipment-and-accessories-26669", note: "Current setup-product examples; promotions and option prices noted in the dataset." },
+    { label: "Takealot dog product listings", href: "https://www.takealot.com/pets/equipment-and-accessories-26669", note: "Public setup-product examples checked 10 August 2026; promotions and option prices are noted in the dataset." },
     { label: "VetEx Royal Canin Mini Adult 8 kg", href: "https://www.vetexonline.co.za/product/royal-canin-mini-adult-8kg/", note: "One-time retail food price example; checked 10 August 2026." },
     { label: "MyPet dog food listings", href: "https://mypet.co.za/shop/index.php/all-categories/food/dog-food.html?dir=asc&limit=15&manufacturer=346&order=manufacturer&packsize=115", note: "KwaZulu-Natal retail food example and delivery-area note." },
     { label: "Pet Heaven parasite products", href: "https://www.petheaven.co.za/dogs/dog-tick-and-flea-treatment/dog-tick-and-flea-chewable-treatments.html", note: "Weight-specific public retail examples; not product recommendations." },

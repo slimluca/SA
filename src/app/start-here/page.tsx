@@ -61,7 +61,7 @@ const sections = [
     title: "Food and costs",
     description: "Choose practical feeding plans and budget before expenses become stressful.",
     links: [
-      { title: "Dog Ownership Cost Report", description: "Current public price examples, an open CSV dataset, and a printable budget worksheet.", href: "/costs/south-africa-dog-ownership-cost-report" },
+      { title: "Dog Ownership Cost Report", description: "46 public price examples checked 10 August 2026, an open CSV dataset, and a printable budget worksheet.", href: "/costs/south-africa-dog-ownership-cost-report" },
       { title: "Choose Dog Food", description: "Life stage, size, budget, and vet-guided choices.", href: "/food/best-dog-food-south-africa" },
       { title: "Feeding Calculator", description: "Estimate an initial daily portion.", href: "/tools/dog-feeding-calculator" },
       { title: "Dog Cost Calculator", description: "Estimate a realistic monthly planning range.", href: "/tools/dog-cost-calculator" },
