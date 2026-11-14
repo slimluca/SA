@@ -13,7 +13,7 @@ export const metadata: Metadata = createMetadata({
   description: "Practical dog care in South Africa: health, emergency, breed, food, training and adoption guides, free calculators, dog-friendly places and local advice.",
   path: "/",
   image: "/images/home/south-africa-choosing-dog-hero.webp",
-  imageAlt: "Dog and owner walking along a quiet South African coastal path",
+  imageAlt: "Dog owner with two dogs in a leafy South African garden",
   imageWidth: 1536,
   imageHeight: 1024,
 });
