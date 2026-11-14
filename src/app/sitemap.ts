@@ -27,6 +27,7 @@ import { phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
 import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
 import { absoluteUrl } from "@/lib/site";
+import { premiumHubConfigs } from "@/lib/premium-hubs";
 import { tools, toolsHub } from "@/lib/tools-data";
 import { flagshipGuides } from "@/lib/flagship-guides";
 import { linkableAssetGuides } from "@/lib/linkable-assets";
@@ -106,7 +107,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries = new Map<string, MetadataRoute.Sitemap[number]>();
 
   for (const route of [...staticRoutes, ...hubs.map((hub) => hub.path), ...tools.map((tool) => tool.path)]) {
-    entries.set(route, { url: absoluteUrl(route) });
+    const image =
+      route === "/"
+        ? "/images/home/south-africa-choosing-dog-hero.webp"
+        : premiumHubConfigs[route.slice(1)]?.image.src;
+
+    entries.set(route, {
+      url: absoluteUrl(route),
+      images: image ? [absoluteUrl(image)] : undefined,
+    });
   }
 
   for (const guide of guides) {
