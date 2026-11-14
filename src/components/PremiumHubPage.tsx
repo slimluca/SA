@@ -15,7 +15,7 @@ function HubLink({ link }: { link: CardLink }) {
 
 function FeatureLink({ feature, lead = false }: { feature: HubFeature; lead?: boolean }) {
   return <Link href={feature.href} className={`group overflow-hidden rounded-[1.35rem] border border-oat bg-white shadow-panel outline-none transition hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-moss ${lead ? "grid sm:grid-cols-[1.05fr_.95fr]" : "flex min-h-36"}`}>
-    {feature.image ? <div className={`relative shrink-0 overflow-hidden bg-cream ${lead ? "min-h-64" : "w-32 sm:w-40"}`}><Image src={feature.image.src} alt={feature.image.alt} fill sizes={lead ? "(min-width:640px) 48vw, 100vw" : "160px"} className="object-cover transition duration-500 group-hover:scale-[1.03]" /></div> : <div className={`flex shrink-0 items-center justify-center bg-sage/10 text-sage ${lead ? "min-h-64" : "w-32 sm:w-40"}`}><PawPrint className="h-10 w-10" /></div>}
+    {feature.image ? <div className={`relative shrink-0 overflow-hidden bg-cream ${lead ? "min-h-64" : "w-32 sm:w-40"}`}><Image src={feature.image.src} alt={feature.image.alt} fill sizes={lead ? "(min-width:640px) 48vw, 100vw" : "160px"} className="object-contain" /></div> : <div className={`flex shrink-0 items-center justify-center bg-sage/10 text-sage ${lead ? "min-h-64" : "w-32 sm:w-40"}`}><PawPrint className="h-10 w-10" /></div>}
     <div className="flex flex-col justify-center p-5 sm:p-6"><h3 className={`${lead ? "text-2xl sm:text-3xl" : "text-lg"} font-black leading-tight text-navy group-hover:text-moss`}>{feature.title}</h3><p className="mt-2 text-sm leading-6 text-bark">{feature.description}</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-black text-moss">Explore <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></span></div>
   </Link>;
 }
@@ -32,7 +32,7 @@ export function PremiumHubPage({ hub, config, promotedGuides }: PremiumHubPagePr
     <JsonLd data={collectionPageSchema({ title: hub.title, description: hub.description, path: hub.path })} />
     {hub.faqs.length > 0 ? <JsonLd data={faqSchema(hub.faqs)} /> : null}
     <section className="relative isolate overflow-hidden bg-emerald-deep text-white">
-      <Image src={config.image.src} alt={config.image.alt} fill priority sizes="100vw" className="object-cover object-center" />
+      <Image src={config.image.src} alt={config.image.alt} fill priority sizes="100vw" className="object-contain object-right" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.98),rgba(3,55,45,.83)_45%,rgba(3,55,45,.12))]" />
       <div className="section-shell relative min-h-[540px] py-10 lg:flex lg:items-center lg:py-16"><div className="max-w-2xl"><div className="[&_a]:text-white/75 [&_span]:text-white/70"><Breadcrumbs items={[{ name: hub.title, href: hub.path }]} /></div><p className="light-kicker">{hub.kicker}</p><h1 className="mt-4 max-w-2xl text-4xl font-black leading-[1.03] tracking-tight text-white sm:text-5xl lg:text-6xl">{hub.title}</h1><p className="mt-5 max-w-xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8">{hub.intro}</p><div className="mt-8 flex flex-wrap gap-3">{config.heroLinks.map((link, index) => <Link key={link.href} href={link.href} className={index === 0 ? "primary-light-button" : "secondary-light-button"}>{link.title}<ArrowRight className="h-4 w-4" /></Link>)}</div></div></div>
     </section>

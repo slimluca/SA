@@ -64,13 +64,13 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           ? { heading: "About the cost estimates", body: "Costs vary by provider, location and your dog’s needs. Confirm current fees directly before you budget." }
           : { heading: "Food safety", body: "Risk depends on the ingredient, amount and your dog’s health. If your dog has eaten something unsafe, contact a veterinarian for advice." };
   const primaryImage = guide.primaryImage ? (
-    <figure className="relative min-h-64 overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 shadow-soft sm:min-h-80 lg:min-h-[390px]">
+    <figure className="relative aspect-[3/2] overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 shadow-soft">
       <Image
         src={guide.primaryImage.src}
         alt={guide.primaryImage.alt}
         fill
         sizes="(min-width: 1024px) 48vw, calc(100vw - 2rem)"
-        className="object-cover"
+        className="object-contain"
         priority
       />
     </figure>
