@@ -2220,9 +2220,9 @@ export const localProviders: LocalProvider[] = [
     areaServed: "Muldersdrift and Johannesburg",
     sourceUrl: "https://walkhaven.co.za/",
     sourceLabel: "Official Walkhaven Dog Park website",
-    lastChecked: "2026-06-15",
+    lastChecked: "2026-11-14",
     notes:
-      "Johannesburg-area dog park with public visitor information and contact details listed on its official website. Confirm current rules before visiting.",
+      "Official visitor information lists entry at R55 for adults and R40 for children and pensioners. Park hours are 7am–6:30pm from October to April and 7am–5:30pm from May to September; the restaurant is open Friday to Sunday and public holidays, 8am–4:30pm. Walkhaven asks visitors to bring vaccinated, well-socialised dogs. Confirm current details before travelling.",
     verificationStatus: "verified-direct",
   },
   {
