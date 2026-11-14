@@ -4,7 +4,7 @@ Internal reference only. Verify every organisation, editor and contact route bef
 
 ## South African Dog Ownership Cost Report
 
-- Canonical page: https://www.doghaven.co.za/costs/south-africa-dog-ownership-cost-report
+- Canonical page: https://doghaven.co.za/costs/south-africa-dog-ownership-cost-report
 - Produced by: Dog Haven South Africa
 - Published: August 2026
 - Data collected: 10 August 2026
@@ -28,7 +28,7 @@ Facebook intro: Planning for a dog’s real costs? Dog Haven’s South African c
 
 ## South African Dog Emergency Checklist
 
-- Canonical page: https://www.doghaven.co.za/emergency/dog-emergency-checklist-south-africa
+- Canonical page: https://doghaven.co.za/emergency/dog-emergency-checklist-south-africa
 - Produced by: Dog Haven South Africa
 - Format: five-page A4 PDF
 - Purpose: record dog details, medicines, veterinary contacts, transport information, emergency preparation and sitter instructions

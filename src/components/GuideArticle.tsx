@@ -25,6 +25,7 @@ import { VetTimingActionBox } from "@/components/VetTimingActionBox";
 import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
+import { absoluteUrl } from "@/lib/site";
 import { JsonLd, articleSchema, datasetSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
@@ -148,7 +149,7 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
         {guide.originalResource ? (
           <OriginalResourcePanel
             {...guide.originalResource}
-            url={`https://www.doghaven.co.za${guide.path}`}
+            url={absoluteUrl(guide.path)}
           />
         ) : null}
 

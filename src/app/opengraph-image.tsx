@@ -61,7 +61,7 @@ export default function Image() {
         >
           {/* next/image is not available inside ImageResponse's generated markup. */}
           <img
-            src="https://www.doghaven.co.za/brand/dog-haven-south-africa-logo.png"
+            src="https://doghaven.co.za/brand/dog-haven-south-africa-logo.png"
             alt="Dog Haven South Africa"
             width="390"
             height="165"
