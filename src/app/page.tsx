@@ -95,17 +95,21 @@ export default function HomePage() {
       </section>
 
       <section className="section-shell py-10">
-        <p className="section-kicker">Free tools</p>
-        <h2 className="section-title">Popular free tools</h2>
-        <p className="mt-2 max-w-2xl text-sm text-bark">Feeding calculator, cost estimator, food safety lookup, and more. No login required.</p>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {emergencyQuickLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-sm font-semibold text-red-800 hover:bg-red-100">{link.title}</Link>
-          ))}
+        <p className="section-kicker">Tools and urgent help</p>
+        <h2 className="section-title">Practical help for everyday dog care</h2>
+        <p className="mt-2 max-w-2xl text-sm text-bark">Plan routine care with free tools, or find clear next steps for an urgent concern.</p>
+        <div className="mt-6 rounded-2xl border border-red-200 bg-red-50/70 p-5">
+          <p className="text-sm font-black text-red-900">Need urgent help?</p>
+          <p className="mt-1 text-sm text-red-900/80">Start with the guide that matches what is happening.</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {emergencyQuickLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="rounded-full border border-red-200 bg-white px-3 py-1.5 text-sm font-semibold text-red-800 hover:bg-red-100">{link.title}</Link>
+            ))}
+          </div>
         </div>
-        <p className="mt-2 text-xs text-bark">Urgent topics: clear steps if something goes wrong.</p>
-        <p className="section-copy">No login. No personal data. Use these tools to plan feeding, costs, food safety and puppy care.</p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="mt-6 text-sm font-black text-navy">Free tools, no login required</p>
+        <p className="mt-1 text-xs text-bark">Use these tools to plan feeding, costs, food safety and puppy care. No personal data is needed.</p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {popularTools.map((tool) => (
             <Link key={tool.href} href={tool.href} className="group rounded-2xl border border-oat bg-white p-5 shadow-sm hover:border-sage hover:shadow-panel">
               <h3 className="font-black text-navy group-hover:text-moss">{tool.title}</h3>
