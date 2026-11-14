@@ -100,7 +100,7 @@ export function DogFeedingCalculator() {
         <p className="text-sm font-black uppercase tracking-wide text-bark">Estimated daily starting point</p>
         <p className="mt-2 text-3xl font-black text-cocoa">{result.calories.toLocaleString("en-ZA")} kcal/day</p>
         <p className="mt-2 text-lg font-black text-moss">
-          About {result.gramsLow}g – {result.gramsHigh}g per day for this food type estimate
+          About {result.gramsLow}g to {result.gramsHigh}g per day for this food type estimate
         </p>
         <p className="mt-3 text-sm leading-6 text-bark">
           Check your exact food label because calories vary widely. Adjust with body condition and veterinary advice.

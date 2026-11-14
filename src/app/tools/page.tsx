@@ -42,7 +42,7 @@ export default function ToolsPage() {
           <p className="light-kicker">Free tools</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Interactive tools for South African dog owners</h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-white/85">
-            Calculators, quizzes, and checklists that help you plan, check, and decide — without leaving the site or sharing personal information.
+            Use these calculators, quizzes and checklists to plan dog care, compare options and keep useful details together. Your answers stay in your browser.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((tool) => (

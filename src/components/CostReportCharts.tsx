@@ -58,7 +58,7 @@ export function CostReportCharts() {
             <div key={item.label}>
               <div className="mb-1 flex items-center justify-between gap-4 text-sm font-bold text-cocoa">
                 <span className="capitalize">{item.label}</span>
-                <span>{rand(item.min)}-{rand(item.max)}</span>
+                <span>{rand(item.min)} to {rand(item.max)}</span>
               </div>
               <div className="h-4 overflow-hidden rounded-full bg-cream">
                 <div

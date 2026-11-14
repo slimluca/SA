@@ -174,9 +174,9 @@ const phase5GuidePagesRaw: GuideContent[] = [
         table: {
           headers: ["Dog type", "Conservative monthly planning range", "What usually drives the number"],
           rows: [
-            ["Small healthy adult", "About R700-R1,800+", "Food, parasite prevention, annual vet savings, treats, and basic supplies."],
-            ["Medium healthy adult", "About R1,000-R2,500+", "More food, weight-based preventives, toys, grooming, and insurance choices."],
-            ["Large or giant dog", "About R1,600-R4,000+", "Food volume, larger beds, stronger equipment, higher medication doses, and emergency savings."],
+            ["Small healthy adult", "About R700 to R1,800 or more", "Food, parasite prevention, annual vet savings, treats, and basic supplies."],
+            ["Medium healthy adult", "About R1,000 to R2,500 or more", "More food, weight-based preventives, toys, grooming, and insurance choices."],
+            ["Large or giant dog", "About R1,600 to R4,000 or more", "Food volume, larger beds, stronger equipment, higher medication doses, and emergency savings."],
             ["Puppy or senior dog", "Highly variable", "Vaccines, training, growth, chewing damage, dental care, blood tests, medication, or chronic diets."],
           ],
         },
@@ -475,9 +475,9 @@ const phase5GuidePagesRaw: GuideContent[] = [
         table: {
           headers: ["Dog size or diet", "Cautious planning band", "Notes"],
           rows: [
-            ["Small dog", "About R300-R900+ per month", "Depends on brand, portion, treats, and wet-food use."],
-            ["Medium dog", "About R600-R1,500+ per month", "Food choice and activity level matter a lot."],
-            ["Large dog", "About R1,000-R2,500+ per month", "Bulk bags may help, but freshness and storage still matter."],
+            ["Small dog", "About R300 to R900 or more per month", "Depends on brand, portion, treats, and wet-food use."],
+            ["Medium dog", "About R600 to R1,500 or more per month", "Food choice and activity level matter a lot."],
+            ["Large dog", "About R1,000 to R2,500 or more per month", "Bulk bags may help, but freshness and storage still matter."],
             ["Prescription or special diet", "Often higher and highly variable", "Use under veterinary guidance."],
             ["Raw, fresh, or wet-heavy diet", "Can be substantially higher", "Also consider storage, hygiene, and nutritional balance."],
           ],

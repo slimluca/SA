@@ -466,7 +466,7 @@ function trainingPage(city: (typeof localCities)[number], service: CostService):
         ? [
             ...sourceList(city),
             {
-              label: "The Canine Club — Puppy Classes & Training",
+              label: "The Canine Club: Puppy Classes and Training",
               href: "https://canineclubcpt.com/puppy-classes-and-training",
               note: "Official Cape Town provider price listing checked 8 November 2026. Prices can change; confirm current fees and inclusions directly.",
             },

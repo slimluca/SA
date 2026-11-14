@@ -150,7 +150,7 @@ export function DogCostEstimator() {
       <div className="mt-6 rounded-2xl border border-honey/45 bg-honey/15 p-5">
         <p className="text-sm font-black uppercase tracking-wide text-bark">Estimated monthly planning range</p>
         <p className="mt-2 text-3xl font-black text-cocoa">
-          {money(estimate.min)} - {money(estimate.max)}
+          {money(estimate.min)} to {money(estimate.max)}
         </p>
         <p className="mt-2 text-sm leading-6 text-bark">
           Use this as a conversation starter. Request actual quotes from vets, groomers, trainers,

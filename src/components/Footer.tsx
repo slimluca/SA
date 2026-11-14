@@ -18,8 +18,7 @@ export function Footer() {
             />
           </div>
           <p className="text-sm leading-6 text-white/70">
-            Dog Haven gives South African owners grounded information on health, everyday care and
-            planning, with clear limits where a veterinarian or qualified professional is needed.
+            Straightforward dog care guides, practical tools and South African resources for life with dogs.
           </p>
           <p className="mt-6 text-sm text-white/80">
             <Link href="/dog-haven-network" className="inline-flex min-h-6 items-center font-bold transition hover:text-[#f3c76d] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f3c76d]">

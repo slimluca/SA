@@ -102,9 +102,9 @@ const guides: PuppyGuide[] = [
       "South African puppy owners need to plan around parvovirus risk, rabies vaccination, ticks and fleas, hot summers, garden toxins, puppy scams, travel to vets, and different living setups such as flats, townhouses, farms, and busy family homes.",
     ageRows: [
       ["Before arrival", "Verify records, choose a vet, puppy-proof the home, and buy safe basics."],
-      ["8-12 weeks", "Vet check, vaccine plan, toilet routine, settling, short handling, and safe socialisation."],
-      ["12-16 weeks", "Continue vaccines, controlled exposure, bite training, lead practice, and parasite prevention."],
-      ["4-12 months", "Adolescent manners, food transitions with vet advice, sterilisation discussion, and emergency fund planning."],
+      ["8 to 12 weeks", "Vet check, vaccine plan, toilet routine, settling, short handling, and safe socialisation."],
+      ["12 to 16 weeks", "Continue vaccines, controlled exposure, bite training, lead practice, and parasite prevention."],
+      ["4 to 12 months", "Adolescent manners, food transitions with vet advice, sterilisation discussion, and emergency fund planning."],
     ],
     doList: [
       "Book a vet check soon after arrival, even if the puppy looks healthy.",
@@ -245,9 +245,9 @@ const guides: PuppyGuide[] = [
     context:
       "Parvovirus remains a major puppy concern, especially where unknown dogs, contaminated ground, shelters, or incomplete records are involved. Rabies risk also matters in South Africa, so keep official vaccine records safe.",
     ageRows: [
-      ["6-8 weeks", "Many puppies start core vaccine protection around this stage, depending on vet assessment and history."],
-      ["9-12 weeks", "Follow-up vaccines are commonly needed as immunity develops."],
-      ["12-16 weeks", "Further core protection and rabies timing should be discussed with your vet."],
+      ["6 to 8 weeks", "Many puppies start core vaccine protection around this stage, depending on vet assessment and history."],
+      ["9 to 12 weeks", "Follow-up vaccines are commonly needed as immunity develops."],
+      ["12 to 16 weeks", "Further core protection and rabies timing should be discussed with your vet."],
       ["After puppy series", "Boosters depend on vaccine type, local risk, law, and your vet's plan."],
     ],
     doList: [
@@ -459,8 +459,8 @@ const guides: PuppyGuide[] = [
       "South African puppy owners often balance cost, bag size, availability, load-shedding storage, treats, table scraps, and advice from sellers or social media. The safest starting point is a complete puppy diet that suits your puppy's expected adult size and is monitored with your vet during vaccines and growth checks.",
     ageRows: [
       ["First week home", "Keep food stable unless your vet advises a change."],
-      ["8-16 weeks", "Feed growth food in measured meals and watch stool and weight."],
-      ["4-12 months", "Adjust amounts as growth changes; large breeds need careful growth support."],
+      ["8 to 16 weeks", "Feed growth food in measured meals and watch stool and weight."],
+      ["4 to 12 months", "Adjust amounts as growth changes; large breeds need careful growth support."],
       ["Approaching adulthood", "Ask your vet when to transition to adult food."],
     ],
     doList: [
@@ -530,9 +530,9 @@ const guides: PuppyGuide[] = [
     context:
       "South African homes vary from garden houses to flats, townhouses, complexes, farms, and homes with rainy Cape winters or hot inland summers. Choose a toilet plan your household can repeat every day.",
     ageRows: [
-      ["8-10 weeks", "Very frequent toilet trips, after sleep, food, play, and excitement."],
-      ["10-16 weeks", "Routine improves, but accidents are still normal."],
-      ["4-6 months", "Longer holding ability, more independence, and fewer accidents with consistency."],
+      ["8 to 10 weeks", "Very frequent toilet trips, after sleep, food, play, and excitement."],
+      ["10 to 16 weeks", "Routine improves, but accidents are still normal."],
+      ["4 to 6 months", "Longer holding ability, more independence, and fewer accidents with consistency."],
       ["6 months+", "Setbacks can happen during adolescence, illness, weather changes, or routine disruption."],
     ],
     doList: [
@@ -601,9 +601,9 @@ const guides: PuppyGuide[] = [
     context:
       "Puppies chew furniture, shoes, school bags, plants, irrigation pipes, remotes, batteries, bin scraps, and electrical cords in South African homes. Chewing can be normal teething, boredom, overtiredness, stress, or lack of supervision, but swallowed objects and toxic items need fast veterinary advice.",
     ageRows: [
-      ["8-12 weeks", "Mouthy play and exploration are common; use redirection and naps."],
-      ["3-6 months", "Teething can increase chewing; rotate safe chew items."],
-      ["6-12 months", "Adolescent energy needs training, enrichment, and supervision."],
+      ["8 to 12 weeks", "Mouthy play and exploration are common; use redirection and naps."],
+      ["3 to 6 months", "Teething can increase chewing; rotate safe chew items."],
+      ["6 to 12 months", "Adolescent energy needs training, enrichment, and supervision."],
       ["Any age", "Destructive chewing with panic or self-injury needs professional help."],
     ],
     doList: [
@@ -675,7 +675,7 @@ const guides: PuppyGuide[] = [
     ageRows: [
       ["First nights", "Expect some crying; plan calm reassurance and toilet trips."],
       ["First week", "Keep sleep location consistent and reduce excitement before bed."],
-      ["2-4 weeks home", "Gradually build independence and predictable sleep cues."],
+      ["2 to 4 weeks at home", "Gradually build independence and predictable sleep cues."],
       ["Ongoing distress", "Assess pain, illness, fear, and separation issues with help."],
     ],
     doList: [
@@ -744,9 +744,9 @@ const guides: PuppyGuide[] = [
     context:
       "South African puppies need confidence around household staff, children, delivery bikes, taxis, thunder, security gates, other dogs, grooming, vets, beaches, estates, flats, and townhouses, while still avoiding risky public dog areas before vet clearance.",
     ageRows: [
-      ["8-12 weeks", "Gentle exposure at home, carried outings where appropriate, visitors, sounds, handling, and vet-positive experiences."],
-      ["12-16 weeks", "Vet-guided puppy classes, safe surfaces, controlled dog exposure, and calm car trips."],
-      ["4-6 months", "Lead skills, polite greetings, grooming practice, and continued confidence work."],
+      ["8 to 12 weeks", "Gentle exposure at home, carried outings where appropriate, visitors, sounds, handling, and positive vet experiences."],
+      ["12 to 16 weeks", "Vet-guided puppy classes, safe surfaces, controlled dog exposure, and calm car trips."],
+      ["4 to 6 months", "Lead skills, polite greetings, grooming practice, and continued confidence work."],
       ["Adolescence", "Keep practising; fear periods and regression can happen."],
     ],
     doList: [
@@ -960,7 +960,7 @@ const guides: PuppyGuide[] = [
     ageRows: [
       ["Before arrival", "Adoption or purchase, first supplies, transport, and vet check."],
       ["First 4 months", "Vaccines, deworming, parasite prevention, food, toilet setup, and puppy classes."],
-      ["4-12 months", "Food increases, equipment upgrades, training, grooming, sterilisation discussion, and emergency savings."],
+      ["4 to 12 months", "Food increases, equipment upgrades, training, grooming, sterilisation discussion, and emergency savings."],
       ["After first year", "Adult food, routine vet care, insurance decisions, grooming, and replacement gear."],
     ],
     doList: [
