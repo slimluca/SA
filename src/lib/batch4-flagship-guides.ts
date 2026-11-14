@@ -254,9 +254,9 @@ export const batch4FlagshipGuides: GuideContent[] = [
     title: "Best Pet Insurance for Dogs in South Africa? How to Compare",
     seoTitle: "Best Pet Insurance South Africa? Compare Dog Cover",
     description:
-      "Compare published South African dog insurance premiums and plan limits from seven providers, including Oneplan, Dotsure, PawPaw, MediPet, OUTsurance, Absa and 1st for Women. Check dated sources and policy caveats.",
+      "Compare South African dog insurance plans, often searched as medical aid for dogs, with published premiums and limits from seven providers, dated sources and policy caveats.",
     intro:
-      "There is no single best pet insurance policy for every South African dog. This dated comparison records the starting prices and annual limits providers publish for selected plans; it is a market snapshot, not a ranking or a personalised quote. Your dog's actual premium, eligibility, exclusions and claim payment depend on the policy wording, schedule, underwriting and medical history. Confirm each detail directly before relying on it.",
+      "There is no single best pet insurance policy for every South African dog. Some owners search for this cover as “medical aid for dogs”; compare the actual policy wording and benefits rather than relying on the label. This dated guide records the starting prices and annual limits providers publish for selected plans; it is a market snapshot, not a ranking or a personalised quote. Your dog's actual premium, eligibility, exclusions and claim payment depend on the policy wording, schedule, underwriting and medical history. Confirm each detail directly before relying on it.",
     updated: "2026-11-14",
     primaryImage: {
       src: "/images/guides/compare-dog-insurance-south-africa.webp",
@@ -391,6 +391,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
     ],
     faqs: [
       { question: "Which dog insurance is best in South Africa?", answer: "There is no universal best policy. Compare current contract wording against your dog's history, age and likely care needs, then assess limits, exclusions, excesses, claim process and household cash flow." },
+      { question: "Is pet insurance the same as medical aid for dogs?", answer: "People may use “medical aid for dogs” when searching for help with veterinary bills. Check the product's policy documents to see whether it covers accidents, illness or routine care, and how limits, exclusions, excesses and claims work. Do not assume cover from the product label alone." },
       { question: "Is accident-only cover enough?", answer: "It covers a narrower category than accident-and-illness products. Its suitability depends on the exact events covered, exclusions, limits and the costs you can fund yourself. Read the definition of an accident in the policy." },
       { question: "Does pet insurance pay the vet directly?", answer: "Processes differ. Some claims are reimbursed after the owner pays, while direct payment or another mechanism may be available under specific products or circumstances. Confirm the current process in writing." },
       { question: "Can I switch policies without a gap?", answer: "Dates may overlap cleanly, but new waiting periods and a new assessment of prior symptoms can still change practical cover. Compare both policies and obtain written answers before cancelling." },
