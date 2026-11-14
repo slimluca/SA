@@ -161,7 +161,7 @@ export default function StartHerePage() {
       />
       <JsonLd data={faqSchema(faqs)} />
       <header className="relative isolate overflow-hidden bg-emerald-deep text-white">
-        <Image src="/images/home/south-africa-dog-lifestyle.webp" alt="A South African dog owner spending time outdoors with a dog" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/images/home/south-africa-dog-lifestyle.webp" alt="A South African dog owner spending time outdoors with a dog" fill priority sizes="100vw" className="object-contain object-right" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.98),rgba(3,55,45,.84)_48%,rgba(3,55,45,.18))]" />
         <div className="section-shell relative flex min-h-[500px] items-center py-10 sm:min-h-[540px] lg:py-16">
           <div className="max-w-2xl">

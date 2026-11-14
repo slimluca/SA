@@ -59,7 +59,7 @@ export function HubPage({ hub, cardGroups, showHero = true }: { hub: HubContent;
       <JsonLd data={collectionPageSchema({ title: hub.title, description: hub.description, path: hub.path })} />
       {hub.faqs.length > 0 ? <JsonLd data={faqSchema(hub.faqs)} /> : null}
       {showHero ? <section className="relative isolate overflow-hidden bg-emerald-deep text-white">
-        <Image src={presentation.image} alt={presentation.alt} fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src={presentation.image} alt={presentation.alt} fill priority sizes="100vw" className="object-contain object-right" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.97),rgba(3,55,45,.82)_45%,rgba(3,55,45,.18))]" />
         <div className="section-shell relative min-h-[500px] py-10 sm:min-h-[540px] lg:flex lg:items-center lg:py-16">
           <div className="max-w-2xl">

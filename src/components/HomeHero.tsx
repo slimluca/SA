@@ -50,7 +50,7 @@ export function HomeHero() {
               fill
               priority
               sizes="(min-width: 1024px) 54vw, 100vw"
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-navy/25 to-transparent" aria-hidden="true" />
           </div>
