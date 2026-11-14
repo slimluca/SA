@@ -254,10 +254,10 @@ export const batch4FlagshipGuides: GuideContent[] = [
     title: "Best Pet Insurance for Dogs in South Africa? How to Compare",
     seoTitle: "Best Pet Insurance South Africa? Compare Dog Cover",
     description:
-      "Compare published South African dog insurance premiums and plan limits from Oneplan, Dotsure, PawPaw, MediPet and OUTsurance, with dated sources and policy caveats.",
+      "Compare published South African dog insurance premiums and plan limits from seven providers, including Oneplan, Dotsure, PawPaw, MediPet, OUTsurance, Absa and 1st for Women. Check dated sources and policy caveats.",
     intro:
       "There is no single best pet insurance policy for every South African dog. This dated comparison records the starting prices and annual limits providers publish for selected plans; it is a market snapshot, not a ranking or a personalised quote. Your dog's actual premium, eligibility, exclusions and claim payment depend on the policy wording, schedule, underwriting and medical history. Confirm each detail directly before relying on it.",
-    updated: "2026-11-13",
+    updated: "2026-11-14",
     primaryImage: {
       src: "/images/guides/compare-dog-insurance-south-africa.webp",
       alt: "Dog owner comparing pet insurance documents and veterinary costs",
@@ -289,13 +289,15 @@ export const batch4FlagshipGuides: GuideContent[] = [
           "The phrase “best pet insurance” is personal: a low premium may come with narrower cover, while broader benefits may cost more or include caps, excesses and waiting periods. Compare the same needs across providers and calculate what you would pay on realistic example claims.",
         ],
         table: {
-          headers: ["Provider and official plan page", "Published dog-plan examples checked 13 November 2026", "Important comparison points"],
+          headers: ["Provider and official plan page", "Published dog-plan examples checked 14 November 2026", "Important comparison points"],
           rows: [
             ["Oneplan — Plans", "Accident: from R80/month, R8,500 annual limit; Primary: R160, R18,000; Hospital: R190, R48,500; Classic: R280, R52,000; Super: R430, R75,000.", "Prices are risk-profile dependent. Hospital and day-to-day benefits differ by plan; add-ons can change excesses or benefits. Check waiting periods and age eligibility."],
             ["Dotsure — Pet plan options", "Accidental: from R99/month; Vital: R219; Elite: R399; Deluxe: R430; Ultimate: R1,399. Its comparison describes no illness cover on Accidental, partial illness cover on Vital, and broader illness benefits on higher tiers.", "The published comparison says plan limits and benefits are tier-specific; confirm the selected policy's annual and treatment limits, excesses, exclusions, waiting periods and any optional add-ons."],
             ["PawPaw — Plans", "Accident 10: R80/month with R10,000 limit; Accident 20: R156 with R20,000; Smart: from R195 with R30,000 annual limit; Comprehensive: from R321 and advertised with no overall annual limit.", "PawPaw labels prices and cover as indicative. Check claim caps, co-insurance, category limits, household rules and which lifestyle or day-to-day benefits are included."],
             ["MediPet — Compare Plans", "Accident Basic: R199/month and R25,000 annual maximum; Lite: from R325 and R40,000; Essential: from R489 and R62,000; Ultimate360: from R769 and R75,000.", "Lite has a maximum of four claims per policy year and a R13,760 maximum per claim. Plan excesses, age rules, add-ons, waiting periods and pre-existing-condition terms differ. MediPet also lists a separate R17 monthly veterinary service fee."],
             ["OUTsurance — Pet insurance", "Published overall annual limits: R26,500 for Accidental; R50,000 for Core and Standard; R75,000 for Executive. OUTsurance advertises pet cover from R65/month, but premiums are calculated for the individual pet.", "Treat R65 as an advertised starting point, not a dog-specific quote. Check the fixed excess, benefit limits, 12-month hereditary/congenital waiting period, exclusions and plan-specific cover."],
+            ["Absa — Pet insurance", "Published monthly starting prices and annual limits: Accident from R115 / R10,000; Hospital from R200 / R45,000; Classic from R315 / R48,000; Premium from R460 / R75,000.", "These are advertised starting prices, not personalised quotes. Compare included day-to-day benefits, sub-limits, excesses, exclusions, waiting periods and the policy wording for the selected plan."],
+            ["1st for Women — Pet insurance", "Published dog-plan examples: Fur Baby Basic from R130/month / R12,000 annual limit; Hospital from R185 / R35,000; PetCare Essential from R200 / R15,000; Top to Tail Classic from R330 / R45,000; Premium Paws from R460 / R65,000.", "Premiums depend on the pet and risk profile. Plan benefits and limits differ; check the current benefit schedule, exclusions, excesses, waiting periods and personalised quote."]
           ],
         },
         links: [
@@ -304,6 +306,8 @@ export const batch4FlagshipGuides: GuideContent[] = [
           { title: "PawPaw plans", description: "Compare the provider's published plan options and current details.", href: "https://pawpawpets.co.za/plans/" },
           { title: "MediPet plan comparison", description: "Check current dog-plan limits, starting prices and add-ons.", href: "https://medipet.co.za/compare-plans/" },
           { title: "OUTsurance pet plans", description: "Check plan limits, benefits, exclusions and quote details.", href: "https://www.outsurance.co.za/pet-insurance/" },
+          { title: "Absa pet insurance", description: "Check current plan benefits, limits and quote details.", href: "https://www.absa.co.za/personal/insure/pet-insurance/" },
+          { title: "1st for Women pet insurance", description: "Check current dog cover, plan limits and quote details.", href: "https://www.firstforwomen.co.za/pet-insurance/" },
         ],
       },
       {
@@ -400,6 +404,8 @@ export const batch4FlagshipGuides: GuideContent[] = [
     sources: [
       { label: "Financial Sector Conduct Authority: consumers", href: "https://www.fsca.co.za/Consumers/", note: "Official South African financial-sector consumer information and complaint context." },
       { label: "OUTsurance pet insurance plans", href: "https://www.outsurance.co.za/pet-insurance/", note: "Official plan table and advertised starting premium checked on 13 November 2026; personalised dog quotes and policy wording govern." },
+      { label: "Absa pet insurance", href: "https://www.absa.co.za/personal/insure/pet-insurance/", note: "Official plan summaries and starting premiums checked on 14 November 2026; personalised quotes and policy wording govern." },
+      { label: "1st for Women pet insurance", href: "https://www.firstforwomen.co.za/pet-insurance/", note: "Official dog-plan examples and starting premiums checked on 14 November 2026; premiums vary by risk profile and policy wording governs." },
       { label: "OUTsurance pet policy wording", href: "https://www.outsurance.co.za/globalassets/documents/outsurance-sa/pet/pet_policy_wording.pdf", note: "Provider policy wording for definitions, benefits, exclusions and claims terms; no provider is endorsed." },
       { label: "Dotsure plan comparison", href: "https://blog.dotsure.co.za/compare-pet-insurance-plans/", note: "Provider-published table checked on 13 November 2026 for tier starting prices and stated benefit differences; verify the current policy schedule." },
       { label: "MediPet FAQ and cover information", href: "https://medipet.co.za/faq/", note: "Provider-published plan and coverage explanations checked on 13 November 2026; policy wording and personalised terms take priority." },
