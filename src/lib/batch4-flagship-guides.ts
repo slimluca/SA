@@ -289,7 +289,7 @@ export const batch4FlagshipGuides: GuideContent[] = [
           "The phrase “best pet insurance” is personal: a low premium may come with narrower cover, while broader benefits may cost more or include caps, excesses and waiting periods. Compare the same needs across providers and calculate what you would pay on realistic example claims.",
         ],
         table: {
-          headers: ["Provider and official plan page", "Published dog-plan examples checked 14 November 2026", "Important comparison points"],
+          headers: ["Provider and official plan page", "Published dog-plan examples last checked 13–14 November 2026", "Important comparison points"],
           rows: [
             ["Oneplan — Plans", "Accident: from R80/month, R8,500 annual limit; Primary: R160, R18,000; Hospital: R190, R48,500; Classic: R280, R52,000; Super: R430, R75,000.", "Prices are risk-profile dependent. Hospital and day-to-day benefits differ by plan; add-ons can change excesses or benefits. Check waiting periods and age eligibility."],
             ["Dotsure — Pet plan options", "Accidental: from R99/month; Vital: R219; Elite: R399; Deluxe: R430; Ultimate: R1,399. Its comparison describes no illness cover on Accidental, partial illness cover on Vital, and broader illness benefits on higher tiers.", "The published comparison says plan limits and benefits are tier-specific; confirm the selected policy's annual and treatment limits, excesses, exclusions, waiting periods and any optional add-ons."],
