@@ -10,7 +10,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Laws South Africa | Rabies, Complexes, Rentals & Beach Rules | Dog Haven",
+  title: "Dog Laws South Africa | Owner Rules & Responsibilities",
   description: "Plain-English dog laws and rules for South Africa: rabies vaccination duties, complexes and rentals, barking complaints, leads, beach access, and responsible ownership checks.",
   path: hub.path,
 });

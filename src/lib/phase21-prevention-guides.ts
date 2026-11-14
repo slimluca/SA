@@ -670,7 +670,7 @@ const phase21Guides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Kennel Cough Vaccine in South Africa",
-    seoTitle: "Kennel Cough Vaccine South Africa | Boarding, Daycare and Vet Questions",
+    seoTitle: "Kennel Cough Vaccine for Dogs | South African Vet Guide",
     description:
       "A South African kennel cough vaccine guide covering boarding, daycare, grooming, puppy school, training classes, high-contact environments, and vet questions.",
     intro:
@@ -1105,7 +1105,7 @@ export function getPhase21Guide(slug: string) {
 }
 
 export function getPhase21GuidesByHub(hubPath: string) {
-  return phase21Guides.filter((guide) => guide.hubPath === hubPath);
+  return phase21PreventionGuidePages.filter((guide) => guide.hubPath === hubPath);
 }
 
 export const phase21HealthCards: CardLink[] = phase21PreventionGuidePages.map((guide) => ({

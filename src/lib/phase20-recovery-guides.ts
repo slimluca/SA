@@ -152,7 +152,7 @@ const phase20Guides: GuideContent[] = [
     hubTitle: "Dog Costs",
     hubPath: "/costs",
     title: "Dog Training Costs in South Africa",
-    seoTitle: "Dog Training Costs South Africa | Classes, Private Lessons and Questions",
+    seoTitle: "Dog Training Costs in South Africa | Classes & Questions",
     description:
       "A South African dog training cost guide covering puppy classes, private sessions, group lessons, behaviour support, humane methods, city variation, and quote questions.",
     intro:

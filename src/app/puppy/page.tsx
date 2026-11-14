@@ -29,7 +29,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Puppy Care South Africa | Checklists, Vaccines, Feeding & Training | Dog Haven",
+  title: "Puppy Care South Africa | First-Year Guides | Dog Haven",
   description: "Complete puppy care guides for South Africa: new puppy checklist, vaccination schedule, feeding routine, potty training, biting, and first-year costs. Free tools included.",
   path: hub.path,
 });

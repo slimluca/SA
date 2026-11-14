@@ -30,7 +30,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Food South Africa | Feeding Guides, Safety & Calculators | Dog Haven",
+  title: "Dog Food South Africa | Feeding & Safety Guides | Dog Haven",
   description: "Practical dog food guidance for South Africa: feeding calculators, toxic food safety, best food choices, raw diets, and portion guidance. Free tools and clear advice.",
   path: hub.path,
   image: hubVisual.image.src,

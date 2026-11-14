@@ -32,7 +32,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Emergency Signs South Africa | Heatstroke, Poisoning & Urgent Vet Help | Dog Haven",
+  title: "Dog Emergencies South Africa | Urgent Vet Guides | Dog Haven",
   description: "Recognise urgent dog emergency signs in South Africa: heatstroke, poisoning, bloat, snake bites, and when to call a vet immediately. Practical first steps and checklists.",
   path: hub.path,
   image: hubVisual.image.src,

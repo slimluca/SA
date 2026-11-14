@@ -126,7 +126,7 @@ export const batch2FlagshipGuides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Toxic Foods for Dogs in South African Homes",
-    seoTitle: "Toxic Foods for Dogs South Africa: Chocolate, Xylitol & Emergency Steps",
+    seoTitle: "Toxic Foods for Dogs in South Africa | Safety Guide",
     description: "Practical guidance on dangerous foods for dogs, kitchen and braai prevention, exposure information for the vet, and why owners should not wait for symptoms.",
     intro: "An ordinary kitchen, braai, handbag, child's snack, visitor's plate, or unsecured bin can expose a dog to food that is toxic or physically dangerous. The risk depends on the substance, amount, dog, and timing, so do not use an online dose calculation to decide that a known exposure is safe. Remove access, keep the packaging, and contact a veterinarian promptly.",
     updated: "2026-11-12",

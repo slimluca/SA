@@ -1028,7 +1028,7 @@ export const guidePages: GuideContent[] = [
     hubTitle: "Emergency Help",
     hubPath: "/emergency",
     title: "Parvovirus in Dogs in South Africa: Puppy Red Flags and Urgent Care",
-    seoTitle: "Parvovirus in Dogs South Africa: Symptoms, Prevention & Emergency Care (2026)",
+    seoTitle: "Parvovirus in Dogs: South African Symptoms & Care",
     description:
       "A practical South African guide to canine parvovirus signs, puppy risk, vaccination prevention, cleaning, and when to contact a vet urgently.",
     intro:

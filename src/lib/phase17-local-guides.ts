@@ -929,7 +929,7 @@ export const localCityHubs: HubContent[] = localCities.map((city) => ({
   title: `${city.name} Local Dog Service Guides`,
   seoTitle:
     city.slug === "cape-town"
-      ? "Cape Town Dog Services Guide | Grooming, Training, Vets and Dog-Friendly Checks"
+      ? "Cape Town Dog Services | Grooming, Training & Vet Guides"
       : `${city.name} Dog Services Guide | Grooming, Training, Emergency Vets`,
   description:
     city.slug === "cape-town"

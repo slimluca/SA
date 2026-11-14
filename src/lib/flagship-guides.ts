@@ -33,7 +33,7 @@ export const flagshipGuides: GuideContent[] = [
     hubTitle: "Dog Health",
     hubPath: "/health",
     title: "Biliary Tick Bite Fever in Dogs in South Africa",
-    seoTitle: "Biliary (Tick Bite Fever) in Dogs in South Africa: Symptoms and Vet Care",
+    seoTitle: "Biliary in Dogs: Tick Bite Fever Signs & Vet Care",
     description:
       "Understand canine biliary in South Africa, possible warning signs, urgent veterinary care, testing, tick exposure, prevention, and recovery questions.",
     intro:

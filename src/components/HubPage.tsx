@@ -40,7 +40,7 @@ function LibraryLink({ link }: { link: CardLink }) {
   );
 }
 
-export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: HubCardGroup[] }) {
+export function HubPage({ hub, cardGroups, showHero = true }: { hub: HubContent; cardGroups?: HubCardGroup[]; showHero?: boolean }) {
   const promotedGuides = hubPromos[hub.slug] ?? [];
   const premiumConfig = getPremiumHubConfig(hub.slug);
   if (premiumConfig) return <PremiumHubPage hub={hub} config={premiumConfig} promotedGuides={promotedGuides} />;
@@ -58,7 +58,7 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
     <>
       <JsonLd data={collectionPageSchema({ title: hub.title, description: hub.description, path: hub.path })} />
       {hub.faqs.length > 0 ? <JsonLd data={faqSchema(hub.faqs)} /> : null}
-      <section className="relative isolate overflow-hidden bg-emerald-deep text-white">
+      {showHero ? <section className="relative isolate overflow-hidden bg-emerald-deep text-white">
         <Image src={presentation.image} alt={presentation.alt} fill priority sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,55,45,.97),rgba(3,55,45,.82)_45%,rgba(3,55,45,.18))]" />
         <div className="section-shell relative min-h-[500px] py-10 sm:min-h-[540px] lg:flex lg:items-center lg:py-16">
@@ -70,7 +70,7 @@ export function HubPage({ hub, cardGroups }: { hub: HubContent; cardGroups?: Hub
             <div className="mt-8 flex flex-wrap gap-3">{allLinks[0] ? <Link href={allLinks[0].href} className="primary-light-button">Start with a guide <ArrowRight className="h-4 w-4" /></Link> : null}<Link href="#guide-library" className="secondary-light-button">Explore all topics</Link></div>
           </div>
         </div>
-      </section>
+      </section> : null}
       {hub.notice ? <section className="bg-[#edf7f0]"><div className="section-shell flex items-start gap-4 py-6"><ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-sage" /><p className="max-w-4xl text-sm font-semibold leading-6 text-bark">{hub.notice}</p></div></section> : null}
       <section className="section-shell py-14 sm:py-20">
         <p className="section-kicker">Recommended starting points</p><h2 className="section-title">Useful guidance for the decision in front of you.</h2>

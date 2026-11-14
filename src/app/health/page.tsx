@@ -148,7 +148,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog Health South Africa | Vaccines, Ticks, Symptoms & Vet Guides | Dog Haven",
+  title: "Dog Health South Africa | Vet & Prevention Guides | Dog Haven",
   description: "Practical dog health guides for South Africa: vaccination schedules, tick and flea prevention, biliary fever, symptoms, when to call the vet, and free health calendar.",
   path: hub.path,
   image: hubVisual.image.src,

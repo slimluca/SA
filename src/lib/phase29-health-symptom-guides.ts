@@ -258,7 +258,7 @@ const topics: SymptomTopic[] = [
   {
     slug: "dog-eye-problems-south-africa",
     title: "Dog Eye Problems in South Africa: Warning Signs",
-    seoTitle: "Dog Eye Problems South Africa | Redness, Discharge and Vet Warning Signs",
+    seoTitle: "Dog Eye Problems in South Africa | Signs & Vet Care",
     description:
       "A practical South African guide to dog eye problems, including redness, discharge, squinting, injury, grass seeds, pain, and when to call a vet urgently.",
     intro:
@@ -338,7 +338,7 @@ const topics: SymptomTopic[] = [
   {
     slug: "dog-drinking-a-lot-of-water-south-africa",
     title: "Dog Drinking a Lot of Water in South Africa",
-    seoTitle: "Dog Drinking a Lot of Water South Africa | Causes and Vet Warning Signs",
+    seoTitle: "Why Is My Dog Drinking More? South Africa Vet Guide",
     description:
       "Understand why a dog may drink more water, what to observe, South African heat considerations, and when increased thirst needs a vet.",
     intro:

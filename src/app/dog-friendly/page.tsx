@@ -35,7 +35,7 @@ const hub = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: "Dog-Friendly Places South Africa | Beaches, Parks, Travel & Outings | Dog Haven",
+  title: "Dog-Friendly Places South Africa | Parks & Travel | Dog Haven",
   description: "Plan dog-friendly outings in South Africa: beaches, parks, road trips, accommodation, and hikes. Rules to check, heat safety, and practical travel checklists.",
   path: hub.path,
 });
