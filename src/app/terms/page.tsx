@@ -8,6 +8,7 @@ export const metadata: Metadata = createMetadata({
   description:
     "Dog Haven's terms of use for educational dog care content, responsible use, external links, and provider listing boundaries.",
   path: "/terms",
+  noindex: true,
 });
 
 export default function TermsPage() {
