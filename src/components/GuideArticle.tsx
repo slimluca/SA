@@ -26,7 +26,7 @@ import type { GuideContent } from "@/lib/content";
 import { getProvidersForPath, isLocalServicePath } from "@/lib/local-provider-directory";
 import { getArticlePromos } from "@/lib/promo-links";
 import { absoluteUrl } from "@/lib/site";
-import { JsonLd, articleSchema, datasetSchema, faqSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
 import { Download, FileSpreadsheet } from "lucide-react";
@@ -87,14 +87,6 @@ export function GuideArticle({ guide }: { guide: GuideContent }) {
           image: guide.primaryImage?.src,
         })}
       />
-      {guide.dataset ? (
-        <JsonLd
-          data={datasetSchema({
-            ...guide.dataset,
-            path: guide.path,
-          })}
-        />
-      ) : null}
       {guide.faqs.length > 0 ? <JsonLd data={faqSchema(guide.faqs)} /> : null}
 
 
