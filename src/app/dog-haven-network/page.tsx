@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     description: "An overview of the separate Dog Haven country resources and Dog Haven Group.",
     path: "/dog-haven-network",
   }),
-  robots: { index: false, follow: true },
 };
 
 const networkSites = [
