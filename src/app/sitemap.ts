@@ -40,8 +40,6 @@ const staticRoutes = [
   "/contact",
   "/editorial-policy",
   "/dog-haven-network",
-  "/privacy-policy",
-  "/terms",
 ];
 
 const retiredSitemapPaths = new Set([

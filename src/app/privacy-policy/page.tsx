@@ -8,6 +8,7 @@ export const metadata: Metadata = createMetadata({
   description:
     "How Dog Haven handles contact messages, technical site data, Cloudflare Turnstile, cookies, and third-party links.",
   path: "/privacy-policy",
+  noindex: true,
 });
 
 export default function PrivacyPolicyPage() {
