@@ -26,7 +26,7 @@ import { funHub, phase27FunGuidePages } from "@/lib/phase27-fun-guides";
 import { phase28LocalCityHubs, phase28LocalGuidePages } from "@/lib/phase28-local-expansion-guides";
 import { phase29HealthSymptomGuidePages } from "@/lib/phase29-health-symptom-guides";
 import { phase30CostInsuranceGuidePages } from "@/lib/phase30-cost-insurance-guides";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 import { premiumHubConfigs } from "@/lib/premium-hubs";
 import { tools, toolsHub } from "@/lib/tools-data";
 import { flagshipGuides } from "@/lib/flagship-guides";
@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         : premiumHubConfigs[route.slice(1)]?.image.src;
 
     entries.set(route, {
-      url: absoluteUrl(route),
+      url: route === "/" ? siteConfig.domain : absoluteUrl(route),
       images: image ? [absoluteUrl(image)] : undefined,
     });
   }
