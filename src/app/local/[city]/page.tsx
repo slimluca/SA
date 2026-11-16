@@ -30,13 +30,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const isPhase28 = Boolean(getPhase28LocalCityHub(city));
-
   return createMetadata({
     title: hub.seoTitle,
     description: hub.description,
     path: hub.path,
-    noindex: isPhase28,
   });
 }
 
