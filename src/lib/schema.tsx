@@ -161,7 +161,7 @@ export function datasetSchema({
     dateModified: dateChecked,
     temporalCoverage: dateChecked,
     spatialCoverage: {
-      "@type": "Country",
+      "@type": "Place",
       name: "South Africa",
     },
     size: `${recordCount} records`,
